@@ -3,29 +3,19 @@
 
 % The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
 
-%!TEX TS-program = xelatex
+%!TEX TS-program = pdflatex
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass[10pt,b6paper,twoside]{book}
 \usepackage{geometry}   
 \geometry{textheight = 390pt}
-             % See geometry.pdf to learn the layout options. There are lots.
-%\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
-%\geometry{landscape}                % Activate for for rotated page geometry
-%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}
-\usepackage{amssymb}
+%\usepackage{amssymb}
 
-% Will Robertson's fontspec.sty can be used to simplify font choices.
-% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
-% and change "Hoefler Text" to any of these choices.
-
-\usepackage{fontspec,xltxtra,xunicode}
-\defaultfontfeatures{Mapping=tex-text}
-\setromanfont[Mapping=tex-text]{Hoefler Text}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
-\setmonofont[Scale=MatchLowercase]{Andale Mono}
-
+%\usepackage{fouriernc}
+%\usepackage[T1]{fontenc}
+\usepackage{kpfonts}
+\usepackage{gillius}
 
 \usepackage[usenames,svgnames]{xcolor}
 
@@ -37,6 +27,7 @@
 
 \usepackage{nicefrac}
 
+\usepackage[colorlinks=true,link color = IndianRed]{hyperref}
 \usepackage{soul}
 
 \usepackage{fancyhdr}
@@ -48,6 +39,41 @@
 \cfoot{\thepage}
 
 \usepackage{emptypage}
+%\setcounter{secnumdepth}{4}
+
+\usepackage{titlesec}
+
+\titleformat{\chapter}
+  {\normalfont\sffamily\huge\color{DodgerBlue}}
+  {\thechapter}{1em}{}
+\titleformat{\section}
+  {\normalfont\sffamily\Large\color{DodgerBlue!70}}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\color{Maroon!70}}
+  {\thesubsection}{1.5em}{}
+%\setlength{\parskip}{0.5\baselineskip}
+
+\newcommand*\figr[1]{\hyperref[#1]{Figure~\ref{#1}}}
+
+
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{wrapfig}
+
+\setcounter{tocdepth}{1}
+\makeatletter
+\renewcommand{\@dotsep}{10000} 
+\makeatother
+
+
+%\usepackage{caption}
+\usepackage[font={color=Maroon,small,sf},figurename=Figure]{caption}
+
+\usepackage{tikz}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title{A Modern Handbook of Physics}
 \author{B. M. Yavorsky, A.A. Detlaf}
