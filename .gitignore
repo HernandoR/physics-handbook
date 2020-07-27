@@ -1,0 +1,101 @@
+damitr-thesis.bib~
+damitr-thesis.bib.bak
+#.gitignore#
+missfont.log
+new-thesis.aux
+new-thesis.bbl
+new-thesis.blg
+new-thesis.idx
+new-thesis.ilg
+new-thesis.ind
+new-thesis.lof
+new-thesis.log
+new-thesis.lot
+new-thesis-mpgraph.mp
+new-thesis.out
+new-thesis.toc
+new-thesis.tui
+README.md
+texput.log
+thesis-2016.log
+thesis-2016.tex~
+.DS_Store
+
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+
+# gnuplottex
+*-gnuplottex-*
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# minitoc
+*.maf
+*.mlf
+*.mlt
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
+
+
+# TikZ & PGF
+*.dpth
+*.md5
+*.auxlock
+
+# todonotes
+*.tdo
+
+# hyperref
+*.brf
+
+
+
+# Texpad
+.texpadtmp
+
+# Kile
+*.backup
+
+# KBibTeX
+*~[0-9]*
