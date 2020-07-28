@@ -1,5 +1,5 @@
 % !TEX root = handbook-physics.tex
-%!TEX TS-program = xelatex
+%!TEX TS-program = pdflatex
 %!TEX encoding = UTF-8 Unicode
 
 
@@ -63,13 +63,16 @@ The mechanical motion of a body is relative, i.e. the nature of the motion and, 
 An \emph{osculating circle} at point $M$ of a curve is the limit of a circle passing through three points of the curve being considered when these points approach po­int $M$ without limit. The oscu­lating circle lies in the oscula­ting plane. The centre of the osculating circle and its radius are called the \emph{centre of curvature} and \emph{radius of curvature}, at point $M$, of the curve being considered. The straight line connecting point $M$ to the centre of curvature is called the \emph{principal normal} to the curve at point $M$. The tan­gent to the curve at point $M$ is perpendicular to the principal normal and also lies in the osculating plane.
 
 \subsection{}\label{1.2.5} The \emph{path length} is the sum of the lengths of all the por­tions of the path over which the particle passes m the given interval of time. The instant of time $t = t_{0}$, from which we begin to consider the motion of a particle, is called the initial instant of time, and the position of the particle at this instant (point $A$ in \figr{fig-01-02}) is called its initial position. Owing to the arbitrary nature of the time reference point it is usually as­sumed that $t_{0}= 0$. 
-
-\begin{wrapfigure}{l}{0.5\linewidth}
+\begin{figure}[!ht]
+%\begin{wrapfigure}{l}[10pt]{0.55\linewidth}
 \centering
-\includegraphics{figs/ch-01/fig-01-02.pdf}
+%\includegraphics{figs/ch-01/fig-01-01.pdf}
+\input{figs/ch-01/fig-01-02}
+%  \vspace{-13pt}
 \caption{A particle moving on a curve.}
 \label{fig-01-02}
-\end{wrapfigure}
+%\end{wrapfigure}
+\end{figure}
 
 The path length $s$, travelled by the particle from its initial position, is a scalar function of time: $s = s (t)$. As is obvious from its definition, the path length of a particle cannot be a negative quantity. If the particle travels along an arc of the path $AB$ (\figr{fig-01-02}), always in the same direction and is at point $M$ at the instant of time $t$,then $s(t)= \widearc{AM}$. If the particle travels along the path in a more complicated way, for example if it travels from $A$ to $B$, reaching $B$ at the instant of time $t_{1}< t$, and then reverses, returning to point $M$ at instant $t$, then $s (t) = \widearc{AB} + \widearc{BM}$.
 
@@ -89,3 +92,83 @@ The displacement vector of a moving particle for the time inter­val from $t$ to
 where $\Delta x$, $\Delta y$ and $\Delta z$ are the increments (changes) in the coordi­nates of the particle during the time interval being considered. 
 
 \subsection{}\label{1.2.7} A particle travelling freely in space can accomplish only three \emph{independent motions}, i.e. motions that cannot be repre­sented as combinations of the other two. As a matter of fact, the motion of a particle along each of the axes of a Cartesian rectangular coordinate system cannot be obtained by its motion along the other two axes. The number of independent motions that a mechanical system can accomplish is called the \emph{number of degrees of freedom} of the system. Hence, a free particle has three degrees of freedom.
+
+\section{Velocity}
+\label{sec-1.3}
+
+\subsection{}\label{1.3.1} The concept of velocity is introduced in mechanics to characterize the rate of motion of bodies. It is the time rate of change in the position of moving bodies. The \emph{average velocity} of a moving particle in the time interval from $t$ to $t + \Delta t$ is the vector $\vb{v_{av}}$, equal to the ratio of the increment $\Delta \vb{r}$ in the radius vector of the particle during this time interval to the length of the time interval $\Delta t$:
+\begin{equation*}%
+\vb{v_{av}} = \frac{\Delta \vb{r}}{\Delta t}
+\end{equation*}
+Vector $\vb{v_{av}}$ has the same direction as $\Delta \vb{r}$, i.e. along the chord subtending the corresponding portion of the particle’s path. 
+
+\subsection{}\label{1.3.2} The \emph{velocity} (or \emph{instantaneous velocity}) of a moving particle is the vector quantity $\vb{v}$, equal to the first time derivative of the radius vector $\vb{r}$ of the particle being considered:
+\begin{equation*}%
+\vb{v} = \dv{\vb{r}}{t}
+\end{equation*}
+The velocity of the particle at the instant of time $t$ is the lim­iting value that the average velocity $\vb{v_{av}}$ approaches for an infinitely small value of the time interval $\Delta t$. Thus
+\begin{equation*}%
+\vb{v} = \lim_{\Delta t \to 0}\frac{\Delta \vb{r}}{\Delta t} = \lim_{\Delta t \to 0}\vb{v_{av}}
+\end{equation*}
+The velocity vector $\vb{v}$ of the particle has the direction along a tangent to the path toward the motion in the same way as the vector $d\vb{r} = \vb{v} dt$ of infinitely small displacement of the particle during an infinitely short time interval $dt$.
+
+The path length $ds$ travelled by the particle during the length of time $dt$ is equal to the magnitude of the displacement vector: $ds = \abs{d\vb{r}}$. Therefore the magnitude of the velocity vector of a moving particle is equal to the first time derivative of the path length:
+\begin{equation*}%
+v = \abs{\,\vb{v}\,} = \dv{s}{t}
+\end{equation*}
+
+\subsection{}\label{1.5.3} The resolution of vector $\vb{v}$ along the basis of a Cartesian rectangular coordinate system is of the following form:
+\begin{equation*}%
+\vb{v} = v_{x} \times \vb{i} + v_{y} \times \vb{j} +v_{z} \times \vb{k}
+\end{equation*}
+The projections of the velocity of a moving particle on the coor­dinate axes are equal to the first time derivative of the corres­ponding coordinates of the particle:
+\begin{equation*}%
+v_{x}= \dv{x}{t}, \,\, v_{y}= \dv{y}{t}, \,\, v_{z}= \dv{z}{t}
+\end{equation*}
+and the magnitude of the velocity vector, sometimes called the \emph{speed}, is
+\begin{equation*}%
+v = \abs{\,\vb{v}\,} = \sqrt{\left( \dv{x}{t} \right)^{2} + \left(\dv{y}{t}\right)^{2} + \left(\dv{x}{t}\right)^{2}}
+\end{equation*}
+
+\subsection{}\label{1.3.4} In rectilinear motion of a particle, the direction of its velocity vector remains constant. The motion of a particle is said to be \emph{uniform} if the magnitude of its velocity does not change with time: $v = ds/dt = \textrm{const}$. The path length $s$ tra­velled by a uniformly moving particle is a linear function of time: $s = vt$ (provided that $t_{0}= 0$, see \ref{1.2.5}).
+
+If the magnitude of the particle’s velocity, i.e. its speed, increa­ses with time $(dv/dt > 0)$, the motion is said to be \emph{accelerated}; if the speed decreases with time $(dv/dt < 0)$, the motion is said to be \emph{decelerated}.
+
+\subsection{}\label{1.3.5} The \emph{average velocity of nonuniform motion} of a particle over a given portion of its path is the scalar $v_{\textrm{av}}$, called the \emph{travelling speed}, which is equal to the ratio of the length $\Delta s$ of this portion to the length $\Delta t$ of the time interval required to travel over this portion:
+\begin{equation*}%
+v_{\textrm{av}} = \frac{\Delta s}{\Delta t}
+\end{equation*}
+It is equal to the speed of uniform motion in which the time required to travel the same path length As is the same as in the nonuniform motion being considered.
+
+In curvilinear motion of a particle $\abs{\, \Delta \vb{r} \, } < \Delta s$. Therefore, in the general case, the average velocity (travelling speed) $v_{\textrm{av}}$ of the particle is not equal to the magnitude of its average velocity $\vb{v_{av}}$ over the same portion of its path (\ref{1.3.1}): $v_{\textrm{av}} \geqslant \abs{\,\vb{v}\,}$ where the equality sign corresponds to a rectilinear portion of the path.
+
+\subsection{}\label{1.3.6} In the case of plane motion of a particle $M$ (\ref{1.2.3}), it often proves convenient to use the polar coordinates $r$ and $\varphi$, where $r$ is the distance from pole $O$ to particle $M$ and $\varphi$ is the vec­torial angle measured from polar axis $OA$ (\figr{fig-01-03}).
+%\begin{wrapfigure}{l}[0pt]{0.5\linewidth}
+\begin{figure}[!ht]
+\centering
+%\includegraphics[width=0.4\textwidth]{figs/ch-01/fig-01-03.pdf}
+\input{figs/ch-01/fig-01-03}
+%  \vspace{-13pt}
+\caption{Polar coordinates of a moving particle.}
+\label{fig-01-03}
+\end{figure}
+%\end{wrapfigure}
+The velocity $\vb{v}$ of particle $M$ can be resolved into two mutually perpendicular components: the \emph{radial velocity} $\vb{v}_{r}$ and the \emph{transverse velocity} $\vb{v}_{\varphi}$:
+\begin{equation*}%
+\vb{v} = \vb{v}_{r} + \vb{v}_{\varphi}
+\end{equation*}
+in which
+\begin{equation*}%
+\vb{v}_{r} = \frac{1}{r} \dv{r}{t} \vb{r},\,\,\textrm{and}\,\,\vb{v}_{\varphi} =  \dv{\varphi}{t} [\vb{kr}]
+\end{equation*}
+where $\vb{r}$ is the polar radius vector of particle $M$, and $\vb{k}$ is the unit vector directed perpendicular to the plane of motion of the particle so that the rotation of radius vector $\vb{r}$ upon an increase in angle $\varphi$ is seen, from the head of unit vector $\vb{k}$, to be counterclockwise.
+
+The magnitude $v$ of the velocity vector of particle $M$, in plane motion, is
+\begin{equation*}%
+v = \sqrt{\left(\dv{r}{t} \right)^{2} + \left( r \dv{\varphi}{t} \right)^{2} }
+\end{equation*}
+During the infinitely short length of time $dt$, polar radius vector $\vb{r}$ of the particle in plane motion sweeps over a sector of a circle, the area of the sector being $dS = r^{2} \,d\varphi/2$. Hence, the quantity
+\begin{equation*}%
+\sigma = \dv{S}{t} = \frac{1}{2}r^{2}\dv{\varphi}{t}=\frac{1}{2} r v_{\varphi}
+\end{equation*}
+is called the \emph{areal} velocity.
