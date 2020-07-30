@@ -172,3 +172,98 @@ During the infinitely short length of time $dt$, polar radius vector $\vb{r}$ of
 \sigma = \dv{S}{t} = \frac{1}{2}r^{2}\dv{\varphi}{t}=\frac{1}{2} r v_{\varphi}
 \end{equation*}
 is called the \emph{areal} velocity.
+
+\section{Acceleration}
+\label{sec-1.4}
+
+
+\subsection{}\label{1.4.1} The concept of acceleration is introduced in mechanics to characterize the rate of change of the velocity vector of a mov­ ing particle. The \emph{average acceleration} in the time interval from $t$ to $t + \Delta t$ is 	the vector $\vb{a_{\textrm{av}}}$, which is equal to the ratio of the increment $\Delta \vb{v}$ of the velocity vector of the particle, during the lime interval, to the length of the time interval $\Delta t$:
+\begin{equation*}%
+\vb{v_{\textrm{av}}} = \frac{\Delta \vb{v}}{\Delta t}
+\end{equation*}
+
+\subsection{}\label{1.4.2} \emph{Acceleration} (or \emph{instantaneous acceleration}) of a moving particle is the vector quantity $\vb{a}$, equal to the first time deriv­ative of the velocity $\vb{v}$ of the particle being considered or, other­ wise, the second time derivative of the particle’s radius vector $\vb{r}$:
+\begin{equation*}%
+\vb{a} = \dv{\vb{v}}{t} = \dv[2]{\vb{r}}{t}
+\end{equation*}
+The acceleration of a moving particle at the instant of time $t$ is the limiting value that the average acceleration $\vb{a_{\textrm{av}}}$ approaches for an infinitely small time interval $\Delta t$. Thus
+\begin{equation*}%
+\vb{a} = \lim_{\Delta t \to 0}\frac{\Delta \vb{v}}{\Delta t} = \lim_{\Delta t \to 0} \vb{a_{\textrm{av}}}
+\end{equation*}
+
+\subsection{}\label{1.4.3} The resolution of vector $\vb{a}$ along the basis of a rectangular Cartesian coordinate system is of the form:
+\begin{equation*}%
+\vb{a} = a_{x} \vb{i} + a_{y} \vb{j} + a_{z} \vb{k}
+\end{equation*}
+The projections of the acceleration vector of a moving particle on the coordinate axes are equal to the first time derivatives of the corresponding velocity projections or, otherwise, the second time derivatives of the corresponding coordinates of the par­ticle:
+\begin{equation*}%
+a_{x} = \dv{v_{x}}{t} = \dv[2]{x}{t}, \,\,a_{y} = \dv{v_{y}}{t} = \dv[2]{y}{t}, \,\,a_{z} = \dv{v_{z}}{t} = \dv[2]{z}{t}
+\end{equation*}
+The magnitude of the acceleration vector is
+\begin{align*}%
+a = \abs{\,a\,} & = \sqrt{\left( \dv{v_{x}}{t}\right)^{2}+\left( \dv{v_{y}}{t}\right)^{2}
++\left( \dv{v_{z}}{t}\right)^{2}} \\
+& = \sqrt{\left( \dv[2]{x}{t}\right)^{2}+\left( \dv[2]{y}{t}\right)^{2}
++\left( \dv[2]{z}{t}\right)^{2}} 
+\end{align*}
+
+
+\subsection{}\label{1.4.4} The acceleration vector of a moving particle lies in the osculating plane (\ref{1.2.4}) passing through point $M$ of the path being considered and is direct­ ed toward the concavity of the path $BC$ (\figr{fig-01-04}). In this plane the acceleration vector $\vb{a}$ can be resolved into two mutually perpendicular components $\vb{a}_{\tau}$ and $\vb{a}_{n}$:
+\begin{equation*}%
+\vb{a} = \vb{a}_{\tau} + \vb{a}_{n}
+\end{equation*}
+
+%\begin{wrapfigure}{l}[0pt]{0.5\linewidth}
+\begin{figure}[!ht]
+\centering
+%\includegraphics[width=0.4\textwidth]{figs/ch-01/fig-01-04.pdf}
+\input{figs/ch-01/fig-01-04}
+%  \vspace{-13pt}
+\caption{Tangential and normal components of the acceleration of a moving particle.}
+\label{fig-01-04}
+\end{figure}
+%\end{wrapfigure}
+
+\subsection{}\label{1.4.5} Component $\vb{a}_{\tau}$ is called the \emph{tangential acceleration} of the moving particle. It is directed along the tangent to the path and equals 
+\begin{equation*}%
+\vb{a}_{\tau} = \dv{v}{t} \vb{\tau} \,\,\, \textrm{and} \,\,\, a_{t} = \dv{v}{t}
+\end{equation*}
+where $\vb{\tau} = \vb{v}/v$ is the unit vector of the tangent, from point $M$ of the path in the direction of velocity $\vb{v}$ of the particle, and $a_{\tau}$ is the projection of the tangential acceleration on the direction of vector $\vb{v}$. The tangential acceleration characterizes the rate of change of the magnitude of the particle’s velocity vector. Vectors $\vb{a}_{\tau}$ and $\vb{v}$ coincide in direction, i.e. $a_{\tau} > 0$, in accelerat­ed motion (\ref{1.3.4}); vectors $\vb{a}_{\tau}$ and $\vb{v}$ are opposite in direction $a_{\tau} < 0$, in decelerated motion of the particle; and $a_{\tau} = 0$ in its uniform motion. If $a_{\tau} = \textrm{const} \neq 0$, the motion is said to be uniformly variable. In uniformly variable motion the magni­tude of the particle’s velocity is linearly time-dependent:
+\begin{equation*}%
+v = v_{0} + a_{\tau}t
+\end{equation*}
+where $v_{0} = v (0)$ is the magnitude of the initial velocity, i.e. the velocity at the initial instant of time $t = 0$. If $a_{\tau} = \textrm{const} > 0$, the motion of the particle is said to be \emph{uniformly accelerated}, whereas if $a_{\tau} = \textrm{const} < 0$, it is said to be \emph{uniformly de­celerated}.
+
+\subsection{}\label{1.4.6} Component $\vb{a}_{n}$ of acceleration $\vb{a}$ of the moving particle is called its \emph{normal acceleration}. It is directed along the principal normal to the path at point $M$ being considered, toward the centre of curvature (\ref{1.2.4}) of the path. Therefore, an is often called the \emph{centripetal acceleration} of the particle. The normal acceleration equals
+\begin{equation*}%
+\vb{a}_{n} = \frac{v^{2}}{R} \vb{n}
+\end{equation*}
+where $\vb{n}$ is the unit vector of the principal normal, and $R$ is the radius of curvature of the path. The normal acceleration characterizes the rate of change in direction of the particle’s velocity vector.
+
+If the particle travels in a straight line the normal acceleration $\vb{a}_{n} = 0$ and the acceleration is equal to the tangential accele­ration of the particle: $\vb{a} = \vb{a}_{\tau}$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
