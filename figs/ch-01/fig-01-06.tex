@@ -1,0 +1,30 @@
+%% !TEX root = ../../handbook-physics.tex
+%%!TEX TS-program = pdflatex
+%%!TEX encoding = UTF-8 Unicode
+
+\begin{tikzpicture}[line cap=round,line join=round,scale=1.5]
+\node[inner sep=0pt] (screw) at (0,-.15)
+    {\includegraphics[width=.05\textwidth]{figs/ch-01/screw-rh.pdf}};
+    
+\draw [rotate around={90.:(0.,2.50)}, thick] (0.,2.50) ellipse (1.82cm and 1.03cm);
+\draw [shift={(0.,3.44)}, thick,-latex,gray]  plot[domain=4.01:5.51,variable=\t]({1.*0.76*cos(\t r)+0.*0.76*sin(\t r)},{0.*0.76*cos(\t r)+1.*0.76*sin(\t r)});
+\draw [shift={(0.,.5)}, thick,-latex,gray]  plot[domain=4.01:5.51,variable=\t]({1.*0.76*cos(\t r)+0.*0.76*sin(\t r)},{0.*0.76*cos(\t r)+1.*0.76*sin(\t r)});
+\draw [ultra thick,-latex] (0.7,-.75)-- (0.7,.25);
+\draw [ultra thick,Maroon,-latex] (0.,1.25)-- (0.,2.46);
+\draw [ultra thick] (0.,2.44)-- (0.,5.);
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.8 with {\arrow{latex}}}
+    ]
+\draw [ultra thick,Maroon,postaction={decorate}] (0.,0.5)-- (0.,1.25);
+\end{scope}
+
+\draw [Maroon](0.3,1) node[] {$\dd \pmb{\varphi}$};
+\draw [Maroon](0.3,2) node[] {$\pmb{\omega}$};
+\fill [fill=SteelBlue] (0.,1.25) circle (1.5pt);
+\draw[color=SteelBlue] (0,1.25) node [ left]{$A$};
+\fill [fill=SteelBlue] (0.,4.) circle (1.5pt);
+\draw[color=SteelBlue] (0,4) node[ left] {$B$};
+\fill [SteelBlue] (0.,0.5) circle (1.5pt);
+\draw[] (0,.5) node [left]{$O$};
+\end{tikzpicture}

@@ -3,26 +3,22 @@
 %%!TEX encoding = UTF-8 Unicode
 
 
-\begin{tikzpicture}[scale=1.2,font=\small]
-
-\draw [shift={(0.,0.)},thick] (0,0) -- (0.:0.27) arc (0.:26.8:0.27);
-\draw [thick,-latex] (0.,0.)-- (4.,0.);
-\draw [thick,Maroon,-latex] (0.,0.)-- (4.,2.)node [midway, above, sloped] (TextNode){$\vb{r}$} ;
-\draw [thick,-latex] (4.,2.)-- (4.44,2.22);
-\draw [thick,latex-] (3.64,2.71)-- (4.,2.);
-\draw [thick,-latex] (4.,2.)-- (4.09,2.93);
-\draw [dashed] (3.64,2.71)-- (4.09,2.93);
-\draw [dashed] (4.09,2.93)-- (4.44,2.22);
-%\begin{scriptsize}
-%\draw [fill=xdxdff] (0.,0.) circle (2.5pt);
-\draw[left] (0,0) node {$O$};
-%\draw [fill=xdxdff] (4.,0.) circle (2.5pt);
-\draw[] (4.06,0.17) node {$A$};
-\fill [SteelBlue] (4,2) circle (1.5pt);
-\draw[below right] (4.12,1.92) node {$M(r,\,\varphi)$};
-\draw[below right] (4.44,2.22) node {$\vb{v}_{r}$};
-\draw[above] (3.64,2.71) node {$\vb{v}_{\varphi}$};
-\draw[above] (4.09,2.93) node {$\vb{v}$};
-\draw[] (0.60,0.13) node {$\varphi$};
-%\end{scriptsize}
+\begin{tikzpicture}[line cap=round,line join=round,scale=1]
+\draw [shift={(0.,0.)},thick,color=SteelBlue] (0,0) -- (0.:0.34) arc (0.:45.:0.34);
+\draw [ultra thick,Maroon,latex-] (2.,2.)-- (0.,0.)node [midway, above, sloped] (TextNode){$\vb{r}$};
+\draw [thick,-latex] (0.,0.)-- (3.,0.);
+\draw [thick,-latex] (2.,2.)-- (3.,3.);
+\draw [ thick,-latex] (2.,2.)-- (0.56,3.39);
+\draw [ultra thick,-latex] (2.,2.)-- (1.56,4.39);
+\draw [dashed,gray] (1.56,4.39)-- (3.,3.);
+\draw [dashed,gray] (1.56,4.39)-- (0.56,3.39);
+\draw[] (-0.26,0.20) node {$O$};
+\fill [fill=SteelBlue] (2.,2.) circle (1.25pt);
+\fill [fill=SteelBlue] (0.,0.) circle (1.25pt);
+\draw[SteelBlue] (2,2.2) node [below right]{$M(r,\varphi)$};
+\draw[] (3.08,0.20) node {$A$};
+\draw[] (3.3,3) node []{$\vb{v}_r$};
+\draw[] (0.29,3.41) node {$\vb{v}_{\varphi}$};
+\draw[] (1.65,4.58) node {$\vb{v}$};
+\draw[SteelBlue] (0.65,0.20) node {$\varphi$};
 \end{tikzpicture}

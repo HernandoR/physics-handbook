@@ -56,7 +56,8 @@
 %\setlength{\parskip}{0.5\baselineskip}
 
 \newcommand*\figr[1]{\hyperref[#1]{Figure~\ref{#1}}}
-
+\newcommand*\ssect[1]{\hyperref[#1]{(\ref{#1})}}
+\newcommand*\sect[1]{\hyperref[#1]{(Section~\ref{#1})}}
 
 \usepackage{amsmath}
 \usepackage{physics}
@@ -75,6 +76,9 @@
 
 \usepackage{tkz-euclide}
 
+\usepackage{amsbsy}
+
+\usepackage{hyphenat}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -83,6 +87,8 @@
 \date{}                                           % Activate to display a given date or no date
 
 \begin{document}
+\hyphenation{fr-a-me}
+
 \maketitle
 \frontmatter
 
@@ -92,6 +98,7 @@
 \mainmatter
 \part{Mechanics}
 \input{01-kinematics}
+\input{02-newtons}
 
 \backmatter
 
