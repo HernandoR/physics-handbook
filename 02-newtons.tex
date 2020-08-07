@@ -110,3 +110,53 @@ The velocity of the centre of mass is
 \end{equation*}
 The momentum of a system is equal to the product of the mass of the whole system by the velocity of its centre of mass: $\vb{p}= m\vb{v}_{C}$.
 
+\section{Newton's Second Law}
+\label{sec-2.4}
+
+\subsection{}\label{2.4.1} The basic law of the dynamics of a particle is Newton’s second law, which discusses how the mechanical motion of a particle is changed by the effect of forces applied to it. \emph{New­ton's second law} states: the rate of change in the momentum p of a particle is equal to the force $\vb{F}$ acting on it. Thus
+\begin{equation*}%
+\dv{\vb{p}}{t} = \vb{F} \,\,\textrm{or}\,\,\dv{t} (m \vb{v}) = \vb{F}
+\end{equation*}
+where $m$ and $\vb{v}$ are the mass and velocity of the particle.
+
+If several forces act simultaneously on a particle, the force $\vb{F}$ in Newton’s second law is understood to he the geometric sum of all acting forces, both active forces and constraint reactions \ssect{2.2.3}, i.e. the resultant force \ssect{2.2.2}.
+
+\subsection{}\label{2.4.2} The vector quantity $\vb{F} \dd t$  is called an element of \emph{impulse of force} $\vb{F}$ during the infinitely short time $\dd t$ of its action. The impulse of force $\vb{F}$ acting in the finite time interval from $t = t_{1}$ to $t = t_{2}$ is equal to the definite integral $\int_{t_{1}}^{t_{2}} \vb{F} \dd t$, where $\vb{F}$, in
+the general case, depends upon the time $t$.
+
+According to Newton’s second law, the change in the momentum of a particle is equal to the impulse of the force acting on it:
+\begin{equation*}%
+\dd \vb{p} =  \vb{F} \dd t = \Delta \vb{p} = \vb{p}_{2} - \vb{p}_{1}  =\int_{t_{1}}^{t_{2}} \vb{F} \dd t
+\end{equation*}
+where $\vb{p}_{2}= \vb{p} (t_{2})$ and $\vb{p}_{1}= \vb{p} (t_{1})$ are the values of the momen­tum of a particle at the end  $t = t_{2}$ and beginning $t = t_{1}$ of Ihe time interval being considered.
+
+\subsection{}\label{2.4.3} Since in Newtonian mechanics the mass $m$ of a particle is independent of its state of motion, $\dv*{m}{t} = 0$. Hence, the mathematical expression of Newton’s second law can also be presented in the form
+\begin{equation*}%
+\vb{a} = \frac{\vb{F}}{m}
+\end{equation*}
+where $\vb{a} = \dv*{\vb{v}}{t} = \dv*[2]{\vb{r}}{t}$ is the acceleration of the particle and $\vb{r}$ is its radius vector. The corresponding statement of \emph{Newton s second law reads}: the acceleration of a particle coin­cides in direction with the force acting on it and is equal to the ratio of this force to the mass of the particle. The tangential and normal accelerations of a particle (\ref{1.4.4}, \ref{1.4.5} and \ref{1.4.6}) are determined by the corresponding compo­nents of force $\vb{F}$:
+\begin{align*}%
+\vb{a}_{\tau} & = \frac{\vb{F}_{\tau}}{m}, \,\, a_{\tau} = \dv{v}{t} = \frac{F_{\tau}}{m}\\
+and& \\
+\vb{a}_{n} & = \frac{\vb{F}_{n}}{m}, \,\, a_{n} = \frac{v^{2}}{R} = \frac{F_{n}}{m}
+\end{align*}
+where $v$ is Ihe magnitude of the particle’s velocity vector, and $R$ is the radius of curvature of its path. The force $F_{n}$, imparting normal acceleration to a particle, is directed toward the centre
+of curvature \ssect{1.2.4} of the particle’s path and is therefore called the \emph{centripetal force}.
+
+\subsection{}\label{2.4.4} If a particle is subject to the simultaneous action of sev­ eral forces, $\vb{F_{1}}, \,\vb{F_{2}},\,\vb{F_{3}},\ldots{} \,\vb{F_{n}}$, its acceleration is
+\begin{equation*}%
+\vb{a} = \frac{1}{m} \sum_{l=1}^{n}\vb{F}_{l} = \sum_{l=1}^{n}\vb{a}_{l} 
+\end{equation*}
+where $\vb{a}_{l} = \vb{F}_{l}/m$. Consequently, each of the forces acting si­multaneously on a particle imparts to it the acceleration it would have if there were no other forces (\emph{principle of superposi­tion, or independence, of forces}).
+
+The equation
+\begin{equation*}%
+m \dv[2]{\vb{r}}{t}  = \vb{F} = \sum_{l=1}^{n} \vb{F}_{l}
+\end{equation*}
+is called the \emph{differential equation of motion of a particle}.
+
+In projections on the axes of a rectangular Cartesian coordinate system, this equation is of the form
+\begin{equation*}%
+m \dv[2]{x}{t}  = F_{x},\,\,m \dv[2]{y}{t}  = F_{y},\,\,m \dv[2]{z}{t}  = F_{z}
+\end{equation*}
+where $x$, $y$ and $z$ are the coordinates of the moving particle.
