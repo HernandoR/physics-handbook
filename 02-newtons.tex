@@ -134,7 +134,7 @@ where $\vb{p}_{2}= \vb{p} (t_{2})$ and $\vb{p}_{1}= \vb{p} (t_{1})$ are the valu
 \begin{equation*}%
 \vb{a} = \frac{\vb{F}}{m}
 \end{equation*}
-where $\vb{a} = \dv*{\vb{v}}{t} = \dv*[2]{\vb{r}}{t}$ is the acceleration of the particle and $\vb{r}$ is its radius vector. The corresponding statement of \emph{Newton s second law reads}: the acceleration of a particle coin­cides in direction with the force acting on it and is equal to the ratio of this force to the mass of the particle. The tangential and normal accelerations of a particle (\ref{1.4.4}, \ref{1.4.5} and \ref{1.4.6}) are determined by the corresponding compo­nents of force $\vb{F}$:
+where $\vb{a} = \dv*{\vb{v}}{t} = \dv*[2]{\vb{r}}{t}$ is the acceleration of the particle and $\vb{r}$ is its radius vector. The corresponding statement of \emph{Newton's second law reads}: the acceleration of a particle coin­cides in direction with the force acting on it and is equal to the ratio of this force to the mass of the particle. The tangential and normal accelerations of a particle (\ref{1.4.4}, \ref{1.4.5} and \ref{1.4.6}) are determined by the corresponding compo­nents of force $\vb{F}$:
 \begin{align*}%
 \vb{a}_{\tau} & = \frac{\vb{F}_{\tau}}{m}, \,\, a_{\tau} = \dv{v}{t} = \frac{F_{\tau}}{m}\\
 and& \\
@@ -160,3 +160,87 @@ In projections on the axes of a rectangular Cartesian coordinate system, this eq
 m \dv[2]{x}{t}  = F_{x},\,\,m \dv[2]{y}{t}  = F_{y},\,\,m \dv[2]{z}{t}  = F_{z}
 \end{equation*}
 where $x$, $y$ and $z$ are the coordinates of the moving particle.
+
+
+
+\section{Newton's Third Law. Motion of the Centre of Mass}
+\label{sec-2.5}
+
+\subsection{}\label{2.5.1} The mechanical action exerted by bodies on one another is of the nature of their \emph{interaction}. This is what \emph{Newton's third law} deals with: two particles exert forces on each other which are equal in magnitude and opposite in direction along a line connecting these particles.
+
+If $\vb{F}_{ik}$ is a force exerted on the $i$th particle by the $k$th one, and $\vb{F}_{ki}$ is, the force exerted on the $k$th particle by the $i$th one, then, according to Newton’s third law,
+\begin{equation*}%
+\vb{F}_{ki} = - \vb{F}_{ik}
+\end{equation*}
+Forces $\vb{F}_{ik}$ and $\vb{F}_{ki}$ are applied to different particles and can be mutually counterbalanced only when particles $i$ and $k$ belong to the same perfectly rigid body.
+
+\subsection{}\label{2.5.2} Newton’s third law is an essential supplement to the first and second laws. It permits us to go over from the dynam­ics of a separate particle to that of an arbitrary mechanical system (system of particles). It follows from Newton’s third law that in any mechanical system the geometric sum of all the internal forces \ssect{2.2.4} equals zero:
+\begin{equation*}%
+\sum_{i=1}^{n}\sum_{k=1}^{n} \vb{F}_{ik} = 0
+\end{equation*}
+where $n$ is the number of particles in the system, and $\vb{F}_{ii} = 0$. The vector $\vb{F}^{\textrm{ext}}$, equal to the vector sum of all the external forces \ssect{2.2.4} acting on the system, is called the \emph{principal vector of external forces}:
+\begin{equation*}%
+\vb{F}^{\textrm{ext}} = \sum_{i=1}^{n} \vb{F}^{\textrm{ext}}_{i}
+\end{equation*}
+where $\vb{F}^{\textrm{ext}}_{i}$ is the resultant external force applied to the $i$th particle.
+
+\subsection{}\label{2.5.3} It follows from Newton’s first and second laws that the first derivative with respect to the time $t$ of the momentum $\vb{p}$ of a mechanical system \ssect{2.3.4} is equal to the principal vector of all external forces applied to the system. Thus
+\begin{equation*}%
+\dv{\vb{p}}{t} = \vb{F}^{\textrm{ext}}
+\end{equation*}
+This equation expresses the \emph{law of the change in the momentum of a system}. 
+
+Since $\vb{p}=m\vb{v}_{c}$, where $m$ is the mass of a system and $\vb{v}_{c}$ is the velocity of its centre of inertia, or mass, the \emph{law of motion of the centre of mass} of a mechanical system is of the form
+\begin{equation*}%
+\dv{t} (m\vb{v}_{c}) = \vb{F}^{\textrm{ext}}\,\,\textrm{or}\,\, m\vb{a}_{c} = \vb{F}^{\textrm{ext}}
+\end{equation*}
+where $\vb{a}_{c} = \dv*{\vb{v}_{c}}{t}$ is the acceleration of the centre of mass. Thus, the centre of mass (centre of inertia) of a mechanical system travels like a particle whose mass is equal to the mass of the whole system and which is subject to a force equal to the principal vector of the external forces applied to the system. If the system being considered is a rigid body that travels with translational motion \ssect{1.5.1}, the velocities $\vb{v}_{i}$of all the points of the body and $\vb{v}_{c}$ of its centre of mass are the same and are equal to velocity $\vb{v}$ of the body. Correspondingly, the accelera­tion of the body $\vb{a} = \vb{a}_{c}$ and the \emph{basic equation in the dynamics of translational motion of a rigid body} is of the form
+$m \vb{a} = \vb{F}^{\textrm{ext}}$.
+
+\section{Motion of a Body of Variable Mass}
+\label{sec-2.6}
+
+\subsection{}\label{2.6.1} In Newtonian mechanics the mass of a body can be changed only if particles of matter are detached from or added to it. An example of such a body is a rocket. In its flight the mass of the rocket is gradually reduced because the gaseous products of combustion in the rocket engine are ejected through the noz­zles.
+
+\emph{The equation of translational motion of a body of variable mass (Meshchersky equation)} is
+\begin{equation*}%
+m \dv{\vb{v}}{t} = \vb{F}^{\textrm{ext}} + (\vb{v}_{1} - \vb{v} ) \dv{m}{t}
+\end{equation*}
+where $m$ and $\vb{v}$ are the mass and velocity of the body at the instant of time being considered, $\vb{F}^{\textrm{ext}}$ is the principal vector of the external forces \ssect{2.5.2} acting on the body, and $\vb{v}_{1}$ is the velocity of the detracted particles \emph{after separation} from the rocket (if $\dv*{m}{t} < 0$) or the added particles \emph{before being joined} (if $\dv*{m}{t} > 0$).
+
+\subsection{}\label{2.6.2} The second member on the right-hand side of the Me­ shchersky equation represents the additional force acting on a body of variable mass. It is called the \emph{reactive force}:
+\begin{equation*}%
+\vb{F}_{\textrm{r}}= (\vb{v}_{1} - \vb{v} ) \dv{m}{t}
+= \vb{u}  \dv{m}{t}
+\end{equation*}
+where $\vb{u} = \vb{v}_{1} - \vb{v} $ is the relative velocity of the particles being separated from or joined to the body, i.e. their velocity with respect to a reference frame in translational motion together with the body.
+
+The reactive force characterizes the mechanical action exerted on the body by the particles separated from or joined to it (for instance, the effect of the ejected exhaust gases on the rocket). 
+
+\subsection{}\label{2.6.3} The equation of motion of a rocket not subject to the action of external forces is
+\begin{equation*}%
+m \dv{\vb{v}}{t} = \vb{u} \dv{m}{t}
+\end{equation*}
+If the initial velocity of the rocket is zero the rocket flies in a straight line in the direction opposite to that of the relative velocity $\vb{u}$ of the exhaust gases ejected from the engine nozzle. Here
+\begin{equation*}%
+m \dv{v}{t} = -u \dv{m}{t}
+\end{equation*}
+and at $\vb{u} = \textrm{const}$ the relation between the velocity of the rocket and its mass is expressed by \emph{Tsiolkovsky's formula}
+\begin{equation*}%
+v = u \ln \frac{m_{0}}{m}
+\end{equation*}
+where $m_{0}$ is the initial, or launching, mass of the rocket. 
+
+\subsection{}\label{2.6.4} The maximum velocity that a rocket can reach in the absence of external forces is called its \emph{characteristic velocity}. This velocity is acquired at the moment the rocket engine stops because it has used up all the fuel and oxidizer that were on board,
+\begin{equation*}%
+v_{\textrm{max}}=  u \ln  \frac{m_{0}}{m_{0}-m_{\textrm{f}}}
+\end{equation*}
+where $m_{\textrm{f}}$ is the initial mass of the fuel and oxidizer.
+The effects of the earth’s gravity and air resistance lead to an appreciable reduction in the maximum velocity actually ac­quired by the rocket, during the operation of its engine, as com­pared to the characteristic velocity.
+
+\subsection{}\label{2.6.5} The \emph{characteristic velocity of a multistage} (combination) \emph{rocket} is
+\begin{equation*}%
+v_{\textrm{max}}= \sum_{i=1}^{n} u_{i} \ln  \frac{m_{0i}}{m_{0i}-m_{\textrm{f}i}}
+\end{equation*}
+where $n$ is the total number of stages of the rocket, $m_{\textrm{f}i}$ is the mass of the fuel and oxidizer intended for the operation of the $i$th stage engine, $ u_{i}$ is the exhaust gas velocity (nozzle velocity) of the $i$th stage engine, and $m_{0i}$ is the launching mass of the multistage rocket, including all the stages from the $i$th to the $n$th. The velocity increase of a multistage rocket, compared to that of a single-stage one having the same launching mass and the same fuel and oxidizer capacity, is due to the reduction in the mass of the rocket as the first, second and subsequent stages are consecutively jettisoned when their fuel has been ex­hausted.
+	
