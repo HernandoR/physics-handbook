@@ -275,3 +275,78 @@ As a rule, $\vb{F}^{\textrm{ext}}\not\equiv 0$ and $\vb{p} \neq \textrm{const}$.
 under the condition that $F^{\textrm{ext}}_{x} \equiv 0$. If, for instance, no other external forces, except gravity, are acting on a system, the horizontal component of the momentum of the system, perpendicular to the direction of the gravitational force, remains con­stant.
 
 \subsection{}\label{2.7.4} In some processes (e.g. collisions or in firing shells, etc.), the momenta of the parts of the system undergo great changes in relatively short time intervals. This is due to internal forces of interaction, of short duration, but of quite considerable magni­tude, developed within the system. In comparison with these forces, all external forces acting continuously on the system (for instance, gravity) are small. In such processes, the action of the system of external forces can usually be ignored, i.e. it can be assumed that the momentum of the system as a whole is not changed in the process being considered.
+
+\section[Galilean Transformations]{Galilean Transformations. Mechanical Principle of Relativity}
+\label{sec-2.8} 
+
+\subsection{}\label{2.8.1} A \emph{Galilean transformation} is a transformation of coordi­nates and time that is applied in Newtonian mechanics in going over from one inertial frame of reference $K (x, y, z, t)$ to another $K' (x , y', z', t')$ which travels with translational motion with respect to $K$ at the constant velocity $\vb{V}$. The Galilean transformation is based on axioms concerning the absolute nature of time intervals and of lengths. The first axiom con­tends that the passage of time (time interval between any two events) is the same in all inertial frames of reference. According to the second axiom, the dimensions of a body are independent of its velocity of motion with respect to the frame of ref­erence.
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+%\includegraphics[width=0.5\textwidth]{figs/ch-02/fig-02-02.pdf}
+\input{figs/ch-02/fig-02-02}
+%  \vspace{-13pt}
+\caption{A general Galilean transformation between two frames of reference $K$ and $K'$ moving with a constant velocity $\vb{V}$.}
+\label{fig-02-02}
+\end{figure}
+%\end{wrapfigure}
+If the like axes of Cartesian coordinates of inertial reference frames $K$ and $K'$ are drawn parallel to one another pairwise and if at the initial instant of time $(t = t' = 0)$ the origins $O$ and $O'$ of coordinates coincide with each other (\figr{fig-02-02}), the Galilean transformations are of the form:
+\begin{align*}%
+x' & = x - V_{x}t,\,\, y'= y - V_{y}t,\,\, z'= z - V_{z}t\,\,\textrm{and}\,\, t'= t\,\,\textrm{or}\\
+\vb{r}' & = \vb{r} - \vb{V}t\,\,\textrm{and}\,\,t' = t,
+\end{align*}
+where $x, y, z$ and $x', y', z'$ are the coordinates of point M in the frames of reference $K$ (at the instant of time $t$) and $K'$ (at the instant of time $t' = t$), $\vb{r}$ and $\vb{r}'$ are the radius vectors of point $M$ in the same frames of reference, and $V_{x},\, V_{y}$ and $V_{z}$ are the projections of the velocity $\vb{V}$ of reference frame $K'$ onto the coordinate axes of reference frame $K$.
+
+The coordinate axes are usually arranged so that frame of ref­erence $K'$ travels along the positive direction of axis $OX$ (\figr{fig-02-03}). Under this condition the Galilean transformations are of their simplest form:
+\begin{equation*}%
+x = x - Vt, \,\,y' = y, \,\,z’= z \,\,\textrm{and}\,\, t' = t
+\end{equation*}
+
+\subsection{}\label{2.8.2} A consequence of the Galilean transformations is the following law for transforming the velocity of arbitrary point $M$ (\figr{fig-2.2}) in going over from one inertial frame of reference $K$ (the velocity of the point is $\vb{v} = \dv*{\vb{r}}{t}$) to another $K'$ (in which the velocity of the same point is $\vb{v}' = \dv*{\vb{r}'}{t}$):
+\begin{equation*}%
+\vb{v}' = \vb{v} - \vb{V}
+\end{equation*}
+The projections of the velocity on like coordinate axes are transformed accordingly:
+\begin{equation*}%
+v_{x'}' = v_{x} - V_{x}, \,\,v_{y'}' = v_{y} - V_{y} \,\,\textrm{and}\,\,v_{z'}' = v_{z} - V_{z} 
+\end{equation*}
+In particular, when reference frame $K'$ travels along the positive direction of axis $OX$ (\figr{fig-02-03})
+\begin{equation*}%
+v_{x'}' = v_{x} - V, \,\,v_{y'}' = v_{y} \,\,\textrm{and}\,\,v_{z'}' = v_{z}
+\end{equation*}
+The accelerations of point $M$ in frames of reference $K' (\vb{a} =\dv*{\vb{v}}{t})$ and $K' (\vb{a}' =\dv*{\vb{v}'}{t})$ are the same: $\vb{a}' = \vb{a}$.
+
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+%\includegraphics[width=0.5\textwidth]{figs/ch-02/fig-02-03.pdf}
+\input{figs/ch-02/fig-02-03}
+%  \vspace{-13pt}
+\caption{Galilean transformation between two frames of reference $K$ and $K'$ when $K'$ travels along direction of axis $OX$.}
+\label{fig-02-03}
+\end{figure}
+%\end{wrapfigure}
+Hence, the acceleration of a particle is independent of the choice of the inertial frame of reference or, in other words, it is inva­riant with respect to Galilean transformations.
+
+\subsection{}\label{2.8.3} The forces of interaction between particles depend only upon their relative position and their velocity with respect to one another. The relative position of any two particles, 2 and 1, is represented by a vector equal to the difference between the radius vectors of the two particles, i.e. to the vector $\vb{r}_{21} = \vb{r}_{2} - \vb{r}_{1}$ in reference frame $K$ and to the vector $\vb{r}_{21}' = \vb{r}_{2}' - \vb{r}_{1}'$( in reference frame $K'$. It follows from the Galilean transformations that $\vb{r}_{21} = \vb{r}_{21}' - \vb{r}_{21}$. Therefore, the distance between particles 1 and 2 is the same in reference frames $K$ and $K'$:
+\begin{align*}%
+\vb{r}_{21}' & = \vb{r}_{21} = \,\,\textrm{or}\\
+(x_{2}' - x_{1}')^{2} & + (y_{2}' - y_{1}')^{2} + (z_{2}' - z_{1}')^{2}\\
+= (x_{2} - x_{1})^{2} & + (y_{2} - y_{1})^{2} + (z_{2} - z_{1})^{2}
+\end{align*}
+The velocity of particle 2 with respect to particle 1 is equal to the difference of the velocities of these two particles: $\vb{v}_{2}- \vb{v}_{1}$(in reference frame $K$) and $\vb{v}_{2}'- \vb{v}_{1}'$ (in reference frame $K'$). It follows from the Galilean transformations that $\vb{v}_{2}'- \vb{v}_{1}' = \vb{v}_{2}- \vb{v}_{1}$. 
+
+Thus, the relative position and the velocity of relative motion of any two particles are independent of the choice of inertial reference frame; they are invariant under a Galilean transfor­mation. Accordingly, the forces acting on a particle are also invariant under a Galilean transformation: $\vb{F}' = \vb{F}$.
+
+\subsection{}\label{2.8.4} Equations expressing Newton’s laws \ssect{2.4.3} and \ssect{2.5.1} are invariant with respect to Galilean transformations, i.e. their form is unchanged in transforming the coordinates and time from one inertial frame of reference $(K)$ to another $(K')$:
+\begin{align*}%
+m\vb{a} = \vb{F}\,\,\textrm{and}\,\, \vb{F}_{ki} = - \vb{F}_{ik}\,\, \intertext{(in reference frame $K$)}\\
+m'\vb{a}' = \vb{F}'\,\,\textrm{and}\,\, \vb{F}_{ki}' = - \vb{F}_{ik}'\,\, \intertext{(in reference frame $K'$)}
+\end{align*}
+where $m' = m$ is the mass of the particle being considered and is the same in all frames of reference.
+
+Thus, the \emph{mechanical principle of relativity (Galileo's principle of relativity)} is valid in classical mechanics. It contends that the laws of mechanics are the same in all inertial frames of ref­erence. This implies that under the same conditions all mechan­ical processes proceed in the same way in different frames of reference. Consequently, it is impossible to establish, by means of any mechanical experiments conducted within a closed sys­tem of bodies, whether the system is at rest or is travelling at uniform velocity in a straight line (with respect to any inertial frame of reference whatsoever).
+
+The mechanical principle of relativity points to the fact that all inertial frames of reference are equally valid in mechanics. It is impossible to single out any special, or ``main'', inertial frame of reference with respect to which the motion of bodies could be regarded as ``absolute motion''.
+
+\subsection{}\label{2.8.5} The principle of relativity was generalized to include all physical phenomena by Albert Einstein in his special theory of relativity \ssect{5.1.2}. It was found that coordinates and time in various inertial frames of reference are related by the Lorentz transformations \ssect{5.3.2} rather than the Galilean transforma­tions. But at low velocities of relative motion of the frames of reference (in comparison to the velocity of light in free space), the Lorentz transformations become the Galilean transforma­tions.

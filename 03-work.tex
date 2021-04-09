@@ -1,0 +1,443 @@
+% !TEX root = handbook-physics.tex
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+
+
+\chapter{Work And Mechanical Energy}
+\label{ch-03}
+
+\section{Energy, Work and Power}
+\label{sec-3.1}
+\subsection{}\label{3.1.1} Energy is a scalar physical quantity, which is a common measure of the various forms of motion of matter dealt with in physics. The energy of a system quantitatively characterizes this system with respect to the conversions of motion that are possible within it. These conversions take place due to the in­teraction between parts of the system, both with one another and with external bodies (the environment). The concept of various forms of energy has been introduced in physics to ana­lyze the qualitatively different forms of motion and the interac­tions corresponding to them. These include: mechanical \ssect{3.4.1}, internal \ssect{9.1.2}, electromagnetic \ssect{31.2.1}, nuclear \ssect{42.2.2} and various other forms of energy.
+
+\subsection{}\label{3.1.2} The mechanical motion of a body is changed by forces exerted on the body by other bodies. Used in mechanics for a
+quantitative description of such a process of energy exchange between interacting bodies is the concept of the work done by the forces applied to the body being considered. An \emph{element of work} done by force $\vb{F}$ in the infinitely small displacement $d\vb{r}$ is the scalar quantity
+\begin{equation*}%
+\var{W}= \vb{F}\,\dd\vb{r}= \vb{Fv}\dd{t}
+\end{equation*}
+where $\vb{r}$ and $\vb{v} = \dv*{\vb{r}}{t}$ are the radius vector and velocity of the point of the body at which the force is applied, and $\dd t$ is the infinitely short time interval during which force $\vb{F}$ performs the work $\var{W}$ (the meaning of the notation $\var{W}$ is given in \ssect{3.1.8}). In rectangular Cartesian coordinates
+\begin{align*}%
+\var{W} & = F_{x}\dd x + F_{y}\dd y + F_{z}\dd z \\
+&  = (F_{x}v_{x}+ F_{y}v_{y} + F_{z}v_{z}) \dd t
+\end{align*}
+where $x$, $y$ and $z$ are the coordinates of the point of application of the force, and $F_{x}$, $F_{y}$, $F_{z}$ and $v_{x}$, $v_{y}$, $v_{z}$ are the projections of vectors $\vb{F}$ and $\vb{v}$ on the coordinate axes.
+
+\subsection{}\label{3.1.3} The expression for an element of work can also be pre­sented in the form
+\begin{equation*}%
+\var{W} = F \, \dd s \cos \alpha = F_{\tau} \dd s
+\end{equation*}
+where $\dd s = \abs{\dd \vb{r}}$ is an element of the length of the path of the point of force application during the infinitely short time interval $\dd t$, $\alpha$ is the angle between vectors $\vb{F}$ and $\dd \vb{r}$, and $F_{\tau} = F \cos \alpha$ is the projection of the force in the direction of the displacement $\dd \vb{r}$. A force normal to the path of its point of appli­cation performs no work.
+
+Force $\vb{F}$ is called the \emph{motive force} if $F_{\tau} >0$, so that $\var{W} > 0$. If $F_{\tau} < 0$ (so that $\var{W} < 0$), force $\vb{F}$ is called the \emph{retarding force} (\emph{force of resistance}).
+
+\subsection{}\label{3.1.4} If a mechanical system is subject to the simultaneous action of forces $ \vb{F}_{1},\,\vb{F}_{2}\, \ldots \,\vb{F}_{n}$, the work $\var{W}$ done by them during the infinitely short time $\dd t$ is equal to the algebraic sum of the work done during the same time $\dd t$ by each of the forces separately. Thus
+\begin{equation*}%
+\var{W} = \sum_{i=1}^{n} \var{W}_{i} = \sum_{i=1}^{n} \vb{F}_{i} \dd \vb{r}_{i} = \sum_{i=1}^{n} \vb{F}_{i}\vb{v}_{i} \dd t
+\end{equation*}
+where $\vb{r}_{i}$ and $\vb{v}_{i}$ are the radius vector and velocity of the point of application of force $\vb{F}_{i}$.
+
+For example, for a particle $\vb{r}_{i} = \vb{r}$ is the radius vector of the particle and $\vb{v}_{i} = \vb{v}$ is its velocity. Accordingly, $\var{W} = \vb{F} \dd \vb{r} = \vb{Fv}\dd t$, where $\vb{F} = \sum_{i=1}^{n} \vb{F}_{i}$ is the resultant force \ssect{2.2.2}. It follows from Newton’s second law \ssect{2.4.1} that for a particle
+\begin{equation*}%
+\var{W}= \vb{v} \dd \vb{p},
+\end{equation*}
+where $\vb{p} = m \vb{v}$ is the momentum of the particle, and $m$ is its mass.
+
+In the translational motion of a perfectly rigid body $\dd \vb{r}_{i} = = \dd \vb{r}_{C}$ and $\vb{v}_{i} = \vb{v}_{C}$, where $\vb{r}_{C}$ and $\vb{v}_{C}$ are the radius vector and velocity of the centre of mass \ssect{2.3.3} of the body.
+
+The work done by internal forces in any motion of a perfectly rigid body equals zero. Hence, in the translational motion of such a body $\var{W} = \vb{F}^{\textrm{ext}} \dd \vb{r}_{C} = \vb{F}^{\textrm{ext}}\vb{v}_{C} \dd t$, where $\vb{F}^{\textrm{ext}}$ is the principal vector of external forces \ssect{2.5.2}. It follows from the law of motion of the centre of mass \ssect{2.5.3} that
+\begin{equation*}%
+\var{W} = \vb{v}_{C} \dd \vb{p},
+\end{equation*}
+where $\vb{p} = m\vb{v}_{C}$ is the momentum of a rigid body of mass $m$ travelling at the velocity $\vb{v} = \vb{v}_{C}$.
+
+
+\subsection{}\label{3.1.5} The work $W$ done by force $\vb{F}$ along a finite portion of the path $L$ of its point of application is equal to the algebraic sum of the work done over all the infinitely small portions of this path, i.e. it is expressed by the line integral
+\begin{equation*}%
+W = \int_{(L)} \vb{F} \dd \vb{r} = \int_{0}^{s} F_{\tau} \dd s
+\end{equation*}
+where $s$ is the length of arc measured off along the path from the beginning of the portion of the path being considered, and $F_{\tau}$ the projection of the force onto the direction of displace­ment $\dd \vb{r}$ of the point of force application. 
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-03/fig-03-01.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{Graphical representation of the resultant work.}
+\label{fig-03-01}
+\end{figure}
+
+
+To calculate this integral it is necessary to know the dependence of $F_{\tau}$ on $s$ along the given path $L$. If this dependence is represented graphically (\figr{fig-03-01}), the required work $W$ is proportional to the hatched area in \figr{fig-03-01}.
+
+
+\subsection{}\label{3.1.6} \emph{Potential-field (conservative)} forces are ones whose work depends only on the initial and final positions of their points of application; it depends neither on the shape of the path of these points nor on their laws of motion along this path.
+
+For example, the forces of interaction between the parts (i.e. particles) of a system are said to be potential (conservative) forces if they depend only upon the configuration of the system, i.e. on the relative position of all its particles. The work done by these forces in moving the system from one arbitrary position to another is independent of the kind of displacement, but is completely determined by the initial and final configurations of the system. Examples are the forces of electrostatic and grav­itational interaction.
+
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-03/fig-03-02.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{Graphical representation of the resultant work.}
+\label{fig-03-01}
+\end{figure}
+
+A \emph{steady (stationary)} field \ssect{2.2.1} is said to be \emph{potential}, or con­servative, if force $F$, which it exerts on a particle located in the field, is a potential, or conservative force. This implies that force $F$ depends only upon the position of the particle in the field, and that the amounts of work done by force $F$ in displacing the particle from one arbitrary position (1) to ano­ther (2) (\figr{fig-03-02}) along any two paths, for instance, $1a2$ (work
+$W_{1a2}$) and $1b2$ (work $W_{1b2}$), are the same:
+\begin{equation*}%
+W_{1a2} = W_{1b2} = \int_{1}^{2} \vb{F} \dv{\vb{r}} 
+\end{equation*}
+Accordingly, the work done by a conservative force in displac­ing its point of application along any closed path $L$ (for exam­ple, $1a2b1$) is equal to zero:
+\begin{equation*}%
+\oint_{(L)} \vb{F} \dd{\vb{r}} \equiv 0
+\end{equation*}
+In the general case, the external bodies that set up the field being considered can be in motion with respect to an inertial frame of reference, so that their field is not stationary, i.e. force $\vb{F}$ depends explicitly on time: 
+\begin{equation*}%
+\pdv{\vb{F}}{t} \nequiv 0 
+\end{equation*}
+A \emph{nonstationary field} is a \emph{conservative} one if the work done by force $\vb{F}$ upon instanta­neous displacement of its point of application along any closed path $L$ equals zero:
+\begin{equation*}%
+\oint_{(L)} \vb{F} \dd{\vb{r}} \equiv 0
+\end{equation*}
+Here $\vb{F}$ depends, not only on the coordinates of the point of appli­cation, but on the time as well. To calculate this integral, how­ ever, time is assumed to be a fixed parameter.
+
+
+\subsection{}\label{3.1.7} Among the nonconservative forces are dissipative and gyroscopic forces. \emph{Dissipative forces} are ones whose total work done in displacing a closed system in any way is always negative. Such, for instance, are the forces of sliding friction and the forces retarding the motion of bodies in liquids and gases. In contrast to conservative forces, dissipative forces depend, not only on the relative positions of the interacting bodies, but on their relative velocities as well.
+
+\emph{Gyroscopic forces} are ones that depend upon the velocity of the particle on which they act. They are directed perpendicular to this velocity. An example is the Lorentz force \ssect{24.1.1} exerted by a magnetic field on a charged particle travelling in this field. The work done by gyroscopic forces is always equal to zero, regardless of how the particle is displaced.
+
+A mechanical system (system of particles) is said to be \emph{conservative} if all the internal forces in it are conservative ones and all the external forces are both conservative and stationary. Systems that do not satisfy these conditions are said to be \emph{non-conservative}.
+
+\subsection{}\label{3.1.8} An element of work done by force $\vb{F}$, exerted on a particle by a stationary conservative field, can be represented in the form of an exact differential of a scalar function $\Phi (x, y, z)$ of the coordinates. This is called the force function of the field:
+\begin{align*}%
+\vb{F} \dd{r} & = \dd{\Phi} \quad \textrm{or} \\
+F_{x}\dd{x} + F_{y}\dd{y}+ F_{z}\dd{z} & = \pdv{\Phi}{x}\dd{x} + \pdv{\Phi}{y}\dd{y} + \pdv{\Phi}{z}\dd{z}
+\end{align*}
+Hence
+\begin{align*}%
+F_{x} &= \pdv{\Phi}{x}, \quad F_{x} = \pdv{\Phi}{x}, \quad F_{x} = \pdv{\Phi}{x} \quad \textrm{and} \\
+\vb{F} & = \grad \Phi
+\end{align*}
+These last relations are also valid for a non-stationary conser­vative field, whose force function depends, not only on the coordinates, but on time as well: $\Phi = \Phi (x, y, z, t)$. But here
+\begin{equation*}%
+\vb{F} \dd{\vb{r}} = \dd{\Phi} - \pdv{\Phi}{t} \dd{t}
+\end{equation*}
+An element of work done by a nonconservative force cannot be represented in the form of an exact differential of any function whatsoever of the coordinates. This is precisely why an element of work done by an arbitrary force is denoted by $\delta W$.
+
+\subsection{}\label{3.1.9} The concept of power is used in mechanics to characterize the amount of work done in unit time. \emph{Power (instantaneous pow­er)} is the scalar physical quantity $P$. It is equal to the ratio of the element of work $\delta W$ to the infinitely short time interval $\dd{t}$ during which it is performed:
+\begin{equation*}%
+P = \dfrac{\delta W}{\dd{t}}
+\end{equation*}
+If $\vb{F}$ is the force doing the work  $\delta W$, the power is the scalar pro­duct of force $\vb{F}$ by the velocity $v$ of its point of application:
+\begin{equation*}%
+P = \vb{Fv} = F_{\tau}v
+\end{equation*}
+In the general case, power may vary with time.
+
+The \emph{average power} in the time interval from $t$ to $t + \Delta t$ is the physical quantity $\expval{P}
+$, which is equal to the ratio of the work W done during this time interval to the length of this inter­val $ \Delta t$:
+\begin{equation*}%
+\expval{P} = \frac{W}{\Delta t}
+\end{equation*}
+
+
+
+\section{Kinetic Energy}
+\label{sec-3.2}
+
+\subsection{}\label{3.2.1} The \emph{kinetic energy} of a body is the energy of its mechanical motion. A change in the kinetic energy $E_{k}$ of a particle due to the action of force $F$ is equal to the work done by this force:
+\begin{equation*}%
+\dd{E_{k}} = \delta W = \vb{v} \dd{\vb{p}}
+\end{equation*}
+where $\vb{p} = m\vb{v}$ is the momentum of the particle, and $m$ and $\vb{v}$ are its mass and velocity. In Newtonian mechanics $m = \textrm{const}$ and the expression for the kinetic energy of a particle is of the form
+\begin{equation*}%
+E_{k} = \frac{m\vb{v}^{2}}{2} = \frac{mv^{2}}{2}
+\end{equation*}
+Kinetic energy in relativistic mechanics is discussed in \ssect{5.7.1}.
+
+
+\subsection{}\label{3.2.2} The kinetic energy of a mechanical system is equal to the sum of the kinetic energies of all the parts of the system. For a system consisting of n particles, for instance,
+\begin{equation*}%
+E_{k} = \sum_{i=1}^{n}\frac{m_{i}\vb{v}^{2}_{i}}{2} =\sum_{i=1}^{n}\frac{m_{i}{v}^{2}_{i}}{2}
+\end{equation*}
+where $m_{i}$ and $\vb{v}_{i}$ are the mass and velocity of the $i$-th particle in the system.
+
+The kinetic energy of a body is
+\begin{equation*}%
+E_{k} = \frac{1}{2} \int_{(V)} \rho \vb{v}^{2} \dd V = \frac{1}{2} \int_{(V)} \rho {v}^{2} \dd V 
+\end{equation*}
+where $\vb{v}$ is the velocity of points of the infinitely small element of volume $\dd V$ of the body, whose density is $\rho$ and mass is $\dd m = \rho \dd V$. Integrating is carried out throughout the whole volume $V$ of the body. If a perfectly rigid body of mass $m$ travels with translational motion at the velocity $\vb{v}$, its kinetic energy is $E_{k} = mv^{2}/2$. The kinetic energy of rotating bodies is discussed in \ssect{4.3.3} and \ssect{4.3.5}.
+
+\subsection{}\label{3.2.3} The change in the kinetic energy of a mechanical system is equal to the algebraic sum of the amounts of work done by all the external and internal forces acting on the system \ssect{2.2.4}. Thus
+\begin{equation*}%
+\dd E_{k} = \delta W^{\textrm{ext}} + \delta W^{\textrm{int}}
+\end{equation*}
+For example, for a system consisting of $n$ particles
+\begin{equation*}%
+\dd E_{k} = \sum_{i=1}^{n}\vb{F}^{\textrm{ext}}_{i} \dd \vb{r}_{i} = \sum_{i=1}^{n}\sum_{k=1}^{n}\vb{F}_{ik} \dd \vb{r}_{i}
+\end{equation*}
+where $\vb{r}_{i}$ is the radius vector of the $i$-th particle, $\vb{F}^{\textrm{ext}}_{i}$ is the re­sultant of the external forces acting on this particle, and $\vb{F}_{ii}=0$.
+
+If the system is not deformed, then the work done by the inter­nal forces
+\begin{equation*}%
+\delta W^{\textrm{int}} =0, \,\,\textrm{and}\,\, \dd E_{k} = \delta W^{\textrm{ext}}
+\end{equation*}
+For example, the change in the kinetic energy of a perfectly rigid body in translational motion is
+\begin{equation*}%
+\dd E_{k} = \vb{F}^{\textrm{ext}} \dd \vb{r}
+\end{equation*}
+where $\vb{F}^{\textrm{ext}}$ is the principal vector of external forces \ssect{2.5.2}, and $\dd \vb{r}$ is the vector of an element of displacement of the body.
+
+\subsection{}\label{3.2.4} The kinetic energy of a mechanical system depends upon the choice of the frame of reference. If in the inertial reference frame $K$ the kinetic energy of the system equals  $E_{k}$ and in the reference frame $K'$, travelling with translational motion at the velocity $\vb{V}$ with respect to $K$, it is equal to $E_{k}'$, then
+\begin{equation*}%
+E_{k} = E_{k}' + \frac{mV^{2}}{2} + \vb{p'V}
+\end{equation*}
+where m is the mass of the system, $\vb{p'} = m\vb{v'}c$ is the momentum
+of the system in its motion with respect to reference frame $K'$, and $\vb{v'}_{C}$ is the velocity of the system’s centre of mass with re­spect to $K'$. This equation is valid both for the case when $\vb{V} = \textrm{const}$, i.e. when $K'$ is an inertial frame of reference, as well as for $\dv*{\vb{V}}{t} \neq 0$.
+
+In particular, if the frame of reference $K'$ travels with transla­tional motion with respect to reference frame $K$ at the velocity $\vb{v}_{C}$ of the centre of mass of the system, i.e. $\vb{V} = \vb{v}_{C}$, then $\vb{v'}_{C} = 0$ and
+\begin{equation*}%
+E_{k} = \frac{mv^{2}_{C}}{2} + E'_{k}
+\end{equation*}
+This equation is an expression of \emph{Koenig's theorem}: the kinetic energy of a mechanical system is equal to the sum of the kinetic energy that a particle would have if its mass was that of the whole system and if it travelled at the velocity of the system’s centre of mass, plus the kinetic energy of the same system in its motion with respect to a translational reference frame (i.e. one travelling with translational motion) having its origin at the centre of mass.
+
+It follows from Koenig’s theorem that the kinetic energy of a perfectly rigid body is equal to the kinetic energy of translation­ al motion of this body at the velocity of its centre of mass plus the kinetic energy of rotation of the body about its centre of mass.
+
+\section{Potential Energy}
+\label{sec-3.3}
+
+\subsection{}\label{3.3.1} \emph{Potential energy} is the part of the energy of a mechanical system that depends only on its configuration, i.e. on the rela­tive arrangement of all the particles of the system and their positions in the external potential (conservative) field \ssect{3.1.6}. The decrease in the potential energy when the system is moved from arbitrary position \textbf{1} to another arbitrary position \textbf{2} is measured by the work $W_{12}$ done in this displacement by the conservative forces (internal and external) acting on the system. Thus
+\begin{equation*}%
+E_{p}(1) - E_{p}(2) = W_{12}
+\end{equation*}
+where $E_{p}(1)$ and $E_{p}(2)$ are the values of the potential energy of the system in its initial and final positions. Accordingly, the work done by conservative forces upon an infinitely small change in the configuration of the system is $\delta W = - \dd E_{p}$. 
+
+\textbf{Note.} It is assumed here that the external conservative forces are \emph{stationary (steady)}, i.e. they can change with time only as the consequence of a change of the position of the system being considered with respect to the frame of reference. Otherwise
+\begin{equation*}%
+\dd E_{p}= - \delta W + \pdv{E_{p}}{t} \dd t
+\end{equation*}
+In the simplest case, when the system is a particle located in a conservative field, the relation between force $\vb{F}$, acting on the particle, and the potential energy $E_{p}$ of this particle in the held is of the form
+\begin{equation*}%
+F_{x} = -\pdv{E_{p}}{x}, \,\,F_{y} = -\pdv{E_{p}}{y}, \,\,F_{z} = -\pdv{E_{p}}{z}
+\end{equation*}
+and $F = - \, \textrm{grad} \, E_{p}$.
+
+The potential energy $E_{p}$ of a particle is related to the force function \ssect{3.1.8} of the corresponding conservative field by the equation 
+\begin{equation*}%
+\dd E_{p} = - \dd \Phi \,\, \textrm{or}\,\, E_{p} (x, y, z, t) = -\Phi (x, y, z, t) + C
+\end{equation*}
+where $C$ is the integration constant.
+
+\subsection{}\label{3.3.2} The equations in \ssect{3.3.1} enable the dependence of the po­tential energy of a system on its configuration to be determined only to an arbitrary constant term that has no effect on the \emph{change} in energy. To obtain a unique dependence of the potenti­al energy of the system on its configuration, a so-called \emph{zero configuration} is chosen, in which the potential energy of the system is conditionally assumed to equal zero. Thus, the po­tential energy of a system in an arbitrary state is equal to the work done by all the conservative forces acting on the system in transforming it from the state being considered to the state corresponding to the zero configuration.
+
+\subsection{}\label{3.3.3} \hlblue{Example 1.} \emph{Potential energy of a particle in a uniform (homogeneous) force field.} Assume that force $\vb{F}$, exerted on the particle by the field, is directed along axis $OZ$, i.e. $\vb{F} = F_{z}\vb{k}$, where $\vb{k}$ is the unit vector of axis $OZ$, and the projection $F_{z}$ of force $\vb{F}$ onto axis $OZ$ is independent of the coordinates of the particle. Then
+\begin{equation*}%
+\dd E_{p} = -\vb{F} d\vb{r} = -F_{z} \dd z\,\, \textrm{and} \,\ E_{p} (z) = -F_{z} + E_{p} (0)
+\end{equation*}
+where $E_{p} (0)$ is the value of the potential energy of the particle at the level $z = 0$.
+
+In particular, the potential energy of a particle of mass $m$ lo­cated in a uniform gravity field at the earth’s surface (axis $OZ$ is directed vertically upward, $F_{z} = -mg$, where $g$ is the free fall acceleration) is equal to
+\begin{equation*}%
+E_{p}(z) = mgz + E_{p}(0).
+\end{equation*}
+
+\subsection{}\label{3.3.4} \hlblue{Example 2.}  \emph{Potential energy of a particle in a central force field.} In a conservative field of central forces the particle is sub­ject to the action of forces $\vb{F}$ which are directed everywhere along straight lines passing through a fixed point, called the \emph{centre of force}, and depend only on the distance $r$ to this point:
+\begin{equation*}%
+\vb{F} = F_{r}(r) \frac{\vb{r}}{r}
+\end{equation*}
+where $\vb{r}$ is the radius vector from the centre of force to the point being considered in the field, and $F_{r}(r)$ is the projection of force $\vb{F}$ onto the direction of vector $\vb{r}$; it depends only on the distance $r$. If the particle is attracted to the centre of force, $F_{r} (r) = -\abs{F} < 0$, but if it is repelled from the centre of force, then $F_{r} (r) = \abs{F} > 0$. An element of work done by force $\vb{F}$ is $\delta W = \vb{F} \dd \vb{r} = F_{r}(r) \dd r$.
+The potential energy of the particle is 
+\begin{equation*}%
+E_{p}(r) = \int_{r}^{\infty} F_{r} (r) \dd r + E_{p} (\infty)
+\end{equation*}
+Usually the energy of a particle, located at an infinite distance from the centre of force, is taken as the reference point for po­tential energy, i.e. it is as­sumed that $E_{p} (\infty) = 0$. Thus 
+\begin{equation*}%
+E_{p}(r) = \int_{r}^{\infty} F_{r} (r) \dd r 
+\end{equation*}
+Examples of a central force field, in which the force is inversely
+proportional to the square of the distance to the centre of force $(F_{r} (r) \propto r^{-2})$, are the grav­itational fields of a particle or a homogeneous sphere, the electrostatic field of a point charge, as well as that of a hollow sphere and a solid sphere uniformly charged along the surface and throughout the volume, respectively.
+
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-03/fig-03-03.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{Potential energy of a system of two particles with central forces.}
+\label{fig-03-03}
+\end{figure}
+
+\subsection{}\label{3.3.5} \hlblue{Example 3.}  \emph{Potential energy of a system of two particles between which central forces} act, i.e. forces depending upon the distance between the particles and directed along the straight line joining the particles. Shown in \figr{fig-03-03} are mutually repul­sive forces $\vb{F}_{12}$ and $\vb{F}_{21}  = - \vb{F}_{12}$:
+\begin{equation*}%
+\vb{F}_{21} = F_{\rho} (\rho) \frac{\pmb{\rho}}{\rho}
+\end{equation*}
+where $\pmb{\rho} = \vb{r}_{2} - \vb{r}_{1}$ is the radius vector from particle 1 to par­ticle 2, and $F_{\rho} (\rho)$ is the projection of force $\vb{F}_{21}$ on the direction of vector $\pmb{\rho}$ and depends only on the distance $\rho$ between the particles. An infinitely small change in the potential energy of the system
+\begin{equation*}%
+\dd E_{p} = -(\vb{F}_{12} \dd \vb{r}_{1} + \vb{F}_{21} \dd \vb{r}_{2}) 
+= - \vb{F}_{21} \dd \pmb{\rho} = - F_{\rho} (\rho) \dd \rho
+\end{equation*}
+If we assume that $E_{p} \to 0$ as $\rho \to \infty$, then
+\begin{equation*}%
+E_{p} (\rho)=  \int_{\rho}^{\infty} F_{\rho} (\rho) \dd \rho
+\end{equation*}
+This energy is often called the \emph{mutual po­tential energy of two particles.}
+
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.25\textwidth]{figs/ch-03/fig-03-04.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{Potential energy of an elastic body in axial tension or compression.}
+\label{fig-03-04}
+\end{figure}
+\subsection{}\label{3.3.6} \hlblue{Example 4.} \emph{Potential energy of an elastic body (for instance, a spring) in axial tension or compression.} When an elastic body is deformed, conservative internal forces (elastic forces) are developed in the body that oppose deformation. According to Hooke’s law, the force $\vb{F}_{\textrm{el}}$ exerted by the deformed body $A$ (\figr{fig-03-04}) on body $B$, causing the deformation, is proportional to the amount of deformation (stretch or compression):
+\begin{equation*}%
+\vb{F}_{\textrm{el}} = - kx \vb{i}.
+\end{equation*}
+Here $x_{i}$ is the displacement vector of body $B$ that characterizes the deformation of body $A$ (in the undeformed state $x = 0$; in compression $x> 0$ and intension $x < 0$),and $k> 0$ is a factor characterizing the elastic properties of body $A$.
+
+The potential energy of an elastically deformed body (in the absence of deformation, i.e. at $x = 0$, this energy is assumed equal to zero)
+\begin{equation*}%
+E_{p} = \frac{kx^{2}}{2}.
+\end{equation*}
+
+\section{Law of Conservation of Mechanical Energy}
+\label{sec-3.4}
+
+\subsection{}\label{3.4.1} The \emph{mechanical energy}, or \emph{total mechanical energy}, is the energy of mechanical motion and interaction. The mechanical energy $E$ of a system of particles is equal to the sum of their kinetic energy $E_{k}$ and the potential energy $E_{p}$ of interaction of these particles with one another and with external bodies:
+\begin{equation*}%
+E = E_{k} + E_{p}
+\end{equation*}
+An elementary increment of the mechanical energy of a system during the infinitely short time $\dd t$ is equal to
+\begin{equation*}%
+\dd E = \delta W_{\textrm{nonc}} + \pdv{E_{p}}{t} \dd t
+\end{equation*}
+where $\delta W_{\textrm{nonc}}$ is the algebraic sum of the elements of work done in the time interval $\dd t$ by all the internal and external \emph{nonconservative} forces. The term $( \pdv*{E_{p}}{t}) \dd t$ represents the change during the time interval $\dd t$ in the potential energy of the system and, consequently, its total mechanical energy due to nonstationary external conservative forces \ssect{3.3.1}. 
+
+\subsection{}\label{3.4.2} If the system is \emph{conservative} \ssect{3.1.7}, $\delta W_{\textrm{nonc}} \equiv 0$ and $\pdv*{E_{p}}{t} = 0$, because, in this case, there are no nonconservative forces and the external conservative forces are stationary. Con­sequently, the mechanical energy of such a system $E = \textrm{const}$, i.e. the following law, called the \emph{law of conservation of mechan­ical energy}, is valid: in the motion of a conservative system, its mechanical energy remains unchanged.
+
+In particular, this law holds for closed conservative systems: the mechanical energy of a closed system does not change with time if all the internal forces acting in this system are conser­vative ones.
+
+The law of conservation of mechanical energy is associated with the \emph{uniformity of time}. This property of time is manifested in the fact that the laws of motion of a closed system (or a system located in a stationary external field) are independent of the choice of the zero time reference. For example, in the free fall of a body in a stationary conservative gravity field at the earth’s surface, the velocity of the body and the length of path travelled depend only on the length of time in free fall and initial vel­ocity of the body, but not on the specific instant of time the body began to fall.
+
+\subsection{}\label{3.4.3} The mechanical energy of a closed nonconservative system is changed owing to the work done by all the nonconservative internal forces:
+\begin{equation*}%
+\dd E = \delta W_{\textrm{nonc}}
+\end{equation*}
+Gyroscopic forces \ssect{3.1.7} do no work and make no contribution to $\delta W_{\textrm{nonc}}$, i.e. the existence of such forces in a system does not lead to changes in its mechanical energy.
+
+The action of dissipative forces \ssect{3.1.7}, for instance, the force of friction, leads to a gradual reduction in the mechanical energy of a closed system. This process is called the \emph{dissipation of energy}. Consequently, a system whose mechanical energy contin­ually decreases with time is called a \emph{dissipative system}. In the dissipation of energy, the mechanical energy of the system is converted into other forms of energy (for example, into the energy of chaotic motion of molecules). The conversion of mechanical energy is accomplished in full agreement with a universal law of nature: the law of conservation of energy \ssect{9.2.7}.
+
+According to this law, energy can be converted from one form to another and redistributed within the system, but its total amount in a closed system must remain constant. It follows from the law of conservation and conversion of energy that the changes in energy of an open system, occurring in interaction of the system with the external medium (external bodies and fields), must be numerically equal and opposite in sign to the changes in the energy of the external medium. In other words, the change in the energy of a system upon its interaction with the external medium should be equal to the energy the system receives or yields up in the process being considered.
+
+\subsection{}\label{3.4.4} Forces of resistance and friction act in all real mechanical systems. Hence, these systems are nonconservative. In certain cases, however, they can be assumed approximately conserva­tive, and the law of conservation of mechanical energy can be applied to them. Such an approach is feasible if, in the process being considered, the work $W_{\textrm{nonc}}$ done by all the nonconserva­tive forces acting on the system is negligibly small in compari­son to the mechanical energy $E$ of the system, i.e. $\abs{W_{\textrm{nonc}}/E} \ll 1$, so that $\abs{\Delta E/E} \ll 1$, where $\Delta E = W_{\textrm{nonc}}$ is the change in the mechanical energy of the system.
+
+\subsection{}\label{3.4.5} The state of \emph{mechanical equilibrium of a system} is one that can be disturbed only as a result of external force action applied to the system. In this equilibrium state all the particles of the system are at rest so that the kinetic energy of the system equals zero. The state of mechanical equilibrium is said to be \emph{stable} if a small external action applied to the system leads to only a small change in its state. In this case, forces are devel­oped in the system that tend to restore the equilibrium state. A state of mechanical equilibrium is said to be \emph{unstable} if it can be disturbed by even an infinitely small external action on the system, which does not return again to the equilibrium state. In this case, forces are developed in the system that tend to further disturb the equilibrium state.
+
+The law of conservation of mechanical energy enables the condi­tions of equilibrium of conservative systems to be formulated:
+
+in states of stable equilibrium the potential energy curve of the system has minima, whereas in states of unstable equilib­rium, it has maxima.
+
+\subsection{}\label{3.4.6} On the basis of the law of conservation of mechanical energy, the region of possible configurations of a conservative system \ssect{3.3.1} can be found. The kinetic energy of the system $E_{k} \gg 0$. Hence, at a given value $E$ of the mechanical energy of the system, the latter can only be in states that conform to the condition: $E_{p} \ll E$. \figr{fig-03-05} illustrates the simplest case in which a particle has one-dimensional motion along axis OX in an external stationary conservative field. The potential energy of the particle is a function of only a single coordinate $x$, i.e. $E_{p} = E_{p} (x)$. The curve of this relation, shown in \figr{fig-03-05}, is called a \emph{potential energy curve}. 
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.8\textwidth,angle=-1]{figs/ch-03/fig-03-05.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{Potential energy curve for the motion of a particle in an external stationary conservative field.}
+\label{fig-03-05}
+\end{figure}
+
+
+For a fixed value of the mechanical energy $E$ of the particle, as shown in \figr{fig-03-05}, the particle can remain, in its travel, in one of the following three regions: 
+\begin{align*}%
+x & \leqslant x_{1} \,\, \textrm{(region I)},\\
+x_{2} & \leqslant x \leqslant x_{3}\,\, \textrm{(region III)}, \,\, \textrm{and}\\
+x & \geqslant x_{4}\,\, \textrm{(region V)} 
+\end{align*}
+These regions are separated from one another by the regions II and IV, which are the so-called \emph{potential barriers} $aeb$ and $cgd$, within whose limits the particle cannot exist. At the boundaries of the potential barriers (at points $a,\, b,\, c$ and $d$), the particle reverses its direction of motion; in region I the particle can travel without limit to the left of boundary $a$ of the barrier, and in region V, without limit to the right of bound­ary $d$ of the barrier. In region III, the particle oscillates be­tween points $b$ and $c$; it is in a so-called \emph{potential well} $bfc$.
+
+\section{Perfectly Elastic and Inelastic Collisions}
+\label{sec-3.5}
+
+\subsection{}\label{3.5.1} An impact in which a considerable change in the veloc­ities of the colliding bodies occurs in an extremely short time interval is called a \emph{collision}. Examples of collisions are a ham­ mer striking a billet being forged that lies on the anvil, and a hammer striking the head of a nail being driven.
+
+The \emph{line of impact} is the common normal to the surfaces of the colliding bodies at their point of contact. If the centres of mass \ssect{2.3.3} of the colliding bodies lie on the line of impact at the instant of contact, the collision is said to be \emph{central}. An example is the collision of two billiard balls. The collision, or impact, is said to be \emph{head-on}, or \emph{straight-line}, if the velocities of the centres of mass of the colliding bodies are parallel, before the collision, to the line of impact. Otherwise, it is called an \emph{oblique impact}, or \emph{glancing collision}.
+
+\subsection{}\label{3.5.2} In a collision the bodies are deformed and instantaneous, but quite substantial, forces are developed. They are called \emph{impact forces}. For a system of colliding bodies these forces are internal ones\footnote{It is assumed that the colliding bodies are either free \ssect{2.2.3} or the constraints imposed on them are such that no impact constraint reactions are developed.}, i.e. they do not change the total momentum of the system. External forces, constantly exerted on the system (for instance, the gravity forces of the bodies) are usually very small compared to the impact forces. Therefore, even though the impulses of impact forces \ssect{2.4.2} in the duration $\tau$ of the collision are commensurable with the momenta \ssect{2.3.4} of the colliding bodies, the resultant impulse of all the constantly acting external forces during the same time interval $\tau$ is small compared to the momenta of the bodies. Accordingly, the work done on the system by the external forces during the time inter­ val t is small compared to the mechanical energy of the system. Hence, a system of bodies can be assumed, in the collision pro­ cess, to be an approximately closed system \ssect{2.2.4}. This means that in calculating the results of the collision, use can be made of the laws of the conservation of momentum \ssect{2.7.1}, of angular momentum \ssect{4.4.1} and of energy \ssect{9.2.7}. If the bodies deform in the collision like perfectly elastic ones, the impact forces are conservative and the law of conservation of mechanical energy \ssect{3.4.2} is valid in the system.
+
+\subsection{}\label{3.5.3} The collision of two bodies is said to be \emph{perfectly inelastic} if, after impact, they travel together as a single body. Suffi­ciently close to a perfectly inelastic collision are, for example, the impact of the pile-driving hammer with the end of the pile being driven, and the firing of a bullet into a wagon filled with sand, when the bullet remains embedded in the sand. Various processes occur in the colliding bodies in an inelastic collision (plastic deformation of the bodies, friction, etc.). As a result, the kinetic energy of the system is partly transformed into its internal energy \ssect{9.1.2}.
+
+If.two bodies of masses $m_{1}$ and $m_{2}$, travelling with translational motion at the velocities $\vb{v}_{1}$ and $\vb{v}_{2}$, undergo a \emph{perfectly inelastic head-on central collision}, they continue their translational motion together at the velocity
+\begin{equation*}%
+\vb{u} = \frac{m_{1}\vb{v}_{1}+ m_{2}\vb{v}_{2}}{m_{1}+m_{2}}
+\end{equation*}
+\textbf{Note.} In the case of a perfectly inelastic collision that is neither head-on nor central, the preceding equation can be used to find the velocity of the centre of the mass of the bodies joined to­gether in the collision. As the result of such a collision, how­ ever, the system may begin to rotate about its centre of mass in accordance with the law of conservation of angular momen­tum \ssect{4.4.1}.
+
+\subsection{}\label{3.5.4} The change in the kinetic energy of a system of two collid­ing bodies in a perfectly inelastic head-on central collision is
+\begin{align*}%
+\Delta E_{k} & = \frac{m_{1}+ m_{2}}{2} \vb{u}^{2} -  \frac{m_{1}}{2} \vb{v}^{2}_{1}-  \frac{m_{2}}{2} \vb{v}^{2}_{2} \\
+& = -\frac{m_{1}m_{2}}{2(m_{1}+m_{2})} (\vb{v}_{1}^{2} -\vb{v}_{2}^{2} ) < 0
+\end{align*}
+In particular, if the second, body is at rest before the collision (for instance, a pile being driven by a pile driver, or a forging lying on the anvil), the relative reduction in the kinetic energy of the system in a perfectly inelastic head-on central collision is
+\begin{equation*}%
+- \frac{\Delta E_{k}}{E_{k_{1}}} = \frac{ m_{2}}{m_{1}+m_{2}}
+\end{equation*}
+In engineering, a perfectly inelastic head-on central collision (impact) is made use of to change the shape of bodies (smith and die forging, rivetting, etc.) or to move a body in a medium with high resistance to motion (driving nails, piles, etc.). It proves expedient in the first case to have the ratio $-\Delta E_{k}/E_{k_{1}}$ as near as possible to unity, i.e. it is necessary that $m_{2} \gg m_{1}$ (the mass of the forged item and the anvil should be many times greater than that of the hammer). In the second case, on the contrary, it is necessary that the loss in kinetic energy in the collision (impact) be as low as possible, i.e. that $m_{1} \gg m_{2}$ (the mass of the hammer should be many times greater than that of the nail being driven).
+
+\subsection{}\label{3.5.5}A collision is said to be \emph{perfectly elastic} if it does not lead to any change in the mechanical energy of the system, i.e. if the bodies are perfectly elastic.
+
+\hlblue{Example 1.} A perfectly elastic head-on central collision of two bodies (for instance, balls) of masses $m_{1}$ and $m_{2}$, which travel before the collision with translational motion at the velocities $\vb{v}_{1}$ and $\vb{v}_{2}$ along axis $OX$, passing through their centres of mass (\figr{fig-03-06}~\textcolor{IndianRed}{(a)}). The velocities of the bodies after the collision, $\vb{u}_{1}$ and $\vb{u}_{2}$ (\figr{fig-03-06}~\textcolor{IndianRed}{(b)}), can be found from the laws of conserva­tion of momentum and mechanical energy:
+\begin{align*}%
+m_{1}\vb{u}_{1} + m_{2}\vb{u}_{2} & = m_{1}\vb{v}_{1} + m_{2}\vb{v}_{2},\\
+m_{1}\vb{u}_{1}^{2} + m_{2}\vb{u}_{2}^{2} & = m_{1}\vb{v}_{1}^{2} + m_{2}\vb{v}_{2}^{2}\\
+\end{align*}
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.9\textwidth,angle=-1]{figs/ch-03/fig-03-06.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{A perfectly elastic head-on central collision of two bodies.}
+\label{fig-03-06}
+\end{figure}
+Velocities $\vb{u}_{1}$ and $\vb{u}_{2}$ are directed along axis $OX$ and their projections on this axis are
+\begin{equation*}%
+u_{1x} = \frac{(m_{1} - m_{2})v_{1x} + 2m_{2}v_{2x}}{m_{1}+m_{2}}
+\end{equation*}
+and
+\begin{equation*}%
+u_{2x} = \frac{2m_{1}v_{1x} + (m_{2} - m_{1})v_{2x}}{m_{1}+m_{2}}
+\end{equation*}
+In particular, if the masses of the bodies are the same, the bodies exchange velocities in a collision: $u_{1x} = v_{2x}$ and $u_{2x} = v_{1x}$.
+
+If the mass of the second body is many times greater than that of the first body, then $u_{1x} \approx 2v_{2x} - v_{1x}$ and $u_{2x} \approx v_{2x}$.
+
+\subsection{}\label{3.5.6}  \hlblue{Example 2.} \emph{Perfectly elastic oblique central collision.} If the bodies are smooth the impulse of friction forces in the collision can be neglected. In this case the tangential compo­nents of the velocities of the bodies are not changed, i.e. compo­nents perpendicular to the line of impact: $u_{1} \tau = v_{1} \tau$ and $u_{2\tau} = v_{2\tau}$. The normal components, directed along the line of impact, change in the same way as in a head-on collision:
+\begin{equation*}%
+u_{1n} = \frac{(m_{1} - m_{2})v_{1n} + 2m_{2}v_{2n}}{m_{1}+m_{2}}
+\end{equation*}
+and
+\begin{equation*}%
+u_{2n} = \frac{2m_{1}v_{1n} + (m_{2} - m_{1})v_{2n}}{m_{1}+m_{2}}
+\end{equation*}
+In particular, in the perfectly elastic oblique collision of a smooth ball with a fixed flat wall$(m_{2} \gg m_{1}$ and $u_{2}= v_{2}= 0)$:  $u_{1\tau} = v_{2\tau}$ and $u_{1n} = - v_{1n}$, i.e. the ball rebounds from the wall according to the law of mir­ror reflection: the angle of reflection is equal to the angle of incidence. The magnitude of the velocity is conserved: $u_{1}= v_{1}$. The vector $\Delta \vb{p}_{1}$ of the change in momentum of the ball in the collision is directed perpendicular to the wall:
+\begin{equation*}%
+\Delta \vb{p}_{1} = m_{1}(\vb{u}_{1} -\vb{v}_{1}) = - 2m_{1}\vb{v}_{1n}
+\end{equation*}
+The impulse of impact force acting on the wall is equal to $2m_{1}\vb{v}_{1n}$.
+
+%\begin{equation*}%
+%\vb{F}= \sum_{i=1}^{n} \vb{F_{i}}
+%\end{equation*}
+
+%\end{wrapfigure}
+
+%\begin{align*}%
+%m\vb{a} = \vb{F}\,\,\textrm{and}\,\, \vb{F}_{ki} = - \vb{F}_{ik}\,\, \intertext{(in reference frame $K$)}\\
+%m'\vb{a}' = \vb{F}'\,\,\textrm{and}\,\, \vb{F}_{ki}' = - \vb{F}_{ik}'\,\, \intertext{(in reference frame $K'$)}
+%\end{align*}

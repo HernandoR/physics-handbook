@@ -1,0 +1,249 @@
+% !TEX root = handbook-physics.tex
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+
+\chapter{Gravitation}
+\label{ch-06}
+
+\section{Law of Universal}
+\label{sec-6.1}
+\subsection{}\label{6.1.1} \emph{Isaac Newton's law of universal gravitation} states that the force of mutual attraction between any two particles is directly proportional to the product of their masses and inversely pro­portional to the square of the distance between them. Such forces are called \emph{gravitational forces}. If $m_{1}$ and $m_{2}$ are the masses of the particles being considered and $\vb{r}_{1}$ and $\vb{r}_{2}$ are the radius vectors of these particles, then, according to the law of univer­sal gravitation, the force $\vb{F}_{12}$ attracting the first particle toward the second particle, and the force $\vb{F}_{21}$ attracting the second particle toward the first particle are equal in magnitude and opposite in direction; they are equal to:
+\begin{equation*}%
+\vb{F}_{12} = -G \frac{m_{1}m_{2}}{r_{12}^{3}} \vb{r}_{12} \,\,\textrm{and}\,\,\vb{F}_{21} = -G \frac{m_{1}m_{2}}{r_{21}^{3}} \vb{r}_{21}
+\end{equation*}
+Here $\vb{r}_{12} = \vb{r}_{1} - \vb{r}_{2}$ and $\vb{r}_{21}= \vb{r}_{2} - \vb{r}_{1}$ are radius vectors from the second particle to the first and from the first to the second, respectively, and $r_{12} = r_{21}= \abs{\vb{r}_{12}}= \abs{\vb{r}_{21}}$ is the distance between the particles. 
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.7\textwidth]{figs/ch-06/fig-06-01.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{The gravitational interaction between two bodies of arbitrary size and shape.}
+\label{fig-06-01}
+\end{figure}
+The proportionality factor $G$ is called the \emph{constant of universal gravitation}, or the \emph{gravitational constant}. In value the gravitational constant is equal to the force of mutual attraction of two particles of unit mass with a distance of unit length between them. It has been found from experi­ments that
+\begin{equation*}%
+G = \SI{6.6720 \pm 0.0041d-11}{\newton\metre\squared\per\kilo\gram\squared}
+\end{equation*}
+\subsection{}\label{6.1.2} The gravitational interaction of two bodies of arbitrary size and shape (\figr{fig-06-01}) is described by the equation
+\begin{equation*}%
+\vb{F}_{12} = -G \int_{(V_{1}} \rho_{1} \dd V_{1} \int_{(V_{2}} \frac{\rho_{2}}{r_{12}^{3}} \vb{r}_{12} \dd V_{2} 
+\end{equation*}
+where $\vb{r}_{12}$ is the radius vector from the infinitely small element $\dd V_{2}$ of volume of the second body to the infinitely small el­ement $\dd V_{2}$ of volume of the first body, $\rho_{1}$ and $\rho_{2}$ are the densities of the two elements, and integration is carried out throughout the whole volume of both bodies.
+
+The calculations of force $\vb{F}_{12}$ are substantially simplified in two cases:
+\begin{enumerate}[label=(\alph*)]
+\item when there is a spherically symmetrical distribution of the masses in the two bodies, i.e. both bodies are of spherical shape and the density of each body depends only upon the distance to its centre (in particular, the bodies can be homogeneous); \item when one of the bodies is of negligibly small size with respect to the other body in which the distribution of its mass is spherically symmetrical.
+\end{enumerate}
+In these cases
+\begin{equation*}%
+\vb{F}_{12} = -G \frac{m_{1}m_{2}}{r_{12}^{3}} \vb{r}_{12}
+\end{equation*}
+where $m_{1}$ and $m_{2}$ are the masses of the bodies, and $\vb{r}_{12}$ is the radius vector connecting the centres of mass \ssect{2.3.3} of the second and first bodies.
+
+\subsection{}\label{6.1.3} As a first approximation, it can be assumed that the earth is of spherical shape and the distribution of its mass is spherical­ ly symmetrical. Hence the gravitational force $\vb{F}$, exerted by the earth on a body of mass $m$, is directed toward the centre of the earth and its magnitude is
+\begin{equation*}%
+F = G \frac{mM_{\Earth}}{r^{2}} 
+\end{equation*}
+where $M_{\Earth}$ is the mass of the earth and $r$ is the distance from the body to the earth’s centre (the size of any body on earth is negligibly small compared to the radius of the earth).
+
+\subsection{}\label{6.1.4} In application to such microscopic objects as elementary particles, gravitational interaction is practically of no import­ance whatsoever. It is found to be extremely weak in comparison to all other kinds of interaction: strong, electromagnetic and weak interaction (\ssect{43.2.5} through \ssect{43.2.8}). For example, the electric force of mutual repulsion of two electrons exceeds their gravitational force by over \num{d42} times! Even for ordinary macro­scopic objects on the earth the forces of gravitational inter­ action are extremely small. Two homogeneous spheres, for instance, with a mass of \SI{1000}{\kilo\gram} each and a distance of one metre between their centres are attracted to each other with a force of only \SI{7d-5}{\newton}.
+
+But, at the same time, gravitational forces are the determining factors in the motion of objects that are investigated in astron­omy and astronautics (spaceships, planets and their satellites, planetary systems, stars, etc.). This is due, primarily, to the huge size of astronomical bodies and, in the second place, to the small electromagnetic forces of interaction of such bodies, which, as a whole, are practically electroneutral.
+
+\section{Gravitational Field}
+\label{sec-6.2}
+
+\subsection{}\label{6.2.1} Gravitational interaction between bodies is due to the \emph{gravitational field} set up by the bodies. A distinctive feature of a gravitational field is that a particle placed in this field is subject to a force proportional to the mass of the particle.
+
+The force characteristic of a gravitational field is its \emph{intensity}, the vector quantity $\vb{g}_{f}$, which is equal to the ratio of the force $\vb{F}$, exerted on the particle by the field in which it is placed, to the mass $m$ of the particle:
+\begin{equation*}%
+\vb{g}_{f} = \frac{\vb{F}}{m} 
+\end{equation*}
+The intensity of a gravitational field is independent of the mass $m$ of the particle. It is a function of the coordinates $(x, \,y,\, z)$ of points of the field being considered. In the case of an unsteady field the intensity also depends upon the time $t$.
+
+A gravitational field is steady, or stationary \ssect{2.2.1}, if the body that sets it up is fixed in the frame of reference chosen to describe the field. The intensity of a steady gravitational field depends only upon the coordinates: $\vb{g}_{f} = \vb{g}_{f} (x,\, y,\, z)$.
+
+It follows from Newton’s second law \ssect{2.4.3} that the forces of ;i gravitational field impart an acceleration $\vb{a}$ to a free particle in the field. This acceleration equals the intensity of the field:
+\begin{equation*}%
+\vb{a} = \frac{\vb{F}}{m} = \vb{g}_{f}
+\end{equation*}
+
+\subsection{}\label{6.2.2} It follows from the law of universal gravitation \ssect{6.1.1} that the intensity of the gravitational field of a fixed particle of mass $M$, located at the origin of coordinates, equals
+\begin{equation*}%
+\vb{g}_{f} = - G \frac{M}{r^{3}} \vb{r}
+\end{equation*}
+where $\vb{r}$ is the radius vector of the point being considered in the field.
+
+A gravitational field is a conservative, or potential, one \ssect{3.1.6} because the force acting on a particle of mass m brought into the field is a central force \ssect{3.3.4}:
+\begin{equation*}%
+\vb{F} = m\vb{g}_{f} = - G \frac{mM}{r^{2}} \frac{\vb{r}}{r}
+\end{equation*}
+Correspondingly, the potential energy of a particle in such a field is equal to (3.3.4):\footnote{Here and throughout \sect{sec-6.2} and \sect{sec-6.3} an infinitely distant point is chosen as the reference point for the potential energy, i.e. it is assumed that $E_{p} (\infty) = 0$.}
+\begin{equation*}%
+E_{p} = \int_{r}^{\infty} F_{r} \dd r = -GmM \int_{r}^{\infty} \frac{\dd r}{r^{2}} = -G\frac{mM}{r}
+\end{equation*}
+It is equally correct to regard the quantity $E_{p}$ as the potential energy of a particle of mass $M$ in a gravitational field set up by a particle of mass $m$ or, finally, as the \emph{mutual potential energy of two particles} due to their gravitational interaction.
+
+\subsection{}\label{6.2.3} A gravitational field complies with the \emph{principle of super­ position of fields}: in superposing several $(n)$ gravitational fields their intensities at each point in space are added vectorially, i.e. the intensity of the resultant field is
+\begin{equation*}%
+\vb{g}_{f} = \sum_{i=1}^{n} \vb{g}_{f\!i}
+\end{equation*}
+where $\vb{g}_{f\!i}$ is the intensity of only the $i$-th field at the point being considered in space.
+
+The intensity of the gravitational field of an arbitrary system consisting of $n$ fixed particles is
+\begin{equation*}%
+\vb{g}_{f} = - G \sum_{i=1}^{n} \frac{m_{i}}{\rho_{i}^{3}} \pmb{\rho}_{i}
+\end{equation*}
+where $\pmb{\rho}_{i} = \vb{r} - \vb{r}_{i}$ is the radius vector from the $i$-th particle, whose radius vector is equal to $\vb{r}_{i}$, to the point in the field spec­ified by radius vector $\vb{r}$. Consequently, the potential energy of a particle of mass $m$ in this gravitational field is
+\begin{equation*}%
+E_{p} = - Gm \sum_{i=1}^{n} \frac{m_{i}}{\rho_{i}}
+\end{equation*}
+In particular, if the gravitational field is set up by a body whose mass $M$ is distributed in a spherically symmetrical manner \ssect{6.1.2}, then outside this body
+\begin{equation*}%
+\vb{g}_{f} = - G \frac{M}{r^{3}} \vb{r}\quad \textrm{and}\quad E_{p} = -\frac{GmM}{r}
+\end{equation*}
+where $\vb{r}$ is a radius vector from the centre of the body to the point being considered in the field. These equations are valid, for example, for the gravitational field of the earth.
+
+\subsection{}\label{6.2.4} By virtue of the conservative nature (potentiality) of the gravitational field \ssect{3.1.6}, its energy characteristic, the potential, ran be introduced. The \emph{potential of a gravitational field} is the scalar $\varphi$, equal to the ratio of the potential energy $E_{p}$of a par­ticle, placed at the point being considered in the field to the mass $m$ of the particle:
+\begin{equation*}%
+\varphi = \frac{E_{p}}{m} 
+\end{equation*}
+The potential $\varphi$ is independent of the mass $m$ of the particle; it is a function of the coordinates of points of the gravitational, held. For example, the potential of a gravitational field set up by a fixed particle of mass $M$ is
+\begin{equation*}%
+\varphi = - \frac{GM}{r} 
+\end{equation*}
+where $r$ is the distance from the source of the field to the point being considered.
+
+The potential of a gravitational field set up by an arbitrary system of $n$ fixed particles is
+\begin{equation*}%
+\varphi = - \sum_{i=1}^{n}G \frac{m_{i}}{\rho_{i}} 
+\end{equation*}
+where $\rho_{i}$ is the distance from a particle of mass $m_{i}$ to the point being considered in the field. Thus, in superposing gravitational fields, their potentials are added together algebraically, i.e. the potential $\varphi$ at any point of a resultant field is equal to the algebraic sum of the potentials at the same point for all the superposed fields taken separately;
+\begin{equation*}%
+\varphi = - \sum_{i=1}^{n} \varphi_{i}
+\end{equation*}
+\hlblue{Note.} In applying this equation it is necessary that the same reference point be chosen for the potentials $\varphi_{i}$ of all the fields being superposed: $\varphi_{i}(\infty)=0$ (see the footnote to \ssect{6.2.2}). 
+
+\subsection{}\label{6.2.5} An element of work done by the forces of a gravitational field in an infinitely small displacement $\dd r$ of a particle of mass $m$ in this field is:
+\begin{equation*}%
+\dd W = (\vb{F} \,\dd \vb{r}) = m (\vb{g}_{f} \dd \vb{r})
+\end{equation*}
+But, on the other hand, the work $\dd W$ is equal to the decrease in the potential energy of the particle in the gravitational field:
+\begin{equation*}%
+\dd W = - \dd E_{p} = - m \dd \varphi
+\end{equation*}
+Consequently, the potential and intensity of a gravitational field are related by the equation:
+\begin{equation*}%
+\dd \varphi = -(\vb{g}_{f} \dd \vb{r}) = -(g_{f\!x}\dd x + g_{f\!y}\dd y +g_{f\!z}\dd z)
+\end{equation*}
+where $g_{f\!x}$, $g_{f\!y}$ and $g_{f\!z}$ are the projections of vector $\vb{g}_{f}$ on the axes of rectangular Cartesian coordinates. Since
+\begin{equation*}%
+\dd \varphi = \pdv{\varphi}{x} \dd x + \pdv{\varphi}{y} \dd y + \pdv{\varphi}{z} \dd z
+\end{equation*}
+then
+\begin{equation*}%
+\pdv{\varphi}{x}  = -g_{f\!x},\quad \pdv{\varphi}{y}  = -g_{f\!y},\quad\pdv{\varphi}{z}  = -g_{f\!z},\quad
+\end{equation*}
+Hence
+\begin{equation*}%
+\vb{g}_{f}  = - \left(\pdv{\varphi}{x}\vb{i} +\pdv{\varphi}{y}\vb{j} + \pdv{\varphi}{z}\vb{k} + \right) = - \,\,\textrm{grad} \,\varphi = -\grad \varphi
+\end{equation*}
+i.e. the intensity of a gravitational field is numerically equal and opposite in direction to the gradient of the potential of the field.
+
+The relation between (p and gf can also be written in the form
+\begin{equation*}%
+\dd \varphi = - \vb{g}_{f} \dd l \cos \alpha = -g_{f\!l} \dd l \quad \textrm{or} \quad g_{f\!l} = - \frac{\dd \varphi}{\dd l}
+\end{equation*}
+where $\alpha$ is the angle between vectors $\vb{g}_{f}$ and $\dd \vb{r}$, $\dd l = \abs{\,\dd \vb{r}\,}$, and $g_{f\!l}$ is the projection of vector $\vb{g}_{f}$ onto the direction of vec­tor $\dd \vb{r}$. Thus, the projection of the intensity vector of a gravita­tional field onto some direction is numerically equal and opposite in sign to the change in the field potential per unit length in the same direction.
+
+\subsection{}\label{6.2.6} The non-relativistic theory of gravitation discussed above end based on Newton’s law of universal gravitation is only approximate. It describes with sufficient accuracy only comparatively weak gravitational fields, having a potential $\abs{\varphi}\ll c^{2}$, where $c^{2} = \SI{9e16}{\meter\squared\per\second\squared}$ is the square of the velocity of light in free space. It is, in particular, applicable to the gravitational lieIds of the earth and sun because the absolute values of the potentials of these fields at the surfaces of the earth and sun are equal to \num{6.3e7} and \SI{1.9e11}{\meter\squared\per\second\squared}.
+
+\subsection{}\label{6.2.7} The \emph{modern} (relativistic) \emph{theory of gravitation}, which is m unified theory of space, time and gravitation, was formulated by Albert Einstein. He called it the \emph{general theory of relativity}. The existence of a close relationship between space and time had already been indicated in his special theory of relativity. This relationship is evident in the Lorentz transformations \ssect{5.3.2} and the invariance of the interval between two events \ssect{5.4.8}. It was found necessary, in describing physical processes, l.o employ a four-dimensional space-time continuum, in which the position of a point is specified by three space coordinates mid the time coordinate $ct$.
+
+According to the relativistic theory of gravitation, the geo­metrical properties (metric) of the space-time continuum depend upon the distribution of gravitating masses and their motion in space. Bodies setting up a gravitational field ``distort'' real three-dimensional space and differently change the passage of time at various points in this space. This means that the bodies cause a deviation of the metric of space-time from that of the ``flat'' space-time described by Euclidean geometry and dealt with in the special theory of relativity. Therefore, the motion of a body in a gravitational field can be regarded as inertial motion, but in a ``distorted'' (non-Euclidean) space-time continuum. Accordingly, a particle, subject to the action of a gravitational field, travels neither in a straight line nor at uniform velocity in a real three-dimensional space.
+
+It was shown in the relativistic theory of gravitation that the principle of superposition \ssect{6.2.3} does not hold for arbitrary gravitational fields. This principle, as well as the whole non-relativistic theory of gravitation, is sufficiently accurate only in weak fields $(\abs{\, \varphi \,} \ll c^{2})$ and for motion in these fields at low velocities $v \ll c$.
+
+\section{Kepler's Laws. Space Velocities}
+\label{sec-6.3}
+
+\subsection{}\label{6.3.1} The motion of the planets of the solar system along their orbits around the sun complies with the three laws of Kepler. These laws can be derived from Newton’s law of uni­versal gravitation, dealing, as a first approximation, with the sun and planets as particles. In the central force field of gravitation of the sun, a planet of mass $m$ is subject to the action of the gravitational force
+\begin{equation*}%
+\vb{F} = -G \frac{mM_{\Sun}}{r^{3}}\vb{r}
+\end{equation*}
+where $M_{\Sun}$ is the mass of the sun and $\vb{r}$ is the radius vector of the planet from the centre of forces $O$, which is taken as the origin of coordinates.
+
+The moment of force $\vb{F}$ about the centre of forces is $\vb{M} = \qty[\vb{r\,F}] \equiv 0$. Hence, the angular momentum $\vb{L}$ of the planet about the same point $O$ does not change with time \ssect{4.3.1}:
+\begin{equation*}%
+\vb{L} = \qty[\vb{r} \, m \, \vb{v}] = \textrm{const}
+\end{equation*}
+Consequently, the planet travels along a plane path, (orbit), whose plane is perpendicular to vector $\vb{L}$. According to \ssect{1.3.6}, $\vb{L} = \qty[\vb{r} \, m \, \vb{v}_{\varphi}]$, where $\vb{v}_{\varphi}$ the transverse velocity of the planet. Therefore, the orbital motion of the planet satisfies the con­dition
+\begin{equation*}%
+r^{2} \dv{\varphi}{t} = \frac{L}{m} = \textrm{const}
+\end{equation*}
+where $r$ and $\varphi$ are the polar coordinates of the planet.
+
+A second condition is imposed by the law of conservation of mechanical energy: $E_{k} + E_{p} = E = \textrm{const}$. According to
+\ssect{1.3.6} and \ssect{6.2.2}:
+\begin{align*}%
+E_{k} & = \frac{mv^{2}}{2} = \frac{m}{2} \left[\left( \dv{r}{t}\right)^{2} + \left( r \dv{\varphi}{t}\right)^{2} \right]\\
+& = \frac{m}{2}\left[\left( \dv{r}{t}\right)^{2}+ \left( \frac{L}{mr}\right)^{2} \right]
+\end{align*}
+and
+\begin{equation*}%
+E_{p} = - G \frac{mM_{\Sun}}{r}
+\end{equation*}
+so that the second condition is of the form
+\begin{equation*}%
+\left( \dv{r}{t}\right)^{2}+ \left( \frac{L}{mr}\right)^{2} - \frac{2GM_{\Sun}}{r} = \frac{2E}{m}
+\end{equation*}
+
+\subsection{}\label{6.3.2} The equation of the path of the planet (in the polar coor­dinates $r$ and $\varphi$) is
+\begin{equation*}%
+r = \frac{p}{1 + e \cos \varphi}
+\end{equation*}
+where $p = L^{2}/Gm^{2}M_{\Sun}$ and $e = \sqrt{(2EL^{2}/G^{2}m^{3}M_{\Sun}^{2}) + 1}$. The total mechanical energy of the planet $E < 0$, so that $e < 1$ and the path (orbit) of the planet is an ellipse.
+
+\emph{Kepler's first law} states that all the planets of the solar system travel along elliptic orbits of which the sun occupies one focus. It follows from the first condition \ssect{6.3.1} that the areal ve­locity \ssect{1.3.6} of the planet is constant:
+\begin{equation*}%
+\sigma = \frac{1}{2} r^{2} \dv{\varphi}{t} = \frac{L}{2m} =\textrm{const}
+\end{equation*}
+
+
+\emph{Kepler's second law} states that the radius vector of a planet sweeps out equal areas in equal lengths of time.
+
+\subsection{}\label{6.3.3} According to Kepler's second law, the orbital period, or period of revolution, $T$ of a planet about the sun is equal to the ratio of the area $A$ of the orbit to the areal velocity $\sigma$:
+\begin{equation*}%
+T=\frac{A}{\sigma} = \frac{\pi ab}{\sigma} =\textrm{const}
+\end{equation*}
+where $a = p/(1 - e^{2})$ and $b = a \sqrt{ 1 - e^{2}}$ are the major and minor semi-axes of the elliptic orbit. Thus
+\begin{equation*}%
+T^{2}=\frac{\pi^{2}p}{L^{2}/4m^{2}}a^{3} = \frac{4 \pi^{2}}{GM_{\Sun}} a^{3}=\textrm{const}
+\end{equation*}
+This equation is an expression of \emph{Kepler's third law}: the squares of the periods of revolution of the planets about the sun are proportional to the cubes of the major semi-axes of the elliptic orbits of these planets.
+
+\subsection{}\label{6.3.4} The \emph{orbital velocity} is the minimum velocity that it is necessary to impart to a body to convert it into an artificial satellite of the earth. It is also called the \emph{circular orbital velocity} because it is equal to the velocity of an artificial satellite in circular orbit about the earth in the absence of air friction of the atmosphere. The orbital velocity is
+\begin{equation*}%
+v_{1}= \sqrt{\frac{GM_{\Earth}}{r}}
+\end{equation*}
+where $GM_{\Earth}$ is the mass of the earth, and $r$ is the radius of the circular orbit. At the earth’s surface $v_{1}=\SI{7.9}{\kilo\meter\per\second}$.
+
+\subsection{}\label{6.3.5} The \emph{escape velocity} is the minimum velocity that it is necessary to impart to a body to enable it, without any addi­tional forces, to overcome the earth’s gravitational attraction and become an artificial satellite of the sun. It is also called the \emph{parabolic velocity} because it launches the body on a para­bolic orbit in the earth’s gravitational field (in the absence of air friction of the atmosphere). The escape velocity
+\begin{equation*}%
+v_{2}= \sqrt{\frac{2GM_{\Earth}}{r}}
+\end{equation*}
+where $r$ is the radius from the launching site of the body to the centre of the earth. At the earth’s surface $v_{2}=\SI{11.2}{\kilo\meter\per\second}$.
+
+\subsection{}\label{6.3.6} The \emph{solar escape velocity} is the minimum velocity that it is necessary to impart to a spacecraft, launched at the earth’s surface, to overcome the sun’s gravitational attraction and leave the solar system. This velocity is $v_{1}=\SI{16.7}{\kilo\meter\per\second}$.
+
+%\begin{equation*}%
+%\vb{F}= \sum_{i=1}^{n} \vb{F_{i}}
+%\end{equation*}
+
+%\end{wrapfigure}
+
+%\begin{align*}%
+%m\vb{a} = \vb{F}\,\,\textrm{and}\,\, \vb{F}_{ki} = - \vb{F}_{ik}\,\, \intertext{(in reference frame $K$)}\\
+%m'\vb{a}' = \vb{F}'\,\,\textrm{and}\,\, \vb{F}_{ki}' = - \vb{F}_{ik}'\,\, \intertext{(in reference frame $K'$)}
+%\end{align*}

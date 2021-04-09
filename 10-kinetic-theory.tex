@@ -1,0 +1,188 @@
+% !TEX root = handbook-physics.tex
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+
+\chapter{Kinetic Theory of Gases}
+\label{ch-10}
+
+
+\section{Certain Information on Classical Statistical Physics}
+\label{sec-10.1}
+
+\subsection{}\label{10.1.1}The \emph{kinetic theory of gases} deals with the structure and physical properties of gases and is based on the statistical method of investigation \ssect{8.2.2}. Besides those mentioned in \ssect{8.2.1}, the following propositions form the foundation for \emph{classical statistical physics}.
+
+\subsection{}\label{10.1.2} A system of particles complies with the laws of conser­vation of energy \ssect{9.2.7}, momentum \ssect{2.7.1} and of angular momentum \ssect{4.4.1}. A system of charged particles complies with the law of conservation of electric charge \ssect{14.1.3}. 
+
+\subsection{}\label{10.1.3} All physical processes in a system of particles proceed \emph{continuously} in space and time. A space-time description of any physical phenomena in classical mechanics and classical sta­tistical physics assumes the possibility of continuous variation of all physical quantities that characterize the state of the system. For instance, the velocity and energy of any particle can vary continuously due to the action of various forces. 
+
+\subsection{}\label{10.1.4} Each particle in a system is regarded as being ``tagged]]. It can be distinguished from all other such particles (\emph{distinguishability of identical particles in classical statistical physics}). 
+
+\subsection{}\label{10.1.5} Any particle of a system can have arbitrary values for its coordinates and momenta (or velocities) independently of the values of these quantities for other particles of the system. If an infinitely small volume $\dd x \,\dd y \, \dd z$ is chosen in the coor­dinate system $XYZ$, any particle can be located within this volume regardless of the presence in this volume of any arbi­trary number of other particles. Likewise, any particle may be located within an arbitrary element of ``volume'' $\dd p_{x}\, \dd p_{y}\, \dd p_{z}$ of momentum space (or $\dd u_{x}\, \dd u_{y}\, \dd u_{z}$ of velocity space) regardless of the presence in these ``volumes'' of any arbitrary number of other particles. This implies that any particle can have momen­tum components along the coordinate axes within the limits from $p_{x}$ to $p_{x} + \dd p_{x}$, from $p_{y}$ to $p_{y} + \dd p_{y}$ and from $p_{z}$ to $p_{z} + \dd p_{z}$ (and, respectively, velocity components of the par­ticle along the coordinate axes within the limits from $u_{x}$ to $u_{x} + \dd u_{x}$, $u_{y}$ to $u_{y} + \dd u_{y}$, $u_{z}$ to $u_{z} + \dd u_{z}$). The minimum values of the volumes $\dd x \,\dd y \, \dd z$ and $\dd p_{x}\, \dd p_{y}\, \dd p_{z}$ are not restricted in any manner.
+
+\ssect{10.1.2} and \ssect{10.1.3} apply not only to classical statistical physics, they are characteristic of all of classical physics. Sections \ssect{10.1.4} and \ssect{10.1.5} apply only to classical statistical physics; they do not hold for quantum statistics \ssect{41.1.1}.
+
+\section[Basic Equation]{Basic Equation of the Kinetic Theory of Gases}
+\label{sec-10.2}
+
+
+\subsection{}\label{10.2.1} The pressure of a gas \ssect{8.3.2} in a vessel is the result of the collisions of the gas molecules with the walls of the vessel. The pressure of a gas is the macroscopic effect of the thermal motion of molecules \ssect{8.1.1}. As the molecules of the gas strike the walls of the vessel \ssect{8.4.1} they impart their momentum \ssect{2.3.4} to the walls. This change in momentum of the molecules exerts the pressure on the walls. For an ideal gas the collisions between the molecules within the vessel has no effect on the pressure exerted by the gas on the walls. Owing to the chaotic nature of thermal motion of the molecules \ssect{8.1.3} the pressure of the gas is the same on all the walls and, by definition \ssect{8.3.2}, is the average force exerted normal to unit area of the wall surface.
+
+\subsection{}\label{10.2.2} The \emph{basic equation of the kinetic theory of gases} is 
+\begin{equation*}%
+pV = \frac{2}{3} E_{k}
+\end{equation*}
+where $p$ is the pressure of the gas, $V$ is its volume and $E_{k} = \sum_{i=1}^{N}
+\frac{m_{i}u_{i}^{2}}{2}$ is total kinetic energy of translational motion of all the $N$ molecules of gas in the vessel.
+
+\subsection{}\label{10.2.3} In a homogeneous gas $m_{i} = m$, i.e. the mass of each molecule is the same, hut their velocities $u_{i}$ differ \ssect{10.3.1}, and
+\begin{equation*}%
+E_{k} = \frac{m}{2} \sum_{i=1}^{N} u_{i}^{2}
+\end{equation*}
+It proves expedient to introduce the root-mean-square velocity $v_{\textrm{rms}}$ of translational motion of gases:
+\begin{equation*}%
+v_{\textrm{rms}} = \sqrt{\frac{1}{N}\sum_{i=1}^{N}u_{i}^{2}}
+\end{equation*}
+where $N$ is the total number of molecules in volume $V$ of the gas. The root-mean-square velocity pertains to the whole population of molecules, but is meaningless in application to a single molecule or to a small number of molecules. Making use of $v_{\textrm{rms}}$ the expression for $E_{k}$ assumes the form
+\begin{equation*}%
+E_{k} = \frac{1}{2}Nm v_{\textrm{rms}}^{2} \qand pV = \frac{1}{3}Nm v_{\textrm{rms}}^{2} = \frac{1}{3}M v_{\textrm{rms}}^{2}
+\end{equation*}
+where $M = Nm$ is the mass of the gas.
+
+The basic equation for the pressure of a gas is
+\begin{equation*}%
+p = \frac{2}{3} E_{k_{0}} = \frac{1}{3} n_{0}mv_{\textrm{rms}}^{2} = \frac{1}{3} \rho v_{\textrm{rms}}^{2}
+\end{equation*}
+where $E_{k_{0}}= E_{k}/V$, $n_{0}= N/V$ is the number of molecules in unit volume, and $\rho = n_{0}m$ is the density of the gas.
+
+
+\subsection{}\label{10.2.4} From a comparison of the Mendeleev-Clapeyron equation \ssect{8.4.4} with the basic equation \ssect{10.2.3} $RT = \mu v_{\textrm{rms}}^{2}/3$ it follows that
+\begin{equation*}%
+v_{\textrm{rms}} = \sqrt{\frac{3RT}{\mu}} = \sqrt{\frac{3RT}{m N_{A}}} = \sqrt{\frac{3kT}{m}} = 1.73 \sqrt{pv}
+\end{equation*}
+where $k$ is Boltzmann’s constant \ssect{8.4.5}, $m$ is the mass of a mol­ecule, $N_{A}$ is Avogadro’s number (\ref{app-02}), $p$ is the pres­sure of the gas, and $v$ is its specific volume.
+
+\subsection{}\label{10.2.5} The \emph{average kinetic energy of translational motion of the molecules in an ideal gas} is
+\begin{equation*}%
+v_{\textrm{rms}} = \sqrt{\frac{3RT}{\mu}} = \sqrt{\frac{3RT}{m N_{A}}} = \sqrt{\frac{3kT}{m}} = 1.73 \sqrt{pv}
+\end{equation*}
+The average kinetic energy $\expval{E_{k}^{m}}$ is proportional to the abso­lute temperature and is independent of any other variables (\figr{fig-10-01}). 
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-10/fig-10-01.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{The relation of average kinetic energy and absolute temperature.}
+\label{fig-10-01}
+\end{figure}
+The absolute, or thermodynamic, temperature is a measure of the average kinetic energy of translational motion of the molecules in an ideal gas. This consequence of the kinetic theory of gases is not valid in the region of ultra-low tempera­tures, close to absolute zero \ssect{8.3.4}.
+
+\section[Maxwell's Distribution Law]{Maxwell's Molecular Velocity and Energy Distribution Law (Maxwell's Distribution Law)}
+\label{sec-10.3}
+
+
+\subsection{}\label{10.3.1} The \emph{law of the distribution of molecular velocities for an ideal gas}, theoretically established by Maxwell, determines the number $\dd n$ of molecules of a homogeneous monatomic ideal gas, out of the total number $n_{0}$ of its molecules in unit volume, that has a velocity, at a given temperature, lying within the range from $u$ to $u + \dd u$. This law is valid for gases in a state of thermodynamic equilibrium \ssect{8.3.3}. The velocity distribution of the molecules of such a gas is a steady-state value. The Maxwellian distribution is based on pairwise collisions of the randomly moving gas molecules. This assumes uniform distribution of the molecules throughout the volume of the vessel, i.e. constant density of the gas.
+
+\subsection{}\label{10.3.2} In its most customary form, the law of the distribution of molecular speeds (magnitudes of the molecular velocities) is presented as
+\begin{equation*}%
+\dd n =n_{0} \left(\frac{m}{2 \pi k T}\right)^{3/2} \exp \left( - \frac{mu^{2}}{2kT}\right) 4 \pi u^{2} \dd u
+\end{equation*}
+Here $u$ is the magnitude of the molecular velocity (speed of a molecule), $m$ is the mass of a molecule, $k$ is Boltzmann’s constant, and $T$ is the absolute (thermodynamic) temperature. Molecular velocity distribution curves for various temperatures $T_{1}< T_{2} < T_{3}$ are shown in \figr{fig-10-2}. As is evident from these curves, the most probable velocity $u_{\textrm{p}}$ \ssect{10.3.4} increases with temperature and the fraction of molecules travelling at this velocity decreases.
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.7\textwidth]{figs/ch-10/fig-10-02.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{Molecular velocity distribution for various temperatures.}
+\label{fig-10-2}
+\end{figure}
+
+
+\subsection{}\label{10.3.3} Another form of the Maxwellian distribution is
+\begin{equation*}%
+\dd n =n_{0} \left(\frac{m}{2 \pi k T}\right)^{3/2} \exp \left( - \frac{mu^{2}}{2kT}\right) \dd u_{x} \dd u_{y} \dd u_{z}
+\end{equation*}
+where $u_{x}$, $u_{y}$ and $u_{z}$ are projections of the molecular velocity on the coordinate axes. Owing to the random nature of thermal motion of the molecules \ssect{8.1.1}, distributions of the molecules according to the projections $u_{i}$ of their velocities on the coor­dinate axes $(i = x, y, z)$ are mutually independent. Hence
+\begin{equation*}%
+\dd n= n_{0} f(u_{x}) \,f(u_{y}) \,f(u_{z}) \dd u_{x} \dd u_{y} \dd u_{z}
+\end{equation*}
+ where
+\begin{equation*}%
+f(u_{i}) = \left(\frac{m}{2 \pi k T}\right)^{3/2} \exp \left( - \frac{mu_{i}^{2}}{2kT}\right)\quad (i =x,\,y,\,z)
+\end{equation*}
+is a distribution function of the projections of the molecular velocities.
+
+The Maxwellian distribution is isotropic. This is evident from the fact that the function $f(u_{x}, u_{y}, u_{z})$ depends only upon the speed (magnitude of the velocity), and because the function  $f(u_{i})$ is the same along all the axes.
+
+\subsection{}\label{10.3.4} The law of the distribution of molecular velocities \ssect{10.3.2} can be used to determine the \emph{most probable velocity} $u_{\textrm{p}}$ of the molecules, which corresponds to the maximum of the function
+\begin{equation*}%
+f(u) = \dv{n}{u} = 4 \pi n_{0} \left( \frac{m}{4 \pi k T} \right)^{1/2} \exp \left(- \frac{mu^{2}}{2kT} \right)
+\end{equation*}
+The condition 
+\begin{equation*}%
+\left[ \dv{u} \left( \exp \left(- \frac{mu^{2}}{2kT} \right) u^{2} \right)
+ \right]_{u=u_{\textrm{p}}} = 0
+\end{equation*}
+yields
+\begin{equation*}%
+u_{\textrm{p}} = \sqrt{\frac{2kT}{m}}= \sqrt{\frac{2RT}{\mu}} = v_{\textrm{rms}} \sqrt{\frac{2}{3}}
+\end{equation*}
+
+\subsection{}\label{10.3.5} A third form of the law of the distribution of molecular velocities is
+\begin{equation*}%
+\dd n = \frac{4 n_{0}}{\sqrt{\pi}} \exp \left( - \frac{u^{2}}{u_{\textrm{p}^{2}}}\right) \left( \frac{u}{u_{\textrm{p}}}\right)^{2} \dv{u}{u_{\textrm{p}}}
+\end{equation*}
+The fraction $\dd n/n_{0}$ of the molecules of a gas having velocities lying within the range from $u$ to $u + \dd u$ is numerically equal to the hatched area $\dd S$ under the curve in \figr{fig-10-3}, which represents the dependence of $(u_{\textrm{p}}/n_{0}) \,(\dd n/\dd u)$ on $u/u_{\textrm{p}}$:
+\begin{equation*}%
+\dd S = \left( \frac{u_{\textrm{p}}}{n_{0}}\, \dv{n}{u} \right) \frac{\dd u}{u_{\textrm{p}}} = \frac{\dd n}{n_{0}}
+\end{equation*}
+The area under the curve in \figr{fig-10.3}, i.e. bounded by the curve and the axis of abscissas, is equal to unity. This area represents the fraction of the molecules having all possible velocity values from 0 to $\infty$.
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.7\textwidth]{figs/ch-10/fig-10-03.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{A velocity distribution curve for molecules.}
+\label{fig-10-3}
+\end{figure}
+
+\subsection{}\label{10.3.6} The arithmetic mean velocity $\expval{u}$ of translational motion of the molecules in an ideal gas, calculated by means of the distribution law \ssect{10.3.2}, is
+\begin{equation*}%
+\expval{u} = v_{\textrm{rms}} \sqrt{\frac{8}{3 \pi}} = \sqrt{\frac{8RT}{\pi \mu }} = \sqrt{\frac{8kT}{\pi m }} = 1.60 \sqrt{pv}
+\end{equation*}
+
+
+\subsection{}\label{10.3.7} The energy distribution of the molecules in an ideal gas determines the fraction $\dd n_{E^{m}}/n_{0}$ of molecules, of their total number $n_{0}$, having kinetic energies $E_{k}^{\textrm{m}}= mu^{2}/2$ lying within the range from $E_{k}^{\textrm{m}} \qq{to} E_{k}^{\textrm{m}} + \dd E_{k}^{\textrm{m}}$:
+\begin{equation*}%
+\dd n_{E^{m}} = \frac{2 n_{0}}{\sqrt{\pi}} \left( kT \right)^{-3/2} \, \exp \left( -\frac{E_{k}^{\textrm{m}}}{kT} \right) \sqrt{E_{k}^{\textrm{m}}} \dd E_{k}^{\textrm{m}}
+\end{equation*}
+Here $\dd n_{E^{m}}/n_{0} = f (E_{k}^{\textrm{m}} ) \,\dd E_{k}^{\textrm{m}}$, where $f(E_{k}^{\textrm{m}})$ is the distribution function for the molecular energies in an ideal gas. 
+
+\hlblue{Example.} The average kinetic energy $\expval{E_{k}^{\textrm{m}}}$ of a molecule in an ideal gas is
+\begin{align*}%
+\expval{E_{k}^{\textrm{m}}} & = \int_{0}^{\infty} E_{k}^{\textrm{m}} \, f(E_{k}^{\textrm{m}}) \, \dd E_{k}^{\textrm{m}} \\
+& = \frac{2}{\sqrt{\pi} (kT)^{3/2}} \int_{0}^{\infty} E_{k}^{\textrm{m}} \exp \left(- \frac{E_{k}^{\textrm{m}}}{kT} \right) \sqrt{E_{k}^{\textrm{m}}} \dd E_{k}^{\textrm{m}}\\
+& = \frac{3}{2} kT
+\end{align*}
+
+(cf. \ssect{10.2.4}).
+
+\subsection{}\label{10.3.8} The relative motion \ssect{7.1.2} of two particles with the masses $m_{1}$ and $m_{2}$ is equivalent to the motion of a single particle with the reduced mass $m_{\textrm{red}} = m_{1}m_{2}/(m_{1}+ m_{2})$. For a homo­geneous gas $m_{1}= m_{2}= m$ and $m_{\textrm{red}} = m/2$. The distribution of molecules according to their relative velocities establishes the fraction $\dd n_{u_{\textrm{rel}}}/n_{0}$ of molecules, of their total number $n_{0}$,
+having relative velocities $u_{\textrm{rel}}$ lying within the range from $u_{\textrm{rel}}$  to $u_{\textrm{rel}} + \dd u_{\textrm{rel}}$:
+\begin{equation*}%
+\dd n_{u_{\textrm{rel}}} = n_{0} \left( \frac{m}{4 \pi kT}\right)^{3/2} \exp \left(- \frac{mu^{2}_{\textrm{rel}}}{4kT} \right) 4 \pi u^{2}_{\textrm{rel}} \dd u_{\textrm{rel}}
+\end{equation*}
+Here $\dd n_{u_{\textrm{rel}}} / n_{0}= f(u_{\textrm{rel}}) \dd u_{\textrm{rel}}$, where 
+\begin{equation*}%
+f(u_{\textrm{rel}}) = 4 \pi \left( \frac{m}{4 \pi kT} \right)^{3/2}\exp \left(- \frac{m u^{2}_{\textrm{rel}}}{4kT} \right) u_{\textrm{rel}}^{2}
+\end{equation*}
+is the relative velocity distribution of the molecules in an ideal gas.
+
+\hlblue{Example.} The \emph{average relative velocity} $\expval{u_{\textrm{rel}}}$ of the mole­cules is
+\begin{equation*}%
+\expval{u_{\textrm{rel}}} = \int_{0}^{\infty} u_{\textrm{rel}} f(u_{\textrm{rel}}) \, \dd u_{\textrm{rel}} = \sqrt{2} \sqrt{\frac{8kT}{\pi m}} = \sqrt{2} \expval{u}
+\end{equation*}
+where $\expval{u}$ is the arithmetic mean velocity of the molecules \ssect{10.3.6}.
+

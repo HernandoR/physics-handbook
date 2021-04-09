@@ -1,0 +1,375 @@
+% !TEX root = handbook-physics.tex
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+
+\chapter{First law of Thermodynamics}
+\label{ch-09}
+
+
+\section[Total and Internal Energy]{Total and Internal Energy of a System}
+\label{sec-9.1}
+
+\subsection{}\label{9.1.1} An arbitrary thermodynamic system \ssect{8.3.1}, in any thermodynamic state \ssect{8.3.3}, has a \emph{total energy} $E$ , which is the sum of:
+\begin{enumerate}[label=(\alph*)]
+\item the kinetic energy $E_{k}^{\textrm{Mech}}$ of mechanical motion of the system
+as a whole (or of its macroscopic parts);
+\item the potential energy $E_{p}^{\textrm{Ext}}$ \ssect{3.3.1} of the system in all external force fields (for instance, electromagnetic or gravitational fields); and
+\item the internal energy U:
+\begin{equation*}%
+E = E_{k}^{\textrm{Mech}} + E_{p}^{\textrm{Ext}} + U
+\end{equation*}
+\end{enumerate}
+
+\subsection{}\label{9.1.2} The \emph{internal energy} of a body or of a thermodynamic system \ssect{8.3.1} is the energy depending only upon the thermodynamic state of the body (or system). For a fixed (stationary) system, not located in any external force fields, the internal energy coincides with the total energy. The internal energy also coincides with the rest energy of a body (or system) \ssect{5.7.3} and includes the energy of all the types of internal motion of a body (or system) and the energy of interaction of all the particles (atoms, molecules, ions, etc.) making up the body (or system).
+
+For example, the internal energy of a gas consisting of poly­ atomic molecules (ammonia, carbon dioxide, etc.) consists of: 
+\begin{enumerate}[label=(\alph*)]
+\item kinetic energy of thermal translational and rotary motion of the molecules;
+\item kinetic and potential energy of vibration of the atoms and molecules;
+\item potential energy due to intermolecular interactions;
+\item energy of the electron shells of the atoms and ions;
+\item kinetic energy and potential energy of interaction of the nucleons \ssect{42.1.1} in the nuclei of the atoms.
+\end{enumerate}
+Terms (d) and (e) do not ordinarily change in processes that proceed at not very high temperatures so that ionization and excitation play no essential role. Under these conditions, terms (d) and (e) are not taken into account in the internal energy balance. Term (c) is also neglected for an ideal gas \ssect{8.4.1}.
+
+\subsection{}\label{9.1.3} The internal energy is a single-valued function of the thermodynamic state of a system. The value of the internal energy in any state is independent of the process by means of which the system reached this state. The change in internal energy in the transition of a system from state \hlblue{1} to state \hlblue{2} equals $\Delta U = U_{2} — U_{1}$ and is independent of the kind of transition $\hlblue{1} \to \hlblue{2}$ that occurs. If the system accomplishes a cycle \ssect{11.1.1} the total change in its internal energy is equal to zero: 
+\begin{equation*}%
+\oint \dd U = 0
+\end{equation*}
+As is well known, such a relation mathematically signifies that an element of change in the internal energy $\dd U$ is a com­plete (exact) differential. This property is also possessed by the entropy \ssect{11.4.2} and other state functions \ssect{8.3.8} (cf. \ssect{9.2.5}). 
+
+\subsection{}\label{9.1.4} In a system that is in a state of thermodynamic equilibrium the internal energy depends only upon the temperature and the external variables \ssect{8.3.5}. In particular, for a simple system \ssect{8.3.6} of constant mass $M$, the internal energy is a func­tion of the temperature $T$ and volume $V$ of the system (\emph{calorific equation of state} of a simple system):
+\begin{equation*}%
+U= \varphi (V, \,T).
+\end{equation*}
+
+\noindent\hlblue{Example 1.} The internal energy of an ideal gas \ssect{8.4.1} depends only on its absolute temperature and is proportional to the mass $M$ of the gas:
+\begin{equation*}%
+U = \oint_{0}^{T} C_{V} \dd T + U_{0}= M \left(\oint_{0}^{T} c_{V} \dd T + u_{0}\right)
+\end{equation*}
+where $C_{V}$ and $c_{V} = C_{V}/M$ are the heat capacity \ssect{9.5.1} and specific heat \ssect{9.5.2} of the gas at constant volume (in an isochoric process) \ssect{8.3.7}, $u_{0} = U_{0}/M$ is the internal energy of unit mass of the gas at $T = \SI{0}{\kelvin}$. For monatomic gases at ordinary temperatures $C_{V}$ is independent of $T$, and $U = C_{V}T + U_{0}$. 
+
+\noindent\hlblue{Example 2.} The internal energy of a van der Waals gas \ssect{12.2.1} is:
+\begin{equation*}%
+U = \oint_{0}^{T} C_{V} \dd T - \frac{M^{2}}{\mu^{2}} \frac{a}{V} + U_{0}
+\end{equation*}
+where $M$ is the mass of the gas, $\mu$ is its molar mass \ssect{8.4.3}, and $a$ is the van der Waals’ coefficient \ssect{12.2.3}.
+
+\subsection{}\label{9.1.5} In thermodynamics, the internal energy is determined to an accuracy of the constant term $U_{0}$, whose value depends upon the choice of the reference point for the quantity $U$, i.e. from a state with zero internal energy. The quantity $U_{0}$ plays practically no role in thermodynamical calculations in which the changes $\Delta U$ of internal energy, independent of $U_{0}$, are determined (see also \ssect{8.1.2}).
+
+\section{Heat and Work}
+\label{sec-9.2}
+
+\subsection{}\label{9.2.1} An energy exchange between a thermodynamic system and external bodies takes place in two ways: either by doing work or by means of heat exchange.\footnote{A discussion of the third way of energy exchange -- mass trans­fer -- is beyond the scope of the present handbook.} The amount of energy transferred to the system by external bodies in force inter­ action between the system and the bodies is called \emph{work} done on the system. The amount of energy transferred to the system by external bodies by heat transfer is called the \emph{quantity of heat} imparted to the system.\footnote{Sometimes the term ``heat'' is employed in place of the term ``quantity of heat'' if this leads to no confusion. It should be indicated, however, that heat, generally speaking, is to be under­ stood as a form of energy transfer \ssect{9.2.4}).}
+
+\subsection{}\label{9.2.2} If the thermodynamic system is fixed (stationary), a neces­ sary condition to do work is displacement of the external bodies interacting with it, i.e. it is necessary to change the external state variables of the system \ssect{8.3.5}. In the absence of external force fields, energy exchange between the lixed system and the external medium may take place by doing work when the volume and shape of the system are changed. According to the law of conservation of energy, the work $W'$ done on the system by external forces is numerically equal and opposite in sign to the work $W$ that the system does on the external medium, i.e. against the external forces:
+\begin{equation*}%
+W' = -W
+\end{equation*}
+\subsection{}\label{9.2.3} \emph{Expansion work} is the work done by the system in over­ coming the external pressure. An element of expansion work $\delta W = p_{\textrm{ext}} \dd V$, where $p_{\textrm{ext}}$ is the uniformly distributed external pressure, and dV is an element of change of the system’s volume. If the expansion process is an equilibrium (quasistatic) one \ssect{8.3.7}, $p_{\textrm{ext}} = p$, where $p$ is the pressure in the system. Then $\delta W = p \dd V$.
+
+The significance of the different ways used in denoting the elements of change $\delta W$ and $\dd U$ is explained in \ssect{9.4.3} and \ssect{9.1.3}. The work done in equilibrium expansion of system from volume $V_{1}$ to volume $V_{2}$ is
+\begin{equation*}%
+W = \int_{V_{1}}^{V_{2}} p \dd V
+\end{equation*}
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.25\textwidth]{figs/ch-09/fig-09-01.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{The work done by a gas in a vessel with a weightless movable piston.}
+\label{fig-09-01}
+\end{figure}
+
+\hlblue{Example.} The work done by a gas in a vessel with a weightless movable piston (\figr{fig-09-01}). The pressure of the gas $p > 0$ and, therefore, in its expansion $(\dd V > 0)$ the gas performs positive work $(\delta W > 0)$. In compressing the gas ($\dd V< 0$ and $\delta W < 0$) the positive work is done on the $p_{\textrm{ext}}$ gas by the forces of external pressure. Here the gas does negative work. The graphical representation of work is dis­cussed in \ssect{9.4.2}.
+
+
+
+\subsection{}\label{9.2.4} Heat exchange takes place between bodies (or parts of bodies) heated to different temperatures. There are three types of heat exchange: convection, conduction and radiation (radiative heat exchange).
+
+\emph{Convective heat exchange} is the transfer of energy in the form of heat between the unequally heated parts of gases or liquids
+or between gases, liquids and solids. Convective heat exchange in liquids takes place by motion of parts of the liquid with respect to one another or with respect to solids. For instance, in a radiator of a hot-water heating system, energy of the hot water flowing through the radiator is transferred by convection to the less heated walls of the radiator.
+
+The phenomenon of \emph{heat conduction} consists in the transfer of energy in the form of heat from one part of a non-uniformly heated body to another part. Thus, for example, energy is transferred through the walls of a heating radiator from the more heated inner surfaces to the less heated outer sur­faces.
+
+\emph{Radiative heat exchange} takes place without direct contact of the bodies exchanging energy and consists in the emission and absorption of the energy of an electromagnetic field by the bodies. An immense amount of energy is delivered from the sun to the earth’s surface by radiative heat exchange.
+
+\subsection{}\label{9.2.5} Work and heat are the energy characteristics of processes for changing the state of thermodynamic systems and are meaningful only when such processes occur. Depending upon the kind of process the system undergoes in its transition from state \hlblue{1} to state \hlblue{2}, it is necessary to perform different amounts of work and to deliver different quantities of heat to the system. 
+
+A comparison with \ssect{8.1.3} (on the change in the internal energy in processes) indicates that work and heat are not forms of energy and it is incorrect to speak of a ``stockpile of work'' or a ``reserve of heat'' in a body. For the same reasons, an ele­ment of the quantity of heat $\delta Q$ and an element of work $\delta W$ are not complete differentials (cf. \ssect{9.1.3}).
+
+\subsection{}\label{9.2.6} The performance of work on a system can change any type of its energy. For example, when a gas is rapidly com­ pressed in a vessel by means of a moving piston \ssect{9.2.3}, the work done by external forces on the gas increases the internal energy of the gas. In the inelastic collision of two bodies \ssect{3.5.3}, a part of the work is expended to change the kinetic energy of the bodies \ssect{3.2.2} and a part to change their internal energy.
+
+If energy is delivered to a system in the form of heat, it is used only to increase the internal energy of the system. This is due to the fact that in any kind of heat exchange \ssect{9.2.4}, energy is transferred directly between chaotically moving particles of the bodies. This changes their internal energy. In the process of heat conduction, for instance, in a nonuniformly heated rigid body the particles of the body located in its more heated parts transmit some of their energy to particles located in its less heated parts. The result is an equalization of the internal energies of the various parts of the body, an equalization of their temperatures and the discontinuation of the heat conduction process.
+
+It follows from the aforesaid that there is a qualitative dif­ference and lack of equivalence between work and heat as a form of energy transmission. Frequently, these two forms of transmitting energy exist simultaneously. For example, in heating a gas in a vessel with a moving piston, the volume of the gas is increased and work is done against the external pres­sure simultaneously.
+
+\subsection{}\label{9.2.7} A thermodynamical system is said to be \emph{closed} (or \emph{isolated}) if there is no exchange of energy in any form between it and the external medium. Such systems comply with the \emph{law of conservation of energy}: the total energy of the system remains unchanged regardless of the processes that occur within it. 
+
+\subsection{}\label{9.2.8} A thermodynamical system is said to be \emph{adiabatically isolated} (i.e. \emph{thermally isolated}) if no heat exchange takes place between it and the external medium. Such a system can per­ form work on external bodies. Moreover, external forces can do work on the system. An example of such a system is a cylin­der with a moving piston, filled with gas and surrounded all over by a dense layer of heatproof felt. The absence of heat exchange with the external medium does not exclude the possi­bility of the gas doing expansion work \ssect{9.2.3}, or the external pressure doing compression work on the gas.The properties of a system approximate those of an adiabatically isolated one if the change in its state is so rapid that there is no time, during the process, for heat exchange with the external medium. (For example, rapid expansion of a com­pressed gas released from a gas cylinder when the outlet valve is opened for a short time.)
+
+\section{First Law of Thermodynamics}
+\label{sec-9.3}
+
+\subsection{}\label{9.3.1} The \emph{first law of thermodynamics} states that the change in the internal energy $\Delta U_{1-2}$ of a system that occurs in the process 1 2 of transition of the system from state \hlblue{1} to state \hlblue{2} is equal to the sum of the work $W_{1-2}'$ done by external forces on the system and the quantity of heat $Q_{1-2}$ transmitted to the system:
+\begin{equation*}%
+\Delta U_{1-2} = W_{1-2}' + Q_{1-2}
+\end{equation*}
+where $W_{1-2}' = -  W_{1-2}$ and $W_{1-2}$ is the work done by the system to overcome external forces in the process $\hlblue{1} \to \hlblue{2}$. Hence
+\begin{equation*}%
+ Q_{1-2} = \Delta U_{1-2} + W_{1-2}
+\end{equation*}
+The quantity of heat transferred to a system is expended in changing the internal energy of the system and in the work done by the system to overcome the external forces.
+
+For an element of the quantity of heat $\delta Q$ an element of work $\delta W$ and an infinitely small change $\delta U$ of the internal energy, the first law of thermodynamics assumes the form
+\begin{equation*}%
+\delta Q = \dd U+ \delta W.
+\end{equation*}
+
+\subsection{}\label{9.3.2} If $\delta Q > 0$, then heat is being transferred to the system; if $Q < 0$, then heat is being removed from the system. In the finite process $\hlblue{1} \to \hlblue{2}$, elements of the quantity of heat can have both signs, and the total quantity of heat $Q_{1-2}$ in the process $\hlblue{1} \to \hlblue{2}$ is equal to the algebraic sum of the quantities of heat transferred during all the parts of this process:
+\begin{equation*}%
+\delta Q_{1-2} = \int_{1}^{2} \delta Q
+\end{equation*}
+It is customary to consider $\delta W> 0$ when the system performs work on external bodies, and $\delta W < 0$ when work is performed by external bodies on the system. The work $W_{1-2}$ done by the system in the finite process $\hlblue{1} \to \hlblue{2}$ is equal to the algebraic sum of the amounts of work $\delta W$ performed by the system during all the parts of this process:
+\begin{equation*}%
+W_{1-2} = \int_{1}^{2} \delta W
+\end{equation*}
+
+
+\subsection{}\label{9.3.3} If the system for instance, the working medium \ssect{11.1.1} in a periodic-action engine completes a cycle $\hlblue{1} \to \hlblue{1}$ \ssect{11.1.1}, then $\Delta U_{1-1}= 0$ and $W_{1-1}= Q_{1-1}$. It is impossible to build an operating engine that could perform more work than the energy transferred to the system from outside. Such an engine is called a \emph{perpetual motion machine of the first kind}. The impos­sibility of constructing a perpetual motion engine of the first bind is also a statement of the first law of thermodynamics.
+
+\section[Graphical Representation]{Graphical Representation of Thermodynamic Processes and Work}
+\label{sec-9.4}
+
+\subsection{}\label{9.4.1} The equation of state \ssect{8.3.6} of a thermodynamic system enables the value of any state variable, for example $p$, to be determined from any values of two other variables, such as $V$ and $T$. Therefore, thermodynamic processes can be graphically represented in various two-dimensional coordinate systems. In addition to the most extensively used $p V$ diagrams, $p T$ and $V T$ diagrams are also used.
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-09/fig-09-02.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{Graphical representation of an equilibrium process.}
+\label{fig-09-02}
+\end{figure}
+
+In \figr{fig-09-02}, the thermodynamic process in the $pV$ diagram is represented by the curve $C_{1}C_{2}$, and the points $C_{1}(p_{1},\, V_{1})$ and $C_{2}(p_{2},\, V_{2})$indicate the initial and final states of the thermodynamic system.
+
+Only equilibrium processes \ssect{8.3.7} can be represented graphi­cally. State variables for the whole body (or system) cannot be specified for non-equilibrium processes \ssect{8.3.7} because they differ at different parts of the body (or system). Hence such graphical representation of non-equilibrium processes is impossible.
+
+\subsection{}\label{9.4.2} An element of work $\delta W$ done by a system \ssect{9.2.3} in an equilibrium process \ssect{8.3.7} can be measured by the area of the trapezoid having one curvilinear side, hatched in \figr{fig-09-02}. The work $W_{1-2}$ done by the system in the process $C_{1}C_{2}$ is equal to
+\begin{equation*}%
+W_{1-2} = \int_{V_{1}}^{V_{2}} p \dd V
+\end{equation*}
+and is measured by the area that is bounded by the curve re­presenting process $C_{1}C_{2}$,the axis of abscissas and the ordinates $p_{1}$ and $p_{2}$ of points $C_{1}$ and $C_{2}$. The amount of work $W_{1-2}$ done depends on how the system passes from state $C_{1}$ to state $C_{2}$, i.e. upon the kind of process $C_{1}C_{2}$ the system undergoes in changing its state. In the $pV$ diagram of \figr{fig-09-03} the amounts of work done by the system in the processes $C_{1}L_{1}C_{2}$, $C_{1}L_{2}C_{2}$ and $C_{1}L_{3}C_{2}$, and equal to $WL_{1}$, $WL_{2}$ and $WL_{3}$, respectively, are measured by three areas that differ in size: $WL_{1} > WL_{2} > WL_{3}$.
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-09/fig-09-03.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{Finding work done via graphical representation.}
+\label{fig-09-03}
+\end{figure}
+
+After the system has completed the cycle \ssect{11.1.1} $C_{1}L_{1}C_{2}L_{3}C_{1}$ the total amount of work $W_{C_{1}-C_{1}}$ is not equal to zero. The positive expansion work in process $C_{1}L_{1}C_{2}$ exceeds the negative work done in the compression process $C_{2}L_{3}C_{1}$. The resultant positive work is measured by the hatched area in \figr{fig-09-03}. 
+
+\subsection{}\label{9.4.3} The work $W$ and the quantity of heat $Q$ are not state functions \ssect{8.3.8}. In various processes $\hlblue{1} \to \hlblue{2}$, in which the state of a system is changed, various quantities of heat are transferred to the system, and various amounts of work are done. Elements of the changes in the physical quantities $\delta Q$ and $\delta W$ are not complete differentials \ssect{9.1.3}.
+
+\section[Heat Capacity of Matter]{Heat Capacity of Matter. Applying the First Law of Thermodynamics to Isoprocesses in an Ideal Gas}
+\label{sec-9.5}
+
+\subsection{}\label{9.5.1} The \emph{heat capacity} $C$ of a body is a physical quantity, numerically equal to the ratio of the quantity of heat $\delta Q$ transferred to the body to the change $\dd T$ in the temperature of the body in the thermodynamic process being considered:
+\begin{equation*}%
+C = \frac{\delta Q}{\dd T}
+\end{equation*}
+The value of $C$ depends upon the mass of the body, its chemical composition, thermodynamic state and the process in which the heat $\delta Q$ is transferred to it.
+
+\subsection{}\label{9.5.2} The \emph{specific heat} $c$ is the heat capacity per unit mass of a substance. For a homogeneous body $c = C/M$, where $M$ is the mass of the body.
+
+The \emph{molar heat capacity} $C_{\mu}$ is the heat capacity of a single mole (\ref{app-01}) of the substance: $C_{\mu} = \mu \,c$, where $\mu$ is the molar mass \ssect{8.4.3} of the substance.
+
+ 
+\subsection{}\label{9.5.3} The element of the quantity of heat $\delta Q$ that must be transferred to a body to change its temperature from $T$ to $T + \Delta T$ is
+\begin{equation*}%
+\delta Q = C \dd T
+\end{equation*}
+For a homogeneous body $\delta Q - M c \,\dd T = (M/\mu) C_{\mu} \dd T$, where $M$ is the mass of the body, $\mu$ is its molar mass and $M/\mu$ is the number of moles in the body. 
+
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-09/fig-09-04.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{Finding work done via graphical representation.}
+\label{fig-09-04}
+\end{figure}
+
+\subsection{}\label{9.5.4} For equilibrium \ssect{8.3.7} iso­ processes in gases \ssect{8.3.7}, the first law of thermodynamics \ssect{9.3.1} is of the form
+\begin{equation*}%
+\frac{M}{\mu} C_{\mu} \dd T = \dd U + p \dd V
+\end{equation*}
+In the isochoric process \ssect{8.3.7}  of heating or cooling a gas (straight lines 1-2 and 1-3 in \figr{fig-09-04}), no element of work $\delta W = p \dd V$ is done (because $\dd V = 0$). The whole quantity of heat trans­ferred to the gas is expended in changing its internal ener­gy: $\delta Q = \dd U$. If $C_{V_{\mu}}$ is the molar heat capacity at constant volume,
+\begin{equation}%
+\frac{M}{\mu} C_{V_{\mu}} \dd T = \dd U + p \dd V
+\tag{$\star$}
+\end{equation}
+Within a definite temperature range it can be assumed that $C_{V_{\mu}}\approx  \textrm{const}$ (for greater detail see \ssect{10.7.4}) and that the
+change in the internal energy of the gas $\Delta U_{1-2}$, as its temper­ature is changed from $T_{1}$ to $T_{2}$, is equal to $\Delta U_{1-2} = U_{2} - U_{1} = (M/\mu) C_{V_{\mu}} (T_{2} - T_{1})$ and is due to the quantity of heat
+$Q_{1-2}$ transferred to the gas in the isochoric process:
+\begin{equation}%
+Q_{1-2}  = \frac{M}{\mu} C_{V_{\mu}}(T_{2} - T_{1})
+\tag{$\star\star$}
+\end{equation}
+At $T_{2} > T_{1}$, $Q_{1-2}> 0$ and a definite quantity of heat is trans­ferred to gas; at $T_{2} < T_{1}$, $Q_{1-2} < 0$ and a definite quantity of heat is conducted away from the gas.
+
+\subsection{}\label{9.5.5} For an ideal gas, equations $(\star)$ and $(\star\star)$ express the change in its internal energy in \emph{any process} for changing the state of the gas in the temperature range $(T_{2} - T_{1})$. The internal energy of an ideal gas depends only on its chemical composition, mass and temperature.
+
+In real gases \ssect{12.1.2} the inter­nal energy includes the poten­tial energy of interaction be­tween the molecules \ssect{9.1.2}, which depends upon the dis­tance between them. This part of the internal energy of a real gas is changed with changes in its volume. Therefore, equations $(\star)$ and $(\star\star)$ express the change in the internal energy of a real gas only when it is heated or cooled in an
+isochoric (constant-volume) process.
+
+\subsection{}\label{9.5.6} In an arbitrary equilibrium process \ssect{8.3.7} that takes place in an ideal gas, the first law of thermodynamics assumes the form
+\begin{equation*}%
+\frac{M}{\mu} C_{\mu}\dd T = \frac{M}{\mu} C_{V_{\mu}} \dd T + p \dd V
+\end{equation*}
+where $C_{\mu}$ is the molar heat capacity of an ideal gas in the given process. The isobaric process \ssect{8.3.7} of heating (straight line 1-2 in \figr{fig-09-05}) or cooling (straight line 1-3 in \figr{fig-09-05}) a gas can be carried out, for instance, in a vessel (cylinder) closed by a movable piston subject to a constant external pressure. An clement of work 6IF done by an ideal gas in an isobaric process is
+\begin{equation*}%
+\delta W = p \dd V = \frac{M}{\mu} R \dd T 
+\end{equation*}
+in which use is made of the expression $\dd V = (M/\mu) (R/p) \dd T$ from the Mendeleev-Clapeyron equation \ssect{8.4.4} at $p = \textrm{const}$.
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-09/fig-09-05.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{Finding work done via graphical representation.}
+\label{fig-09-05}
+\end{figure}
+The universal gas constant $R$ \ssect{8.4.4} is numerically equal to the work done by one mole of an ideal gas when it is heated isobarically by one degree:
+\begin{equation*}%
+R = \frac{\delta W}{(M/\mu) \dd T }
+\end{equation*}
+The work $W_{1-2}$ done by the gas in isobaric expansion 1-2 is
+\begin{equation*}%
+W_{1-2} = \int_{V_{1}}^{V_{2}} p \dd V = p (V_{2} - V_{1})
+\end{equation*}
+It is represented by the hatched area in \figr{fig-09-05}. For an ideal gas the work $W_{1-2}$ is also equal to
+\begin{equation*}%
+W_{1-2} = \frac{M}{\mu} R (T_{2} - T_{1}).
+\end{equation*}
+
+
+\subsection{}\label{9.5.7} The element of the quantity of heat $\delta Q$ transferred to the gas in the isobaric process is
+\begin{equation*}%
+\delta Q = \frac{M}{\mu} C_{p\mu} \dd T
+\end{equation*}
+where $C_{p\mu}$ is the molar heat capacity at constant pressure. If the quantity $C_{p\mu}$ can be assumed constant in the temperature
+range $(T_{2} - T_{1})$ then the quantity of heat $Q_{1-2}$ transferred to (or conducted away from) the gas is
+\begin{equation*}%
+Q_{1-2} = \frac{M}{\mu} C_{p\mu} (T_{2} - T_{1}).
+\end{equation*}
+
+\subsection{}\label{9.5.8} The molar heat capacities $C_{p\mu}$ and $C_{V\mu}$ of a gas are re­lated by the \emph{Mayer equation}
+\begin{equation*}%
+C_{p\mu} - C_{V\mu} = R
+\end{equation*}
+For specific heats $c_{p}$ and $c_{V}$, the Mayer relation is of the form 
+\begin{equation*}%
+c_{p} - c_{V} = \frac{R}{\mu}
+\end{equation*}
+where $\mu$ is the molar mass \ssect{8.4.3} of the gas. 
+
+For the heat capacities $C_{p}$ and $C_{V}$
+\begin{equation*}%
+C_{p} - C_{V} = \frac{M}{\mu} R
+\end{equation*}
+where $M$ is the mass of the gas and $M/\mu$ is the number of moles it contains.
+
+The Mayer relation indicates that in heating a gas isobarically by one degree a greater quantity of heat must be transferred to the gas than in isochoric
+heating by the same amount. This difference between the quantities of heat should be equal to the work done by the gas in its isobaric expansion. 
+
+
+\subsection{}\label{9.5.9} The isothermal process \ssect{8.3.7} of expanding (or compressing) a gas takes place in heat exchange \ssect{9.2.4} between the gas and the external me­dium at a constant tempera­ture difference. For this to be
+feasible, the heat capacity \ssect{9.5.1} of the external medium should be sufficiently great and the process of expansion (or compression) should proceed extremely slowly. First-order phase transitions \ssect{12.3.3}, such as boiling and condensa­tion, are isothermal processes if they proceed at constant ex­ternal pressure.
+
+In an isothermal process in an ideal gas the internal energy of the gas remains unchanged \ssect{9.5.5} and the whole quantity of heat $Q_{1-2}$ transferred to the gas is expended in the work $W_{1-2}$ done by the gas to overcome the external forces:
+\begin{equation*}%
+Q_{1-2} = W_{1-2} = \int_{V_{1}}^{V_{2}} p \dd V = \frac{M}{\mu} RT \int_{V_{1}}^{V_{2}} \frac{\dd V}{V} =\frac{M}{\mu} RT \ln \frac{V_{2}}{V_{1}}
+\end{equation*}
+Here $\frac{M}{\mu}$ is the number of moles contained in mass $M$ of the gas, $T$ is the constant temperature of the gas, and $V_{1}$ and $V_{2}$ are the initial and final volumes of the gas. If the gas isother­mally expands $(V_{2}> V_{1})$, heat is being transferred to it $Q_{1-2}> 0$)and it is doing positive work $(W_{1-2} > 0)$ represented by the hatched area in \figr{fig-09-06}. 
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.4\textwidth]{figs/ch-09/fig-09-06.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{Finding work done via graphical representation.}
+\label{fig-09-06}
+\end{figure}
+In isothermal compression of the gas (process 1-3 in \figr{fig-09-06}), the work done by the gas is negative $(W_{1-3} < 0)$ . Positive work $(W_{1-3}' = -W_{1-3}> 0)$ is being done by the external forces to compress the gas. In com­pression, a certain quantity of heat is conducted away from the gas $(Q_{1-3} < 0)$. The heat capacity of a substance in an isother­mal process equals infinity ($\dd T = 0$ and $\delta Q \neq 0$).
+
+\subsection{}\label{9.5.10} An adiabatic process \ssect{8.3.7} proceeds under the condition that $\delta Q  = 0$. It is essential that the condition $Q = 0$ does not define this process, because it does not specify the absence of heat exchange with the external medium. It only indicates that the algebraic sum of the quantities of heat transferred to and conducted away from the gas in various parts of the process equals zero. In an adiabatic process, work is done by an ideal gas at the expense of its internal energy:
+\begin{equation*}%
+\delta W = - \dd U = -\frac{M}{\mu} C_{V\mu} \dd T
+\end{equation*}
+where $C_{V\mu}$ is the molar heat capacity of the gas at constant volume, $M/\mu$ is the number of moles contained in mass $M$ of the gas, and $\dd T$ is an element of change in the temperature of the gas. If the gas adiabatically expands $(\delta W = p \dd V > 0)$, it is cooled $(\dd T < 0)$. In adiabatic compression the gas is heated: $\delta W = p \dd V < 0$ and $\dd T > 0$.
+
+\subsection{}\label{9.5.11} The \emph{adiabatic}, or \emph{Poisson, equation}: $pV^{\varkappa}= \textrm{const}$, is valid for an equilibrium adiabatic process \ssect{8.3.7}.
+
+Making use of the Mendeleev-Clapeyron equation \ssect{8.4.4}, the relation between $p$ and $T$, and also between $V$ and $T$, in an adiabatic process can be found from the adiabatic equation:
+\begin{equation*}%
+pT^{\frac{\varkappa}{\varkappa -1}} = \textrm{const} \qand VT^{\frac{1}{\varkappa -1}}= \textrm{const}
+\end{equation*}
+In these equations the dimensionless quantity $\varkappa = C_{p\mu}/C_{V\mu}$ $= c_{p}/c_{V} > 1$ is the \emph{adiabatic exponent}. The full curve in \figr{fig-09-07}, called an \emph{adiabat} or \emph{adiabatic curve}, represents an adiabatic process in a $pV$ diagram. The dashed curve on this diagram, called an \emph{isotherm}, represents an isothermic process at the temperature corresponding to the initial state \hlblue{1} of the gas. In an adiabatic process the pressure varies with the volume more rapidly than in an isothermic process (the curve is steep­ er). In adiabatic expansion the temperature of the gas and its pressure decrease faster than in the corresponding isothermal expansion. In adiabatic compression of the gas its pressure increases at a higher rate than in the corresponding isothermal compression. The reason is that the increased pressure is due both to the decrease in the volume of the gas and to the increase in its temperature.
+
+\subsection{}\label{9.5.12} The work $W_{1-2}$ done by the gas in the adiabatic process $\hlblue{1} \to \hlblue{2}$ is measured by the hatched area in \figr{fig-09-07}.
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-09/fig-09-07.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{Finding work done via graphical representation.}
+\label{fig-09-07}
+\end{figure}
+The amount of work $W_{1-2}$ done in an adiabatic process is ex­pressed by
+
+
+In these equations $M/\mu$ is the number of moles contained in mass $M$ of the gas, $C_{V\mu}$ is the molar heat capacity at constant volume, $\varkappa$ is the adiabatic exponent, and $p$, $V$ and $T$ are the state variables of the gas in the states \hlblue{1} and \hlblue{2} as indicated.
+
+\subsection{}\label{9.5.13} \tabl{table-9.1} lists summarized information on the isoprocesses in gases.
+
+\clearpage
+\begin{landscape}
+
+\begin{table}
+\begin{scriptsize}
+\begin{tabular}{p{2.25cm}p{2cm}p{2cm}p{2.cm}p{3cm}}
+\toprule
+\hlblue{Thermodynamic Process} & \hlblue{Isochoric} & \hlblue{Isobaric} & \hlblue{Isothermal} & \hlblue{Adiabatic} \\
+\midrule
+Basic Condition & $V = \textrm{const}$  & $p = \textrm{const}$  & $T = \textrm{const}$  & $\delta Q = 0$ \\ 
+\midrule
+Relationship between state variables & $\dfrac{p}{T} = \textrm{const}$ & $\dfrac{V}{T} = \textrm{const}$&$pV = \textrm{const}$ &  $pV^{\varkappa} = \textrm{const}$ \\
+& & & &  $pT^{\varkappa/(\varkappa -1)} = \textrm{const}$\\
+& & & &  $VT^{1/(\varkappa -1)} = \textrm{const}$\\
+\midrule
+Work done in the process& $\delta W  = 0 $ & $\delta W = p \dd V$ &$\delta W = p \dd V$& $\delta W = p \dd V = -\dd U$ \\
+&  $ W  = 0 $& $W = p (V_{2} - V_{1})$ & $W = \dfrac{M}{\mu} RT \ln\dfrac{V_{2}}{V_{1}}$ & $W = -\Delta U = C_{V} (T_{2} - T_{1})$\\
+\midrule
+Quantity of heat transferred in the process& $\delta Q  = C_{V} \dd T $& $\delta Q = C_{p} \dd T$ & $\delta Q = \delta W$& $\delta Q = 0$ \\
+& $Q = C_{V} (T_{2} - T_{1})$ & $Q = C_{p} (T_{2} - T_{1})$ & $Q =W$& $Q = 0$\\
+\midrule
+Change in internal energy& $\dd U  = \delta Q $ & $\dd U  = C_{V} \dd T $& $\dd U =0$ & $\dd U = - \delta W = C_{V} \dd T$ \\
+& $U=Q$ & $U = C_{V}(T_{2} - T_{1})$& $\Delta U = 0$ & $\Delta U = -W = C_{V} (T_{2} - T_{1})$ \\
+\midrule
+Heat capacity& $C_{V} = \dfrac{M}{\mu}\dfrac{R}{\varkappa -1}$&$C_{p} = \dfrac{M}{\mu}\dfrac{\varkappa R}{\varkappa -1}$ & $C_{T}=\infty$ & $C_{ad}=0$\\
+\bottomrule
+\end{tabular}
+\end{scriptsize}
+\caption{A table of isoprocesses.}
+\label{table-9.1}
+\end{table}
+\end{landscape}
