@@ -1,36 +1,33 @@
-% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
-% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
-
-% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
-
-%!TEX TS-program = pdflatex
+%!TEX TS-program = lualatex
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass[10pt,b6paper,twoside]{book}
 \usepackage{geometry}   
 \geometry{textheight = 390pt}
 \usepackage{graphicx}
-%\usepackage{amssymb}
-%\usepackage[urw-garamond]{mathdesign}
-%\usepackage[T1]{fontenc}
 
-%\usepackage{fouriernc}
-%\usepackage[T1]{fontenc}
-\usepackage{kpfonts}
-\usepackage{gillius}
-%\renewcommand*\sfdefault{ugq}
-%\usepackage[urw-garamond]{mathdesign}
-%\usepackage{ebgaramond}
-%\usepackage{garamondx}
-%\setmonofont{Latin Modern Mono Light}
-%\usepackage{cabin}
 
- \DeclareTextCommandDefault{\nobreakspace}{\leavevmode\nobreak\ } 
+
+%\usepackage{}
+\let\widering\relax
+\let\widebar\relax
+
+\usepackage{fontspec}
+\usepackage{amsmath, amssymb, mathabx}
+%\usepackage{unicode-math}
+\usepackage{microtype}
+\usepackage{libertinus}
+\usepackage[T1]{fontenc}
+\setmainfont{Libertinus Serif}
+
+\usepackage[medium]{josefin}
+
+% \DeclareTextCommandDefault{\nobreakspace}{\leavevmode\nobreak\ } 
 
 
 \usepackage[usenames,svgnames]{xcolor}
 
-\usepackage{amsmath}
+
 
 \usepackage{graphicx}
 %\usepackage{quattrocento}
@@ -43,7 +40,7 @@
 
 \usepackage{fancyhdr}
 
-\usepackage{mathabx}
+
 
 %\pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{\small\itshape{#1}}{}}
@@ -114,6 +111,8 @@
 
 
 \usepackage{lscape}
+%\usepackage{yhmath}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

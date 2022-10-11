@@ -362,26 +362,34 @@ of the molecule can be assumed independent of one another. Thus, at small amplit
 \item No changes in the energy of motion of the electrons occur when a substance is heated by one degree at ordinary tempera­tures. Adjacent energy levels of the electrons in the molecule are separated by energy of the order of several $eV$, correspond­ ing to temperatures of several tens of thousands of degrees \ssect{10.7.6}. Therefore, the energy of motion of electrons in the molecule can be neglected in dealing with the heat capacities of monatomic and polyatomic gases up to the very highest temperatures.
 \end{enumerate}
 
-\subsection{}\label{10.7.4} As a first approximation, the vibrational motion of the nuclei in the molecule is described as the vibration of a harmonic oscillator (38.5.4), whose mass m is equal to the reduced mass of a system of vibrating atoms, m = m1m2/(m1+
-
-+ m2), where m1and m2are the masses of the atoms. Then the energy of vibrational motion of the molecule equals
-where n is the quantum number and assumes integral values: n = 0, 1, 2, . . ., v0 is the natural frequency of vibrations (38.5.5), and h is Planck’s constant (Appendix II). The energy of a harmonic oscillator, equal to hvj2 at n = 0, is conserved at any arbitrarily low temperatures, and even a t f - O (38.5.6). The difference AETM between the energies of two adjacent vibra­
-tional energy levels, AETM = hv0, is independent of the quantum number. Valid at room and lower temperatures is the condi­ tion: ATM kT. No changes are observed in the energy of vibrational motion of molecules at such temperatures. In cal­
-culating the heat capacity of gases under such conditions, vibrational degrees of freedom of the molecule can be neglected. In the general case, vibrational motions make contributions to the internal energy UY (9.1.2) and the heat capacity C VX (9.5.2). For one mole
-/hv hv\
-NAhv e2hT+g 2hT) 2'/hv hv\
-U"2W -e~ 2kT )
-where T is the absolute temperature, k is Boltzmann’s constant (8.4.5) and NA is Avogadro’s number (Appendix II). At high temperatures (T > hv/k)
-UYNAkT=RT, CVllyNAk=R.
-These results coincide with those of classical theory which follow from the principle of the equipartition of energy (10.6.4). Under these conditions the energy of the oscillator can be
-
-assumed to vary continuously because AETM< kT. At suf­ ficiently low temperatures (T hv/k)
-Uy Na2— + N Ahve hT , and
-hv KT , ( hv 2 hf
-Cvv NAk [ kT ) e
-As T 0, the energy Uv This quantity is called the zero-point vibrational energy of the system (38.5.6). As f->0, the heat capacity CViXy-+
-
-0 in accordance with the third law of thermodynamics (11.8.4). The dependence CVll = / (T) for diatomic gases is shown in Fig. 10.7.
+\subsection{}\label{10.7.4} As a first approximation, the vibrational motion of the nuclei in the molecule is described as the vibration of a harmonic oscillator \ssect{38.5.4}, whose mass $m$ is equal to the reduced mass of a system of vibrating atoms, $m = m_{1}m_{2}/(m_{1} + m_{2})$, where $m_{1}$ and $m_{2}$ are the masses of the atoms. Then the energy of vibrational motion of the molecule equals 
+\begin{equation*}%
+E_{v}^{\text{m}} = h \nu_{0} \left( n + \frac{1}{2}\right)
+\end{equation*}
+where $n$ is the quantum number and assumes integral values: $n = 0, \,1,\, 2, \ldots{}$, $\nu_{0}$ is the natural frequency of vibrations \ssect{38.5.5}, and $h$ is Planck’s constant (Appendix II). The energy of a harmonic oscillator, equal to $h\nu_{0}/2$ at $n = 0$, is conserved at any arbitrarily low temperatures, and even at $T \to 0$ \ssect{38.5.6}. The difference $\Delta E_{v}^{\text{m}}$ between the energies of two adjacent vibra­tional energy levels, $\Delta E_{v}^{\text{m}} = h\nu_{0}$, is independent of the quantum number. Valid at room and lower temperatures is the condi­tion: $\Delta E^{\text{m}}_{v} \gg kT$. No changes are observed in the energy of vibrational motion of molecules at such temperatures. In cal­culating the heat capacity of gases under such conditions, vibrational degrees of freedom of the molecule can be neglected. In the general case, vibrational motions make contributions to the internal energy $U_{v}$ \ssect{9.1.2} and the heat capacity $C_{V\mu}$ \ssect{9.5.2}. For one mole
+\begin{align*}%
+U_{v} & = \frac{N_{A}h \nu}{2} \frac{\left(\exp \left(\frac{h \nu}{2kT}\right) + \exp \left(-\frac{h \nu}{2kT}\right) \right)}{\left(\exp \left(\frac{h \nu}{2kT}\right) - \exp \left(-\frac{h \nu}{2kT}\right) \right)} \\
+C_{V\mu_{v}} & = \frac{N_{A}k}{4} \left(\frac{h \nu}{kT}\right)^{2} \left(\frac{\exp \left(\frac{h \nu}{2kT}\right) - \exp \left(-\frac{h \nu}{2kT}\right)}{2} \right)^{-2}
+\end{align*}
+where $T$ is the absolute temperature, $k$ is Boltzmann’s constant \ssect{8.4.5} and $N_{A}$ is Avogadro’s number (Appendix II). At high temperatures $(T \gg h\nu/k)$
+\begin{equation*}%
+U_{v} \approx N_{A} k T = RT, \quad C_{V\mu v} \approx N_{A}k = R
+\end{equation*}
+These results coincide with those of classical theory which follow from the principle of the equipartition of energy \ssect{10.6.4}. Under these conditions the energy of the oscillator can be assumed to vary continuously because $\Delta E^{m}_{v} \ll kT$. At sufficiently low temperatures $(T \ll h\nu/k)$
+\begin{align*}%
+U_{v} & \approx  \frac{N_{A}h \nu}{2} + N_{A}h \nu  \exp \left(-\frac{h \nu}{kT}\right)\\
+C_{V\mu_{v}} & \approx N_{A}k \left(\frac{h \nu}{kT}\right)^{2}\exp \left(-\frac{h \nu}{kT}\right)
+\end{align*}
+As $T \to 0$, the energy $U_{v} \to N_{A} h \nu/2$. This quantity is called the \emph{zero-point vibrational energy} of the system \ssect{38.5.6}. As $T \to 0$, the heat capacity $C_{V\mu v} \to 0$ in accordance with the third law of thermodynamics \ssect{11.8.4}. The dependence $C_{V\mu v} = f(T)$ for diatomic gases is shown in \figr{fig-10-07}.
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-10/fig-10-07.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{The dependence $C_{V\mu v} = f(T)$ for diatomic gases.}
+\label{fig-10-07}
+\end{figure}
 
 \subsection{}\label{10.7.5} As a first approximation,
 0 T the rotary motion of diatomic molecules can be dealt with as
