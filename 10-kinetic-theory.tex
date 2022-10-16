@@ -391,32 +391,171 @@ As $T \to 0$, the energy $U_{v} \to N_{A} h \nu/2$. This quantity is called the 
 \label{fig-10-07}
 \end{figure}
 
-\subsection{}\label{10.7.5} As a first approximation,
-0 T the rotary motion of diatomic molecules can be dealt with as
-F i g . 10.7
-the motion of a rigid dumbbell which rotates about its centre of mass with the moment of
-inertia I = m1m2r§/(mt + m2), where m = m1m2l(m1+ m2) is the reduced mass of the molecule (m1 and m2 are the masses of the two atoms), and r0 is the distance between the atoms in the molecule. The energy of such a system is
-ETM= h2/(/+!), 8nl
-where / is a quantum number that assumes the values J = = 0, 1, 2, ... . The difference AETM between the energies of two adjacent rotational energy levels is
-A£mr 2/i2(7+1). 87
-The value of AA'J?1is less than Ai£TM by a factor of 800 to 1000.
+\subsection{}\label{10.7.5} As a first approximation, the rotary motion of diatomic molecules can be dealt with as the motion of a rigid dumbbell which rotates about its centre of mass with the moment of inertia $I = m_{1}m_{2}r_{0}^{2}/(m_{1} + m_{2})$, where $m = m_{1}m_{2}/(m_{1}+ m_{2})$ is the reduced mass of the molecule ($m_{1}$ and $m_{2}$ are the masses of the two atoms), and $r_{0}$ is the distance between the atoms in the molecule. The energy of such a system is
+\begin{equation*}%
+E^{\text{m}}_{\text{r}} = \frac{h^{2}}{8 \pi I} J (J+1)
+\end{equation*}
+where $J$ is a quantum number that assumes the values $J = 0, \,1,\, 2, \ldots$ difference $\Delta E^{\text{m}}_{\text{r}}$ between the energies of two adjacent rotational energy levels is
+\begin{equation*}%
+\Delta E^{\text{m}}_{\text{r}} = \frac{2h^{2}}{8 \pi^{2} I} (J+1)
+\end{equation*}
+The value of $\Delta E^{\text{m}}_{\text{r}}$ is less than $E^{\text{m}}_{\text{v}}$ by a factor of 800 to 1000.
 
+At ordinary temperatures $\Delta E^{\text{m}}_{\text{r}} \ll kT$ for diatomic and certain polyatomic gases (water vapour, methane, etc.), and the quantization of the energy of rotary motion of the molecules can be ignored. Under these conditions, the principle of equipartition of energy \ssect{10.6.4} can be applied in calculating the contri­bution of rotary motion to the heat capacity.
 
-
-At ordinary temperatures ATM < kT for diatomic and certain
-polyatomic gases (water vapour, methane, etc.), and the quan­ tization of the energy of rotary motion of the molecules can be ignored. Under these conditions, the principle of equiparti- tion of energy (10.6.4) can be applied in calculating the contri­ bution of rotary motion to the heat capacity.
 The contribution of rotary motion of diatomic molecules to the internal energy and heat capacity per mole equals:
-(a) At high temperatures (T > h2/Sn2kI)
-UTNAkT(l-  lIkT),and CVllTNAk=R.
-The heat capacity CVfJLr at high temperatures has a value fol­ lowing from the principle of equipartition of energy (10.6.4). (b) At low temperatures (T < h2/Sj2kI)
-/?2 3h2N A ~ 4jt2i h T
-4v?l 6
-CFji 3
-and
-/l2 Na e 4ji2IhT
-kT2
-as T 0, the heat capacity CVVir -> 0 (10.7.4). The general shape of the curve representing the dependence CVllT = / (T) is the same as that in Fig. 10.7.
-As the gas cools, the reduction in the energy of its molecules leads to a reduction in the number of molecules transferring to higher rotational energy levels. At sufficiently low tem­ peratures, the rotation of the molecules in a gas practically cannot be excited, and rotational degrees of freedom make no contribution to the heat capacity of the gas. The heat capa­ cities of all gases at low temperatures become the same as for monatomic gases whose molecules have no rotational degrees of freedom.
+\begin{enumerate}[label=(\alph*)]
+\item At high temperatures $(T \gg h^{2}/8\pi^{2}kI)$
 
-\subsection{}\label{10.7.6} At extremely high temperatures, of the order of tens of thousands of degrees, the heat capacity is increased. This is associated with the fact that the value of kT under such condi­
-tions becomes comparable, in order of magnitude, with AjE11, the change in the energy of the electrons in their transition from lower to higher energy levels. Moreover, at high tem­ peratures the processes of dissociation and ionization of the gases make contributions to their heat capacities.
+\begin{equation*}%
+U_{r} \approx N_{A} kT \left(1 -  \frac{h^{2}}{24\pi^{2}I kT} \right), \qand C_{V \mu r} \approx N_{A}k = R
+\end{equation*}
+The heat capacity $C_{V \mu r}$ at high temperatures has a value following from the principle of equipartition of energy \ssect{10.6.4}. 
+\item At low temperatures $(T \ll h^{2}/8\pi^{2}kI)$
+\begin{align*}%
+U_{r} & \approx \frac{3 h^{2} N_{A}}{4 \pi^{2} I} \exp \left(- \frac{h^{2}}{4\pi^{2}I kT} \right),  \\
+C_{V \mu r} & \approx 3 \left( \frac{h^{2}}{4 \pi^{2}I} \right) \frac{N_{A}}{kT^{2}} \exp \left(- \frac{h^{2}}{4\pi^{2}I kT} \right)
+\end{align*}
+as $T \to 0$, the heat capacity $ C_{V \mu r} \to 0$ \ssect{10.7.4}. The general shape of the curve representing the dependence $C_{V \mu r} = f (T)$ is the same as that in \figr{fig-10-07}.
+\end{enumerate}
+
+As the gas cools, the reduction in the energy of its molecules leads to a reduction in the number of molecules transferring to higher rotational energy levels. At sufficiently low tem­peratures, the rotation of the molecules in a gas practically cannot be excited, and rotational degrees of freedom make no contribution to the heat capacity of the gas. The heat capa­cities of all gases at low temperatures become the same as for monatomic gases whose molecules have no rotational degrees of freedom.
+
+\subsection{}\label{10.7.6} At extremely high temperatures, of the order of tens of thousands of degrees, the heat capacity is increased. This is associated with the fact that the value of $kT$ under such conditions becomes comparable, in order of magnitude, with $\Delta E_{\text{e}}^{\text{m}}$, the change in the energy of the electrons in their transition from lower to higher energy levels. Moreover, at high tem­peratures the processes of dissociation and ionization of the gases make contributions to their heat capacities.
+
+\section{Transport Phenomena in Gases}
+\label{sec-10.8}
+
+\subsection{}\label{10.8.1} \emph{Transport phenomena} unite a group of processes pertain­ ing to non-uniformities in the density, temperature or velocity of ordered motion of various layers of a substance. The equalization of these non-uniformities leads to transport phenomena. Transport phenomena include diffusion, internal friction and heat conduction.
+
+\subsection{}\label{10.8.2} Transport phenomena in gases and liquids consist of ordered directional mass transport in these substances (diffusion), momentum transport (internal friction) and internal energy transport (heat conduction). In gases these phenomena violate the completely random motion of the molecules and Maxwell’s molecular velocity distribution \ssect{10.3.2}. Deviations from the Maxwell law can be explained by the directional transport of the physical characteristics of the substance in such phenomena. In the simplest cases of one-dimensional transport phenomena, the physical quantities that govern them depend on only a single Cartesian coordinate.
+
+\subsection{}\label{10.8.3} \emph{Diffusion} is the spontaneous interpenetration and mixing of the particles of two adjoining gases, liquids or solids. In chemically pure gases at constant temperature, diffusion occurs owing to differing densities in various parts throughout the volume bf the gas. In a mixture of gases, diffusion is caused by the difference in the densities of the various gases at various parts of the volume of the gas mixture.
+
+In a chemically homogeneous gas the phenomenon of diffusion consists in the transport of a mass of the gas from places with higher density to places with lower density. This phenomenon obeys \emph{Fick's law}:
+\begin{equation*}%
+m_{\text{sec}} = - D \, \dv{\rho}{x}
+\end{equation*}
+Here $m_{\text{sec}}$ is the \emph{specific mass flow} and is numerically equal to the mass that passes by diffusion in unit time through a plane surface of unit area located perpendicular to the direction the substance is being transported, $\rho$ is the density of the gas, and $D$ is the \emph{diffusion coefficient}. The derivative $\dd p / \dd x$ is numer­ically equal to the density gradient, i.e. the change in density per unit length. The diffusion coefficient is numerically equal to the specific mass flow at unit density gradient. The minus sign in Fick’s law indicates that mass transport takes place in the direction of decreasing density.
+Another form of Fick’s law is
+\begin{equation*}%
+j  = - D \, \dv{n_{0}}{x}
+\end{equation*}
+where $j = m_{\text{sec}}/m$ is the density of the molecular flow in diffusion, i.e. the number of molecules diffusing in unit time through the surface indicated in the first form of Fick’s law, $n_{0}$ is the molecular concentration, equal to the number of molecules per unit volume, and $m$ is the mass of one molecule, so that $\rho = n_{0} m$.
+
+The expression obtained in the kinetic theory of gases for the diffusion coefficient is
+\begin{equation*}%
+D = \frac{1}{3} \expval{u}\, \expval{\lambda}
+\end{equation*}
+where $\expval{u}$ is the arithmetic mean velocity of thermal motion of the molecules \ssect{10.3.6}, and $\expval{\lambda}$ is the mean free path \ssect{10.5.1}. 
+
+\subsection{}\label{10.8.4} \emph{Internal friction} (\emph{viscosity}) is the occurrence of friction forces between layers of a gas or liquid that flow parallel to one another at different speeds. A layer flowing faster exerts an accelerating force on a slower layer. On the other hand, a slow layer retards a faster flowing layer of fluid. The forces of internal friction (viscosity) are directed tangent to the contacting surfaces of the layers. The cause of viscosity (as internal friction in gases and liquids is more commonly called) is the superposition of ordered motion of layers of fluid at various velocities $\vb{v}$ and the thermal random motion of the molecules at velocities depending upon the temperature. 
+
+The random motion of the molecules transfers them from layer $B$ flowing at the velocity $\vb{v}_{2}$ into layer $A$ flowing at the velocity $\vb{v}_{1} $(\figr{fig-10-08}). This leads to transport of momenta $m\vb{v}$ of ordered motion of the molecules. When $\vb{v}_{1}> \vb{v}_{2}$, the molecules that entered layer $A$ from layer $B$ have their velocities of ordered motion accelerated by collisions with the molecules from the new layer. This slows down the velocities of ordered motion of the molecules in layer $A$. On the other hand, molecules passing from faster layer $A$ to slower layer $B$ have higher mo­menta $m\vb{v}_{1}$ so that the inter-molecular collisions in layer $B$ accelerate the motion of its molecules.
+
+\begin{figure}[!ht]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-10/fig-10-08.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\caption{The random motion of the molecules transfers them between layer of a fluid.}
+\label{fig-10-08}
+\end{figure}
+The phenomenon of viscosity is described by the \emph{Newtonian friction law}:
+\begin{equation*}%
+\tau = - \eta \dv{v}{n}
+\end{equation*}
+where $\tau$ is the \emph{friction stress}, i.e. the physical quantity equal nu­merically to the force of internal friction acting per unit area of the surface of the layer, $\dd v/\dd n$ is the velocity gradient, i.e. the variation in the velocity of layer motion per unit length in the direction of the inner normal $\vb{n}$ to the layer surface. The internal frictional force is opposite in direction to the derivative of the gas velocity vector $\vb{v}$ with respect to $\vb{n}$. The quantity $\eta$ is called the \emph{coefficient of dynamic viscosity} (or just the \emph{viscosity}). It is numerically equal to the friction stress at a velocity gradient equal to unity.
+
+The \emph{coefficient of kinematic viscosity} is the quantity $\nu = \eta/\rho$, where $\rho$ is the density of the substance. The coefficient of dynamic viscosity is calculated by the equa­tion
+\begin{equation*}%
+\eta = \frac{1}{3} \expval{u}\, \expval{\lambda} \, \rho
+\end{equation*}
+where $\expval{u}$ is the arithmetic mean velocity of thermal motion of the molecules \ssect{10.3.6}, and $\expval{\lambda}$ is their mean free path \ssect{10.5.1}. The coefficient of dynamic viscosity is independent of the pressure (or density) of the gas since $\expval{\lambda} \propto 1/\rho$. This can be explained by the fact that in an isothermal increase in the density of a gas, for example, by two times, the number of carriers of momenta is doubled, but each molecule (or atom) travels only one half the distance without a collision and carries only one half as much momentum. Hence, all in all, momenta transport remains unchanged.
+
+\subsection{}\label{10.8.5} The third transport phenomenon, \emph{heat conduction}, occurs under the condition that a difference in temperature exists in a body in a certain direction. For instance, the two opposing walls of a vessel holding a gas can have different temperatures that are maintained by external sources. Then the gas molecules at various locations throughout the volume have different average kinetic energies \ssect{10.2.4}. Under such conditions, the random thermal motion of the molecules leads to directional energy transport (or transfer) in the form of heat \ssect{9.2.6}. Molecules passing from the heated parts of the volume of gas to the colder parts yield some of their average kinetic energy to the surrounding molecules in the process of molecular collisions. Slow molecules, on the contrary, increase their average kinetic energy, in passing from the less heated to the more heated parts of the gas, owing to collisions with molecules having higher velocities.
+
+In one-dimensional heat conduction, when the temperature of the gas depends only on a single coordinate $T = T (x)$, energy transfer in the form of heat proceeds along the $OX$ axis according to the \emph{Fourier law} of heat conduction (Fourier heat equation): 
+\begin{equation*}%
+q_{\textrm{sec}} = - K \dv{T}{x}
+\end{equation*}
+where $q_{\textrm{sec}}$ is the \emph{specific rate of heat flow}, a physical quantity numerically equal to the energy transmitted in the form of heat in unit time through a plane surface of unit area located perpendicular to the direction of energy transport. The quantity $K$ is called the \emph{thermal conductivity}. It is numerically equal to the specific rate of heat flow at the temperature gradient $\dd T / \dd x$ (the change in temperature over unit length) equal to unity. The minus sign in the Fourier law indicates that in heat conduction energy is transported in the direction of decreasing temperatures.
+
+
+According to the kinetic theory of gases, the thermal conduc­tivity is equal to
+\begin{equation*}%
+K = \frac{1}{3} \expval{u}\, \expval{\lambda} \, c_{V} \rho
+\end{equation*}
+where $c_{V}$ is the specific heat at constant volume \ssect{9.5.4}. The other quantities are defined in \ssect{10.8.4}. It follows from the last equation that the thermal conductivity is inde­pendent of the gas density. The reasons are similar to those given in \ssect{10.8.4} to explain why $\eta$ is independent of the density.
+
+\subsection{}\label{10.8.6} The laws of transport phenomena, given in the subsec­tions \ssect{10.8.3}, \ssect{10.8.4} and \ssect{10.8.5}, can be written in another form:
+\begin{align*}%
+\dd M & = — D \,\dv{\rho}{x}\, \dd S \,\dd t\\
+\dd F & = — \eta \,\dv{v}{x}\, \dd S \,\dd t\\
+\dd Q & = — K \,\dv{T}{x} \dd S \dd t
+\end{align*}
+Here $\dd M$ is the mass transported in diffusion during the time $\dd t$ through the element of area $\dd S$, located perpendicular to the direction of diffusion; $\dd Q$ is the amount of energy transported in the form of heat during the time $\dd t$ through the same element of area $\dd S$, located perpendicular to the $OX$ axis; and $\dd F$ is the force of internal friction (viscous force) exerted on an ele­ment of surface of the layer having the area $\dd S$. The other quantities are defined in the subsections mentioned above.
+
+\begin{table}
+\begin{footnotesize}
+\begin{tabular}{p{1.5cm}p{1.75cm}p{2.2cm}p{2.2cm}}
+\toprule
+Phenomenon & Transported physical quantity & Transport equa­tion & Formula for the transport coefficient \\
+\midrule
+Diffusion & Mass & $\dd M = — D \,\dv{\rho}{x}\, \dd S \,\dd t$ & $D = \frac{1}{3} \expval{u}\, \expval{\lambda}$ \\[5pt]
+Internal friction (viscosity) & Momentum &$\dd F = — \eta \,\dv{v}{x}\, \dd S \,\dd t$ & $\eta = \frac{1}{3} \expval{u}\, \expval{\lambda} \, \rho$\\
+Heat con­duction & Energy in the form of heat & $\dd Q  = — K \,\dv{T}{x} \dd S \,\dd t$ & $K = \frac{1}{3} \expval{u}\, \expval{\lambda} \, c_{V} \rho$\\
+\bottomrule
+\end{tabular}
+\end{footnotesize}
+\caption{Information on transport phenomena.}
+\label{tbl-10-01}
+\end{table}
+\subsection{}\label{10.8.7} Simple relations exist between the transport coefficients:
+\begin{equation*}%
+\eta = \rho \, D, \quad \frac{K}{\eta c_{V}} = 1
+\end{equation*}
+If any one of the transport coefficients is known the others can be found by these formulas (for known values of $\rho$ and $c_{V}$). When the coefficients are known, such vital characteristics of a gas can be determined as the mean free path \ssect{10.5.1} of its molecules and the effective diameter of the molecules \ssect{8.4.1}. Information on transport phenomena is listed in Table \ref{tbl-10-01}.
+
+\section{Properties of Rarified Gases}
+\label{10.9}
+
+\subsection{}\label{10.9.1} A gas in said to be \emph{rarified} (a \emph{dilute gas}) if its density is so low that the mean free path $\expval{\lambda}$ of the molecules is com­ parable to the linear dimensions d of the vessel confining the gas. Such a state of a gas is also called a \emph{vacuum}. The degrees of vacuum of gases are classified as ultrahigh $(\expval{\lambda} \gg d)$, high $(\expval{\lambda} > d)$, medium $(\expval{\lambda} \leqslant d)$ and low $(\expval{\lambda} \gg d)$. The proper­ties of rarified gases differ from those of non-rarified gases only for the first three of these degrees of vacuum. This is evident from Table \ref{tbl-10-02} which lists certain characteristics for the various degrees.
+
+
+% \usepackage{multirow}
+
+
+\begin{table}
+\centering
+\begin{footnotesize}
+\begin{tabular}{p{2cm}p{1.25cm}p{1.25cm}p{1.25cm}p{1.25cm}}
+\toprule
+\multirow{2}{*}{Characteristic}   & \multicolumn{4}{c}{Vacuum}   \\
+%\midrule
+ & Low & Medium & High & Ultrahigh  \\
+\midrule
+Pressure &   \num{760} to \num{1}  &    \num{1} to \num{d-3}    &    \num{d-3} to  \num{d-7}  &   \num{d-8} and less\\[5pt]
+Number of molecules in unit volume (per \si{\meter\cubed}) &    \num{d25} to  \num{d22}  &   \num{d22} to  \num{d19}     &    \num{d19} to  \num{d13}  & \num{d13} and less            \\[5pt]
+Dependence
+of coeffic­ients $K$ and $\eta$ on the pres­sure          &   None  &     Pressure dependence is deter­mined by the parameter $\expval{\lambda}/d$  & Directly proportional to pressure      &  Heat conduction and viscosity are practically absent         \\
+\bottomrule                          
+\end{tabular}
+\end{footnotesize}
+\caption{Properties of gas in different vacuums.}
+\label{tbl-10-02}
+\end{table}
+
+
+\subsection{}\label{10.9.2} \emph{In the stale of a high vacuum} (\ssect{10.9.1}) a reduction in the density of a rarified gas leads to a corresponding decrease in the number of particles without changing X). This, conse­quently, reduces the number of carriers of momentum or inter­nal energy in viscosity and heat conduction. The transport coefficients in these phenomena are directly proportional to the gas density (cf. \ssect{10.8.4} and \ssect{10.8.5}). Internal friction is essentially absent in highly rarified gases. Instead, only exter­nal friction exists between the moving gas and the walls of the vessel. This is due to the fact that the molecules change their momentum only in interacting with the walls. Under these conditions, as a first approximation, the friction stress is proportional to the density of the gas and velocity of its motion (cf. Sect. \ssect{10.8.4}). The specific rate of heat flow in highly rarified gases is proportional to the temperature difference and to the gas density (cf. Sect. \ssect{10.8.5}).
+
+
+\subsection{}\label{10.9.3} A steady state of a rarified gas, contained in two vessels connected by a narrow tube, is possible under the condition of equality of the counterflow of particles passing between the vessels: $n_{1}\expval{u_{1}} = n_{2} \expval{u_{2}}$, where $n_{1}$ and $n_{2}$ are the numbers of molecules per \si{\centi\meter\cubed} in the two vessels, and $\expval{u_{1}}$ and $\expval{u_{2}}$ are their arithmetic mean velocities \ssect{10.3.6}.
+
+If $T_{1}$ and $T_{2}$ are the gas temperatures in the two vessels, the preceding condition for a steady state can be rewritten in the form of an equation that expresses the \emph{Knudsen effect}:
+\begin{equation*}%
+\frac{p_{1}}{p_{2}} = \sqrt{\frac{T_{1}}{T_{2}}}
+\end{equation*}
+
+where $p_{1}$ and $p_{2}$ are the pressures of the rarified gas in the two vessels.
