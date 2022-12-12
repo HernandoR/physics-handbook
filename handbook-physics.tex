@@ -56,6 +56,7 @@
 
 \newcommand{\hlred}[1]{\textcolor{Maroon}{#1}}% prints in red
 \newcommand{\hlblue}[1]{\textcolor{SteelBlue}{\textbf{#1}}}% prints in blue
+\newcommand{\inred}[1]{\textcolor{IndianRed}{#1}}% prints in red
 
 
 \titleformat{\chapter}
@@ -73,7 +74,7 @@
 \newcommand*\tabl[1]{\hyperref[#1]{Table~\ref{#1}}}
 \newcommand*\ssect[1]{\hyperref[#1]{(\ref{#1})}}
 \newcommand*\sect[1]{\hyperref[#1]{(Section~\ref{#1})}}
-
+\newcommand{\drkgry}[1]{\textcolor{darkgray}{{#1}}}
 \usepackage{booktabs}
 
 \usepackage{amsmath}
@@ -88,7 +89,7 @@
 \usepackage{enumitem}
 
 %\usepackage{caption}
-\usepackage[font={color=Maroon,small,sf},figurename=Figure]{caption}
+\usepackage[font={color=IndianRed,small},figurename=Figure]{caption}
 
 \usepackage{tikz}
 
@@ -146,6 +147,7 @@
 \input{10-kinetic-theory}
 \input{11-second-law}
 \input{12-real-gases-vapours}
+\input{13-liquids}
 \backmatter
 
 \end{document}  
