@@ -111,73 +111,108 @@ If all the state variables of real gases are maintained constant with the except
 \section{Van der Waals Equation of State}
 \label{sec-12.2}
 
-\subsection{}\label{12.2.1} A Van der Waals gas is a model of a real gas in which the molecules are dealt with as perfectly rigid spheres of diam­eter d \ssect{12.1.10}, with forces of mutual attraction acting between them. The finite size of the spheres signifies that the repulsive forces between the molecules of a real gas are also taken into account.
+\subsection{}\label{12.2.1} A \emph{Van der Waals gas} is a model of a real gas in which the molecules are dealt with as perfectly rigid spheres of diam­eter $d$ \ssect{12.1.10}, with forces of mutual attraction acting between them. The finite size of the spheres signifies that the repulsive forces between the molecules of a real gas are also taken into account.
 
-\subsection{}\label{12.2.2} The molecules of a real gas, each having a volume of v = xcd3/6, do not move around as freely in a vessel as the ``point'' molecules of an ideal gas. Therefore, in the Mendeleev- Clapeyron equation \ssect{8.4.4} pV = RT, the total volume V of a vessel holding one mole of the gas should be replaced by the ``free'' volume
- = V b,
-where b is Van der Waals’s correction for the intrinsic volume of the molecules. Correction b is equal to four times the volume of all the molecules contained in one mole of the gas:
-b = 4N
-where Na is Avogadro’s number (Appendix~II), and v is the volume of a single molecule.
+\subsection{}\label{12.2.2} The molecules of a real gas, each having a volume of $\tilde{v} = \pi d^{3}/6$, do not move around as freely in a vessel as the ``point'' molecules of an ideal gas. Therefore, in the Mendeleev-Clapeyron equation \ssect{8.4.4} $pV = RT$, the total volume $V$ of a vessel holding one mole of the gas should be replaced by the ``free'' volume
+\begin{equation*}%
+V'_{\mu} = V_{\mu} - b
+\end{equation*}
+where $b$ is Van der Waals’s correction for the intrinsic volume of the molecules. Correction $b$ is equal to four times the volume of all the molecules contained in one mole of the gas:
+\begin{equation*}%
+b = 4N_{A} \tilde{v}
+\end{equation*}
+where $N_{A}$ is Avogadro’s number (Appendix~II), and $\tilde{v}$ is the volume of a single molecule.
 
-\subsection{}\label{12.2.3} The forces of mutual attraction between the molecules are taken into account for a Van der Waals gas by introducing a correction for the pressure in the Mendeleev-Clapeyron equa­tion \ssect{8.4.4}. Owing to the short-range nature of the attraction forces \ssect{12.1.3}, each molecule interacts only with particles that are located at distances Rm, where Rm is the range of molecular action, with a magnitude of the order of 10~9 m. A sphere of radius Rm is called the sphere of molecular action.
+\subsection{}\label{12.2.3} The forces of mutual attraction between the molecules are taken into account for a Van der Waals gas by introducing a correction for the pressure in the Mendeleev-Clapeyron equa­tion \ssect{8.4.4}. Owing to the short-range nature of the attraction forces \ssect{12.1.3}, each molecule interacts only with particles that are located at distances $r \leqslant R_{m}$, where $R_{m}$ is the \emph{range of molecular action}, with a magnitude of the order of \SI{d-9}{\meter}. A sphere of radius $R_{m}$ is called the \emph{sphere of molecular action}.
 
-The forces of attraction of a molecule within the bulk of the gas to other molecules are mutually counterbalanced and have no effect on the motion of the given molecule. If the molecule is within a layer of gas that borders on a wall of the vessel, it is subject to an uncompensated force of attraction directed inward, into the bulk of the gas. Consequently, in its collision with a wall, such a molecule imparts less momentum to the wall \ssect{10.2.1}, and the pressure p exerted by a real gas on the walls is reduced in comparison to the pressure p of an ideal gas having the same density at the same temperature,
-V= Pid—P*, or
-Pid= P+ P*,
-where p* is the Van der Waals correction due to the forces of mutual attraction and is called the internal pressure. The inter­nal pressure p* is inversely proportional to the square of the volume of the vessel occupied by one mole of the gas:
-a
-P* = T T “, M-
-where a is the Van der Waals coefficient and depends upon the chemical nature of the gas.
+The forces of attraction of a molecule within the bulk of the gas to other molecules are mutually counterbalanced and have no effect on the motion of the given molecule. If the molecule is within a layer of gas that borders on a wall of the vessel, it is subject to an uncompensated force of attraction directed inward, into the bulk of the gas. Consequently, in its collision with a wall, such a molecule imparts less momentum to the wall \ssect{10.2.1}, and the pressure $p$ exerted by a real gas on the walls is reduced in comparison to the pressure $p$ of an ideal gas having the same density at the same temperature,
+\begin{align*}%
+p & = p_{id} - p^{*} \qor\\
+p_{id} & = p + p^{*}
+\end{align*}
+where $p*$ is the Van der Waals correction due to the forces of mutual attraction and is called the \emph{internal pressure}. The inter­nal pressure $p^{*}$ is inversely proportional to the square of the volume of the vessel occupied by one mole of the gas:
+\begin{equation*}%
+p^{*} = \frac{a}{V_{\mu}^{2}}
+\end{equation*}
+where $a$ is the Van der Waals coefficient and depends upon the chemical nature of the gas.
 
-\subsection{}\label{12.2.4} The Van der Waals equation describes the state of a real gas and differs from the Mendeleev-Clapeyron equation \ssect{8.4.4} in that the corrections b and p* have been introduced (\ssect{12.2.2} and \ssect{12.2.3}). For a single mole of gas it is of the form
-(/>+— )0W,)=.R7\
+\subsection{}\label{12.2.4} The Van der Waals equation describes the state of a real gas and differs from the Mendeleev-Clapeyron equation \ssect{8.4.4} in that the corrections $b$ and $p*$ have been introduced (\ssect{12.2.2} and \ssect{12.2.3}). For a single mole of gas it is of the form
+\begin{equation*}%
+\left( p + \frac{a}{V_{\mu}^{2}} \right) \, (V_{\mu} - b) = RT
+\end{equation*}
 
-\subsection{}\label{12.2.5} The Van der Waals equation fqr an arbitrary mass of real gas, having the molar mass p \ssect{8.4.3}, is
-This equation is valid for gases that are not too highly com­ pressed. In highly rarefied gases FM, p* -c p and the Van der Waals equation does not differ from the Mendeleev-Clapeyron equation.
+\subsection{}\label{12.2.5} The Van der Waals equation for an arbitrary mass of real gas, having the molar mass $p$ \ssect{8.4.3}, is
+\begin{equation*}%
+\left( p + \frac{M^{2}}{\mu^{2}} \, \frac{a}{V^{2}} \right) \, \left(V - \frac{M}{\mu} b \right) = \frac{M}{\mu} \, RT
+\end{equation*}
+This equation is valid for gases that are not too highly compressed. In highly rarefied gases $V_{\mu} \gg B$, $p^{*} \ll p$ and the Van der Waals equation does not differ from the Mendeleev-Clapeyron equation.
 
 \section{Isothermals of Real Gases. Phase Transitions}
 \label{sec-12.3}
 
-\subsection{}\label{12.3.1} The curve representing the dependence of the molar volume of a gas on the pressure at constant temperature is called the isothermal, or isotherm, of a real gas. Isothermals of carbon dioxide gas are shown in Fig. 12.3. At temperatures T below Tc = 340 K, all the isothermals have horizontal steps along which, in addition to the constant temperature, the pressure is also constant while the molar volume varies. The difference Vd — VB of the molar volumes over the horizontal steps de­ creases as the temperature is raised (Fig. 12.3). At T = Tc this difference vanishes. The temperature T = Tc, corresponding to the condition Vd — VB = 0, is called the critical temperature. The isothermal of a real gas at T = Tc is called the critical isothermal. On this isothermal points D and B merge into point C, which is called the critical point. The state variables \ssect{8.3.2} of the gas at the critical point are the critical variables
-V ’Pan<
-Critical point C is an inflection point on the critical isothermal.
-Consequently, the tangent to the isothermal at this point is parallel to the OVu axis.
+\subsection{}\label{12.3.1} The curve representing the dependence of the molar volume of a gas on the pressure at constant temperature is called the \emph{isothermal}, or \emph{isotherm}, of a real gas. Isothermals of carbon dioxide gas are shown in \figr{fig-12-03}. At temperatures $T$ below $T_{C} = \SI{340}{\kelvin}$, all the isothermals have horizontal steps along which, in addition to the constant temperature, the pressure is also constant while the molar volume varies. The difference $V_{D} — V_{B}$ of the molar volumes over the horizontal steps de­creases as the temperature is raised \figr{fig-12.3}. At $T = T_{c}$ this difference vanishes. The temperature $T = T_{c}$ , corresponding to the condition $V_{D} — V_{B} = 0$, is called the \emph{critical temperature}. The isothermal of a real gas at $T = T_{c}$ is called the critical isothermal. On this isothermal points $D$ and $B$ merge into point $C$, which is called the \emph{critical point}. The state variables \ssect{8.3.2} of the gas at the critical point are the critical variables $V_{\mu c}$, $p_{c}$ and $T_{c}$.
 
-\subsection{}\label{12.3.2} Any subcritical isothermal (T < Tc) is a curve representing the continuous transition of the substance from the gaseous to the liquid state. It consists of three portions: TD, DB and BA, each of which represents different states of the substance. Over the portion TD the substance is in the gaseous state, portion DB corresponds to the transition of the substance from the gaseous to the liquid state. Over the portion BA of the isothermal, the substance is a liquid. This portion is almost vertical owing to the low compressibility of liquids. Points D and B of the horizontal portion of the isothermal correspond to the beginning and end of condensation in isothermal compression of a real gas. On the contrary, in isothermal expansion of the liquid, points B and D are the beginning and end of the boiling process. Point corresponds to the state of a boiling liq­uid’,point D to dry saturated vapour. The mixture of the boiling liquid and dry saturated vapour that exists at any point M of portion BD is called wet vapour (Fig. 12.3).
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-12/fig-12-03.pdf}
+\caption{Isothermals of carbon dioxide gas.}
+\label{fig-12-03}
+\end{figure}
 
-\subsection{}\label{12.3.3} In thermodynamics a phase is a totality of all the parts of a system, having the same chemical composition and being in the same state. Wet vapour, for instance, is a two-phase sys­tem consisting of boiling liquid and dry saturated vapour.
+Critical point $C$ is an inflection point on the critical isothermal.
+Consequently, the tangent to the isothermal at this point is parallel to the $OV_{\mu}$ axis.
 
-Shown in Fig. 12.4 are two boundary curves BC and DC which connect points B and D (Fig. 12.3) at various temperatures. Curves BC and DC converge at critical point C. Boiling curve BC separates the single-phase liquid region I from the two- phase wet vapour region II. The curve BC is one representing Ihe beginning of the first-kind phase transition of the substance from the liquid to the gaseous state. The boundary curve DC
-separates the two-phase region II from the single-phase region HI in which the substance is in the gaseous state.
+\subsection{}\label{12.3.2} Any subcritical isothermal $(T < T_{c})$ is a curve representing the continuous transition of the substance from the gaseous to the liquid state. It consists of three portions: $TD$, $DB$ and $BA$, each of which represents different states of the substance. Over the portion $TD$ the substance is in the gaseous state, portion $DB$ corresponds to the transition of the substance from the gaseous to the liquid state. Over the portion $BA$ of the isothermal, the substance is a liquid. This portion is almost vertical owing to the low compressibility of liquids. Points $D$ and $B$ of the horizontal portion of the isothermal correspond to the beginning and end of condensation in isothermal compression of a real gas. On the contrary, in isothermal expansion of the liquid, points $B$ and $D$ are the beginning and end of the boiling process. Point $B$ corresponds to the state of a \emph{boiling liq­uid}, point $D$ to \emph{dry saturated vapour}. The mixture of the boiling liquid and dry saturated vapour that exists at any point $M$ of portion $BD$ is called wet vapour (\figr{fig-12-03}).
 
-\subsection{}\label{12.3.4} The two-phase region II cannot exist at pressures above the critical one pc \ssect{12.3.1} at which the substance can be in either of two states, gaseous or liquid. No pressure can convert gas at a temperature above the critical Tc into the liquid state by isothermal compression. The critical temperatures of many gases are very low: Tc 5 K for helium and 33 K for hydro­ gen. This makes the liquefaction of such gases quite difficult. 
+\subsection{}\label{12.3.3} In thermodynamics a \emph{phase} is a totality of all the parts of a system, having the same chemical composition and being in the same state. Wet vapour, for instance, is a two-phase sys­tem consisting of boiling liquid and dry saturated vapour.
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-12/fig-12-04.pdf}
+\caption{Phases.}
+\label{fig-12-04}
+\end{figure}
+
+Shown in \figr{fig-12-04} are two boundary curves $BC$ and $DC$ which connect points $B$ and $D$ (\figr{fig-12-03}) at various temperatures. Curves $BC$ and $DC$ converge at critical point $C$. Boiling curve $BC$ separates the single-phase liquid region $I$ from the two- phase wet vapour region $II$. The curve $BC$ is one representing the beginning of the \emph{first-kind phase} transition of the substance from the liquid to the gaseous state. The boundary curve $DC$ separates the two-phase region $II$ from the single-phase region $III$ in which the substance is in the gaseous state.
+
+\subsection{}\label{12.3.4} The two-phase region $II$ cannot exist at pressures above the critical one $p_{c}$ \ssect{12.3.1} at which the substance can be in either of two states, gaseous or liquid. No pressure can convert gas at a temperature above the critical $T_{c}$ into the liquid state by isothermal compression. The critical temperatures of many gases are very low: $T_{c} \approx \SI{5}{\kelvin}$ for helium and \SI{33}{\kelvin} for hydro­gen. This makes the liquefaction of such gases quite difficult. 
 
 \subsection{}\label{12.3.5} Besides the difference in the molar volumes of boiling liquid and dry saturated vapour, the specific heat of vaporizalion \ssect{13.6.4} also vanishes when a substance is in the critical state, as does the surface tension \ssect{13.4.4}. The difference between the liquid and gaseous states of a substance completely disappears when it is in the critical state.
 
-\subsection{}\label{12.3.6} The Van der Waals equation \ssect{12.2.4} is a cubic equation with respect to the molar volume V, having factors that de­ pend upon the pressure, temperature and the chemical nature
-of the gas. This equation has either one or three real roots, in accordance with the numerical values of p and T. Shown in Fig. 12.5 are the isothermals of a real gas that complies with the Van der Waals equation. The isothermals correspond to the different temperatures T1c T2c T c T3c Tc c T5c Tq. All the subcritical isothermals have a hatched portion where each pressure corresponds to three different states, which are represented by the three points, B , E and G, of the isothermal.
+\subsection{}\label{12.3.6} The Van der Waals equation \ssect{12.2.4} is a cubic equation with respect to the molar volume $V$, having factors that depend upon the pressure, temperature and the chemical nature
+of the gas. This equation has either one or three real roots, in accordance with the numerical values of $p$ and $T$. Shown in \figr{fig-12-05} are the isothermals of a real gas that complies with the Van der Waals equation. The isothermals correspond to the different temperatures $T_{1} < T_{2} < T_{3} < T_{c} < T_{5} < T_{6}$. All the subcritical isothermals have a hatched portion where each pressure corresponds to three different states, which are represented by the three points, $B$ , $E$ and $G$, of the isothermal.
 
-The wave-shaped portion BDEFG of the isothermal in Fig. 12.5 more accurately represents the transition of the substance from (lie gaseous to the liquid state than the horizontal portions of experimentally plotted isothermals (dash straight lines BG). The portion BD of the isothermal corresponds to a superheated liquid, which can be obtained if the beginning of boiling is delayed at point B. The portion GF of the isothermal represents the state of supersaturated vapour, occurring upon slow isother­mal compression in the absence of condensation centres. If such centres (dust specks or ions) are introduced into the supersatu­rated vapour, extremely rapid condensation of the vapour takes place. Over the portion DEF, the molar volume increases (de­ creases) as the pressure is increased (decreased). Such states of matter are impossible. The horizontal steps BG cut the portions BDEFG of the isothermals in such manner that the hatched areas BDEB and EFGE in Fig. 12.5 are equal to each other (Max­well's equal area rule).
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-12/fig-12-05.pdf}
+\caption{Isothermals of a real gas that compling with the Van der Waals equation.}
+\label{fig-12-05}
+\end{figure}
 
-\subsection{}\label{12.3.7} The values of the critical variables pc, Vc and Tc \ssect{12.3.1} can be expressed in terms of the coefficients a and b in the Van der Waals equation \ssect{12.2.4} and the universal gas constant R \ssect{8.4.4}:
-1 a T7 07 l rr 8 a Po=W-,Vllc=3bandTc=—— .
+The wave-shaped portion $BDEFG$ of the isothermal in \figr{fig-12.5} more accurately represents the transition of the substance from (lie gaseous to the liquid state than the horizontal portions of experimentally plotted isothermals (dash straight lines $BG$). The portion $BD$ of the isothermal corresponds to a \emph{superheated liquid}, which can be obtained if the beginning of boiling is delayed at point $B$. The portion $GF$ of the isothermal represents the state of \emph{supersaturated vapour}, occurring upon slow isothermal compression in the absence of condensation centres. If such centres (dust specks or ions) are introduced into the supersatu­rated vapour, extremely rapid condensation of the vapour takes place. Over the portion $DEF$, the molar volume increases (decreases) as the pressure is increased (decreased). Such states of matter are impossible. The horizontal steps $BG$ cut the portions $BDEFG$ of the isothermals in such manner that the hatched areas $BDEB$ and $EFGE$ in \figr{fig-12.5} are equal to each other (\emph{Max­well's equal area rule}).
+
+\subsection{}\label{12.3.7} The values of the critical variables $p_{c}$, $V_{\mu \, c}$ and $T_{c}$ \ssect{12.3.1} can be expressed in terms of the coefficients $a$ and $b$ in the Van der Waals equation \ssect{12.2.4} and the universal gas constant $R$ \ssect{8.4.4}:
+\begin{equation*}%
+p_{c} = \frac{1}{27} \, \frac{a}{b^{2}}, \quad V_{\mu \, c} = 3b	, \qand T_{c} = \frac{8}{27} \, \frac{a}{bR}
+\end{equation*}
 
 \section{Superfluidity Of Helium}
 \label{sec-12.4}
 
 
-\subsection{}\label{12.4.1} Helium is a kind of substance which, after going over from the gaseous to the liquid state at standard atmospheric pressure and a temperature of 4.22 K, remains in the liquid state no matter how close to absolute zero \ssect{11.8.4} it is cooled. 
+\subsection{}\label{12.4.1} Helium is a kind of substance which, after going over from the gaseous to the liquid state at standard atmospheric pressure and a temperature of \SI{4.22}{\kelvin}, remains in the liquid state no matter how close to absolute zero \ssect{11.8.4} it is cooled. 
 
-\subsection{}\label{12.4.2} At the temperature 2.19 K a second-order phase transi­tion occurs: liquid helium I, existing at temperatures T > >2.19 K, undergoes the transition to liquid helium II, which exists at T < 2.19 lv.
+\subsection{}\label{12.4.2} At the temperature \SI{2.19}{\kelvin} a second-order phase transi­tion occurs: liquid helium I, existing at temperatures $T > \SI{2.19}{\kelvin}$, undergoes the transition to liquid helium II, which exists at $T < \SI{2.19}{\kelvin}$.
 
-A second-order phase transition is a transformation of matter that is not associated with the evolution or absorption of heat as in a first-order transition. In second-order phase transitions the heat capacity, coefficient of thermal expansion and certain other characteristics of substances vary with discontinuous jumps. Some examples of second-order phase transitions are the transition of iron at the Curie point \ssect{26.5.2} from a ferro­ magnetic substance into a paramagnetic one \ssect{26.3.5} and the
+A \emph{second-order phase transition} is a transformation of matter that is not associated with the evolution or absorption of heat as in a first-order transition. In second-order phase transitions the heat capacity, coefficient of thermal expansion and certain other characteristics of substances vary with discontinuous jumps. Some examples of second-order phase transitions are the transition of iron at the Curie point \ssect{26.5.2} from a ferro­-magnetic substance into a paramagnetic one \ssect{26.3.5} and the transition of certain metals and alloys at extremely low tem­peratures to the superconductive state \ssect{41.6.1}.
 
-transition of certain metals and alloys at extremely low tem­peratures to the superconductive state \ssect{41.6.1}.
+\subsection{}\label{12.4.3} \emph{Superfluidity}, a phenomenon observed \emph{in liquid he­lium II}, is the practically complete absence of viscosity when such helium flows through narrow capillary tubes \ssect{13.5.5}. The coefficient of viscosity \ssect{10.8.4} of helium II is less than \SI{d-12}{\pascal\second}, while that of helium I close to the temperature \SI{4.22}{\kelvin} is of the order of \SI{d-6}{\pascal\second}.
 
-\subsection{}\label{12.4.3} Superfluidity, a phenomenon observed in liquid he­lium II, is the practically complete absence of viscosity when such helium flows through narrow capillary tubes \ssect{13.5.5}. The coefficient of viscosity \ssect{10.8.4} of helium II is less than 10-12 Pa-s, while that of helium I close to the temperature 4.22 K is of the order of 10~6Pa-s.
-
-\subsection{}\label{12.4.4} According to the two-fluid theory, liquid helium II is a mixture of a superfluid component and a normal component. The superfluid component moves without friction and does not participate in the transfer of energy in the form of heat \ssect{9.2.1}. The normal component moves with friction and does participate in energy transfer.
+\subsection{}\label{12.4.4} According to the \emph{two-fluid theory}, liquid helium II is a mixture of a superfluid component and a normal component. The superfluid component moves without friction and does not participate in the transfer of energy in the form of heat \ssect{9.2.1}. The normal component moves with friction and does participate in energy transfer.
 
 \subsection{}\label{12.4.5} The theory of superfluidity is based on quantum mechan­ics \ssect{38.1.2}. In the first place, quantum mechanics was required to explain why helium is the only nonfreezing liquid at ultra-low temperatures and standard pressure. The zero-point vibra­tions \ssect{38.5.6} of the light-weight atoms of helium are sufficient­ly intensive and do not allow the weak forces of attraction between the helium atoms to form a crystalline structure at ordinary pressures.
 
-The present-day theory of superfluidity is based on a study of the energy spectrum of helium at ultra-low temperatures. Under these conditions the continuous energy spectrum can be regarded as the totality of quasi-particles with the energies hvt, where h is Planck’s constant and vt is the phonon frequency \ssect{41.7.5} corresponding to these quasi-particles. The quasiparticles cannot be identified with the real atoms of helium. They repre­sent the motion of the whole system of helium atoms, and the energy values of the quasi-particle describe the energy spectrum of the whole quantum system, i.e. the liquid helium as a whole. At low temperatures the excited state of the helium constitutes sound waves that are quasi-particles in the normal part of he­lium II. Associated with the quasi-particles are the store of internal energy and the presence of friction in the liquid he­lium. But states are possible in helium II t hat correspond to its superfluid part, in which quasi-particles are not advantageous from the energy point of view and do not arise. As a result of the strong interaction between the particles of the superfluid part of helium II a bound body is formed in which no thermal excitations are generated: the superfluid part of helium II has no store of internal energy and is not subject to viscosity. At absolute zero temperature, there should actually not be any normal part in helium II; all of the helium should be superfluid. As the helium is heated, the number of phonons increases as does the share of the normal part of helium II. But until the temperature reaches 2.19 K, a superfluid part of helium II, with its characteristic properties, still remains. At the temper­ature 2.19 K, helium II is converted into helium I and all the special properties of helium II disappear.
+The present-day theory of superfluidity is based on a study of the energy spectrum of helium at ultra-low temperatures. Under these conditions the continuous energy spectrum can be regarded as the totality of quasi-particles with the energies $h \nu_{i}$, where $h$ is Planck’s constant and $\nu_{i}$ is the phonon frequency \ssect{41.7.5} corresponding to these quasi-particles. The quasiparticles cannot be identified with the real atoms of helium. They repre­sent the motion of the whole system of helium atoms, and the energy values of the quasi-particle describe the energy spectrum of the whole quantum system, i.e. the liquid helium as a whole. 
+
+At low temperatures the excited state of the helium constitutes sound waves that are quasi-particles in the normal part of he­lium II. Associated with the quasi-particles are the store of internal energy and the presence of friction in the liquid he­lium. But states are possible in helium II t hat correspond to its superfluid part, in which quasi-particles are not advantageous from the energy point of view and do not arise. As a result of the strong interaction between the particles of the superfluid part of helium II a bound body is formed in which no thermal excitations are generated: the superfluid part of helium II has no store of internal energy and is not subject to viscosity. At absolute zero temperature, there should actually not be any normal part in helium II; all of the helium should be superfluid. As the helium is heated, the number of phonons increases as does the share of the normal part of helium II. But until the temperature reaches \SI{2.19}{\kelvin}, a superfluid part of helium II, with its characteristic properties, still remains. At the temper­ature \SI{2.19}{\kelvin}, helium II is converted into helium I and all the special properties of helium II disappear.
