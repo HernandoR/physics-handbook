@@ -1,0 +1,100 @@
+% !TEX root = handbook-physics.tex
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+
+\chapter{Electric Charges. Coulomb's Law}
+\label{ch-14}
+
+\section{Introduction}
+\label{sec-14.1}
+
+\subsection{}\label{14.1.1} \emph{Electrostatics} is the branch of the study of electricity that deals with the interaction and properties of a system of electric charges that are fixed with respect to the chosen inertial frame of reference \ssect{2.1.2}.
+
+There are two kinds of electric charges, \emph{positive} and \emph{negative}. Bodies having unlike charges attract one another; those having like charges repulse one another.
+
+\subsection{}\label{14.1.2} The electric charge of any system of bodies consists of a whole number of elementary charges, each equal to \SI{1.6d-19}{\coulomb} (where C is the abbreviation of coulomb, the unit of charge). The stable particle with the minimum rest mass \ssect{5.6.1} and a negative elementary charge is the \emph{electron}. The rest mass of the electron is \SI{9.1d-31}{\kilo\gram}. The stable particle with the minimum rest mass and a positive elementary charge is the \emph{positron} \ssect{43.5.1}.\sidenote{Here we do not consider the instability of the positron, common in our world, that is associated with the annihilation of an electron-positron pair \ssect{43.5.1}.} Its rest mass is the same as that of the electron. Besides, there is a stable particle with a positive elementary charge called the \emph{proton}. The rest mass of the proton is \SI{1.67d-27}{\kilo\gram}. Electrons and protons are found in the atoms of all the chemical elements.
+
+\subsection{}\label{14.1.3} The \emph{law of conservation of electric charge} states: the algebraic sum of the electric charges of bodies or particles that constitute an electrically isolated system remains constant re­ gardless of any processes that occur in the system.
+
+New electrically charged particles may be formed in the system being considered. These may be electrons formed by the ionization of atoms or molecules \ssect{22.4.1}, ions formed by the phenomenon of electrolytic dissociation, etc. If the system is electrically isolated, however, then the algebraic sum of the charges of all the newly formed particles of the system always equals zero. The law of the conservation of electric charge is one of the fundamental conservation laws, like the laws of conservation of momentum \ssect{2.7.1} and of energy \ssect{3.4.2}.
+
+\subsection{}\label{14.1.4} Upon contact of two electrically neutral bodies, charges go over from one body to the other as a result of friction. In each of such two bodies there is no longer an equal number of positive and negative charges and the bodies become oppositely charged.
+
+When a body is electrized by induction, the charges in it are no longer uniformly distributed. The charges are redistributed so that one part of the body has an excess of positive charges and the other part, of negative charges. If these two parts of the body are separated in some way, they will be oppositely charged.
+
+
+
+\section{Coulomb's Law}
+\label{sec-14.2}
+
+\subsection{}\label{14.2.1} Coulomb experimentally established that the force of interaction $F_{12}$ between two small charged spheres, with charges equal to $q_{1}$ and $q_{2}$ \ssect{14.1.1}, is proportional to the product $q_{1}\,q_{2}$ and inversely proportional to the square of the distance $r$ between the spheres:
+\begin{equation*}%
+F_{12} = k_{1} \,\frac{q_{1}\,q_{2}}{r^{2}}
+\end{equation*}
+where $k_{1}$ is the proportionality factor $(k_{1} > 0)$.
+
+\subsection{}\label{14.2.2} \emph{Central forces} act on the charges along a straight line joining the centres of the charges. In the interaction of like charges the product $q_{1}q_{2} > 0$ and $F_{12} > 0$. This corresponds to mutual repulsion. For unlike charges $q_{1}q_{2} < 0$ and $F_{12} < 0$, which corresponds to mutual attraction. The vector form of the Coulomb law is
+\begin{equation*}%
+\vb{F}_{12} = k_{1} \,\frac{q_{1}\,q_{2}}{r^{2}} \, \frac{\vb{r}_{12}}{r}
+\end{equation*}
+where $\vb{F}_{12}$ is the force exerted on charge $q_{1}$ by charge $q_{2}$, $\vb{r}_{12}$ is the radius vector joining charge $q_{2}$ to $q_{1}$ and $r = \abs{\vb{r}_{12}}$.
+\begin{marginfigure}
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-14/fig-14-01.pdf}
+\caption{Repulsive and attractive force between charges.\label{fig-14-01}}
+\end{marginfigure}
+
+The force $\vb{F}_{12}$, exerted on charge $q_{2}$ by charge $q_{1}$, equals
+\begin{equation*}%
+\vb{F}_{12} = k_{1} \,\frac{q_{1}\,q_{2}}{r^{2}} \, \frac{\vb{r}_{12}}{r}
+\end{equation*}
+where $\vb{r}_{21} = - \vb{r}_{12}$ is the radius vector joining charges $q_{1}$ and $q_{2}$ (\figr{fig-14-01}~\inred{(b)}). Forces $\vb{F}_{12}$ and $\vb{F}_{21}$ are said to be \emph{Coulomb forces}. 
+
+\subsection{}\label{14.2.3} Coulomb’s law is valid for the interaction of \emph{point electric charges} that are fixed in the given inertial frame of reference. Point charges are charged bodies whose linear dimensions $d$ are very much smaller than the distance $r$ between them $(d \ll r)$.
+
+\emph{Coulomb's law} states: the force of electrostatic interaction be­ tween two point electric charges is proportional to the product of the magnitudes of the charges, inversely proportional to the square of the distance between them and acts along the straight line joining them.
+
+In the form given in Sect. \ssect{14.2.2} Coulomb’s law is also valid
+for the interaction of charged spheres of radii $R_{1}$ and $R_{2}$ if the charges $q_{1}$ and $q_{2}$ of the spheres are uniformly distributed over their surfaces or throughout their volumes. Radii $R_{1}$ and $R_{2}$ may be commensurable with the distance $r$ between the centres of the spheres.
+
+\subsection{}\label{14.2.4} A Coulomb force \ssect{14.2.2} depends upon the properties of the medium in which the interacting charges are located. This dependence can be taken into consideration if we consider the factor $k_{1}$ in the formulas of Sects. \ssect{14.2.1} and \ssect{14.2.2} as the ratio of two factors:
+\begin{equation*}%
+k_{1} = \frac{k}{\epsilon_{r}}
+\end{equation*}
+where $k$ is a factor depending only on the choice of the system of units of measurement and $\epsilon_{r}$ is the dimensionless \emph{relative permittivity},or \emph{dielectric constant}, of the medium and characterizes its electric properties. It is assumed here that the medium is boundless, homogeneous and isotropic, i.e. that its properties are the same throughout its volume and are independent of the direction. For a vacuum, $\epsilon_{r}$ is considered to equal unity. 
+
+\subsection{}\label{14.2.5} For a medium with the relative dielectric constant $\epsilon_{r}$, Coulomb’s law takes the form
+\begin{equation*}%
+F_{12} = k \,\frac{q_{1}\,q_{2}}{\epsilon_{r} \, r^{2}}
+\end{equation*}
+For charges $q_{1}$ and $q_{2}$ located in vacuum $(\epsilon_{r} = 1)$,
+\begin{equation*}%
+F_{0} = k \,\frac{q_{1}\,q_{2}}{r^{2}}
+\end{equation*}
+From this follows the meaning of the relative dielectric con­ stant
+\begin{equation*}%
+\epsilon_{r} = \frac{F_{0}}{F}
+\end{equation*}
+
+
+\subsection{}\label{14.2.6} The concept of $\epsilon_{r}$, introduced in Sects. \ssect{14.2.4} and \ssect{14.2.5}, has a meaning only under the conditions stipulated in Sect. \ssect{14.2.4}. An $\epsilon_{r}$-fold reduction of $F$ is due to a phenomenon known as \emph{electrostriction}, i.e. the deformation of a dielectric \ssect{18.1.1} from the effect of charged bodies. In their deformation, liquid and gaseous dielectrics are directly adjacent to the charged bodies and exert an additional mechanical action on them, reducing the Coulomb force \ssect{14.2.2}. In solid dielectrics, charges $q_{1}$ and $q_{2}$ on the bodies may be located within certain cavities. This makes the calculation of forces $\vb{F}_{12}$ and $\vb{F}_{21}$ \ssect{14.2.2} considerably more difficult. These forces depend on the shapes of the cavities in which the charges $q_{1}$ and $q_{2}$ are located. In this case the interpretation of $\epsilon_{r}$ given in Sect. \ssect{14.2.5} cannot be correct.
+
+\subsection{}\label{14.2.7} In SI units (Appendix I) the factor $k$ in the formulas of Sect. \ssect{14.2.5} are taken equal to
+\begin{equation*}%
+k = \frac{1}{\fpe}
+\end{equation*}
+and Coulomb’s law is written in the form
+\begin{equation*}%
+F = \frac{1}{\fpe} \, \frac{q_{1}\,q_{2}}{\epsilon_{r} \, r^{2}}
+\end{equation*}
+This form of Coulomb’s law and of all laws following from it is said to be \emph{rationalized}.
+
+The quantity $\epsilon_{0}$ is called the \emph{permittivity of free space} or, according to the SI units, the \emph{electric constant}. It is equal to \SI{8.85d-12}{\coulomb\squared\per\newton\meter\squared} (Appendix~II).
+
+The product $\epsilon_{0} \epsilon_{r}$ is sometimes called the \emph{absolute dielectric constant}, or \emph{absolute permittivity} of the medium.
+
+In the cgse system of units (Appendix~I), Coulomb’s law is written in the following irrational form:
+\begin{equation*}%
+F = \frac{q_{1}\,q_{2}}{\epsilon_{r} \, r^{2}}
+\end{equation*}
+
