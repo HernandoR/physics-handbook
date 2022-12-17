@@ -59,6 +59,8 @@
 \newcommand{\hlred}[1]{\textcolor{Maroon}{#1}}% prints in red
 \newcommand{\hlblue}[1]{\textcolor{SteelBlue}{\textbf{#1}}}% prints in blue
 \newcommand{\inred}[1]{\textcolor{IndianRed}{#1}}% prints in red
+\newcommand{\hltxt}[1]{\textcolor{OrangeRed}{#1}}% prints in red
+\newcommand{\redem}[1]{\hltxt{\emph{#1}}}% prints in red
 
 
 \titleformat{\chapter}
@@ -113,6 +115,7 @@
 \DeclareSIUnit\fahrenheit{\degree F}
 
 \newcommand{\fpe}{4 \pi \epsilon_{0}}
+\newcommand{\ofpe}{\dfrac{1}{4 \pi \epsilon_{0}}}
 
 \usepackage{lscape}
 %\usepackage{yhmath}
@@ -148,6 +151,8 @@
 \input{00-preface}
 
 \mainmatter
+
+% part 1
 \part{Mechanics}
 \input{01-kinematics}
 \input{02-newtons}
@@ -157,6 +162,7 @@
 \input{06-gravitation}
 \input{07-noninertial}
 
+% part 2
 
 \part{Fundamentals of Molecular Physics and Thermodynamics}
 \input{08-ideal-gases}
@@ -166,10 +172,14 @@
 \input{12-real-gases-vapours}
 \input{13-liquids}
 
+% part 3
 
 \part{Electrodynamics}
 
 \input{14-charges-coulomb}
+\input{15-electric-field}
+
+
 \backmatter
 
 \end{document}  
