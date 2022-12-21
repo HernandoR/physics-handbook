@@ -1,0 +1,190 @@
+% !TEX root = handbook-physics.tex
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+
+
+
+
+
+
+\chapter{Electric Field Potential}
+\label{ch-16}
+
+\section[Work in Moving Electric Charge]{Work Done in Moving an Electric Charge in an Electrostatic Field}
+\label{sec-16.1}
+
+\subsection{}\label{16.1.1} The work done in moving an electric charge $q'$ in an electrostatic field of strength $\vb{E}$ \ssect{15.1.3} is independent of the shape of the path along which the charge is moved; it depends only upon the initial and final positions of the charge. In other words, electrostatic forces, like gravitational forces, are potential (conservative) forces \ssect{3.1.6}. The work $\delta W$	 done by the force $\vb{F} = q'\, \vb{E}$ exerted on charge $q'$ in moving it over the distance $\dd \vb{l}$, is equal to:
+\begin{equation*}%
+\delta W = F \, \, \dd l \cos \varphi = q' E \cos \alpha\, \dd l
+\end{equation*}
+where $\alpha$ is the angle between the directions of vectors $\vb{E}$ and $\dd \vb{l}$, and $\varphi $ is the angle between the directions of the vectors $\vb{F}$ and $\dd \vb{l}$. The work done in a finite movement of charge $q'$ from point $a$ to point $b$ is equal to
+\begin{equation*}%
+W = q' \int_{a}^{b} E \cos \alpha \,\dd l = q'  \int_{a}^{b} \vb{E} \,  \dd \vb{l}
+\end{equation*}
+where $\vb{E} \, \dd \vb{l}$ is the scalar product of vectors $\vb{E}$ and $\dd \vb{l}$.
+
+\subsection{}\label{16.1.2} If the electric field has been set up by charge $q$, then
+\begin{equation*}%
+E = \frac{q}{4 \pi \epsilon_{0} \epsilon_{r} r^{2}}, \quad \dd l \cos \alpha = \dd r
+\end{equation*}
+and the work done in the movement of charge $q'$ from point $a$ to point $b$ in this field is equal to
+\begin{equation*}%
+W = \frac{qq'}{4 \pi \epsilon_{0} \epsilon_{r}} \int_{r_{1}}^{r_{2}} \frac{\dd r}{r^{2}} = \frac{qq'}{4 \pi \epsilon_{0} \epsilon_{r}} \left( \frac{1}{r_{1}} - \frac{1}{r_{2}} \right)
+\end{equation*}
+where $r_{1}$ and $r_{2}$ are the distances of points $a$ and $b$ from charge $q$ (\figr{fig-16-01}).
+\begin{marginfigure}
+\centering
+\includegraphics[width=\textwidth]{figs/ch-16/fig-16-01.pdf}
+\caption{The work done in the movement of charge $q'$ from point $a$ to point $b$ in an electric field.\label{fig-16-01}}
+\end{marginfigure}
+The work $W$ done by the electric forces of repulsion of like charges $q$ and $q'$ is positive when the-charges move away from each other, and negative when they move toward each other. The work done by electric forces of attraction of unlike charges ($q$ and $q'$ is positive when they move toward each other and negative when they move away from each other.
+
+\subsection{}\label{16.1.3} When an electric charge $q'$ is moved in a field set up by a system of point charges $q_{1}, \,q_{2}, \,\ldots{}, \,q_{n}$, the charge $q'$ is subject to the force
+\begin{equation*}%
+\vb{F}= \vb{F}_{1} + \vb{F}_{2} + \ldots{} + \vb{F}_{n}
+\end{equation*}
+and the work $W$ done by the resultant force is equal to the algebraic sum of the work done by the component forces:
+\begin{equation*}%
+W = W_{1} + W_{2} + \ldots{} + W_{n} = \sum_{i=1}^{n} \frac{q_{i}q'}{4 \pi \epsilon_{0} \epsilon_{r}} \left( \frac{1}{r_{i1}} - \frac{1}{r_{i2}} \right)
+\end{equation*}
+where $r_{i2}$ and $r_{i2}$ are the distances of charge $q_{i}$ to the initial and final positions of charge $q'$. Each of the amounts of work $W_{i}$ and the total work $W$ depend upon the initial and final positions of the charge $q'$, but are independent of the shape of its path.
+
+\subsection{}\label{16.1.4} \redem{Circulation of the field strength vector} along the closed path or loop $L$ is the line integral
+\begin{equation*}%
+\oint_{L} E \, \dd l \cos \alpha = \oint_{L} \vb{E} \, \dd \vb{l}
+\end{equation*}
+This integral is numerically equal to the work done by electrostatic forces in moving a unit positive charge along a closed path. Since $r_{i1} = r_{i2}$ for a closed path, we have, according to Sect. \ssect{16.1.3}, $\oint_{L} \vb{E} \, \dd \vb{l} = 0$, i.e. the above-mentioned work equals zero.
+
+A force field of strength $\vb{E}$ that complies with such a condition is said to be a \redem{conservative one}. An electrostatic field is conservative.
+
+The differential form of the condition indicating the conservative nature of an electrostatic field is one of Maxwell’s equations for an electrostatic field \ssect{27.2.1}.
+
+
+\section[Electrostatic Field Potential]{Potential of an Electrostatic Field}
+\label{sec-16.2}
+
+\subsection{}\label{16.2.1} The work $\delta W$ \ssect{16.1.1} is equal to the decrease $\dd E_{p}$ in potential energy \ssect{3.3.1} of the charge $q'$ moving in an electrostatic field:
+bW = —dEv
+and
+b
+W= j*q'Edtcosa=—A£p=£1P—E2P, a
+where £lp and E2p are the values of the potential energy of
+charge q' at points a and b, and a is the angle between the .directions of vectors E and d\ (Fig. 16.1).
+
+\subsection{}\label{16.2.2} When point charge q' is moved by electrostatic forces in a field set up by charge q, the change dEp in its potential energy in an infinitesimal displacement is
+dE——6W=
+qq'dr 4jte0err2 *
+Upon a finite displacement of charge q' from point a to point b (Fig. 16.1), the change A£p in the potential energy of the charge
+is
+r2 Atfp—-®2P—1P= ] dEp
+rl
+
+qq' qq’
+4jie0err2 4jie0err1 (in SI units)
+A£P= qq’)( 1 1 ) (in cgse units). I Cj*r2 erri /
+
+\subsection{}\label{16.2.3} When point charge q' is moved in a field set up by a system of point charges (qly q2, . . ., qn), the change in thepotential energy of charge qr is
+AtBw 2 (• Qi ——-----) (in SI units), i= 1 4jie0errz-2 4jil8£q0e)'ri] /
+n
+AEP= ?' 2 ("77;-----T7-) <in cSse units)> ,vtr'i2 brrn/
+i=l
+where ra and ri2 are the distances between charges qt and q' before and after the displacement of the latter.
+
+\subsection{}\label{16.2.4} To find the absolute value of the potential energy of an electric charge at a given point of an electrostatic field, it is necessary to choose a reference point \ssect{3.3.4} for the potential energy. Integrating the equation in Sect. \ssect{16.2.2}, we obtain for the general case:
+A ’p = 7 -  — + C , 4Jie0err
+where C is an arbitrary constant. If we assume that i?p = 0 asroo, thenC= 0 and the potential energy of charge q', located in the field of charge q at the distance r from this charge, equals
+<w'
+For like charges q and q\ the potential energy of their inter­ action (repulsion) is positive and increases (decreases) as the charges move closer together (away from each other). In attraction of unlike charges Ep < 0 and increases to zero as one of the charges approaches infinity. The curves showing the dependence of the potential energy of two point charges on the distance between them are given in Fig. 16.2.
+
+\subsection{}\label{16.2.5} The potential energy Ev of charge q', located in a field set up by a system of point charges qlt q2, . . qnis equal to the sum of the potential energies in the fields set up by each of the charges separately:
+nn
+EV= 2Eiv=q’24wejejri(inSIUnitS)>
+2=1 2=1
+where rt is the distance between charges qt ana q'.
+
+\subsection{}\label{16.2.6} The potential of an electrostatic field is an energy characteristic of the field, it is the ratio of the potential energy Ap of charge q' to the magnitude of the charge
+i=1-4sg— (in SI units)-
+This ratio is independent of the magnitude of the charge q' and is numerically equal to the potential energy of a unit test charge \ssect{15.1.3} placed at the point being considered in the field.
+Examples:
+(1) The potential of an electrostatic field set up by one point charge q in a homogeneous and isotropic dielectric is
+V = Q (in SI units), 4JT£q8j*/’
+V = Q (in cgse units). 8rr
+f(2) The potential of a field set up by a charged conductor \ssect{16.4.4} in a homogeneous and isotropic dielectric is
+V = ~4ro e '§ (in SI UnitS)’ s
+T. 1CodS ... V = ---(v)------ (in cgse units),
+erJ r S
+where a is the surface charge density on the conductor \ssect{15.2.3} and dS is an element of surface of the conductor.
+f3) The potential oran isolated conducting sphere of radius R, having the charge g, is
+V = (in SI units), 4jte0erZ? \ ’
+V = ——- (in cgse units). 8p/i
+
+\subsection{}\label{16.2.7} The work W done by electric forces in moving charge q’ from point a to point b of an electrostatic field is
+W= Elv- £2p= q'(Fx- V2)= q'AFf
+where  lp and E2p are the potential energies of charge q* at points a and 6, V±and V2are the potentials of the field at the same points, and AV = Vx — V2 is the potential difference. If point b is at infinity, E2p = 0 and V2= 0. Then the work Woo required to move charge q' from point a to infinity is equal to
+Woo = £lp = q'Vv
+Owing to the arbitrary nature of point a subindex 1 can be discarded. Then
+V= w° q' '
+Hence, the potential at a given point of an electrostatic Geld is numerically equal to the work done by electrostatic forces in moving a unit positive charge from the point in the Geld to inhnity. This work is also numerically equal to that done by external forces (acting against the forces of the electrostatic Geld) in moving a unit positive charge from infinity to the given point in the field.
+
+\subsection{}\label{16.2.8} In the study of electrostatic Gelds, all the problems require a knowledge of the potential difference between any points in a Geld rather than the absolute values of the potentials at these points. Therefore, the choice of a point of zero potential depends only on its convenience for solving the given problem. It frequently proves convenient to assume that the potential of the earth is equal to zero.
+
+
+\section[Field Potential and Strength Relation]{Relation Between the Potential and Strength of an Electrostatic Field}
+\label{sec-16.3}
+
+\subsection{}\label{16.3.1} On the basis of the equations in Sects. \ssect{16.2.1} and \ssect{16.2.6}, an element of work 6W done in the inGnitesimal displacement of charge q' in an electrostatic Geld is
+GW= q'Ecosadl= —d£p= —q'dV, or
+Ecosadl= —dV; Ed\= —dV.
+But dl cos a = dl0where dl0is an element of length of the line of force \ssect{15.1.6} (Fig. 16.3). Hence, E = —dV/dl0. The deriv­ ative dV/dl0is the rate of change of the potential along a line of force and is numerically equal to the change in potential per unit length of a line of force.
+
+\subsection{}\label{16.3.2} The projection of vector E on the direction of motion d\ is equal to: Ei = E cos a. Therefore
+It is obvious that < E and |dVldl |< |dV/dl0|. Hence, Et and dV/dl reach their maximum values when d\ is tangent to the line of force.
+In the vicinity of a given point in an electrostatic field, the potential varies most rapidly in the direction of a line of force. The sense of vector E is to­
+ward the most rapid decrease
+in potential.
+
+\subsection{}\label{16.3.3}
+Inamore general form
+the relation between the strength and potential of an electro- ? static field is
+E = —grad V,
+where grad V is the potential
+gradient vector, directed toward
+the most rapid increase in the potential and numerically equal to its rate of change per unit length in this direction. If the potential V is regarded as a function of the three Cartesian coor­ dinates of the given point in the field, then
+dV . . 6V dV k, 8radF= w l+ W '1+'dr
+where i, j and k are unit vectors along the OX, OY and OZ axes. The projections of the electrostatic field strength vector on the coordinate axes are related to the field potential by the equations:
+Ex
+dV Ey dV and Ez= - dV dx Qy dz
+\subsection{}\label{16.3.4}
+ When an electric charge is moved in a direction d\, per­ pendicular to a line of force, i.e. perpendicular to vector E, Et = 0 and dVidl = 0 \ssect{16.3.1}, i.e. V = const. The potential is the same at all points of a curve orthogonal to a line of force.
+The geometrical locus of all points having the same potential is called an equipotential surface. It follows from the aforesaid that equipotential surfaces are everywhere orthogonal to lines of force.
+The work done in moving an electric charge along one and the same equipotential surface equals zero.
+An infinite number of equipotential surfaces can be constructed about any system of electric charges. They are usually construct­ ed so that the potential difference is the same between any two adjacent equipotential surfaces.
+
+\subsection{}\label{16.3.5} There are two methods lor the graphical representation of electrostatic fields: by means of lines of force and by means of equipotential surfaces. If the arrangement of the lines of force of an electrostatic field is known, equipotential surfaces can be constructed. Conversely, knowing the arrangement of the equipotential surfaces, the magnitude and direction of the field strength can be found for each point of the field, i.e. the lines of force can be constructed.
+
+
+\section{Conductors in an Electrostatic Field}
+\label{sec-16.4}
+
+\subsection{}\label{16.4.1} Solid metal conductors contain current carriers. These are conduction electrons (free electrons) that can be moved by the external electric field through the volume of the conductor. Conduction electrons appear when a conducting metal goes over from a less condensed to a more condensed state, i.e. from the gaseous to the liquid or solid state. At this valence electrons \ssect{39.3.9} are collectivized; they are separated from “their”atoms and form a special electron gas.
+
+\subsection{}\label{16.4.2} The electrical properties of conductors under electrostatic conditions are determined by the behaviour of the conduction electrons in the external electrostatic field. In the absence of an external electrostatic field, the electric fields of the conduction electrons and the positive ions of the metal \ssect{40.1.3}, the atomic cores, mutually compensate each other. When a metal conductor is placed into an external electrostatic field, this field redistributes the conduction electrons in the conductor so that at any point within the conductor the conduction electrons and the positive ions compensate the external electrostatic field.
+At any point inside a conductor located in an electrostatic field, the strength of the resultant steady-state electric field is equal to zero.
+
+\subsection{}\label{16.4.3} At the surface of the conductor the field strength vector E should be normal to the surface. If this were not so the tangential component ET of vector E would cause the charges to move along the conductor’s surface, and this would contra­ dict the fixed distribution of the charges. This leads to the following consequences:
+(a) E = 0 at all points inside the conductor; at all points on its surface E = En (and Ex = 0), where En is the normal component of the field strength vector;
+(b) the whole volume of a conductor in an electrostatic field is equipotential, because, for any point within the conductor,
+(IV
+—- ——E cosoc= 0 and V= const;.
+dl
+(c) the surface of the conductor is also equipotential \ssect{16.3.4}, because for any line on the surface
+—Et= 0 and V= const;
+dl
+(d) in a charged conductor the uncompensated charges are locat­ ed only on its surface. This follows from the Ostrogradsky- (iauss electric flux theorem \ssect{15.3.3}, according to which the total charge q injside a conductor and enclosed within a certain volume bounded by the arbitrary closed surface S is equal to
+<1=Oe= DdScosa=0, S
+because D = 0 at all points on the surface.
+
+\subsection{}\label{16.4.4} When the electrostatic field is set up by a charged con­
+ductor the displacement and strength of this field close to the surface of the conductor are found by the equations
+l)n=G and EA= °-(inSIunits), 808r
+where n is the outward normal to the conductor’s surface, a is Ibe surface charge density \ssect{15.2.3}, er is the relative permittiv­ ity (dielectric constant) of the medium \ssect{14.2.4} and e0is the electric constant in SI units \ssect{14.2.7}.
