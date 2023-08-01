@@ -64,69 +64,103 @@ The differential form of the condition indicating the conservative nature of an 
 \label{sec-16.2}
 
 \subsection{}\label{16.2.1} The work $\delta W$ \ssect{16.1.1} is equal to the decrease $\dd E_{p}$ in potential energy \ssect{3.3.1} of the charge $q'$ moving in an electrostatic field:
-bW = —dEv
+\begin{equation*}%
+\delta W = - \dd E_{p},
+\end{equation*}
 and
-b
-W= j*q'Edtcosa=—A£p=£1P—E2P, a
-where £lp and E2p are the values of the potential energy of
-charge q' at points a and b, and a is the angle between the .directions of vectors E and d\ (Fig. 16.1).
+\begin{equation*}%
+W = \int_{a}^{b} q' E \dd l \cos \alpha =- \Delta E_{p} = E_{1P} - E_{2P},
+\end{equation*}
+where $E_{1P}$ and $E_{1P}$ are the values of the potential energy of
+charge $q'$ at points $a$ and $b$, and $\alpha$ is the angle between the directions of vectors $\vb{E}$ and $\dd l$ (\figr{fig-16-01}).
 
-\subsection{}\label{16.2.2} When point charge q' is moved by electrostatic forces in a field set up by charge q, the change dEp in its potential energy in an infinitesimal displacement is
-dE——6W=
-qq'dr 4jte0err2 *
-Upon a finite displacement of charge q' from point a to point b (Fig. 16.1), the change A£p in the potential energy of the charge
+\subsection{}\label{16.2.2} When point charge $q'$ is moved by electrostatic forces in a field set up by charge $q$, the change $\dd E_{p}$ in its potential energy in an infinitesimal displacement is
+\begin{equation*}%
+\dd E_{p} = -\delta W = - \frac{qq' \, \dd r}{4 \pi \varepsilon \varepsilon_{0} r^{2}}.
+\end{equation*}
+Upon a finite displacement of charge $q'$ from point $a$ to point $b$ (\figr{fig-16-01}), the change $\Delta E_{p}$ in the potential energy of the charge
 is
-r2 Atfp—-®2P—1P= ] dEp
-rl
+\begin{align*}%
+\Delta E_{p} & = E_{2p} - E_{1p} = \int_{r_{1}}^{r_{2}} \dd E_{p} \\
+& = \frac{qq' \, \dd r}{4 \pi \varepsilon \varepsilon_{0} r_{2}} - \frac{qq' \, \dd r}{4 \pi \varepsilon \varepsilon_{0} r_{1}} && \text{(in SI units),} \\
+\Delta E_{p} & =  qq'\left( \frac{1}{\varepsilon_{r} r_{2} - \varepsilon_{r} r_{1}} \right) && \text{(in CGSE units.)}
+\end{align*}
 
-qq' qq’
-4jie0err2 4jie0err1 (in SI units)
-A£P= qq’)( 1 1 ) (in cgse units). I Cj*r2 erri /
+\subsection{}\label{16.2.3} When point charge $q'$ is moved in a field set up by a system of point charges $(q_{1},\, q_{2},\, \ldots , \, q_{n})$, the change in the potential energy of charge $q'$ is
+\begin{align*}%
+\Delta E_{p} & =  q' \sum_{i = 1}^{n}\left( \frac{q_{i}}{4 \pi \varepsilon \varepsilon_{0} r_{i2}} - \frac{q_{i}}{4 \pi \varepsilon \varepsilon_{0} r_{i1}}\right) && \text{(in SI units)},\\
+\Delta E_{p} & = q' \sum_{i = 1}^{n}\left( \frac{q_{i}}{\varepsilon_{r} r_{i2}} - \frac{q_{i}}{ \varepsilon_{r} r_{i1}}\right) && \text{(in CGSE units.)}
+\end{align*}
+where $r_{i1}$ and $r_{i2}$ are the distances between charges $q_{i}$ and $q'$ before and after the displacement of the latter.
 
-\subsection{}\label{16.2.3} When point charge q' is moved in a field set up by a system of point charges (qly q2, . . ., qn), the change in thepotential energy of charge qr is
-AtBw 2 (• Qi ——-----) (in SI units), i= 1 4jie0errz-2 4jil8£q0e)'ri] /
-n
-AEP= ?' 2 ("77;-----T7-) <in cSse units)> ,vtr'i2 brrn/
-i=l
-where ra and ri2 are the distances between charges qt and q' before and after the displacement of the latter.
+\subsection{}\label{16.2.4} To find the absolute value of the potential energy of an electric charge at a given point of an electrostatic field, it is necessary to choose a reference point \ssect{3.3.4} for the potential energy. Integrating the equation in \ssect{16.2.2}, we obtain for the general case:
+\begin{equation*}%
+E_{p} = \frac{qq'}{4 \pi \varepsilon_{0} \varepsilon_{r} r} + C,
+\end{equation*}
+where $C$ is an arbitrary constant. If we assume that $E_{p} = 0$ as $r \to \infty$, then $C= 0$ and the potential energy of charge $q'$, located in the field of charge $q$ at the distance $r$ from this charge, equals
+\begin{align*}%
+E_{p} & = \frac{qq'}{4 \pi \varepsilon_{0} \varepsilon_{r} r}  && \text{(in SI units)},\\
+E_{p} & = \frac{qq'}{\varepsilon_{r} r}   && \text{(in CGSE units.)}
+\end{align*}
+For like charges $q$ and $q'$ the potential energy of their inter­ action (repulsion) is positive and increases (decreases) as the charges move closer together (away from each other). In attraction of unlike charges $E_{p} < 0$ and increases to zero as one of the charges approaches infinity. The curves showing the dependence of the potential energy of two point charges on the distance between them are given in \figr{fig-16-2}.
 
-\subsection{}\label{16.2.4} To find the absolute value of the potential energy of an electric charge at a given point of an electrostatic field, it is necessary to choose a reference point \ssect{3.3.4} for the potential energy. Integrating the equation in Sect. \ssect{16.2.2}, we obtain for the general case:
-A ’p = 7 -  — + C , 4Jie0err
-where C is an arbitrary constant. If we assume that i?p = 0 asroo, thenC= 0 and the potential energy of charge q', located in the field of charge q at the distance r from this charge, equals
-<w'
-For like charges q and q\ the potential energy of their inter­ action (repulsion) is positive and increases (decreases) as the charges move closer together (away from each other). In attraction of unlike charges Ep < 0 and increases to zero as one of the charges approaches infinity. The curves showing the dependence of the potential energy of two point charges on the distance between them are given in Fig. 16.2.
 
-\subsection{}\label{16.2.5} The potential energy Ev of charge q', located in a field set up by a system of point charges qlt q2, . . qnis equal to the sum of the potential energies in the fields set up by each of the charges separately:
-nn
-EV= 2Eiv=q’24wejejri(inSIUnitS)>
-2=1 2=1
-where rt is the distance between charges qt ana q'.
+\begin{marginfigure}[-2cm]
+\centering
+\includegraphics[width=\textwidth]{figs/ch-16/fig-16-02.pdf}
+\caption{The dependence of the potential energy of two point charges on the distance between them.\label{fig-16-02}}
+\end{marginfigure}
 
-\subsection{}\label{16.2.6} The potential of an electrostatic field is an energy characteristic of the field, it is the ratio of the potential energy Ap of charge q' to the magnitude of the charge
-i=1-4sg— (in SI units)-
+
+\subsection{}\label{16.2.5} The potential energy $E_{p}$ of charge $q'$, located in a field set up by a system of point charges $(q_{1},\, q_{2},\, \ldots , \, q_{n})$ is equal to the sum of the potential energies $E_{ip}$ in the fields set up by each of the charges separately:
+\begin{equation*}%
+E_{p} = \sum_{i=1}^{n} E_{ip} = q' \sum_{i=1}^{n} \frac{q_{i}}{4 \pi \varepsilon_{0} \varepsilon_{r} r_{i}} \quad \text{(in SI units.)}
+\end{equation*}
+where $r_{i}$ is the distance between charges $q_{i}$ and $q'$.
+
+\subsection{}\label{16.2.6} The \redem{potential of an electrostatic field} is an energy characteristic of the field, it is the ratio of the potential energy $E_{p}$ of charge $q'$ to the magnitude of the charge
+\begin{equation*}%
+V = \frac{E_{p}}{q'} = \sum_{i = 1}^{n} \frac{q_{i}}{4 \varepsilon_{0} \varepsilon_{r} \pi r_{i}} \quad \text{(in SI units).}
+\end{equation*}
 This ratio is independent of the magnitude of the charge q' and is numerically equal to the potential energy of a unit test charge \ssect{15.1.3} placed at the point being considered in the field.
-Examples:
-(1) The potential of an electrostatic field set up by one point charge q in a homogeneous and isotropic dielectric is
-V = Q (in SI units), 4JT£q8j*/’
-V = Q (in cgse units). 8rr
-f(2) The potential of a field set up by a charged conductor \ssect{16.4.4} in a homogeneous and isotropic dielectric is
-V = ~4ro e '§ (in SI UnitS)’ s
-T. 1CodS ... V = ---(v)------ (in cgse units),
-erJ r S
-where a is the surface charge density on the conductor \ssect{15.2.3} and dS is an element of surface of the conductor.
-f3) The potential oran isolated conducting sphere of radius R, having the charge g, is
-V = (in SI units), 4jte0erZ? \ ’
-V = ——- (in cgse units). 8p/i
 
-\subsection{}\label{16.2.7} The work W done by electric forces in moving charge q’ from point a to point b of an electrostatic field is
-W= Elv- £2p= q'(Fx- V2)= q'AFf
-where  lp and E2p are the potential energies of charge q* at points a and 6, V±and V2are the potentials of the field at the same points, and AV = Vx — V2 is the potential difference. If point b is at infinity, E2p = 0 and V2= 0. Then the work Woo required to move charge q' from point a to infinity is equal to
-Woo = £lp = q'Vv
-Owing to the arbitrary nature of point a subindex 1 can be discarded. Then
-V= w° q' '
-Hence, the potential at a given point of an electrostatic Geld is numerically equal to the work done by electrostatic forces in moving a unit positive charge from the point in the Geld to inhnity. This work is also numerically equal to that done by external forces (acting against the forces of the electrostatic Geld) in moving a unit positive charge from infinity to the given point in the field.
+\hlblue{Examples.} 
+\begin{enumerate}[label=(\arabic*)]
+\item The potential of an electrostatic field set up by one point charge $q$ in a homogeneous and isotropic dielectric is
+\begin{align*}%
+V & = \frac{q}{4 \pi \varepsilon_{0} \varepsilon_{r} r} &&  \text{(in SI units),}\\
+V & = \frac{q}{\varepsilon_{r} r} &&  \text{(in cgse units).}
+\end{align*}
 
-\subsection{}\label{16.2.8} In the study of electrostatic Gelds, all the problems require a knowledge of the potential difference between any points in a Geld rather than the absolute values of the potentials at these points. Therefore, the choice of a point of zero potential depends only on its convenience for solving the given problem. It frequently proves convenient to assume that the potential of the earth is equal to zero.
+\item The potential of a field set up by a charged conductor \ssect{16.4.4} in a homogeneous and isotropic dielectric is
+\begin{align*}%
+V & = \frac{1}{4 \pi \varepsilon_{0} \varepsilon_{r}} \oint_{S} \frac{\sigma \, \dd S}{r} &&  \text{(in SI units),}\\
+V & = \frac{1}{\varepsilon_{r}} \oint_{S} \frac{\sigma \, \dd S}{r} &&  \text{(in cgse units).}
+\end{align*}
+where $\sigma$ is the surface charge density on the conductor \ssect{15.2.3} and $\dd S$ is an element of surface of the conductor.
+
+\item The potential of an isolated conducting sphere of radius $R$, having the charge $q$, is
+\begin{align*}%
+V & = \frac{q}{4 \pi \varepsilon_{0} \varepsilon_{r} R} &&  \text{(in SI units),}\\
+V & = \frac{q}{\varepsilon_{r} R} &&  \text{(in cgse units).}
+\end{align*}
+\end{enumerate}
+
+\subsection{}\label{16.2.7} The work $W$ done by electric forces in moving charge $q'$ from point $a$ to point $b$ of an electrostatic field is
+\begin{equation*}%
+W = E_{1p} - E_{2p} = q'(V_{1} - V_{2}) = q' \Delta V,
+\end{equation*}
+where $E_{1p}$ and $E_{2p}$ are the potential energies of charge $q'$ at points $a$ and $b$, $V_{1}$ and $V_{2}$ are the potentials of the field at the same points, and $\Delta V = V_{1} - V_{2}$ is the \redem{potential difference}. If point $b$ is at infinity, $E_{2p} = 0$ and $V_{2} = 0$. Then the work $W_{\infty}$ required to move charge $q'$ from point a to infinity is equal to
+\begin{equation*}%
+W_{\infty} = E_{1p} = q' V_{1}.
+\end{equation*}
+Owing to the arbitrary nature of point $a$ subindex 1 can be discarded. Then
+\begin{equation*}%
+V = \frac{W_{\infty}}{q}.
+\end{equation*}
+Hence, the potential at a given point of an electrostatic field is numerically equal to the work done by electrostatic forces in moving a unit positive charge from the point in the field to infinity. This work is also numerically equal to that done by external forces (acting against the forces of the electrostatic field) in moving a unit positive charge from infinity to the given point in the field.
+
+\subsection{}\label{16.2.8} In the study of electrostatic fields, all the problems require a knowledge of the potential difference between any points in a field rather than the absolute values of the potentials at these points. Therefore, the choice of a point of zero potential depends only on its convenience for solving the given problem. It frequently proves convenient to assume that the potential of the earth is equal to zero.
 
 
 \section[Field Potential and Strength Relation]{Relation Between the Potential and Strength of an Electrostatic Field}
