@@ -19,6 +19,7 @@
 %\usepackage{unicode-math}
 %\usepackage{microtype}
 %\usepackage{mlmodern}
+\usepackage{bm}
 
 
 \usepackage[protrusion=allmath,tracking=smallcaps,letterspace=100]{microtype}
@@ -128,8 +129,10 @@
 \DeclareSIUnit\gauss{G}
 \DeclareSIUnit\fahrenheit{\degree F}
 
-\newcommand{\fpe}{4 \pi \epsilon_{0}}
-\newcommand{\ofpe}{\dfrac{1}{4 \pi \epsilon_{0}}}
+\newcommand{\fpe}{4 \pi \varepsilon_{0}}
+\newcommand{\ofpe}{\dfrac{1}{4 \pi \varepsilon_{0}}}
+\newcommand{\fpee}{4 \pi \varepsilon_{0}\varepsilon_{r}}
+\newcommand{\ee}{\varepsilon_{0}\varepsilon_{r}}
 
 \usepackage{lscape}
 %\usepackage{yhmath}
@@ -193,7 +196,7 @@
 \input{14-charges-coulomb}
 \input{15-electric-field}
 \input{16-electric-potential}
-
+\input{17-capacitance}
 \backmatter
 
 \end{document}  

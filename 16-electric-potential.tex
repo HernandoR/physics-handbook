@@ -166,59 +166,82 @@ Hence, the potential at a given point of an electrostatic field is numerically e
 \section[Field Potential and Strength Relation]{Relation Between the Potential and Strength of an Electrostatic Field}
 \label{sec-16.3}
 
-\subsection{}\label{16.3.1} On the basis of the equations in Sects. \ssect{16.2.1} and \ssect{16.2.6}, an element of work 6W done in the inGnitesimal displacement of charge q' in an electrostatic Geld is
-GW= q'Ecosadl= —d£p= —q'dV, or
-Ecosadl= —dV; Ed\= —dV.
-But dl cos a = dl0where dl0is an element of length of the line of force \ssect{15.1.6} (Fig. 16.3). Hence, E = —dV/dl0. The deriv­ ative dV/dl0is the rate of change of the potential along a line of force and is numerically equal to the change in potential per unit length of a line of force.
+\subsection{}\label{16.3.1} On the basis of the equations in sections \ssect{16.2.1} and \ssect{16.2.6}, an element of work $\delta W$ done in the infinitesimal displacement of charge $q'$ in an electrostatic field is
+\begin{align*}%
+\delta W & = q' E \cos \alpha \dd l = - \dd E_{p} = -q' \, \dd V, \qor \\
+E \cos \alpha \, \dd l & = - \dd V; \quad \vb{E}  \, \dd \vb{l} = - \dd V.
+\end{align*}
+But $\dd l \cos \alpha = \dd l_{0}$ where $\dd l_{0}$ is an element of length of the line of force \ssect{15.1.6} (\figr{fig-16-03}). Hence, $E = -\dv*{V}{l_{0}}$. The derivative $\dv{V}{l_{0}}$ is the rate of change of the potential along a line of force and is numerically equal to the change in potential per unit length of a line of force.
 
-\subsection{}\label{16.3.2} The projection of vector E on the direction of motion d\ is equal to: Ei = E cos a. Therefore
-It is obvious that < E and |dVldl |< |dV/dl0|. Hence, Et and dV/dl reach their maximum values when d\ is tangent to the line of force.
-In the vicinity of a given point in an electrostatic field, the potential varies most rapidly in the direction of a line of force. The sense of vector E is to­
-ward the most rapid decrease
-in potential.
+\begin{marginfigure}
+\centering
+\includegraphics[width=\textwidth]{figs/ch-16/fig-16-03.pdf}
+\caption{The field $E$ is numerically equal to the change in potential per unit length of a line of force.\label{fig-16-03}}
+\end{marginfigure}
+
+\subsection{}\label{16.3.2} The projection $E_{l}$ of vector $\vb{E}$ on the direction of motion $\dd \vb{l}$ is equal to: $E_{l} = E \cos \alpha$. Therefore
+\begin{equation*}
+E_{l} = - \dv{V}{t}.
+\end{equation*}
+It is obvious that $E_{l} \leqslant E$ and $\abs{\dv*{V}{l}} \leqslant \abs{\dv*{V}{l_{0}}}$. Hence, $E_{l}$ and $\dv*{V}{l}$ reach their maximum values when $\dd \vb{l}$ is tangent to the line of force.
+
+In the vicinity of a given point in an electrostatic field, the potential varies most rapidly in the direction of a line of force. The sense of vector $\vb{E}$ is toward the most rapid decrease in potential.
 
 \subsection{}\label{16.3.3}
-Inamore general form
-the relation between the strength and potential of an electro- ? static field is
-E = —grad V,
-where grad V is the potential
-gradient vector, directed toward
-the most rapid increase in the potential and numerically equal to its rate of change per unit length in this direction. If the potential V is regarded as a function of the three Cartesian coor­ dinates of the given point in the field, then
-dV . . 6V dV k, 8radF= w l+ W '1+'dr
-where i, j and k are unit vectors along the OX, OY and OZ axes. The projections of the electrostatic field strength vector on the coordinate axes are related to the field potential by the equations:
-Ex
-dV Ey dV and Ez= - dV dx Qy dz
-\subsection{}\label{16.3.4}
- When an electric charge is moved in a direction d\, per­ pendicular to a line of force, i.e. perpendicular to vector E, Et = 0 and dVidl = 0 \ssect{16.3.1}, i.e. V = const. The potential is the same at all points of a curve orthogonal to a line of force.
-The geometrical locus of all points having the same potential is called an equipotential surface. It follows from the aforesaid that equipotential surfaces are everywhere orthogonal to lines of force.
-The work done in moving an electric charge along one and the same equipotential surface equals zero.
-An infinite number of equipotential surfaces can be constructed about any system of electric charges. They are usually construct­ ed so that the potential difference is the same between any two adjacent equipotential surfaces.
+In a more general form the relation between the strength and potential of an electrostatic field is
+\begin{equation*}%
+\vb{E} = -\grad{V},
+\end{equation*}
+where $\grad{V}$ is the potential gradient vector, directed toward the most rapid increase in the potential and numerically equal to its rate of change per unit length in this direction. If the potential $V$ is regarded as a function of the three Cartesian coordinates of the given point in the field, then
+\begin{equation*}%
+\grad{V} =\pdv{V}{x} \vu{i} + \pdv{V}{y} \vu{j} + \pdv{V}{z} \vu{k}
+\end{equation*}
+where $\vu{i}$, $\vu{j}$ and $\vu{k}$ are unit vectors along the $OX$, $OY$ and $OZ$ axes. The projections of the electrostatic field strength vector on the coordinate axes are related to the field potential by the equations:
+\begin{equation*}%
+E_{x} = -\pdv{V}{x},\,\,E_{y} = -\pdv{V}{y},\,\,E_{z} = -\pdv{V}{z}.
+\end{equation*}
 
-\subsection{}\label{16.3.5} There are two methods lor the graphical representation of electrostatic fields: by means of lines of force and by means of equipotential surfaces. If the arrangement of the lines of force of an electrostatic field is known, equipotential surfaces can be constructed. Conversely, knowing the arrangement of the equipotential surfaces, the magnitude and direction of the field strength can be found for each point of the field, i.e. the lines of force can be constructed.
+\subsection{}\label{16.3.4}
+ When an electric charge is moved in a direction $\dd \vb{l}$, perpendicular to a line of force, i.e. perpendicular to vector $\vb{E}$, $E_{l} = 0$ and $\dv*{V}{l} = 0$ \ssect{16.3.1}, i.e. $V = \text{const}$. The potential is the same at all points of a curve orthogonal to a line of force.
+ 
+The geometrical locus of all points having the same potential is called an \redem{equipotential surface}. It follows from the aforesaid that equipotential surfaces are everywhere orthogonal to lines of force.
+
+The work done in moving an electric charge along one and the same equipotential surface equals zero.
+
+An infinite number of equipotential surfaces can be constructed about any system of electric charges. They are usually constructed so that the potential difference is the same between any two adjacent equipotential surfaces.
+
+\subsection{}\label{16.3.5} There are two methods for the graphical representation of electrostatic fields: by means of lines of force and by means of equipotential surfaces. If the arrangement of the lines of force of an electrostatic field is known, equipotential surfaces can be constructed. Conversely, knowing the arrangement of the equipotential surfaces, the magnitude and direction of the field strength can be found for each point of the field, i.e. the lines of force can be constructed.
 
 
 \section{Conductors in an Electrostatic Field}
 \label{sec-16.4}
 
-\subsection{}\label{16.4.1} Solid metal conductors contain current carriers. These are conduction electrons (free electrons) that can be moved by the external electric field through the volume of the conductor. Conduction electrons appear when a conducting metal goes over from a less condensed to a more condensed state, i.e. from the gaseous to the liquid or solid state. At this valence electrons \ssect{39.3.9} are collectivized; they are separated from “their”atoms and form a special electron gas.
+\subsection{}\label{16.4.1} Solid metal conductors contain current carriers. These are conduction electrons (free electrons) that can be moved by the external electric field through the volume of the conductor. Conduction electrons appear when a conducting metal goes over from a less condensed to a more condensed state, i.e. from the gaseous to the liquid or solid state. At this valence electrons \ssect{39.3.9} are collectivized; they are separated from ``their'' atoms and form a special \redem{electron} gas.
 
 \subsection{}\label{16.4.2} The electrical properties of conductors under electrostatic conditions are determined by the behaviour of the conduction electrons in the external electrostatic field. In the absence of an external electrostatic field, the electric fields of the conduction electrons and the positive ions of the metal \ssect{40.1.3}, the atomic cores, mutually compensate each other. When a metal conductor is placed into an external electrostatic field, this field redistributes the conduction electrons in the conductor so that at any point within the conductor the conduction electrons and the positive ions compensate the external electrostatic field.
+
 At any point inside a conductor located in an electrostatic field, the strength of the resultant steady-state electric field is equal to zero.
 
-\subsection{}\label{16.4.3} At the surface of the conductor the field strength vector E should be normal to the surface. If this were not so the tangential component ET of vector E would cause the charges to move along the conductor’s surface, and this would contra­ dict the fixed distribution of the charges. This leads to the following consequences:
-(a) E = 0 at all points inside the conductor; at all points on its surface E = En (and Ex = 0), where En is the normal component of the field strength vector;
-(b) the whole volume of a conductor in an electrostatic field is equipotential, because, for any point within the conductor,
-(IV
-—- ——E cosoc= 0 and V= const;.
-dl
-(c) the surface of the conductor is also equipotential \ssect{16.3.4}, because for any line on the surface
-—Et= 0 and V= const;
-dl
-(d) in a charged conductor the uncompensated charges are locat­ ed only on its surface. This follows from the Ostrogradsky- (iauss electric flux theorem \ssect{15.3.3}, according to which the total charge q injside a conductor and enclosed within a certain volume bounded by the arbitrary closed surface S is equal to
-<1=Oe= DdScosa=0, S
-because D = 0 at all points on the surface.
+\subsection{}\label{16.4.3} At the surface of the conductor the field strength vector $\vb{E}$ should be normal to the surface. If this were not so the tangential component $\vb{E}_{\tau}$ of vector $\vb{E}$ would cause the charges to move along the conductor’s surface, and this would contradict the fixed distribution of the charges. This leads to the following consequences:
+\begin{enumerate}[label=(\alph*)]
+\item $\vb{E} = 0$ at all points inside the conductor; at all points on its surface $\vb{E} = \vb{E}_{n}$ (and $\vb{E}_{\tau} = 0$), where $\vb{E}_{n}$ is the normal component of the field strength vector;
+\item the whole volume of a conductor in an electrostatic field is equipotential, because, for any point within the conductor,
+\begin{equation*}%
+\dv{V}{l} = - E \cos \alpha = 0 \qand V = \text{const;}
+\end{equation*}
+\item the surface of the conductor is also equipotential \ssect{16.3.4}, because for any line on the surface
+\begin{equation*}%
+\dv{V}{l} = - E_{\tau} = 0 \qand V = \text{const;}
+\end{equation*}
+\item in a charged conductor the uncompensated charges are located only on its surface. This follows from the Ostrogradsky-Gauss electric flux theorem \ssect{15.3.3}, according to which the total charge $q$ inside a conductor and enclosed within a certain volume bounded by the arbitrary closed surface $S$ is equal to
+\begin{equation*}%
+q = \Phi_{e} = \oint_{S} D \, \cos \alpha \, \dd S = 0,
+\end{equation*}
+because $D = 0$ at all points on the surface.
+\end{enumerate}
 
-\subsection{}\label{16.4.4} When the electrostatic field is set up by a charged con­
-ductor the displacement and strength of this field close to the surface of the conductor are found by the equations
-l)n=G and EA= °-(inSIunits), 808r
-where n is the outward normal to the conductor’s surface, a is Ibe surface charge density \ssect{15.2.3}, er is the relative permittiv­ ity (dielectric constant) of the medium \ssect{14.2.4} and e0is the electric constant in SI units \ssect{14.2.7}.
+\subsection{}\label{16.4.4} When the electrostatic field is set up by a charged conductor the displacement and strength of this field close to the surface of the conductor are found by the equations
+\begin{equation*}%
+D_{n} = G \qand E_{n}= \frac{\sigma}{\varepsilon_{0}\varepsilon_{r}} \,\, \text{(in SI units)},
+\end{equation*}
+where $\vb{n}$ is the outward normal to the conductor’s surface, $\sigma$ is the surface charge density \ssect{15.2.3}, $\varepsilon_{r}$ is the relative permittivity (dielectric constant) of the medium \ssect{14.2.4} and $\varepsilon_{0}$ is the electric constant in SI units \ssect{14.2.7}.

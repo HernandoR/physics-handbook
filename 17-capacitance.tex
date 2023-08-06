@@ -1,0 +1,131 @@
+% !TEX root = handbook-physics.tex
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+
+
+
+
+
+
+\chapter{Capacitance}
+\label{ch-17}
+
+\section{Capacitance of an Isolated Conductor}
+\label{sec-17.1}
+
+\subsection{}\label{17.1.1} Upon an increase in the amount of electricity transmitted to an isolated conductor, the charges are distributed over the conductor’s surface with varying surface density. The way in which the charges are distributed depends only on the shape of the conductor, but not on the amount of electricity that was previously on the conductor. Each new portion of charges is distributed over the surface of the conductor similar to the preceding portion. It follows that, at any point on the conductor’s surface, the surface charge density $\sigma$ \ssect{15.2.3} increases in proportion to the charge $q$ on the conductor: $\sigma = kq$, where $k = f \,(x, \,y,\, z)$ is a function of the coordinates of the point being considered on the surface.
+
+The potential of the field set up by a charged conductor \ssect{16.2.6} is
+\begin{equation*}%
+V =\frac{1}{4 \pi \varepsilon_{0}\varepsilon_{r}} \oint_{S} \frac{\sigma \, \dd S}{r} = \frac{q}{4 \pi \varepsilon_{0}\varepsilon_{r}} =  \oint_{S} \frac{k \, \dd S}{r}.
+\end{equation*}
+For points on the surface $S$ of the conductor this integral depends only on the size and shape of the conductor’s surface. Hence the potential $V$ of the conductor is proportional to its charge $q$.
+
+\subsection{}\label{17.1.2}The ratio of the charge $q$ of an isolated conductor to its potential $V$ is called the \redem{capacitance} of the given conductor:
+\begin{align*}
+C & = \frac{q}{V} && \text{or} \\
+C & = \fpee \left( \oint_{S} \frac{k \, \dd S}{r} \right)^{-1} && \text{(in SI units.)}
+\end{align*}
+The capacitance of an isolated conductor is numerically equal to the charge that changes the potential of the conductor by one unit.
+
+The capacitance of an isolated conductor depends upon its shape and dimensions. For geometrically similar conductors, their capacitances are proportional to their linear dimen­sions.
+
+The capacitance of an isolated conductor depends upon the dielectric properties of the surrounding medium. The capacitance of a conductor in a homogeneous isotropic medium is proportional to the relative permittivity (dielectric constant) \ssect{14.2.4} of the medium.
+
+\subsection{}\label{17.1.3} It follows from the equation for the potential of an isolated conducting sphere of radius $R$ \ssect{16.2.6} that the \redem{capacitance} of such a \redem{sphere} is
+\begin{align*}
+C & = \fpee \, R && \text{(in SI units.)} \\
+C & = \varepsilon_{r}\,R && \text{(in cgse units.)}
+\end{align*}
+
+
+\begin{marginfigure}
+\centering
+\includegraphics[width=\textwidth]{figs/ch-17/fig-17-01.pdf}
+\caption{Induced charges in conductors.\label{fig-17-01}}
+\end{marginfigure}
+
+\section{Mutual Capacitance. Capacitors}
+\label{sec-17.2}
+
+\subsection{}\label{17.2.1} When there are other conductors close to conductor $A$ the capacitance of the latter is greater than for an identical, but isolated, conductor. This is due to the fact that when the charge $q$ is transferred to conductor $A$,charges are induced on the conductors surrounding it under the influence of the field set up by conductor $A$. The portions of the surrounding conductors nearest to the inducing charge $q$ become oppositely charged (\figr{fig-17-01}). These charges weaken the field set up by charge $q$ lower the potential of conductor $A$ and increase its capacitance.
+
+
+\subsection{}\label{17.2.2} In a system of two conductors arranged close to each
+oilier, having charges $q$ equal in magnitude but opposite in sign, a potential difference $V_{1} - V_{2}$ is produced that is proportional to $q$:
+\begin{equation*}%
+V_{1} - V_{2} = \frac{1}{C} \, q,
+\end{equation*}
+where $C = q/(V_{1} - V_{2})$ is the \redem{mutual capacitance} of the two conductors.
+
+The mutual capacitance of two conductors is numerically equal to the charge that it is necessary to transfer from one conductor to the other to change the potential difference between them by one unit.
+
+\subsection{}\label{17.2.3} The mutual capacitance $C$ of two conductors depends upon their shapes, dimensions and relative positions. Moreover, $C$ depends upon the dielectric properties of the medium surrounding the conductors. If the medium is homogeneous and isotropic, $C$ is directly proportional to the relative permittivity \ssect{14.2.4} of the medium.
+
+When one of the conductors is moved away to infinity, the potential difference $V_{1} - V_{2}$ between them increases and their mutual capacitance is reduced, tending to the capacitance of the remaining isolated conductor.
+
+\subsection{}\label{17.2.4} A \redem{capacitor} is a system of two charged conductors, insulated from each other and having charges of equal magnitude and opposite sign, provided that their shapes and relative position are such that the conductors set up a concentrated electrostatic field in a limited region of space. In the case of parallel-plate capacitors, the conductors are called \redem{plates}. The capacitance of a capacitor is the mutual capacitance of its plates (or, in the general case, conductors).
+
+\begin{marginfigure}
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-17/fig-17-02.pdf}
+\caption{A spherical capacitor.\label{fig-17-02}}
+\end{marginfigure}
+
+
+\subsection{}\label{17.2.5} The capacitance of a \redem{parallel-plate capacitor}, consisting of two metal plates, is
+\begin{align*}
+C & = \frac{\varepsilon_{0}\varepsilon_{r}S}{d} && \text{(in SI units.)} \\
+C & = \frac{\varepsilon_{r}S}{4 \pi d} && \text{(in cgse units.)}
+\end{align*}
+where $\varepsilon_{r}$ is the relative permittivity of the medium filling the space between the plates, $S$ is the area of each plate, and $d$ is the distance between them. For a multiple-plate capacitor consisting of $n$ plates, the formula for the capacitance contains $S(n - 1)$ instead of $S$. The capacitance formula is valid only for small d values, when the lack of uniformity of the electrostatic field at the edges of the capacitor plates can be ignored. 
+
+
+
+\subsection{}\label{17.2.6} A \redem{spherical capacitor} consists of two concentric hollow metal spheres $A$ and $B$, of radii $r_{1}$ and $r_{2}$ (\figr{fig-17-02}). The spheres are charged on their surfaces and set up fields only outside themselves \ssect{15.1.4}. Hence, in the space between the spheres the field is set up only by the charge of sphere $A$. Outside the capacitor, the fields of the oppositely charged spheres $A$ and $B$ mutually eliminate each other.
+
+
+The capacitance of a spherical capacitor is calculated by the formula
+\begin{align*}
+C & = \frac{\fpee\, r_{1} r_{2}}{r_{2} - r_{1}} && \text{(in SI units.)} \\
+C & = \frac{\varepsilon_{r}\,r_{1} r_{2}}{r_{2} - r_{1}}&& \text{(in cgse units.)}
+\end{align*}
+As $r_{2} \to \infty$ and $1/r_{2} \to 0$, the inner sphere becomes an isolated one and $C = \fpee \, r_{1}$ (cf. \ssect{17.1.3}). For any finite values of $r_{1}$ and $r_{2}$
+\begin{equation*}%
+C= \fpee \, r_{1} \, \frac{r_{2}}{r_{2} - r_{1}} > \fpee \, r_{1},
+\end{equation*}
+i.e. the capacitance of a spherical capacitor is greater than that of an isolated hollow sphere.
+
+
+\begin{marginfigure}[-3cm]
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-17/fig-17-03.pdf}
+\caption{A cylindrical capacitor.\label{fig-17-03}}
+\end{marginfigure}
+
+
+\subsection{}\label{17.2.7} A \redem{cylindrical capacitor} consists of two hollow coaxial metal cylinders of height $h$ and radii $r_{1}$ and $r_{2}$ (\figr{fig-17-02}). The formula for the capacitance of a cylindrical capacitor (or of a coaxial cable) is of the form
+\begin{align*}
+C & = \frac{2 \pi \ee h}{\ln r_{2}/r_{1}} && \text{(in SI units.)} \\
+C & = \frac{\varepsilon_{r} h}{2 \ln r_{2}/r_{1}}&& \text{(in cgse units.)}
+\end{align*}
+
+\subsection{}\label{17.2.8} All types of capacitors are characterized by their \redem{breakdown voltage}, which is a potential difference across the plates at which an electric discharge \ssect{22.5.1} passes through the layer of dielectric in the capacitor. The breakdown voltage depends upon the properties of the dielectric, its thickness and the shape of the plates.
+
+\subsection{}\label{17.2.9} To obtain a high capacitance \redem{capacitors can be connected in parallel}. This is done by connecting the plates of like charge together. Here the total capacitance $C$ is
+\begin{equation*}%
+C = \sum_{i = 1}^{n} C_{i},
+\end{equation*}
+where $C_{i}$ is the capacitance of the $i$-th capacitor.
+
+\subsection{}\label{17.2.10} When \redem{capacitors are connected in series} their oppositely charged plates are connected together. The quantities added together in this case are reciprocals of the capacitance $C_{i}$ of each capacitor:
+\begin{equation*}%
+C = \sum_{i = 1}^{n} \frac{1}{C_{i}}.
+\end{equation*}
+The resultant capacitance $C$ is always less than the minimum capacitance of any capacitor in the bank. Upon a connection in series, the possibility of a breakdown \ssect{17.2.8} of the capacitors is reduced because the potential difference across each capacitor is only a part of the total potential difference across the whole bank of capacitors.
+
+
+
+
+
+
