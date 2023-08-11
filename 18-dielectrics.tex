@@ -29,68 +29,100 @@ The polarizability of a molecule depends only on its volume. It is important tha
 
 \subsection{}\label{18.1.4} A \redem{polar dielectric} is one in which the molecules (or atoms) have electrons arranged asymmetrically with respect to their nuclei (\ce{H2O}, \ce{HCl}, \ce{NH3}, \ce{CH3Cl}, etc.). In such molecules the centres of gravity of the positive and negative charges do not coincide, but are at a practically constant distance I from each other. With respect to electrical properties, molecules of polar dielectrics are like \redem{rigid dipoles} that have a \redem{permanent dipole moment} $\vb{p}_{e} = \text{const}$.
 
-\subsection{}\label{18.1.5} A \redem{permanent dipole} placed in a homogeneous external electrostatic field is subject to the action of a force couple \ssect{4.1.6} with the moment of force (torque) $\vb{M}$ equal to $\vb{M} = \cpr{\vb{p}_{e}}{\vb{E}}$.
+\subsection{}\label{18.1.5} A \redem{permanent dipole} placed in a homogeneous external electrostatic field is subject to the action of a force couple \ssect{4.1.6} with the moment of force (torque) $\vb{M}$ equal to $\vb{M} = \vb{p}_{e} \cross \vb{E}$.
 
-The moment $\vb{M}$ of the force couple is perpendicular to the plane passing through vectors pe and E. From the tip of vector M rotation through the smaller angle from vectors pe to E is seen to he counterclockwise. In Fig. 18.1 the moment of force M
-is directed normal to the diagram into the page and tends to turn the dipole so that pe and E are parallel to each other. In real molecules of polar dielectrics, the molecules are deformed in addition to the turning of the dipole axes into alignment with the field. This leads to the induction of a certain dipole moment \ssect{18.1.3}.
+\begin{marginfigure}
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-18/fig-18-01.pdf}
+\caption{A permanent dipole.\label{fig-18-01}}
+\end{marginfigure}
 
-\subsection{}\label{18.1.6} When a permanent dipole is placed into a nonhomo- geneous electric field, in which the field strength E varies along the length Z of the dipole, then, in addition to the torque M \ssect{18.1.5}, the dipole is subject to force F, which is equal to
+The moment $\vb{M}$ of the force couple is perpendicular to the plane passing through vectors $\vb{p}_{e}$ and $\vb{E}$. From the tip of vector $\vb{M}$ rotation through the smaller angle from vectors $\vb{p}_{e}$ to $\vb{E}$ is seen to he counterclockwise. In \figr{fig-18-01} the moment of force $\vb{M}$ is directed normal to the diagram into the page and tends to turn the dipole so that $\vb{p}_{e}$ and $\vb{E}$ are parallel to each other. In real molecules of polar dielectrics, the molecules are deformed in addition to the turning of the dipole axes into alignment with the field. This leads to the induction of a certain dipole moment \ssect{18.1.3}.
 
+
+
+\subsection{}\label{18.1.6} When a permanent dipole is placed into a non-homogeneous electric field, in which the field strength $\vb{E}$ varies along the length $l$ of the dipole, then, in addition to the torque $\vb{M}$ \ssect{18.1.5}, the dipole is subject to force $\vb{F}$, which is equal to
+\begin{equation*}%
+\vb{F} = p_{e} \pdv{E}{l},
+\end{equation*}
 or, in the more general form:
-r= dE dE dE Pex dx ' Pey dy ~T~Pez dz 1
-251
-where pex,peiJ and pez are the projections of vector pe on the axes of a Cartesian coordinate system. In particular, if vector E is directed along the OX axis and depends only on the coor­ dinate x [Ex = E (x), Ey = Ez = 0 and E = Exi], then
-I3y the action of force F a free permanent dipole tends to move to a region of highest field strength.
+\begin{equation*}%
+\vb{F} = p_{ex} \pdv{\vb{E}}{x} + p_{ey} \pdv{\vb{E}}{y} + p_{ez} \pdv{\vb{E}}{z},
+\end{equation*}
+where $p_{ex}$, $p_{ey}$ and $p_{ez}$ are the projections of vector $\vb{p}_{e}$ on the axes of a Cartesian coordinate system. In particular, if vector $\vb{E}$ is directed along the $OX$ axis and depends only on the coordinate $x$: $[E_{x} = E (x), \,\, E_{y} = E_{z} = 0$ and $\vb{E} = E_{x}\vu{i}]$, then
+By the action of force $\vb{F}$ a free permanent dipole tends to move to a region of highest field strength.
 
-\subsection{}\label{18.1.7} The potential energy Ev of a permanent dipole in an external electric field is
-Ep = —peE = —peE cos 0,
-where pe is the electric dipole moment, E is the field strength at the point where the dipole is located and G is the angle be­ tween the dipole axis and vector E. The minus sign indicates that the stable portion of the dipole corresponds to the angle 0 = 0, at which the potential energy of the dipole has its mini­ mum value and vector pe is directed along vector E.
+\subsection{}\label{18.1.7} The potential energy $E_{p}$ of a permanent dipole in an external electric field is
+\begin{equation*}%
+E_{p} = -\vb{p}_{e} \, \vb{E} = - p_{e} E \cos \theta,
+\end{equation*}
+where $\vb{p}_{e}$ is the electric dipole moment, $\vb{E}$ is the field strength at the point where the dipole is located and $\theta$ is the angle be­ tween the dipole axis and vector $\vb{E}$. The minus sign indicates that the stable portion of the dipole corresponds to the angle $\theta = 0$, at which the potential energy of the dipole has its minimum value and vector $\vb{p}_{e}$ is directed along vector $\vb{E}$.
 
 \section{Polarization of Dielectrics}
 \label{sec-18.2}
 
-\subsection{}\label{18.2.1} When a polar dielectric \ssect{17.1.4} is not in an external electric field, the vectors of its dipole moments are chaotically oriented as a result of the random thermal motion of the mole­ cules. Consequently, the sum of the dipole moments of all the molecules is equal to zero in any physically infinitesimal volume AT*.
-No dipole moments of the molecules whatsoever can be induced \ssect{18.1.3} in a nonpolar dielectric that is not in an external electric field.
-* Herev0, where v0 is the volume of a single molecule,
-and an immense number of molecules are contained in vol­ ume A7.
+\subsection{}\label{18.2.1} When a polar dielectric \ssect{17.1.4} is not in an external electric field, the vectors of its dipole moments are chaotically oriented as a result of the random thermal motion of the molecules. Consequently, the sum of the dipole moments of all the molecules is equal to zero in any physically infinitesimal volume $\Delta V$.\sidenote{Here $\Delta V /gg v_{0}$, where $v_{0}$ is the volume of a single molecule, and an immense number of molecules are contained in volume $\Delta V$.}
 
-\subsection{}\label{18.2.2} When a dielectric is placed in an external electric field, it is polarized. This means that in any element of volume A7, the total dipole moment of its molecules is no longer equal to zero. A dielectric in such a state is said to be polarized (polar­ ized dielectric). In accordance with the structure of the mole­ cules (or atoms), distinction is made between the following three types of polarization:
+No dipole moments of the molecules whatsoever can be induced \ssect{18.1.3} in a non-polar dielectric that is not in an external electric field.
+
+\subsection{}\label{18.2.2} When a \redem{dielectric} is placed in an external electric field, it \redem{is polarized}. This means that in any element of volume $\Delta V$, the total dipole moment of its molecules is no longer equal to zero. A dielectric in such a state is said to be polarized (\redem{polarized dielectric}). In accordance with the structure of the molecules (or atoms), distinction is made between the following three types of polarization:
 \begin{enumerate}[label=(\alph*)]
-\item Orientation polarization of polar dielectrics \ssect{18.1.4}. The external electric field tends to align the dipole moments of the permanent dipoles along the direction of the field \ssect{18.1.5}. This is hindered by the random thermal motion of the molecules which tends to disarrange the dipoles arbitrarily. The combined action of the field and thermal motion results in preferred orien­ tation of the electric dipole moments along the field. This polarization increases with the strength of the electric field and with a drop in temperature.
-\item Electronic polarization in nonpolar dielectrics \ssect{18.1.3} In the molecules of dielectrics of this type dipole moments directed along the field are induced \ssect{18.1.3} by the action of the external electric field. The thermal motion of the molecules has no effect on electronic polarization. In gaseous and liquid dielec- tries, electronic polarization takes place practically simulta­ neously with orientational polarization.
-\item Ionic polarization in solid dielectrics having ionic crystal lattices \ssect{40.1.3}, such as NaCl and CsCl. The external electric field causes displacement of all the positive ions in the direction of the field strength E and all the negative ions in the opposite direction.
+\item \redem{Orientation polarization} of polar dielectrics \ssect{18.1.4}. The external electric field tends to align the dipole moments of the permanent dipoles along the direction of the field \ssect{18.1.5}. This is hindered by the random thermal motion of the molecules which tends to disarrange the dipoles arbitrarily. The combined action of the field and thermal motion results in preferred orientation of the electric dipole moments along the field. This polarization increases with the strength of the electric field and with a drop in temperature.
+\item \redem{Electronic polarization} in non-polar dielectrics \ssect{18.1.3}. In the molecules of dielectrics of this type dipole moments directed along the field are induced \ssect{18.1.3} by the action of the external electric field. The thermal motion of the molecules has no effect on electronic polarization. In gaseous and liquid dielectrics, electronic polarization takes place practically simultaneously with orientational polarization.
+\item \redem{Ionic polarization} in solid dielectrics having ionic crystal lattices \ssect{40.1.3}, such as \ce{NaCl} and \ce{CsCl}. The external electric field causes displacement of all the positive ions in the direction of the field strength $\vb{E}$ and all the negative ions in the opposite direction.
 \end{enumerate}
 
-\subsection{}\label{18.2.3} A quantitative measure of the polarization of a dielec­ tric is the polarization vector Pe. The polarization vector (or simply the polarization) is the ratio of the electric dipole moment of a small volume AV of the dielectric to this volume:
-n
-where pei- is the electric dipole moment of the ith molecule, and n is the total number of molecules in the volume AV. This volume should be so small that the electric field \ssect{15.1.2} within it can be assumed uniform. At the same time, the number n
+\subsection{}\label{18.2.3} A quantitative measure of the polarization of a dielectric is the polarization vector $\vb{P}_{e}$. The \redem{polarization vector} (or simply the \redem{polarization}) is the ratio of the electric dipole moment of a small volume $\Delta V$ of the dielectric to this volume:
+\begin{equation*}%
+\vb{P}_{e} = \frac{1}{\Delta V} \sum_{i = 1}^{n} \vb{p}_{ei},
+\end{equation*}
+where $\vb{p}_{ei}$ is the electric dipole moment of the $i$-th molecule, and $n$ is the total number of molecules in the volume $\Delta V$. This volume should be so small that the electric field \ssect{15.1.2} within it can be assumed uniform. At the same time, the number $n$ of molecules in it should be sufficiently large to allow statistical methods of investigation \ssect{8.2.2} to be applied.
 
-of molecules in it should be sufficiently large to allow statistical methods of investigation \ssect{8.2.2} to be applied.
+\subsection{}\label{18.2.4} For a homogeneous non-polar dielectric \ssect{18.1.3} in a uniform electric field
+\begin{equation*}%
+\vb{P}_{e} = n_{0} \, \vb{p}_{e},
+\end{equation*}
+where $n_{0}$ is the number of molecules in unit volume, and $\vb{p}_{e}$ is the dipole moment of a single molecule. Making use of the
+formula for $\vb{p}_{e},$ \ssect{18.1.3} we obtain
+\begin{align*}
+\vb{P}_{e} & = n_{0} \varepsilon_{0} \alpha \vb{E} =  \varepsilon_{0} \chi_{e} \vb{E} && \text{(in SI units),} \\
+\vb{P}_{e} & = n_{0} \alpha \vb{E} = \chi_{e} \vb{E} && \text{(in cgse units),}
+\end{align*}
+where $\chi_{e} = n_{0} \alpha$ is the \redem{dielectric} (or \redem{electric}) \redem{susceptibility of the substance}.
 
-\subsection{}\label{18.2.4} For a homogeneous nonpolar dielectric \ssect{18.1.3} in a uni­ form electric field
-Pe= noPe>
-where nQis the number of molecules in unit volume, and pe is the dipole moment of a single molecule. Making use of the
-formula for pe \ssect{18.1.3} we obtain
-Pe = /20e0aE = e0eE (in SI units), Pe = n0aE = eE (in cgse units),
-where e = n0a is the dielectric (or electric) susceptibility of the substance.
 
-\subsection{}\label{18.2.5} For a homogeneous polar dielectric \ssect{18.1.4} in a uniform electric field, Pe = n0 (pe), where (pe) is the average value of the component along the field of the permanent dipole moment of the molecule. When a polar dielectric is in a weak external electric fjeld, the dielectric susceptibility is calculated by the Debye-Langevin formula:
-n0P%
-**=-kr (;nSIunits)-
-noPe ... Xe“1W (mcgseunlts)-
-Here k is Boltzmann’s constant \ssect{8.4.5}, and T is the absolute temperature. The remaining notation is given in \ssect{18.1.3}. Shown in Fig. 18.2 is the dependence e = Xe (1IT) for non­ polar (a) and for polar (b) molecules. The straight line (b) does not pass through the origin of coordinates because orientational and electronic polarization \ssect{18.2.2b} usually occur in polar molecules and the dielectric susceptibility consists of two parts: e = Xq + Xe’where e an( Xe are expressed by the equations in Sections \ssect{18.2.4} and \ssect{18.2.5}.
+\begin{marginfigure}[-2cm]
+\centering
+\includegraphics[width=\textwidth]{figs/ch-18/fig-18-02.pdf}
+\caption{Dependence of $\chi_{e}$ the susceptibility of the substance on absolute temperature on (a) non-polar and (b) polar molecules.\label{fig-18-02}}
+\end{marginfigure}
 
-\subsection{}\label{18.2.6} If a dielectric is in a uniform electric field, the electrical neutrality of any volume AV of the dielectric, containing a suf­ ficiently large number of molecules, is provided for by the mutual
+\subsection{}\label{18.2.5} For a homogeneous polar dielectric \ssect{18.1.4} in a uniform electric field, $\vb{P}_{e} = n_{0}\,\expval{\vb{p}_{e}}$, where $\expval{\vb{p}_{e}}$ is the average value of the component along the field of the permanent dipole moment of the molecule. When a polar dielectric is in a weak external electric field, the dielectric susceptibility is calculated by the \redem{Debye-Langevin formula}:
+\begin{align*}
+\chi_{e} & = \frac{n_{0}p_{e}^{2}}{3 \varepsilon_{0} kT} && \text{(in SI units),} \\
+\chi_{e} & = \frac{n_{0}p_{e}^{2}}{3 kT} && \text{(in cgse units),}
+\end{align*}
+Here $k$ is Boltzmann’s constant \ssect{8.4.5}, and $T$ is the absolute temperature. The remaining notation is given in \ssect{18.1.3}. Shown in \figr{fig-18-02} is the dependence $\chi_{e} = \chi_{e} (1/T)$ for non­ polar (a) and for polar (b) molecules. The straight line (b) does not pass through the origin of coordinates because orientational and electronic polarization \ssect{18.2.2} usually occur in polar molecules and the dielectric susceptibility consists of two parts: $\chi_{e} = \chi_{e}' + \chi_{e}''$ where $\chi_{e}'$ and $\chi_{e}''$ are expressed by the equations in Sections \ssect{18.2.4} and \ssect{18.2.5}.
 
-compensation of the dipole charges of opposite sign alongside one another (Fig. 18.3). In the thin layers at surfaces and *S2 of the dielectric, bounding its volume, surface-bound polarization charges appear as a result of the polarization of the dielectric. At the surface where the lines of force \ssect{15.1.6} of the external electric field enter the dielectric, negative charges of the ends
-Fig. 18.2 Fig. 18.3
-of the dipole molecules appear. Positive charges appear at the opposite surface. The surface density \ssect{15.2.3} ap of the polar­ ization charges is calculated by the formula
-aP= en>
-where Pen is the projection of vector Pe on the outward normal to the surface of the dielectric.
-In a nonuniform electric field, the polarization of a dielectric is also nonuniform and the polarization vector Pe depends upon the coordinates. Hence, in addition to surface-bound charges, space polarization charges also appear. These are distributed with the volume charge density \ssect{15.2.3} pp:
-pp = —div Pe,
-where div Pe-- -■ey  ez is the divergence of dx dy dz
-the polarization vector.
+
+
+\begin{marginfigure}%[-2cm]
+\centering
+\includegraphics[width=\textwidth]{figs/ch-18/fig-18-03.pdf}
+\caption{The mutual compensation of the dipole charges of opposite sign alongside one another.\label{fig-18-03}}
+\end{marginfigure}
+
+\subsection{}\label{18.2.6} If a dielectric is in a uniform electric field, the electrical neutrality of any volume $\Delta V$ of the dielectric, containing a sufficiently large number of molecules, is provided for by the mutual compensation of the dipole charges of opposite sign alongside one another (\figr{fig-18-03}). In the thin layers at surfaces $S_{1}$ and $S_{2}$ of the dielectric, bounding its volume, \redem{surface-bound polarization} charges appear as a result of the polarization of the dielectric. At the surface where the lines of force \ssect{15.1.6} of the external electric field enter the dielectric, negative charges of the ends of the dipole molecules appear. Positive charges appear at the opposite surface. The surface density \ssect{15.2.3} $\sigma_{p}$ of the polarization charges is calculated by the formula
+\begin{equation*}%
+\sigma_{p} = P_{en},
+\end{equation*}
+where $P_{en}$ is the projection of vector $\vb{P}_{e}$ on the outward normal to the surface of the dielectric.
+
+In a nonuniform electric field, the polarization of a dielectric is also nonuniform and the polarization vector $\vb{P}_{e}$ depends upon the coordinates. Hence, in addition to surface-bound charges, space polarization charges also appear. These are distributed with the volume charge density \ssect{15.2.3} $\rho_{p}$:
+\begin{equation*}%
+\rho_{p} = - \div{\vb{P}_{en}},
+\end{equation*}
+where $\div{\vb{P}_{en}} = \pdv*{P_{ex}}{x} + \pdv*{P_{ey}}{y}  + \pdv*{P_{ez}}{z}$ is the divergence of the polarization vector.
 
 \section{Relation Between Displacement, Field Strength and Polarization Vectors}
 \label{sec-18.3}
