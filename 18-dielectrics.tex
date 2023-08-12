@@ -100,7 +100,7 @@ where $\chi_{e} = n_{0} \alpha$ is the \redem{dielectric} (or \redem{electric}) 
 \subsection{}\label{18.2.5} For a homogeneous polar dielectric \ssect{18.1.4} in a uniform electric field, $\vb{P}_{e} = n_{0}\,\expval{\vb{p}_{e}}$, where $\expval{\vb{p}_{e}}$ is the average value of the component along the field of the permanent dipole moment of the molecule. When a polar dielectric is in a weak external electric field, the dielectric susceptibility is calculated by the \redem{Debye-Langevin formula}:
 \begin{align*}
 \chi_{e} & = \frac{n_{0}p_{e}^{2}}{3 \varepsilon_{0} kT} && \text{(in SI units),} \\
-\chi_{e} & = \frac{n_{0}p_{e}^{2}}{3 kT} && \text{(in cgse units),}
+\chi_{e} & = \frac{n_{0}p_{e}^{2}}{3 kT} && \text{(in cgse units).}
 \end{align*}
 Here $k$ is Boltzmann’s constant \ssect{8.4.5}, and $T$ is the absolute temperature. The remaining notation is given in \ssect{18.1.3}. Shown in \figr{fig-18-02} is the dependence $\chi_{e} = \chi_{e} (1/T)$ for non­ polar (a) and for polar (b) molecules. The straight line (b) does not pass through the origin of coordinates because orientational and electronic polarization \ssect{18.2.2} usually occur in polar molecules and the dielectric susceptibility consists of two parts: $\chi_{e} = \chi_{e}' + \chi_{e}''$ where $\chi_{e}'$ and $\chi_{e}''$ are expressed by the equations in Sections \ssect{18.2.4} and \ssect{18.2.5}.
 
@@ -128,48 +128,79 @@ where $\div{\vb{P}_{en}} = \pdv*{P_{ex}}{x} + \pdv*{P_{ey}}{y}  + \pdv*{P_{ez}}{
 \label{sec-18.3}
 
 \subsection{}\label{18.3.1} Distinction is made in substances between two kinds of charges: free and bound.
-Bound charges are those included in the composition of atoms and molecules, as well as the charges of ions in crystalline solids with an ionic lattice \ssect{40.1.3}. Charges not bound to the aforementioned particles of matter are said to be free. Free charges include: (a) current-conducting charges in conducting media [conduction electrons in metals and semiconductors \ssect{16.4.1}, holes in semiconductors \ssect{41.10.3}, ions in electrolytes and gases],
-(b) surplus charges that are transmitted to a body by various means and violate its electrical neutrality. An example are charges imparted from outside onto the surface of a dielectric. 
 
-\subsection{}\label{18.3.2} Generally, an electric held is set up in a dielectric by both free and bound charges. The held strength vector E characterizes the resultant held in the dielectric, set up by the two kinds of charges, and depends upon its electrical properties: the relative permittivity (dielectric constant) er \ssect{14.2.4}. But the primary source'of an electric held in a dielectric is the free charges. As a matter of fact, a held of bound charges is set up in a dielectric as a result of its polarization when it is placed in an external electric held set up by free electric charges. 
+\redem{Bound charges} are those included in the composition of atoms and molecules, as well as the charges of ions in crystalline solids with an ionic lattice \ssect{40.1.3}. Charges not bound to the aforementioned particles of matter are said to be free. \redem{Free charges} include: 
+\begin{enumerate}[label=(\alph*)]
+\item current-conducting charges in conducting media [conduction electrons in metals and semiconductors \ssect{16.4.1}, holes in semiconductors \ssect{41.10.3}, ions in electrolytes and gases],
+\item surplus charges that are transmitted to a body by various means and violate its electrical neutrality. An example are charges imparted from outside onto the surface of a dielectric. 
+\end{enumerate}
 
-\subsection{}\label{18.3.3} The information contained in Sections \ssect{18.3.1} and \ssect{18.3.2} call for a certain revision of the Ostrogradsky-Gauss theorem
-ly
-hand side of the theorem is to be regarded as the algebraic
-sum of the free electric charges enclosed by surface S, i.e. k
-yi qi = <7free»and the theorem is then of the form i=l
-DndS = <7free (in SI units),
-DdS= DndS=4jtgfree(incgseunits). S
+\subsection{}\label{18.3.2} Generally, an electric held is set up in a dielectric by both free and bound charges. The held strength vector $\vb{E}$ characterizes the resultant held in the dielectric, set up by the two kinds of charges, and depends upon its electrical properties: the relative permittivity (dielectric constant) $\varepsilon_{r}$ \ssect{14.2.4}. But the primary source of an electric held in a dielectric is the free charges. As a matter of fact, a field of bound charges is set up in a dielectric as a result of its polarization when it is placed in an external electric held set up by free electric charges. 
 
-\ssect{15.3.3}. The algebraic sum of the charges V, qt on the right­
+\subsection{}\label{18.3.3} The information contained in Sections \ssect{18.3.1} and \ssect{18.3.2} call for a certain revision of the Ostrogradsky-Gauss theorem \ssect{15.3.3}. The algebraic sum of the charges $\sum_{i=1}^{k} q_{i}$, on the right­ hand side of the theorem is to be regarded as the algebraic
+sum of the free electric charges enclosed by surface $S$, i.e. 
+\begin{equation*}%
+\sum_{i=1}^{k} q_{i} = q_{\text{free}},
+\end{equation*}
+and the theorem is then of the form 
+\begin{align*}
+\oint_{S} \vb{D}\, \dd \vb{S} & = \oint_{S} D_{n}\, \dd S =  q_{\text{free}}&& \text{(in SI units),} \\
+\oint_{S} \vb{D}\, \dd \vb{S} & = \oint_{S} D_{n}\, \dd S =  4\pi q_{\text{free}}&& \text{(in cgse units).}
+\end{align*}
 
-In this form the Ostrogradsky-Ganss theorem is valid for an electric field either in homogeneous and isotropic or in nonho- mogeneous and anisotropic media (cf. \ssect{15.3.3}.
+In this form the Ostrogradsky-Gauss theorem is valid for an electric field either in homogeneous and isotropic or in non-homogeneous and anisotropic media (cf. \ssect{15.3.3}).
 
 \subsection{}\label{18.3.4} For an electric field in vacuum
-D = e0E (in SI units),
-D = E (in cgse units).
-The flux of the field strength vector E through an arbitrary closed surface S in vacuum is
-s0EndS= gfree (in SI units), s
-EndS= 4itgfree (in cgse units). s
-In accordance with Section \ssect{18.3.2}, the flux of vector E for a field in a substance is
-§e0EndS = <7free+ gbnd (in SI units), S
- £nd£= 4n(gfree+ 0bnd) (in cgse units). s
-The sum of bound charges gbnd within closed surface S is cal­ culated by the equation
-s
-where Pen is the projection of the polarization vector on the outward normal to surface dS. Hence
-§(e„ £n+Pen) = 9frec (in SI units),
- IS.',I ferroelectric materials 257
-A correlation with the general formulation of the Ostrogradsky- (iauss theorem \ssect{18.3.3} enables a relation to be established be* Iween vectors D, E and Pe:
-oEn+ Pen (in SI units), />„ En + 4jtPen (in cgse units),
-or, by virtue of the arbitrary nature of outward normal n, I) - e0E + Pe (in SI units),
-I) E + 4jiPe (in cgse units).
-These formulas are generalizations of the formulas in Section \ssect{15.3.1}. Making use of the results obtained in Section \ssect{18.2.3}, we have lor an isotropic homogeneous medium
-I) e0E+e0xeE=80(1+Xe)E(inSIunits), I) E + 4jxxeE = (1 + 4jiXe) E (in cgse units).
-(consequently
-I)—e0erE,whereer=1+Xe (inSIunits), I)—erE, where er.= 1+ 4jtxe (in cgse units).
-The quantity er is the relative permittivity (dielectric con- slant) (cl*. \ssect{14.2.4}).
-For vacuum er = 1 and Xe = 0.
-I'he concept of *er introduced in Section \ssect{14.2.4} has a meaning only lor isotropic homogeneous media.
+\begin{align*}%
+\vb{D} & = \varepsilon_{0} \vb{E} && \text{(in SI units),} \\
+\vb{D} & =  \vb{E}&& \text{(in cgse units).}
+\end{align*}
+The flux of the field strength vector $\vb{E}$ through an arbitrary closed surface $S$ in vacuum is
+\begin{align*}%
+\oint_{S} \varepsilon_{0}  E_{n}\, \dd S =  q_{\text{free}} && \text{(in SI units),} \\
+\oint_{S}  E_{n}\, \dd S =  4 \pi q_{\text{free}}&& \text{(in cgse units).}
+\end{align*}
+In accordance with Section \ssect{18.3.2}, the flux of vector $\vb{E}$ for a field in a substance is
+\begin{align*}%
+\oint_{S} \varepsilon_{0}  E_{n}\, \dd S & =  q_{\text{free}} + q_{\text{bound}} && \text{(in SI units),} \\
+\oint_{S}  E_{n}\, \dd S & =  4 \pi (q_{\text{free}} + q_{\text{bound}})&& \text{(in cgse units).}
+\end{align*}
+The sum of bound charges $q_{\text{bound}}$ within closed surface $S$ is calculated by the equation
+\begin{equation*}%
+q_{\text{bound}} = - \oint_{S} P_{en} \, \dd S,
+\end{equation*}
+where $P_{en}$ is the projection of the polarization vector on the outward normal to surface $\dd S$. Hence
+\begin{align*}%
+\oint_{S} (\varepsilon_{0}  E_{n} + P_{en})\, \dd S & =  q_{\text{free}}  && \text{(in SI units),} \\
+\oint_{S} ( E_{n} + 4 \pi P_{en})\, \dd S & =  4 \pi q_{\text{free}} && \text{(in cgse units).}
+\end{align*}
+A correlation with the general formulation of the Ostrogradsky-Gauss theorem \ssect{18.3.3} enables a relation to be established between vectors $\vb{D}$, $\vb{E}$ and $\vb{P}_{e}$:
+\begin{align*}%
+D_{n} & =  \varepsilon_{0}E_{n} + P_{en} && \text{(in SI units),} \\
+D_{n} & = E_{n} + 4 \pi P_{en} && \text{(in cgse units).}
+\end{align*}
+or, by virtue of the arbitrary nature of outward normal 
+\begin{align*}%
+\vb{D} & =  \varepsilon_{0} \vb{E} + \vb{P}_{en} && \text{(in SI units),} \\
+\vb{D} & =  \vb{E} + 4 \pi \vb{P}_{en} && \text{(in cgse units).}
+\end{align*}
+These formulas are generalizations of the formulas in Section \ssect{15.3.1}. Making use of the results obtained in Section \ssect{18.2.3}, we have for an isotropic homogeneous medium
+\begin{align*}%
+\vb{D} & =  \varepsilon_{0} \vb{E} + \varepsilon_{0} \chi_{e} \vb{E} = \varepsilon_{0} (1 + \chi_{e}) \vb{E} && \text{(in SI units),} \\
+\vb{D} & =  \vb{E} + 4 \pi \chi_{e} \vb{E} = (1 + 4 \pi \chi_{e}) \vb{E} && \text{(in cgse units).}
+\end{align*}
+Consequently,
+\begin{align*}%
+\vb{D} & =  \varepsilon_{0} \varepsilon_{r} \vb{E}, \,\,\text{where} \,\, \varepsilon_{r} = 1 + \chi_{e} && \text{(in SI units),} \\
+\vb{D} & =  \varepsilon_{r} \vb{E}, \,\,\text{where} \,\, \varepsilon_{r} = 1 + 4 \pi \chi_{e} && \text{(in cgse units).}
+\end{align*}
+The quantity $ \varepsilon_{r}$ is the relative permittivity (dielectric constant) (cf. \ssect{14.2.4}).
+
+For vacuum $ \varepsilon_{r} = 1$ and $\chi_{e} = 0$.
+
+The concept of $ \varepsilon_{r}$ introduced in Section \ssect{14.2.4} has a meaning only for isotropic homogeneous media.
+
+
 
 \section{Ferroelectric Materials}
 \label{sec-18.4}
