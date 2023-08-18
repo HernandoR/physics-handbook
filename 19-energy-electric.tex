@@ -1,0 +1,97 @@
+% !TEX root = handbook-physics.tex
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+
+
+
+
+
+
+\chapter{Energy Of An Electric Field}
+\label{ch-19}
+
+\section{Energy of a Charged Conductor and an Electric Field}\sidenote{It is assumed in this chapter that the electric charges and charged bodies are in an isotropic, homogeneous, nonferromagnetic \ssect{18.4.1} medium.}
+\label{sec-19.1}
+
+\subsection{}\label{19.1.1} The charging of an electric conductor requires the performance of work that must be done in overcoming the Coulomb forces of repulsion between like charges. This work increases the electrical energy of a charged conductor in the same sense as the potential energy in mechanics \ssect{3.3.1}. The work $\delta W$ done in bringing a charge $\dd q$ from infinity to the conductor is
+\begin{equation*}%
+\delta W = V \, \dd q = CV \, \dd V,
+\end{equation*}
+where $C$ and $V$ are the capacitance and potential of the conductor.
+
+The work required to charge a conductor from zero potential to the potential $V$ is
+\begin{equation*}%
+W = \int_{0}^{V} CV \, \dd V = \frac{CV^{2}}{2}.
+\end{equation*}
+Correspondingly, the energy of a \redem{charged isolated conductor} (\redem{intrinsic energy of a charged conductor}) is
+\begin{equation*}%
+E_{e} = \frac{CV^{2}}{2} = \frac{q^{2}}{2C} = \frac{1}{2} \, Vq.
+\end{equation*}
+The \redem{energy of a charged capacitor} is
+\begin{equation*}%
+E_{e} = \frac{C(\Delta V)^{2}}{2} = \frac{q^{2}}{2C} = \frac{1}{2} \,\Delta Vq.
+\end{equation*}
+where $C$ and $q$ are the capacitance and charge of the capacitor, and $\Delta V$ is the potential difference between oppositely charged plates of the capacitor.
+
+\subsection{}\label{19.1.2} The energy of a system of charges, distributed continuously throughout the volume of a dielectric or vacuum, and along the surfaces of charged conductors and an electrified dielectric, is
+\begin{equation*}%
+E = \frac{1}{2} \int_{S_{\text{char}}} V \sigma \, \dd S = \frac{1}{2} \int_{v_{\text{char}}} V \rho \, \dd v, 
+\end{equation*}
+where $\sigma$ and $\rho$ are the surface and volume density of free charges, $V$ is the potential of the resultant held of all the surface and volume charges at the points of the elements $\dd S$ or $\dd v$ of the charged surface or volume (to avoid confusion, volume is denoted here by the lower-case $v$). Integration is carried out over all charged surfaces $S_{\text{char}}$ and throughout all charged volumes $v_{\text{char}}$. The effect of the dielectric is that with a constant distribution of the free charges the values of $V$ differ for the different dielectrics. Thus, in a homogeneous isotropic dielectric that fills the whole field, $S_{\text{char}}$ is $\varepsilon_{r}$-fold less than in vacuum. 
+
+\subsection{}\label{19.1.3} The intrinsic energy of a charged conductor is, at the same time, the \redem{energy} of its \redem{electrostatic field}. Hence, for the uniform electrostatic field \ssect{15.1.3} of a parallel-plate capacitor \ssect{17.2.5} we have
+\begin{align*}
+E_{e} & = \frac{1}{2} (\Delta V)^{2}C  = \frac{\varepsilon_{0}\varepsilon_{r}E^{2}}{2}\, Sd = \frac{\varepsilon_{0}\varepsilon_{r}E^{2}}{2} \, v && \text{(in SI units.)} \\
+E_{e} & =  = \frac{\varepsilon_{r}E^{2}}{8\pi} \, v&& \text{(in cgse units).}
+\end{align*}
+where $v = Sd$ is the volume of the electrostatic field between the capacitor plates. The energy of the field is proportional to its volume, and the energy per unit volume of the electrostatic field, called the \redem{volume energy density} $E_{e}^{d}$ at all points of a uniform field:
+is the same
+\begin{align*}
+E_{e}^{d} & = \frac{E_{e}}{v} = \frac{\varepsilon_{0}\varepsilon_{r}E^{2}}{2} = \frac{ED}{2} && \text{(in SI units.)} \\
+E_{e}^{d} & = \frac{E_{e}}{v} = \frac{\varepsilon_{r}E^{2}}{8 \pi} = \frac{ED}{8 \pi}&& \text{(in cgse units).}
+\end{align*}
+
+\subsection{}\label{19.1.4} In the case of nonuniform electrostatic fields, set up by arbitrary charged bodies, the volume energy density at each point of an isotropic medium is expressed by the formulas in the preceding subsection. But when the medium is electrically anisotropic, the volume energy density of the electric field is
+\begin{align*}
+E_{e}^{d} & = \frac{1}{2} \, \vb{D} \, \vb{E}&& \text{(in SI units.)} \\
+E_{e}^{d} & = \frac{1}{8 \pi} \, \vb{D} \, \vb{E}&& \text{(in cgse units).}
+\end{align*}
+
+\subsection{}\label{19.1.5} The energy $\dd E_{e}$ of an infinitesimal volume of an arbitrary electrostatic field in an isotropic medium is
+\begin{equation*}%
+\dd E_{e} = E_{e}^{d} \, \dd v = \frac{\varepsilon_{0}\varepsilon_{r}E^{2}}{2} \, \dd v \quad \text{(in SI units).}
+\end{equation*}
+The total energy $E_{e}$ of an electrostatic field is
+\begin{equation*}%
+ E_{e} = \int_{v_{\text{field}}} \frac{\varepsilon_{0}\varepsilon_{r}E^{2}}{2} \, \dd v 
+\end{equation*}
+where integration is carried out throughout the whole volume $v_{\text{field}}$ of the field.
+
+
+\subsection{}\label{19.1.6} The total energy of an electrostatic field set up by an arbitrary charged body is equal to the intrinsic energy of the body \ssect{19.1.1}:
+\begin{equation*}%
+E_{e} = \frac{CV^{2}}{2} = \int_{v_{\text{field}}} \frac{\varepsilon_{0}\varepsilon_{r}E^{2}}{2} \, \dd v 
+\end{equation*}
+This equation can be generalized for the case of an electrostatic field set up by an arbitrary system of charges. The total energy of such a system \ssect{19.1.2} coincides with the total energy of the electrostatic field set up by this system of charges:
+\begin{equation*}%
+\int_{v_{\text{field}}} E_{e}^{d} \, \dd v = \frac{1}{2} \int_{s_{\text{char}}} V \sigma \, \dd S + \frac{1}{2} \int_{v_{\text{char}}} V \rho \, \dd v.
+\end{equation*}
+
+
+\section{Energy of a Polarized Dielectric}
+\label{sec-19.2}
+
+\subsection{}\label{19.2.1}  The process of polarizing a homogeneous isotropic dielectric, placed in an external electric field, is accompanied by work done in deforming the electron shells in the atoms and molecules or in turning the dipole axes of the molecules into alignment with the field strength. Therefore, a polarized dielectric has a margin of electric energy.
+
+\subsection{}\label{19.2.2}  The volume energy density of a polarized dielectric at a point with the field strength $\vb{E}$ equals:
+\begin{equation*}%
+\dd E_{e\,\, \text{diel}}^{d} = \frac{\varepsilon_{0}( \varepsilon_{r} -1)}{2} \, E^{2} \quad \text{(in SI units).}
+\end{equation*}
+The volume energy density of a field with the same strength $\vb{E}$ in vacuum is
+\begin{equation*}%
+\dd E_{e\,\, \text{vac}}^{d} = \frac{\varepsilon_{0}E^{2}}{2}.
+\end{equation*}
+The volume energy density of a field in a dielectric is $E_{e}^{d} = \varepsilon_{0}\varepsilon_{r}E^{2}/2$, and according to the energy conservation law it equals
+\begin{equation*}%
+ E_{e}^{d} = E_{e\,\, \text{vac}}^{d} + E_{e\,\, \text{diel}}^{d}.
+\end{equation*}
