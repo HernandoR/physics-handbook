@@ -1,0 +1,150 @@
+% !TEX root = handbook-physics.tex
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+
+
+
+
+
+\chapter{Direct Electric Current}
+\label{ch-20}
+
+\section{Concept of an Electric Current}
+\label{sec-20.1}
+
+\subsection{}\label{20.1.1} 
+\redem{Electrodynamics} is the main branch of the science of electricity that deals with the phenomena and processes involved in the motion of electric charges or macroscopic charged bodies. The most vital concept in electrodynamics is that of electric current.
+
+\subsection{}\label{20.1.2} An \redem{electric current} is any ordered motion of electric charges. An electric current produced in conductive media as the result of the ordered motion of free charges by the action of an electric field is called \redem{conduction current}. Examples of conduction currents are the currents in metals and semiconductors, associated with the ordered motion of ``free'' electrons, and currents in electrolytes, which are the ordered displacement of ions of opposite signs.
+
+A \redem{convection current} is the ordered motion in space of charged macroscopic bodies. An example of such a current is that associated with the motion of the earth, having a surplus negative charge, along its orbit.
+
+\subsection{}\label{20.1.3} Upon ordered motion of electric charges in a conductor, the equilibrium distribution of charges is violated and the surface of the conductor is no longer an equipotential surface \ssect{16.4.3}. On the surface of the conductor there is a tangential component of the field strength ($E_{\tau} \neq 0$) and there should be an electric field inside the conductor (cf. \ssect{16.4.3}). The electric current continues until all the points of the conductor become equipotential.
+
+\subsection{}\label{20.1.4} The conditions required for the initiation and existence of an electric current in a conducting medium are as follows: 
+\begin{enumerate}[label=(\alph*)]
+\item The availability of free \redem{current carriers} -- charged particles -- in the medium, capable of ordered motion in it. In metals and semiconductors suitable particles are the conduction electrons \ssect{16.4.1}; in liquid conductors (electrolytes) they are the positive and negative ions; in gases they are the oppositely charged ions and electrons.
+\item The existence in the given medium of an external electric field whose energy is spent in providing ordered motion of tin; electric charges. To maintain an electric current, the energy of the electric field must be continuously replenished, i.e. \redem{a source of electric energy} is required. This is a device that converts some kind of energy into the energy of an electric field. 
+\end{enumerate}
+
+\subsection{}\label{20.1.5} The direction of ordered motion of the positive electric charges is conventionally taken as the direction of the electric current. As a matter of fact, in metallic conductors the current consists of the ordered motion of electrons, which move in the direction opposite to that of the current.
+
+\section{Current and Current Density}
+\label{sec-20.2}
+
+\subsection{}\label{20.2.1} The \redem{current strength} (or simply the \redem{current}) $I$ is a scalar quantity, the rate of flow of electricity. It is equal to the ratio of the charge $\dd q$, conveyed through the surface\sidenote{In the case of conduction current, through the cross section of the conductor.} being considered during a small interval of time, to the amount of this time $\dd t$:
+\begin{equation*}%
+I = \dv{q}{t}.
+\end{equation*}
+An electric current is said to be \redem{direct} (\redem{direct electric current}) if its magnitude and direction remain constant with time. For direct current
+\begin{equation*}%
+I = \frac{q}{t},
+\end{equation*}
+where $q$ is the electric charge conveyed through the surface\sidenote{See the note above.} being considered during the finite time interval from 0 to $t$. 
+
+\subsection{}\label{20.2.2} If the current is a direct one, the charges cannot accumulate or be depleted at any part of the conductor. A direct current circuit should be closed and comply with the condition $Q_{S_{1}} = Q_{S_{2}}$ where $Q_{S_{1}}$ the total electric charge passing in unit time through surface $S_{1}$ into the volume of the conductor enclosed between the cross sections $S_{1}$ and $S_{2}$ and $Q_{S_{2}}$ is the total electric charge emerging from this volume in unit time through surface $S_{2}$.
+
+\subsection{}\label{20.2.3} The current density determines the current direction at various points of the surface being considered and the distribution of the current over this surface. The \redem{current density vector} $\vb{j}$ is opposite in direction to the motion of the electrons that carry the current in metals\sidenote{In other conducting media vector $\vb{j}$ coincides in direction with that of the positively charged current carrier.} and is numerically equal to the ratio of the current $\dd I$ through an element of surface normal to the motion of the charged particles to the quantity $\dd S'$, which is the area of this element of surface:
+\begin{equation*}%
+I = \dv{I}{S'}.
+\end{equation*}
+A more general relation between the current density $\vb{j}$ and an element of current $\dd I$ is
+\begin{equation*}%
+\dd I = \vb{j} \, \dd \vb{S},
+\end{equation*}
+where $\vb{S} = \vu{n}\, \dd S$ is the vector of an element of surface, and $\vu{n}$ is the unit vector of the normal to surface $\dd S$ and makes angle $\alpha$ with vector $\vb{j}$.
+
+\subsection{}\label{20.2.4} The current through an arbitrary surface $S$ is
+\begin{equation*}%
+ I = \int_{S} \vb{j} \, \dd \vb{S} = \int_{S} j_{n} \, \dd S,
+\end{equation*}
+where $j_{n} = j\, \cos \alpha$ is the projection of vector $\vb{j}$ on the direction of normal $\vu{n}$ \ssect{20.2.3}, and integration is carried out over the whole area of surface $S$. If the conduction current is being calculated on the basis of the cross section of the conductor for which $j_{n} = j$, then
+\begin{equation*}%
+ I = \int_{S} j \, \dd S.
+\end{equation*}
+
+\subsection{}\label{20.2.5} The density of direct current is the same over the whole cross section $S$ of a homogeneous conductor. Here
+\begin{equation*}%
+ I = j \, S.
+\end{equation*}
+In a direct current circuit, the current density of two cross sections $S_{1}$ and $S_{2}$ is inversely proportional to the cross-sectional areas:
+\begin{equation*}%
+\frac{j_{1}}{j_{2}} = \frac{S_{2}}{S_{1}}.
+\end{equation*}
+\section[Electron Theory of Electrical Conduction]{Fundamentals of the Classical Electron Theory of Electrical Conduction in Metals}
+\label{sec-20.3}
+
+\subsection{}\label{20.3.1} The high electrical conduction of metals is due to the fact that metals contain an immense number of current carriers, the \redem{conduction electrons}, which are formed of the valence electrons \ssect{39.3.9} of the atoms of metal. These electrons do not belong to any definite atom, but are \redem{collective electrons}. According to the classical Drude-Lorentz electron theory, these electrons are regarded as an electron gas \ssect{16.4.1} that possesses all the properties of a monoatomic ideal gas \ssect{8.4.1}.
+
+The number of conduction electrons in unit volume of a monovalent metal is
+\begin{equation*}%
+n_{0} = \frac{N_{A}}{m_{a}} \, \rho,
+\end{equation*}
+where $N_{A}$ is Avogadro’s number (Appendix~II), $m_{a}$ is the atomic mass of the metal and $\rho$ is its density. In order of magnitude $n_{0} \approx $(\num{d28}to \num{d29}) \si{\per\meter\cubed}.
+
+In the absence of an electric held inside the metal the conduction electrons move at random and collide with the ions of the crystal lattice of the metal \ssect{40.1.1}. It is assumed that the mean free path $(\expval{\lambda})$ of the electron \ssect{10.5.1} should be of the order of magnitude of crystal lattice constants of the metal, i.e. $\expval{\lambda} \approx \SI{d-10}{\meter}$.
+
+The average kinetic energy of thermal motion of the electrons \ssect{10.2.4} is
+\begin{equation*}%
+\frac{mv^{2}_{\text{rms}}}{2} = \frac{3}{2} kT,
+\end{equation*}	
+where m is the mass and $v_{\text{rms}}$ is the root-mean-square velocity of the electrons \ssect{10.2.3}. At the temperature $T = \SI{273}{\kelvin}$, the velocity $v_{\text{rms}} \approx \SI{d3}{\meter\per\second}$.
+
+The arithmetic mean velocity $\expval{u}$ of thermal motion of the electrons \ssect{10.3.6} is of the same order of magnitude.
+
+\subsection{}\label{20.3.2} Electric current in a metal is initiated by the action of the external electric held \ssect{20.1.4}, which leads to ordered motion of the electrons. The current density $\vb{j}$ is equal to the charge of all the electrons that pass in unit time through unit area of the conductor’s cross section,
+\begin{equation*}%
+\vb{j} = n_{0} e  \expval{\vb{v}},
+\end{equation*}
+where $n_{0}$ is the number of conduction electrons per unit volume, $e$ is the magnitude of the charge of the electron, and $\expval{\vb{v}}$ is the average velocity of ordered motion of the electrons due to the action of the external field. At the highest current densities $\expval{\vb{v}}$ is \SI{d-4}{\meter\per\second} and is negligibly small compared to the thermal velocities of the electrons \ssect{20.3.1}.
+
+\subsection{}\label{20.3.3} A steady electric current is established in a circuit in the time $t = L/c$, where $L$ is the length of the circuit and $c$ is the velocity of light in vacuum. The time $t$ coincides with the time required to establish a steady-state electric field along the circuit and the initiation of ordered motion of the electrons along the whole circuit. Therefore, electric current is started practically simultaneously with the closing of the circuit. 
+
+\subsection{}\label{20.3.4} \redem{Ohm's law for current density (Ohm's law in differential form)} is
+\begin{equation*}%
+\vb{j} = \varkappa \, \vb{E} = \frac{1}{\rho} \vb{E}.
+\end{equation*}
+The current density in a conductor is the product of the \redem{electrical conductivity} $\varkappa$ by the electric field strength $\vb{E}$. The quantity $\rho = 1/\varkappa$ is called the \redem{electrical resistivity}.
+
+According to the classical electron theory, electrical conductivity and resistivity arc calculated by the formulas
+\begin{equation*}%
+\varkappa = \frac{n_{0}e^{2}\expval{\lambda}}{2m \expval{u}} \qand \rho = \frac{2m \expval{u}}{n_{0}e^{2}\expval{\lambda}},
+\end{equation*}
+where $n_{0}$ is the number of electrons in unit volume of the metal, $\expval{u}$ is the mean free path of the electron \ssect{10.5.1}, $\expval{u}$ is the arithmetic mean velocity of thermal motion of the electrons \ssect{10.3.6}, and $e$ and $m$ are the magnitude of the charge of the electron and its mass.
+
+\subsection{}\label{20.3.5} By the action of the field the electron acquires a velocity equal to $v_{\text{max}}$ at the end of its mean free path. Upon collision with an ion at this point, the electron loses its velocity and the energy of ordered motion of the electron is converted into internal energy of the conductor, which is heated as the current passes through.
+
+The \redem{volume density $E_{h}^{d} $ of the heating capacity of a current} is the
+amount of energy generated in unit volume of a conductor in unit time. The \redem{Joule-Lenz law} for the volume density of the healing capacity of a current is
+\begin{equation*}%
+E_{h}^{d} = \vb{j}\, \vb{E} = \varkappa \, E^{2} = \frac{1}{\rho} E^{2}.
+\end{equation*}
+The \redem{Joule-Lenz law in its differential form} states: the volume density of the heating capacity of a current is equal to the scalar product of the current density vector by the electric held strength vector.
+
+The volume density of the heating capacity of a current is independent of the kind of collisions of the electrons with the crystal lattice points [elastic or inelastic collision \ssect{3.5.3}]. It follows from the laws of conservation of energy and momentum that the energy, $\Delta E$ transmitted to the ion upon a collision of the electron with an ion, is only a small part of the electron’s energy $E_{el}$. In an inelastic collision 
+\begin{equation*}%
+\frac{\Delta E}{E_{el}} = \frac{m}{m + M},
+\end{equation*}
+whereas in an elastic collision 
+\begin{equation*}%
+\frac{\Delta E}{E_{el}} = \frac{4mM}{(m + M)^{2}},
+\end{equation*}
+where $m$ is the mass of the electron and $M$ is the mass of the ion. Practically, in either case,
+\begin{equation*}%
+\frac{\Delta E}{E_{el}} \approx \frac{m}{M} \approx \num{d-4}.
+\end{equation*}
+
+\subsection{}\label{20.3.6} The \redem{Wiedemann-Franz law} states that for all metals the ratio of the thermal conductivity $K$ \ssect{10.8.5} to the electrical conductivity $\varkappa$ is directly proportional to the absolute temperature $T$:
+\begin{equation*}%
+\frac{K}{\varkappa} \approx 3 \left( \frac{k}{e}\right)^{2} \, T,
+\end{equation*}
+where $k$ is Boltzmann’s constant \ssect{8.4.5} and $e$ is the charge of the electron.
+
+\subsection{}\label{20.3.7} The classical electron theory of electrical conduction of metals has the following shortcomings:
+\begin{enumerate}[label=(\alph*)]
+\item it cannot explain the experimentally observed linear relation, in a wide temperature range, between the resistivity $\rho$ and the absolute temperature: $\rho \propto T$.
+
+\item it yields an incorrect value for the molar heat capacity of metals. This should be equal, according to this theory, to \SI{9}{\calorie\per\mole\per\kelvin} and be the sum of the heat capacity of the ionic crystal lattice (\SI{6}{\calorie\per\mole\per\kelvin}) and the heat capacity of the mon­oatomic electron gas (\SI{3}{\calorie\per\mole\per\kelvin}). It is known, however, from the experimentally established Dulong and Petit law \ssect{41.7.2} that the molar heat capacity of metals differs only slightly from that of other solids and is approximately \SI{6}{\calorie\per\mole\per\kelvin}. It is impossible on the basis of classical theory to explain the absence of an electron component of heat capacity of metals;
+\item the experimental value of the resistivity $\rho$ and the theoretical value of the arithmetic mean velocity $\expval{u}$ of the electrons lead, in formulas of Section \ssect{20.3.4}, to a value of the mean free path $\expval{\lambda}$ of the electron that exceeds the crystal lattice constant of the metal by two orders of magnitude. This contradicts the assumptions of the classical electron theory of the electrical conduction of metals.
+\end{enumerate}
