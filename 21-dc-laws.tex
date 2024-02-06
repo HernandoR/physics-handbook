@@ -1,0 +1,158 @@
+% !TEX root = handbook-physics.tex
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+
+
+
+
+
+\chapter{Direct Electric Current}
+\label{ch-21}
+
+\section{Extraneous Forces}
+\label{sec-21.1}
+
+\subsection{}\label{21.1.1} 
+ A metallic conductor has an electrostatic held that is set up by the electrons and positive ions of the crystal lattice. This is a held of Coulomb forces \ssect{14.2.2}. Coulomb interaction between the charges in a metal leads to such an equilibrium distribution of charges that the electric held inside the conductor equals zero and the whole conductor is equipotential \ssect{16.4.3}. Consequently, an electrostatic Coulomb held cannot be the cause of the steady-state process of ordered motion of electrons, i.e. it cannot generate and maintain a direct (constant) current. 
+ 
+\subsection{}\label{21.1.2} \redem{Extraneous forces} are non-electrostatic forces whose action exerted on the conduction electrons in the conductor initiates their ordered motion and maintains a direct (constant) electric current in the circuit. In contrast to Coulomb forces, extraneous forces do not join unlike charges; they lead to their separation and maintain a potential difference at the ends of the conductor.
+
+Extraneous forces are the cause of the non-electrostatic electric held, existing in the conductor and providing for ordered motion of the charges from points with a higher potential to points with a lower potential. A steady-state electric held of extraneous forces is set up by \redem{sources of electrical energy} (galvanic cells, electric generators, etc.).
+
+\begin{marginfigure}
+\centering
+\includegraphics[width=0.7\textwidth]{figs/ch-21/fig-21-01.pdf}
+\caption{An analogy of a hydraulic system for movement of charges.\label{fig-21-01}}
+\end{marginfigure}
+
+\subsection{}\label{21.1.3} In a closed hydraulic system maintaining constant liquid circulation (refer to (\figr{fig-21-01}), the liquid moves from point $A$ to point $B$ against the force of gravity due to the influence of external forces exerted by the pump $P$. The pump generates a consistent difference in hydrostatic pressure between points $B$ and $A$, prompting the liquid to flow against gravity from $B$ to $A$. A source of electrical energy plays a similar role in a direct current circuit. Owing to the electric field set up by extraneous forces and existing inside the source, the electric charges move within the source against the forces of the electrostatic field. This maintains a potential difference at the ends of the external circuit that is required for a direct current to flow. At the expense of the energy consumed in the source, work is done to obtain ordered motion of the electric charges.
+
+In a direct current generator, for example, the work of the extraneous forces \ssect{21.1.2} is done at the expense of the mechanical energy required to drive the rotor of the generator.
+
+\section{Ohm's Law and the Joule-Lenz Law}
+\label{sec-21.2}
+
+
+\subsection{}\label{21.2.1} At any point inside a portion of a conductor that contains a source of electrical energy there is an electrostatic field of Coulomb forces with the strength $\vb{E}_{\text{Coul}}$ and an electric field of extraneous forces with the strength $\vb{E}_{\text{extr}}$.
+
+According to the principle of superposition of fields 
+\ssect{15.2.2} the strength of the resultant field is
+\begin{equation*}
+\vb{E} = \vb{E}_{\text{Coul}} + \vb{E}_{\text{extr}}.
+\end{equation*}
+Ohm’s law for current density \ssect{20.3.4},
+\begin{equation*}
+\vb{j} = \frac{1}{\rho} \, (\vb{E}_{\text{Coul}} + \vb{E}_{\text{extr}}),
+\end{equation*}
+enables the following relation to be obtained for portion 1-2 of a homogeneous conductor of cross-sectional area $S$:
+\begin{equation*}
+I \int_{1}^{2} \rho \, \frac{\dd l}{S}  = \int_{1}^{2} \vb{E}_{\text{Coul}} \, \dd \vb{l} + \int_{1}^{2} \vb{E}_{\text{extr}} \, \dd \vb{l} ,
+\end{equation*}
+where $I$ is the current in the conductor, $\dd \vb{l}$ is a vector with the magnitude $\dd l$, equal to an element of conductor length, and is directed tangent to the conductor toward the current density vector, and $S$ is the cross-sectional area of the conductor.
+
+
+\subsection{}\label{21.2.2} 
+
+The integral $\int_{1}^{2} \vb{E}_{\text{Coul}} \, \dd \vb{l} $ is numerically equal to the work done by the Coulomb forces in moving a unit positive charge from point 1 to point 2. According to \ssect{16.3.1}
+\begin{equation*}
+ \int_{1}^{2} \vb{E}_{\text{Coul}} \, \dd \vb{l}  = V_{1} - V_{2},
+\end{equation*}
+where $V_{1}$ and $V_{2}$ are the potentials at points 1 and 2 of the conductor.
+
+The \redem{electromotive force} (emf) $\emf_{12}$, acting over the portion 1-2 of the circuit, is the name given to the linear integral
+\begin{equation*}
+\emf_{12} = \int_{1}^{2} \vb{E}_{\text{extr}} \, \dd \vb{l}.
+\end{equation*}
+The electromotive force $\emf_{12}$ is numerically equal to the work done by the extraneous forces in moving a unit positive charge along the conductor from point 1 to point 2. This work is done at the expense of the energy consumed in the source.
+
+The \redem{voltage} (or \redem{voltage drop}) $U_{12}$ across the portion 1-2 is the physical quantity numerically equal to the work done by the resultant field of Coulomb and extraneous forces in moving a unit positive charge along the circuit from point 1 to point 2. Thus
+\begin{equation*}
+U_{12}  = \int_{1}^{2} (\vb{E}_{\text{Coul}} + \vb{E}_{\text{extr}}) \, \dd \vb{l} = \int_{1}^{2} \vb{E} \, \dd \vb{l},
+\end{equation*}
+or
+\begin{equation*}
+U_{12}  = (V_{1} - V_{2}) + \emf_{12}.
+\end{equation*}
+The voltage across the ends of the circuit coincides with the potential difference only when no emf is applied to this portion.
+The integral
+\begin{equation*}
+R_{12} = \int_{1}^{2} \rho \, \frac{\dd \vb{l}}{S},
+\end{equation*}
+is the \redem{resistance} $R_{12}$ in the portion of the circuit between sections 1 and 2. For a homogeneous cylindrical conductor (wire), $\rho = \text{const}$, $S = \text{const}$ 
+\begin{equation*}
+R_{12} =  \rho \, \frac{l_{12}}{S},
+\end{equation*}
+where $l_{12}$ is the length of the conductor between cross sections 1 and 2.
+
+\subsection{}\label{21.2.3} The generalized Ohm's law for an arbitrary portion of a circuit is
+fRi2= U12- (V,- V2)+ g12.
+The product of the current by the resistance of a portion of the circuit is equal to the potential difference across this portion plus the emf of all sources of electrical energy connected in the given portion of the circuit. In this form Ohm’s law is applicable both for passive portions of the circuit, not containing sources of electrical energy, as well as for active portions that contain such sources.
+
+\subsection{}\label{21.2.4} The sign rule for the emf of sources of electrical energy included in portion 1-2 states that if the current inside the source is from the cathode to the anode, i.e. the strength of the field of extraneous forces coincides in direction with the current in this portion of the circuit, then, in calculations, the einf  12 of this source is considered positive. If the current inside the source is from the anode to the cathode, the emf 12of this source is considered negative (Fig. 21.2).
+
+\subsection{}\label{21.2.5} In a closed series electric circuit, the current is the same at all cross sections, and such a circuit is a portion with coin-
+ V>,2?'>Uo - hr0
+(a) Fig. 21.2
+i
+feioKO ,12/ I,
+ciding ends (points 1 and 2 coincide). In this circuit Vx — V2 and R12 — /?, the total resistance of the whole circuit.
+Ohm’s law for a closed electric circuit is IR = ,
+where  is the algebraic sum of all the emfs applied in the circuit.
+If a closed circuit consists of a source of electrical energy with an emf  and internal resistance r, and the resistance of the external part of the circuit equals R , Ohm’s law is of the form
+R+r
+The potential difference across the terminals of the source is equal to the voltage across the external part of the circuit:
+V1— V2= RI = £ - Ir.
+If the circuit is open and has no current (7 = 0), the potential difference across the terminals of the source is equal to its emf:
+Fi - V2= g.
+(b) :’l..I KIRGiiHOFP’S LaWs
+2?5
+A voltmeter connected in parallel with portion 1-2 o! a direct current (d.c.) electric circuit measures the potential difference across the ends of this portion, and not the voltage:
+,iviv V2,
+where 7 ? y and / y are the resistance of the voltmeter and its current (Fig. 21.3). This follows from the generalized Ohm’s law \ssect{21.2.3} as written for portion 1-2 of the voltmeter circuit, in which there is no emf (see also Sect. \ssect{21.3.5}).
+
+\subsection{}\label{21.2.6} In a d.c. electric circuit with fixed conductors, the work done by the extraneous forces is completely consumed in heating the conductors \ssect{20.3.5}. The energy E, evolved in a circuit during the time I throughout the whole
+volume of the conductor, is equal to
+E - IUt,
+where / is the current and U is the voltage. The quantity of heat Q (\ssect{9.2.1}) in calories, cor­ responding to this energy and evolved in the conductor, is
+O - 0.24 IUt. ,
+R
+Fig. 21.3
+All the other quantities are expressed in SI units (Appendix I). The Joule-Lenz law states that the quantity of heat generated by current in a conductor is proportional to the current, voltage and time that the current flows. Other expressions of the Joule-
+Lenz law are:
+()—0.24/2/?/= 0.24T l
+
+\section{Kirchhoff's Laws}
+\label{sec-21.3}
+
+
+\subsection{}\label{21.3.1} The analysis of complex (branched) circuits consists in finding the currents in the various portions of the circuit in accordance with their given resistances and applied emf’s.
+18* 276
+
+
+\subsection{}\label{21.3.2} A branch point, or junction, in a branched circuit, or network, is a point where there are more than two possible directions of the current (Fig. 21.4).
+Kirchhoff's first law (point rule) states that the algebraic sum of the currents that meet at any junction of a network equals zero:
+S '/=. 2—1
+where n is the number of conductors joined at the branch point and 11 is the current at the point. Currents flowing toward the branch point are considered posi­ tive; those flowing away are con­
+i=n
+Fig. 21.4
+sidered negative.
+Kirchhoff's second law (mesh rule) states that in any closed loop (mesh of a network), arbitrarily
+chosen in a branched circuit (net­ work), the algebraic sum of the products of the currents I t by the resistances Rt of the corresponding portions of the loop is equal to the algebraic sum of the emf’s in the loop. Thus
+2=711 2=71j
+2 T,Rt=* 2 *J, i =1 i=1
+where nxis the number of portions into which the loop is divided by branch points (junctions). In applying the mesh rule, a definite direction around the loop is chosen (either clockwise or counter­ clockwise). Currents coinciding in direction with the chosen one are considered positive. The emf’s of the sources of electrical energy are considered positive if they produce currents whose direction coincides with the chosen one.
+
+\subsection{}\label{21.3.3} The following procedure is employed to analyse a complex (branched) d.c. circuit:
+(a) The directions of the currents are arbitrarily assigned in all the portions of the circuit.
+(b) For m branch points (junctions), m — 1 independent equations are written on the basis of Kirchhoff's first law.
+(<) Arbitrary closed loops are separated out and, alter choosing the direction for going around each loop, a system of equations is written on the basis of Kirchhoff’s second law. In a branched circuit consisting of p portions (branches) between adjacent branch points and m branch points (junctions), the number of independent equations based on the mesh rule equals p — m +
+! I. In selecting the loop, it is necessary for each new loop to contain at least one portion (branch) not included in the previously considered loops.
+
+\subsection{}\label{21.2.4} To shunt an ammeter means to connect an additional resistor Rsj, in parallel to the ammeter. This is done so that
+rig. 21.5 Fig. 21.6
+Ibe ammeter, having the resistance 7?0and designed to measure a maximum current of 70, can be applied to measure currents 7 that exceed current 70 (Fig. 21.5). The required resistance of the shunt is found according to Kirchhoff’s laws: 7 = 70-f /sh and I qR q = IshRshi from which 7sh is eliminated:
+"sh - 10*0 I-h
+
+\subsection{}\label{21.3.5} A potential difference Vx— V2= U across a portion ul a circuit is to be measured by a voltmeter designed for a maxi­ mum measurement of U0 volts (21.2.5) at a maximum permissible current of 70(with U0= I0R0)and this potential difference exceeds UQ(i.e. U >»   0)* This can be done by connecting an additional resistor 7?a in series with the voltmeter (Fig. 21.6). The required additional resistance is determined from the equation U—(R0-j-fta)/0, from which
+«a =--Ro-
