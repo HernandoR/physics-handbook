@@ -126,7 +126,7 @@ R_{V} I_{V} = V_{1} - V_{2},
 \end{equation*}
 where $R_{V}$ and $I_{V}$ are the resistance of the voltmeter and its current (\figr{fig-21-03}). This follows from the generalized Ohm’s law \ssect{21.2.3} as written for portion 1-2 of the voltmeter circuit, in which there is no emf (see also Sect. \ssect{21.3.5}).
 
-\begin{marginfigure}
+\begin{marginfigure}[-2cm]
 \centering
 \includegraphics[width=0.85\textwidth]{figs/ch-21/fig-21-03.pdf}
 \sidecaption{Generalized Ohm's law for a portion of the voltmeter circuit.\label{fig-21-03}}
@@ -152,33 +152,53 @@ Q = 0.24 \, I^{2} R\,t = 0.24 \frac{U^{2}}{R}t.
 \label{sec-21.3}
 
 
-\subsection{}\label{21.3.1} The analysis of complex (branched) circuits consists in finding the currents in the various portions of the circuit in accordance with their given resistances and applied emf’s.
-18* 276
+\subsection{}\label{21.3.1} The analysis of \redem{complex (branched) circuits} consists in finding the currents in the various portions of the circuit in accordance with their given resistances and applied emf’s.
 
 
-\subsection{}\label{21.3.2} A branch point, or junction, in a branched circuit, or network, is a point where there are more than two possible directions of the current (Fig. 21.4).
-Kirchhoff's first law (point rule) states that the algebraic sum of the currents that meet at any junction of a network equals zero:
-S '/=. 2—1
-where n is the number of conductors joined at the branch point and 11 is the current at the point. Currents flowing toward the branch point are considered posi­ tive; those flowing away are con­
-i=n
-Fig. 21.4
-sidered negative.
-Kirchhoff's second law (mesh rule) states that in any closed loop (mesh of a network), arbitrarily
-chosen in a branched circuit (net­ work), the algebraic sum of the products of the currents I t by the resistances Rt of the corresponding portions of the loop is equal to the algebraic sum of the emf’s in the loop. Thus
-2=711 2=71j
-2 T,Rt=* 2 *J, i =1 i=1
-where nxis the number of portions into which the loop is divided by branch points (junctions). In applying the mesh rule, a definite direction around the loop is chosen (either clockwise or counter­ clockwise). Currents coinciding in direction with the chosen one are considered positive. The emf’s of the sources of electrical energy are considered positive if they produce currents whose direction coincides with the chosen one.
+\subsection{}\label{21.3.2} A \redem{branch point}, or \redem{junction}, in a branched circuit, or network, is a point where there are more than two possible directions of the current (\figr{fig-21-04}).
+
+\begin{marginfigure}
+\centering
+\includegraphics[width=0.75\textwidth]{figs/ch-21/fig-21-04.pdf}
+\sidecaption{Analysing a branched circuit.\label{fig-21-04}}
+\end{marginfigure}
+
+
+\redem{Kirchhoff's first law} (point rule) states that the algebraic sum of the currents that meet at any junction of a network equals zero:
+\begin{equation*}
+\sum_{i =1}^{n} I_{i}= 0,
+\end{equation*}
+where $n$ is the number of conductors joined at the branch point and $I_{i}$ is the current at the point. Currents flowing toward the branch point are considered positive; those flowing away are considered negative.
+
+\redem{Kirchhoff's second law (mesh rule)} states that in any closed loop (mesh of a network), arbitrarily chosen in a branched circuit (network), the algebraic sum of the products of the currents $I_{i}$ by the resistances $R_{i}$ of the corresponding portions of the loop is equal to the algebraic sum of the emf’s in the loop. Thus
+\begin{equation*}
+\sum_{i =1}^{n_{1}} I_{i} R_{i}= \sum_{i =1}^{n_{1}} \emf_{i}
+\end{equation*}
+where $n_{1}$ the number of portions into which the loop is divided by branch points (junctions). In applying the mesh rule, a definite direction around the loop is chosen (either clockwise or counter­ clockwise). Currents coinciding in direction with the chosen one are considered positive. The emf’s of the sources of electrical energy are considered positive if they produce currents whose direction coincides with the chosen one.
 
 \subsection{}\label{21.3.3} The following procedure is employed to analyse a complex (branched) d.c. circuit:
-(a) The directions of the currents are arbitrarily assigned in all the portions of the circuit.
-(b) For m branch points (junctions), m — 1 independent equations are written on the basis of Kirchhoff's first law.
-(<) Arbitrary closed loops are separated out and, alter choosing the direction for going around each loop, a system of equations is written on the basis of Kirchhoff’s second law. In a branched circuit consisting of p portions (branches) between adjacent branch points and m branch points (junctions), the number of independent equations based on the mesh rule equals p — m +
-! I. In selecting the loop, it is necessary for each new loop to contain at least one portion (branch) not included in the previously considered loops.
+\begin{enumerate}[label = (\alph*)]
+\item The directions of the currents are arbitrarily assigned in all the portions of the circuit.
+\item For $m$ branch points (junctions), $m - 1$ independent equations are written on the basis of Kirchhoff's first law.
+\item Arbitrary closed loops are separated out and, alter choosing the direction for going around each loop, a system of equations is written on the basis of Kirchhoff’s second law. In a branched circuit consisting of $p$ portions (branches) between adjacent branch points and $m$ branch points (junctions), the number of independent equations based on the mesh rule equals $p - m + 1$. In selecting the loop, it is necessary for each new loop to contain at least one portion (branch) not included in the previously considered loops.
+\end{enumerate}
+\subsection{}\label{21.2.4} To \redem{shunt an ammeter} means to connect an additional resistor $R_{sh}$, in parallel to the ammeter. This is done so that the ammeter, having the resistance $R_{0}$ and designed to measure a maximum current of $I_{0}$, can be applied to measure currents $I$ that exceed current $I_{0}$ (\figr{fig-21-05}). The required resistance of the shunt is found according to Kirchhoff’s laws: $I = I_{0} + I_{sh}$ and $I_{0}R_{0} = I_{sh}R_{sh}$ from which $R_{sh}$ is eliminated:
+\begin{equation*}
+R_{sh} = \frac{I_{0}R_{0}}{I - I_{0}}
+\end{equation*}
+\begin{marginfigure}
+\centering
+\includegraphics[width=0.75\textwidth]{figs/ch-21/fig-21-05.pdf}
+\sidecaption{Analysing shunting of ammeter.\label{fig-21-05}}
+\end{marginfigure}
 
-\subsection{}\label{21.2.4} To shunt an ammeter means to connect an additional resistor Rsj, in parallel to the ammeter. This is done so that
-rig. 21.5 Fig. 21.6
-Ibe ammeter, having the resistance 7?0and designed to measure a maximum current of 70, can be applied to measure currents 7 that exceed current 70 (Fig. 21.5). The required resistance of the shunt is found according to Kirchhoff’s laws: 7 = 70-f /sh and I qR q = IshRshi from which 7sh is eliminated:
-"sh - 10*0 I-h
+\subsection{}\label{21.3.5} A potential difference $V_{1} - V_{2}= U$ across a portion of a circuit is to be measured by a voltmeter designed for a maximum measurement of $U_{0}$ volts \ssect{21.2.5} at a maximum permissible current of $I_{0}$ (with $U_{0} = I_{0}R_{0}$)and this potential difference exceeds $U_{0}$ (i.e. $U > U_{0}$). This can be done by connecting an additional \redem{resistor} $R_{a}$ in series with the voltmeter (\figr{fig-21-06}). The required additional resistance is determined from the equation $U = (R_{0}+ R_{a})I_{0}$, from which
+\begin{equation*}
+R_{a} = \frac{U}{I_{0}} - R_{0}
+\end{equation*}
 
-\subsection{}\label{21.3.5} A potential difference Vx— V2= U across a portion ul a circuit is to be measured by a voltmeter designed for a maxi­ mum measurement of U0 volts (21.2.5) at a maximum permissible current of 70(with U0= I0R0)and this potential difference exceeds UQ(i.e. U >»   0)* This can be done by connecting an additional resistor 7?a in series with the voltmeter (Fig. 21.6). The required additional resistance is determined from the equation U—(R0-j-fta)/0, from which
-«a =--Ro-
+\begin{figure}[h]%[-1cm]
+\centering
+\includegraphics[width=0.75\textwidth]{figs/ch-21/fig-21-06.pdf}
+\sidecaption{Additional resistor for a voltmeter.\label{fig-21-06}}
+\end{figure}
