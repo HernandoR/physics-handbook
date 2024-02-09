@@ -53,10 +53,10 @@ The \redem{degree of dissociation} $\alpha$ is the ratio of the number n’of mo
 \frac{1 -\alpha}{\alpha^{2}} = \text{const} \times n_{0}.
 \end{equation*}
 As $n_{0} \to 0$, we have $\alpha \to 1$, i.e. in weak solutions almost all the molecules dissociate. The degree of dissociation $\alpha$ decreases with an increase in the concentration of the solution. In highly concentrated solutions
-
 \begin{equation*}%
 \alpha \approx \frac{\text{const}}{\sqrt{n_{0}}}.
 \end{equation*}
+
 
 \section{Atomicity of Electric Charges}
 \label{sec-22.2}
@@ -64,49 +64,64 @@ As $n_{0} \to 0$, we have $\alpha \to 1$, i.e. in weak solutions almost all the 
 
 \subsection{}\label{22.2.1} It follows from Faraday's laws of electrolysis that all electric charges consist of a whole number of elementary indivisible charges.
 
-\subsection{}\label{22.2.2} The charge Q of any ion is equal to
-where z is the valency of the ion, F is Faraday’s constant (22.1.4), and Na is Avogadro’s number (Appendix II). The charge of a monovalent ion is equal to the charge e of the electron or proton:
-= e = 1.602 X 10-19C - 4.803 X 10~10electrostatic units.
-Any electric charge consists of a whole number of elementary charges e (14.1.2).
+\subsection{}\label{22.2.2} The charge $Q$ of any ion is equal to 
+\begin{equation*}%
+Q = \pm \frac{zF}{N_{A}},
+\end{equation*}
+where $z$ is the valency of the ion, $F$ is Faraday’s constant \ssect{22.1.4}, and $N_{A}$ is Avogadro’s number (Appendix~II). The charge of a monovalent ion is equal to the charge $e$ of the electron or proton:
+\begin{equation*}%
+Q_{1} = e = \SI{1.602d-19}{\coulomb} = \num{4.803d-10} \text{electrostatic\,\, units}.
+\end{equation*}
+Any electric charge consists of a whole number of elementary charges $e$ \ssect{14.1.2}.
 
 \section{Electrolytic Conduction of Liquids}
 \label{sec-22.3}
 
-\subsection{}\label{22.3.1} The current density j (20.2.3) in an arbitrary section AW, perpendicular to the direction of ion motion (Fig. 22.1), is equal to the sum of the current densities of the positive and negative ions:
-j = j+ + j-
+\begin{marginfigure}[-3cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-22/fig-22-01.pdf}
+\sidecaption{Current density in a conducting liquid.\label{fig-22-01}}
+\end{marginfigure}
 
-Hen; j+ = Q+n0+ (v+) and j  = (j-n0  (v ), where q+ and <i , /„ and «0, and (v+) and (v ) are the charges, concen- lrations and average velocities of ordered motion (drift due in Ilie action of the electric held)
-nf the positive and negative ions. 
+\subsection{}\label{22.3.1} The current density $\vb{j}$ \ssect{20.2.3} in an arbitrary section $SS$, perpendicular to the direction of ion motion (\figr{fig-22-01}), is equal to the sum of the current densities of the positive and negative ions:
+\begin{equation*}%
+\vb{j} = \vb{j}_{+} + \vb{j}_{-}.
+\end{equation*}
+Here $\vb{j}_{+} = q_{+}n_{0+} \expval{\vb{v}_{+}}$ and $\vb{j}_{-} = q_{-}n_{0-} \expval{\vb{v}_{-}}$, where $q_{+}$ and $q_{-}$, $n_{0+}$ and $n_{0-}$, and $\expval{\vb{v}_{+}}$ and $\expval{\vb{v}_{-}}$ are the charges, concentrations and average velocities of ordered motion (\redem{drift} due in the action of the electric held) of the positive and negative ions. 
 
-\subsection{}\label{22.3.2} The average velocities of mu drift are proportional to the electric field strength E:
-(v|)=w+E and (v.)= —u E,
-where u+ and are the mobilities
-of the positive and negative ions.
-The mobility of an ion is equal to
-lhe ratio of the magnitude of the
-average drift velocity vector to
-Ihat of the field strength vector.
-The mobility is independent of the
-lieId strength vector E. Since there are no bulk charges in electrolytes, q+n0+ +* = 0.
-Moreover, q+ = ez+ == z+ (22.2.2).
+\subsection{}\label{22.3.2} The average velocities of ion drift are proportional to the electric field strength $\vb{E}$:
+\begin{align*}%
+\expval{\vb{v}_{\perp}} & = u_{+}\vb{E}\,\, \text{and},\\
+\expval{\vb{v}_{\parallel}} & = - u_{-}\vb{E},
+\end{align*}
+where $u_{+}$ and $u_{-}$ are the \redem{mobilities} of the positive and negative \redem{ions}. The mobility of an ion is equal to the ratio of the magnitude of the
+average drift velocity vector to that of the field strength vector. The mobility is independent of the field strength vector $\vb{E}$. Since there are no bulk charges in electrolytes, $q_{+}n_{0+} + q_{-}n_{0-} = 0$. Moreover, $q_{+} = ez_{+} = \dfrac{F}{N_{A}}z_{+}$ \ssect{22.2.2}.
 
-\subsection{}\label{22.3.3} Ohm's law of current density in electrolytes (cf. \ssect{20.3.4}) is:
-j= F z+n0+(u++uF)E.
-'The resistivity p of an electrolyte (20.3.4) is equal to
-Na
-<)= ------- ------
-Fz+n0+(u+-u )
-If a molecule of the solute dissociates into k+ positive and /c  negative ions, then
-A:+z+ - /c z ; 71 + = k+otn0 and /i0  — k an0
+\subsection{}\label{22.3.3} \redem{Ohm's law of current density in electrolytes} (cf. \ssect{20.3.4}) is:
+\begin{equation*}%
+\vb{j} = \frac{F}{N_{A}}z_{+}n_{0+} (u_{+} + u_{-})\vb{E}.
+\end{equation*}
+The resistivity $\rho$ of an electrolyte \ssect{20.3.4} is equal to
+\begin{equation*}%
+\rho = \frac{N_{A}}{Fz_{+}n_{0+} (u_{+} + u_{-})}.
+\end{equation*}
+If a molecule of the solute dissociates into $k_{+}$ positive and $k_{-}$ negative ions, then
+\begin{equation*}%
+k_{+}z_{+} = k_{-}z_{-}; \quad n_{0+} = k_{+}\alpha n_{0} \qand n_{0-} = k_{-}\alpha n_{0},
+\end{equation*}
+where $\alpha$ is the degree of dissociation, $n_{0}$ is the concentration of the solute \ssect{22.1.5} and
+\begin{equation*}%
+\rho = \frac{N_{A}}{Fz_{+}k_{+}\alpha n_{0} (u_{+} + u_{-})}.
+\end{equation*}
+The ratio $N_{A}/z_{+}$ is the number of positive ions in one gram equivalent \ssect{22.1.4}. We introduce the quantity
+\begin{equation*}%
+C = \frac{k_{+}n_{0}z_{+}}{N_{A}} = \frac{k_{-}n_{0}z_{-}}{N_{A}},
+\end{equation*}
+which is called the \redem{equivalent concentration of the solution}. It is the number of gram equivalents of the ions of one sign contained in unit volume of the electrolyte (either in the free state or bound in the molecules). Then
+\begin{equation*}%
+\rho = \frac{1}{F C \alpha(u_{+} + u_{-})}.
+\end{equation*}
 
-whore a is the degree of dissociation, n0 is the concentration of the solute (22.1.5) and
-p= ,               bz+k+an0(u++ uj)
-The ratio NAlz+ is the number of positive ions in one gram equivalent (22.1.4). We introduce the quantity
- k+nQz+ k n0z 
-" NA ~ Na ’
-which is called the equivalent concentration of the solution. It is the number of gram equivalents of the ions of one sign contained in unit volume of the electrolyte (either in the free state or bound in the molecules). Then
-1
-P~ FCa (u+- ) ‘
 
 \section{Electrical Conduction in Gases}
 \label{sec-22.4}
@@ -167,7 +182,7 @@ positive ions is insufficient for
 collision ionization of the gas molecules or for knocking electrons out of the metallic cathode (surface ionization), electrons can be produced near the cathode of a gas-discharge tube only by external ionizing agents. When the action of these agents is- stopped, the region of collision ionization by electrons contracts toward the anode as the electrons move in this direction. Under these conditions the gas
 discharge is extinguished as soon as collision ionization ceases. 
 
-\subsection{}\label{22.5.4} Surface ionization (22.5.3), initiated at high voltage f/, produces secondary electrons and sets up a two-way avalanche of electrons and positive ions. After this the action of the exter­ nal ionizing agent is no longer essential for continuing the gas discharge. When the voltage U across the electrodes of a gas- discharge tube is raised sufficiently, an electric breakdown of the gas occurs. This is the transition from a semi-self-maintained to a self-maintained gas discharge. The voltage U ~ Ubu, corresponding to electric breakdown, is called the ignition potential, or breakdown voltage. The breakdown voltage for a gas discharge in a tube having flat parallel electrodes at the distance d from each other depends upon the product pd, where p is the gas pressure (Eig. 22.3). In addition, depends on the chemical nature of the gas and the material of the cathode.
+\subsection{}\label{22.5.4} Surface ionization (22.5.3), initiated at high voltage f/, produces secondary electrons and sets up a two-way avalanche of electrons and positive ions. After this the action of the external ionizing agent is no longer essential for continuing the gas discharge. When the voltage U across the electrodes of a gas- discharge tube is raised sufficiently, an electric breakdown of the gas occurs. This is the transition from a semi-self-maintained to a self-maintained gas discharge. The voltage U ~ Ubu, corresponding to electric breakdown, is called the ignition potential, or breakdown voltage. The breakdown voltage for a gas discharge in a tube having flat parallel electrodes at the distance d from each other depends upon the product pd, where p is the gas pressure (Eig. 22.3). In addition, depends on the chemical nature of the gas and the material of the cathode.
 
 Self-maintained gas discharges are classified into glow, corona, spark and arc discharges. They are not discussed in the present handbook.
 22.6 Certain Information on Plasma
@@ -176,7 +191,8 @@ Self-maintained gas discharges are classified into glow, corona, spark and arc d
 
 Weakly ionized plasma is found in the ionosphere, the conducting layer of the atmosphere. The ionosphere extends from 60 to 2 x 104 km above the earth’s surface.
 
-Fully ionized plasma, formed at ultra-high temperatures (high- Lempcrature plasma), exists on the sun and hot stars. Under laboratory conditions, plasma is produced in gas discharges \ssect{22.5.1} and gaseous-discharge lamps. Accelerated plasma is employed as the working medium \ssect{11.1.1} in jet engines. Plasma can also be used for the direct conversion of internal energy into electrical energy (magnitohydrodynamic generators and plasma sources of electrical energy).
+Fully ionized plasma, formed at ultra-high temperatures (high-temperature plasma), exists on the sun and hot stars. Under laboratory conditions, plasma is produced in gas discharges \ssect{22.5.1} and gaseous-discharge lamps. Accelerated plasma is employed as the working medium \ssect{11.1.1} in jet engines. Plasma can also be used for the direct conversion of internal energy into electrical energy (magnetohydrodynamic generators and plasma sources of electrical energy).
+
 The great number of charged particles in a plasma provides for its high electrical conductance; in this aspect its properties approach those of conductors of electric current.
 
 \subsection{}\label{22.6.2} A condition for the existence of a plasma is a certain minimum density pmin of charged particles. Beginning with this density, we can speak of a plasma rather than a simple accumulation of separate charged particles. The density pmin is determined by the inequality L > D, where L is a linear dimension of the system of charged particles and D is a typical “plasma”parameter, the length called the Debye-Hiickel screen­ ing radius (it is also called the Debye shielding length or Debye length):
