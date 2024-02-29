@@ -74,45 +74,56 @@ where $c$ is the electrodynamic constant (Appendix~I).
 \section{The Biot-Savart-Laplace Law}
 \label{sec-23.2}
  
-\subsection{}\label{23.2.1} The Biot-Savart-Laplace law determines the magnetic induction at any point in a magnetic field set up by a direct electric current flowing along a conductor of any shape. The vector dB of magnetic induction at any point C of a magnetic field, set up by an element of a conductor carrying the current I and of the length dl is determined by the formula
-dB= kiT [dr],
-where d is the vector of an element of length of the conductor \ssect{23.1.4}, r is the radius vector from the element dl of the con­ ductor to point C (Fig. 23.2), r
-is the magnitude of the radius
-vector r, k is a factor depending only upon the chosen system of units, and iT is a dimension­ less quantity that characterizes the magnetic properties of the medium and called the relative magnetic permeability (or simply relative permeability) of the me­ dium. The relative permeability does not depend upon the choice of units and equals unity for vacu­ um. For all substances, except fer­ romagnetic ones, p,r differs only slightly from unity \ssect{26.5.1}. See
-Fig. 23.2
-Sect. 26.4.5 for a general defini­
-tion of fxr.
+\subsection{}\label{23.2.1} The \redem{Biot-Savart-Laplace law} determines the magnetic induction at any point in a magnetic field set up by a direct electric current flowing along a conductor of any shape. The vector $\dd \vb{B}$ of magnetic induction at any point $C$ of a magnetic field, set up by an element of a conductor carrying the current $I$ and of the length $\dd l$ is determined by the formula
+\begin{equation*}%
+\dd \vb{B}= k \mu_{r} \, [\dd \vb{l} \cross \vb{r}],
+\end{equation*}
+where $\dd \vb{l}$ is the vector of an element of length of the conductor \ssect{23.1.4}, $\vb{r}$ is the radius vector from the element $\dd \vb{l}$ of the conductor to point $C$ (\figr{Fig. 23.2}), $r$ is the magnitude of the radius vector $\vb{r}$, $k$ is a factor depending only upon the chosen system of units, and $\mu_{r}$ is a dimension­ less quantity that characterizes the magnetic properties of the medium and called the \redem{relative magnetic permeability} (or simply  \redem{relative permeability}) of the medium. The relative permeability does not depend upon the choice of units and equals unity for vacuum. For all substances, except ferromagnetic ones, p,r differs only slightly from unity \ssect{26.5.1}. See \ssect{26.4.5} for a general definition of $\mu_{r}$.
 
-\subsection{}\label{23.2.2} In SI units k = (x0/4jt, where p,0 = 4jt x 10~7 henry/m is the permeability of free space, or the magnetic constant (Appen­ dix II). In Gaussian units, k = 1/c, where c = 3 X 1010 cm/s is the electrodynamic constant (Appendix I).
+\subsection{}\label{23.2.2} In SI units $k = \mu_{0}/4\pi$, where $\mu_{0} = 4\pi \times \SI{d-7}{\henry\per\meter}$ is the \redem{permeability} of free space, or the \redem{magnetic constant} (Appen­dix~II). In Gaussian units, $k = 1/c$, where $c = \SI{3d10}{\centi\meter\per\second}$ is the electrodynamic constant (Appendix~I).
+
 The Biot-Savart-Laplace law is of the form
-dB=Ms--£-(rfrr]. 4n H1-1
-This form of the Biot-Savart-Laplace law and of all the electro­ magnetic field equations is said to be rationalized.
-The product p,0pr is sometimes called the absolute magnetic permeability (or simply permeability) of the medium.
-In Gaussian units dB = — — [dl r]. The magnitude of vector
-dB is equal to
-PoPr / dl sin a CT .. x dB=  -----t*--- SI UIlltS)’
-dB—— ? d  a (in Gaussian units), C T*
-where a is the angle between vectors dl and r.
+\begin{equation*}%
+\dd \vb{B} = \frac{\mu_{0} \mu_{r}}{4 \pi} \, \frac{I}{r^{3}} \, [\dd \vb{l} \cross \vb{r}]
+\end{equation*}
+This form of the Biot-Savart-Laplace law and of all the electromagnetic field equations is said to be \redem{rationalized}.
 
-\subsection{}\label{23.2.3} The magnetic field strength H is the vector characteristic of a magnetic field that, for a homogeneous isotropic medium, is related to B as follows:
-u
-H=—— (inSIunits),
-H = — (in Gaussian units). Hr
-The universal relation between vectors B and H for a magnetic field in an arbitrary medium and the more general definition of the magnetic field strength vector H are discussed in Sect. \ssect{26.4.4}.
+The product $\mu_{0} \mu_{r}$ is sometimes called the \redem{absolute magnetic permeability} (or simply \redem{permeability}) of the medium.
+
+In Gaussian units 
+\begin{equation*}%
+\dd \vb{B} = \frac{1}{c} \, \frac{I}{r^{3}} \, [\dd \vb{l} \cross \vb{r}]
+\end{equation*}
+The magnitude of vector $\dd \vb{B}$ is equal to
+\begin{align*}%
+\dd \vb{B} & = \frac{\mu_{0} \mu_{r}}{4 \pi} \frac{I \dd l \sin \alpha}{r^{2}} && \text{(in SI units),} \\
+\dd \vb{B} & = \frac{\mu_{r}}{c} \frac{I \dd l \sin \alpha}{r^{2}}  && \text{(in Gaussian units.)}
+\end{align*}
+where $\alpha$ is the angle between vectors $\dd \vb{l}$ and $\vb{r}$.
+
+\subsection{}\label{23.2.3} The \redem{magnetic field strength} $\vb{H}$ is the vector characteristic of a magnetic field that, for a homogeneous isotropic medium, is related to B as follows:
+\begin{align*}%
+\vb{H} & = \frac{\vb{B}}{\mu_{0} \mu_{r}} && \text{(in SI units),} \\
+\vb{H} & = frac{\vb{B}}{\mu_{r}}  && \text{(in Gaussian units.)}
+\end{align*}
+The universal relation between vectors $\vb{B}$ and $\vb{H}$ for a magnetic field in an arbitrary medium and the more general definition of the magnetic field strength vector $\vb{H}$ are discussed in \ssect{26.4.4}.
+
 The strength of a magnetic field set up by a direct current in a homogeneous isotropic medium is independent of the magnetic properties of the medium. Thus
-PoPr g
-7tt 1 rjii j»Idlsina
-.. (ln SI unlts)>
-Gaussian units),
-where a is the angle between vectors dl and r.
+\begin{align*}%
+\dd \vb{H} & = \frac{I}{4 \pi r^{3}}\, [\dd \vb{l} \cross \vb{r}], \quad  \dd H && = \frac{I \dd l \sin \alpha}{4 \pi r^{2}} && \text{(in SI units),} \\
+\dd \vb{H} & =  \frac{I}{c r^{3}}\, [\dd \vb{l} \cross \vb{r}], \quad \dd H && = \frac{I \dd l \sin \alpha}{c r^{2}} && \text{(in Gaussian units.)}
+\end{align*}
+where $\alpha$ is the angle between vectors $\dd \vb{l}$ and $\vb{r}$.
 
-\subsection{}\label{23.2.4} It follows from a comparison of the characteristics of electric (E and D) and magnetic (B and 11) fields that the electric field strength vector E is analogous to the magnetic vector B. Both vectors specify the force effects of the fields and depend upon the properties of the medium in which the field is set up.
-The analogue of vector D of electric displacement \ssect{15.3.1} is fhe magnetic field strength vector II,
-[dl r]’ dH= rfH=— [dl r], dll=
-4nr2
-sina cr3 cr2
+\subsection{}\label{23.2.4} It follows from a comparison of the characteristics of electric ($\vb{E}$ and $\vb{D}$) and magnetic ($\vb{B}$ and $\vb{H}$) fields that the electric field strength vector $\vb{E}$ is analogous to the magnetic vector $\vb{B}$. Both vectors specify the force effects of the fields and depend upon the properties of the medium in which the field is set up.
 
-\subsection{}\label{25.2.5} An electric charge g, travelling in an unbounded homo­ geneous and isotropic medium at the constant velocity v, sets up a magnetic field whose magnetic induction Bg can be cal­culated by the formula"
+The analogue of vector $\vb{D}$ of electric displacement \ssect{15.3.1} is the magnetic field strength vector $\vb{H}$.
+
+\subsection{}\label{23.2.5} An electric charge $q$, travelling in an unbounded homogeneous and isotropic medium at the constant velocity $\vb{v}$, sets up a magnetic field whose magnetic induction $\vb{B}_{q}$ can be calculated by the formula
+\begin{align*}%
+\vb{B}_{q} & = \frac{I}{4 \pi r^{3}}\, [\dd \vb{l} \cross \vb{r}], \quad  \dd H && = \frac{I \dd l \sin \alpha}{4 \pi r^{2}} && \text{(in SI units),} \\
+\vb{B}_{q} & =  \frac{I}{c r^{3}}\, [\dd \vb{l} \cross \vb{r}], \quad \dd H && = \frac{I \dd l \sin \alpha}{c r^{2}} && \text{(in Gaussian units.)}
+\end{align*}
 where (3is the angle between vectors v and r, and r is the radius vector from the travelling charge to the point A being considered in the field. Vectors Bq and Hg are perpendicular to the plane passing through vectors v and r.
 When q > 0, the shortest rotation from vector v to vector r is seen from the head of vector Bg (and Hg) to be counter­
 Fig. 23.3
