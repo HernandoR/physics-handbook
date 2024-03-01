@@ -70,6 +70,11 @@ B & = \frac{c}{I} \, \left( \dv{F}{l}\right)_{\text{max}} && \text{(in Gaussian 
 where $c$ is the electrodynamic constant (Appendix~I).
 
 \subsection{}\label{23.1.6} In contrast to electrostatic forces \ssect{14.2.2}, Ampere’s force is not a central one \ssect{3.3.4}. Ampere’s force is perpendicular to the lines of magnetic induction and to the current-carrying conductors.
+\begin{marginfigure}[-2cm]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/ch-23/fig-23-02.pdf}
+\sidecaption{Biot-Savart Laplace law to find magnetic induction at any point in a magnetic field set up by a direct electric current flowing along a conductor of any shape.\label{fig-23-02}}
+\end{marginfigure}
 
 \section{The Biot-Savart-Laplace Law}
 \label{sec-23.2}
@@ -78,7 +83,9 @@ where $c$ is the electrodynamic constant (Appendix~I).
 \begin{equation*}%
 \dd \vb{B}= k \mu_{r} \, [\dd \vb{l} \cross \vb{r}],
 \end{equation*}
-where $\dd \vb{l}$ is the vector of an element of length of the conductor \ssect{23.1.4}, $\vb{r}$ is the radius vector from the element $\dd \vb{l}$ of the conductor to point $C$ (\figr{Fig. 23.2}), $r$ is the magnitude of the radius vector $\vb{r}$, $k$ is a factor depending only upon the chosen system of units, and $\mu_{r}$ is a dimension­ less quantity that characterizes the magnetic properties of the medium and called the \redem{relative magnetic permeability} (or simply  \redem{relative permeability}) of the medium. The relative permeability does not depend upon the choice of units and equals unity for vacuum. For all substances, except ferromagnetic ones, p,r differs only slightly from unity \ssect{26.5.1}. See \ssect{26.4.5} for a general definition of $\mu_{r}$.
+where $\dd \vb{l}$ is the vector of an element of length of the conductor \ssect{23.1.4}, $\vb{r}$ is the radius vector from the element $\dd \vb{l}$ of the conductor to point $C$ (\figr{fig-23-02}), $r$ is the magnitude of the radius vector $\vb{r}$, $k$ is a factor depending only upon the chosen system of units, and $\mu_{r}$ is a dimension­ less quantity that characterizes the magnetic properties of the medium and called the \redem{relative magnetic permeability} (or simply  \redem{relative permeability}) of the medium. The relative permeability does not depend upon the choice of units and equals unity for vacuum. For all substances, except ferromagnetic ones, p,r differs only slightly from unity \ssect{26.5.1}. See \ssect{26.4.5} for a general definition of $\mu_{r}$.
+
+
 
 \subsection{}\label{23.2.2} In SI units $k = \mu_{0}/4\pi$, where $\mu_{0} = 4\pi \times \SI{d-7}{\henry\per\meter}$ is the \redem{permeability} of free space, or the \redem{magnetic constant} (Appen­dix~II). In Gaussian units, $k = 1/c$, where $c = \SI{3d10}{\centi\meter\per\second}$ is the electrodynamic constant (Appendix~I).
 
@@ -118,17 +125,22 @@ where $\alpha$ is the angle between vectors $\dd \vb{l}$ and $\vb{r}$.
 \subsection{}\label{23.2.4} It follows from a comparison of the characteristics of electric ($\vb{E}$ and $\vb{D}$) and magnetic ($\vb{B}$ and $\vb{H}$) fields that the electric field strength vector $\vb{E}$ is analogous to the magnetic vector $\vb{B}$. Both vectors specify the force effects of the fields and depend upon the properties of the medium in which the field is set up.
 
 The analogue of vector $\vb{D}$ of electric displacement \ssect{15.3.1} is the magnetic field strength vector $\vb{H}$.
-
+\begin{marginfigure}%[-2cm]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/ch-23/fig-23-03.pdf}
+\sidecaption{Magnetic field by a travelling electric charge in an unbounded homogeneous and isotropic medium at the constant velocity.\label{fig-23-03}}
+\end{marginfigure}
 \subsection{}\label{23.2.5} An electric charge $q$, travelling in an unbounded homogeneous and isotropic medium at the constant velocity $\vb{v}$, sets up a magnetic field whose magnetic induction $\vb{B}_{q}$ can be calculated by the formula
 \begin{align*}%
-\vb{B}_{q} & = \frac{I}{4 \pi r^{3}}\, [\dd \vb{l} \cross \vb{r}], \quad  \dd H && = \frac{I \dd l \sin \alpha}{4 \pi r^{2}} && \text{(in SI units),} \\
-\vb{B}_{q} & =  \frac{I}{c r^{3}}\, [\dd \vb{l} \cross \vb{r}], \quad \dd H && = \frac{I \dd l \sin \alpha}{c r^{2}} && \text{(in Gaussian units.)}
+\vb{B}_{q} & = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{q}{r^{3}}
+[\vb{v} \cross \vb{r}], \quad  {B}_{q} && = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{qv \sin \beta}{r^{2}}&& \text{(in SI units),} \\
+\vb{B}_{q} & =  \frac{\mu_{r}}{c}\, \frac{q}{r^{3}}
+[\vb{v} \cross \vb{r}], \quad {B}_{q} && = \frac{ \mu_{r}}{c}\, \frac{qv \sin \beta}{r^{2}} && \text{(in Gaussian units.)}
 \end{align*}
-where (3is the angle between vectors v and r, and r is the radius vector from the travelling charge to the point A being considered in the field. Vectors Bq and Hg are perpendicular to the plane passing through vectors v and r.
-When q > 0, the shortest rotation from vector v to vector r is seen from the head of vector Bg (and Hg) to be counter­
-Fig. 23.3
+where $\beta$ is the angle between vectors $\vb{v}$ and $\vb{r}$, and $\vb{r}$ is the radius vector from the travelling charge to the point $A$ being considered in the field. Vectors $\vb{B}_{q}$ and $\vb{H}_{q}$ are perpendicular to the plane passing through vectors $\vb{v}$ and $\vb{r}$.
 
-clockwise (Fig. 23.3a). When q < 0, then B  (and Hg) have the opposite direction (Fig. 23.3b). The magnetic field of a moving charge is variable, because the radius vector r varies in magnitude and direction as charge q travels even if v = const. The magnetic field of a moving charge, depending upon angle (3 between vectors v and r, is not spherically symmetrical, as in the case of the electrostatic field of a point charge \ssect{14.2.3}. The magnetic field being considered has mirror symmetry with respect to the direction of v. The field strength is maximum at points in a plane passed through the charge perpendicularly to vector v (under the condition that u<c c). At all points on a straight line coinciding with vector v there is no magnetic field induction,
+When $q > 0$, the shortest rotation from vector $\vb{v}$ to vector $\vb{r}$ is seen from the head of vector $\vb{B}_{q}$ (and $\vb{H}_{q}$) to be counter­
+\figr{fig-23-03} clockwise (\figr{fig-23-03}~\drkgry{(a)}). When $q < 0$, then $\vb{B}_{q}$ (and $\vb{H}_{q}$) have the opposite direction (\figr{fig-23-03}~\drkgry{(b)}). The magnetic field of a moving charge is variable, because the radius vector $\vb{r}$ varies in magnitude and direction as charge $q$ travels even if $\vb{v} = \text{const}$. The magnetic field of a moving charge, depending upon angle $\beta$ between vectors $\vb{v}$ and $\vb{r}$, is not spherically symmetrical, as in the case of the electrostatic field of a point charge \ssect{14.2.3}. The magnetic field being considered has mirror symmetry with respect to the direction of $\vb{v}$. The field strength is maximum at points in a plane passed through the charge perpendicularly to vector $\vb{v}$ (under the condition that $v \ll c$). At all points on a straight line coinciding with vector $\vb{v}$ there is no magnetic field induction,
 
 \section{Simplest Cases of Magnetic Fields Set Up by Direct Currents}
 \label{sec-23.3}
