@@ -111,15 +111,15 @@ where $\alpha$ is the angle between vectors $\dd \vb{l}$ and $\vb{r}$.
 \subsection{}\label{23.2.3} The \redem{magnetic field strength} $\vb{H}$ is the vector characteristic of a magnetic field that, for a homogeneous isotropic medium, is related to B as follows:
 \begin{align*}%
 \vb{H} & = \frac{\vb{B}}{\mu_{0} \mu_{r}} && \text{(in SI units),} \\
-\vb{H} & = frac{\vb{B}}{\mu_{r}}  && \text{(in Gaussian units.)}
+\vb{H} & = \frac{\vb{B}}{\mu_{r}}  && \text{(in Gaussian units.)}
 \end{align*}
 The universal relation between vectors $\vb{B}$ and $\vb{H}$ for a magnetic field in an arbitrary medium and the more general definition of the magnetic field strength vector $\vb{H}$ are discussed in \ssect{26.4.4}.
 
 The strength of a magnetic field set up by a direct current in a homogeneous isotropic medium is independent of the magnetic properties of the medium. Thus
-\begin{align*}%
-\dd \vb{H} & = \frac{I}{4 \pi r^{3}}\, [\dd \vb{l} \cross \vb{r}], \quad  \dd H && = \frac{I \dd l \sin \alpha}{4 \pi r^{2}} && \text{(in SI units),} \\
-\dd \vb{H} & =  \frac{I}{c r^{3}}\, [\dd \vb{l} \cross \vb{r}], \quad \dd H && = \frac{I \dd l \sin \alpha}{c r^{2}} && \text{(in Gaussian units.)}
-\end{align*}
+\begin{alignat*}{3}%
+\dd \vb{H} & = \frac{I}{4 \pi r^{3}}\, [\dd \vb{l} \cross \vb{r}], \quad  && \dd H  = \frac{I \dd l \sin \alpha}{4 \pi r^{2}} \,\, && \text{(in SI units),} \\
+\dd \vb{H} & =  \frac{I}{c r^{3}}\, [\dd \vb{l} \cross \vb{r}], \quad && \dd H  = \frac{I \dd l \sin \alpha}{c r^{2}} \,\,&& \text{(in Gaussian units.)}
+\end{alignat*}
 where $\alpha$ is the angle between vectors $\dd \vb{l}$ and $\vb{r}$.
 
 \subsection{}\label{23.2.4} It follows from a comparison of the characteristics of electric ($\vb{E}$ and $\vb{D}$) and magnetic ($\vb{B}$ and $\vb{H}$) fields that the electric field strength vector $\vb{E}$ is analogous to the magnetic vector $\vb{B}$. Both vectors specify the force effects of the fields and depend upon the properties of the medium in which the field is set up.
@@ -131,12 +131,12 @@ The analogue of vector $\vb{D}$ of electric displacement \ssect{15.3.1} is the m
 \sidecaption{Magnetic field by a travelling electric charge in an unbounded homogeneous and isotropic medium at the constant velocity.\label{fig-23-03}}
 \end{marginfigure}
 \subsection{}\label{23.2.5} An electric charge $q$, travelling in an unbounded homogeneous and isotropic medium at the constant velocity $\vb{v}$, sets up a magnetic field whose magnetic induction $\vb{B}_{q}$ can be calculated by the formula
-\begin{align*}%
+\begin{alignat*}{3}%
 \vb{B}_{q} & = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{q}{r^{3}}
-[\vb{v} \cross \vb{r}], \quad  {B}_{q} && = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{qv \sin \beta}{r^{2}}&& \text{(in SI units),} \\
+[\vb{v} \cross \vb{r}],\,\,  && {B}_{q}  = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{qv \sin \beta}{r^{2}} \,\, && \text{(in SI units),} \\
 \vb{B}_{q} & =  \frac{\mu_{r}}{c}\, \frac{q}{r^{3}}
-[\vb{v} \cross \vb{r}], \quad {B}_{q} && = \frac{ \mu_{r}}{c}\, \frac{qv \sin \beta}{r^{2}} && \text{(in Gaussian units.)}
-\end{align*}
+[\vb{v} \cross \vb{r}],\,\, && {B}_{q} = \frac{ \mu_{r}}{c}\, \frac{qv \sin \beta}{r^{2}}\,\, && \text{(in Gaussian units.)}
+\end{alignat*}
 where $\beta$ is the angle between vectors $\vb{v}$ and $\vb{r}$, and $\vb{r}$ is the radius vector from the travelling charge to the point $A$ being considered in the field. Vectors $\vb{B}_{q}$ and $\vb{H}_{q}$ are perpendicular to the plane passing through vectors $\vb{v}$ and $\vb{r}$.
 
 When $q > 0$, the shortest rotation from vector $\vb{v}$ to vector $\vb{r}$ is seen from the head of vector $\vb{B}_{q}$ (and $\vb{H}_{q}$) to be counter­
@@ -145,67 +145,68 @@ When $q > 0$, the shortest rotation from vector $\vb{v}$ to vector $\vb{r}$ is s
 \section{Simplest Cases of Magnetic Fields Set Up by Direct Currents}
 \label{sec-23.3}
 
-\subsection{}\label{23.3.1} Making use of the Biot-Savart-Laplace law we can deter­ mine the characteristics (B and H) of a magnetic field set up by
-M
-an electric current flowing in a conductor of finite dimensions and arbitrary shape. According to the principle of superposition of fields \ssect{15.2.2} the magnetic induction B at an arbitrary point of a magnetic field of a conductor carrying the current I is equal to
-B
-B -5dB
-where dB is the magnetic induction
-of the field set up by an element
-of the conductor with the length dl. Integration is carried out over the
-whole length L of the conductor.
+\subsection{}\label{23.3.1} Making use of the Biot-Savart-Laplace law we can determine the characteristics ($\vb{B}$ and $\vb{H}$) of a magnetic field set up by an electric current flowing in a conductor of finite dimensions and arbitrary shape. According to the principle of superposition of fields \ssect{15.2.2} the magnetic induction $\vb{B}$ at an arbitrary point of a magnetic field of a conductor carrying the current $I$ is equal to
+\begin{equation*}%
+\vb{B} = \int_{L} \dd \vb{B},
+\end{equation*}
+where $\dd \vb{B}$ is the magnetic induction of the field set up by an element
+of the conductor with the length $\dd l$. Integration is carried out over the
+whole length $L$ of the conductor.
 
-\subsection{}\label{23.3.2} A straight conductor MN car­ rying the current I sets up a mag-
-//
-l Fig. 23.4
-netic field with induction B and strength H at an arbitrary point A equal to*
-B= —(cosCD-.—costp2), H=  --(inSIunits), r0   i0[ir
-IIB
-B——ur— (coscpj—coscp2), H=— (inGaussianunits),
-c r0 Mr
-where rQis the distance from point A to the conductor, q)x and cp2are the angles formed by the radius vectors from point A to the beginning and end of the conductor (Fig. 23.4), ir is the
-* It is assumed in all the examples of Sect. \ssect{23.3} that the medium is homogeneous, isotropic and completely fills all the space in which the magnetic field exists.
-relative magnetic permeability of the medium, and p0is the magnetic constant in SI units (Appendix II).
-For an infinitely long conductor (q)x = 0 and (p2 = xt)
-B= HoHr 2/ B (in SI units), 4n HoHr
-Z?= — Ur — , H = - ~ (in Gaussian units). c r0 Hr
+\subsection{}\label{23.3.2} A \redem{straight conductor} $MN$ carrying the current I sets up a magnetic field with induction B and strength H at an arbitrary point A equal to\sidenote{It is assumed in all the examples of \ssect{23.3} that the medium is homogeneous, isotropic and completely fills all the space in which the magnetic field exists.}
+\begin{alignat*}{3}%
+B & = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{I}{r_{0}} \,(\cos \varphi_{1} - \cos \varphi_{2}),\,\,  && H  = \frac{B}{\mu_{0} \mu_{r}} \,\,&& \text{(in SI units),} \\
+B & =  \frac{1}{c}\, \frac{I}{r_{0}}, (\cos \varphi_{1} - \cos \varphi_{2}),\,\,  && H = \frac{B}{\mu_{r}} \,\,&& \text{(in Gaussian units.)}
+\end{alignat*}
+where $r_{0}$ is the distance from point $A$ to the conductor, $\varphi_{1}$ and $\varphi_{2}$ are the angles formed by the radius vectors from point $A$ to the beginning and end of the conductor (\figr{fig-23-04}), $\mu_{r}$ is the relative magnetic permeability of the medium, and $\mu_{0}$ is the magnetic constant in SI units (Appendix~II).
+\begin{marginfigure}[-2cm]
+\centering
+\includegraphics[width=0.6\textwidth]{figs/ch-23/fig-23-04.pdf}
+\sidecaption{Magnetic field by a current carrying conductor.\label{fig-23-04}}
+\end{marginfigure}
+For an infinitely long conductor $\varphi_{1} = 0$ and ($\varphi_{2} = \pi$)
+\begin{alignat*}{3}%
+B & = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{I}{r_{0}} \,(\cos \varphi_{1} - \cos \varphi_{2}),  \,\, && H  = \frac{B}{\mu_{0} \mu_{r}} \,\, &&  \text{(in SI units),} \\
+B & =  \frac{1}{c}\, \frac{I}{r_{0}}, (\cos \varphi_{1} - \cos \varphi_{2}), \,\, &&  H = \frac{B}{\mu_{r}} \,\, &&  \text{(in Gaussian units.)}
+\end{alignat*}
 
-\subsection{}\label{23.3.3} For the magnetic field at the centre of a rectangular turn (loop) carrying the current I
-Wr 81Ya2+b2
-H ——-— (in SI units), HoHr
-H = — (in Gaussian units), Hr
-4tt
-ab
-8
-ab
-where a and b are the sides of the rectangle.
+\subsection{}\label{23.3.3} For the magnetic field at the centre of a \redem{rectangular turn (loop) carrying the current} $I$
+\begin{alignat*}{3}%
+B & = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{8I\sqrt{a^{2}+b^{2}}}{ab},  \,\, && H  = \frac{B}{\mu_{0} \mu_{r}} \,\, &&  \text{(in SI units),} \\
+B & =  \frac{1}{c}\, \mu_{r} \, \frac{8I\sqrt{a^{2}+b^{2}}}{ab}, \,\, &&  H = \frac{B}{\mu_{r}} \,\, &&  \text{(in Gaussian units.)}
+\end{alignat*}
+where $a$ and $b$ are the sides of the rectangle.
 
-\subsection{}\label{23.3.4} The magnetic moment pm of a closed loop of arbitrary shape, carrying the current /, is equal to
-pm = / j n dS, (in SI units), s
-pm= - -/ J ndS (in Gaussian units), s
-where n is a unit vector of the outward normal to element dS of the surface S , bounded by the current-carrying loop. In the case of a flat loop, surface S is plane and all the normals have the same direction. Hence
-pm= ISn, pm= IS (in SI units),
-11
-pm= —ISn, pm= —IS (in Gaussian units).
-99
-Vector pm is directed so that from its head the current in the circuit is seen to be flowing counterclockwise (Fig. 23.5).
+\subsection{}\label{23.3.4} The \redem{magnetic moment} $\vb{p}_{m}$ of a closed loop of arbitrary shape, carrying the current $I$, is equal to
+\begin{align*}%
+\vb{p}_{m} & = I \int_{S} \vb{n}\, \dd S && \text{(in SI units),} \\
+\vb{p}_{m} & = \frac{I}{c}\int_{S} \vb{n}\, \dd S  && \text{(in Gaussian units.)}
+\end{align*}
+where $\vb{n}$ is a unit vector of the outward normal to element $\dd S$ of the surface $S$, bounded by the current-carrying loop. In the case of a flat loop, surface $S$ is plane and all the normals have the same direction. Hence
+\begin{alignat*}{3}%
+\vb{p}_{m} & = I S \vb{n},  \,\, && p_{m}  = IS \,\, &&  \text{(in SI units),} \\
+\vb{p}_{m} & =  \frac{1}{c} I S \vb{n}, \,\, &&  p_{m} = \frac{1}{c}IS \,\, &&  \text{(in Gaussian units.)}
+\end{alignat*}
+Vector $\vb{p}_{m}$ is directed so that from its head the current in the circuit is seen to be flowing counterclockwise (\figr{fig-23-05}).
+\begin{marginfigure}[-2cm]
+\centering
+\includegraphics[width=0.6\textwidth]{figs/ch-23/fig-23-05.pdf}
+\sidecaption{Orientation of magnetic moment vector.\label{fig-23-05}}
+\end{marginfigure}
 
+\subsection{}\label{23.3.5} The magnetic field set up by a circular turn, or loop, carrying the current $I$, at an arbitrary point $A$ on the axis of the turn (loop) (\figr{fig-23-06}), is specified by
+\begin{alignat*}{3}%
+\vb{B} & = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{2\vb{p}_{m}}{(R^{2}+h^{2})^{3/2}},  \,\, && \vb{H}  = \frac{\vb{B}}{\mu_{0} \mu_{r}} \,\, &&  \text{(in SI units),} \\
+\vb{B} & =  \mu_{r}\, \frac{2\vb{p}_{m}}{(R^{2}+h^{2})^{3/2}},  \,\, && \vb{H}  = \frac{\vb{B}}{\mu_{r}}\,\, &&  \text{(in Gaussian units.)}
+\end{alignat*}
+Here $\vb{p}_{m}$ is the magnetic moment of a current-carrying turn, or loop, \ssect{23.3.4}.
 
-\subsection{}\label{23.3.5} The magnetic field set up by a circular turn, or loop, carrying the current /, at an arbitrary point A on the axis of the turn (loop) (Fig. 23.6), is specified by
-B=.PqHt-   , H= B (inSIunits),
-4ri (R2+ h2)3/2
-2d b
-|ix0|Ltr v '
-B= (Xr(fl2+T2)3/2’ H="fl7 (in Gaussian units)-
-Here pm is the magnetic moment of a current-carrying turn, or loop, \ssect{23.3.4}.
-
-The magnitudes of vectors B and H equal
-i0ir IR 2   x0xrIS
-2 (/?2+fr2)3/2 2JX(i?2+ 2)3/2’
-H = ----- (in SI units), PoPr
-1 2nIR2 1 2IS c r(i?2+*2)3/2—c  (fl2+/i2)3/2
-If = — (in Gaussian units), Pr
-whore h is the distance from point A to the centre of the turn (loop), R is the radius and S is the area of the turn.
+The magnitudes of vectors $\vb{B}$ and $\vb{H}$ equal
+\begin{alignat*}{3}%
+B & = \frac{\mu_{0} \mu_{r}}{2}\, \frac{IR^{2}}{(R^{2}+h^{2})^{3/2}} = \frac{\mu_{0} \mu_{r}IS}{2 \pi (R^{2}+h^{2})^{3/2}},  \,\, && H  = \frac{B}{\mu_{0} \mu_{r}} \\ &  \text{(in SI units),} \\
+B & =  \frac{1}{c} \mu_{r}\, \frac{2 \pi IR^{2}}{(R^{2}+h^{2})^{3/2}} = \frac{1}{c} \mu_{r} \frac{2IS}{(R^{2}+h^{2})^{3/2}},  \,\, && H  = \frac{B}{\mu_{r}}\\ &  \text{(in Gaussian units.)}
+\end{alignat*}
+where $h$ is the distance from point $A$ to the centre of the turn (loop), $R$ is the radius and $S$ is the area of the turn.
 
 \subsection{}\label{23.3.6} The magnetic field at the centre of a circular turn, or loop, has the characteristics \ssect{23.3.5}:
 fWr 2pm 4n i?3
