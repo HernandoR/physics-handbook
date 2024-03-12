@@ -118,32 +118,47 @@ If this motion occurs in a nonuniform magnetic field \ssect{23.1.3} whose magnet
 
 \section{Hall Effect}\label{sec-24.2}
 
-\subsection{}\label{24.2.1} The Hall effect refers to the setting up of a transverse electric field and potential difference in a current-carrying metal or semiconductor placed in a magnetic field which is perpendicular to the direction of the current density vector \ssect{20.2.3}. The Hall effect results from the deflection of electrons moving in a magnetic field by the action of the Lorentz force \ssect{24.1.1}.
+\begin{marginfigure}%[1cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-24/fig-24-04.pdf}
+\sidecaption{Path of a charged particle is a helix if the velocity vector $\vb{v}$ of a charged particle makes the angle $\alpha$ with the direction of vector $\vb{B}$ of a uniform magnetic field.\label{fig-24-04}}
+\end{marginfigure}
 
-Shown in Fig. 24.4a are the directions of the magnetic induction B, current density j, electron velocity v, Lorentz force Fl and the signs of the charges accumulated on the opposite, upper and lower, sides in the case of a metal or electron (/z-type) semiconductor \ssect{41.10.2}. In a hole (p-type) semiconductor \ssect{41.10.3} the signs of the charges on the surfaces are the opposite of those
-Fig. 24.4
-in the preceding case (Fig. 24.46). The charges are deflected by the magnetic field until the action of the force in the transverse electric field counterbalances the Lorentz force.
+
+\subsection{}\label{24.2.1} The \redem{Hall effect} refers to the setting up of a transverse electric field and potential difference in a current-carrying metal or semiconductor placed in a magnetic field which is perpendicular to the direction of the current density vector \ssect{20.2.3}. The Hall effect results from the deflection of electrons moving in a magnetic field by the action of the Lorentz force \ssect{24.1.1}.
+
+
+
+Shown in \figr{fig-24-04}~\drkgry{(a)} are the directions of the magnetic induction $\vb{B}$, current density $\vb{j}$, electron velocity $\vb{v}$, Lorentz force $\vb{F}_{L}$ and the signs of the charges accumulated on the opposite, upper and lower, sides in the case of a metal or electron ($n$-type) semiconductor \ssect{41.10.2}. In a hole ($p$-type) semiconductor \ssect{41.10.3} the signs of the charges on the surfaces are the opposite of those in the preceding case (\figr{fig-24-04}~\drkgry{(b)}). The charges are deflected by the magnetic field until the action of the force in the transverse electric field counterbalances the Lorentz force.
 
 \subsection{}\label{24.2.2} The equilibrium potential difference in the Hall effect is
-IB
-where I is the current, B is the magnetic field induction \ssect{23.1.2}, d is the linear dimension of the metal or semiconductor in the direction of vector B, and Ri is the Hall coefficient.
-The strength Eh of the transverse electric field in the Hall effect is
-Eh = Rn [Bj],
-where j is the current density vector.
+\begin{equation*}%
+\Delta V = V_{1} - V_{2} = R_{H} \, \frac{IB}{d},
+\end{equation*}
+where $I$ is the current, $B$ is the magnetic field induction \ssect{23.1.2}, $d$ is the linear dimension of the metal or semiconductor in the direction of vector $\vb{B}$, and $R_{H}$ is the Hall coefficient.
 
-\subsection{}\label{24.2.3} For metals and extrinsic semiconductors (41.10.5), having a single kind of conduction, the Hall coefficient equals
-A
-i?H= ---- (in SI units),
-n0q
-i?H= ---- (in Gaussian units), cn0q
-where c is the electrodynamic constant \ssect{23.2.2}, q and n0 are the charge and concentration of the current carriers, and A   1 is a dimensionless factor depending upon how the current- carrier velocities are statistically distributed. The sign of the Hall coefficient coincides with that of the current-carrier charge q. A measurement of the Hall coefficient of a semiconductor indicates its type of electrical conduction. For an rc-type semi­ conductor(electronconduction)\ssect{41.10.2},q= —eandRe.< 0; for a p-type semiconductor (hole conduction) \ssect{41.10.3}, q = e and /?h > 0.
-If both types of electrical conduction are observed in a semi­ conductor, the predominant conduction can be determined from the sign of the Hall coefficient. The formula for Rh given in
+The strength $\vb{E}_{H}$ of the transverse electric field in the Hall effect is
+\begin{equation*}%
+\vb{E}_{H} = R_{H} \, [\vb{B} \cross \vb{j}],
+\end{equation*}
+where $\vb{j}$ is the current density vector.
+
+\subsection{}\label{24.2.3} For metals and extrinsic semiconductors \ssect{41.10.5}, having a single kind of conduction, the Hall coefficient equals
+\begin{align*}%
+R_{H} & = \frac{A }{n_{0}q} &&  \text{(in SI units),} \\
+R_{H} & = \frac{A }{cn_{0}q} &&  \text{(in Gaussian units),}
+\end{align*}
+where $c$ is the electrodynamic constant \ssect{23.2.2}, $q$ and $n_{0}$ are the charge and concentration of the current carriers, and $A \approx 1$ is a dimensionless factor depending upon how the current-carrier velocities are statistically distributed. The sign of the Hall coefficient coincides with that of the current-carrier charge $q$. A measurement of the Hall coefficient of a semiconductor indicates its type of electrical conduction. For an $n$-type semi­-conductor (electron conduction) \ssect{41.10.2}, $q= -e$ and $R_{H}< 0$; for a $p$-type semiconductor (hole conduction) \ssect{41.10.3}, $q = e$ and $R_{H} > 0$.
+
+If both types of electrical conduction are observed in a semi-conductor, the predominant conduction can be determined from the sign of the Hall coefficient. The formula for $R_{H}$ given in
 this subsection is inapplicable in such cases.
 
-\subsection{}\label{24.2.4} Provided the type of electrical conduction is known, a measurement of the Hall coefficient enables the concentra­ tion n0 of the current carriers to be determined. For example, the concentration of conduction electrons equals the concen­ tration of atoms in monovalent metals. This means that there is one free electron per atom in the electron gas \ssect{20.3.1} of the metal. A known concentration of current carriers enables the mean free path (X) of the electron in the metal to be assessed. From the formula of \ssect{20.3.4},
-2xm (u) nQe2
-we find that (X)   10“8m, which exceeds the lattice constants of the metal by two orders of magnitude (see also Sects. \ssect{20.3.7} and \ssect{41.5.5}).
-(X)
+\subsection{}\label{24.2.4} Provided the type of electrical conduction is known, a measurement of the Hall coefficient enables the concentration $n_{0}$ of the current carriers to be determined. For example, the concentration of conduction electrons equals the concentration of atoms in monovalent metals. This means that there is one free electron per atom in the electron gas \ssect{20.3.1} of the metal. A known concentration of current carriers enables the mean free path $\expval{\, \lambda \,}$ of the electron in the metal to be assessed. From the formula of \ssect{20.3.4},
+\begin{equation*}%
+\expval{\, \lambda \,} = \frac{2 \varkappa m \expval{\, u \,}}{n_{0}e^{2}},
+\end{equation*}
+we find that $\expval{\, \lambda \,} \approx \SI{d-8}{\meter}$, which exceeds the lattice constants of the metal by two orders of magnitude (see also Sections \ssect{20.3.7} and \ssect{41.5.5}).
+
 
 
 
@@ -151,79 +166,94 @@ we find that (X)   10“8m, which exceeds the lattice constants of the metal by 
 Spectroscopy}
 \label{sec-24.3}
 
-\subsection{}\label{24.3.1} The charge-to-mass ratio of a particle, qlm, is a characteristic of charged particles. Experimental determination of this charge-to-mass ratio is based on measuring the deflection of the particles in electric and magnetic fields acting jointly on them. The mass of the particles is determined from the charge-to-mass
-ratio qlm and the known charge q 
+\subsection{}\label{24.3.1} The \redem{charge-to-mass} ratio of a particle, $q/m$, is a characteristic of charged particles. Experimental determination of this charge-to-mass ratio is based on measuring the deflection of the particles in electric and magnetic fields acting jointly on them. The mass of the particles is determined from the charge-to-mass ratio $q/m$ and the known charge $q$. 
 
-\subsection{}\label{24.3.2} The mass spectrum of particles is the set of their mass values. Applying mass spectrometers and mass spectrographs, special instruments used in
-mass spectrometry, the rela­
-tive concentrations of iso­
-topes of chemical elements
-\ssect{42.1.3} and their masses can
-be measured with exceptio­
-nally high accuracy.
+\subsection{}\label{24.3.2} The \redem{mass spectrum} of particles is the set of their mass values. Applying mass spectrometers and mass spectrographs, special instruments used in \redem{mass spectrometry}, the relative concentrations of isotopes of chemical elements \ssect{42.1.3} and their masses can be measured with exceptionally high accuracy.
 
-\subsection{}\label{24.3.3} In the Aston mass
-spectrograph (Fig. 24.5), which was employed to discover the isotopes  of various chemical elements, the particles are deflected in the uniform electric field of capacitor C and the magnetic field of coil Af, the fields being perpendicular to each other. The lower the velocity of the particles and the greater their charge-to-mass ratio, the more strongly they are deflected toward the capacitor plates. In a uniform
-magnetic field with the induction B directed into the drawing, the particles travel along circular arcs \ssect{24.1.6}. The higher the velocity of the particles and the lower their charge-to-mass ratio, the greater the radii of these arcs. In a magnetic field a beam of particles is split into several beams, each corresponding to a definite charge-to-mass ratio. The magnetic field focuses particles having different velocities, but the same charge-to-mass ratio, on a single point. The magnetic induction B is chosen so that the charged particles are focused on a photographic plate AD, which is perpendicular to the plane of the drawing. A series of narrow parallel lines obtained on the plate corresponds to the various values of the particle charge-to-mass ratio. In Fig. 24.5, line corresponds to particles with a higher charge- to-mass ratio, and line  2 to particles with a lower one. If
-Fig. 24.5
+\subsection{}\label{24.3.3} In the \redem{Aston mass
+spectrograph} (\figr{fig-24-05}), which was employed to discover the isotopes  of various chemical elements, the particles are deflected in the uniform electric field of capacitor $C$ and the magnetic field of coil $M$, the fields being perpendicular to each other. The lower the velocity of the particles and the greater their charge-to-mass ratio, the more strongly they are deflected toward the capacitor plates. In a uniform magnetic field with the induction $\vb{B}$ directed into the drawing, the particles travel along circular arcs \ssect{24.1.6}. The higher the velocity of the particles and the lower their charge-to-mass ratio, the greater the radii of these arcs. 
 
-the charge-to-mass ratio of the particles of line cSj is known, as well as the distance between lines and 2and the parameters of the instrument, the charge-to-mass ratio of the particles corresponding to line 2can he determined.
+\begin{marginfigure}[-2cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-24/fig-24-05.pdf}
+\sidecaption{Schematic diagram of a Aston mass
+spectrograph.\label{fig-24-05}}
+\end{marginfigure}
 
-If the parallel-plate capacitors are replaced by tubular ones and special electromagnets are used that produce a plane-parallel beam of particles entering the magnetic field, we can achieve double focusing of the particles with respect to both energy and direction. With sufficient intensity of the lines on the photo­ graphic plate, this technique ensures high precision in particle mass measurements. For instance, the masses of the ions of light-weight elements can be measured to an accuracy within 10-4 per cent.
 
-\subsection{}\label{24.3.4} The relative i concentrations of the isotopes of chemical elements in their natural mixtures are measured by instruments called mass spectrometers that electrically record the ion currents. Used in mass spectrometers are ion beams in which the kinetic energies of the ions are close in value. These are called mono­ chromatic (monoenergetic) beams and are produced by ion sources of special design. Even when they are strongly divergent and contain a great number of ions, such beams focus well in a transverse magnetic field. This raises the precision with which the concentrations of various isotopes can be measured.
+In a magnetic field a beam of particles is split into several beams, each corresponding to a definite charge-to-mass ratio. The magnetic field focuses particles having different velocities, but the same charge-to-mass ratio, on a single point. The magnetic induction $\vb{B}$ is chosen so that the charged particles are focused on a photographic plate $AD$, which is perpendicular to the plane of the drawing. A series of narrow parallel lines obtained on the plate corresponds to the various values of the particle charge-to-mass ratio. In \figr{fig-24-05}, line $\emf_{1}$ corresponds to particles with a higher charge-to-mass ratio, and line $\emf_{2}$ to particles with a lower one. If the charge-to-mass ratio of the particles of line $\emf_{1}$ is known, as well as the distance between lines $\emf_{1}$ and $\emf_{1}$ and the parameters of the instrument, the charge-to-mass ratio of the particles corresponding to line $\emf_{1}$ can be determined.
+
+If the parallel-plate capacitors are replaced by tubular ones and special electromagnets are used that produce a plane-parallel beam of particles entering the magnetic field, we can achieve \redem{double focusing} of the particles with respect to both energy and direction. With sufficient intensity of the lines on the photo­ graphic plate, this technique ensures high precision in particle mass measurements. For instance, the masses of the ions of light-weight elements can be measured to an accuracy within \num{d-4} per cent.
+
+\subsection{}\label{24.3.4} The relative concentrations of the isotopes of chemical elements in their natural mixtures are measured by instruments called \redem{mass spectrometers} that electrically record the ion currents. Used in mass spectrometers are ion beams in which the kinetic energies of the ions are close in value. These are called mono­chromatic (monoenergetic) beams and are produced by ion sources of special design. Even when they are strongly divergent and contain a great number of ions, such beams focus well in a transverse magnetic field. This raises the precision with which the concentrations of various isotopes can be measured.
 
 \section{Charged Particle Accelerators}
 \label{sec-24.4}
 
-\subsection{}\label{24.4.1} Special installations for obtaining directed beams of charged particles (electrons, protons, atomic nuclei and ions of chemical elements) having an extremely high kinetic energy, under laboratory conditions are called accelerators. According to the shape of the path of the particles and the mechanism for accelerating them, distinction is made between linear, cyclic and induction accelerators. In linear accelerators (also called Zm- acs) the paths of motion of the particles are close to straight lines; in the cyclic and induction accelerators the paths of the particles are circles or unwinding spirals.
+\subsection{}\label{24.4.1} Special installations for obtaining directed beams of charged particles (electrons, protons, atomic nuclei and ions of chemical elements) having an extremely high kinetic energy, under laboratory conditions are called \redem{accelerators}. According to the shape of the path of the particles and the mechanism for accelerating them, distinction is made between \redem{linear}, \redem{cyclic} and \redem{induction accelerators}. In linear accelerators (also called \redem{linacs}) the paths of motion of the particles are close to straight lines; in the cyclic and induction accelerators the paths of the particles are circles or unwinding spirals.
 
-\subsection{}\label{24.4.2} The energy of the accelerated particles is increased by the electric field set up in the accelerator. Depending on the type of accelerator, this field can be electrostatic \ssect{15.1.2}, induced \ssect{25.1.2} or high-frequency alternating. The principle of the betatron, based on the action of an induced electric field,
-is discussed in Sect. \ssect{27.2.3}. In a linear electrostatic accelerator, a charged particle passes only once through an accelerating electric field with a potential difference (Vx — V2). If q is the charge of the particle, the energy acquired by the particle in the accelerator \ssect{15.2.7} is equal to
-E = q(V1- P2).
-In such an accelerator the electric field is set up, for example, by a Van de Graaff high-voltage electrostatic generator, operating by the principle of multiple transfer of charges to a hollow conductor \ssect{16.4.3}.This raises
-the potential of the conductor to values limited only by the leakage of the charge from the conductor.
+\subsection{}\label{24.4.2} The energy of the accelerated particles is increased by the electric field set up in the accelerator. Depending on the type of accelerator, this field can be electrostatic \ssect{15.1.2}, induced \ssect{25.1.2} or high-frequency alternating. The principle of the betatron, based on the action of an induced electric field, is discussed in section \ssect{27.2.3}. In a \redem{linear electrostatic accelerator}, a charged particle passes only once through an accelerating electric field with a potential difference $(V_{1} - V_{2})$. If $q$ is the charge of the particle, the energy acquired by the particle in the accelerator \ssect{15.2.7} is equal to
+\begin{equation*}%
+E = q(V_{1} - V_{2}).
+\end{equation*}
+In such an accelerator the electric field is set up, for example, by a \redem{Van de Graaff} high-voltage \redem{electrostatic generator}, operating by the principle of multiple transfer of charges to a hollow conductor \ssect{16.4.3}. This raises the potential of the conductor to values limited only by the leakage of the charge from the conductor.
 
-\subsection{}\label{24.4.3} In linear resonant accelerators, the energy of the charged particles is increased by an alternating electric field of super-high frequency, which varies in synchronism with the motion of "the particles. Using this type of accelerator, electrons can be accelerated to an energy of the order of dozens of GeV over a path length of sev- eral kilometres.
-Fig. 24.6
+\subsection{}\label{24.4.3} In \redem{linear resonant accelerators}, the energy of the charged particles is increased by an alternating electric field of super-high frequency, which varies in synchronism with the motion of the particles. Using this type of accelerator, electrons can be accelerated to an energy of the order of dozens of \si{\giga\electronvolt} over a path length of several kilometres.
 
-\subsection{}\label{24.4.4} Protons, deuterons and other, heavier, charged par­ ticles are accelerated by resonant cyclic accelerators, in which a particle repeatedly passes through an electric field synchronized with its motion, increasing its energy each time. A strong trans­ verse magnetic field controls the motion of the particles and returns them periodically to the region of the accelerating electric field. The particles pass definite points of the alternating electric field approximately when the field is in the same phase (“in resonance”).
+\subsection{}\label{24.4.4} Protons, deuterons and other, heavier, charged particles are accelerated by \redem{resonant cyclic accelerators}, in which a particle repeatedly passes through an electric field synchronized with its motion, increasing its energy each time. A strong transverse magnetic field controls the motion of the particles and returns them periodically to the region of the accelerating electric field. The particles pass definite points of the alternating electric field approximately when the field is in the same phase (``in resonance'').
 
-\subsection{}\label{24.4.5} In the cyclotron, the simplest resonant cyclic accelerator, an accelerating alternating electric field is set up in the gap between the two halves (dees) N and M (Fig. 24.6) of a cylindrical box. The dees are placed in a flat closed chamber located between the poles of a strong electromagnet, whose magnetic field is perpendicular to the plane of the drawing. The alternating electric field in the gap between the dees is set up by an electric generator whose terminals are connected to electrodes m and n.
+\subsection{}\label{24.4.5} In the \redem{cyclotron}, the simplest resonant cyclic accelerator, an accelerating alternating electric field is set up in the gap between the two halves (\redem{dees}) $N$ and $M$ (\figr{fig-24-06}) of a cylindrical box. The dees are placed in a flat closed chamber located between the poles of a strong electromagnet, whose magnetic field is perpendicular to the plane of the drawing. The alternating electric field in the gap between the dees is set up by an electric generator whose terminals are connected to electrodes $m$ and $n$.
 
-\subsection{}\label{24.4.6} A particle is accelerated in the gap between the dees M and N each time it crosses this gap after describing semicircles of continuously increasing radii due to the action of the magnet­ ic field. The same time is required for each semicircle \ssect{24.1.6}. To continuously accelerate the particles it is necessary to com­ ply with the condition of synchronism (condition of “resonance”): T = T0, where T is the period of revolution of the particle in the magnetic field \ssect{24.1.6}, and is the period of oscillation of the magnetic field \ssect{28.1.2}. This condition is violated at rel­ativistic velocities u of the particle, commensurate with the velocity of light c in free space. At such high velocities, the mass m of the particle increases with the velocity \ssect{5.6.1} as does the period T \ssect{24.1.6}.
+\begin{marginfigure}%[-2cm]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/ch-24/fig-24-06.pdf}
+\sidecaption{Schematic diagram of a cyclotron.\label{fig-24-06}}
+\end{marginfigure}
 
-\subsection{}\label{24.4.7} The feasibility of accelerating charged particles trav­ elling at relativistic velocities in cyclic accelerators follows from the principle of phase stability (autophasing), which states that each deviation of the period T from the resonance value T0 \ssect{24.4.6} leads to such a change in the energy E of the particle at each acceleration that T varies in the neighborhood of T0 and, on an average, remains equal to T0. Thus
-rp  rp 2ji rti 2ji E
 
-where E = me2 \ssect{5.7.2}, m = m j V 1 — v2lc2 \ssect{5.6.1}, m0 is the rest mass \ssect{5.6.1} of the particle, and c is the velocity of light in free space; the remaining notation is the same as in Sect. \ssect{24.1.6}.
-If, for example, as a result of the increase in mass m and the period T, the particle enters the gap between the dees (Fig. 24.6) by the action of the decelerating instead of accelerating electric field, the reduction in particle velocity leads to the reduction in T and the equality T = Tg is reached again.
 
-\subsection{}\label{24.4.8} It follows from the principle of phase stability \ssect{24.4.7} that at a sufficiently slow increase in the period T0of the elec­ tric field, the period T of revolution of the particle in the mag­ netic field of the accelerator increases correspondingly. This leads to an increase in the average energy (E) of all the particles because at constant induction of the magnetic field any increase in T is possible only owing to the increase in mass as the veloc­ ity of the particles increases.
-This principle has been applied in an accelerator called the synchrocyclotron (also frequency-modulated cyclotron and phaso­ tron). This device has a constant magnetic field, whereas the frequency v0= i/T0 \ssect{28.1.2} of the alternating electric field varies slowly with the period t» T0. The radius of the orbit of the particles in the synchrocyclotron increases with their velocity \ssect{24.1.6}. This requires a corresponding increase in the size of the synchrocyclotron to reach the maximum energy of the charged particles. The synchrocyclotron built and operated in the USSR, accelerating protons to an energy of 680 MeV,
-has a magnet with poles 6 m in diameter and a mass of 7 X 103 metric tons.
+\subsection{}\label{24.4.6} A particle is accelerated in the gap between the dees $M$ and $N$ each time it crosses this gap after describing semicircles of continuously increasing radii due to the action of the magnetic field. The same time is required for each semicircle \ssect{24.1.6}. To continuously accelerate the particles it is necessary to com­ ply with the condition of synchronism (condition of ``resonance''): $T = T_{0}$, where $T$ is the period of revolution of the particle in the magnetic field \ssect{24.1.6}, and is the period of oscillation of the magnetic field \ssect{28.1.2}. This condition is violated at rel­ativistic velocities $v$ of the particle, commensurate with the velocity of light $c$ in free space. At such high velocities, the mass $m$ of the particle increases with the velocity \ssect{5.6.1} as does the period $T$ \ssect{24.1.6}.
 
-\subsection{}\label{24.4.9} The synchrotron is an accelerator in which the frequency of the accelerating electric field is constant, and the induction B of the magnetic field varies with time. The period of revolu­ tion of a particle in the magnetic field of a synchrotron \ssect{24.4.6} is
-T 2n El ec2 B ’
-where e is the charge of the electron, and E is its energy. The condition of synchronism \ssect{24.4.6} is complied with in a syn­ chrotron at Tq = const, provided that the induction of the magnetic field increases proportionally to the particle’s energy. Thus
-where T0 is the period of a high-frequency accelerating electric field.
+\subsection{}\label{24.4.7} The feasibility of accelerating charged particles travelling at relativistic velocities in cyclic accelerators follows from the \redem{principle of phase stability} (\redem{autophasing}), which states that each deviation of the period $T$ from the resonance value $T_{0}$ \ssect{24.4.6} leads to such a change in the energy $E$ of the particle at each acceleration that $T$ varies in the neighborhood of $T_{0}$ and, on an average, remains equal to $T_{0}$. Thus
+\begin{equation*}%
+T_{0} \approx T = \frac{2\pi}{B} \, \frac{m}{\abs{q}} = \frac{2 \pi}{B} \, \frac{E}{\abs{q} c^{2}},
+\end{equation*}
+where $E = mc^{2}$ \ssect{5.7.2}, $m = m_{0}/\sqrt{ 1 — v^{2}/c^{2}}$ \ssect{5.6.1}, $m_{0}$ is the rest mass \ssect{5.6.1} of the particle, and $c$ is the velocity of light in free space; the remaining notation is the same as in section \ssect{24.1.6}.
+
+If, for example, as a result of the increase in mass $m$ and the period $T$, the particle enters the gap between the dees (\figr{fig-24-06}) by the action of the decelerating instead of accelerating electric field, the reduction in particle velocity leads to the reduction in $T$ and the equality $T = T_{0}$ is reached again.
+
+\subsection{}\label{24.4.8} It follows from the principle of phase stability \ssect{24.4.7} that at a sufficiently slow increase in the period $T_{0}$ of the elec­tric field, the period $T$ of revolution of the particle in the magnetic field of the accelerator increases correspondingly. This leads to an increase in the average energy $\expval{E}$ of all the particles because at constant induction of the magnetic field any increase in $T$ is possible only owing to the increase in mass as the velocity of the particles increases.
+
+This principle has been applied in an accelerator called the \redem{synchrocyclotron} (also \redem{frequency-modulated cyclotron} and \redem{phasotron}). This device has a constant magnetic field, whereas the frequency $\nu_{0}= 1/T_{0}$ \ssect{28.1.2} of the alternating electric field varies slowly with the period $\tau \gg T_{0}$. The radius of the orbit of the particles in the synchrocyclotron increases with their velocity \ssect{24.1.6}. This requires a corresponding increase in the size of the synchrocyclotron to reach the maximum energy of the charged particles. The synchrocyclotron built and operated in the USSR, accelerating protons to an energy of \SI{680}{\mega\electronvolt},
+has a magnet with poles \SI{6}{\meter} in diameter and a mass of \SI{7d6}{\kilo\gram}.
+
+\subsection{}\label{24.4.9} The \redem{synchrotron} is an accelerator in which the frequency of the accelerating electric field is constant, and the induction $B$ of the magnetic field varies with time. The period of revolution of a particle in the magnetic field of a synchrotron \ssect{24.4.6} is
+\begin{equation*}%
+T = \frac{2\pi}{\abs{e}c^{2}} \, \frac{E}{B},
+\end{equation*}
+where $e$ is the charge of the electron, and $E$ is its energy. The condition of synchronism \ssect{24.4.6} is complied with in a synchrotron at $T_{0} = \text{const.}$, provided that the induction of the magnetic field increases proportionally to the particle’s energy. Thus
+\begin{equation*}%
+B = \frac{2\pi}{\abs{e}c^{2}} \, \frac{E}{T_{0}},
+\end{equation*}
+where $T_{0}$ is the period of a high-frequency accelerating electric field.
 
 The following condition is complied with in a synchrotron:
-m eT0= const. ~B 2ji
-The particles travel along orbits close to circular ones \ssect{24.1.6} and, consequently, a synchrotron is equipped with annular
-magnets that set up a magnetic field in a comparatively narrow region of the circular orbit.
+\begin{equation*}%
+\frac{m}{B} = \frac{eT_{0}}{2 \pi} = \text{const.}
+\end{equation*}
+The particles travel along orbits close to circular ones \ssect{24.1.6} and, consequently, a synchrotron is equipped with annular magnets that set up a magnetic field in a comparatively narrow region of the circular orbit.
 
-\subsection{}\label{24.4.10} A proton synchrotron, the most powerful accelerator of protons, combines the principles applied in the synchrocyclo­tron \ssect{24.4.8} and in the synchrotron \ssect{24.4.9}. In this accelerator, the frequency v0of the accelerating electric field is reduced and the induction B of the magnetic held is increased simultaneously and in coordination. The protons being accelerated travel along a circular orbit of constant radius. Therefore, the
-magnetic field is set up by an annular electromagnet as in the synchrotron.
+\subsection{}\label{24.4.10} A \redem{proton synchrotron}, the most powerful accelerator of protons, combines the principles applied in the synchrocyclotron \ssect{24.4.8} and in the synchrotron \ssect{24.4.9}. In this accelerator, the frequency $\nu_{0}$ of the accelerating electric field is reduced and the induction $B$ of the magnetic held is increased simultaneously and in coordination. The protons being accelerated travel along a circular orbit of constant radius. Therefore, the magnetic field is set up by an annular electromagnet as in the synchrotron.
 
-\subsection{}\label{24.4.11} The condition for simultaneous maintenance of vertical (axial) and radial stability of the design circular orbit in the synchrotron and proton synchrotron is the variation of magnet­ ic induction B near the design orbit according to the law
-D const
-t ) = - - —- - ,
-rn ’
-where r is the distance from the centre of the orbit, and n varies within the limits 0 < n < 1 (condition of weak focusing in the accelerator). With an increase in the maximum energy 2?max acquired by the particles in an accelerator having weak focus­ ing, the required mass of the electromagnet increases ap­
-proximately in proportion to  max.
+\subsection{}\label{24.4.11} The condition for simultaneous maintenance of vertical (axial) and radial stability of the design circular orbit in the synchrotron and proton synchrotron is the variation of magnetic induction $B$ near the design orbit according to the law
+\begin{equation*}%
+B = \frac{\text{const.}}{r^{n}},
+\end{equation*}
+where $r$ is the distance from the centre of the orbit, and $n$ varies within the limits $0 < n < 1$ (\redem{condition of weak focusing} in the accelerator). With an increase in the maximum energy $E_{\text{max}}$ acquired by the particles in an accelerator having weak focusing, the required mass of the electromagnet increases approximately in proportion to $E_{\text{max}}^{3}$.
 
-\subsection{}\label{24.4.12} Accelerators having strong focusing are resorted to for increasing the maximum energy 7?max of particles accelerated in synchrotrons and proton synchrotrons. In these accelerators, two kinds of sector-shaped magnets are used alternately along the almost circular orbit of particle travel. In one kind of sector the magnetic field varies according to the law of Sect. \ssect{24.4.11}, in which n is much less than zero (for example, n = — 100),
-and in the other kind 1. Sectors of the first type provide for radial focusing of the beam of particles being accelerated; sectors of the second kind, for vertical focusing. The application of strong focusing enables substantial reductions to be obtained in the overall size of the accelerator, the mass of the electromagnet and the total cost of the installation. This method is also called alternating-gradient focusing.
+\subsection{}\label{24.4.12} Accelerators having \redem{strong focusing} are resorted to for increasing the maximum energy $E_{\text{max}}$ of particles accelerated in synchrotrons and proton synchrotrons. In these accelerators, two kinds of sector-shaped magnets are used alternately along the almost circular orbit of particle travel. In one kind of sector the magnetic field varies according to the law of section \ssect{24.4.11}, in which $n$ is much less than zero (for example, $n = - 100$), and in the other kind $n \gg 1$. Sectors of the first type provide for radial focusing of the beam of particles being accelerated; sectors of the second kind, for vertical focusing. The application of strong focusing enables substantial reductions to be obtained in the overall size of the accelerator, the mass of the electromagnet and the total cost of the installation. This method is also called alternating-gradient focusing.
 
-\subsection{}\label{24.4.13} To increase the share of energy utilized by accelerated particles for various nuclear reactions \ssect{42.9.1}, the bombardment of stationary targets by high-energy particles is replaced by the colliding beam technique. It follows from the laws of conservation of energy \ssect{3.4.3} and momentum \ssect{2.7.1} that in bombarding a stationary target, the share of the kinetic energy /',’k of the incident particle, utilized in the nuclear reaction, decreases as E  is increased. When the technique of colliding beams is used, the total momentum of the particles after col­ lision is reduced and the share of their useful energy is increased. Assume, for example, that in an accelerator with colliding beams of protons the energy of the protons in each beam is equal to 20 GeV. The total momentum of two protons colliding at equal and opposing velocities equals zero. But the collision energy of such two particles reaches 50 GeV. To obtain the same colli­ sion energy in bombarding a stationary hydrogen target, a beam of protons with energy of the order of 1400 GeV is required.
+\subsection{}\label{24.4.13} To increase the share of energy utilized by accelerated particles for various nuclear reactions \ssect{42.9.1}, the bombardment of stationary targets by high-energy particles is replaced by the \redem{colliding beam technique}. It follows from the laws of conservation of energy \ssect{3.4.3} and momentum \ssect{2.7.1} that in bombarding a stationary target, the share of the kinetic energy $E_{k}$ of the incident particle, utilized in the nuclear reaction, decreases as $E_{k}$ is increased. When the technique of colliding beams is used, the total momentum of the particles after collision is reduced and the share of their useful energy is increased. Assume, for example, that in an accelerator with colliding beams of protons the energy of the protons in each beam is equal to \SI{26}{\giga\electronvolt}. The total momentum of two protons colliding at equal and opposing velocities equals zero. But the collision energy of such two particles reaches \SI{50}{\giga\electronvolt}. To obtain the same collision energy in bombarding a stationary hydrogen target, a beam of protons with energy of the order of \SI{1400}{\giga\electronvolt} is required.
+
+
+
