@@ -84,53 +84,76 @@ where $\Phi_{m}'$ and $\Phi_{m}''$ are the values of the magnetic flux through t
 \section{Phenomenon of Self-Induction}
 \label{sec-25.2}
 
-\subsection{}\label{25.2.1} Self-induction is the production of an induced electric field in a circuit as a result of the variations of current in the same circuit. The energy characteristic of the induced field is the emf of self-induction
+\subsection{}\label{25.2.1} \redem{Self-induction} is the production of an induced electric field in a circuit as a result of the variations of current in the same circuit. The energy characteristic of the induced field is the emf of self-induction $\emf_{S}$.
 
-\subsection{}\label{25.2.2} The intrinsicmagnetic field of the current in the circuit produces the magnetic flux Oms through the surface S bounded by the current-carrying loop. Thus
-(hms=  tindS,,
-S
-where Bn is the projection of the induction vector B of the mag­ netic field \ssect{23.1.2} on the normal n to the element of surface dS. The quantity <Pms is called the magnetic flux of self-induction of the loop. Making use of the Biot-Savart-Laplace law \ssect{23.2.2}, Oms can be calculated for the case in which the loop is in a nonferromagnetic medium \ssect{26.5.2}:
-J’ms= [dSI)f[dlrj„ (inSIunits), SL
-ms = -— /  dS  ——[c?l r]n (in Gaussian units), SL
+\subsection{}\label{25.2.2} The intrinsic magnetic field of the current in the circuit produces the magnetic flux Oms through the surface $S$ bounded by the current-carrying loop. Thus
+\begin{equation*}%
+\Phi_{ms} = \int_{S} B_{n} \, \dd S.
+\end{equation*}
+where $B_{n}$ is the projection of the induction vector $\vb{B}$ of the magnetic field \ssect{23.1.2} on the normal $\vu{n}$ to the element of surface $\dd S$. The quantity $\Phi_{ms}$ is called the \redem{magnetic flux of self-induction of the loop}. Making use of the Biot-Savart-Laplace law \ssect{23.2.2}, $\Phi_{ms}$ can be calculated for the case in which the loop is in a non-ferromagnetic medium \ssect{26.5.2}:
+\begin{align*}%
+\Phi_{ms} & = I \frac{\mu_{0}}{4 \pi} \int_{S} \dd S \, \oint_{L} \frac{\mu_{r}}{r^{3}} [\dd\vb{l} \cross 	\vb{r}]_{n}&& \text{(in SI units),} \\
+\Phi_{ms} & = \frac{1}{c}I \int_{S} \dd S \, \oint_{L} \frac{\mu_{r}}{r^{3}} [\dd\vb{l} \cross 	\vb{r}]_{n} &&  \text{(in Gaussian units)}, \qor \\
+\Phi_{ms} & = LI && \text{(in SI units),} \\
+\Phi_{ms} & = \frac{1}{c}LI &&  \text{(in Gaussian units)},
+\end{align*}
+where $L$ is called the \redem{self-inductance} of the loop and is determined by the formulas
+\begin{align*}%
+L & = \frac{\mu_{0}}{4 \pi} \int_{S} \dd S \, \oint_{L} \frac{\mu_{r}}{r^{3}} [\dd\vb{l} \cross 	\vb{r}]_{n}&& \text{(in SI units),} \\
+L & = \int_{S} \dd S \, \oint_{L} \frac{\mu_{r}}{r^{3}} [\dd\vb{l} \cross 	\vb{r}]_{n} &&  \text{(in Gaussian units).}
+\end{align*}
+Here $\mu_{0}$ is the magnetic constant in SI units \ssect{23.2.2}, $\mu_{r}$ is the relative magnetic permeability of the medium, $\vb{r}$ is the radius vector from element $\dd \vb{l}$ of the loop to element $\dd S$ of surface $S$, bounded by the loop, and subscript $n$ indicates the projection on the normal to the element $\dd S$.
 
-or
- ms= LI (in SI units),
-1
-Oms= —LI (in Gaussian units), c
-where L is called the self-inductance of the loop and is deter­ mined by the formulas
-L =  d S () — [ i l r ] n ( i n S I u n i t s ) , 5? L
-L= dS()—[dr]n(inGaussianunits). SL
-Here p0is the magnetic constant in SI units \ssect{23.2.2}, fxr is the relative magnetic permeability of the medium, r is the radius vector from element dl of the loop to element dS of surface S, bounded by the loop, and subscript n indicates the projection on the normal to the element dS.
-
-\subsection{}\label{25.2.3} The self-inductance L of the loop is numerically equal to the self-induction flux at a current of I = 1 A (in SI units) or I = c (in Gaussian units). Self-inductance L depends only upon the geometric shape and dimensions of the loop, as well as on the magnetic properties of the medium it is located in. The self-inductance of a sufficiently long solenoid \ssect{23.4.8} is
-L= v-mS=|j0!1[.re2I/(inSIunits),
-L =  —4jt|xrre3F (in Gaussian units).
-where I and S are the length and cross-sectional area of the so­ lenoid, N is the total number of turns, n = N/l is the number of turns per unit length, and V = SI is the volume of the so­ lenoid.
+\subsection{}\label{25.2.3} The self-inductance $L$ of the loop is numerically equal to the self-induction flux at a current of $I = \SI{1}{\ampere}$ (in SI units) or $I = c$ (in Gaussian units). Self-inductance $L$ depends only upon the geometric shape and dimensions of the loop, as well as on the magnetic properties of the medium it is located in. The self-inductance of a sufficiently long solenoid \ssect{23.4.8} is
+\begin{align*}%
+L & = \frac{\mu_{0}\mu_{r}N^{2}S}{l}= \mu_{0}\mu_{r}n^{2}V&& \text{(in SI units),} \\
+L & = \frac{4 \pi \mu_{r}N^{2}S}{l}= 4 \pi\mu_{r}n^{2}V &&  \text{(in Gaussian units),}
+\end{align*}
+where $l$ and $S$ are the length and cross-sectional area of the solenoid, $N$ is the total number of turns, $n = N/l$ is the number of turns per unit length, and $V = Sl$ is the volume of the solenoid.
 
 \subsection{}\label{25.2.4} The expression for the emf of self-induction follows from Faraday’s law \ssect{25.1.2}:
-« s=-T=F(i/)(inSIunits),
-'Ss=---- = — ---(LI) (in Gaussian units).
-For a rigid (undeformable) loop in a nonferromagnetic medium (26.5.2) L = const. Hence
-rtT
-—-L-jj- (inSIunits),
-L dl
-<sP= ---c2~df Gaussian units).
+\begin{align*}%
+\emf_{S} & = - \dv{\Phi_{ms}}{t} = - \dv{t} (LI)&& \text{(in SI units),} \\
+\emf_{S} & = - \frac{1}{c} \,\dv{\Phi_{ms}}{t} = - \frac{1}{c^{2}}\dv{t} (LI)&&  \text{(in Gaussian units).}
+\end{align*}
+For a rigid (undeformable) loop in a non-ferromagnetic medium \ssect{26.5.2} $L = \text{const.}$ Hence
+\begin{align*}%
+\emf_{S} & = - L \dv{I}{t} && \text{(in SI units),} \\
+\emf_{S} & = - \frac{L}{c^{2}} \dv{I}{t} &&  \text{(in Gaussian units).}
+\end{align*}
 
-\subsection{}\label{25.2.5} The electromotive force of self-induction causes a self-induction current to flow in the loop. According to the Lenz
-Fig. 25.3 Fig. 25.4
-law \ssect{25.1.4}, this current counteracts the change in the main current in the circuit, impeding its increase or decrease. The self-inductance of the loop \ssect{25.2.3} is a measure of its inertia to changes of the current.
+\subsection{}\label{25.2.5} The electromotive force of self-induction causes a \redem{self-induction current} to flow in the loop. According to the Lenz law \ssect{25.1.4}, this current counteracts the change in the main current in the circuit, impeding its increase or decrease. The self-inductance of the loop \ssect{25.2.3} is a measure of its inertia to changes of the current.
 
-\subsection{}\label{25.2.6} The law for the change of the current in closing and open­ ing a circuit, i.e. with a nonsteady state in the circuit, is
-/=v -Ri/t+ f a-«-Bn
-where /0 is the current at the initial instant of time (f = 0), R is the electrical resistance of the circuit, L is its self-induc­ tance, and  is the algebraic sum of the emf’s of the sources of electrical energy connected into the circuit \ssect{21.2.2}.
+\subsection{}\label{25.2.6} The law for the change of the current in closing and opening a circuit, i.e. with a non-steady state in the circuit, is
+\begin{equation*}%
+I = I_{0} \exp \left( -\frac{Rt}{L}\right) + \frac{\emf}{R} \, \left(1 - \exp\left(-\frac{Rt}{L}  \right) \right)
+\end{equation*}
+where $I_{0}$ is the current at the initial instant of time ($t = 0$), $R$ is the electrical resistance of the circuit, $L$ is its self-inductance, and  is the algebraic sum of the emf’s of the sources of electrical energy connected into the circuit \ssect{21.2.2}.
+\begin{marginfigure}[-3cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-25/fig-25-03.pdf}
+\sidecaption{Self induced current as a function of time when it is switched on.\label{fig-25-03}}
+\end{marginfigure}
 
-When the source of emf is switched in there is no initial current in the circuit (/0= 0):
-/=-| (i- e-R).
-The current in the circuit increases from zero to the value lR, corresponding to that of the constant current. The higher the
-Sw
-ratio R/L (Fig. 25.3), the more rapidly the current increases. When the source of emf is switched off,  — 0:
-I= I0e-Rt/L.
-The current decreases exponentially from the initial value /0. The higher the ratio R/L, the more rapidly the current decreases (Fig. 25.4).
+
+
+When the source of emf is switched in there is no initial current in the circuit $(I_{0}= 0)$:
+\begin{equation*}%
+I =  \frac{\emf}{R} \, \left(1 - \exp\left(-\frac{Rt}{L}  \right) \right)
+\end{equation*}
+The current in the circuit increases from zero to the value $\emf/R$, corresponding to that of the constant current. The higher the
+ratio $R/L$ (\figr{fig-25-03}), the more rapidly the current increases. When the source of emf is switched off, $\emf = 0$:
+\begin{equation*}%
+I =  I_{0}\, \left(1 - \exp\left(-\frac{Rt}{L}  \right) \right)
+\end{equation*}
+The current decreases exponentially from the initial value $I_{0}$. The higher the ratio $R/L$, the more rapidly the current decreases (\figr{fig-25-04}).
+
+
+\begin{marginfigure}[-4cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-25/fig-25-04.pdf}
+\sidecaption{Self induced current as a function of time when it is switched off.\label{fig-25-04}}
+\end{marginfigure}
 
 \section{Mutual Induction}
 \label{sec-25.3}
