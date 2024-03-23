@@ -126,7 +126,7 @@ For a rigid (undeformable) loop in a non-ferromagnetic medium \ssect{26.5.2} $L 
 
 \subsection{}\label{25.2.6} The law for the change of the current in closing and opening a circuit, i.e. with a non-steady state in the circuit, is
 \begin{equation*}%
-I = I_{0} \exp \left( -\frac{Rt}{L}\right) + \frac{\emf}{R} \, \left(1 - \exp\left(-\frac{Rt}{L}  \right) \right)
+I = I_{0} \exp \left( -\frac{Rt}{L}\right) + \frac{\emf}{R} \, \left(1 - \exp\left(-\frac{Rt}{L}  \right) \right),
 \end{equation*}
 where $I_{0}$ is the current at the initial instant of time ($t = 0$), $R$ is the electrical resistance of the circuit, $L$ is its self-inductance, and  is the algebraic sum of the emf’s of the sources of electrical energy connected into the circuit \ssect{21.2.2}.
 \begin{marginfigure}[-3cm]
@@ -139,12 +139,12 @@ where $I_{0}$ is the current at the initial instant of time ($t = 0$), $R$ is th
 
 When the source of emf is switched in there is no initial current in the circuit $(I_{0}= 0)$:
 \begin{equation*}%
-I =  \frac{\emf}{R} \, \left(1 - \exp\left(-\frac{Rt}{L}  \right) \right)
+I =  \frac{\emf}{R} \, \left(1 - \exp\left(-\frac{Rt}{L}  \right).\right)
 \end{equation*}
 The current in the circuit increases from zero to the value $\emf/R$, corresponding to that of the constant current. The higher the
 ratio $R/L$ (\figr{fig-25-03}), the more rapidly the current increases. When the source of emf is switched off, $\emf = 0$:
 \begin{equation*}%
-I =  I_{0}\, \left(1 - \exp\left(-\frac{Rt}{L}  \right) \right)
+I =  I_{0}\, \left(1 - \exp\left(-\frac{Rt}{L}  \right) \right).
 \end{equation*}
 The current decreases exponentially from the initial value $I_{0}$. The higher the ratio $R/L$, the more rapidly the current decreases (\figr{fig-25-04}).
 
@@ -158,77 +158,96 @@ The current decreases exponentially from the initial value $I_{0}$. The higher t
 \section{Mutual Induction}
 \label{sec-25.3}
 
-\subsection{}\label{25.3.1} An emf is induced in all conductors in the vicinity of a circuit in which the current varies. This phenomenon is called mutual induction. Upon a change in the current I x in circuit 1 (Fig. 25.5), for example, an emf 2i mutual induction is in­ duced in circuit 2. It equals
-21= — (ln SI UnitS>- ---(in Gaussian units),
-where m21 is the magnetic flux through the surface bounded by the second circuit. This flux is due to the magnetic field set up by the current in the first circuit (magnetic flux of mutual induction).
+\subsection{}\label{25.3.1} An emf is induced in all conductors in the vicinity of a circuit in which the current varies. This phenomenon is called \redem{mutual induction}. Upon a change in the current $I_{1}$ in circuit $\mathit{1}$ (\figr{fig-25-05}), for example, an emf $\emf_{21}$ mutual induction is induced in circuit $\mathit{2}$. It equals
+\begin{align*}%
+\emf_{21} & = - \dv{\Phi_{m21}}{t} && \text{(in SI units),} \\
+\emf_{21} & = - \frac{1}{c} \,\dv{\Phi_{m21}}{t} &&  \text{(in Gaussian units),}
+\end{align*}
+where $\Phi_{m21}$ is the magnetic flux through the surface bounded by the second circuit. This flux is due to the magnetic field set up by the current in the first circuit (magnetic flux of mutual induction).
 
-\subsection{}\label{25.3.2} By analogy with section \ssect{25.2.2}, the magnetic flux Om21 is proportional to the current /x. Thus
-<J>m2i==Af2i/i (in SI units), 1
-<Dm21 = “ Af2i-/i (in Gaussian units),
-where M2i is called the mutual inductance of the second and first circuits. The quantity M21 depends upon the shape, di­ mensions and relative arrangement of the circuits, as well as the relative magnetic permeability of the medium surround­ ing them. The magnetic flux (Dmi2through the surface bounded by the first circuit is due to the magnetic field set up by current 12 in the second circuit. Thus
-(I)mi2=  i 22 (in SI units),
-1
-(Dm12 = — M 12T2 (in Gaussian units),
-where M12 is the mutual inductance of the first and second circuits.
-If the circuits are in a nonferromagnetic medium \ssect{26.5.2}, then M21= M12. F6r ferromagnetic media M21 and M12 are not equal and depend, in addition to the above-mentioned factors, on the currents in the two circuits and the way in which they vary.
 
-\subsection{}\label{25.3.3} The expressions for the emf of mutual induction, under the condition that M21 and M12 are both constant values, are
-jr
-21= —M2i -—- (in SI units),
-21= ----M2i ‘S 12= — M 12
-(in Gaussian units),
-(in SI units),
-A  1 2 = --- (in
-flT
-Gaussian units).
+\begin{figure}%[-4cm]
+\centering
+\includegraphics[width=\textwidth]{figs/ch-25/fig-25-05.pdf}
+\sidecaption{Mutual induction between two coils.\label{fig-25-05}}
+\end{figure}
 
+
+
+\subsection{}\label{25.3.2} By analogy with section \ssect{25.2.2}, the magnetic flux $\Phi_{m21}$ is proportional to the current $I_{1}$. Thus
+\begin{align*}%
+\Phi_{m21} & = M_{21} I_{1} && \text{(in SI units),} \\
+\Phi_{m21} & = - \frac{1}{c} \,M_{21} I_{1}&&  \text{(in Gaussian units),}
+\end{align*}
+where $M_{21}$ is called the \redem{mutual inductance} of the second and first circuits. The quantity $M_{21}$ depends upon the shape, dimensions and relative arrangement of the circuits, as well as the relative magnetic permeability of the medium surrounding them. The magnetic flux $\Phi_{m12}$ through the surface bounded by the first circuit is due to the magnetic field set up by current $I_{2}$ in the second circuit. Thus
+\begin{align*}%
+\Phi_{m12} & = M_{12} I_{2} && \text{(in SI units),} \\
+\Phi_{m12} & = - \frac{1}{c} \,M_{12} I_{2}&&  \text{(in Gaussian units),}
+\end{align*}
+where $M_{12}$ is the mutual inductance of the first and second circuits.
+
+If the circuits are in a non-ferromagnetic medium \ssect{26.5.2}, then $M_{21}= M_{12}$. or ferromagnetic media $M_{21}$ and $M_{12}$ are not equal and depend, in addition to the above-mentioned factors, on the currents in the two circuits and the way in which they vary.
+
+\subsection{}\label{25.3.3} The expressions for the emf of mutual induction, under the condition that $M_{21}$ and $M_{12}$ are both constant values, are
+\begin{align*}%
+\emf_{21} & = - M_{21}\dv{I_{1}}{t} && \text{(in SI units),} \\
+\emf_{21} & = - \frac{1}{c^{2}} \,M_{21}\dv{I_{1}}{t} &&  \text{(in Gaussian units),}\\
+\emf_{12} & = - M_{12}\dv{I_{2}}{t} && \text{(in SI units),} \\
+\emf_{12} & = - \frac{1}{c^{2}} \,M_{12}\dv{I_{2}}{t} &&  \text{(in Gaussian units).}
+\end{align*}
 An example of the application of mutual induction is the principle of the transformer which serves to raise or lower the volt­ age of alternating current.
 
 
-\section[Energy of a Magnetic Field]{Energy of a Magnetic Field Set up by an Electric Current} *
+\section[Energy of a Magnetic Field]{Energy of a Magnetic Field Set up by an Electric Current}\sidenote{It is assumed in this section that the conductors carrying currents are in a non-ferromagnetic, homogeneous and isotropic medium.}
 \label{sec-25.4}
 
-\subsection{}\label{25.4.1} To produce an electric current in a closed circuit (or loop) and to increase this current from zero to I it is necessary to do work W to overcome the emf of self-induction that impedes the increase in current \ssect{25.2.6}. Thus
-W=-~ =~ (inSIunits),
-W=-t = —L (in Gaussian units),
-where Oms is the magnetic flux of self-induction of the loop \ssect{25.2.2} and L is the self-inductance of the loop \ssect{25.2.2}. According to the energy conservation law, W determines the intrinsic energy Em of current I in a circuit. Thus
-LI2
-Z?m= — (in SI units),
-(in Gaussian units).
+\subsection{}\label{25.4.1} To produce an electric current in a closed circuit (or loop) and to increase this current from zero to $I$ it is necessary to do work $W$ to overcome the emf of self-induction that impedes the increase in current \ssect{25.2.6}. Thus
+\begin{align*}%
+W & = \frac{\Phi_{ms}I}{2} = \frac{LI^{2}}{2} && \text{(in SI units),} \\
+W &  = \frac{1}{c} \frac{\Phi_{ms}I}{2} = \frac{1}{c^{2}}\frac{LI^{2}}{2} = &&  \text{(in Gaussian units),}
+\end{align*}
+where $\Phi_{ms}$ is the magnetic flux of self-induction of the loop \ssect{25.2.2} and $L$ is the self-inductance of the loop \ssect{25.2.2}. According to the energy conservation law, $W$ determines the \redem{intrinsic energy} $E_{m}$ of current $I$ in a circuit. Thus
+\begin{align*}%
+E_{m} & =  \frac{LI^{2}}{2} && \text{(in SI units),} \\
+E_{m} &  =  \frac{1}{c^{2}}\frac{LI^{2}}{2} &&  \text{(in Gaussian units).}
+\end{align*}
 
-\subsection{}\label{25.4.2} Increasing together with the current in a circuit is the magnetic field set up by this current. Hence, the intrinsic energy of a current is dealt with as energy of this magnetic field. In a long solenoid \ssect{23.3.8}, for instance, having a uniform magnet­ ic field \ssect{23.1.2},
-1
-Em= --ii0ixrn2I2V (in SI units),
-Em= 2nn2I2V (in Gaussian units),
-* It is assumed in this section that the conductors carrying currents are in a nonferromagnetic, homogeneous and iso­ tropic medium.
+\subsection{}\label{25.4.2} Increasing together with the current in a circuit is the magnetic field set up by this current. Hence, the intrinsic energy of a current is dealt with as \redem{energy of} this \redem{magnetic field}. In a long solenoid \ssect{23.3.8}, for instance, having a uniform magnetic field \ssect{23.1.2},
+\begin{align*}%
+E_{m} & =  \frac{1}{2} \mu_{0}\mu_{r} n^{2}I^{2}V&& \text{(in SI units),} \\
+E_{m} &  =  \frac{2 \pi \mu_{r}}{c^{2}}  n^{2}I^{2}V  &&  \text{(in Gaussian units),}
+\end{align*}
+where $V$ is the volume of the solenoid, $n$ is the number of turns per unit length, $\mu_{0}$ is the magnetic constant \ssect{23.2.2}, and $\mu_{r}$ is the relative permeability of the medium.
 
-where V is the volume of the solenoid, n is the number of turns per unit length, j l0i is the magnetic constant \ssect{23.2.2}, and p,r is the relative permeability of the medium.
-
-\subsection{}\label{25.4.3} The volume energy density Em of a magnetic field is the energy per unit volume of the field. Thus
-d dEm m dV*
-For a uniform magnetic field \ssect{23.1.3}, Em = Em/V.
+\subsection{}\label{25.4.3} The \redem{volume energy density} $E_{m}^{d}$ of a magnetic field is the energy per unit volume of the field. Thus
+\begin{equation*}%
+E_{m}^{d} = \dv{E_{m}}{V}.
+\end{equation*}
+For a uniform magnetic field \ssect{23.1.3}, $E_{m}^{d} = E_{m}/V$.
 The volume energy density of any, including a nonuniform magnetic field, is expressed by the formula
-<= -|BH=-MirIP=2- (inSIunits),
-nd BH iTm 1 B* „
-EL= —— = —— =-5------(in Gaussian units).
-m 8n 8ji 8n p,r v J
-Here B and H are'the magnitudes of the vectors of magnetic induction \ssect{23.1.2} and strength \ssect{23.2.3} at the point being considered in the magnetic field. The remaining notation is defined in Sect. \ssect{25.4.2}.
+\begin{align*}%
+E_{m}^{d} & =  \frac{1}{2} BH = \frac{1}{2} \mu_{0}\mu_{r}  H^{2} = \frac{1}{2} \frac{B^{2}}{\mu_{0}\mu_{r} }&& \text{(in SI units),} \\
+E_{m}^{d} & =  \frac{BH}{8\pi}  = \frac{\mu_{r}  H^{2}}{8 \pi} = \frac{1}{8 \pi} \frac{B^{2}}{\mu_{r} }&&  \text{(in Gaussian units).}
+\end{align*}Here $B$ and $H$ are the magnitudes of the vectors of magnetic induction \ssect{23.1.2} and strength \ssect{23.2.3} at the point being considered in the magnetic field. The remaining notation is defined in Section \ssect{25.4.2}.
 
-\subsection{}\label{25.4.4} The energy of a magnetic field, localized in the volume V is
-Em— j dV (in SI units),
-V
-Em=  dV (in Gaussian units). v
-
-\subsection{}\label{25.4.5} If the magnetic field is set up by an arbitrary system of n circuits, or loops, with the currents 71? /2, /3, . . ., I n, the energy of the field can be expressed by the formula of Sect. \ssect{25.4.4}, in which B and H are understood to be the magnitudes of vectors B and H of the resultant magnetic field, in accordance
- 334
-with the principle of superposition of fields \ssect{15.2.2}. Moreover, the energy of the magnetic field in this case is
-n
-hih
-where Omh is the total magnetic flux linked to the Tcth loop \ssect{23.6.5}. In calculating this flux, the normal nk to the surface bounded by the loop is such that from the head of vector nk the current is seen to be counterclockwise. The magnetic flux
-equals
-mk—msh+ ®mmhi
-where ® msfc is the magnetic flux of self-induction of the fcth loop \ssect{25.2.2} and Ommft is the magnetic flux of its mutual in­ duction, produced by all the other loops carrying current \ssect{25.3.1}. Hence the energy Em of the magnetic field is equal to
-k=i i=[(l=£k)
-The first term is the sum of the intrinsic energies of all the cur­ rents \ssect{25.4.1}. The second term is called the mutual energy of the currents. Here Mki is the mutual inductance of the Zcth and Zth loops, or circuits, \ssect{25.3.2} with the currents and 11.
+\subsection{}\label{25.4.4} The energy $E_{m}$ of a magnetic field, localized in the volume $V$ is
+\begin{align*}%
+E_{m} & =  \int_{V} \frac{BH}{2}\, \dd V&& \text{(in SI units),} \\
+E_{m} &  = \int_{V} \frac{BH}{8\pi}\, \dd V &&  \text{(in Gaussian units).}
+\end{align*}
+\subsection{}\label{25.4.5} If the magnetic field is set up by an arbitrary system of n circuits, or loops, with the currents $I_{1}, \, I_{2}, \, I_{3}, \ldots{}, I_{n}$, the energy of the field can be expressed by the formula of Section \ssect{25.4.4}, in which $B$ and $H$ are understood to be the magnitudes of vectors $\vb{B}$ and $\vb{H}$ of the resultant magnetic field, in accordance with the principle of superposition of fields \ssect{15.2.2}. Moreover, the energy of the magnetic field in this case is
+\begin{equation*}%
+E_{m} = \sum_{k=1}^{n} \frac{\Phi_{mk}I_{k}}{2},
+\end{equation*}
+where $\Phi_{mk}$ is the total magnetic flux linked to the $k$-th loop \ssect{23.6.5}. In calculating this flux, the normal $\vu{n}_{k}$ to the surface bounded by the loop is such that from the head of vector $\vu{n}_{k}$ the current is seen to be counterclockwise. The magnetic flux $\Phi_{mk}$ equals
+\begin{equation*}%
+\Phi_{mk} = \Phi_{msk} + \Phi_{mmk},
+\end{equation*}
+where $\Phi_{msk}$ is the magnetic flux of self-induction of the $k$-th loop \ssect{25.2.2} and $\Phi_{mmk}$ is the magnetic flux of its mutual induction, produced by all the other loops carrying current \ssect{25.3.1}. Hence the energy $E_{m}$ of the magnetic field is equal to
+\begin{align*}%
+E_{m} & =  \sum_{k=1}^{n} \frac{L_{k}I_{k}}{2} + \frac{1}{2} \sum_{k=1}^{n}\sum_{l=1(l \neq k)}^{n} M_{kl} I_{k}I_{l}&& \text{(in SI units),} \\
+E_{m} &  =\frac{1}{c^{2}} \, \sum_{k=1}^{n} \frac{L_{k}I_{k}}{2} + \frac{1}{2c^{2}} \sum_{k=1}^{n}\sum_{l=1(l \neq k)}^{n} M_{kl} I_{k}I_{l} &&  \text{(in Gaussian units).}
+\end{align*}
+The first term is the sum of the intrinsic energies of all the cur­ rents \ssect{25.4.1}. The second term is called the \redem{mutual energy of the currents}. Here $M_{kl}$ is the mutual inductance of the $k$-th and $l$-th loops, or circuits, \ssect{25.3.2} with the currents $I_{k}$ and $I_{l}$.
 
 
