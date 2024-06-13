@@ -1,0 +1,291 @@
+% !TEX root = handbook-physics.tex
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+
+
+
+
+
+\chapter{Magnetic Materials In A Magnetic Field}
+\label{ch-26}
+
+\section{Magnetic Moments of Electrons and Atoms}
+\label{sec-26.1}
+
+
+\subsection{}\label{26.1.1} \redem{Magnetic materials} are all substances capable of acquiring magnetic properties, i.e. of being magnetized, in an external magnetic field. This means that they can set up their own magnetic field. The magnetic properties of substances are determined by the magnetic properties of their electrons and atoms.\sidenote{The magnetic properties of atomic nuclei are dealt with in \ssect{42.1.6}.} Magnetic materials are divided according to their magnetic properties into three main groups: diamagnetic \ssect{26.3.2}, para­ magnetic \ssect{26.3.5} and ferromagnetic \ssect{26.5.1} materials. 
+
+\subsection{}\label{26.1.2} The motion of an electron along its orbit in an atom is equivalent to a certain closed loop carrying a current (\redem{orbital current}). According to \ssect{23.3.4}, the \redem{orbital magnetic moment} $\vb{p}_{m}$ of an electron equals 
+\begin{align*}%
+\vb{p}_{m} & = IS \vu{n} && \text{(in SI units),} \\
+\vb{p}_{m} & =  \frac{1}{c} IS \vu{n} && \text{(in Gaussian units)},
+\end{align*}
+where $I = e\nu$ is the current, $e$ is the magnitude of the charge of the electron, $nu$ is the number of revolutions of the electron along its orbit in unit time, $S$ is the area of the electron orbit, $\vu{n}$ is a unit vector of the normal to area $S$, and $c$ is the electrodynamic constant \ssect{23.2.2}.
+
+An electron moving along its orbit has an orbital angular momentum $\vb{L}_{e}$ \ssect{4.1.4}. The orbital magnetic moment is proportion­al to the orbital angular momentum:
+\begin{equation*}%
+\vb{p}_{m} = \gamma \vb{L}_{e},
+\end{equation*}
+where
+\begin{align*}%
+\gamma & = - \frac{e}{2m} && \text{(in SI units),} \\
+\gamma & =  - \frac{e}{2mc} && \text{(in Gaussian units)},
+\end{align*}
+The quantity $\gamma$ is called the \redem{gyromagnetic ratio of orbital mo­ments}.
+
+In the last formulas $m$ is the mass of the electron, $e$ is the magnitude of its charge, and $c$ is the electrodynamic constant \ssect{23.2.2}.
+
+\begin{marginfigure}%[-2cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-26/fig-26-01.pdf}
+\sidecaption{Orientation of vectors $\vb{p}_{m}$ and $\vb{L}_{e}$.\label{fig-26-01}}
+\end{marginfigure}
+
+
+Vectors $\vb{p}_{m}$ and $\vb{L}_{e}$ are opposite in direction and are perpendicular to the orbital plane of the electron (\figr{fig-26-01}). 
+
+\subsection{}\label{26.1.3} An electron has an \redem{intrinsic angular momentum} $s$, which is called the spin of the electron. The magnitude of the electron spin is
+\begin{equation*}%
+s = \frac{\sqrt{3}}{2} \, \frac{h}{2\pi} = \frac{\sqrt{3}}{2}  \hbar,
+\end{equation*}
+where $\hbar$ is Planck’s constant (Appendix~II), and $\hbar = h/2\pi$. The most important feature of electron spin is that it has only two projections on the direction of vector $\vb{B}$ of magnetic induction.\sidenote{Regardless of whether it is an external magnetic field set up, for instance, by current-carrying conductors, or the internal magnetic field of the substance itself \ssect{26.4.2}.} Thus
+\begin{equation*}%
+s_{B} = \pm \frac{\hbar}{2}.
+\end{equation*}
+
+\subsection{}\label{26.1.4} Electron spin $s$ corresponds to the spin magnetic moment $\vb{p}_{ms}$ which is proportional to the spin and opposite in direction. Thus
+\begin{equation*}%
+\vb{p}_{ms} = \gamma_{s}\,s.
+\end{equation*}
+The quantity $\gamma_{s}$ is called the \redem{gyromagnetic ratio of spin moments}:
+\begin{align*}%
+\gamma & = - \frac{e}{m} && \text{(in SI units),} \\
+\gamma & =  - \frac{e}{mc} && \text{(in Gaussian units)},
+\end{align*}
+where the notation is the same as in \ssect{26.1.2}.
+
+
+The projection of the electron spin magnetic moment on the direction of the field \ssect{26.1.3)} equals
+\begin{align*}%
+p_{msB} & = \pm \frac{e \hbar}{2m} && \text{(in SI units),} \\
+p_{msB} & =  \pm \frac{e \hbar}{2mc} && \text{(in Gaussian units)},
+\end{align*}
+where $\mu_{B}$ is called the \redem{Bohr magneton}, and is a unit for measuring magnetic moments (Appendix~II).
+
+\subsection{}\label{26.1.5} The information presented in \ssect{26.1.1} through \ssect{26.1.4} is valid for each of the $Z$ electrons in an atom. The number $Z$ coincides with the atomic number in Mendeleev’s periodic table \ssect{39.3.5}.
+
+The \redem{orbital magnetic moment} $\vb{P}_{m}$ of an atom is the vector sum of the orbital magnetic moments $\vb{p}_{m}$ of all its electrons. Thus
+\begin{equation*}%
+\vb{P}_{m} = \sum_{i = 1}^{Z} \vb{p}_{mi}.
+\end{equation*}
+The \emph{orbital angular momentum} $L$ of the atom is the vector sum of the orbital angular momenta $\vb{L}_{e}$ of all $Z$ electrons. Thus
+\begin{equation*}%
+\vb{L} = \sum_{i = 1}^{Z} \vb{L}_{ei}.
+\end{equation*}
+The atomic orbital magnetic moment $\vb{P}_{m}$ and angular momentum $\vb{L}$ have the following relationship:
+\begin{equation*}%
+\vb{P} = \gamma \vb{L},
+\end{equation*}
+where $\gamma$ is the gyromagnetic ratio \ssect{26.1.2}.
+
+\section{An Atom in a Magnetic Field}
+\label{sec-26.2}
+
+\subsection{}\label{26.2.1} If a substance is in an external magnetic field, this field can be assumed uniform \ssect{23.1.3} within the limits of an atom. This follows from the smallness of atomic dimensions. Let us assume that an electron in the atom travels along a circular orbit whose plane is perpendicular to the induction vector B of the magnetic field. The action of the Lorentz force F l \ssect{24.1.1} reduces the force of attraction of the electron to the nucleus. The centripetal force \ssect{2.4.3} is found, to equal the difference Fe — Fl, where Fe is the Coulomb force \ssect{14.2.2} of attraction
+of an electron to the nucleus (Fig. 26.2). This results in a change in the angular velocity o) \ssect{1.5.3} of the electron along its circular orbit.
+
+\subsection{}\label{26.2.2} The change in the angular velocity of the. electron occurs in the process of growth of the magnetic field into which the atom is placed. This growth takes place during ‘a finite length of time. At this an induced rotational electric field \ssect{25.1.1}
+is developed that acts on the electron in the atom. The strength E of this field is directed along a tangent to the electron’s orbit and the force acting on the electron is F = eE \ssect{15.1.2}. 
+
+\subsection{}\label{26.2.3} Upon an arbitrary position of the electron’s orbit with respect to vector B, the orbital magnetic moment pm of the electron \ssect{26.1.2}) makes an angle a with the direction of the magnetic field (Fig. 26.3). In this case there will be a precessional motion of the orbit about the direction of vector B (\ssect{4.3.2}). This means that vector pm, perpendicular to the orbit and main­ taining its angle a with the field constant, rotates about the direction, of: vector B with the angular velocity <ol . Thus
+eB ®L“"sr
+coL = ell (in Gaussian units). 2me
+Here e is the magnitude of the charge of the electron, m is its mass, H is the magnetic field strength, c is the electrodynamic constant \ssect{23.2.2}, and col is called the angular velocity o.f Larmor precession.
+Larmor's theorem states that the* only result of the effect of a magnetic field on an electron’s orbit in an atom is the precession
+(in SI units),  of the orbit and vector pTM with the angular velocity cof, about an axis through the nucleus of the atom and parallel to the induction vector B of the magnetic field.
+
+\subsection{}\label{26.2.4} The precessional motion of the electron’s orbit results in an additional orbital current A/orb (Fig. 26.3) and the corresponding induced orbital magnetic moment Apm \ssect{26.1.2}) with the magnitude
+e2s.
+A/?m= A/orb L= \ nm B (in SI units),
+1 e*S± hPm = — /orbj =
+ (in Gaussian units),
+where £±is the area of the projection of the orbit on a plane perpendicular to the direction of vector B. Vector Apfn has
+
+Precession of the electron and of its orbital magnetic moment " -
+Additional (precessional) motion of the electron
+ o40
+Magnetic materials iN a magnetic riel© [26
+the direction opposite to the magnetic induction vector B. Thus
+e2S ,
+Apm= ----; B (in Si units),
+e2S
+Apm =  i  B (in Gaussian units).
+The notation is the same as in \ssect{26.2.3}.
+The total induced orbital moment APm of the atom \ssect{26.1.5}
+is
+e*Z (S.)
+APm=-----4---® (inSIunits)’
+en(s >
+APm= ---- 4nmc2— ® 0n Gaussian umts)i
+where Z is the number of electrons in the atom, and (S ±) =
+!Z is the average area of the projections of the
+electron orbits on a plane perpendicular to the direction of vector B.
+
+\section{Diamagnetic and Paramagnetic Materials in a Uniform Magnetic Field
+}
+\label{sec-26.3}
+
+\subsection{}\label{26.3.1} The magnetization of matter is characterized by the magnetization vector (magnetization intensity) M, which is the ratio of the magnetic moment of a small volume AF of the sub­ stance to the magnitude of this volume. Thus
+N
+M = ~W 21 Pmi’ 2= 1
+where is the magnetic moment of the ith atom (or molecule), and N is the total number of atoms (or molecules) in the small volume AF. Within the limits of the volume AF the magnetic field is assumed uniform. This volume should simultaneously
+r 4ji m
+contain a sufficiently large number of particles N (i.e. N > 1) to enable the physical quantities characterizing the system of particles to be expediently averaged.
+
+\subsection{}\label{26.3.2} Diamagnetic materials are substances in which the mag­netic moments of the atoms (or molecules) equal zero in the absence of an external magnetic field. This means that in dia­ magnetic materials the vector sum of the orbital magnetic moments of all the electrons in an atom equals zero \ssect{26.1.5} and that induced magnetic moments \ssect{26.2.4} exist only in a magnetic field.
+
+\subsection{}\label{26.3.3} In the volume AV of an isotropic diamagnetic material, the induced magnetic moments APm of all the atoms (or mole­ cules) are the same and are opposite in direction to vector B \ssect{26.2.4}.
+
+The magnetization vector M is equal to M= Nffi-=noAPm,
+and, taking Sect. \ssect{26.2.4} into account:
+M= n0e2Z (S±) B (in SI units), 4jxm
+M= n0e2Z (S±) B (in Gaussian units), 4Jtmc2
+where n0is the number of atoms (or molecules) in unit volume. The other notation is the same as in Sect. 26.2.4. Introducing the notation:
+n
+we have g
+M= 3CmTT~ (in SI units), ro
+M=
+(in Gaussian units),
+(S)p,0(in SI units), 4nm
+n  Z S±) (in Gaussian units), 4jime2
+
+where x is a dimensionless quantity that characterizes the mag­ netic properties of magnetic materials. For all diamagnetic
+materials Xm< 0*
+
+\subsection{}\label{26.3.4} The magnetic susceptibility X'm is a. quantity that is re­ lated to X'm as follows:
+1
+l + Xm =-,„ > (in SI units),
+:1
+1+ 4jtXm ----;— t— (in Gaussian units),
+from which
+Xm= tY , (in SI units), 1 xlm
+y'
+Xm = —— 4 7- (in Gaussian units).
+Practically, Xm = X'm for diamagnetic materials, because in absolute value x is very small: |X'm | » 10“6.
+
+\subsection{}\label{26.3.5} Paramagnetic materials are substances in which the atoms (or molecules) have a certain constant magnetic moment
+Pm in the absence of an external magnetic field. This means that the vector sum of the orbital magnetic moments of all rthe,electrons. of an atom (or. molecule) is not; equal to zero
+\ssect{26.1.5}.
+
+\subsection{}\label{26.3.6} When a paramagnetic material is placed into a uniform magnetic field \ssect{23.1.3}, the constant magnetic moments of the atoms (or molecules) precess about the direction of the induc­ tion vector B of the magnetic field at LarmorY angular velocity ©L \ssect{26.2.3}.
+
+Thermal motion and collisions of the1atoms (or molecules) of a paramagnetic material lead to a gradual damping of the pre­ cession of the magnetic moments and to a reduction in the an­ gles between the directions of the magnetic moment vectors and vector B. The combined actions of the interatomic collisions and the magnetic field lead to a predominant orientation of the magnetic moments of the atoms.in alignment with theoexernal
+
+Hold. Though the constant magnetic moment Pm of an atom (or molecule) is of the order of 10~23joule/tesla (10~20erg/gauss), the magnetic moments of all the particles in unit volume pip, duce a magnetization that considerably exceeds diamagnetic phenomena \ssect{26.3.3}. A paramagnetic material in an external magnetic field has an intrinsic magnetic field aligned with the external magnetic field.
+
+\subsection{}\label{26.3.7} In the classical theory of paramagnetism the magnitude of the magnetization vector \ssect{26.3.1} is expressed by the formula
+M= n0PmL(a), -* -' ‘
+where n0 is the number of atoms (or molecules) in unit volume., and L (a) is the classical Larigevin function: 4,;
+ea+e~a 1 ea—e~a <;a
+The parameter a is of the form a = PmBIkT, where B is the magnetic induction of the field, k is Boltzmann’s constant \ssect{8.4.5}, and T is the absolute temperature. At room tempera­ ture and not especially strong external fields, 1 and the functiop L (a) is,simplified, after expansion ipto a':series, and we obtain L (a)  al3. Hence, the magnetization vector, is equal to
+M==y.;n— (in SI units), Po
+La)
+M = Xm® where
+(in Gaussian units),
+is determined by the formula
+3kT
+(in SI units),
+Xm
+Xm
+The quantity Xm is related to‘the magnetic susceptibility Xm of paramagnetic materials by the formulas given in Sect. \ssect{26.3.4}.
+
+The value of the quantity Xm is positive for a paramagnetic
+material and 'ranges from 10“5 to 10~3; therefore, Xm = X with a high degree of accuracy.
+(in Gaussian units).
+3kT
+
+The Curie law states that the paramagnetic susceptibility of a substance is inversely proportional to the absolute tempera­ ture.
+
+\subsection{}\label{26.3.8} In very strong external magnetic fields, saturation magne­ tization is reached; here a> 1 and the Langevin function L (a)  1. This means that the magnetic moments of all the atoms (or molecules) are aligned with the external magnetic field and M = nQPm.
+
+\section{Magnetic Field in Magnetic Materials}
+\label{sec-26.4} 
+
+\subsection{}\label{26.4.1} Two types of currents that set up magnetic fields, ma­ crocurrents and microcurrents, can be distinguished in matter. What we have called macrocurrents here are conduction currents \ssect{20.1.2} and convection currents \ssect{20.1.2}. Microcurrents (mole­ cular currents) are those due to the motion of electrons in atoms, molecules and ions.
+
+The magnetic field in a substance is the vector sum of two fields \ssect{15.2.2}: the external magnetic field, set up by the macrocurrents, and the internal, or intrinsic, magnetic field, set up by micro- currents. The magnetic induction vector B \ssect{23.1.2} in the mag­ netic field in a substance characterizes the resultant magnetic field and is equal to the vector sum of the magnetic inductions of the external B0 and intrinsic Bintr magnetic fields. Thus
+B—B0+ Bintr*
+The primary source of magnetic fields in magnetic materials are the macrocurrents. Their magnetic fields are what leads to the magnetization of substances placed in an external mag­ netic field.
+
+\subsection{}\label{26.4.2} The total current law for a magnetic field in a substance is a generalization of the law formulated in Sect. \ssect{23.5.2}:
+<bBdI=Ho (/mac+ Gnic) (in SI units),] L
+§Bd\ = 4n] mac + Anic) (in Gaussian units)* c
+where /mac and /mic are the algebraic sums of the macro- and microcurrents passing through a surface bounded by the loop L. 
+
+\subsection{}\label{26.4.3} The algebraic sum of the microcurrents is related to the magnetization vector M as follows:
+/mic= Mdl (inSIunits), L
+Imic = c ()Mdl (in Gaussian units), L
+where (y Mdl is the circulation of the magnetization vector M
+\ssect{26.3.1} along the closed loop L through which the microcurrents are threaded.
+The final form of the total current law \ssect{26.4.2} is
+(f) —--m)dl=Imac (inSIunits), LVM-o '
+4jt
+(V) (B— 4nM) d\ = — /mac (in Gaussian units).
+L
+
+\subsection{}\label{26.4.4} The vector
+H=—---M (inSIunits),
+H= B—4jxM (in Gaussian units)
+is called the strength of the magnetic field existing in an arbitrary medium (cf. Sect. \ssect{23.2.3}). The total current, law for a magnetic field in an arbitrary medium is written irnir form iden­ tical to that in Sect. \ssect{23.5.4}:
+(V)Hdl= /mac (in SI units), L
+L
+(in Gaussian units).
+
+The circulation of the magnetic field strength vector along an arbitrary closed loop is equal (or proportional) to the algebraic sum of the macrocurrents through the surface hounded by this loop.
+
+\subsection{}\label{26.4.5} For an isotropic medium, the relation between the mag­ netic induction vector B and the magnetization vector M \ssect{26.3.1} leads to the following result for vector H \ssect{26.4.4}:
+H=(1—Xm)PO (inSIunits),
+(in Gaussian units).
+Substituting for (1 — m) or (1 — 4 Jtm) on the basis of Sect. 26.3.4, we have
+H|= ——— (in SI units), M-oMr
+g
+H = --- (in Gaussian units),
+Mr where
+iT= 1+ Xm (in SI units),
+fAr = 1 + (iu Gaussian units).
+The quantity iT thus introduced is called the relative magnetic permeability of the substance (see also Sect. \ssect{23.2.1}). In these formulas m is the magnetic susceptibility \ssect{26.3.4}.
+
+
+\section{Ferromagnetic Materials}
+\label{sec-26.5} 
+
+\subsection{}\label{26.5.1} Ferromagnetic materials are substances in which the intrinsic (internal) magnetic field \ssect{26.4.1} is hundreds or even thousands of times stronger than the external magnetic field applied to the substance.
+
+Ferromagnetism is observed in the crystals of the transition metals \ssect{39.3.8}, iron, cobalt and nickel and of certain alloys, provided that d!a 1.5, where d is the diameter of the atom
+
+and a is the diameter of the unfilled electronic shell of the atom \ssect{39.3.6}.
+
+\subsection{}\label{26.5.2} The principal properties of ferromagnetic materials, distinguishing them from other magnetic materials are:
+\begin{enumerate}[label = (\alph*)]
+\item The dependence of the magnetization \ssect{26.3.1} on the strength II of the external magnetic field is characterized by magnetic saturation Ms, which begins at Hs (Fig. 26.4).
+\item The dependence of the magnetic induction B on H is charac­ terized by the increase according to a linear law at //> ffs (Fig. 26.5).
+\item The dependence of the relative magnetic permeability ir on the field strength II is of a complex nature (Fig. 26.6). (d) Magnetic hysteresis exists in ferromagnetic materials. This refers to the lag in the variation of magnetization from the variation in the strength of the external magnetizing field, which is variable in magnitude and direction. This lag is due to the dependence of M on its previous values (past history) in magnetizing the substance.
+\item The properties of ferromagnetic materials enumerated above* are observed at temperatures below the Curie point dc \ssect{18.4.4}. At temperatures >00, thermal motion breaks up the regions of spontaneous magnetization \ssect{26.5.4} and the ferromagnetic material, losing its special features, is converted into a paramagnetic substance \ssect{26.3.5}. The Curie points for iron, nickel, cobalt and Permalloy are 1043, 631, 1403 and 823 K.
+
+* As well as many others that are beyond the scope of this handbook.
+\end{enumerate}
+
+\subsection{}\label{26.5.3} The hysteresis loop is a curve showing the change in the magnetization of a ferromagnetic material located in an external magnetic field as the strength of this field is varied from -\-Hs to —Hs and back again, where Hs is the field strength corresponding to magnetic saturation (Fig. 26.7). The magnetization dzMs at H = ±s is called saturation magnetization. The magnetization ±Mr that remains in a ferromagnetic material in the absence of an external field (H = 0) is called the residual, or peremanent, magnetization. This factor is the basis for making permanent magnets. The strength ±HC of the external field that completely demagnetizes a substance is called the coercive force. The coercive force specifies the property of a ferromagnetic material to retain its residual magnetization. Hard, or retentive, magnetic materials have a high coercive force. They have a wide hysteresis loop and are used to make permanent magnets. Soft, or non-retentive, magnetic materials have a low coercive force. They have a narrow hysteresis loop and are used to make trans­ former cores.
+
+The reversal of magnetization is associated with a change in the orientation of the regions of spontaneous magnetization \ssect{26.5.4} and requires that work be done at the expense of the energy of the external magnetic field. The amount of heat evolved in reversing magnetization is proportional to the area of the hysteresis loop.
+
+\subsection{}\label{26.5.4} At temperatures below the Curie point \ssect{26.5.2} a ferromagnetic material is made up of domains, which are small regions of uniform spontaneous magnetization. The linear dimensions of these domains range from 10‘5 to 10~4 m. Within each domain the substance is magnetized to saturation \ssect{26.5.2}. In the absence of an external magnetic field, the magnetic mo­ ments of the various domains are oriented in space so that the resultant magnetic moment of the whole ferromagnetic body equals zero.
+
+Owing to the effect of the external magnetic field, the magnetic moments of whole domains are oriented in a ferromagnetic material, rather than those of the separate particles as in the case of paramagnetic materials \ssect{26.3.6}. As a result, the sub­ stance is magnetized.
+
+Ferromagnetic properties can only exist in the crystalline state of substances in which the interaction between the neighbouring atoms of the crystal lattice leads to the total energy of the system of electrons that provides for compliance with the conditions for the existence of ferromagnetism \ssect{26.5.1}.
+
+\subsection{}\label{26.5.5} Measurement; of the gyromagnetic ratio \ssect{26.1.4} for ferromagnetic bodies indicates that the elementary carriers of magnetism in ferromagnetic materials are the spin magnetic moments of the electrons \ssect{26.1.4}. The modern quantum mechanical theory of ferromagnetism explains the nature of the spontaneous magnetization of ferromagnetic materials \ssect{26.5.4} and the reasons for the development of a strong intrinsic magnetic field \ssect{26.4.1}.
+
+Ferromagnetic properties are possessed by crystals of substances whose atoms have inner shells and subshells \ssect{39.3.6} unfilled by electrons and having a nonzero value of the projections of the resultant spin moment on the direction of the magnetic field \ssect{26.1.3}. Developed between the spins of such electrons is a specific kind of quantum mechanical interaction that is not of a magnetic origin. It is called exchange interaction \ssect{39.4.5}. As a result, the state of the system of electrons in fer­ romagnetic materials is found to be stable upon parallel align­ ment of the spins, and spontaneous magnetization \ssect{26.5.4} is developed along with a strong intrinsic magnetic field.
