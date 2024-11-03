@@ -1,0 +1,234 @@
+% !TEX root = handbook-physics.tex
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+
+
+
+
+
+\chapter{Fundamentals of Maxwell's Theory}
+\label{ch-27}
+
+\section{General Features o! Maxwell's Theory}
+\label{sec-27.1}
+
+
+\subsection{}\label{27.1.1} \redem{Maxwell's theory} is a systematic theory of a unified electromagnetic field \ssect{15.1.2} set up by an arbitrary system of charges and currents. Maxwell's theory enables the \redem{principal problem of electrodynamics} to be solved: determining the characteristics of electric and magnetic fields on the basis of a given distribution of charges and currents that set up these fields. Maxwell's theory is a generalization of fundamental laws that describe electrical and electromagnetic phenomena. These include the Ostrogradsky-Gauss theorem \ssect{18.3.3}, the total cur­ rent law \ssect{26.4.2}, and the law of electromagnetic induction \ssect{25.1.2}.
+
+\subsection{}\label{27.1.2} Maxwell's theory is of a phenomenological nature. This is manifested in the fact that it does not deal with the internal mechanism of the phenomena that occur in a medium and lead to the production of electric and magnetic fields. The medium is described in this theory by three quantities that specify its electrical and magnetic properties. These are the relative permittivity (dielectric constant) $\varepsilon_{r}$ \ssect{18.3.4}, relative magnetic permeability $\mu_{r}$ \ssect{26.4.5} and the electrical conductivity $\varkappa$ \ssect{20.3.4}.
+
+\subsection{}\label{27.1.3} Maxwell's theory deals with macroscopic fields set up by macroscopic charges and currents that are concentrated in volumes incommensurably greater than those of atoms (or molecules). It is assumed that the distances from the sources of the fields to the points in space being considered substantially exceed the linear dimensions of atoms (or molecules). Therefore, macroscopic fields change appreciably only at distances that are huge compared to the linear dimensions of atoms (or molecules). Moreover, the periods of time required for changes in variable electric and magnetic fields are considered to be considerably longer than those required for intra-molecular processes.
+
+\subsection{}\label{27.1.4} The macroscopic charges and currents are the sets of microscopic charges and currents that set up their micro-fields (electric and magnetic), varying continuously with time at each point in space.
+
+The macroscopic fields dealt with in Maxwell's theory are \redem{averaged micro-fields}. Averaging is carried out over time intervals considerably longer than those typical of inter-atomic processes, and over volumes of fields many times greater than the volumes of atoms and molecules \ssect{27.4.5}.
+
+\subsection{}\label{27.1.5} Maxwell's theory is one of \redem{short-range action}, according to which electrical and magnetic interactions take place in electric and magnetic fields and propagate at a finite velocity equal to that of light in the given medium. This important consequence is taken into account in the electromagnetic theory of light developed by Maxwell.
+
+
+
+\section{Maxwell's First Equation}
+\label{sec-27.2}
+
+
+\subsection{}\label{27.2.1} Maxwell's first equation in integral form is a generalization of Faraday's law of electromagnetic induction in the form \ssect{25.1.2}:
+\begin{align*}%
+\oint_{L} \vb{E}\, \dd \vb{l} & = - \pdv{\Phi_{m}}{t} && \text{(in SI units),} \\
+\oint_{L} \vb{E}\, \dd \vb{l} & = - \frac{1}{c} \pdv{\Phi_{m}}{t} && \text{(in Gaussian units)},
+\end{align*}
+According to Maxwell, this law is valid for any closed circuit, or loop, and hot only current-conducting ones, conceivably selected in a variable magnetic field. This means that a variable magnetic field sets up a rotational electric field at any point in space, regardless of whether or not there is a conductor at that point.
+
+\subsection{}\label{27.2.2} Using the following expression for the magnetic flux \ssect{23.5.5}:
+\begin{equation*}%
+\Phi_{m} = \oint_{S} \vb{B}\, \dd S = \oint_{S}{B}_{n}\, \dd S,
+\end{equation*}
+and the Stokes theorem from vector analysis:
+\begin{equation*}%
+\oint_{S} \vb{E}\, \dd \vb{l} = \oint_{S} \curl \vb{E}\, \dd \vb{S},
+\end{equation*}
+where $\dd \vb{S} = \vu{n}\, \dd S$ ($\vu{n}$ being the unit vector of the normal to the element $\dd S$ of surface), we can convert Maxwell's first equation as given in \ssect{27.2.1} to \redem{Maxwell's first equation in differential form}:
+\begin{align*}%
+\curl \vb{E} & = - \pdv{\vb{B}}{t} && \text{(in SI units),} \\
+\curl \vb{E} & = - \frac{1}{c}\pdv{\vb{B}}{t}&& \text{(in Gaussian units)},
+\end{align*}
+Here $\curl \vb{E}$ is expressed in Cartesian coordinates by the determinant
+\begin{equation*}%
+\curl \vb{E} = \mdet{\vu{i} & \vu{j} & \vu{k}\\ \pdv{x} & \pdv{y} & \pdv{z} \\ E_{x} & E_{y} & E_{z}}.
+\end{equation*}
+\subsection{}\label{27.2.3} An inductive type of electron accelerator, the \redem{betatron} \ssect{24.4.2}, is based on setting up a rotational electric field in space by the action of an alternating magnetic field.
+
+\begin{marginfigure}%[-2cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-27/fig-27-01.pdf}
+\sidecaption{The working of a betatron.\label{fig-27-01}}
+\end{marginfigure}
+
+In the alternating magnetic field produced by an electromagnet with conical pole pieces $A$ and $C$ (\figr{fig-27-01}, a rotational electric field is set up in accelerating chamber $D$, having the form of a closed ring. The lines of force \ssect{15.1.6} of the rotational electric field lie in plane $MN$, which is perpendicular to the axis $OO'$ of symmetry of the pole pieces. These lines are circles with their centre at point $K$. At all points of any circle the field strength vector $\vb{E}$ has a constant numerical value and is tangent to the circle. Electrons in the accelerating chamber travel along circular paths and after repeated travel along the stable circular orbit the electron is accelerated to considerable energy.
+
+\subsection{}\label{27.2.4} The strength $\vb{E}$ of the rotational electric field in a betatron is equal to
+\begin{equation*}%
+E = -\frac{1}{2} r \, \dv{\expval{B}}{t} 
+\end{equation*}
+where $\expval{B}$ is the average value of magnetic induction at the instant of time t within the limits of the circular electron orbit of radius $r$.
+
+A condition for a stable orbit of the electron in the betatron is: $B = \expval{B}/2$, where $B$ is the instantaneous value of the magnetic induction on the orbit.
+
+The orbit of an electron in the betatron is stable if:
+\begin{enumerate}[label=(\alph*)]
+\item The whole orbit lies in a single plane. This condition, called \redem{axial focusing}, is achieved due to the special shape of the pole pieces of the electromagnet. This shape provides for gradual weakening of the magnetic field induction in the direction from the centre of the orbit to its periphery.
+\item Provision is made to return electrons that have accidentally left the stable orbit back to it again. This is called \redem{radial focusing} and is achieved by a space distribution of the magnetic field in which the, magnetic induction decreases more slowly from the axis to the periphery than $1/r$, where $r$ is the distance from a given point in the field to the axis of symmetry $OO'$.
+\end{enumerate}
+
+\section{Displacement Current. Maxwell's Second Equation}
+\label{sec-27.3}
+
+\subsection{}\label{27.3.1} Maxwell generalized the total current law, \ssect{26.4.2} and \ssect{26.4.4}, by assuming that a variable electric field, in the same way as an electric current, is a source of a magnetic field. The quantitative measure of the magnetic effect of a variable electric held is the displacement current.
+
+\subsection{}\label{27.3.2} The \redem{displacement current density} \ssect{20.2.3} is 
+\begin{align*}%
+\vb{j}_{dis} & = \pdv{\vb{D}}{t} && \text{(in SI units),} \\
+\vb{j}_{dis} & = \frac{1}{4\pi}\pdv{\vb{D}}{t}  && \text{(in Gaussian units)},
+\end{align*}
+The displacement current through the arbitrary surface $S$ is a physical quantity numerically equal to the flux of the displacement current density vector through this surface. Thus
+\begin{align*}%
+{I}_{dis} & = \int_{S} \pdv{\vb{D}}{t}\,\dd \vb{S} = \pdv{\Phi_{e}}{t} && \text{(in SI units),} \\
+{I}_{dis} & = \int_{S} \frac{1}{4\pi} \pdv{\vb{D}}{t}\,\dd \vb{S} = \frac{1}{4\pi} \pdv{\Phi_{e}}{t} && \text{(in Gaussian units)},
+\end{align*}
+where $\Phi_{e} = \int_{s} \vb{D}\, \dd \vb{S}$ is the flux of the electric displacement vector through the surface $S$ \ssect{15.3.2}.
+\begin{figure}[h]%[-2cm]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/ch-27/fig-27-02.pdf}
+\sidecaption{Understanding charging and discharging of a capacitor using the displacement current.\label{fig-27-02}}
+\end{figure}
+
+
+Taking the displacement currents into account, any variable current has a closed circuit. Displacement currents ``flow'' through a part of a circuit where there is no conductor, for example, between the plates of a capacitor being charged or discharged. Shown in \figr{fig-27-02}. are the vectors j s and the lines of induction of the magnetic fields of displacement currents in charging (\figr{fig-27-02}~\drkgry{(a)}) and in discharging (\figr{fig-27-02}~\drkgry{(b)}) a capacitor. 
+
+\subsection{}\label{27.3.3} According to \ssect{18.3.4}, the displacement vector in any dielectric is equal to
+\begin{align*}%
+\vb{D} & = \varepsilon_{0}\vb{E} + \vb{P}_{e} && \text{(in SI units),} \\
+\vb{D} & = \vb{E} + 4 \pi \vb{P}_{e}  && \text{(in cgse units)},
+\end{align*}
+where $\vb{P}_{e}$ is the polarization vector \ssect{18.2.3}.
+
+The displacement current density in a dielectric is
+\begin{align*}%
+\vb{j}_{dis} & = \varepsilon_{0} \pdv{\vb{E}}{t}+ \pdv{\vb{P}_{e}}{t}  && \text{(in SI units),} \\
+\vb{j}_{dis} & = \frac{1}{4\pi} \pdv{\vb{E}}{t}+ \pdv{\vb{P}_{e}}{t}  && \text{(in cgse units)},
+\end{align*}
+In these last formulas, the first term $\varepsilon_{0} \pdv*{\vb{E}}{t}$ (or, correspondingly, $1/4\pi \, \pdv*{\vb{E}}{t}$ is called the \redem{displacement current density in vacuum},
+whereas the second term $\pdv*{\vb{P}_{e}}{t} $ is called the \redem{polarization current density}. The second term is the density of the current due to the ordered motion of charges in the dielectric: either the displacement of charges in a molecule of a non-polar dielectric. \ssect{18.1.3} or the turning of the dipoles in polar dielectrics \ssect{18.1.5}. The displacement current docs not evolve Joule heal \ssect{21.2.6} in vacuum or in metals. In this it differs from conduction currents.
+
+\subsection{}\label{27.3.4} Maxwell added the displacement current to the right- hand side of the. total current law in the form given in \ssect{26.4.4}, writing this law in the form
+\begin{align*}%
+\oint_{L} \vb{H} \, \dd \vb{l} & = I_{mac} + I_{dis}  && \text{(in SI units),} \\
+\oint_{L} \vb{H} \, \dd \vb{l} & = \frac{4 \pi}{c}(I_{mac} + I_{dis}) && \text{(in Gaussian units)},
+\end{align*}
+This equation is called \redem{Maxwell's second equation in integral form}. It shows that the circulation of the magnetic field strength vector along an arbitrary closed circuit, or loop, L is equal to the algebraic sum of the macro-currents and the displacement current through a surface bounded by this loop.
+
+\subsection{}\label{27.3.5} Making use of the Stokes theorem from vector analysis
+\begin{equation*}%
+\oint_{L} \vb{H} \, \dd \vb{l}  = \oint_{S} \curl \vb{H} \, \dd \vb{S}
+\end{equation*}
+where $\dd \vb{S} = \vu{N} \dd S$, and $\vu{n}$ is a unit vector of the normal to the element $\dd S$ of surface, and of the expression for the total current
+\begin{equation*}%
+I = I_{mac} + I_{dis} = \int_{S} (\vb{j} + \vb{j}_{dis}) \, \dd \vb{S}
+\end{equation*}
+Maxwell's second equation can be written in differential form: \begin{align*}%
+\curl \vb{H} & = \vb{j} + \pdv{\vb{D}}{t} && \text{(in SI units),} \\
+\oint_{L} \vb{H} \, \dd \vb{l} & = \frac{4 \pi}{c}(I_{mac} + I_{dis}) && \text{(in Gaussian units)},
+\end{align*}
+In these equations, $\curl \vb{H}$ has the same meaning as $\curl \vb{E}$ in \ssect{27.2.2}.
+
+\subsection{}\label{27.3.6} In the absence of conduction currents $(\vb{j} = 0)$, Maxwell's first and second equations are of symmetrical form except for sign in their right-hand sides:
+
+curl'E=---—,curlII=4—- (inSIunits), dt dt
+curlE=---— ,curl H=— (inGaussianunits). cdt cdt '
+Comparing Maxwell's equations*, we reach the following con­ clusions:
+* The numeration of Maxwell's equations is a conditional one and is frequently the opposite of that accepted in this handbook.
+(a) Electric and magnetic fields are interrelated: a change of an electric field with time sets up a magnetic field*. In its turn, a variable magnetic field is the source of a rotational electric field.
+(b) The different signs at the right-hand sides of Maxwell's equations comply with the law of conservation of energy and with the Lenz law \ssect{25.1.4}. If
+the signs of dBIdt and dDIdt
+were the same, an infinitesimal dt
+dt
+increase in one of the fields would lead to an increase without li­ mit of both fields, whereas an infinitesimal decrease in one of V the fields would lead to the dis­ appearance of both fields. The above-mentioned difference in the signs of the right-hand (a) sides of Maxwell's equations is a necessary condition for the existence of a stable electromagnetic field.
+
+The different signs in the right-hand sides of Maxwell's equa­ tions correspond to the fact that the directions of dDIdt and H form a “right-hand screw”system (Fig. 27.3a), whereas the directions of dBIdt and E form a “left-hand screw” system (Fig. 27.3b).
+
+
+\section{Complete Set of Maxwell's Equations for an Electromagnetic Field}
+\label{sec-27.4}
+
+
+\subsection{}\label{27.4.1} A complete set of Maxwell's equations for an electro­ magnetic field includes, in addition to the equations dealt with in sections \ssect{27.2.1}, \ssect{27.2.2}, \ssect{27.3.4} and \ssect{27.3.5}, the Ostrogradsky-Gauss theorem for an electric field \ssect{18.3.3}:
+ )DdS=gfTee (inSiunits), s
+ The magnetic field is always a rotational one \ssect{23.5.3}.
+c*
+ j)DdS=43tgfree (incgseunits)
+s
+and the same theorem for a
+<   B d S = 0.
+8
+m agnetic
+field
+\ssect{23.5.6}:
+Maxwell proposed that the theorem for the flux of an electric field displacement vector is valid, not only for a steady-state electrostatic field, but for a variable electric field as well. 
+
+\subsection{}\label{27.4.2} Making use of the Gauss theorem from vector analysis:
+( >AdS= j" divAdF, and introducing the volume density p sv
+of free charges: p = dqfree/dV (where dV is an element of vol­ ume), it is possible to obtain Maxwell's third equation in differen­ tial form:
+div D = p (in SI units),
+div D = 4jtp (in Gaussian units).
+In these equations, div A (where A is an arbitrary vector) is determined in Cartesian coordinates as follows:
+divA= dAx dAz dx dy dz '
+where A = Ax Ay]+ Azk, and i, j, and k are unit vectors along the coordinate axes.
+
+\subsection{}\label{27.4.3} The complete set of Maxwell's equations includes four equations:
+curlE=—dB divD=p dt
+curlH=j+
+, divjB=0
+curl E=—-4rr, divD=4jxp
+C ut
+itt4jc 1dD,. n curl H=----1-4----— , divB=0.
+
+\subsection{}\label{27.4.4} The system of Maxwell's equations is supplemented by equations that specify the electric and magnetic properties of the medium. For macrocurrents in an isotropic medium, which comply with Ohm's law \ssect{20.3.4}, these equations are of the form
+D= e0erE, B= jmac= xE (in SI units),
+D = erE, B = (irH, jmac = xE (in Gaussian units).
+Here e0and \i0are the electric constant \ssect{14.2.7} and the magnet­ ic constant \ssect{23.2.2} in SI units, er and pr are the relative dielec­ tric constant and relative magnetic permeability, and x is the electrical conductivity.
+To solve a system of Maxwell's equations, it is also necessary to specify the boundary conditions for the vectors character­ izing the electromagnetic field. Thus
+c cdt
+Eh~EH'
+  t l ~ J  t 2 = j r S U r
+Eti=Et2'
+where o is the surface density of free charges, n is a unit vector of the normal to the interface (boundary) between media and extends from medium 2 to medium 1, t is a unit vector of the tangent to the interface, and / SUr is the projection of the density vector of surface conduction currents on the direction [tnj. For given boundary and initial conditions, i.e. known values of vectors- -andjaa ttheninitialinstant oftime (t~Q)*tSe system of Maxwell's equations has a unique solution.
+
+\subsection{}\label{27.4.5} Maxwell's equations are invariant with respect to the Lorentz transformations \ssect{5.3.2}.
+
+In the special theory of relativity \ssect{5.1.1} it is shown that a common electromagnetic field can be different in different iner­ tial frames of reference \ssect{2.1.2}. In particular, one of the fields, either electric or magnetic, may be absent in one of the coordi­ nate systems and be present in the other. The following formu­ las are used for the Lorentz transformations of the projections on the coordinate axes of the vectors E, H, D and B of the elec­ tric and magnetic fields, in going over from fixed inertial frame of reference K to frame K\ which travels with respect to frame K at the constant velocity V in a straight line along the OX axis:
+E~=Ef,Eh—e'v+TH'z
+K ---- By E—z C y
+Y i—v*/c* '
+ x x'y
+H '- - - - E ' z
+E'+VB'
+V'Z „ K-VBv
+TP     TPf
+x  ' y Y i - w ' z Y i - v   i c *
+IP
+„ „ HV-VDz * *' v
+DV+  H'z Dx~D*'Dy~yi y2jCi'Dz~ yi 72/c2
+B ' v - l * E 'z R   B ' z +   r E y
+(in SI units),
+Y i—V*le* ' V
+v c z
+ffz+-rK
+
+\subsection{}\label{27.4.6} The classical Lorentz theory of the electron is a further development of Maxwell's theory of the electromagnetic field.
+
+The Lorentz theory is based on a definite model that implies certain conceptions of the structure of matter. It is assumed that atoms consist of negatively and positively charged particles, and that the great variety of electrical and magnetic phenomena can be explained by a definite spatial arrangement, motion and interaction of charges and microcurrents. At each point in space certain electric and magnetic microfields exist with the strengths e and h. These fields result from the combined action of all the charges and microcurrents. The microfields comply with a system of equations similar to Maxwell's equations \ssect{27.4.3}. Maxwell's equations for macroscopic fields E and B \ssect{27.1.3} can be obtained by averaging the equations of the electron theory \ssect{27.1.4}, and they are found to be the averaged microfields e and h. Thus
+E = (e), B = p-0(h) (in SI units).
+Vectors D and H are found to be related to (e) and (h) by the polarization vector Pe \ssect{18.2.3} and the magnetization vector M \ssect{26.3.1} as indicated in \ssect{18.3.4} and \ssect{26.4.4}. Thus
+D
+D=e0E+Pe, H=-----M (inSIunits),
+D= E+ 4jtPe, H= B—4jiM (in Gaussian units).
