@@ -115,7 +115,7 @@ where $\vb{P}_{e}$ is the polarization vector \ssect{18.2.3}.
 The displacement current density in a dielectric is
 \begin{align*}%
 \vb{j}_{dis} & = \varepsilon_{0} \pdv{\vb{E}}{t}+ \pdv{\vb{P}_{e}}{t}  && \text{(in SI units),} \\
-\vb{j}_{dis} & = \frac{1}{4\pi} \pdv{\vb{E}}{t}+ \pdv{\vb{P}_{e}}{t}  && \text{(in cgse units)},
+\vb{j}_{dis} & = \frac{1}{4\pi} \pdv{\vb{E}}{t}+ \pdv{\vb{P}_{e}}{t}  && \text{(in cgse units).}
 \end{align*}
 In these last formulas, the first term $\varepsilon_{0} \pdv*{\vb{E}}{t}$ (or, correspondingly, $1/4\pi \, \pdv*{\vb{E}}{t}$ is called the \redem{displacement current density in vacuum},
 whereas the second term $\pdv*{\vb{P}_{e}}{t} $ is called the \redem{polarization current density}. The second term is the density of the current due to the ordered motion of charges in the dielectric: either the displacement of charges in a molecule of a non-polar dielectric. \ssect{18.1.3} or the turning of the dipoles in polar dielectrics \ssect{18.1.5}. The displacement current docs not evolve Joule heal \ssect{21.2.6} in vacuum or in metals. In this it differs from conduction currents.
@@ -123,7 +123,7 @@ whereas the second term $\pdv*{\vb{P}_{e}}{t} $ is called the \redem{polarizatio
 \subsection{}\label{27.3.4} Maxwell added the displacement current to the right- hand side of the. total current law in the form given in \ssect{26.4.4}, writing this law in the form
 \begin{align*}%
 \oint_{L} \vb{H} \, \dd \vb{l} & = I_{mac} + I_{dis}  && \text{(in SI units),} \\
-\oint_{L} \vb{H} \, \dd \vb{l} & = \frac{4 \pi}{c}(I_{mac} + I_{dis}) && \text{(in Gaussian units)},
+\oint_{L} \vb{H} \, \dd \vb{l} & = \frac{4 \pi}{c}(I_{mac} + I_{dis}) && \text{(in Gaussian units).}
 \end{align*}
 This equation is called \redem{Maxwell's second equation in integral form}. It shows that the circulation of the magnetic field strength vector along an arbitrary closed circuit, or loop, L is equal to the algebraic sum of the macro-currents and the displacement current through a surface bounded by this loop.
 
@@ -137,98 +137,107 @@ I = I_{mac} + I_{dis} = \int_{S} (\vb{j} + \vb{j}_{dis}) \, \dd \vb{S}
 \end{equation*}
 Maxwell's second equation can be written in differential form: \begin{align*}%
 \curl \vb{H} & = \vb{j} + \pdv{\vb{D}}{t} && \text{(in SI units),} \\
-\oint_{L} \vb{H} \, \dd \vb{l} & = \frac{4 \pi}{c}(I_{mac} + I_{dis}) && \text{(in Gaussian units)},
+\oint_{L} \vb{H} \, \dd \vb{l} & = \frac{4 \pi}{c}(I_{mac} + I_{dis}) && \text{(in Gaussian units).}
 \end{align*}
 In these equations, $\curl \vb{H}$ has the same meaning as $\curl \vb{E}$ in \ssect{27.2.2}.
 
 \subsection{}\label{27.3.6} In the absence of conduction currents $(\vb{j} = 0)$, Maxwell's first and second equations are of symmetrical form except for sign in their right-hand sides:
+\begin{align*}%
+\curl \vb{E} & = \pdv{\vb{B}}{t}, \, \curl \vb{H} = \pdv{\vb{D}}{t} && \text{(in SI units),} \\
+\curl \vb{E} & = -\frac{1}{c} \pdv{\vb{B}}{t}, \, \curl \vb{H} = \frac{1}{c}  \pdv{\vb{D}}{t} && \text{(in Gaussian units).}
+\end{align*}
+Comparing Maxwell's equations\sidenote{The numeration of Maxwell's equations is a conditional one and is frequently the opposite of that accepted in this handbook.}, we reach the following conclusions:
+\begin{enumerate}[label=(\alph*)]
+\item Electric and magnetic fields are interrelated: a change of an electric field with time sets up a magnetic field\sidenote{The magnetic field is always a rotational one \ssect{23.5.3}.}. In its turn, a variable magnetic field is the source of a rotational electric field.
+\item The different signs at the right-hand sides of Maxwell's equations comply with the law of conservation of energy and with the Lenz law \ssect{25.1.4}. If the signs of $\pdv*{\vb{B}}{t}$ and $\pdv*{\vb{D}}{t}$ were the same, an infinitesimal increase in one of the fields would lead to an increase without limit of both fields, whereas an infinitesimal decrease in one of the fields would lead to the disappearance of both fields. The above-mentioned difference in the signs of the right-hand (a) sides of Maxwell's equations is a necessary condition for the existence of a stable electromagnetic field.
+\end{enumerate}
 
-curl'E=---—,curlII=4—- (inSIunits), dt dt
-curlE=---— ,curl H=— (inGaussianunits). cdt cdt '
-Comparing Maxwell's equations*, we reach the following con­ clusions:
-* The numeration of Maxwell's equations is a conditional one and is frequently the opposite of that accepted in this handbook.
-(a) Electric and magnetic fields are interrelated: a change of an electric field with time sets up a magnetic field*. In its turn, a variable magnetic field is the source of a rotational electric field.
-(b) The different signs at the right-hand sides of Maxwell's equations comply with the law of conservation of energy and with the Lenz law \ssect{25.1.4}. If
-the signs of dBIdt and dDIdt
-were the same, an infinitesimal dt
-dt
-increase in one of the fields would lead to an increase without li­ mit of both fields, whereas an infinitesimal decrease in one of V the fields would lead to the dis­ appearance of both fields. The above-mentioned difference in the signs of the right-hand (a) sides of Maxwell's equations is a necessary condition for the existence of a stable electromagnetic field.
+\begin{marginfigure}[-4cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-27/fig-27-03.pdf}
+\sidecaption{Relationship between quantities in Maxwell's equations.\label{fig-27-03}}
+\end{marginfigure}
 
-The different signs in the right-hand sides of Maxwell's equa­ tions correspond to the fact that the directions of dDIdt and H form a “right-hand screw”system (Fig. 27.3a), whereas the directions of dBIdt and E form a “left-hand screw” system (Fig. 27.3b).
+The different signs in the right-hand sides of Maxwell's equations correspond to the fact that the directions of $\pdv*{\vb{D}}{t}$ and $\vb{H}$ form a ``right-hand screw'' system (\figr{fig-27-03}~\drkgry{(a)}), whereas the directions of $\pdv*{\vb{B}}{t}$ and $\vb{E}$ form a ``left-hand screw'' system (\figr{fig-27-03}~\drkgry{(b)}).
 
 
-\section{Complete Set of Maxwell's Equations for an Electromagnetic Field}
+\section[Complete Set of Maxwell's Equations]{Complete Set of Maxwell's Equations for an Electromagnetic Field}
 \label{sec-27.4}
 
 
-\subsection{}\label{27.4.1} A complete set of Maxwell's equations for an electro­ magnetic field includes, in addition to the equations dealt with in sections \ssect{27.2.1}, \ssect{27.2.2}, \ssect{27.3.4} and \ssect{27.3.5}, the Ostrogradsky-Gauss theorem for an electric field \ssect{18.3.3}:
- )DdS=gfTee (inSiunits), s
- The magnetic field is always a rotational one \ssect{23.5.3}.
-c*
- j)DdS=43tgfree (incgseunits)
-s
-and the same theorem for a
-<   B d S = 0.
-8
-m agnetic
-field
-\ssect{23.5.6}:
+\subsection{}\label{27.4.1} A complete set of Maxwell's equations for an electromagnetic field includes, in addition to the equations dealt with in sections \ssect{27.2.1}, \ssect{27.2.2}, \ssect{27.3.4} and \ssect{27.3.5}, the Ostro-gradsky-Gauss theorem for an electric field \ssect{18.3.3}:
+\begin{equation*}%
+\oint_{S } \vb{D} \dd \vb{S}  = 4 \pi q_{\textrm{free}} \quad \text{in cgse units}
+\end{equation*}
+and the same theorem for a magnetic field \ssect{23.5.6}:
+\begin{equation*}%
+\oint_{S } \vb{B} \dd \vb{S}  = 0 \quad \text{in cgse units}
+\end{equation*}
 Maxwell proposed that the theorem for the flux of an electric field displacement vector is valid, not only for a steady-state electrostatic field, but for a variable electric field as well. 
 
 \subsection{}\label{27.4.2} Making use of the Gauss theorem from vector analysis:
-( >AdS= j" divAdF, and introducing the volume density p sv
-of free charges: p = dqfree/dV (where dV is an element of vol­ ume), it is possible to obtain Maxwell's third equation in differen­ tial form:
-div D = p (in SI units),
-div D = 4jtp (in Gaussian units).
-In these equations, div A (where A is an arbitrary vector) is determined in Cartesian coordinates as follows:
-divA= dAx dAz dx dy dz '
-where A = Ax Ay]+ Azk, and i, j, and k are unit vectors along the coordinate axes.
+\begin{equation*}%
+\oint_{S} \vb{A} \dd \vb{S}  = \int_{V} \div \vb{A} \, \dd V, 
+\end{equation*}
+and introducing the volume density $\rho$ of free charges: $\rho = \dd q_{\textrm{free}}/\dd V$ (where $\dd V$ is an element of volume), it is possible to obtain \redem{Maxwell's third equation in differential form}:
+\begin{align*}%
+\div \vb{D} & = \rho && \text{(in SI units),} \\
+\div \vb{D} & = 4 \pi \rho && \text{(in Gaussian units),}
+\end{align*}
+In these equations, $\div \vb{A}$ (where $\vb{A}$ is an arbitrary vector) is determined in Cartesian coordinates as follows:
+\begin{equation*}%
+\div \vb{A}= \pdv{A_{x}}{x} + \pdv{A_{y}}{y}  + \pdv{A_{z}}{z}, 
+\end{equation*}
+where $\vb{A} = A_{x} \vu{i}+ A_{y} \vu{j} + A_{z} \vu{k}$ and $\vu{i}$, $\vu{j}$, and $\vu{k}$ are unit vectors along the coordinate axes.
 
-\subsection{}\label{27.4.3} The complete set of Maxwell's equations includes four equations:
-curlE=—dB divD=p dt
-curlH=j+
-, divjB=0
-curl E=—-4rr, divD=4jxp
-C ut
-itt4jc 1dD,. n curl H=----1-4----— , divB=0.
+\subsection{}\label{27.4.3} The \redem{complete set of Maxwell's equations} includes four equations:
+\begin{align*}%
+\curl \vb{E} & = - \pdv{\vb{B}}{t},\,\, &\div \vb{D} & = \rho, && \text{(in SI units),} \\
+\curl \vb{H} & = \vb{j} + \pdv{\vb{D}}{t},\,\, &\div \vb{B} & = 0, && \text{(in SI units),} \\
+\curl \vb{E} & = - \frac{1}{c} \pdv{\vb{B}}{t},\,\, &\div \vb{D} &= 4 \pi \rho, && \text{(in Gaussian units),} \\
+\curl \vb{H} & = \frac{4\pi}{c}\vb{j} + \frac{1}{c}\pdv{\vb{D}}{t},\,\, &\div \vb{B} &= 0,  && \text{(in Gaussian units).}
+\end{align*}
 
-\subsection{}\label{27.4.4} The system of Maxwell's equations is supplemented by equations that specify the electric and magnetic properties of the medium. For macrocurrents in an isotropic medium, which comply with Ohm's law \ssect{20.3.4}, these equations are of the form
-D= e0erE, B= jmac= xE (in SI units),
-D = erE, B = (irH, jmac = xE (in Gaussian units).
-Here e0and \i0are the electric constant \ssect{14.2.7} and the magnet­ ic constant \ssect{23.2.2} in SI units, er and pr are the relative dielec­ tric constant and relative magnetic permeability, and x is the electrical conductivity.
-To solve a system of Maxwell's equations, it is also necessary to specify the boundary conditions for the vectors character­ izing the electromagnetic field. Thus
-c cdt
-Eh~EH'
-  t l ~ J  t 2 = j r S U r
-Eti=Et2'
-where o is the surface density of free charges, n is a unit vector of the normal to the interface (boundary) between media and extends from medium 2 to medium 1, t is a unit vector of the tangent to the interface, and / SUr is the projection of the density vector of surface conduction currents on the direction [tnj. For given boundary and initial conditions, i.e. known values of vectors- -andjaa ttheninitialinstant oftime (t~Q)*tSe system of Maxwell's equations has a unique solution.
+\subsection{}\label{27.4.4} The system of Maxwell's equations is supplemented by equations that specify the electric and magnetic properties of the medium. For macro-currents in an isotropic medium, which comply with Ohm's law \ssect{20.3.4}, these equations are of the form
+\begin{align*}%
+\vb{D} & = \varepsilon_{0}\varepsilon_{r} \vb{E}, \,\, \vb{B} = \mu_{0}\mu_{r} \vb{H} \,\, \vb{j}_{mac} = \varkappa \vb{E} && \text{(in SI units),} \\
+\vb{D} & = \varepsilon_{r} \vb{E}, \,\, \vb{B} = \mu_{r} \vb{H} \,\, \vb{j}_{mac} = \varkappa \vb{E} && \text{(in Gaussian units).}
+\end{align*}
+Here $\varepsilon_{0}$ and $\mu_{0}$ are the electric constant \ssect{14.2.7} and the magnetic constant \ssect{23.2.2} in SI units, $\varepsilon_{r}$ and $\mu_{r}$ are the relative dielectric constant and relative magnetic permeability, and x is the electrical conductivity.
+
+To solve a system of Maxwell's equations, it is also necessary to specify the boundary conditions for the vectors characterizing the electromagnetic field. Thus
+\begin{align*}%
+D_{n_{1}} - D_{n_{2}}& = \sigma,\,\, & E_{t_{1}} & = E_{t_{2}}, && \text{(in SI units),} \\
+B_{n_{1}} & = B_{n_{2}},\,\, & H_{t_{1}}-H_{t_{2}} & =  j_{sur}, && \text{(in SI units),} \\
+D_{n_{1}} - D_{n_{2}} & = 4\pi\sigma,\,\, & E_{t_{1}} & = E_{t_{2}}, && \text{(in Gaussian units),} \\
+B_{n_{1}} & = B_{n_{2}},\,\, & H_{t_{1}}-H_{t_{2}} & =  \frac{4\pi}{c}j_{sur}, && \text{(in Gaussian units).}
+\end{align*}
+where $\sigma$ is the surface density of free charges, $\vu{n}$ is a unit vector of the normal to the interface (boundary) between media and extends from medium $\mathcal{2}$ to medium $\mathcal{1}$, $\vu{t}$ is a unit vector of the tangent to the interface, and $j_{sur}$ is the projection of the density vector of surface conduction currents on the direction $[\vu{t}\,\vu{n}]$. For given boundary and initial conditions, i.e. known values of vectors $\vb{E}$ and $\vb{H}$ at the initial instant of time $(t=0)$ the system of Maxwell's equations has a unique solution.
 
 \subsection{}\label{27.4.5} Maxwell's equations are invariant with respect to the Lorentz transformations \ssect{5.3.2}.
 
-In the special theory of relativity \ssect{5.1.1} it is shown that a common electromagnetic field can be different in different iner­ tial frames of reference \ssect{2.1.2}. In particular, one of the fields, either electric or magnetic, may be absent in one of the coordi­ nate systems and be present in the other. The following formu­ las are used for the Lorentz transformations of the projections on the coordinate axes of the vectors E, H, D and B of the elec­ tric and magnetic fields, in going over from fixed inertial frame of reference K to frame K\ which travels with respect to frame K at the constant velocity V in a straight line along the OX axis:
-E~=Ef,Eh—e'v+TH'z
-K ---- By E—z C y
-Y i—v*/c* '
- x x'y
-H '- - - - E ' z
-E'+VB'
-V'Z „ K-VBv
-TP     TPf
-x  ' y Y i - w ' z Y i - v   i c *
-IP
-„ „ HV-VDz * *' v
-DV+  H'z Dx~D*'Dy~yi y2jCi'Dz~ yi 72/c2
-B ' v - l * E 'z R   B ' z +   r E y
-(in SI units),
-Y i—V*le* ' V
-v c z
-ffz+-rK
+In the special theory of relativity \ssect{5.1.1} it is shown that a common electromagnetic field can be different in different inertial frames of reference \ssect{2.1.2}. In particular, one of the fields, either electric or magnetic, may be absent in one of the coordinate systems and be present in the other. The following formulas are used for the Lorentz transformations of the projections on the coordinate axes of the vectors $\vb{E}$, $\vb{H}$, $\vb{D}$ and $\vb{B}$ of the electric and magnetic fields, in going over from fixed inertial frame of reference $K$ to frame $K'$ which travels with respect to frame $K$ at the constant velocity $V$ in a straight line along the $OX$ axis:
+\begin{align*}%
+E_{x}& = E_{x}',\,\, & E_{y} & = \gamma(E_{y}'+ VB_{z}'), & E_{z} & = \gamma(E_{z}'- VB_{y}'), && \text{(in SI units),} \\
+H_{x}& = H_{x}',\,\, & H_{y} & = \gamma(H_{y}' - VD_{z}'), & H_{z} & = \gamma(H_{z}'+ VD_{y}'), && \text{(in SI units),} \\
+D_{x}& = D_{x}',\,\, & D_{y} & = \gamma \left(D_{y}' + \frac{\beta}{c}H_{z}' \right), & D_{z} & = \gamma \left(D_{z}' + \frac{\beta}{c}H_{y}' \right), && \text{(in Gaussian units),} \\
+B_{x}& = B_{x}',\,\, & B_{y} & = \gamma \left(B_{y}' - \frac{\beta}{c}E_{z}' \right), & B_{z} & = \gamma \left(B_{z}' + \frac{\beta}{c}E_{y}' \right), && \text{(in Gaussian units),} \\
+E_{x}& = E_{x}',\,\, & E_{y} & = \gamma \left(E_{y}' + \beta \, H_{z}' \right), & E_{z} & = \gamma \left(E_{z}' + \beta \, H_{y}' \right), && \text{(in Gaussian units),} \\
+H_{x}& = H_{x}',\,\, & H_{y} & = \gamma \left(H_{y}' - \beta \, E_{z}' \right), & H_{z} & = \gamma \left(H_{z}' + \beta \, E_{y}' \right), && \text{(in Gaussian units).}
+\end{align*}
+Where $\beta = V/c$ and $\gamma = 1/\sqrt{1 - V^{2}/c^{2}}$.
 
 \subsection{}\label{27.4.6} The classical Lorentz theory of the electron is a further development of Maxwell's theory of the electromagnetic field.
 
-The Lorentz theory is based on a definite model that implies certain conceptions of the structure of matter. It is assumed that atoms consist of negatively and positively charged particles, and that the great variety of electrical and magnetic phenomena can be explained by a definite spatial arrangement, motion and interaction of charges and microcurrents. At each point in space certain electric and magnetic microfields exist with the strengths e and h. These fields result from the combined action of all the charges and microcurrents. The microfields comply with a system of equations similar to Maxwell's equations \ssect{27.4.3}. Maxwell's equations for macroscopic fields E and B \ssect{27.1.3} can be obtained by averaging the equations of the electron theory \ssect{27.1.4}, and they are found to be the averaged microfields e and h. Thus
-E = (e), B = p-0(h) (in SI units).
-Vectors D and H are found to be related to (e) and (h) by the polarization vector Pe \ssect{18.2.3} and the magnetization vector M \ssect{26.3.1} as indicated in \ssect{18.3.4} and \ssect{26.4.4}. Thus
-D
-D=e0E+Pe, H=-----M (inSIunits),
-D= E+ 4jtPe, H= B—4jiM (in Gaussian units).
+The Lorentz theory is based on a definite model that implies certain conceptions of the structure of matter. It is assumed that atoms consist of negatively and positively charged particles, and that the great variety of electrical and magnetic phenomena can be explained by a definite spatial arrangement, motion and interaction of charges and micro-currents. At each point in space certain electric and magnetic micro-fields exist with the strengths $\vb{e}$ and $\vb{h}$. These fields result from the combined action of all the charges and micro-currents. The micro-fields comply with a system of equations similar to Maxwell's equations \ssect{27.4.3}. Maxwell's equations for macroscopic fields E and B \ssect{27.1.3} can be obtained by averaging the equations of the electron theory \ssect{27.1.4}, and they are found to be the averaged microfields e and h. Thus
+\begin{equation*}%
+\vb{E} = \expval{\vb{e}},\,\, \vb{B} = \mu_{0}\expval{\vb{h}} \quad \text{(in SI units).}
+\end{equation*}
+Vectors $\vb{D}$ and $\vb{H}$ are found to be related to $\expval{\vb{e}}$ and $\expval{\vb{h}}$ by the polarization vector $\vb{P}_{e}$ \ssect{18.2.3} and the magnetization vector $\vb{M}$ \ssect{26.3.1} as indicated in \ssect{18.3.4} and \ssect{26.4.4}. Thus
+\begin{align*}%
+\vb{D} & = \varepsilon_{0} \vb{E}, + \vb{P}_{e},\,\, & \vb{H} & =\frac{\vb{B}}{\mu_{0}} - \vb{M}, && \text{(in SI units),} \\
+\vb{D} & =  \vb{E}, + 4 \pi \vb{P}_{e},\,\, & \vb{H} & =\vb{B} - 4 \pi \vb{M}, && \text{(in Gaussian units).}
+\end{align*}
+
+
+
