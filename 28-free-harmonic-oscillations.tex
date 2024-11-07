@@ -129,15 +129,16 @@ Such a dependence of the force on the displacement is typical for an elastic for
 
 \subsection{}\label{28.2.2} The \redem{kinetic energy} of a particle vibrating harmonically in a straight line is equal to
 \begin{align*}%
-E_{k} & = \frac{mv^{2}}{2} = \frac{mv_{0}^{2}}{2} \cos^{2} (\omega t + \varphi_{0}) = \frac{m\omega^{2} A^{2}}{2} \cos^{2} (\omega t + \varphi_{0}), \qor \\
-E_{k} & = \frac{m\omega^{2} A^{2}}{4} [1 + \cos (2\omega t + 2\varphi_{0}).
+E_{k} & = \frac{mv^{2}}{2} = \frac{mv_{0}^{2}}{2} \cos^{2} (\omega t + \varphi_{0}),\\ 
+&= \frac{m\omega^{2} A^{2}}{2} \cos^{2} (\omega t + \varphi_{0}), \qor \\
+ & = \frac{m\omega^{2} A^{2}}{4} [1 + \cos (2\omega t + 2\varphi_{0}).
 \end{align*}
 The kinetic energy of the particle varies periodically from 0 to $m\omega^{2}A^{2}/2$ as it vibrates harmonically with the angular fre­ quency $2\omega$ and the amplitude $m\omega^{2}A^{2}/4$ about its average value of $m\omega^{2}A^{2}/4$.
 
 The \redem{potential energy} of a particle vibrating harmonically in a straight line due to the effect of a quasi-elastic force is equal to
 \begin{align*}%
 E_{p} & = - \int_{0}^{x} F_{x}\, \dd x = \frac{m \omega^{2}x^{2}}{2} = \frac{m \omega^{2}A^{2}}{2} \sin^{2} (\omega t + \varphi_{0})\qor \\
-E_{p} & = \frac{m\omega^{2} A^{2}}{4} [1 - \cos (2\omega t + 2\varphi_{0}),
+ & = \frac{m\omega^{2} A^{2}}{4} [1 - \cos (2\omega t + 2\varphi_{0}),\\
 & = \frac{m\omega^{2} A^{2}}{4} [1 + \cos (2\omega t + 2\varphi_{0} + \pi).
 \end{align*}
 The \redem{potential energy} of the particle varies periodically from 0 to $m\omega^{2}A^{2}/2$ as it vibrates harmonically with the angular frequency $2\omega$ and the amplitude $m\omega^{2}A^{2}/4$ about its average value of$m\omega^{2}A^{2}/2$. The variations of the potential and kinetic energies have a phase difference of $\pi$, so that the total mechanical energy of the particle remains constant in vibration:
@@ -170,7 +171,7 @@ E_{p} = \frac{kx^{2}}{2}.
 
 \subsection{}\label{28.2.4} \marginnote{\textbf{\large Example~2.}} A \redem{compound}, or \redem{physical, pendulum} is a rigid body capable of oscillating under the action of the gravity force $mg$ about a horizontal axis $O$, which does not pass through the centre of gravity of the body, and is called the \redem{axis of oscillation}, or \redem{swing} (\figr{fig-28-04}). The centre of gravity of the pendulum coincides with its centre of mass $C$ \ssect{7.3.2}. Point $O$, the intersection of the axis of oscillation with a vertical plane passing through the centre of gravity of the pendulum and perpendicular to its \redem{axis of oscillation}, is called its \redem{point of suspension}.
 
-\begin{marginfigure}[-3cm]
+\begin{marginfigure}%[-3cm]
 \centering
 \includegraphics[width=0.7\textwidth]{figs/ch-28/fig-28-04.pdf}
 \sidecaption{A compound pendulum and its parameters.\label{fig-28-04}}
@@ -219,7 +220,7 @@ The centre of oscillation $O_{1}$ and the point of suspension $O$ are interchang
 \subsection{}\label{28.2.7} \marginnote{\textbf{\large Example~4.}} \redem{Small free vibrations of electrons in a plasma} \ssect{22.6.1} are called \redem{Langmuir oscillations of the plasma}. They are caused by the forces of an electric field, which is set up in an electrically neutral plasma as the result
 of some random deviation of the spatial distribution of the electrons from their equilibrium distribution.
 
-\begin{marginfigure}%[-3cm]
+\begin{marginfigure}[-1.5cm]
 \centering
 \includegraphics[width=0.7\textwidth]{figs/ch-28/fig-28-05.pdf}
 \sidecaption{Langmuir oscillations of electrons in a plasma under action of an electric field.\label{fig-28-05}}
@@ -242,45 +243,68 @@ which is called the \redem{Langmuir plasma frequency}, or simply, the \redem{pla
 \section{Free Harmonic Oscillations in an Oscillatory Electric Circuit}
 \label{sec-28.3} 
 
+\begin{marginfigure}%[-1.5cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-28/fig-28-06.pdf}
+\sidecaption{An example of simple electric oscillatory circuit with a capacitor $C$ and an inductor $L$.\label{fig-28-06}}
+\end{marginfigure}
 
-\subsection{}\label{28.3.1} An example of an electric circuit in which free electric oscillations may occur is the simple oscillatory circuit (Fig. 28.6). It consists of a capacitor of capacitance C connected in series to
-I>0
-Fig. 28.6
-an induction coil with the self-induc- tancc L. When the previously charged capacitor is connected to the coil, free oscillations of the capacitor charge and the current in the coil are pro­ duced. This sets up a variable elec­ tromagnetic field that propagates through space at a velocity equal to that of light. Hence, if the linear di­ mensions I of the circuit are not too large (Z< c/v, where c = 3 X
-Xl08m/sis the velocity of light in vacuum, and v is the frequency of oscillation in the circuit), it can be assumed that at each instant of time t the current I is the same at all parts of the circuit. Such a variable current is
-said to be quasi-stationary. According to Ohm's law \ssect{21.2.3} for the portion l-L-2 of the circuit (Fig. 28.6)
-/i?=F1-F2+les or i-J.
+\subsection{}\label{28.3.1} An example of an electric circuit in which free electric oscillations may occur is the simple \redem{oscillatory circuit} (\figr{fig-28-06}). It consists of a capacitor of capacitance $C$ connected in series to an induction coil with the self-inductance $L$. When the previously charged capacitor is connected to the coil, free oscillations of the capacitor charge and the current in the coil are produced. This sets up a variable electromagnetic field that propagates through space at a velocity equal to that of light. Hence, if the linear dimensions $l$ of the circuit are not too large ($l \ll c/\nu$, where $c = \SI{3d8}{\meter\per\second}$ is the velocity of light in vacuum, and $\nu$ is the frequency of oscillation in the circuit), it can be assumed that at each instant of time $t$ the current $I$ is the same at all parts of the circuit. Such a variable current is
+said to be \redem{quasi-stationary}. According to Ohm's law \ssect{21.2.3} for the portion $\mathit{1}-L-\mathit{2}$ of the circuit (\figr{fig-28-06})
+\begin{equation*}%
+IR = V_{1} - V_{2} + \emf_{s} \qor IR = -\frac{q}{C} - L \dv{I}{t}.
+\end{equation*}
+Here $q$ and $V_{1} - V_{2} = - q/C$ are the charge of the capacitor and the potential difference of its plates at the arbitrary instant $t$ of time being considered, $R$ is the electric resistance of the oscillatory circuit, i.e. of the part $\mathit{1}-L-\mathit{2}$ of the circuit, and
+$ \emf_{s} = -L (\dv*{I}{t})$ is emf of self-induction in the coil \ssect{25.2.4}. If follows from the law of conservation of electric charge \ssect{14.1.3} that the quasi-stationary current in the circuit is $I = \dv*{q}{t}$. Therefore, the differential equation for the variation of charge $q$ is of the form
+\begin{equation*}%
+\dv[2]{q}{t} + \frac{R}{L} \dv{q}{t} + \frac{q}{LC} = 0.
+\end{equation*}
 
+\subsection{}\label{28.3.2} Free electric oscillations in an oscillatory circuit are \redem{harmonic} if its electrical resistance $R = 0$. Thus
+\begin{equation*}%
+\dv[2]{q}{t} + \frac{q}{LC} = 0.
+\end{equation*}
+The angular frequency $\omega$ and the period $T$ of these oscillations satisfy the \redem{Thomson formula}:
+\begin{equation*}%
+\omega = \frac{1}{\sqrt{LC}} \qand T = 2 \pi \sqrt{LC}.
+\end{equation*}
+The charge $q$ of the capacitor and current $I$ in the circuit vary according to the equations
+\begin{align*}%
+q = q_{0} \sin ( \omega t + \varphi_{0}), \qand \\
+I = I_{0} \cos ( \omega t + \varphi_{0}) = I_{0} \sin \left( ( \omega t + \varphi_{0}) + \frac{\pi}{2} \right)
+\end{align*}
+where $q_{0}$ is the amplitude of the capacitor charge, $I_{0} =\omega q_{0} = q_{0}\sqrt{LC}$ is the amplitude of the current, and $\varphi_{0}$ is the initial phase of capacitor charge oscillation. The current in the circuit has a phase lead of $\pi/2$ over the capacitor charge.
 
-Here q and Vx — V2 = — qtC are the charge of the capacitor and the potential difference of its plates at the arbitrary instant t of time being considered, R is the electric resistance of the oscillatory circuit, i.e. of the part l-L-2 of the circuit, and
-= —L (dl/dt) is emf of self-induction in the coil \ssect{25.2.4}. If follows from the law of conservation of electric charge \ssect{14.1.3} that the quasi-stationary current in the circuit is I — dqldt. Therefore, the differential equation for the variation of charge q is of the form
-d2q R dq , q dt2 L dt LC
-0.
+The potential difference $u = V_{2}- V_{1}$ of the capacitor plates also varies according to a harmonic law and is in phase with charge $q$. Thus
+\begin{equation*}%
+u= \frac{q}{C} = U_{0} \sin ( \omega t + \varphi_{0}),
+\end{equation*}
+where $U_{0} = q_{0}/C$ is the amplitude of the potential difference. The amplitude of the current is
+\begin{equation*}%
+I_{0} = U_{0} \sqrt{\frac{C}{L}}.
+\end{equation*}
+The quantity $\sqrt{L/C}$ is called the \redem{characteristic}, or \redem{wave, impedance of the oscillatory circuit}.
 
-\subsection{}\label{28.3.2} Free electric oscillations in an oscillatory circuit are harmonic if its electrical resistance R — 0. Thus
-The angular frequency go and the period T of these oscillations satisfy the Thomson formula:
-( 0            = a n d T = 2 n Y L C . V LC
-The charge q of the capacitor and current I in the circuit vary according to the equations
-<1 -=qQsin (otf+ epo) and
-/ -/„ cos (<oi+ ) = /„ Sin (co*+ (p0+ - -j ,
-where q0 is the amplitude of the capacitor charge, I 0 — cog0 =
--qj YLC isthe amplitudeof the current, and cp0is the ini­ tial phase of capacitor charge oscillation. The current in the circuit has a phase lead of ji/2 over the capacitor charge.
-The potential difference u = V2— V1 of the capacitor plates also varies according to a harmonic law and is in phase with charge q. Thus
-u= - -=U0sin (cot-j-tp0),
-where U0— qJC is the amplitude of the potential difference. The amplitude of the current is
-'o = Uo ~jrf •
-The quantity YL/C is called the characteristic, or wave, impe­ dance of the oscillatory circuit.
+\subsection{}\label{28.3.3} With free harmonic oscillations in an oscillatory circuit, there is a periodic transfer of the energy $E_{e}$ of the electric field of the capacitor into energy $E_{m}$ of the magnetic field of the inductance coil and back again. Thus
+\begin{align*}%
+E_{e} & = \frac{q^{2}}{2C} = \frac{q_{0}^{2}}{2C} \sin^{2} ( \omega t + \varphi_{0}),\\
+& =  \frac{q_{0}^{2}}{4C} \left[ 1 - \cos( 2\omega t + 2\varphi_{0}) \right],\\
+E_{m} & = \frac{LI^{2}}{2} = \frac{LI_{0}^{2}}{2} \cos^{2} ( \omega t + \varphi_{0}),\\
+& =  \frac{LI_{0}^{2}}{4} \left[ 1 + \cos( 2\omega t + 2\varphi_{0}) \right],\\\end{align*}
+For this reason, the oscillations in an electrical oscillatory circuit are frequently said to be \redem{electromagnetic oscillations in the circuit}.
 
-\subsection{}\label{28.3.3} With free harmonic oscillations in an oscillatory circuit, there is a periodic transfer of the energy E e of the electric field
-
-of the capacitor into energy Em of the magnetic field of the in­ ductance coil and back again. Thus
-Ee=~£c~=lxTSin*(<0,+ (f'o)= '!c~ f1—cos(2w*+2<p0)],
-Em =
-T T2 r T2 T T2
-cos2((at+ cp0)= — [1+ cos (2 f+ 2<p0)].
-For this reason, the oscillations in an electrical oscillatory cir­ cuit are frequently said to be electromagnetic oscillations in the circuit.
-The values of Ee and Em vary in electromagnetic oscillations within the limits from 0 to their maximum values, equal, re­ spectively, to q/2C and L/J/2, in which q/2C = LI/2. The variations of E e and Em are displaced in phase. At the instants of time when Ee= 0, Em= Emmax= LIq/2. On the other hand,whenEm—0,Ee= Eemax= q2C.Thetotalenergy of electromagnetic oscillations is constant with time. Thus
-E= Ee+ Em= =const.
+The values of $E_{e}$ and $E_{m}$ vary in electromagnetic oscillations within the limits from 0 to their maximum values, equal, respectively, to $q_{0}^{2}/2C$ and $LI_{0}^{2}/2$, in which $q_{0}^{2}/2C = LI_{0}^{2}/2$. The variations of $E_{e}$ and $E_{m}$ are displaced in phase. At the instants of time when $E_{e} = 0$,
+\begin{equation*}% 
+E_{m} = E_{m \,\, \textrm{max}}= LI_{0}^{2}/2.
+\end{equation*}
+On the other hand, when $E_{m} = 0$, 
+\begin{equation*}%
+E_{e} = E_{e \,\, \textrm{max}} = \frac{q_{0}^{2}}{2C}.
+\end{equation*}
+The total energy of electromagnetic oscillations is constant with time. Thus
+\begin{equation*}%
+E = E_{e} + E_{m} = \frac{q_{0}^{2}}{2C} + \frac{LI_{0}^{2}}{2} = \text{const.} 
+\end{equation*}
 
 \section{Adding Harmonic Oscillations}
 \label{sec-28.4} 
