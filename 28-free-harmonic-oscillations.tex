@@ -401,7 +401,7 @@ where $T_{1}$, $\nu_{1}$, $T_{2}$ and $\nu_{2}$ are the periods and frequencies 
 
 \begin{figure}[h]%[-1.5cm]
 \centering
-\includegraphics[width=0.9\textwidth]{figs/ch-28/fig-28-09.pdf}
+\includegraphics[width=\textwidth]{figs/ch-28/fig-28-09.pdf}
 \sidecaption{Dependence of $s$ on $t$ for beats.\label{fig-28-09}}
 \end{figure}
 
@@ -427,7 +427,7 @@ s = f(t) = \int_{0}^{\infty} [a(\omega) \cos \omega t + b(\omega) \sin \omega t]
 where
 \begin{align*}%
 a(\omega) & = \frac{1}{\pi} \int_{-\infty}^{\infty} f(\xi) \cos \omega \xi \, \dd \xi,\\
-b(\omega) & = \frac{1}{\pi} \int_{-\infty}^{\infty} f(\xi) \sin \omega \xi \, \dd \xi,.
+b(\omega) & = \frac{1}{\pi} \int_{-\infty}^{\infty} f(\xi) \sin \omega \xi \, \dd \xi.
 \end{align*}
 Certain nonperiodic oscillations, called \redem{almost periodic} (\redem{quasi-periodic}) oscillations have a line frequency spectrum. But the included angular frequencies are incommensurable with one another, because their ratios are expressed by irrational numbers. 
 
@@ -469,29 +469,53 @@ where $\Omega \ll \omega_{0}$.
 
 In the general case oscillations can be modulated simultaneously in amplitude and in phase (or frequency). An example of such modulated oscillations is beating \ssect{28.4.4}.
 
-\subsection{}\label{28.4.9} \redem{Addition of mutually perpendicular harmonic oscillations of equal frequency}. Assume that point M oscillates simultaneous­ ly along the coordinate axes OX and OY according to the law: x = Axsin (rn + tpj) and y = A2sin (o)t + q)2), where x and / are the Cartesian coordinates of point M. The path equation lor the resultant motion of point M in plane XOY can be found by eliminating parameter t from the expression for x and y. Thus
-2xy COS(92—cpi)= sin2(t2—9i)- A\ AxA2
-This path is an ellipse (Fig. 28.10) and point M describes this ellipse during a time equal to the period of the oscillations being
+\subsection{}\label{28.4.9} \redem{Addition of mutually perpendicular harmonic oscillations of equal frequency}. Assume that point $M$ oscillates simultaneously along the coordinate axes $OX$ and $OY$ according to the law: 
+\begin{align*}%
+x = A_{1} \sin (\omega t + \varphi_{1}), \qand \\
+y = A_{2} \sin (\omega t + \varphi_{2}),
+\end{align*}
+where $x$ and $y$ are the Cartesian coordinates of point $M$. The path equation for the resultant motion of point $M$ in plane $XOY$ can be found by eliminating parameter $t$ from the expression for $x$ and $y$. Thus
+\begin{equation*}
+\frac{x^{2}}{A_{1}^{2}} + \frac{y^{2}}{A_{2}^{2}} - \frac{2xy}{A_{1}A_{2}} \cos (\varphi_{2} - \varphi_{1}) = \sin^{2} (\varphi_{2} - \varphi_{1}).
+\end{equation*}
+\begin{marginfigure}%[h]%[-1.5cm]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/ch-28/fig-28-10.pdf}
+\sidecaption{The path of the resultant motion of addition of mutually perpendicular harmonic oscillations of equal frequency.\label{fig-28-10}}
+\end{marginfigure}
+This path is an ellipse (\figr{fig-28-10}) and point $M$ describes this ellipse during a time equal to the period of the oscillations being added together $(T = 2\pi/\omega)$. Hence, the resultant motion of point $M$ is called \redem{elliptically polarized oscillation}.
 
-added together (T = 2jx/co). Hence, the resultant motion of point M is called elliptically polarized oscillation.
+The orientation of the axes of the ellipse in plane $XOY$, as well as its dimensions depend upon the amplitudes $A_{1}$ and $A_{2}$ of the oscillations being combined and on their initial phase difference $\varphi_{2} - \varphi_{1}$. If $\varphi_{2} - \varphi_{1} = (2m + 1) \pi/2$, where $m = 0,\,\, \pm 1,\,\, \pm 2, \ldots{}$ the axes of the ellipse coincide with the coordinate axes $OX$ and $OY$, and the lengths of the semiaxes are equal to the amplitudes $A_{1}$ and $A_{2}$. Thus
+\begin{equation*}
+\frac{x^{2}}{A_{1}^{2}} + \frac{y^{2}}{A_{2}^{2}} = 1.
+\end{equation*}
+If, in addition, $A_{1} = A_{2}$, the path of point $M$ is a circle. Such resultant motion of point $M$ is called \redem{circularly polarized oscillation}.
 
-The orientation of the axes of the ellipse in plane XOY, as well as its dimensions depend upon the amplitudes A1and A2of the oscillations being combined and on their initial phase difference 92 — 9i- If 92 — 9i = (2/n + 1) Jt/2, where m = 0, ±1, ±2, . . the axes of the ellipse coincide with the coordinate axes OX and OY, and the lengths of the semiaxes are equal to the amplitudes Ax and A2. Thus
+When $\varphi_{2} - \varphi_{1} = m\pi$, where  $m = 0,\,\, \pm 1,\,\, \pm 2, \ldots{}$ the ellipse degenerates into a straight line. Thus 
+\begin{equation*}
+y = \pm \frac{A_{2}}{A_{1}} \, x.
+\end{equation*}
+\begin{marginfigure}[-2cm]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/ch-28/fig-28-11.pdf}
+\sidecaption{The addition of (a) co-phased and (b) anti-phased oscillations.\label{fig-28-11}}
+\end{marginfigure}
+The plus sign corresponds to even values of $m$, i.e. to the addition of co-phased oscillations (\figr{fig-28-11}~\drkgry{(a)}); the minus sign, to odd values of $m$, i.e. to the addition of oscillations that arc in opposition (anti-phased) (\figr{fig-28-11}~\drkgry{(b)}). In either case, point $M$ executes \redem{linearly polarized oscillation}. It oscillates with harmonic motion at the frequency of the oscillations being combined and with the amplitude $A = \sqrt{A_{1}^{2} + A_{2}^{2}}$ along a straight line that makes the angle $\alpha = \arctan ( A_{2} \cos m \pi/A_{1})$ with the axis $OX$. 
 
-II, in addition, A1— A2, the path of point M is a circle. Such resultant motion of point M is called circularly polarized oscil­ lation.
+\subsection{}\label{28.4.10} In the addition of mutually perpendicular oscillations having the angular frequencies $p \omega$ and $q \omega$, where $p$ and $q$ are whole numbers, we obtain
+\begin{align*}%
+x & = A_{1} \sin (p \omega t + \varphi_{1}), \qand \\
+y & = A_{2} \sin (q \omega t + \varphi_{2}).
+\end{align*}
+The values of coordinates $x$ and $y$ of the oscillating point $M$ are simultaneously repeated after equal periods $T_{0}$ of time, equal to the least common multiple of $T_{1} = 2\pi/p\omega$ and $T_{2} = 2\pi/q \omega$, which arc the periods of oscillation along the $OX$ and $OY$ axes. Hence, the path of point $M$ is a closed curve whose shape depends upon the ratios of the amplitudes, frequencies and initial phases of the oscillations being combined. Such closed paths of point $M$, which has simultaneous harmonic oscillations in two mutually perpendicular directions, are called \redem{Lissajous figures}.
 
-When<p2—cpi=mn,wherem=0,+1,±2,.. theellipse degenerates into a straight line. Thus
-The plus sign corresponds to even values of m, i.e. to the addition of cophased oscillations (Fig. 28.11a); the minus sign, to odd values of m, i.e. to the addition of oscillations that arc in
-opposition (antiphased) (Fig. 28.11 ). In either case, point M executes linearly polarized oscillation. It oscillates with harmonic motion at the frequency of the oscillations being combined and
-with the amplitude A = YA\ + A\ along a straight line that makes the angle a = arc tan ( 42c°s rn.nlAx) with the axis OX. 
+\begin{figure}[h]%[-2cm]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/ch-28/fig-28-12.pdf}
+\sidecaption{Lissajous figures are resultant of addition of mutually perpendicular oscillations having angular frequencies as multiples of whole numbers.\label{fig-28-12}}
+\end{figure}
 
-\subsection{}\label{28.4.10} In the addition of mutually perpendicular oscillations having the angular frequencies pw and goo, where p and q are whole numbers, we obtain
-x — A1sin (p(0t + cpj) and y = A2sin (q(ot + cp2).
-
-The values of coordinates x and y of the oscillating point M are simultaneously repeated after equal periods Tn of time, equal
-to the least common multiple of T1— 2nlp(o and T2— 2ji/</(jd, which arc the periods of oscillation along the OX and OY axes. Hence, the path of point M is a closed curve whose shape depends upon the ratios of the amplitudes, frequencies and initial phases of the oscillations being combined. Such closed paths of point M, which has simultaneous harmonic oscillations in two mutually perpendicular directions, are called Lissajous figures.
-
-
-Lissajous figures arc inscribed into rectangles whose centre coin­ cides with the origin of coordinates and whose sides are parallel to coordinate axes OX and OY. The distances of these sides from the axes are equal, respectively, to A2and Ax. The ratio of the frequencies qco and pco of the combined oscillations is equal to the ratio of the number of times the corresponding Lissajous figure touches a side of the rectangle parallel to the OX axis to the number of times it touches a side parallel to the OY axis. Shown in Fig. 28.12 are the Lissajous figures for three different values of the ratio qlp (2:1, 3:2 and 4:3) and for initial phase differences of Acp—<px—cp2= jt/2.
+Lissajous figures arc inscribed into rectangles whose centre coincides with the origin of coordinates and whose sides are parallel to coordinate axes $OX$ and $OY$. The distances of these sides from the axes are equal, respectively, to $A_{2}$ and $A_{1}$. The ratio of the frequencies $q\omega$ and $p\omega$ of the combined oscillations is equal to the ratio of the number of times the corresponding Lissajous figure touches a side of the rectangle parallel to the $OX$ axis to the number of times it touches a side parallel to the $OY$ axis. Shown in \figr{fig-28-12} are the Lissajous figures for three different values of the ratio $q/p$ ($2:1$, $3:2$ and $4:3$) and for initial phase differences of $\Delta \varphi = \varphi_{1} - \varphi_{2} = \pi/2$.
 
 
 
