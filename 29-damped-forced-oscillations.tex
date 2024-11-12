@@ -1,0 +1,264 @@
+% !TEX root = handbook-physics.tex
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+
+
+
+
+
+\chapter{Damped And Forced Oscillations}
+\label{ch-29}
+
+\section{Damped Oscillations}
+\label{sec-29.1} 
+
+\subsection{}\label{29.1.1} The \redem{damping of an oscillation or vibration} is its gradual weakening in the course of time due to the loss of energy of the oscillatory (vibratory) system. Free oscillations (vibrations) of real systems are always damped. The damping of free mechanical vibrations is due chiefly to friction and the excitation of elastic waves \ssect{30.1.3} in the surrounding medium. Damping in electrical oscillatory systems is due to thermal losses in the conductors making up the system or located in its variable electric field, energy losses on the radiation of electromagnetic waves \ssect{31.1.1}, and heat losses in dielectrics and ferromagnetic materials as a result of electrical and magnetic hysteresis \ssect{18.4.5} and \ssect{26.5.2}.
+
+The damping of oscillations depends upon the properties of the oscillatory system. A system is said to be \redem{linear} if the para­ meters characterizing physical properties of the system, essential in the process being considered, do not change in the course of the process. Linear systems are described by linear differential equations. A spring pendulum \ssect{28.2.3}, for instance, moving in a viscous medium, is a linear system if the resistance coefficient of the medium and the elasticity of the spring are independent of the velocity and displacement of the pendulum. An electrical oscillatory circuit \ssect{28.3.1} can be considered linear if its electrical resistance $R$, capacitance $C$ and inductance $L$ are independent of the current in the circuit, and the voltage. In the majority of cases real oscillatory or vibratory systems arc sufficiently close, with respect to their properties, to linear ones.
+
+\subsection{}\label{29.1.2} \redem{The differential equation for the free damped oscillation of a linear system} is of the form:
+\begin{equation}%
+\dv[2]{s}{t} + 2 \beta \dv{s}{t} + \omega_{0}^{2}s = 0.
+\end{equation}
+Here $s$ is the physical characteristic of the system that varies in the oscillation, $\beta = \text{const.} > 0$ is the \redem{damping factor}, and $\omega_{0}$ is the angular frequency of free \redem{undamped} oscillation of the same system, i.e. in the absence of energy losses (at $\beta = 0$).
+
+\textbf{\large Example~1.} \redem{Free damped oscillation of a spring pendulum} \ssect{28.2.3}. A pendulum of mass $m$, oscillating in a straight line along the $OX$ axis due to the elastic force of its spring, is also subject to a resisting force $\vb{F}_{\textrm{res}} = -b \vb{v}$, where $\vb{v}$ is the velocity of the pendulum and $b = \text{const.} > 0$ is the \redem{resistance coefficient}. The differential equation of free damped oscillation of the pendulum is
+\begin{align*}%
+m \dv[2]{x}{t} & = -b \dv{x}{t}  - kx, \qor \\
+\dv[2]{x}{t} & + 2\beta \dv{x}{t} + \omega_{0}^{2} x = 0,
+\end{align*}
+where $\beta = b/2m$, $\omega_{0} = \sqrt{k/m}$, and $k$ is a factor specifying the elastic properties of the spring.
+
+\textbf{\large Example~2.} \redem{Free damped oscillation in an electric oscillatory circuit}. The electrical resistance of a real circuit $R \neq 0$, and the differential equation of the oscillation in the circuit \ssect{28.3.1} is of the form
+\begin{equation*}%
+\dv[2]{q}{t} + 2\beta \dv{q}{t} + \omega_{0}^{2} q = 0,
+\end{equation*}
+where $\beta = R/2L$ and $\omega_{0}= 1/\sqrt{LC}$.
+
+\subsection{}\label{29.1.3} If damping is small $(\beta < \omega_{0})$ the dependence of $s$ on $t$ that satisfies the equation of damped oscillation \ssect{29.1.2} is of the form
+\begin{equation*}%
+s = A_{0} e^{-\beta t} \sin (\omega t + \psi_{0}).
+\end{equation*}
+Here $\omega = \sqrt{\omega_{0}^{2} - \beta^{2}}$ and the constant quantities $A_{0}$ and $\psi_{0}$ depend upon the initial conditions, i.e. upon the values of $s$ and $\dv*{s}{t}$ at the initial instant of time $(t = 0)$. The curve of the dependence of s on $t$ at $\psi_{0} = 0$ is shown in \figr{fig-29-01}. 
+
+\begin{figure}[h]%[-2cm]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/ch-29/fig-29-01.pdf}
+\sidecaption{The curve of the dependence of s on $t$ at $\psi_{0} = 0$ for damped oscillations.\label{fig-29-01}}
+\end{figure}
+
+
+Damped oscillations are not periodical ones \ssect{28.1.2}. For example, the maximum value of the varying quantity $s$, reached at a certain instant $t_{1}$ of time, is never repeated subsequently
+(at $t > t_{1}$). But the quantity $s$ becomes zero in damped oscillation as it varies in a single direction (decreases, for instance) and also reaches its maximum and minimum values after \redem{equal} time intervals. Thus
+\begin{equation*}%
+T = \frac{2\pi}{\omega} = \frac{2 \pi}{\sqrt{\omega_{0}^{2} - \beta^{2}}}.
+\end{equation*}
+For this reason, the quantities $T$ and $\omega$ are conditionally called the \redem{period (conditional period)} and \redem{angular frequency (conditional angular frequency) of damped oscillation}.
+
+The quantity
+\begin{equation*}%
+A = A_{0} \exp(-\beta t)
+\end{equation*}
+Is called the \redem{amplitude of damped oscillation}, where $A_{0}$ is the initial amplitude. The amplitude of damped oscillation decreases in the course of time; the greater the damping factor $\beta$, the more rapidly the amplitude decreases.
+
+The time interval $\tau = 1/\beta$ during which there is an $e$-fold decrease in the amplitude of damped oscillation, is called the \redem{relaxation time}.
+
+\subsection{}\label{29.1.4} \redem{The logarithmic decrement of damping} is the dimensionless quantity $\delta$, equal to the natural logarithm of the ratio of the amplitudes of damped oscillation at the instants of time $t$ and $t + T$ (where $T$ is the conditional period of oscillation). Thus
+\begin{equation*}%
+\delta =\ln \frac{A(t)}{A(t+ T)} = \beta T = \frac{T}{\tau} = \frac{1}{N},
+\end{equation*}
+where $N$ is the number of oscillations in which the amplitude is reduced $e$-fold.
+
+The relation between the angular frequency $\omega$ of damped oscillation of a system and the logarithmic decrement of damping $\delta$ is
+\begin{equation*}%
+\omega = \omega_{0} \sqrt{1 - \left( \frac{\omega}{\omega_{0}}\right)^{2} \,  \left( \frac{\delta}{2\pi}\right)^{2}}.
+\end{equation*}
+
+
+\subsection{}\label{29.1.5} \redem{The $Q$ factor (or quality factor or storage factor)} of an oscillatory system is the dimensionless quantity $Q$, equal to the product of $2\pi$ by the ratio of the energy of oscillation $E (t)$ of the system at the arbitrary time instant $t$ to the decrease of this energy during the length of time from $t$ to $t + T$, i.e. during one conditional period of damped oscillation. Thus
+\begin{equation*}%
+Q = 2 \pi \frac{E(t)}{E(t) - E(t+T)}.
+\end{equation*}
+Since the energy $E (t)$ is proportional to the square of the amplitude $A (t)$ of the oscillation,
+\begin{align*}%
+Q & = 2 \pi \frac{A^{2}(t)}{A^{2}(t) - A^{2}(t+T)} = \frac{2\pi}{1 - \exp(-2 \beta T)}\\ 
+& = \frac{2\pi}{1 - \exp(-2\delta)}.
+\end{align*}
+At low values of the logarithmic decrement of damping $\delta$, the $Q$ factor of an oscillatory system is $Q = \pi/\delta$. Here the conditional period of damped oscillation $T$ is practically equal to the period $T_{0}$ of free undamped oscillation and, consequently, $Q = \pi/\beta T_{0} = \omega_{0}/2\beta$. For example, the $Q$ factor of an electrical
+oscillatory circuit \ssect{28.3.1} is $Q = \sqrt{L/C}/R$, and that of a spring pendulum \ssect{29.1.2} is $Q = \sqrt{km}/b$.
+
+\subsection{}\label{29.1.6} The conditional period of damped oscillation increases with the damping factor $\beta$ and becomes infinite at $\beta = \omega_{0}$. If $\beta > \omega_{0}$ the differential equation of motion of the system
+\begin{equation*}%
+\dv[2]{s}{t} + 2\beta \dv{s}{t} + \omega_{0}^{2} s = 0,
+\end{equation*}
+has the following general solution: 
+\begin{equation*}%
+s = C_{1} \exp(-\alpha_{1}t) + C_{2} \exp(-\alpha_{2}t),
+\end{equation*}
+where $\alpha_{1} = \beta + \sqrt{\beta^{2} - \omega_{0}^{2}}$,  $\alpha_{2} = \beta - \sqrt{\beta^{2} - \omega_{0}^{2}}$ and $C_{1}$ and $C_{2}$ are constant factors depending upon the initial conditions. If the initial values (at the instant of time $t = 0$) equal: $s = s_{0}$ and $\dv*{s}{t} = v_{0}$, then
+\begin{equation*}%
+C_{1} = -\frac{\alpha_{2}s_{0} + v_{0}}{\alpha_{1} - \alpha_{2}} \qand C_{2} = \frac{\alpha_{1}s_{0} + v_{0}}{\alpha_{1} - \alpha_{2}} 
+\end{equation*}
+Such motion of the system is not of an oscillatory nature and is said to be \redem{aperiodic}. Depending upon the initial conditions, aperiodic motion of the system may be either of two kinds (\figr{fig-29-02}). Type $a$ motion occurs when $s_{0}$ and $v_{0}$ are opposite in sign and $\abs{v_{0}} > \alpha_{1} \abs{s_{0}}$. Otherwise, the aperiodic motion is of the $b$ type.
+
+\begin{marginfigure}[-2cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-29/fig-29-02.pdf}
+\sidecaption{The different types of aperiodic motions.\label{fig-29-02}}
+\end{marginfigure}
+
+\section{Forced Mechanical Vibration}
+\label{sec-29.2} 
+
+
+
+\subsection{}\label{29.2.1} A variable external force, applied to a system and causing its forced mechanical vibration, is called the disturbing, or driving, force.
+The differential equation of forced vibration (or oscillation) of the simplest linear system \ssect{29.1.1}, the spring pendulum \ssect{29.1.2}, executed along the OX axis due to the action of the variable external force F (J) is:
+d2r , dx . a 1
+
+1’Fx (t) is a periodic function of time, then, after application <>f the force to the pendulum, the forced vibration begins with a transient condition. The pendulum simultaneously participates in two vibrations :
+x= *1(0+ x2(t).
+The first term corresponds to free damped oscillation* of the pendulum \ssect{29.1.3}:
+'i (t) = A0e~ sin (m + ),
+whereu>=Y —P2.
+The second term corresponds to the undamped periodic oscil­
+lation of the pendulum at a frequency equal to that of the driving force Fx (t).
+The amplitude value of xx (t), equal to A0exp (—P*), is reduced at a more or less rapid rate after the beginning of the forced vibration (or oscillation). During the time t = 4.6/p the am­ plitude of xt (t) decreases by a factor of 100. Consequently, after a certain time following the beginning of vibration (t  x0), free vibration of the pendulum practically ceases: x (t)  x2(t).
+The pendulum reaches a state of steady forced vibration (or oscil­ lation) at the frequency of the driving force.
+
+\subsection{}\label{29.2.2} When the driving force varies according to a harmonic law, i.e. Fx = F0cos Qt, the steady-state forced vibration of the pendulum is also harmonic at the same frequency. Thus
+= A COS (Qt + cp0).
+The amplitude A of this vibration and the phase shift cp0between Ihe displacement and the driving force depend upon the relation between the angular frequencies of the forced vibration (Q) and Ihe free undamped vibration (co0) of the pendulum. Thus
+and tan (p0=
+m Y (<u§— £22)2+ 4p2Q2
+* It is assumed that P < co0. Otherwise, the free motion of the
+pendulum would be aperiodic \ssect{29.1.6}, i.e. (t)=cxOXp[-(P+/P*-<Bj|) <]
+I C 2 exp [— (p— / p 2— <o2) t].
+
+At fi = 0 we obtain (p0(0) = 0 and A (0) = A0= Fjm® l = = F0/ky which is the static displacement of the pendulum from
+
+its equilibrium position by the constant force Fx = F0. At Q -> oo, the amplitude A (Q) 0 and tan cp0 0, whereas
+
+cp0 —jt. The curves of the functions A (Q) and (p0(Q) are shown in Figs. 29.3 and 29.4 for various values of the damping factor |3,
+
+\subsection{}\label{29.2.3} The amplitude of the displacement in the case of steady- state forced harmonic vibration (oscillation) of the pendulum reaches its maximum value at the angular frequency
+iJr=/cog—2p*= / CO2—P2,
+where co is the angular frequency of free damped vibration of the pendulum \ssect{29.1.3}. The frequency QT is called the resonance
+frequency.
+The maximum amplitude is
+AA\
+where 6 is the logarithmic decrement of damping \ssect{29.1.4}. When P < co0, Qr  co0, (p0(Qr) ~ —Jt/2 and Amax ~ (M0, where Q  jt/6 is the Q factor of the pendulum \ssect{29.1.5} and A0 is the static displacement \ssect{29.2.2}.
+
+The drastic increase in the amplitude of forced mechanical vibration (or oscillation) as the angular frequency of the driving force approaches the value Qr is the phenomenon called mechan­ ical resonance. Accordingly, the curves of the dependence of A on Q, shown in Fig. 29.3 are called resonance curves.
+
+As the damping factor P is increased, the peaks on the resonance curves are rapidly reduced (at small P values the amplitude Amax ~ 1/P) and the resonance frequency Qr is slowly de­ creased.
+
+\subsection{}\label{29.2.4} The velocity of the pendulum in steady-state forced har­ monic vibration (oscillation) is
+vx= ~7T==—AQsin(Qf-f-(p0)=Aycos(Q£+a).
+Here AY= AQ and a = cp0-f jt/2 are the amplitude of the velocity and the phase difference between the velocity and the driving force:
+ F   m Y (w§— Q*)*-|-4paQ4
+and
+tana——cotfp0—cog— Q2 2pQ *
+
+The amplitude of the velocity is maximal at Q = co0 and equals
+In this case, a = 0, i.e. the velocity of the pendulum oscillates in phase with the driving force. As Q oo, the amplitude Av -> 0 and a —jt/2, whereas as Q 0, the amplitude Av->■0anda jt/2.
+
+\subsection{}\label{29.2.5} The acceleration of the pendulum in steady-state forced harmonic vibration (oscillation) is
+dx
+ax -—~AQ2cos (Q£+ q>0)= Aacos (Qt-j-y).
+Here Aa = AQ2 and y = (p0+ n are the amplitude of the acceleration and the pnase difference between the acceleration and the driving force:
+F0Q2
+mYK — Q2)2+ 4P2Q2 m/ [(©0/Q)a— l]a+ (2p/Q)2 ’
+Aa
+The amplitude of acceleration is maximal at At Q= 0, the amplitude Aa= 0, whereas as Q oo the amplitude of the acceleration tends to the value Aa (oo) = = F0/m.
+
+\subsection{}\label{29.2.6} In steady-state forced vibration, the energy loss of the vibratory system, due to dissipative forces \ssect{1.3.7}, is completely compensated by the work performed on the system by the driving force. The work, for example, done in one complete oscillation by the force of resistance acting on the spring pendulum is
+TT
+2mfiA*Q2 \ sin2(Q£+ cpo)dt
+where b = 2mP is the resistance coefficient \ssect{29.1.2}.
+The work done during the same time by the driving force Fx = = F0coQstis
+TT
+W2= F0j* cos dt=—AQFqcosQ*sin(Qf+cp0)dt
+00 = ---2~AQ0sin <p0= —Wl9
+since sin cp0 = —2mAQ/F0.
+
+\subsection{}\label{29.2.7} If the driving force acting on the spring pendulum varies periodically, but not according to a harmonic law, it can he represented as the sum of the harmonics of this force \ssect{28.4.6}. These have different amplitudes, initial phases and angular frequencies that are multiples of Q = 2nfT, where T is the period of variation of the driving force. Since the pendulum is a linear vibratory (or oscillatory) system \ssect{29.1.1}, each har­ monic of the driving force acts on the system as if there were no other harmonics. Therefore, the steady-state forced oscil­ lation of the pendulum, caused by an arbitrary periodic driving force, can be dealt with as the result of superposing steady-state forced oscillations due to each harmonic component of the driving force acting separately. The “contribution”of the various harmonic components to the resultant oscillation depends upon their frequency and amplitude. Owing to resonance phenomena, an essential role, is played by only the harmonic components of the driving force that have an angular frequency close to the resonance frequency of the pendulum \ssect{29.2.3}. If the damping factor P of the pendulum is small, the pendulum can execute steady-state forced oscillation close to the harmonic one, even if the driving force is far from harmonic. An example of such forced oscillation is that of a pendulum subject to short periodi­ cal external action in the form of impacts in a single direction and repeated over equal lengths of time, which are equal to the period of free oscillation of the pendulum.
+
+\section{Forced Electrical Oscillation}
+\label{sec-29.3}
+
+\subsection{}\label{29.3.1} To obtain forced oscillation in an electrical oscillatory circuit \ssect{28.3.1} it is necessary to connect into it a source of electrical energy, whose emf  varies with time (Fig. 29.5).
+
+In electrical engineering a source of electrical energy, charac­ terized by its emf and internal electrical resistance, is called a seat, or source, of emf (voltage source). According to Ohm’s law for the portion l-R-L-2 \ssect{21.2.3}, the quasi-stationary current
+I>0 R
+(t) Fig. 29.5
+\ssect{28.3.1}, produced in the cir­ cuit in forced oscillation, can be found from the formula
+I R = V l - V 2- L -  - +  ( t ) .
+Here V2— V1— q/C is the po­ tential difference across the ca­ pacitor plates, q is the capacitor charge, and the internal elec­ trical resistance of the source of emf is assumed to be neg­ ligibly small compared to R (such a source of emf is said
+to be ideal). From the law of conservation of electrical charge \ssect{14.1.3} it follows that / = dqfdt. Hence, the differential equa­ tion of forced electrical oscillation in a circuit can be presented in a form similar to the equation for forced mechanical vibra­ tion \ssect{29.2.1}:
+ + 2 p  + a > “9 = “T 
+Here P = Rl2L is the damping factor for free oscillation in a
+circuit, and o)0 = 1lY L C is the angular frequency of free undamped oscillation (i.e. at R = 0).
+
+\subsection{}\label{29.3.2} If the driving emf  (i) varies according to the harmonic law  (t) = 0cos Qt, then at steady-state forced oscillation \ssect{29.2.1}, the capacitor charge varies harmonically at the same angular frequency Q:
+q= q0cos(Qf+ q>0).
+The amplitude q0 and the initial phase (p0 are determined by the formulas
+>  ». Q YR*-QL—i/QC)2 LY(tog—Q2)H-4P2Q
+
+and
+tan cpQ— R 2pQ
+QL — 1IQC tog — Q2 
+395
+At Q = 0, the phase cp0(0) = 0 and q0(0) = <f06\ which is the charge of the capacitor at a constant potential difference between the plates equal to 0. At Q oo, the amplitude q0 0, and cp0 —Jt. The curves showing the dependence of cp0 on Q are shown in Fig. 29.4, and those of the dependence of q0on Q, in Fig.29.3,whereA= q0andA0= q0(0)= C.
+
+\subsection{}\label{29.3.3} With steady-state forced oscillation in the circuit, the current is
+/= —q0Qsin (Qi+ (p0)= /0cos (Qt—cp).
+The amplitude of the current /0= qM and the initial phase
+—tp = cp0+ jx/2 are determined by the formulas:
+h=
+Y R2+ (L—l/QC)*
+and tancp = QL — l/QC R
+Curves showing the dependence of /0on Q for various values of R are called resonance curves of the oscillatory circuit and are shown in Fig. 29.6; curves of the dependence of (pon Q are shown in Fig. 29.7. The resonance angular frequency Qr, corresponding
+
+to the maximum amplitude of the current in the circuit in forced oscillation, is independent of R. Thus
+1 Ylc '
+The current amplitude at resonance is I 0(Qr) = JR, and the phase difference between the current and emf is <p (Qr) = 0. When Q < co0, cp < 0, i.e. the current leads the emf in phase; thelowerthefrequencyQ,thegreaterthisphaselead(cp= —jt/2 at Q = 0). When Q > co0,(p> 0, i.e. the current lags in phase behind the emf; the higher the frequency Q, the greater this phase lag (cp jt/2 as Q->oo).
+
+\subsection{}\label{29.3.4} The potential difference across the terminals a and b of an ideal source of harmonic emf (Fig. 29.5) is equal to its emf. Thus
+u= Va—Vjj= cosQt.
+The potential drops across various portions of the circuit il­ lustrated in Fig. 29.5 and having the variable sinusoidal (har­ monic) current I = /0cos (Qt — cp), a capacitor of capacitance C, resistor of resistance R and a coil of inductance L are as follows:
+ur =IR=Urcos(Qt—cp),
+The variation of uR is in phase with that of current I in the circuit, u l leads the current in phase by jt/2, and uc lags behind the current in phase by jt/2. Here
+UC+ UR+UL=U= COSQL
+
+\subsection{}\label{29.3.5} The amplitude values of uc , uL and uR are equal, re­
+spectively, to
+Uc=XCI„, UL=XLI0andUR=RI0.
+where X q = 1IQC is the capacitive reactance of the circuit, and X l — L is the inductive reactance of the circuit. The quantity X = X l — Xc = QL — 1IQC is called the reactance of the
+circuit, R is called the resistance and Z = Y R2+ (QL — 1IQC)2 is called its impedance.
+The formulas in \ssect{29.3.3} for the amplitude of the sinusoidal current in the circuit and its initial phase can be rewritten in the form: I0= and tancp= XlR, with cos<p= RlZ and sincp= XtZ. 
+At resonance Q = 1/YLC and XL = Xc,so that the reactance of the circuit becomes zero and the impedance reaches its minimum value, which is equal to the resistance R. Thus
+X (Qr) = 0 and Z (Qr) = Zmin = R.
+In this case UR= 0and Uc = UL= YLlCjR.
+
+\subsection{}\label{29.3.6} The effective value of a periodic current (and, accordingly, the emf, voltage, etc.) is the root-mean-square value of the current during the time T of its variation. Thus
+I2dt.
+For a sinusoidal current and a sinusoidal emf
+eff
+0Q
+An element of work done by sinusoidal current during the short time dt in the circuit illustrated in Fig. 29.5 is equal to
+6 T F = I u d t = I q q c o s ( Q * — c p ) c o s Q t d t .
+The instantaneous power of the current in the circuit is
+6W
+Pins—~dt—— — 1q(5qcos The average value of the instantaneous power during a period is called the active, or true, power P of the current in the electric circuit. Thus
+T
+P=If 1
+~jTPinsdt= “7j“/o<oco3<f)= -effeffcos T*
+0
+The factor cos <p is called the power factor. Since /eff = and coscp= RlZ,
+P = -§r*h-
+At resonance Z = R and the active power reaches its maximum value
+5eff
+R 2R
+
