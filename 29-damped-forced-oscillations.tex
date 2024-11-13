@@ -113,56 +113,84 @@ Such motion of the system is not of an oscillatory nature and is said to be \red
 
 
 
-\subsection{}\label{29.2.1} A variable external force, applied to a system and causing its forced mechanical vibration, is called the disturbing, or driving, force.
-The differential equation of forced vibration (or oscillation) of the simplest linear system \ssect{29.1.1}, the spring pendulum \ssect{29.1.2}, executed along the OX axis due to the action of the variable external force F (J) is:
-d2r , dx . a 1
+\subsection{}\label{29.2.1} A variable external force, applied to a system and causing its forced mechanical vibration, is called the \redem{disturbing}, or \redem{driving}, force.
 
-1’Fx (t) is a periodic function of time, then, after application <>f the force to the pendulum, the forced vibration begins with a transient condition. The pendulum simultaneously participates in two vibrations :
-x= *1(0+ x2(t).
-The first term corresponds to free damped oscillation* of the pendulum \ssect{29.1.3}:
-'i (t) = A0e~ sin (m + ),
-whereu>=Y —P2.
-The second term corresponds to the undamped periodic oscil­
-lation of the pendulum at a frequency equal to that of the driving force Fx (t).
-The amplitude value of xx (t), equal to A0exp (—P*), is reduced at a more or less rapid rate after the beginning of the forced vibration (or oscillation). During the time t = 4.6/p the am­ plitude of xt (t) decreases by a factor of 100. Consequently, after a certain time following the beginning of vibration (t  x0), free vibration of the pendulum practically ceases: x (t)  x2(t).
-The pendulum reaches a state of steady forced vibration (or oscil­ lation) at the frequency of the driving force.
+The \redem{differential equation of forced vibration} (or \redem{oscillation}) of the simplest linear system \ssect{29.1.1}, the spring pendulum \ssect{29.1.2}, executed along the $OX$ axis due to the action of the variable external force $\vb{F} (t)$ is:
+\begin{equation*}%
+\dv[2]{x}{t} + 2\beta \dv{x}{t} + \omega_{0}^{2} x = \frac{1}{m} \, F_{x}(t).
+\end{equation*}
 
-\subsection{}\label{29.2.2} When the driving force varies according to a harmonic law, i.e. Fx = F0cos Qt, the steady-state forced vibration of the pendulum is also harmonic at the same frequency. Thus
-= A COS (Qt + cp0).
-The amplitude A of this vibration and the phase shift cp0between Ihe displacement and the driving force depend upon the relation between the angular frequencies of the forced vibration (Q) and Ihe free undamped vibration (co0) of the pendulum. Thus
-and tan (p0=
-m Y (<u§— £22)2+ 4p2Q2
-* It is assumed that P < co0. Otherwise, the free motion of the
-pendulum would be aperiodic \ssect{29.1.6}, i.e. (t)=cxOXp[-(P+/P*-<Bj|) <]
-I C 2 exp [— (p— / p 2— <o2) t].
+If $F_{x} (t)$ is a periodic function of time, then, after application of the force to the pendulum, the \redem{forced vibration} begins \redem{with a transient condition}. The pendulum simultaneously participates in two vibrations:
+\begin{equation*}%
+x = x_{1}(t) + x_{2}(t)
+\end{equation*}
+The first term corresponds to free damped oscillation\sidenote{It is assumed that $\beta < \omega_{0}$. Otherwise, the free motion of the pendulum would be aperiodic \ssect{29.1.6}, i.e.
+\begin{align*}
+x_{1}(t) &= C_{1} \exp \left(-(\beta + \sqrt{\beta^{2} - \omega_{0}^{2}}) t\right) \\
+&\quad + C_{2} \exp \left(-(\beta - \sqrt{\beta^{2} - \omega_{0}^{2}}) t\right).
+\end{align*}
+} of the pendulum \ssect{29.1.3}:
+\begin{equation*}%
+x_{1}(t) = A_{0} \exp(- \beta t) \sin (\omega t + \psi_{0}),
+\end{equation*}
+where $\omega = \sqrt{\omega_{0}^{2} - \beta^{2}}$.
 
-At fi = 0 we obtain (p0(0) = 0 and A (0) = A0= Fjm® l = = F0/ky which is the static displacement of the pendulum from
+The second term corresponds to the undamped periodic oscillation of the pendulum at a frequency equal to that of the driving force $F_{x} (t)$.
 
-its equilibrium position by the constant force Fx = F0. At Q -> oo, the amplitude A (Q) 0 and tan cp0 0, whereas
+The amplitude value of $x_{1} (t)$, equal to $A_{0} \exp (-\beta t)$, is reduced at a more or less rapid rate after the beginning of the forced vibration (or oscillation). During the time $\tau = 4.6/\beta$ the amplitude of $x_{1} (t)$ decreases by a factor of 100. Consequently, after a certain time $\tau$ following the beginning of vibration $(\tau \approx \tau_{0})$, free vibration of the pendulum practically ceases: $x (t) \approx x_{2}(t)$. The pendulum reaches a state of \redem{steady forced vibration} (or oscillation) at the frequency of the driving force.
 
-cp0 —jt. The curves of the functions A (Q) and (p0(Q) are shown in Figs. 29.3 and 29.4 for various values of the damping factor |3,
+\subsection{}\label{29.2.2} When the driving force varies according to a harmonic law, i.e. $F_{x} = F_{0}\cos \Omega t$, the steady-state forced vibration of the pendulum is also harmonic at the same frequency. Thus
+\begin{equation*}%
+x = A \cos (\Omega t + \varphi_{0}).
+\end{equation*}
+The amplitude $A$ of this vibration and the phase shift $\varphi_{0}$ between the displacement and the driving force depend upon the relation between the angular frequencies of the forced vibration $(\Omega)$ and the free undamped vibration $(\omega_{0})$ of the pendulum. Thus
+\begin{align*}%
+A &= \frac{F_{0}}{m \sqrt{(\omega_{0}^{2} - \Omega^{2})^{2}+ 4\beta^{2}\Omega^{2}}}, \qand \\ 
+\tan \varphi_{0} & = - \frac{2 \beta \Omega}{\omega_{0}^{2} - \Omega^{2}}.
+\end{align*}
+\begin{marginfigure}[-3cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-29/fig-29-03.pdf}
+\sidecaption{The curves of the functions $A (\Omega)$ for various values of the damping factor $\beta$.\label{fig-29-03}}
+\end{marginfigure}
+At $\Omega = 0$ we obtain $\varphi_{0}(0) = 0$ and $A (0) = A_{0}= F_{0}/m\omega_{0}^{2} = F_{0}/k$ which is the \redem{static displacement} of the pendulum from its equilibrium position by the constant force $F_{x} = F_{0}$. At $\Omega \to \infty$, the amplitude $A (\Omega) \to 0$ and $\tan \varphi_{0} \to 0$, whereas $\varphi_{0} \to -\pi$. The curves of the functions $A (\Omega)$ and $\varphi_{0} (\Omega)$ are shown in \figr{fig-29-03} and \figr{fig-29-04} for various values of the damping factor $\beta$.
+\begin{marginfigure}[1cm]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/ch-29/fig-29-04.pdf}
+\sidecaption{The curves of the functions $\varphi_{0} (\Omega)$ for various values of the damping factor $\beta$.\label{fig-29-04}}
+\end{marginfigure}
 
-\subsection{}\label{29.2.3} The amplitude of the displacement in the case of steady- state forced harmonic vibration (oscillation) of the pendulum reaches its maximum value at the angular frequency
-iJr=/cog—2p*= / CO2—P2,
-where co is the angular frequency of free damped vibration of the pendulum \ssect{29.1.3}. The frequency QT is called the resonance
-frequency.
+\subsection{}\label{29.2.3} The amplitude of the displacement in the case of steady-state forced harmonic vibration (oscillation) of the pendulum reaches its maximum value at the angular frequency
+\begin{equation*}%
+\Omega_{r} = \sqrt{\omega_{0}^{2} - 2 \beta^{2}} = \sqrt{\omega^{2} - \beta^{2}},
+\end{equation*}
+where $\omega$ is the angular frequency of free damped vibration of the pendulum \ssect{29.1.3}. The frequency $\Omega_{r}$ is called the \redem{resonance frequency}.
+
 The maximum amplitude is
-AA\
-where 6 is the logarithmic decrement of damping \ssect{29.1.4}. When P < co0, Qr  co0, (p0(Qr) ~ —Jt/2 and Amax ~ (M0, where Q  jt/6 is the Q factor of the pendulum \ssect{29.1.5} and A0 is the static displacement \ssect{29.2.2}.
+\begin{equation*}%{
+A_{\text{max}} = A(\Omega_{r}) = \frac{F_{0}}{2m\beta \omega} = \frac{\pi F_{0}}{m\delta \omega^{2}},
+\end{equation*}
+where $\delta$ is the logarithmic decrement of damping \ssect{29.1.4}. When $\beta \ll \omega_{0}$, $\Omega_{r} \approx \omega_{0}$
+$\varphi_{0}(\Omega_{r}) \approx  -\pi/2$, and $A_{\text{max}} \approx Q A_{0}$, where $Q  \approx \pi/\delta$ is the $Q$ factor of the pendulum \ssect{29.1.5} and $A_{0}$ is the static displacement \ssect{29.2.2}.
 
-The drastic increase in the amplitude of forced mechanical vibration (or oscillation) as the angular frequency of the driving force approaches the value Qr is the phenomenon called mechan­ ical resonance. Accordingly, the curves of the dependence of A on Q, shown in Fig. 29.3 are called resonance curves.
+The drastic increase in the amplitude of forced mechanical vibration (or oscillation) as the angular frequency of the driving force approaches the value $\Omega_{r}$ is the phenomenon called \redem{mechanical resonance}. Accordingly, the curves of the dependence of $A$ on $\Omega$, shown in \figr{fig-29-03} are called \redem{resonance curves}.
 
-As the damping factor P is increased, the peaks on the resonance curves are rapidly reduced (at small P values the amplitude Amax ~ 1/P) and the resonance frequency Qr is slowly de­ creased.
+As the damping factor $\beta$ is increased, the peaks on the resonance curves are rapidly reduced (at small $\beta$ values the amplitude $A_{\text{max}} \approx 1/\beta$) and the resonance frequency $\Omega_{r}$ is slowly decreased.
 
-\subsection{}\label{29.2.4} The velocity of the pendulum in steady-state forced har­ monic vibration (oscillation) is
-vx= ~7T==—AQsin(Qf-f-(p0)=Aycos(Q£+a).
-Here AY= AQ and a = cp0-f jt/2 are the amplitude of the velocity and the phase difference between the velocity and the driving force:
- F   m Y (w§— Q*)*-|-4paQ4
-and
-tana——cotfp0—cog— Q2 2pQ *
-
-The amplitude of the velocity is maximal at Q = co0 and equals
-In this case, a = 0, i.e. the velocity of the pendulum oscillates in phase with the driving force. As Q oo, the amplitude Av -> 0 and a —jt/2, whereas as Q 0, the amplitude Av->■0anda jt/2.
+\subsection{}\label{29.2.4} The \redem{velocity of the pendulum} in steady-state forced harmonic vibration (oscillation) is
+\begin{equation*}%
+v_{x} = \dv{x}{t} = - A \Omega \sin ( \Omega t + \varphi_{0}) = A_{v}\cos(\Omega t + \alpha).
+\end{equation*}
+Here $A_{v} = A\Omega$ and $\alpha = \varphi_{0} + \pi/2$ are the amplitude of the velocity and the phase difference between the velocity and the driving force:
+\begin{align*}%
+A_{v} &= \frac{F_{0}\Omega}{m \sqrt{(\omega_{0}^{2} - \Omega^{2})^{2}+ 4\beta^{2}\Omega^{2}}} =  \frac{F_{0}}{m \sqrt{\dfrac{(\omega_{0}^{2} - \Omega^{2})^{2}}{\Omega^{2}} + 4 \beta^{2}}}, \qand \\ 
+\tan \alpha & = -\cot \varphi_{0} = \frac{\omega_{0}^{2} - \Omega^{2}}{2 \beta \Omega}.
+\end{align*}
+The amplitude of the velocity is maximal at $\Omega = \omega_{0}$ and equals
+\begin{equation*}%
+(A_{v})_{\text{max}} = A_{v} (\omega_{0}) = \frac{F_{0}}{2m \beta}.
+\end{equation*}
+In this case, $\alpha = 0$, i.e. the velocity of the pendulum oscillates in phase with the driving force. As $\Omega \to \infty$, the amplitude $A_{v} \to 0$ and $\alpha \to -\pi/2$, whereas as $\Omega \to 0$, the amplitude $A_{v} \to 0$ and $\alpha \to \pi/2$.
 
 \subsection{}\label{29.2.5} The acceleration of the pendulum in steady-state forced harmonic vibration (oscillation) is
 dx
