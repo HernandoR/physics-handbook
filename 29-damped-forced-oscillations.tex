@@ -192,66 +192,86 @@ The amplitude of the velocity is maximal at $\Omega = \omega_{0}$ and equals
 \end{equation*}
 In this case, $\alpha = 0$, i.e. the velocity of the pendulum oscillates in phase with the driving force. As $\Omega \to \infty$, the amplitude $A_{v} \to 0$ and $\alpha \to -\pi/2$, whereas as $\Omega \to 0$, the amplitude $A_{v} \to 0$ and $\alpha \to \pi/2$.
 
-\subsection{}\label{29.2.5} The acceleration of the pendulum in steady-state forced harmonic vibration (oscillation) is
-dx
-ax -—~AQ2cos (Q£+ q>0)= Aacos (Qt-j-y).
-Here Aa = AQ2 and y = (p0+ n are the amplitude of the acceleration and the pnase difference between the acceleration and the driving force:
-F0Q2
-mYK — Q2)2+ 4P2Q2 m/ [(©0/Q)a— l]a+ (2p/Q)2 ’
-Aa
-The amplitude of acceleration is maximal at At Q= 0, the amplitude Aa= 0, whereas as Q oo the amplitude of the acceleration tends to the value Aa (oo) = = F0/m.
+\subsection{}\label{29.2.5} The \redem{acceleration of the pendulum} in steady-state forced harmonic vibration (oscillation) is
+\begin{align*}%
+a_{x} & = dv[2]{x}{t} = -A\Omega^{2} \cos (\Omega t + \varphi_{0}) \\
+& = A_{a} \cos (\Omega t + \gamma).
+\end{align*}
+Here $A_{a} = A\Omega^{2}$ and $\gamma = \varphi_{0} + \pi$ are the amplitude of the acceleration and the phase difference between the acceleration and the driving force:
+\begin{equation*}%
+A_{a} = \frac{F_{0}\Omega^{2}}{m \sqrt{(\omega_{0}^{2} - \Omega^{2})^{2} + 4 \beta^{2}\Omega^{2}}} = \frac{F_{0}}{m \sqrt{[(\omega_{0}/\Omega)^{2})^{2} - 1]^{2} + (2\beta/\Omega)^{2}}}.
+\end{equation*}
+The amplitude of acceleration is maximal at 
+\begin{equation*}%
+\Omega = \frac{\omega_{0}}{\sqrt{1 + (\beta/\omega_{0})^{2}}}  \approx \sqrt{\omega_{0}^{2} - \beta^{2}}.
+\end{equation*}
+At $\Omega = 0$, the amplitude $A_{a} = 0$, whereas as $\Omega \to \infty$ the amplitude of the acceleration tends to the value $A_{a} (\infty) = F_{0}/m$.
 
 \subsection{}\label{29.2.6} In steady-state forced vibration, the energy loss of the vibratory system, due to dissipative forces \ssect{1.3.7}, is completely compensated by the work performed on the system by the driving force. The work, for example, done in one complete oscillation by the force of resistance acting on the spring pendulum is
-TT
-2mfiA*Q2 \ sin2(Q£+ cpo)dt
-where b = 2mP is the resistance coefficient \ssect{29.1.2}.
-The work done during the same time by the driving force Fx = = F0coQstis
-TT
-W2= F0j* cos dt=—AQFqcosQ*sin(Qf+cp0)dt
-00 = ---2~AQ0sin <p0= —Wl9
-since sin cp0 = —2mAQ/F0.
+\begin{align*}%
+W_{1} & = -b \int_{0}^{T} \left( \dv{x}{t} \right)^{2} \, \dd t = - 2m \beta A^{2}\Omega^{2} \int_{0}^{T} \sin^{2} (\Omega t + \varphi_{0}) \, \dd t \\
+& = -m\beta A^{2} \Omega^{2},
+\end{align*}
+where $b = 2 m \beta$ is the resistance coefficient \ssect{29.1.2}.
 
-\subsection{}\label{29.2.7} If the driving force acting on the spring pendulum varies periodically, but not according to a harmonic law, it can he represented as the sum of the harmonics of this force \ssect{28.4.6}. These have different amplitudes, initial phases and angular frequencies that are multiples of Q = 2nfT, where T is the period of variation of the driving force. Since the pendulum is a linear vibratory (or oscillatory) system \ssect{29.1.1}, each har­ monic of the driving force acts on the system as if there were no other harmonics. Therefore, the steady-state forced oscil­ lation of the pendulum, caused by an arbitrary periodic driving force, can be dealt with as the result of superposing steady-state forced oscillations due to each harmonic component of the driving force acting separately. The “contribution”of the various harmonic components to the resultant oscillation depends upon their frequency and amplitude. Owing to resonance phenomena, an essential role, is played by only the harmonic components of the driving force that have an angular frequency close to the resonance frequency of the pendulum \ssect{29.2.3}. If the damping factor P of the pendulum is small, the pendulum can execute steady-state forced oscillation close to the harmonic one, even if the driving force is far from harmonic. An example of such forced oscillation is that of a pendulum subject to short periodi­ cal external action in the form of impacts in a single direction and repeated over equal lengths of time, which are equal to the period of free oscillation of the pendulum.
+The work done during the same time by the driving force $F_{x} = F_{0}\cos \Omega t$ is
+\begin{align*}%
+W_{2} & = F_{0} \int_{0}^{T} \dv{x}{t} \cos \Omega t \, \dd t = - A\Omega F_{0} \int_{0}^{T} \cos \Omega t \sin(\Omega t  \varphi_{0}) \, \dd t \\
+& = -\frac{1}{2} A \Omega F_{0} \sin \varphi_{0} = - W_{1},
+\end{align*}
+since $\sin \varphi_{0} = —2m\beta A \Omega/F_{0}$.
+
+\subsection{}\label{29.2.7} If the driving force acting on the spring pendulum varies periodically, but not according to a harmonic law, it can he represented as the sum of the harmonics of this force \ssect{28.4.6}. These have different amplitudes, initial phases and angular frequencies that are multiples of $\Omega = 2\pi/T$, where $T$ is the period of variation of the driving force. Since the pendulum is a linear vibratory (or oscillatory) system \ssect{29.1.1}, each harmonic of the driving force acts on the system as if there were no other harmonics. Therefore, the steady-state forced oscillation of the pendulum, caused by an arbitrary periodic driving force, can be dealt with as the result of superposing steady-state forced oscillations due to each harmonic component of the driving force acting separately. 
+
+The ``contribution'' of the various harmonic components to the resultant oscillation depends upon their frequency and amplitude. Owing to resonance phenomena, an essential role, is played by only the harmonic components of the driving force that have an angular frequency close to the resonance frequency of the pendulum \ssect{29.2.3}. If the damping factor $\beta$ of the pendulum is small, the pendulum can execute steady-state forced oscillation close to the harmonic one, even if the driving force is far from harmonic. An example of such forced oscillation is that of a pendulum subject to short periodical external action in the form of impacts in a single direction and repeated over equal lengths of time, which are equal to the period of free oscillation of the pendulum.
 
 \section{Forced Electrical Oscillation}
 \label{sec-29.3}
 
-\subsection{}\label{29.3.1} To obtain forced oscillation in an electrical oscillatory circuit \ssect{28.3.1} it is necessary to connect into it a source of electrical energy, whose emf  varies with time (Fig. 29.5).
+\subsection{}\label{29.3.1} To obtain forced oscillation in an electrical oscillatory circuit \ssect{28.3.1} it is necessary to connect into it a source of electrical energy, whose emf $\emf$ varies with time (\figr{fig-29-05}).
+\begin{marginfigure}[1cm]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/ch-29/fig-29-05.pdf}
+\sidecaption{Setup for obtaining forced electrical oscillaiors with $RLC$ circuit.\label{fig-29-05}}
+\end{marginfigure}
 
-In electrical engineering a source of electrical energy, charac­ terized by its emf and internal electrical resistance, is called a seat, or source, of emf (voltage source). According to Ohm’s law for the portion l-R-L-2 \ssect{21.2.3}, the quasi-stationary current
-I>0 R
-(t) Fig. 29.5
-\ssect{28.3.1}, produced in the cir­ cuit in forced oscillation, can be found from the formula
-I R = V l - V 2- L -  - +  ( t ) .
-Here V2— V1— q/C is the po­ tential difference across the ca­ pacitor plates, q is the capacitor charge, and the internal elec­ trical resistance of the source of emf is assumed to be neg­ ligibly small compared to R (such a source of emf is said
-to be ideal). From the law of conservation of electrical charge \ssect{14.1.3} it follows that / = dqfdt. Hence, the differential equa­ tion of forced electrical oscillation in a circuit can be presented in a form similar to the equation for forced mechanical vibra­ tion \ssect{29.2.1}:
- + 2 p  + a > “9 = “T 
-Here P = Rl2L is the damping factor for free oscillation in a
-circuit, and o)0 = 1lY L C is the angular frequency of free undamped oscillation (i.e. at R = 0).
+In electrical engineering a source of electrical energy, characterized by its emf and internal electrical resistance, is called a \redem{seat}, or \redem{source, of emf (voltage source)}. According to Ohm’s law for the portion $\mathit{1}-R-L-\mathit{2}$ \ssect{21.2.3}, the quasi-stationary current \ssect{28.3.1}, produced in the circuit in forced oscillation, can be found from the formula
+\begin{equation}%
+IR = V_{1} - V_{2} - L \dv{I}{t} + \emf ( t ) .
+\end{equation}
+Here $V_{2}- V_{1}= q/C$ is the potential difference across the capacitor plates, $q$ is the capacitor charge, and the internal electrical resistance of the source of emf is assumed to be negligibly small compared to $R$ (such a source of emf is said
+to be \redem{ideal}). From the law of conservation of electrical charge \ssect{14.1.3} it follows that $I = \dv*{q}{t}$. Hence, the \redem{differential equation of forced electrical oscillation in a circuit} can be presented in a form similar to the equation for forced mechanical vibration \ssect{29.2.1}:
+\begin{equation*}%
+\dv[2]{q}{t} + 2 \beta \dv{q}{t} + \omega_{0}^{2} q = \frac{1}{L} \emf (t).
+\end{equation*}
+Here $\beta = R/2L$ is the damping factor for free oscillation in a
+circuit, and $\omega_{0} = 1/\sqrt{L C}$ is the angular frequency of free undamped oscillation (i.e. at $R = 0$).
 
-\subsection{}\label{29.3.2} If the driving emf  (i) varies according to the harmonic law  (t) = 0cos Qt, then at steady-state forced oscillation \ssect{29.2.1}, the capacitor charge varies harmonically at the same angular frequency Q:
-q= q0cos(Qf+ q>0).
-The amplitude q0 and the initial phase (p0 are determined by the formulas
->  ». Q YR*-QL—i/QC)2 LY(tog—Q2)H-4P2Q
-
-and
-tan cpQ— R 2pQ
-QL — 1IQC tog — Q2 
-395
-At Q = 0, the phase cp0(0) = 0 and q0(0) = <f06\ which is the charge of the capacitor at a constant potential difference between the plates equal to 0. At Q oo, the amplitude q0 0, and cp0 —Jt. The curves showing the dependence of cp0 on Q are shown in Fig. 29.4, and those of the dependence of q0on Q, in Fig.29.3,whereA= q0andA0= q0(0)= C.
+\subsection{}\label{29.3.2} If the driving emf $\emf (t)$ varies according to the harmonic law $\emf (t) = \emf_{0}\cos \Omega t$, then at steady-state forced oscillation \ssect{29.2.1}, the capacitor charge varies harmonically at the same angular frequency $\Omega$:
+\begin{equation*}%
+q = q_{0} \cos(\Omega t+ \varphi_{0}).
+\end{equation*}
+The amplitude $q_{0}$ and the initial phase $\varphi_{0}$ are determined by the formulas
+\begin{align*}%
+q_{0} & = \frac{\emf_{0}}{\Omega \sqrt{R^{2} + (\Omega L - 1/\Omega C)^{2}}} = \frac{\emf_{0}}{L \sqrt{(\omega_{0}^{2} - \Omega^{2})^{2} + 4 \beta^{2}\Omega^{2}}} \qand \\
+\tan \varphi_{0} & = \frac{R}{\Omega L - 1/\Omega C} = - \frac{2\beta \Omega}{\omega_{0}^{2} - \Omega^{2}}
+\end{align*}
+At $\Omega = 0$, the phase $\varphi_{0}(0) = 0$ and $q_{0}(0) = \emf_{0}C$ which is the charge of the capacitor at a constant potential difference between the plates equal to $\emf_{0}$. At $\Omega \to \infty$, the amplitude $q_{0}\to 0$, and $\varphi_{0} \to - \pi$. The curves showing the dependence of $\varphi_{0}$ on $\Omega$ are shown in \figr{fig-29-04}, and those of the dependence of $q_{0}$ on $\Omega$, in \figr{fig-29-03}, where $A= q_{0}$ and $A_{0}= q_{0}(0)= \emf_{0}C$.
 
 \subsection{}\label{29.3.3} With steady-state forced oscillation in the circuit, the current is
-/= —q0Qsin (Qi+ (p0)= /0cos (Qt—cp).
-The amplitude of the current /0= qM and the initial phase
-—tp = cp0+ jx/2 are determined by the formulas:
-h=
-Y R2+ (L—l/QC)*
-and tancp = QL — l/QC R
-Curves showing the dependence of /0on Q for various values of R are called resonance curves of the oscillatory circuit and are shown in Fig. 29.6; curves of the dependence of (pon Q are shown in Fig. 29.7. The resonance angular frequency Qr, corresponding
-
-to the maximum amplitude of the current in the circuit in forced oscillation, is independent of R. Thus
-1 Ylc '
-The current amplitude at resonance is I 0(Qr) = JR, and the phase difference between the current and emf is <p (Qr) = 0. When Q < co0, cp < 0, i.e. the current leads the emf in phase; thelowerthefrequencyQ,thegreaterthisphaselead(cp= —jt/2 at Q = 0). When Q > co0,(p> 0, i.e. the current lags in phase behind the emf; the higher the frequency Q, the greater this phase lag (cp jt/2 as Q->oo).
+\begin{equation*}%
+I = \dv{q}{t} = - q_{0} \Omega \sin ( \Omega t + \varphi_{0}) = I_{0}\cos (\Omega t - \varphi).
+\end{equation*}
+The amplitude of the current $I_{0}= q_{0}\Omega$ and the initial phase $-\varphi = \varphi_{0}+ \pi/2$ are determined by the formulas:
+\begin{align*}%
+I_{0} & = \frac{\emf_{0}}{\sqrt{R^{2} + (\Omega L - 1/\Omega C)^{2}}}\qand \\
+\tan \varphi & = \frac{\Omega L - 1/\Omega C}{R}.
+\end{align*}
+Curves showing the dependence of $I_{0}$ on $\Omega$ for various values of $R$ are called resonance curves of the oscillatory circuit and are shown in \figr{fig-29-06}; curves of the dependence of $\varphi$ on $\Omega$ are shown in \figr{fig-29-07}. The resonance angular frequency $\Omega_{r}$, corresponding to the maximum amplitude of the current in the circuit in forced oscillation, is independent of $R$. Thus
+\begin{equation*}%
+\Omega_{r} = \omega_{0} = \frac{1}{\sqrt{LC}}.
+\end{equation*}
+The current amplitude at resonance is $I_{0}(\Omega_{r}) = \emf_{0}/R$, and the phase difference between the current and emf is $\varphi (\Omega_{r}) = 0$. When $\Omega < \omega_{0}$, $\varphi < 0$, i.e. the current leads the emf in phase; the lower the frequency $\Omega$, the greater this phase lead ($\varphi = -\pi/2$ at  $\Omega = 0$). When $\Omega > \varphi_{0}$, ($ \varphi > 0$, i.e. the current lags in phase behind the emf; the higher the frequency $\Omega$, the greater this phase lag ($\varphi \to \pi/2$ as $\Omega \to \infty$).
 
 \subsection{}\label{29.3.4} The potential difference across the terminals a and b of an ideal source of harmonic emf (Fig. 29.5) is equal to its emf. Thus
 u= Va—Vjj= cosQt.
