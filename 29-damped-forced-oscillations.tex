@@ -273,40 +273,67 @@ Curves showing the dependence of $I_{0}$ on $\Omega$ for various values of $R$ a
 \end{equation*}
 The current amplitude at resonance is $I_{0}(\Omega_{r}) = \emf_{0}/R$, and the phase difference between the current and emf is $\varphi (\Omega_{r}) = 0$. When $\Omega < \omega_{0}$, $\varphi < 0$, i.e. the current leads the emf in phase; the lower the frequency $\Omega$, the greater this phase lead ($\varphi = -\pi/2$ at  $\Omega = 0$). When $\Omega > \varphi_{0}$, ($ \varphi > 0$, i.e. the current lags in phase behind the emf; the higher the frequency $\Omega$, the greater this phase lag ($\varphi \to \pi/2$ as $\Omega \to \infty$).
 
-\subsection{}\label{29.3.4} The potential difference across the terminals a and b of an ideal source of harmonic emf (Fig. 29.5) is equal to its emf. Thus
-u= Va—Vjj= cosQt.
-The potential drops across various portions of the circuit il­ lustrated in Fig. 29.5 and having the variable sinusoidal (har­ monic) current I = /0cos (Qt — cp), a capacitor of capacitance C, resistor of resistance R and a coil of inductance L are as follows:
-ur =IR=Urcos(Qt—cp),
-The variation of uR is in phase with that of current I in the circuit, u l leads the current in phase by jt/2, and uc lags behind the current in phase by jt/2. Here
-UC+ UR+UL=U= COSQL
+\subsection{}\label{29.3.4} The potential difference across the terminals $a$ and $b$ of an ideal source of harmonic emf (\figr{fig-29-05}) is equal to its emf. Thus
+\begin{equation*}%
+u = V_{a} - V_{b} = \emf_{0} \cos \Omega t.
+\end{equation*}
+The potential drops across various portions of the circuit illustrated in \figr{fig-29-05} and having the variable sinusoidal (harmonic) current $I = I_{0}\cos (\Omega t - \varphi)$, a capacitor of capacitance $C$, resistor of resistance $R$ and a coil of inductance $L$ are as follows:
+\begin{align*}%
+u_{C} & = V_{2} - V_{1} = \frac{q}{C} = U_{C} \cos \left( \Omega t - \varphi - \frac{\pi}{2} \right), \\ 
+u_{R} & = IR =  U_{R} \cos ( \Omega t - \varphi), \\ 
+u_{L} & = L \dv{I}{t} = U_{L} \cos \left( \Omega t - \varphi + \frac{\pi}{2} \right).
+\end{align*}
+The variation of $u_{R}$ is in phase with that of current $I$ in the circuit, $u_{L}$ leads the current in phase by $\pi/2$, and $u_{C}$ lags behind the current in phase by $\pi/2$. Here
+\begin{equation*}%
+u_{C} + u_{R} + u_{L} = u =  \emf_{0} \cos \Omega t.
+\end{equation*}
 
-\subsection{}\label{29.3.5} The amplitude values of uc , uL and uR are equal, re­
-spectively, to
-Uc=XCI„, UL=XLI0andUR=RI0.
-where X q = 1IQC is the capacitive reactance of the circuit, and X l — L is the inductive reactance of the circuit. The quantity X = X l — Xc = QL — 1IQC is called the reactance of the
-circuit, R is called the resistance and Z = Y R2+ (QL — 1IQC)2 is called its impedance.
-The formulas in \ssect{29.3.3} for the amplitude of the sinusoidal current in the circuit and its initial phase can be rewritten in the form: I0= and tancp= XlR, with cos<p= RlZ and sincp= XtZ. 
-At resonance Q = 1/YLC and XL = Xc,so that the reactance of the circuit becomes zero and the impedance reaches its minimum value, which is equal to the resistance R. Thus
-X (Qr) = 0 and Z (Qr) = Zmin = R.
-In this case UR= 0and Uc = UL= YLlCjR.
+\subsection{}\label{29.3.5} The amplitude values of $u_{C}$ , $u_{L}$ and $u_{R}$ are equal, respectively, to
+\begin{equation*}%
+U_{C} = X_{C}I_{0}, \quad U_{L}= X_{L}I_{0} \qand U_{R}  =RI_{0}.
+\end{equation*}
+where $X_{C} = 1/\Omega C$ is the \redem{capacitive reactance} of the circuit, and $X_{L} = \Omega L$ is the \redem{inductive reactance} of the circuit. The quantity $X = X_{L} - X_{C} = \Omega L - 1/\Omega C$ is called the \redem{reactance of the circuit}, $R$ is called the \redem{resistance} and $Z = \sqrt{ R^{2} + (\Omega L - 1/\Omega C)^{2}}$ is called its \redem{impedance}.
 
-\subsection{}\label{29.3.6} The effective value of a periodic current (and, accordingly, the emf, voltage, etc.) is the root-mean-square value of the current during the time T of its variation. Thus
-I2dt.
+The formulas in \ssect{29.3.3} for the amplitude of the sinusoidal current in the circuit and its initial phase can be rewritten in the form: 
+\begin{equation*}%
+I_{0} = \frac{\emf_{0}}{Z} \qand \tan \varphi = \frac{X}{R},
+\end{equation*}
+with $\cos \varphi = R/Z$ and $\sin \varphi = X/Z$. 
+
+At resonance $\Omega = 1/\sqrt{LC}$ and $X_{L} = X_{C}$,so that the reactance of the circuit becomes zero and the impedance reaches its minimum value, which is equal to the resistance $R$. Thus
+\begin{equation*}%
+X (\Omega_{r}) = 0 \qand Z (\Omega_{r}) = Z_{\text{min}} = R.
+\end{equation*}
+In this case $U_{R} = 0$ and $U_{C} = U_{L} = \sqrt{L/C}\, \emf_{0}/R$.
+
+\subsection{}\label{29.3.6} The \redem{effective value of a periodic current} (and, accordingly, the emf, voltage, etc.) is the root-mean-square value of the current during the time $T$ of its variation. Thus
+\begin{equation*}%
+I_{\text{eff}} = \sqrt{\frac{1}{T}\int_{0}^{T} I^{2} \, \dd t }
+\end{equation*}
 For a sinusoidal current and a sinusoidal emf
-eff
-0Q
-An element of work done by sinusoidal current during the short time dt in the circuit illustrated in Fig. 29.5 is equal to
-6 T F = I u d t = I q q c o s ( Q * — c p ) c o s Q t d t .
-The instantaneous power of the current in the circuit is
-6W
-Pins—~dt—— — 1q(5qcos The average value of the instantaneous power during a period is called the active, or true, power P of the current in the electric circuit. Thus
-T
-P=If 1
-~jTPinsdt= “7j“/o<oco3<f)= -effeffcos T*
-0
-The factor cos <p is called the power factor. Since /eff = and coscp= RlZ,
-P = -§r*h-
-At resonance Z = R and the active power reaches its maximum value
-5eff
-R 2R
+\begin{equation*}%
+I_{\text{eff}} = \frac{I_{0}}{\sqrt{2}} \qand \emf_{\text{eff}}
+ = \frac{\emf_{0}}{\sqrt{2}}. 
+\end{equation*}
+An element of work done by sinusoidal current during the short time $\dd t$ in the circuit illustrated in \figr{fig-29-05} is equal to
+\begin{equation*}%
+\delta W = I u \, \dd t = I_{0}\emf_{0} \cos (\Omega t - \varphi) \, \cos \Omega t \, \dd t.
+\end{equation*}
+The \redem{instantaneous power of the current in the circuit} is
+\begin{equation*}%
+P_{\text{ins}} = \frac{\delta W}{\dd t} - Iu = I_{0}\emf_{0} \cos (\Omega t - \varphi) \, \cos \Omega t.
+\end{equation*}
+The average value of the instantaneous power during a period is called the \redem{active}, or \redem{true, power} $P$ of the current in the electric circuit. Thus
+\begin{align*}%
+P & = \frac{1}{T} \int_{0}^{T} P_{\text{ins}} \, \dd t = \frac{1}{2} I_{0}\emf_{0} \cos \varphi \\
+& = I_{\text{eff}}\emf_{\text{eff}} \cos \varphi.
+\end{align*}
+The factor $\cos \varphi$ is called the \redem{power factor}. Since $I_{\text{eff}} = \emf_{\text{eff}}/Z$ and $\cos \varphi = R/Z$,
+\begin{equation*}%
+P  = \frac{R}{Z^{2}}\emf_{\text{eff}}^{2}.
+\end{equation*}
+At resonance $Z = R$ and the active power reaches its maximum value
+\begin{equation*}%
+P  = \frac{\emf_{\text{eff}}^{2}}{R} = \frac{\emf_{0}^{2}}{2R}.
+\end{equation*}
 
