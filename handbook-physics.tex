@@ -167,6 +167,8 @@
 
 \usepackage[version=4]{mhchem}
 \newcommand{\cpr}[2]{[\bm{#1} \cross \bm{#2}]} % defines cross product makes the entries bold
+
+\usepackage{pdfpages}
 %\reversemarginpar  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -175,6 +177,8 @@
 \date{}                                           % Activate to display a given date or no date
 
 \begin{document}
+\includepdf{figs/hb-physics-fc.pdf}
+
 \hyphenation{fr-a-me}
 
 \maketitle
@@ -227,7 +231,7 @@
 \part{Oscillations and Waves}
 \input{28-free-harmonic-oscillations}
 \input{29-damped-forced-oscillations}
-
+\input{30-elastic-waves}
 \backmatter
 
 
