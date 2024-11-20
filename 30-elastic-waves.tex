@@ -164,46 +164,85 @@ where $k$ is the wavenumber \ssect{30.2.6}, and
 \end{equation*}
 where co is the angular frequency of the wave.
 
-\subsection{}\label{30.2.10} The velocity $v$ of propagation of a \redem{sine wave} is called the \redem{phase velocity}. It is equal to the velocity of displacement in space of the points in a surface that corresponds to any fixed value of the phase of a sine wave. For example, in the case of a plane sine wave \ssect{30.2.6} it follows from the condition $\omega t - kx + \varphi_{0} = \text{const.}$ that $\dv*{x}{t} = \omega/k = v$. In the same way, in the case of a spherical sine wave \ssect{30.2.8}, it follows from the condition $\omega t - kr + \alpha = \text{const.}$ that $\dv*{r}{t} = \omega / k = v.$
+\subsection{}\label{30.2.10} The velocity $v$ of propagation of a \redem{sine wave} is called the \redem{phase velocity}. It is equal to the velocity of displacement in space of the points in a surface that corresponds to any fixed value of the phase of a sine wave. For example, in the case of a plane sine wave \ssect{30.2.6} it follows from the condition $\omega t - kx + \varphi_{0} = \text{const.}$ that $\dv*{x}{t} = \omega/k = v$. In the same way, in the case of a spherical sine wave \ssect{30.2.8}, it follows from the condition $\omega t - kr + \alpha = \text{const.}$ that $\dv*{r}{t} = \omega / k = v$.
 
 \section{Phase Velocity and Energy of Elastic Waves}
 \label{sec-30.3} 
 
 
-\subsection{}\label{30.3.1} The phase velocity of sonic waves (velocity of sound) in a liquid or gas is
-where p is the density of the undisturbed medium, and K is the bulk modulus of elasticity of the medium \ssect{30.1.1}. The frequency of audible sonic waves v > 16 Hz, and the process of deforming the medium can be assumed to be adiabatic \ssect{8.3.7}, i.e. K = —V (<dp/dV)ad. The relation between the pressure p and volume V for an ideal gas \ssect{8.4.1} in an adiabatic process is: pV* = const, where x is the adiabatic exponent \ssect{9.5.11}, so that K = X/?. Therefore, the velocity of sound in an ideal gas is equal to where p, is the molar mass of the gas, T is its absolute tempera­ ture, and R is the universal gas constant.
+\subsection{}\label{30.3.1} The \redem{phase velocity of sonic waves (velocity of sound) in a liquid or gas} is
+\begin{equation*}%
+v = \sqrt{\frac{K}{\rho}},
+\end{equation*}
+where $\rho$ is the density of the undisturbed medium, and $K$ is the bulk modulus of elasticity of the medium \ssect{30.1.1}. The frequency of audible sonic waves $\nu > \SI{16}{\hertz}$, and the process of deforming the medium can be assumed to be adiabatic \ssect{8.3.7}, i.e. $K = -V (\dv*{p}{V})_{ad}$. The relation between the pressure $p$ and volume $V$ for an ideal gas \ssect{8.4.1} in an adiabatic process is: $pV^{\varkappa} = \text{const.}$, where $\varkappa$ is the adiabatic exponent \ssect{9.5.11}, so that $K = \varkappa p$. Therefore, the \redem{velocity of sound in an ideal gas} is equal to
+\begin{equation*}%
+v = \sqrt{\frac{\varkappa p}{\rho}} = \sqrt{\frac{\varkappa RT}{\mu}},
+\end{equation*}
+where $\mu$, is the molar mass of the gas, $T$ is its absolute temperature, and $R$ is the universal gas constant.
 
-\subsection{}\label{30.3.2} The phase velocity of transverse elastic waves in a uniform isotropic solid medium is
--VT’
-where G is the shear modulus of the medium \ssect{40.3.9} and p is its density.
-The propagation of longitudinal waves in a thin long rod is associated with its longitudinal tension and compression. Hence, the phase velocity of such waves is
-where E is Young’s modulus \ssect{40.3.6} for the rod material.
-The velocity of propagation of transverse waves along a stretched string (a thin flexible cord) is
-where F is the stretching force (tension) in the string, and p and S are the density of the string material and the cross-sectional area of the string.
+\subsection{}\label{30.3.2} The \redem{phase velocity of transverse elastic waves} in a uniform isotropic solid medium is
+\begin{equation*}%
+v = \sqrt{\frac{G}{\rho}},
+\end{equation*}
+where $G$ is the shear modulus of the medium \ssect{40.3.9} and $\rho$ is its density.
 
-\subsection{}\label{30.3.3} An elastic medium in which mechanical waves propagate has kinetic energy of vibratory motion of its particles and potential energy due to deformation \ssect{30.1.1}. If vxis the velocity of particles of the medium, then the volume kinetic energy density of the medium is
-where p is the density of the medium, and dE is the kinetic energy of all the particles in the small volume dV of the medium. This volume has been selected so that throughout it the velocity 1 is the same.
+The propagation of longitudinal waves in a \redem{thin long rod} is associated with its longitudinal tension and compression. Hence, the phase velocity of such waves is
+\begin{equation*}%
+v = \sqrt{\frac{E}{\rho}},
+\end{equation*}
+where $E$ is Young’s modulus \ssect{40.3.6} for the rod material.
 
-The volume potential energy density of an elastically deformed medium is
-dEp ~w
-where dEp is the potential energy of a uniformly deformed
-small portion of the medium of volume dV, v is the phase ve­ locity in the medium, and e is the relative deformation. 1 The volume energy density of elastic waves is understood to be the volume density E of the mechanical energy of a medium due to the propagation of these waves. Thus
-E i = £ g + f i * = - i . p (** + p«e«).
+The \redem{velocity of propagation of transverse waves along a stretched string (a thin flexible cord)} is
+\begin{equation*}%
+v = \sqrt{\frac{F}{\rho S}},
+\end{equation*}
+where $F$ is the stretching force (tension) in the string, and $\rho$ and $S$ are the density of the string material and the cross-sectional area of the string.
 
-\subsection{}\label{30.3.4} If a longitudinal plane travelling wave \ssect{30.2.4} prop­ agates in a medium, then vx = ds/dt, where s is the displace­ ment of the particles, and e = dsldx = —vjv, so that
-=4 and £i=Pl>?=p(-g-)2.
-At each point of the medium subject to wave motion, and
-£p are alike functions of time. Consequently, Ed also varies with time. This principle is valid for any travelling waves in
-an elastic medium, regardless of the shape of their wavefronts and the type of deformation of the medium. It follows from the law of conservation of energy as applied to the process of the propagation of vibrations in an elastic medium. To set regions of the medium more and more distant from the wave source into vibratory motion it is necessary to expend energy, which is supplied to the medium by the source. Consequently, the propagation of elastic waves is inseparably associated with the transport of energy from certain parts of the medium to others. This is precisely why the volume energy density FA of the waves depends both on the coordinates and on the time as well, I’or a plane travelling sine wave in a nonabsorbing medium \ssect{30.2.5}
+\subsection{}\label{30.3.3} An elastic medium in which mechanical waves propagate has kinetic energy of vibratory motion of its particles and potential energy due to deformation \ssect{30.1.1}. If $\vb{v}_{1}$ the velocity of particles of the medium, then the \redem{volume kinetic energy density of the medium} is 
+\begin{equation*}%
+E^{d}_{k} = \dv{E_{k}}{V} = \frac{1}{2} \rho v_{1}^{2},
+\end{equation*}
+where $\rho$ is the density of the medium, and $\dd E_{k}$ is the kinetic energy of all the particles in the small volume $\dd V$ of the medium. This volume has been selected so that throughout it the velocity $\vb{v}_{1}$ is the same.
 
-FA= pi42co2cos2(cat—kx-f-(p0)
-1 p42(o2[1+ cos 2(©£—-/f£+cpo)L
-where A = const is the wave amplitude.
-In the case of a diverging spherical sine wave in a nonabsorbing medium \ssect{30.2.8}
-where A = ajr is the amplitude of the wave.
+The \redem{volume potential energy density of an elastically deformed medium} is
+\begin{equation*}%
+E^{d}_{p} = \dv{E_{p}}{V} = \frac{1}{2} \rho v^{2} \varepsilon^{2},
+\end{equation*}
+where $\dd E_{p}$ is the potential energy of a uniformly deformed
+small portion of the medium of volume $\dd V$, $v$ is the phase velocity in the medium, and $\varepsilon$ is the relative deformation. 
+
+The \redem{volume energy density of elastic waves} is understood to be the volume density $E^{d}$ of the mechanical energy of a medium due to the propagation of these waves. Thus
+\begin{equation*}%
+E^{d} = E^{d}_{k} + E^{d}_{p} =  \frac{1}{2} \rho ( v_{1}^{2} + v^{2} \varepsilon^{2}).
+\end{equation*}
+
+\subsection{}\label{30.3.4} If a longitudinal plane travelling wave \ssect{30.2.4} propagates in a medium, then $v_{1} = \pdv*{s}{t}$, where $s$ is the displacement of the particles, and $\varepsilon = \pdv*{s}{x} = - v_{1}/v$, so that
+\begin{equation*}%
+E^{d}_{p} = E^{d}_{k} \qand E^{d} = \rho v_{1}^{2} = \rho \left( \pdv{s}{t}\right)^{2}.
+\end{equation*}
+At each point of the medium subject to wave motion, $E^{d}_{k}$ and
+$E^{d}_{p} $ are \redem{alike} functions of time. Consequently, $E^{d}$ also varies with time. This principle is valid for any travelling waves in an elastic medium, regardless of the shape of their wavefronts and the type of deformation of the medium. It follows from the law of conservation of energy as applied to the process of the propagation of vibrations in an elastic medium. 
+
+To set regions of the medium more and more distant from the wave source into vibratory motion it is necessary to expend energy, which is supplied to the medium by the source. Consequently, the propagation of elastic waves is inseparably associated with the transport of energy from certain parts of the medium to others. This is precisely why the volume energy density $E^{d}$ of the waves depends both on the coordinates and on the time as well.
+
+For a plane travelling sine wave in a non-absorbing medium \ssect{30.2.5}
+\begin{align*}%
+E^{d} & = \rho A^{2} \omega^{2} \cos^{2} (\omega t - kx + \varphi_{0}) \\
+& = \frac{1}{2} \rho A^{2}\omega^{2} [1 + \cos 2(\omega t - kx + \varphi_{0})],
+\end{align*}
+where $A = \text{const.}$ is the wave amplitude.
+
+In the case of a diverging spherical sine wave in a non-absorbing medium \ssect{30.2.8}
+\begin{equation*}%
+E^{d} = \rho A^{2}\omega^{2}\cos^{2} (\omega t - kr + \alpha),
+\end{equation*}
+where $A = a_{0}/r$ is the amplitude of the wave.
+
 The average volume energy density over one period is
-(Ed) = -Lpco2.
-Fig. 30.1 
+\begin{equation*}%
+E^{d} = \frac{1}{2} \rho A^{2} \omega^{2}.
+\end{equation*}
+%Fig. 30.1 
 
 \subsection{}\label{30.3.5} The velocity of energy transfer
 l>ij a wave is equal to the velocity in
