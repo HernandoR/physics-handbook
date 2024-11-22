@@ -61,7 +61,7 @@ Special properties are found in \redem{surface} waves, which propagate along the
 
 A medium is \redem{isotropic} if its physical properties that are essential in the problem being considered are the same in all directions. A medium that is isotropic with respect to certain physical properties may be anisotropic with respect to others. Cubic crystals, for instance, are optically isotropic, but are anisotropic with respect to other properties. Gases and liquids are isotropic with respect to any physical properties.
 
-\subsection{}\label{30.1.7} A medium is said to be \redem{linear} if there is a directly proportional relation between the quantities characterizing the external effects being considered that act on the medium and the changes they lead to in the state of the medium. An elastic medium, for example, obeying Hooke’s law \ssect{30.1.1} is linear with respect to its mechanical properties. A dielectric is a linear medium with respect to its electrical properties if its dielectric constant \ssect{14.2.4} is independent of the electric field strength. By analogy, a magnetic material is a linear medium with respect to its magnetic properties if its relative magnetic permeability \ssect{26.4.5} is independent of the magnetic induction of the field.
+\subsection{}\label{30.1.7} A medium is said to be \redem{linear} if there is a directly proportional relation between the quantities characterizing the external effects being considered that act on the medium and the changes they lead to in the state of the medium. An elastic medium, for example, obeying Hooke's law \ssect{30.1.1} is linear with respect to its mechanical properties. A dielectric is a linear medium with respect to its electrical properties if its dielectric constant \ssect{14.2.4} is independent of the electric field strength. By analogy, a magnetic material is a linear medium with respect to its magnetic properties if its relative magnetic permeability \ssect{26.4.5} is independent of the magnetic induction of the field.
 
 
 
@@ -190,7 +190,7 @@ The propagation of longitudinal waves in a \redem{thin long rod} is associated w
 \begin{equation*}%
 v = \sqrt{\frac{E}{\rho}},
 \end{equation*}
-where $E$ is Young’s modulus \ssect{40.3.6} for the rod material.
+where $E$ is Young's modulus \ssect{40.3.6} for the rod material.
 
 The \redem{velocity of propagation of transverse waves along a stretched string (a thin flexible cord)} is
 \begin{equation*}%
@@ -244,32 +244,46 @@ E^{d} = \frac{1}{2} \rho A^{2} \omega^{2}.
 \end{equation*}
 %Fig. 30.1 
 
-\subsection{}\label{30.3.5} The velocity of energy transfer
-l>ij a wave is equal to the velocity in
-space of a surface" corresponding to the maximum value of the volume density Ea of the wave’s energy. For sine waves this velocity is equal to the phase velocity v.
+\subsection{}\label{30.3.5} The \redem{velocity of energy transfer
+by a wave} is equal to the velocity in space of a surface corresponding to the maximum value of the volume density $E^{d}$ of the wave's energy. For sine waves this velocity is equal to the phase velocity $v$.
 
-The energy flux d(bE through the small surface dS is the ratio of the energy dE transferred through this surface in a short lime interval to the magnitude of this interval dt. Thus
-dtf)E = dEldt.
+The \redem{energy flux} $\dd \Phi_{E}$ through the small surface $\dd S$ is the ratio of the energy $\dd E$ transferred through this surface in a short lime interval to the magnitude of this interval $\dd t$. Thus
+\begin{equation*}%
+\dd \Phi_{E} = \dv{E}{t}.
+\end{equation*}
+\begin{marginfigure}%[-1.5cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-30/fig-30-01.pdf}
+\sidecaption{Velocity vector of energy transfer by the wave.\label{fig-30-01}}
+\end{marginfigure}
+If $v$ is the velocity vector of energy transfer by the wave (\figr{fig-30-01}), then
+\begin{align*}%
+\dd E & = E^{d} v \, \dd t \, \dd S \, \cos \alpha = E^{d}(\vb{v}\dd \vb{S}) \, \dd t \qand \\
+\dd \Phi_{E} & =  E^{d}\, (\vb{v}\dd \vb{S})= (\vb{U}\,\dd \vb{S}),
+\end{align*}
+where $E^{d}$ is the volume energy density of the wave, $\dd \vb{S} = \vu{n} \dd S$  is the vector of surface $\dd S$, $\vu{n}$ is a unit vector of the normal to the surface, and $\alpha$ is the angle between $\vb{v}$ and $\dd \vb{S}$.
 
-If v is the velocity vector of energy transfer by the wave (Kig. 30.1), then
-dE—EdvdtdScosa= E(vdS)dt and
-(«S)E= Ed(VdS)= (UdS),
-where Ed is the volume energy density of the wave, dS = n dS is the vector of surface dS, n is a unit vector of the normal to the surface, and a is the angle between v and dS,
-The vector U = Edv, having the direction of energy transfer by the wave, is called the Umov vector (energy flux density vector of the wave). In magnitude it equals the ratio of the energy flux d>E through the small surface dS to the area dS ±= dS cos a
-of the projection of this surface on a plane perpendicular to the direction of energy! transfer: U = d<bE/dS±.
+The vector $\vb{U} = E^{d}\vb{v}$, having the direction of energy transfer by the wave, is called the \redem{$U_{mov}$ vector (energy flux density vector of the wave)}. In magnitude it equals the ratio of the energy flux $\dd \Phi_{E}$ through the small surface $\dd S$ to the area $\dd S_{\perp} = \dd S \cos \alpha$ of the projection of this surface on a plane perpendicular to the direction of energy transfer: $U = \dv*{\Phi_{E}}{S_{\perp}}$.
 
-\subsection{}\label{30.3.6} The wave intensity I is the magnitude of the average value of the Umov vector. Wave intensity is numerically equal to the energy transferred by the wave in unit time through unit area of a surface perpendicular to the direction of wave prop­ agation. The intensity of a travelling sine wave is proportional to the square of its amplitude. For plane and spherical sine waves
-/= |(U)|=v(E)= YPva,2A2-
-When a spherical wave propagates in a nonabsorbing medium, the same amount of energy is transferred in unit time through any spherical surface of radius r with its centre at the wave centre. This energy is equal to that expended during the same time by the wave source: 4itr27 = const. Hence, the intensity and amplitude of a spherical wave decrease with an increase in the distance from the wave centre according to the relations
-/(r)=-- and A(r)= ,
-where i0and a0are physical quantities numerically equal to the intensity and amplitude of the wave at the distance r = 1 m from the wave centre.
-It can be shown in the same way that in the case of a plane sine wave in a nonabsorbing medium, the amplitude A of the wave is independent of the coordinates.
+\subsection{}\label{30.3.6} The \redem{wave intensity} $I$ is the magnitude of the average value of the $U_{mov}$ vector. Wave intensity is numerically equal to the energy transferred by the wave in unit time through unit area of a surface perpendicular to the direction of wave propagation. The intensity of a travelling sine wave is proportional to the square of its amplitude. For plane and spherical sine waves
+\begin{equation*}%
+I = \abs{\expval{\vb{U}}} = v \expval{E^{d}} = \frac{1}{2} \rho v \omega^{2} A^{2}.
+\end{equation*}
+When a spherical wave propagates in a non-absorbing medium, the same amount of energy is transferred in unit time through any spherical surface of radius r with its centre at the wave centre. This energy is equal to that expended during the same time by the wave source: $4\pi r^{2}I = \text{const.}$ Hence, the intensity and amplitude of a spherical wave decrease with an increase in the distance from the wave centre according to the relations
+\begin{equation*}%
+I(r) = \frac{i_{0}}{r^{2}} \qand A(r) = \frac{a_{0}}{r},
+\end{equation*}
+where $i_{0}$ and $a_{0}$ are physical quantities numerically equal to the intensity and amplitude of the wave at the distance $r = \SI{1}{\meter}$ from the wave centre.
 
-\subsection{}\label{30.3.7} The conversion of wave energy into other forms of energy, taking place in the propagation of waves through a medium, is called wave absorption. In a uniform medium the absorption of elastic waves is due chiefly to the processes of internal friction, or viscosity \ssect{10.8.4}, and heat conduction \ssect{10.8.5}. The amplitude A and intensity / of a plane wave, propagating in an absorbing medium along the positive direction of axis OX, varies according to the exponential law
-A(x)= A0e~ax and I (x)= I0e~2ax.
-Here A0and 70are the amplitude and intensity of the wave at the points x = 0, and a is the linear absorption coefficient for elastic waves and depends upon the properties of the medium and the wave frequency.
+It can be shown in the same way that in the case of a plane sine wave in a non-absorbing medium, the amplitude $A$ of the wave is independent of the coordinates.
 
-\subsection{}\label{30.3.8} The dispersion of waves is the dependence of the phase velocity of sine waves in a medium on their frequency. A medium in which this phenomenon is observed is said to be a dispersive medium. The dispersion of acoustic waves in a boundless me­ dium depends upon the properties of the medium and is always accompanied by the absorption of sound.
+\subsection{}\label{30.3.7} The conversion of wave energy into other forms of energy, taking place in the propagation of waves through a medium, is called wave absorption. In a uniform medium the absorption of elastic waves is due chiefly to the processes of internal friction, or viscosity \ssect{10.8.4}, and heat conduction \ssect{10.8.5}. The amplitude $A$ and intensity $I$ of a plane wave, propagating in an absorbing medium along the positive direction of axis $OX$, varies according to the exponential law
+\begin{equation*}%
+A(x)= A_{0} \exp(- \alpha x) \qand I (x)= I_{0}\exp(-2 \alpha x).
+\end{equation*}
+Here $A_{0}$ and $I_{0}$ are the amplitude and intensity of the wave at the points $x = 0$, and $\alpha$ is the \redem{linear absorption coefficient} for elastic waves and depends upon the properties of the medium and the wave frequency.
+
+\subsection{}\label{30.3.8} The \redem{dispersion of waves} is the dependence of the phase velocity of sine waves in a medium on their frequency. A medium in which this phenomenon is observed is said to be a \redem{dispersive medium}. The dispersion of acoustic waves in a boundless medium depends upon the properties of the medium and is always accompanied by the absorption of sound.
 
 \section[Superposition of Waves]{Principle of Superposition of Waves. Group Velocity}
 \label{sec-30.4} 
@@ -282,7 +296,7 @@ i=l
 where sz-,
 and acceleration that the particles being considered would have at the instant of time t if only the ith wave was propagated in the medium.
 
-\subsection{}\label{30.4.2} On the basis of the principle of wave superposition and a Fourier expansion (\ssect{28.4.6} and \ssect{28.4.7}) any nonsine wave can be replaced by an equivalent system of sine waves, i.e. it can be represented in the form of a group of waves, called a wave train or packet. The totality of frequency values for these sine waves is called the frequency spectrum (or simply spectrum) of the nonsine wave. In accordance with the nature of the oscillation excited by the wave, the wave’s frequency spectrum can be either discrete \ssect{28.4.6} or continuous \ssect{28.4.7}.
+\subsection{}\label{30.4.2} On the basis of the principle of wave superposition and a Fourier expansion (\ssect{28.4.6} and \ssect{28.4.7}) any nonsine wave can be replaced by an equivalent system of sine waves, i.e. it can be represented in the form of a group of waves, called a wave train or packet. The totality of frequency values for these sine waves is called the frequency spectrum (or simply spectrum) of the nonsine wave. In accordance with the nature of the oscillation excited by the wave, the wave's frequency spectrum can be either discrete \ssect{28.4.6} or continuous \ssect{28.4.7}.
 
 The law of propagation of an arbitrary disturbance (signal), which is a nonsine wave, in a linear medium is simple only provided that the medium is nondispersive \ssect{30.3.8}. In this case the signal travels in the medium without changing its “shape” because all the sine waves making up the wave train have the same phase velocity, which is equal to the velocity of the signal.
 
@@ -369,7 +383,7 @@ H = — = 24(0COS + cos > and the relative deformation of the medium is s = — 
 
 Thus, in contrast to a travelling wave \ssect{30.3.4}, in a standing wave e has a phase lead of jc/2 over vv Consequently, at the instants of time when reaches its amplitude value, e becomes zero and vice versa. Moreover, the amplitudes of vxand e depend upon the coordinate x, but in different ways. Thus, the anti­ nodes of the particle velocity and nodes of deformation of the medium are at the antinodes of the standing wave \ssect{30.5.5}, whereas the antinodes of the deformation and the nodes of the velocity are at the nodes of the standing wave.
 
-In an elastic standing wave, the energy is periodically converted I’rom potential energy, localized mainly near the deformation antinodes, into kinetic energy, localized mainly near the velocity antinodes, and back again. Therefore, energy periodically migrates from the nodes of a standing wave to its antinodes and back again. But in the nodes and antinodes themselves the energy flux density is identically equal to zero. The average value of the energy flux density over one period is equal to zero at any point on a standing wave, because the two travelling waves that form the standing wave transmit equal amounts of energy over a period in opposite directions. This is why they have been called standing waves.
+In an elastic standing wave, the energy is periodically converted I'rom potential energy, localized mainly near the deformation antinodes, into kinetic energy, localized mainly near the velocity antinodes, and back again. Therefore, energy periodically migrates from the nodes of a standing wave to its antinodes and back again. But in the nodes and antinodes themselves the energy flux density is identically equal to zero. The average value of the energy flux density over one period is equal to zero at any point on a standing wave, because the two travelling waves that form the standing wave transmit equal amounts of energy over a period in opposite directions. This is why they have been called standing waves.
 
 \subsection{}\label{30.5.8} In the free vibrations of strings, rods and columns of gas, standing waves are set up in them. The frequencies of these waves comply with definite conditions, i.e. they can have only certain discrete values, which are called the natural frequencies of vibration of the corresponding vibratory system. Displace­ ment nodes (deformation antinodes) are located at the rigidly fixed ends of strings or rods, and displacement antinodes (defor­ mation nodes) are located at the free ends of the rods. In the vibrations of a cylindrical column of gas in a pipe, a pressure antinode is located at the closed end of the pipe and a pressure node at the open end.
 
@@ -394,7 +408,7 @@ Fig. 30.6
 2 V?
 °D
 the train is standing still. Assume that the detector D of acoustic waves in a gas­ eous (or liquid) medium is fixed with respect to the medium, and that the source S is moving away at the velocity along a straight line joining them (Fig. 30.6a). During the period T0 of its vibration, the source travels in the medium a
-distance of vxT0= vJvq, where v0is the source’s fre­ quency of vibration. There­
+distance of vxT0= vJvq, where v0is the source's fre­ quency of vibration. There­
 (e)
 fore/upon motion of the source the wavelength X in the medium differs from its value A,0when the source is stationary:
  = K + V i T o = ( v + ”1 ) ( v + i > i ) / v o  where v is the phase velocity of the wave in the medium. The frequency of the wave recorded by the detector is
