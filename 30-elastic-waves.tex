@@ -288,33 +288,56 @@ Here $A_{0}$ and $I_{0}$ are the amplitude and intensity of the wave at the poin
 \section[Superposition of Waves]{Principle of Superposition of Waves. Group Velocity}
 \label{sec-30.4} 
 
-\subsection{}\label{30.4.1} The principle of superposition of waves states that in a linear medium \ssect{30.1.7} waves are propagated independently of one another, so that the resultant disturbance at any point in the medium upon the simultaneous propagation of several waves is equal to the sum of the disturbances corresponding to each of the waves separately.
-For example, if n different mechanical waves are propagated simultaneously through a linear medium the resultant displace­ ment s, velocity v and acceleration a of the particles of the medium at the arbitrary instant t of time are
-nnn
-S / f
-i=l
-where sz-,
-and acceleration that the particles being considered would have at the instant of time t if only the ith wave was propagated in the medium.
+\subsection{}\label{30.4.1} The \redem{principle of superposition of waves} states that in a linear medium \ssect{30.1.7} waves are propagated independently of one another, so that the resultant disturbance at any point in the medium upon the simultaneous propagation of several waves is equal to the sum of the disturbances corresponding to each of the waves separately.
 
-\subsection{}\label{30.4.2} On the basis of the principle of wave superposition and a Fourier expansion (\ssect{28.4.6} and \ssect{28.4.7}) any nonsine wave can be replaced by an equivalent system of sine waves, i.e. it can be represented in the form of a group of waves, called a wave train or packet. The totality of frequency values for these sine waves is called the frequency spectrum (or simply spectrum) of the nonsine wave. In accordance with the nature of the oscillation excited by the wave, the wave's frequency spectrum can be either discrete \ssect{28.4.6} or continuous \ssect{28.4.7}.
+For example, if $n$ different mechanical waves are propagated simultaneously through a linear medium the resultant displacement $\vb{s}$, velocity $\vb{v}$ and acceleration $\vb{a}$ of the particles of the medium at the arbitrary instant $t$ of time are
+\begin{equation*}%
+\vb{s} = \sum_{i}^{n} \vb{s}_{i},\quad \vb{v} = \sum_{i}^{n} \vb{v}_{i},\qand \vb{a} = \sum_{i}^{n} \vb{a}_{i},
+\end{equation*}
+where $\vb{s}_{i}$, $\vb{v}_{i}$, $\vb{a}_{i}$, and acceleration that the particles being considered would have at the instant of time $t$ if only the $i$-th wave was propagated in the medium.
 
-The law of propagation of an arbitrary disturbance (signal), which is a nonsine wave, in a linear medium is simple only provided that the medium is nondispersive \ssect{30.3.8}. In this case the signal travels in the medium without changing its “shape” because all the sine waves making up the wave train have the same phase velocity, which is equal to the velocity of the signal.
+\subsection{}\label{30.4.2} On the basis of the principle of wave superposition and a Fourier expansion (\ssect{28.4.6} and \ssect{28.4.7}) any nonsine wave can be replaced by an equivalent system of sine waves, i.e. it can be represented in the form of a \redem{group of waves}, called a \redem{wave train} or packet. The totality of frequency values for these sine waves is called the \redem{frequency spectrum} (or simply \redem{spectrum}) of the nonsine wave. In accordance with the nature of the oscillation excited by the wave, the wave's frequency spectrum can be either discrete \ssect{28.4.6} or continuous \ssect{28.4.7}.
+
+The law of propagation of an arbitrary disturbance (signal), which is a nonsine wave, in a linear medium is simple only provided that the medium is nondispersive \ssect{30.3.8}. In this case the signal travels in the medium without changing its ``shape'' because all the sine waves making up the wave train have the same phase velocity, which is equal to the velocity of the signal.
+
+\begin{figure}%[-1.5cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-30/fig-30-02.pdf}
+\sidecaption{The ``spread'' of a train wave in a dispersive medium.\label{fig-30-02}}
+\end{figure}
+
 
 In a dispersive medium, the sine components of the wave train, corresponding to the nonsine wave, propagate at different
-velocities. Therefore, this wave train “spreads”as it propagates, thereby changing the “shape”of the signal. If, for example, a signal propagating along the OX axis in a dispersive medium had the “shape”shown by dash lines in Fig. 30.2 at the instant of time fx, then at the instant t2> it could have the different “shape”shown by a solid line.
+velocities. Therefore, this wave train ``spreads'' as it propagates, thereby changing the ``shape'' of the signal. If, for example, a signal propagating along the $OX$ axis in a dispersive medium had the ``shape'' shown by dash lines in \figr{fig-30-02} at the instant of time $t_{1}$, then at the instant $t_{2}$ it could have the different ``shape'' shown by a solid line.
 
-\subsection{}\label{30.4.3} The simplest wave train is the plane quasi-sine wave obtained by the superposition of two plane waves of the same amplitude and with frequencies and wavenumbers close in value propagating along the OX axis. Thus
-s= 40sin (cot—kx)--A0sin [(co+ c?co)t—(fc+ dk)x]
-The dependence of s on x at some fixed instant of time is shown in Fig. 30.3. This wave differs from a sine wave in that its am­ plitude
-. *a (tdm—xdkI A= 2A0 cos ---------- g-j I
-is a slowly varying function of the coordinate x and time t. Taken as the velocity of propagation of this nonsine wave is a
-Fig. 30.3
-velocity u of pointM in which the amplitude A has some fixed value (for example* A = 0 or A = 2AQ). Consequently, the law of motion of point M is: tdm—xdk= const. From this
- dx  do “= ~df-~Sk •
-Velocity u is called the group velocity. It is equal to the velocity of energy transfer by a quasi-sine wave. The group velocity u = dco/dfc is suitable for describing energy transfer (signal transmission) by nonsine waves having a different frequency spectrum provided that the spectrum is not very wide and that the dispersion of waves in the medium at these frequencies is not too great.
-The relation between the group velocity (u = da/dk) and the phase velocity (v = co/k) of waves is of the form:
-«dv
-where X is the wavelength \ssect{30.2.6}. In a nondispersive medium dv/dX = 0 and the group and phase velocities coincide.
+\subsection{}\label{30.4.3} The simplest wave train is the \redem{plane quasi-sine wave} obtained by the superposition of two plane waves of the same amplitude and with frequencies and wavenumbers close in value propagating along the $OX$ axis. Thus
+\begin{align*}%
+s & = A_{0} \sin (\omega t - kx) + A_{0} \sin [(\omega + \dd \omega)\, t - (k + \dd k)\,x] \\
+& = 2 A_{0} \cos \left( \frac{t \, \dd \omega - x \, \dd k}{2}\right) \sin (\omega t - kx).
+\end{align*}
+The dependence of $s$ on $x$ at some fixed instant of time is shown in \figr{fig-30-03}. 
+
+\begin{figure}%[-1.5cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-30/fig-30-03.pdf}
+\sidecaption{The dependence of $s$ on $x$.\label{fig-30-03}}
+\end{figure}
+
+This wave differs from a sine wave in that its amplitude
+\begin{equation*}%
+A = A_{0} \abs{ \left( \frac{t \, \dd \omega - x \, \dd k}{2}\right)}
+\end{equation*}
+is a slowly varying function of the coordinate $x$ and time $t$. Taken as the velocity of propagation of this nonsine wave is a velocity $u$ of point $M$ in which the amplitude $A$ has some fixed value (for example, $A = 0$ or $A = 2A_{0}$). Consequently, the law of motion of point $M$ is: $t\, \dd \omega - x\, \dd k = \text{const}.$ From this
+\begin{equation*}%
+u = \dv{x}{t} = \dv{\omega}{k}.
+\end{equation*}
+Velocity $u$ is called the \redem{group velocity}. It is equal to the velocity of energy transfer by a quasi-sine wave. The group velocity $u = \dv*{\omega}{k}$ is suitable for describing energy transfer (signal transmission) by nonsine waves having a different frequency spectrum provided that the spectrum is not very wide and that the dispersion of waves in the medium at these frequencies is not too great.
+
+The relation between the group velocity $(u = \dv*{\omega}{k})$ and the phase velocity $(v = \omega/k)$ of waves is of the form:
+\begin{equation*}%
+u = v - \lambda \dv{v}{\lambda},
+\end{equation*}
+where $\lambda$ is the wavelength \ssect{30.2.6}. In a nondispersive medium $\dv*{v}{\lambda} = 0$ and the group and phase velocities coincide.
 
 
 \section[Interference of Waves]{Interference of Waves. Standing Waves}
