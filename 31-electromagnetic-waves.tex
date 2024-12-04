@@ -1,0 +1,783 @@
+% !TEX root = handbook-physics.tex
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+
+
+
+
+
+\chapter{Electromagnetic Waves}
+\label{ch-31}
+
+\section{Properties of Electromagnetic Waves}
+\label{sec-31.1} 
+
+
+\subsection{}\label{31.1.1} \redem{Electromagnetic waves} are disturbances of an electromagnetic field (i.e. a variable electromagnetic field) that propagate through space. The statement of the existence of electromagnetic waves follows directly from Maxwell's equations \ssect{27.4.3}. For an electromagnetic field, distant from the free electric charges \ssect{18.3.1} and macroscopic currents \ssect{26.4.1} that
+it was set up by, these equations are of the form:\sidenote{All equations in Chapter~\ref{ch-31} are written in SI units.}
+\[
+\begin{alignedat}{2}
+\curl \vb{E} & = - \pdv{\vb{B}}{t}, & \quad \curl \vb{H} & = \pdv{\vb{D}}{t}, \\
+\div \vb{D} & = 0,                  & \quad \div \vb{B} & = 0.
+\end{alignedat}
+\]
+ \subsection{}\label{31.1.2} If the medium is a uniform and isotropic dielectric \ssect{30.1.6}, having no ferroelectric \ssect{18.4.1} or ferromagnetic \ssect{26.5.1} properties, then $\vb{D} = \varepsilon_{r}\varepsilon_{0}\vb{E}$ and $\vb{B} = \mu_{r}\mu_{0}\vb{H}$, where
+$\varepsilon_{r}$ and $\mu_{r}$ are constant scalar quantities independent both of the coordinates and of time. Here Maxwell's equations \ssect{31.1.1} can be rewritten in the form
+\[
+\begin{alignedat}{2}
+\curl \vb{E} & = - \mu_{r} \mu_{0} \pdv{\vb{H}}{t}, & \quad \curl \vb{H} & = \varepsilon_{r} \varepsilon_{0} \pdv{\vb{E}}{t}, \\
+\div \vb{E} & = 0,                                 & \quad \div \vb{H} & = 0.
+\end{alignedat}
+\]
+or in projections on the axes of Cartesian coordinates:
+\[
+\begin{alignedat}{2}
+\pdv{E_{z}}{y}& - \pdv{E_{y}}{z}  = - \mu_{r} \mu_{0} \pdv{H_{x}}{t}, 
+& \quad \pdv{H_{z}}{y} & - \pdv{H_{y}}{z}  = \varepsilon_{r} \varepsilon_{0} \pdv{E_{x}}{t}, \\
+\pdv{E_{x}}{z} & - \pdv{E_{z}}{x} = - \mu_{r} \mu_{0} \pdv{H_{y}}{t}, 
+& \quad \pdv{H_{x}}{z} & - \pdv{H_{z}}{x} = \varepsilon_{r} \varepsilon_{0} \pdv{E_{y}}{t}, \\
+\pdv{E_{y}}{x} & - \pdv{E_{x}}{y} = - \mu_{r} \mu_{0} \pdv{H_{z}}{t}, 
+& \quad \pdv{H_{y}}{x} & - \pdv{H_{x}}{y} = \varepsilon_{r} \varepsilon_{0} \pdv{E_{z}}{t},\\
+\pdv{E_{x}}{x} & + \pdv{E_{y}}{y} + \pdv{E_{z}}{z} = 0, & \quad \pdv{H_{x}}{x} & + \pdv{H_{y}}{y} + \pdv{H_{z}}{z}  = 0. 
+\end{alignedat}
+\]
+
+\subsection{}\label{31.1.3} It follows from Maxwell's equations \ssect{31.1.2} that the
+strength vectors $\vb{E}$ and $\vb{H}$ of a variable electromagnetic field and their projections onto the axes of Cartesian coordinates comply in a uniform, isotropic, nonconducting medium, with the wave equation \ssect{30.2.9}:
+\[
+\begin{alignedat}{2}
+\Delta \vb{E} - \varepsilon_{r} \varepsilon_{0}\mu_{r} \mu_{0} \pdv[2]{\vb{E}}{t} & = 0, &  \quad \Delta \vb{H} - \varepsilon_{r} \varepsilon_{0}\mu_{r} \mu_{0} \pdv[2]{\vb{H}}{t} & = 0,\\
+\Delta E_{x} - \varepsilon_{r} \varepsilon_{0}\mu_{r} \mu_{0} \pdv[2]{E_{x}}{t} & = 0, & \quad  \Delta E_{y} - \varepsilon_{r} \varepsilon_{0}\mu_{r} \mu_{0} \pdv[2]{E_{y}}{t} & = 0,\\
+\Delta E_{z} - \varepsilon_{r} \varepsilon_{0}\mu_{r} \mu_{0} \pdv[2]{E_{z}}{t} & = 0, & \quad \\
+\Delta H_{x} - \varepsilon_{r} \varepsilon_{0}\mu_{r} \mu_{0} \pdv[2]{H_{x}}{t} & = 0, & \quad  \Delta H_{y} - \varepsilon_{r} \varepsilon_{0}\mu_{r} \mu_{0} \pdv[2]{H_{y}}{t} & = 0,\\
+\Delta H_{z} - \varepsilon_{r} \varepsilon_{0}\mu_{r} \mu_{0} \pdv[2]{H_{z}}{t} & = 0.
+\end{alignedat}
+\]
+Thus a variable electromagnetic field really propagates in space
+in the form of waves with the phase velocity
+\begin{equation*}%
+v = \frac{c}{\sqrt{\varepsilon_{r} \mu_{r}}}, \,\, \text{where} \,\, c =\frac{1}{\sqrt{\varepsilon_{0} \mu_{0}}} = \SI{3d8}{\meter\per\second}.
+\end{equation*}
+In vacuum $\varepsilon_{r} = \mu_{r} = 1$. Hence, $c$ is the \redem{velocity of electromagnetic waves} in vacuum (in free space).
+
+\subsection{}\label{31.1.4} Electromagnetic waves are \redem{transverse} waves: vectors $\vb{E}$ and $\vb{H}$ of the field lie in a plane perpendicular to the direction of wave propagation, i.e. to the wave velocity vector $\vb{v}$ at the point being considered in the field. This can he most readily demonstrated by the example of a plane wave, propagating along the positive direction of axis $OX$ \ssect{30.2.4}:
+\begin{equation*}%
+\vb{E} = f\,\left(t - \frac{x}{v} \right) \qand \vb{H} = \varphi\,\left(t - \frac{x}{v} \right).
+\end{equation*}
+Vector $\vb{E}$ and $\vb{H}$ and their projections on the coordinate axes are independent of $y$ and $z$:
+\begin{align*}%
+\pdv{E_{x}}{y} & = \pdv{E_{x}}{z}= \pdv{E_{y}}{y} =\pdv{E_{y}}{z}= \pdv{E_{z}}{y}= \pdv{E_{z}}{z} =0 \qand \\
+\pdv{H_{x}}{y} & = \pdv{H_{x}}{z}= \pdv{H_{y}}{y} =\pdv{H_{y}}{z}= \pdv{H_{z}}{y}= \pdv{H_{z}}{z}
+\end{align*}
+It follows from Maxwell's equations \ssect{31.1.2} that for the field of a plane wave,
+\begin{equation*}%
+\pdv{E_{x}}{x} = \pdv{E_{x}}{t} = 0 \qand \pdv{H_{x}}{x} = \pdv{H_{x}}{t} = 0,
+\end{equation*}
+i.e. $E_{x}$ and $H_{x}$ are independent of both coordinates and time.
+
+Hence, for a \redem{variable} field of a plane  wave $E_{x} = H_{x} = 0$, and the vectors $\vb{E}$ and $\vb{H}$ are perpendicular to the direction of wave propagation:
+\begin{equation*}%
+\vb{E} = E_{y}\vu{j} + E_{z}\vu{k} \qand \vb{H} = H_{y}\vu{j} + H_{z}\vu{k} 
+\end{equation*}
+where $\vu{j}$ and $\vu{k}$ are unit vectors of the
+coordinate axes.
+
+\subsection{}\label{31.1.5} Vectors $\vb{E}$ and $\vb{H}$ of the field of an electromagnetic wave are mutually perpendicular, so that $\vb{v}$, $\vb{E}$ and $\vb{H}$ form a right-hand set of three vectors (\figr{Fig. 31.1}).
+
+As a matter of fact, for the field of a plane wave \ssect{31.1.4},
+\begin{align*}%
+E_{y} & = f_{1}\,\left(t - \frac{x}{v} \right) \qand E_{z} = f_{2}\,\left(f - \frac{x}{v} \right),\\
+H_{y} & = \varphi_{1}\,\left(t - \frac{x}{v} \right) \qand E_{z} = f_{2}\,\left(f - \frac{x}{v} \right),\\
+\end{align*}
+It follows from Maxwell's equations \ssect{31.1.2} that
+\begin{align*}%
+\sqrt{\varepsilon_{r} \varepsilon_{0}}\pdv{E_{y}}{\xi} & = \sqrt{\mu_{r} \mu_{0}} \pdv{H_{z}}{\xi} \qand \\
+\sqrt{\varepsilon_{r} \varepsilon_{0}}\pdv{E_{z}}{\xi} & = - \sqrt{\mu_{r} \mu_{0}} \pdv{H_{y}}{\xi} \qand \\
+\end{align*}
+where $\xi = t - x/v$. Therefore, for a variable field of a plane
+wave
+\begin{equation*}%
+H_{y} = - \sqrt{\frac{\varepsilon_{r} \varepsilon_{0}}{\mu_{r} \mu_{0}}} E_{z}, \quad H_{z} = - \sqrt{\frac{\varepsilon_{r} \varepsilon_{0}}{\mu_{r} \mu_{0}}} E_{y}, \qand (\vb{E}\vb{H}) = 0.
+\end{equation*}
+The mutually perpendicular vectors $\vb{E}$ and $\vb{H}$ oscillate in phase: they become zero simultaneously and reach their maximum
+values simultaneously. The relation between their magnitudes is
+\begin{equation*}%
+\sqrt{\varepsilon_{r} \varepsilon_{0}}E= \sqrt{\mu_{r} \mu_{0}} H,
+\end{equation*}
+which is valid for any travelling electromagnetic wave \ssect{30.2.1} regardless of the shape of its wavefronts \ssect{30.2.3}.
+
+\subsection{}\label{31.1.6} A \redem{monochromatic wave} is an electromagnetic wave of a single definite frequence $\nu$, i.e. an electromagnetic sine wave. At each point of the electromagnetic field of a monochromatic wave, the projections of vectors $\vb{E}$ and $\vb{H}$ on the coordinate axes of an inertial frame of reference have harmonic oscillations \ssect{28.1.3} of the same frequency, equal to the wave frequency $\nu$.
+
+For example, in the case of a \redem{plane monochromatic wave}, propagating along the positive direction of axis $OX$,
+\begin{align*}%
+E_{y} & = A_{1} \sin (\omega t - kx),\quad & H_{y} & = - \sqrt{\frac{\varepsilon_{r} \varepsilon_{0}}{\mu_{r} \mu_{0}}} E_{z},\\
+E_{z} & = A_{1} \sin (\omega t - kx + \varphi),\quad  & H_{z} & = - \sqrt{\frac{\varepsilon_{r} \varepsilon_{0}}{\mu_{r} \mu_{0}}} E_{y},
+\end{align*}
+where $\omega = 2\pi \nu$ is the angular frequency of the wave, $k$ is the wavenumber \ssect{30.2.6}, $A_{1}$ and $A_{2}$ are the amplitudes of $E_{y}$ and $E_{z}$, and $\varphi$ is the phase difference between the oscillations of $E_{z}$ and $E_{y}$.
+
+\subsection{}\label{31.1.7} For an arbitrary value of $\varphi$ \ssect{31.1.6}, a plane monochromatic wave is \redem{elliptically polarized}, i.e. at each point of the wave's field, vectors $\vb{E}$ and $\vb{H}$, while remaining mutually perpendicular,
+vary with time so that their heads describe ellipses lying in a
+plane perpendicular to the direction of wave propagation:
+\begin{align*}%
+\frac{E_{y}^{2}}{A_{1}^{2}} & +\frac{E_{z}^{2}}{A_{2}^{2}}  - \frac{2 E_{y}E_{z}}{A_{1}A_{2}} \cos \varphi = \sin^{2} \varphi, \qand \\
+\frac{H_{y}^{2}}{A_{2}^{2}} & +\frac{H_{z}^{2}}{A_{1}^{2}}  - \frac{2 H_{y}H_{z}}{A_{1}A_{2}} \cos \varphi = \frac{\varepsilon_{r} \varepsilon_{0}}{\mu_{r} \mu_{0}} \, \sin^{2} \varphi.
+\end{align*}
+In particular, when $A_{1} = A_{2}$ and $\varphi = \pm (2m + 1) \pi/2$, where $m = 0, \,1,\, 2,\,\ldots{\,}$ the ellipses become circles:
+\begin{equation*}%
+E_{y}^{2} + E_{z}^{2} = A_{1}^{2} \qand  H_{y}^{2} + H_{z}^{2} = \frac{\varepsilon_{r} \varepsilon_{0}}{\mu_{r} \mu_{0}} A_{1}^{2}.
+\end{equation*}
+Such a wave is said to be \redem{circularly polarized}.
+
+\begin{marginfigure}%[-1.5cm]
+\centering
+\includegraphics[width=\textwidth]{figs/ch-31/fig-31-02.pdf}
+\sidecaption{Velocity vector of energy transfer by the wave.\label{fig-31-02}}
+\end{marginfigure}
+
+
+When $\varphi = \pm m \pi$ , where $m = 0,\, 1,\, 2,\, \ldots{\,}$, the ellipses degenerate into straight lines:
+\begin{equation*}%
+\frac{E_{y}}{A_{1}} + \frac{E_{z}}{A_{2}}= 0 \qand \frac{H_{y}}{A_{2}} + \frac{H_{z}}{A_{2}}= 0.
+\end{equation*}
+Such a wave is said to be \redem{linearly}, or \redem{plane, polarized}. Shown in \figr{fig-31-02} are the values of $ a\vb{E}$ and $\vb{H}$ of the field of a plane, linearly polarized, monochromatic wave at various points along the ray ($OX$ axis) at the same instant of time. Axes $OY$ and $OZ$ are in the directions of oscillation of vectors $\vb{E}$ and $\vb{H}$, respectively, so that $E_{z} = H_{y} = 0$. 
+
+According to accepted  terminology, the plane passing through the electric vector $\vb{E}$ and the ray is called the \redem{plane of polarization} of the linearly polarized wave. Previously, this plane was called the plane of \redem{wave oscillation}, and the plane of polarization was called the one passing through the magnetic vector $\vb{H}$ and the ray (this obsolete terminology may still be found in the literature).
+
+
+\subsection{}\label{31.1.8} An arbitrary plane monochromatic wave can be represented as a combination of two plane monochromatic waves of the same frequency as the first wave and simultaneously propagating in the same direction as the first wave, but linearly polarized in mutually perpendicular planes. For example, a plane monochromatic wave, propagating along the $OX$ axis \ssect{31.1.6} can be dealt with as the result of superposition of a
+$y$-wave ($\vb{E}_{1} = \vb{E}_{y}$) and a $z$-wave $(\vb{E}_{2} = \vb{E}_{z})$.
+
+
+\section{Energy of Electromagnetic Waves}
+\label{sec-31.2} 
+
+\subsection{}\label{31.2.1} The volume energy density of an electromagnetic field
+in an isotropic medium is
+    ere0£2 , Hrlh) 2
+3 “ 2   2
+where er and pr are the relative permittivity (dielectric constant)
+and relative permeability of the medium. From the relations
+between the magnitudes of vectors E and H of the field
+set up by an electromagnetic wave \ssect{31.1.5} it follows that the
+volume energy density of electromagnetic waves is equa
+
+
+where c is the velocity of electromagnetic waves in free spaee
+\ssect{31.1.3}.
+
+\subsection{}\label{31.2.2} In the case of a plane, linearly polarized, monochromatic
+wave, propagating along the positive direction of axis OX, the
+field strength E = A sin (coz — kx). Consequently, the volume
+energy density of this wave is
+Ed = er80.42 sin2 (cat — kx).
+The value of Ed at each point of this field varies periodically
+with the frequency co/ji in a range from 0 to £' iax = ere0 42.
+The average value of Z?d over one period is proportional to the
+square of the amplitude of the field strength:
+Jl/CD
+0
+If the plane monochromatic wave has an arbitrary (elliptical)
+polarization \ssect{31.1.7}, then, according to \ssect{31.1.8},
+Ed = ere0 [A\ sin2 (m — kx) + A \ sin2 (co* — kx + cp)]
+and
+(E<1) = X w 0(Al + Al).
+
+\subsection{}\label{31.2.3} The energy flux density vector \ssect{30.3.5} of an electromagnetic
+wave is called the Umov-Poynting vector P (more
+frequently, it is called the Poynting vector). The velocity of
+energy transfer by a monochromatic wave is equal to the phase
+velocity v = clY 8rllr this wave \ssect{30.3.5}. Therefore, the
+Umov-Poynting vector for such a wave is
+P = £dv = [EH].
+In the case of a plane, lintirly polarized, monochromatic wave
+\ssect{31.2.2} the Umov-Poynting vector is in the direction of wave
+propagation and is numerically
+When a plane monochromatic wave is elliptically polarized
+\ssect{31.1.7},
+P — [A\ sin2 (a>t — kx)A\ sin2 (tot— cp)].
+M tPo
+
+\subsection{}\label{31.2.4} The intensity I of an electromagnetic wave is a physical
+quantity numerically equal to the energy transferred by the
+wave in unit time through unit area of a surface located perpendicular
+to the direction of wave propagation. The intensity
+of an electromagnetic wave is equal to the absolute value of the
+average Umov-Poynting vector during a period of its complete
+oscillation:
+/ = l<P)|.
+The intensity of a travelling monochromatic wave is
+I = iEd> i;,
+where v is the phase velocity of the wave, and (E ) is the average
+value of the volume energy density of the field of the wave. The intensity of a plane, linearly polarized, travelling monochromatic
+wave \ssect{31.2.2} is proportional to the square of the
+amplitude A of oscillation of the wave's field strength vector E.
+Thus
+When a plane monochromatic wave is elliptically polarized
+\ssect{31.1.7}, its intensity is equal to the sum of the intensities of
+the y- and 2 -waves that form the wave being considered \ssect{31.1.8}:
+Note. The intensity of light, i.e. the electromagnetic waves dealt
+with in optics, is commonly understood to be the square of the
+amplitude of oscillation of the light wave's field strength vector
+E.
+
+\subsection{}\label{31.2.5} The intensity I of a spherical, linearly polarized, monochromatic
+wave is related to the amplitude A of oscillation
+of vector E in the same way as for a plane wave \ssect{31.2.4}. But
+the amplitude and intensity of a spherical wave decrease as the
+distance r increases from the wave centre \ssect{30.3.6}:
+A = ajr and I = i0/r2.
+
+\subsection{}\label{31.2.6} Electromagnetic waves exert pressure on the obstacles
+in their path that absorb and reflect the waves. The pressure of
+electromagnetic waves is explained by the fact that due to the
+effect of the waves' electric field charged particles of matter are
+put into ordered motion and are subject to the action of Lorentz
+forces exerted by the magnetic field \ssect{24.1.1}.
+According to Maxwell's theory the pressure of electromagnetic
+waves is equal to
+p = -j- (1 + R) cos2 i = (E<i) (1 + R) cos2 i,
+where I is the intensity of the wave incident on the obstacle,
+yis its velocity, (E ) is the average value of the volume energy
+density of the wave, i is the angle of incidence \ssect{31.5.2}, and
+R is the reflection coefficient \ssect{31.5.6}.
+
+\section{Electromagnetic Radiation}
+\label{sec-31.3} 
+
+
+\subsection{}\label{31.3.1} The process of exciting electromagnetic waves and emitting
+them into surrounding space by some system is called the
+radiation of these waves. The system itself is called the radiating
+system. The field set up by these electromagnetic waves is called
+the radiation field. According to the concepts of classical electrodynamics,
+electromagnetic waves are excited by electric charges
+travelling with acceleration (in particular, an electric circuit
+in which the current varies). Vavilov-Cherenkov radiation can
+also occur in matter \ssect{34.6.1}.
+The simplest radiating system is the electric dipole \ssect{15.2.3} whose
+dipole moment pe varies with time. Such an “oscillating” dipole
+is called an oscillator, or elementary vibrator. Oscillators are
+extensively used in physics for simulating and calculating the
+radiation fields of real systems. If the radiating system is electrically
+neutral and its size is small compared to the length X
+of the waves it radiates, then in the wave zone of the system,
+i.e. at points whose distance from the system equals r > X, the
+radiation field is almost the same as that of an oscillator having
+
+
+I lie same electric dipole moment as the whole radiating system.
+
+\subsection{}\label{31.3.2} A linear harmonic oscillator is an electric dipole whose
+moment pe varies according to the harmonic law:
+Pe = Po sin where p0 = const.
+At point M of the wave zone of a linear harmonic oscillator,
+located in vacuum, the vectors E and H of the radiation field
+at the instant of time t are equal to:
+(0 = — llVo*  r] sin (tot—At ),
+(D2
+II — sin(® f — fer)>
+where r is the radius vector from point 0, where the dipole is
+located, to point M (Fig. 31.3). Vectors E and H are mutually
+perpendicular and lie in a plane perpendicular to the radius
+Fig. 31.3 Fig. 31.4
+vector r. Hence, E, H and r form a right-hand set of three vectors.
+Vector E is tangent to the meridian, and vector H is tangent to
+the latitudinal circle passing through point M of a sphere of
+radius r having its centre at point 0.
+
+\subsection{}\label{31.3.3} The Umov-Poynting vector at point M of the wave zone
+of a linear harmonic oscillator is
+P = Po(o4p§ sin2 9
+16jt2cr3 r sin2 (co£ — /cr),
+where 0 is the angle between vectors p0 and r.
+
+The intensity of the electromagnetic wave at point M is
+j   [x0(o4pg sin2 e
+32jr2cr2
+The dependence of I on 0 for a fixed value of r, shown in polar
+coordinates (Fig. 31.4), is called the polar directional diagram
+of oscillator ( dipole) radiation. The dipole radiates most intensively
+in directions that make an angle 0 = jt/2 with its axis,
+i.e. in a plane passing through the middle of the dipole and
+perpendicular to its axis. Along its axis (0 = 0 and 0 = ji)
+the dipole does not radiate at all.
+The average power of radiation of a linear harmonic oscillator is
+jc
+(pr) = 2jtr5a   / sin 0 cZ0 =
+0
+
+\subsection{}\label{31.3.4} The instantaneous power of radiation of charge q, travelling
+at the acceleration a, is
+If the charge executes harmonic oscillation of the amplitude l0
+and angular frequency o, the average power of its radiation is
+V ; 12JIC
+According to classical theory the radiation of light by atoms is due to the vibration of electrons in them. Owing to the consumption
+of energy to produce radiation this vibration is gradually
+damped, i.e. its amplitude varies according to the law
+\ssect{29.1.3}: l0 = Z00 exP (—P0» where Z00 is the initial amplitude
+and P is the damping factor. The energy of vibration of an
+electron \ssect{28.2.2} is E = mew2Z /2, where me is the mass of the
+electron. Since — dE = (Pr) dt — 2pE dt and q = —e, the
+relaxation time \ssect{29.1.3} of this vibration, called the average
+de-excitation time of the atom, is
+1 12n cme
+For visible light co ~ 4 X 1016 s"1 and t   2 X 10"8 s.
+
+\section{Electromagnetic Spectrum}
+\label{sec-31.4} 
+
+
+\subsection{}\label{31.4.1} Depending upon the frequency v (or wavelength X = c/v
+in vacuum, where c is the velocity of electromagnetic waves in
+irec space), as well as on the way in which they are radiated
+and recorded (or detected), distinction is made between several
+kinds of electromagnetic waves: radio waves, optical radiation,
+X-rays and gamma rays.
+lladio waves are electromagnetic waves of a length X in free space
+that exceeds 5 X 10'6 m (correspondingly, v < 6 X 1012 Hz).
+In connection with special features of their propagation and
+generation, the full range of radio waves is commonly divided
+into nine bands (Table 31.1).
+TABLE 31.1
+Band name Wavelength, m Frequency, Hz
+Very-long (myria- Over 104 Less than 3 X 10*
+metric) waves
+Long (kilometric)
+104 to 103 3 x 104 to 3 x 105
+waves
+Medium (hecto-
+103 to 102 3 x 105 to 3 X 10®
+metric) waves
+Short (decametric)
+102 to 10 3 x 10® to 3 X 107
+waves
+Metric waves 10 to 1 3 x 107 to 3 X 108
+Decimetric waves 1 to 0.1 3 x 108 to 3 x 10°
+Centime trie waves 0.1 to 0.01 3 x 10« to 3 x 1010
+Millimetric waves 10"2 to 10-3 3 X 10w to 3 x 1011
+Submillimetric
+10”3 to 5 X 10"5 3 X 1011 to 6 X 1012
+waves
+
+\subsection{}\label{31.4.2} Radio frequencies are divided into twelve bands according
+to the international regulations for radio communications.; These bands and their corresponding wavelength in free space
+are listed in Table 31.2.
+
+TABLE 31.2
+Radio-frequency band designation
+Band limits
+Radio-wave band designation
+Band limits
+Basic designation
+Optional designation
+Basic designation
+Optional dasignation
+Band 1
+Extremely low fre- ELF
+3 to 30 Hz
+Band 1
+Dekamegametric
+100 to 10 Mm
+quency *
+waves
+Band 2
+Super
+low fre- SLF
+quency
+30 to 300 Hz
+Band 2
+Megametric waves
+10 to 1 Mm
+Band 3
+Voice frequency
+VF
+0.3 to 3 kHz
+Band 3
+Hectokilometric
+1000 to 100 km
+Band 4
+Very low fre-
+VLF
+quency
+3 to 30 kHz
+Band 4
+waves
+Myriametric waves
+100 to 10 km
+Band 5
+Low frequency
+LF
+30 to 300 kHz
+Band 5
+Kilometric waves
+10 to 1 km
+Band 6
+Medium frequency
+MF
+0.3 to 3 MHz
+Band 6
+Hectometric waves 1 to 0.1 km
+
+Band 7
+High frequency
+HF
+3 to 30 MHz
+Band 7
+Dekametric waves
+100 to 10 m
+Band 8
+Very
+high
+quency
+fre- VHF
+30 to 300 MHz
+Band 8
+Metric waves
+10 to 1 m
+ELECTROMAGNETIC
+Band 9
+UItra
+high fre- UHF
+quency
+0.3 to 3 GHz
+Band 9
+Decimetric waves
+1 to 0.1 m
+Band 10
+Super high
+fre- SHF
+quency
+3 to 30 GHz
+
+Band 10 Centimetric waves 10 to 1 cm
+
+Band 11
+Extremely
+high EHF
+frequency
+30 to 300 GHz
+
+Band 11 Millimetric
+waves
+10 to 1 mm
+
+Band 12 Hyper high fre- HHF
+quency
+0.3 to 3 THz
+Band 12
+Decimillimetric waves
+1 to 0.1 mm
+WAVES
+
+* In the terminology accepted in the U.S.A. the extremely low frequency (ELF) band includes frequencies from 3 Hz
+3 kHz,
+i.e. the first three bands of the list given here.
+
+\subsection{}\label{31.4.3} Optical radiation, or light, refers to electromagnetic waves
+(electromagnetic radiation) of a wavelength in vacuum ranging
+lrom 10 nm to 1 mm (by convention). Optical radiation includes
+infrared, visible and ultraviolet radiation.*
+Infrared (IR) radiation is the electromagnetic radiation emitted
+by heated bodies. Its wavelength in vacuum is within the range
+from 1 mm to 770 nm (1 nm = 10“9 m).
+Visible radiation, or visible light, is electromagnetic radiation
+of a wavelength in vacuum from 770 to 380 nm. It is capable of
+directly producing a visible sensation in the human eye.
+Ultraviolet (UV) radiation is electromagnetic radiation of a
+wavelength in vacuum from 380 to 10 nm.
+
+\subsection{}\label{31.4.4} X-radiation, or X-rays (also called Roentgen rays), is the
+electromagnetic radiation produced in the interaction of charged
+particles and photons \ssect{37.1.4} with atoms of matter. Its wavelength
+in vacuum ranges within the wide conditional limits
+from 10 or 100 nm to 0.01 or 1 pm (1 pm = 10~12 m).
+Gamma radiation, or gamma rays, is electromagnetic radiation
+of a wavelength in vacuum less than 0.1 nm. It is emitted by
+excited atomic nuclei upon radioactive transformations and
+nuclear reactions. It is also formed in particle decay, in
+particle-antiparticle, annihilation \ssect{43.5.5} and other processes.
+
+\section{Reflection and Refraction of Electromagnetic}
+\label{sec-31.5} 
+
+
+Waves at the Interface Between Two Dielectric Media
+
+\subsection{}\label{31.5.1} The refractive index (absolute refractive index) of a medium
+is the quantity w, which is equal to the ratio of the velocity c
+of the electromagnetic waves in vacuum to their phase velocity
+v in the medium: n = civ. From \ssect{31.1.3} it follows that
+n = Y erpr, where er and pr are the relative dielectric permittivity
+and relative magnetic permeability of the medium.
+* According to the recommendation of the Committee for
+Scientific and Engineering Terminology of the USSR Academy of
+Sciences I Physical Optics (Terminology), Collection of Recommended
+Terms, Issue 74, Nauka Publishers, 1968, Moscow]
+optical radiation also includes X-rays, the range of wavelengths
+of optical radiation being established from 0.1 A (10*n m)
+to 1 cm.
+
+For media having no ferromagnetic properties, fxr   1 and
+«  ~ / v
+The relative refractive index of two media (of the second medium
+with respect to the first) is the quantity n21 , equal to the ratio
+of the refractive indices of these media: n21 = njnx. For nonferromagnetic
+media n21 = Y er2/eri-
+\subsection{}\label{31.5.2} When an electromagnetic wave falls on the interface
+between two media, it is partly reflected from the interface and
+partly refracted as it enters
+CL the second medium. In
+Fig. 31.5 the line AB is
+the plane interface between
+the media. Rays i, V and
+2 represent the directions
+A  B of propagation of the incident,
+reflected and refracted
+plane waves. They are call eel
+the incident, reflected and
+refracted rays, respectively,
+and the angles between them
+and the angles they make
+Fig. 31.5
+with the perpendicular ab to
+the interface at the point ofincidence 0 are: i is the angle of incidence, i' is the angle of
+reflection and r is the refractive angle.
+The plane of incidence is the plane passing through the incident
+ray and perpendicular to the interface at the point of incidence.
+
+\subsection{}\label{31.5.3} The laws of reflection and refraction of electromagnetic
+waves at the interface between two dielectric media can be
+obtained on the basis of the boundary conditions for an electromagnetic
+field \ssect{27.4.4}. In the first medium the field of the
+reflected wave (Erfl and Hrfl) is superposed on the field of the
+incident wave (E° andH0). In the second medium there is only
+the field (Erfr and Hrfr) of the refracted wave (propagating in
+this medium). Hence, the boundary conditions are of the form
+(assuming that p,r2 = tiri = 1):
+
+Here ETj H, En and Hn are the projections of vectors E and H
+<m the tangential plane and the normal to the interface between
+the media. It follows from these relations that in the incidence
+of a plane monochromatic wave on a smooth plane interface
+between media, the following laws are complied with (regardless
+of the kind of polarization of this wave):
+(a) The reflected and refracted waves are also monochromatic
+waves of the same frequency as the incident one.
+(h) The law of reflection states that the reflected ray lies in the
+plane of incidence, and the angle of reflection is equal to the
+angle of incidence (V = i).
+(c) The law of refraction states that the refracted ray lies in the
+plane of incidence and that the refractive angle is related to the
+angle of incidence by Snell's law:
+sin i
+n2
+ 
+ 
+\subsection{}\label{31.5.4} Making use of the boundary conditions \ssect{31.5.3} the relations
+can be found between the phases, amplitudes and intensities
+of incident, reflected and refracted monochromatic waves.
+It is sufficient for this purpose, according to Sect. 31.1.8, to
+know the above-indicated relations for linearly polarized waves
+of two types: p-waves, whose vector E = Ep lies in the plane of
+incidence and whose vector H = Hp is perpendicular to this
+plane (Fig. 31.6), and s-waves, whose vector E = Es is perpendicular
+to the plane of incidence and whose vector H IIS lies
+in this plane (Fig. 31.7).
+
+The relations between the amplitudes of oscillation of vector E
+in the incident ( 4°), reflected C4rfl) and refracted (A*tr) waves
+in the cases of p- and s-waves are expressed by the Fresnel formulas:
+jrfl    
+aO tan (i— r) ,rfr  4O 2 cos i gin r
+p p tan(i-f-r) ' P p sin (i + r) cos (i — r) '
+jrfl   
+aO sin (t— r) ,rfr  ,p 2 cos i sin r
+5 s sm(J-fr) * s <5 sin (i + r) *
+In particular, with normal incidence of waves on the interface
+between media (i = r = 0),
+n?l —  
+Av — Ap
+w2l + *
+jrfr  a0 *
+p p n21 + i
+A rfl — .
+ 21 —  
+AltT = A 
+W21 + 1
+W 21 + 1
+In the Fresnel formulas .4° and .4J are positive quantities,
+whereas A T and ATJT are also positive for any possible angles
+of incidence and refractive angles. This indicates that the refracted
+and incident waves are in phase. Quantities A and 4 fl
+can be either negative or positive. In the first case, illustrated
+in Figs. 31.6 and 31.7, the phase of oscillation of vector E is
+changed by n upon reflection (the phase of oscillation of vector H
+does not change). In the second case, the phase of oscillation of
+vector E remains unchanged (and, accordingly, the phase of
+oscillation of vector H changes by Jt).
+
+\subsection{}\label{31.5.5} The values of the phase difference in the oscillation of
+vector E upon the reflection of p- and s-type electromagnetic
+waves are listed in Table 31.3, in accordance with the conditions
+(i.e. depending on the angle of incidence i and the relative
+refractive index n21 of the media).
+The angle of incidence tBl. at which the reflected and refracted
+rays are perpendicular to each other is called Brewster's angle.
+When i = iBr, then i + r = it/2 and it follows from the law
+of wave refraction \ssect{31.5.3} that tan iBr = w21. It is evident
+from the Fresnel formulas \ssect{31.5.4} that at i = ip,r, the amplitude
+4pfl = 0, i.e. the p-wave is not reflected from the interface
+
+
+TABLE 31.3
+N . Conditions i + r < n/2
+(i < iBr)
+1 + r > Jl/2
+< i > ‘B r>
+n2i > 1
+(i > r)
+n 21 < 1
+(i < r)
+fl2l > 1
+(i > r)
+npi < 1
+(t<r)
+Type of wave
+p-wave n 0 0 - n
+tf-wave n 0 n 0
+between the media, but completely passes from medium 1
+into medium 2.
+
+\subsection{}\label{31.5.6} The coefficient of reflection (or reflection coefficient) R of an
+electromagnetic wave from the interface of two media is the
+ratio of the intensities \ssect{31.2.4} of the reflected and incident
+waves:
+The reflection coefficients of the p- and s-waves are equal to
+  tan3 (i— y)   sin2 (i — r)
+p tan3 (i + r) ' s sin2(i + r) *
+Tn particular, with normal incidence of waves on the interface
+between two media (i = r = 0)
+When the incident wave is arbitrarily polarized, the reflection
+coefficient is
+J j« + J jn   R pll+ R sl*
+~i°P+ n '
+where and are the intensities of the p- and s-components of
+the incident wave whose intensity is J° = JJ, + /?.
+
+\subsection{}\label{31.5.7} The transmission factor, or transmittance, T is the ratio
+of the intensity of the transmitted (refracted) wave to that of
+the incident wave. Thus
+T =
+/rfr
+~7r
+/ 2
+I A* ) *
+The transmission factors for the p- and s-waves are
+m
+ 
+4 cos2 i sin i sin r m   4 cos2 £ sin £ sin r
+p sin2 (£ + r) cos2 (£ —r) ' s— sin2(£ + r)
+In particular, upon normal incidence of waves on the interface
+between media (£ = r = 0),
+TP = TS 4 21
+( n 2 l + l)2
+
+\subsection{}\label{31.5.8} When rc21 =  njn ) < the refractive anprle is greater
+than the angle of incidence: sin r = sin i/n2\ and r >> £. The
+angle of incidence at which the refractive angle becomes equal to
+jt/2 is called the critical angle £cr. Angle £cr = arc sin rc21. When
+£ > £cr, the intensities of the reflected and incident waves are
+the same, i.e. the wave is completely reflected from the interface
+between the media (R = 1). This phenomenon is called total
+internal reflection.
+
+\section{Doppler Effect}
+\label{sec-31.6} 
+
+
+
+
+\subsection{}\label{31.6.1} Upon motion of the source and detector of electromagnetic
+waves toward each other the Doppler effect is observed (30.6.1).
+The laws governing this phenomenon for electromagnetic waves
+can he established on the basis of the special theory of relativity.
+Assume the detector D to be stationary with respect to an inertial
+frame of reference K, and that the source S travels with respect
+to K along the positive direction of axis OX at the velocity V
+Fig. 31.8). Source S is stationary in frame of reference K'
+and is located at its origin of coordinates. The axes of coordinate
+systems K and K' are parallel pairwise (axis O'X' coincides
+with axis OX). Illustrated in Fig. 31.8 is the position of source S
+at the instant of time t = t' = 0. According to Einstein's rela-
+Fig. 31.8
+tivity principle \ssect{5.1.2}, the equation of a spherical monochromatic
+wave \ssect{30.2.8}, sent by the source at this instant of time
+in the direction of the detector D, is of identical form in
+frames of reference K and K!\
+ei((0t+kx cos 0+hy sin 0+6)  
+and
+y   ao ei(i<d't'+h'xf cos Q'+k*y' sin 0  + 6')
+Here (o' = co0 and co are the angular frequencies of vibration
+of the source and detector, k = (die and k' = ©7c are the
+wavenumbers (it is assumed that the wave propagates in vacuum),
+and 0 and O' are the angles between the directions of
+observation and of velocity V (OX axis), measured in the frames
+of reference of the detector (K) and for the source (iT).
+Expression (b) should be obtained from expression (a) by replacing
+the variables x, y and t by x', y' and t' in accordance
+with Lorentz's transformations (5.3.2):
+<o't' + k'x' cos 0' -\-k'y' sin 0' + 6'
+— f*;+TV/c2) i-f Consequently,
+] V / 1 — (F/c2) / V / 1 — (7/c)2 /
+cos Q + ky' sin 0+6.
+(o' = —y=r   (l + — coso) ,
+/ l — (F /c2) V c )
+kfcosQ'= r ..k = r- fco s0 + — ) ,
+/ l — (F/c)2 v c /
+Zc' sin 0' = k sin 0 and 6' = 6.
+Hence, the relations describing the Doppler effect for electro-
+magnetic waves in vacuum are of the form:
+m «>o/i-(y/c)»
+1 + — COS 0
+c
+and v0 Vi-(V/c)*
+F
+1 -| ----cos 0
+c
+
+\subsection{}\label{31.6.2} At low velocities of the wave source with respect to the
+detector (F <c c), the relativistic formula for the Doppler effect
+\ssect{31.6.1} coincides with the classical formula \ssect{30.6.3}:
+v « v0   1---cos 0 j .
+When the source travels with respect to the detector along the
+straight line that joins them (0 = 0 or jt ), the longitudinal
+Doppler effect is observed. If the source and detector approach
+each other (0 = ic)
+, /" 1 + F/c
+V = V ° F T = v 7 T > v »'
+whereas if they travel away from each other (0 = 01
+/" 1 —F/c
+v = v « V 7 + W < v »-
+
+\subsection{}\label{31.6.3} Following from relativistic theory of the Doppler effect
+\ssect{31.6.1} is the existence of the transverse Doppler effect. It is
+observed when 0 = jt/2 and 0 = 3xc/2, i.e. when the source
+travels perpendicular to the line of observation. Thus
+v = v0/l-(F/c)*.
+The transverse Doppler effect is substantially weaker than the
+longitudinal effect (due to the smallness of V/c). This effect is
+due to the different passage of time in the frames of reference in
+which the detector and source of waves are fixed. Therefore,
+the experimental detection of the transverse Doppler effect
+was one of the most vital experimental proofs of the special theory
+of relativity.
+
+\subsection{}\label{31.6.4} The Doppler effect, associated with the thermal motion of
+the gas! atoms! ;that radiate light, leads to Doppler broadening
+of spectral lines. >The range of frequencies of light recorded by
+the detector extends from v0 — Avd/2J to v0 -f- Av /2, where
+v0 is the frequency of monochromatic radiation of a stationary
+atom. The amount of Doppler broadening Av  oc YT/m,
+where T is the absolute temperature and m is the mass of the
+a tom.
