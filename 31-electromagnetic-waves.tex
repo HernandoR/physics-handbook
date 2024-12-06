@@ -158,88 +158,79 @@ E^{d} = \frac{\varepsilon_{r} \varepsilon_{0}}{2}E^{2} + \frac{\mu_{r}\mu_{0}}{2
 \end{equation*}
 where $\varepsilon_{r}$ and $\mu_{r}$ are the relative permittivity (dielectric constant) and relative permeability of the medium. From the relations between the magnitudes of vectors $\vb{E}$ and $\vb{H}$ of the field set up by an electromagnetic wave \ssect{31.1.5} it follows that the volume energy density of electromagnetic waves is equal to
 \begin{align*}%
-E^{d} = \varepsilon_{r} \varepsilon_{0} E^{2} 
+E^{d} & = \varepsilon_{r} \varepsilon_{0} E^{2} = \mu_{r}\mu_{0} H^{2} = \sqrt{\varepsilon_{r} \varepsilon_{0} \mu_{r}\mu_{0}} \, EH \\
+& = \frac{\varepsilon_{r}\mu_{r}}{c} EH,
 \end{align*}
-
-
-where c is the velocity of electromagnetic waves in free spaee
+where $c$ is the velocity of electromagnetic waves in free spaee
 \ssect{31.1.3}.
 
-\subsection{}\label{31.2.2} In the case of a plane, linearly polarized, monochromatic
-wave, propagating along the positive direction of axis OX, the
-field strength E = A sin (coz — kx). Consequently, the volume
-energy density of this wave is
-Ed = er80.42 sin2 (cat — kx).
-The value of Ed at each point of this field varies periodically
-with the frequency co/ji in a range from 0 to £' iax = ere0 42.
-The average value of Z?d over one period is proportional to the
-square of the amplitude of the field strength:
-Jl/CD
-0
+\subsection{}\label{31.2.2} In the case of a plane, linearly polarized, monochromatic wave, propagating along the positive direction of axis $OX$, the field strength $E = A \sin (\omega t - kx)$. Consequently, the volume energy density of this wave is
+\begin{equation*}%
+E^{d} = \varepsilon_{r} \varepsilon_{0} A^{2} \sin^{2} (\omega t - kx).
+\end{equation*}
+The value of $E^{d}$ at each point of this field varies periodically with the frequency $\omega /\pi$ in a range from 0 to $E^{d}_{max} = \varepsilon_{r} \varepsilon_{0}A^{2}$.
+
+The average value of $E^{d}$ over one period is proportional to the square of the amplitude of the field strength:
+\begin{equation*}%
+\expval{E^{d}} = \frac{\omega}{\pi} \int_{0} E^{d} \, \dd t = \frac{1}{2} \varepsilon_{r} \varepsilon_{0} A^{2}.
+\end{equation*}
 If the plane monochromatic wave has an arbitrary (elliptical)
 polarization \ssect{31.1.7}, then, according to \ssect{31.1.8},
-Ed = ere0 [A\ sin2 (m — kx) + A \ sin2 (co* — kx + cp)]
-and
-(E<1) = X w 0(Al + Al).
+\begin{align*}%
+E^{d} & = \varepsilon_{r} \varepsilon_{0} [A_{1}^{2} \sin^{2} (\omega t - kx) + A_{2}^{2} \sin^{2}(\omega t - kx + \varphi)] \qand \\
+\expval{E^{d}} & = \frac{1}{2} \varepsilon_{r} \varepsilon_{0} (A_{1}^{2} + A_{2}^{2}).
+\end{align*}
 
 \subsection{}\label{31.2.3} The energy flux density vector \ssect{30.3.5} of an electromagnetic
-wave is called the Umov-Poynting vector P (more
-frequently, it is called the Poynting vector). The velocity of
-energy transfer by a monochromatic wave is equal to the phase
-velocity v = clY 8rllr this wave \ssect{30.3.5}. Therefore, the
-Umov-Poynting vector for such a wave is
-P = £dv = [EH].
-In the case of a plane, lintirly polarized, monochromatic wave
-\ssect{31.2.2} the Umov-Poynting vector is in the direction of wave
-propagation and is numerically
+wave is called the \redem{Umov-Poynting} vector $\vb{P}$ (more
+frequently, it is called the \redem{Poynting vector}). The velocity of energy transfer by a monochromatic wave is equal to the phase velocity $v = c\sqrt{\varepsilon_{r}\mu_{r}}$ of this wave \ssect{30.3.5}. Therefore, the Umov-Poynting vector for such a wave is
+\begin{equation*}%
+\vb{P} = E^{d} \vb{v} = [\vb{E}\cdot \vb{H}]
+\end{equation*}
+In the case of a plane, lintirly polarized, monochromatic wave \ssect{31.2.2} the Umov-Poynting vector is in the direction of wave propagation and is numerically equal to
+\begin{equation*}%
+P = \sqrt{\frac{\varepsilon_{r} \varepsilon_{0} }{\mu_{r}\mu_{0}}} A^{2} \sin^{2} (\omega t = kx).
+\end{equation*}
 When a plane monochromatic wave is elliptically polarized
 \ssect{31.1.7},
-P — [A\ sin2 (a>t — kx)A\ sin2 (tot— cp)].
-M tPo
+\begin{equation*}%
+P = \sqrt{\frac{\varepsilon_{r} \varepsilon_{0} }{\mu_{r}\mu_{0}}} [A_{1}^{2} \sin^{2} (\omega t - kx) + A_{2}^{2} \sin^{2}(\omega t - kx + \varphi)].
+\end{equation*}
 
-\subsection{}\label{31.2.4} The intensity I of an electromagnetic wave is a physical
-quantity numerically equal to the energy transferred by the
-wave in unit time through unit area of a surface located perpendicular
-to the direction of wave propagation. The intensity
-of an electromagnetic wave is equal to the absolute value of the
-average Umov-Poynting vector during a period of its complete
-oscillation:
-/ = l<P)|.
+\subsection{}\label{31.2.4} The \redem{intensity $I$ of an electromagnetic wave} is a physical quantity numerically equal to the energy transferred by the wave in unit time through unit area of a surface located perpendicular to the direction of wave propagation. The intensity of an electromagnetic wave is equal to the absolute value of the average Umov-Poynting vector during a period of its complete oscillation:
+\begin{equation*}%
+I = \abs{\expval{{P}}}.
+\end{equation*}
 The intensity of a travelling monochromatic wave is
-I = iEd> i;,
-where v is the phase velocity of the wave, and (E ) is the average
-value of the volume energy density of the field of the wave. The intensity of a plane, linearly polarized, travelling monochromatic
-wave \ssect{31.2.2} is proportional to the square of the
-amplitude A of oscillation of the wave's field strength vector E.
+\begin{equation*}%
+I = \abs{\expval{\vb{E^{d}}}}\, v,
+\end{equation*}
+where $v$ is the phase velocity of the wave, and $\expval{E^{d}}$ is the average value of the volume energy density of the field of the wave. The intensity of a plane, linearly polarized, travelling monochromatic wave \ssect{31.2.2} is proportional to the square of the amplitude $A$ of oscillation of the wave's field strength vector $\vb{E}$.
 Thus
+\begin{equation*}%
+I = \frac{1}{2} \sqrt{\frac{\varepsilon_{r} \varepsilon_{0}}{ \mu_{r}\mu_{0}}} \, A^{2}.
+\end{equation*}
 When a plane monochromatic wave is elliptically polarized
-\ssect{31.1.7}, its intensity is equal to the sum of the intensities of
-the y- and 2 -waves that form the wave being considered \ssect{31.1.8}:
-Note. The intensity of light, i.e. the electromagnetic waves dealt
-with in optics, is commonly understood to be the square of the
-amplitude of oscillation of the light wave's field strength vector
-E.
+\ssect{31.1.7}, its intensity is equal to the sum of the intensities of the $y$- and $z$-waves that form the wave being considered \ssect{31.1.8}:
+\begin{equation*}%
+I =  I_{y} + I_{z} = \frac{1}{2} \sqrt{\frac{\varepsilon_{r} \varepsilon_{0}}{ \mu_{r}\mu_{0}}} \, (A_{1}^{2} + A_{2}^{2}).
+\end{equation*}
+\textbf{Note.} The \redem{intensity of light}, i.e. the electromagnetic waves dealt with in optics, is commonly understood to be the square of the amplitude of oscillation of the light wave's field strength vector $\vb{E}$.
 
-\subsection{}\label{31.2.5} The intensity I of a spherical, linearly polarized, monochromatic
-wave is related to the amplitude A of oscillation
-of vector E in the same way as for a plane wave \ssect{31.2.4}. But
-the amplitude and intensity of a spherical wave decrease as the
-distance r increases from the wave centre \ssect{30.3.6}:
-A = ajr and I = i0/r2.
+\subsection{}\label{31.2.5} The intensity $I$ of a spherical, linearly polarized, monochromatic wave is related to the amplitude $A$ of oscillation of vector $\vb{E}$ in the same way as for a plane wave \ssect{31.2.4}. But the amplitude and intensity of a spherical wave decrease as the distance $r$ increases from the wave centre \ssect{30.3.6}:
+\begin{equation*}%
+A = \frac{a_{0}}{r} \qand I = \frac{i_{0}}{r^{2}}.
+\end{equation*}
 
-\subsection{}\label{31.2.6} Electromagnetic waves exert pressure on the obstacles
-in their path that absorb and reflect the waves. The pressure of
-electromagnetic waves is explained by the fact that due to the
-effect of the waves' electric field charged particles of matter are
-put into ordered motion and are subject to the action of Lorentz
-forces exerted by the magnetic field \ssect{24.1.1}.
+\subsection{}\label{31.2.6} Electromagnetic waves exert pressure on the obstacles in their path that absorb and reflect the waves. The \redem{pressure of electromagnetic waves} is explained by the fact that due to the effect of the waves' electric field charged particles of matter are put into ordered motion and are subject to the action of Lorentz forces exerted by the magnetic field \ssect{24.1.1}.
+
 According to Maxwell's theory the pressure of electromagnetic
 waves is equal to
-p = -j- (1 + R) cos2 i = (E<i) (1 + R) cos2 i,
-where I is the intensity of the wave incident on the obstacle,
-yis its velocity, (E ) is the average value of the volume energy
-density of the wave, i is the angle of incidence \ssect{31.5.2}, and
-R is the reflection coefficient \ssect{31.5.6}.
+\begin{equation*}%
+p = \frac{I}{v} (1 + R) \cos^{2} i = \expval{E^{d}} (1 + R) \cos^{2} i,
+\end{equation*}
+where $I$ is the intensity of the wave incident on the obstacle,
+$v$ is its velocity, $\expval{E^{d}}$ is the average value of the volume energy density of the wave, $i$ is the angle of incidence \ssect{31.5.2}, and $R$ is the reflection coefficient \ssect{31.5.6}.
 
 \section{Electromagnetic Radiation}
 \label{sec-31.3} 
