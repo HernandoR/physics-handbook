@@ -236,83 +236,72 @@ $v$ is its velocity, $\expval{E^{d}}$ is the average value of the volume energy 
 \label{sec-31.3} 
 
 
-\subsection{}\label{31.3.1} The process of exciting electromagnetic waves and emitting
-them into surrounding space by some system is called the
-radiation of these waves. The system itself is called the radiating
-system. The field set up by these electromagnetic waves is called
-the radiation field. According to the concepts of classical electrodynamics,
-electromagnetic waves are excited by electric charges
-travelling with acceleration (in particular, an electric circuit
-in which the current varies). Vavilov-Cherenkov radiation can
-also occur in matter \ssect{34.6.1}.
-The simplest radiating system is the electric dipole \ssect{15.2.3} whose
-dipole moment pe varies with time. Such an “oscillating” dipole
-is called an oscillator, or elementary vibrator. Oscillators are
-extensively used in physics for simulating and calculating the
-radiation fields of real systems. If the radiating system is electrically
-neutral and its size is small compared to the length X
-of the waves it radiates, then in the wave zone of the system,
-i.e. at points whose distance from the system equals r > X, the
-radiation field is almost the same as that of an oscillator having
+\subsection{}\label{31.3.1} The process of exciting electromagnetic waves and emitting them into surrounding space by some system is called the \redem{radiation} of these \redem{waves}. The system itself is called the \redem{radiating
+system}. The field set up by these electromagnetic waves is called the \redem{radiation field}. According to the concepts of classical electrodynamics, electromagnetic waves are excited by electric charges travelling with acceleration (in particular, an electric circuit in which the current varies). Vavilov-Cherenkov radiation can also occur in matter \ssect{34.6.1}.
 
+The simplest radiating system is the electric dipole \ssect{15.2.3} whose dipole moment $\vb{p}_{e}$ varies with time. Such an ``oscillating'' dipole is called an \redem{oscillator}, or \redem{elementary vibrator}. Oscillators are extensively used in physics for simulating and calculating the radiation fields of real systems. If the radiating system is electrically neutral and its size is small compared to the length $\lambda$ of the waves it radiates, then in the wave zone of the system, i.e. at points whose distance from the system equals $r \gg \lambda$, the radiation field is almost the same as that of an oscillator having the same electric dipole moment as the whole radiating system.
 
-I lie same electric dipole moment as the whole radiating system.
+\subsection{}\label{31.3.2} A \redem{linear harmonic oscillator} is an electric dipole whose moment $\vb{p}_{e}$ varies according to the harmonic law:
+\begin{equation*}%
+\vb{p}_{e} = \vb{p}_{0} \sin \omega t \text{  where  } \vb{p}_{0} = \text{const}.
+\end{equation*}
+At point $M$ of the wave zone of a linear harmonic oscillator,
+located in vacuum, the vectors $\vb{E}$ and $\vb{H}$ of the radiation field at the instant of time t are equal to:
+\begin{align*}%
+\vb{E} (t) & = - \frac{\mu_{0}\omega^{2}}{4 \pi r^{3}} [[\vb{p}_{0} \cross \vb{r}]\cross \vb{r}] \sin (\omega t - kr), \\ 
+\vb{H} (t) & = - \frac{\omega^{2}}{4 \pi c r^{3}} [\vb{p}_{0}  ]\cross \vb{r}] \sin (\omega t - kr), 
+\end{align*}
+\begin{marginfigure}%[-1.5cm]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/ch-31/fig-31-03.pdf}
+\sidecaption{Orientation of $\vb{E}$, $\vb{H}$ and $\vb{r}$ form a right-hand set of three vectors.
+ \label{fig-31-03}}
+\end{marginfigure}
+where $\vb{r}$ is the radius vector from point $O$, where the dipole is located, to point $M$ (\figr{fig-31-03}). Vectors $\vb{E}$ and $\vb{H}$ are mutually perpendicular and lie in a plane perpendicular to the radius vector $\vb{r}$. Hence, $\vb{E}$, $\vb{H}$ and $\vb{r}$ form a right-hand set of three vectors.
 
-\subsection{}\label{31.3.2} A linear harmonic oscillator is an electric dipole whose
-moment pe varies according to the harmonic law:
-Pe = Po sin where p0 = const.
-At point M of the wave zone of a linear harmonic oscillator,
-located in vacuum, the vectors E and H of the radiation field
-at the instant of time t are equal to:
-(0 = — llVo*  r] sin (tot—At ),
-(D2
-II — sin(® f — fer)>
-where r is the radius vector from point 0, where the dipole is
-located, to point M (Fig. 31.3). Vectors E and H are mutually
-perpendicular and lie in a plane perpendicular to the radius
-Fig. 31.3 Fig. 31.4
-vector r. Hence, E, H and r form a right-hand set of three vectors.
-Vector E is tangent to the meridian, and vector H is tangent to
-the latitudinal circle passing through point M of a sphere of
-radius r having its centre at point 0.
+Vector $\vb{E}$ is tangent to the meridian, and vector $\vb{H}$ is tangent to the latitudinal circle passing through point $M$ of a sphere of radius $r$ having its centre at point $O$.
 
-\subsection{}\label{31.3.3} The Umov-Poynting vector at point M of the wave zone
-of a linear harmonic oscillator is
-P = Po(o4p§ sin2 9
-16jt2cr3 r sin2 (co£ — /cr),
-where 0 is the angle between vectors p0 and r.
+\subsection{}\label{31.3.3} The Umov-Poynting vector at point $M$ of the wave zone of a linear harmonic oscillator is
+\begin{equation*}%
+\vb{P} = \frac{\mu_{0}\omega^{4}p_{0}^{2}\sin^{2} \theta}{16 \pi^{2} c r^{3}} \vb{r} \sin^{2} (\omega t - kr),
+\end{equation*}
+where $\theta$ is the angle between vectors $\vb{p}_{0}$ and $\vb{r}$.
 
-The intensity of the electromagnetic wave at point M is
-j   [x0(o4pg sin2 e
-32jr2cr2
-The dependence of I on 0 for a fixed value of r, shown in polar
-coordinates (Fig. 31.4), is called the polar directional diagram
-of oscillator ( dipole) radiation. The dipole radiates most intensively
-in directions that make an angle 0 = jt/2 with its axis,
-i.e. in a plane passing through the middle of the dipole and
-perpendicular to its axis. Along its axis (0 = 0 and 0 = ji)
-the dipole does not radiate at all.
+The intensity of the electromagnetic wave at point $M$ is
+\begin{equation*}%
+I =  \frac{\mu_{0}\omega^{4}p_{0}^{2}\sin^{2} \theta}{32 \pi^{2 c r^{2}}}
+\end{equation*}
+The dependence of $I$ on $\theta$ for a fixed value of $r$, shown in polar coordinates (\figr{Fig. 31.4}), is called the \redem{polar directional diagram of oscillator (dipole) radiation}. The dipole radiates most intensively in directions that make an angle $\theta = \pi/2$ with its axis, i.e. in a plane passing through the middle of the dipole and perpendicular to its axis. Along its axis ($\theta = 0$ and $\theta = \pi$) the dipole does not radiate at all.
+
 The average power of radiation of a linear harmonic oscillator is
-jc
-(pr) = 2jtr5a   / sin 0 cZ0 =
-0
+\begin{equation*}%
+\expval{P^{r}} = 2 \pi r^{2} \int_{0}^{\pi} I \sin \theta \, \dd \theta = \frac{\mu_{0}\omega^{4} p_{0}^{2}}{12 \pi c}.
+\end{equation*}
 
-\subsection{}\label{31.3.4} The instantaneous power of radiation of charge q, travelling
-at the acceleration a, is
-If the charge executes harmonic oscillation of the amplitude l0
-and angular frequency o, the average power of its radiation is
-V ; 12JIC
-According to classical theory the radiation of light by atoms is due to the vibration of electrons in them. Owing to the consumption
-of energy to produce radiation this vibration is gradually
-damped, i.e. its amplitude varies according to the law
-\ssect{29.1.3}: l0 = Z00 exP (—P0» where Z00 is the initial amplitude
-and P is the damping factor. The energy of vibration of an
-electron \ssect{28.2.2} is E = mew2Z /2, where me is the mass of the
-electron. Since — dE = (Pr) dt — 2pE dt and q = —e, the
-relaxation time \ssect{29.1.3} of this vibration, called the average
-de-excitation time of the atom, is
-1 12n cme
-For visible light co ~ 4 X 1016 s"1 and t   2 X 10"8 s.
+
+\subsection{}\label{31.3.4} The instantaneous power of radiation of charge $q$, travelling at the acceleration $\vb{a}$, is
+\begin{equation*}%
+P^{r}_{\text{ins}} = \frac{\mu_{0}}{6 \pi c} q^{2} a^{2}.
+\end{equation*}
+If the charge executes harmonic oscillation of the amplitude $l_{0}$ and angular frequency $\omega$, the average power of its radiation is
+\begin{equation*}%
+\expval{P^{r}} = \frac{\mu_{0}q^{2} \omega^{4} l_{0}^{2}}{12 \pi c}.
+\end{equation*}
+According to classical theory the radiation of light by atoms is due to the vibration of electrons in them. Owing to the consumption of energy to produce radiation this vibration is gradually damped, i.e. its amplitude varies according to the law
+\ssect{29.1.3}: 
+\begin{equation*}%
+l_{0} = l_{00} \exp (-\beta t)
+\end{equation*}
+where $l_{00}$ is the initial amplitude and $\beta$ is the damping factor. The energy of vibration of an electron \ssect{28.2.2} is
+\begin{equation*}%
+ E = m_{e}\omega^{2} l_{0}^{2} /2, 
+\end{equation*}
+where $m_{e}$ is the mass of the electron. Since $-\dd E = \expval{P^{r}} \, \dd t = 2\beta E \, \dd t$ and $q = -e$, the
+relaxation time \ssect{29.1.3} of this vibration, called the average \redem{de-excitation time of the atom}, is
+\begin{equation*}%
+\tau = \frac{1}{\beta} = \frac{12 \pi c m_{e}}{\mu_{0} e^{2} \omega^{2}}.
+\end{equation*}
+For visible light $\omega \approx \SI{4d15}{\per\second}$ and $\tau \approx \SI{2d-8}{\per\second}$
 
 \section{Electromagnetic Spectrum}
 \label{sec-31.4} 
