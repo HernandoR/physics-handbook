@@ -650,7 +650,7 @@ T_{p} = T_{s} = \frac{4 n_{21}}{(n_{21} + 1)^{2}}.
 \begin{equation*}%
 \sin r = \frac{\sin i}{n_{21}} \qand r > i. 
 \end{equation*}
-The angle of incidence at which the refractive angle becomes equal to $\pi/2$ is called the \redem{critical angle}$i_{cr}$. Angle $i_{cr} = \arcsin n_{21}$. When $i \geqslant i_{cr}$, the intensities of the reflected and incident waves are the same, i.e. the wave is completely reflected from the interface between the media $(R = 1)$. This phenomenon is called \redem{total internal reflection}.
+The angle of incidence at which the refractive angle becomes equal to $\pi/2$ is called the \redem{critical angle} $i_{cr}$. Angle $i_{cr} = \arcsin n_{21}$. When $i \geqslant i_{cr}$, the intensities of the reflected and incident waves are the same, i.e. the wave is completely reflected from the interface between the media $(R = 1)$. This phenomenon is called \redem{total internal reflection}.
 
 \section{Doppler Effect}
 \label{sec-31.6} 
@@ -658,86 +658,62 @@ The angle of incidence at which the refractive angle becomes equal to $\pi/2$ is
 
 
 
-\subsection{}\label{31.6.1} Upon motion of the source and detector of electromagnetic
-waves toward each other the Doppler effect is observed (30.6.1).
-The laws governing this phenomenon for electromagnetic waves
-can he established on the basis of the special theory of relativity.
-Assume the detector D to be stationary with respect to an inertial
-frame of reference K, and that the source S travels with respect
-to K along the positive direction of axis OX at the velocity V
-Fig. 31.8). Source S is stationary in frame of reference K'
-and is located at its origin of coordinates. The axes of coordinate
-systems K and K' are parallel pairwise (axis O'X' coincides
-with axis OX). Illustrated in Fig. 31.8 is the position of source S
-at the instant of time t = t' = 0. According to Einstein's rela-
-Fig. 31.8
-tivity principle \ssect{5.1.2}, the equation of a spherical monochromatic
-wave \ssect{30.2.8}, sent by the source at this instant of time
-in the direction of the detector D, is of identical form in
-frames of reference K and K!\
-ei((0t+kx cos 0+hy sin 0+6)  
-and
-y   ao ei(i<d't'+h'xf cos Q'+k*y' sin 0  + 6')
-Here (o' = co0 and co are the angular frequencies of vibration
-of the source and detector, k = (die and k' = ©7c are the
-wavenumbers (it is assumed that the wave propagates in vacuum),
-and 0 and O' are the angles between the directions of
-observation and of velocity V (OX axis), measured in the frames
-of reference of the detector (K) and for the source (iT).
-Expression (b) should be obtained from expression (a) by replacing
-the variables x, y and t by x', y' and t' in accordance
-with Lorentz's transformations (5.3.2):
-<o't' + k'x' cos 0' -\-k'y' sin 0' + 6'
-— f*;+TV/c2) i-f Consequently,
-] V / 1 — (F/c2) / V / 1 — (7/c)2 /
-cos Q + ky' sin 0+6.
-(o' = —y=r   (l + — coso) ,
-/ l — (F /c2) V c )
-kfcosQ'= r ..k = r- fco s0 + — ) ,
-/ l — (F/c)2 v c /
-Zc' sin 0' = k sin 0 and 6' = 6.
-Hence, the relations describing the Doppler effect for electro-
-magnetic waves in vacuum are of the form:
-m «>o/i-(y/c)»
-1 + — COS 0
-c
-and v0 Vi-(V/c)*
-F
-1 -| ----cos 0
-c
+\subsection{}\label{31.6.1} Upon motion of the source and detector of electromagnetic waves toward each other the Doppler effect is observed \ssect{30.6.1}. The laws governing this phenomenon for electromagnetic waves can he established on the basis of the special theory of relativity.
 
-\subsection{}\label{31.6.2} At low velocities of the wave source with respect to the
-detector (F <c c), the relativistic formula for the Doppler effect
-\ssect{31.6.1} coincides with the classical formula \ssect{30.6.3}:
-v « v0   1---cos 0 j .
+Assume the detector $D$ to be stationary with respect to an inertial frame of reference $K$, and that the source $S$ travels with respect to $K$ along the positive direction of axis $OX$ at the velocity $\vb{V}$ (\figr{fig-31-08}). Source $S$ is stationary in frame of reference $K'$ and is located at its origin of coordinates. The axes of coordinate systems $K$ and $K'$ are parallel pairwise (axis $O'X'$ coincides with axis $OX$). Illustrated in \figr{fig-31-08} is the position of source $S$ at the instant of time $t = t' = 0$. 
+\begin{marginfigure}%[-1.5cm]
+\centering
+\includegraphics[width=\textwidth]{figs/ch-31/fig-31-08.pdf}
+\sidecaption{Source $S$ moving with velocity $\vb{V}$ in frame $K$.\label{fig-31-08}}
+\end{marginfigure}
+
+According to Einstein's relativity principle \ssect{5.1.2}, the equation of a spherical monochromatic wave \ssect{30.2.8}, sent by the source at this instant of time in the direction of the detector $D$, is of identical form in frames of reference $K$ and $K'$:
+\begin{align*}%
+\tilde{s} = \frac{a_{0}}{r} \exp i( \omega t + kx \cos \theta + ky \sin \theta + \delta) \tag{a} \qand \\
+\tilde{s'} = \frac{a_{0}'}{r} \exp i( \omega' t' + k'x' \cos \theta' + k'y' \sin \theta' + \delta').\tag{b}
+\end{align*}
+Here $\omega' = \omega_{0}$ and $\omega$ are the angular frequencies of vibration of the source and detector, $k = \omega/c$ and $k' = \omega'/c$ are the wavenumbers (it is assumed that the wave propagates in vacuum), and $\theta$ and $\theta'$ are the angles between the directions of observation and of velocity $\vb{V}$ ($OX$ axis), measured in the frames
+of reference of the detector $(K)$ and for the source $(K')$.
+
+Expression (b) should be obtained from expression (a) by replacing the variables $x$, $y$ and $t$ by $x'$, $y'$ and $t'$ in accordance with Lorentz's transformations \ssect{5.3.2}:
+\begin{align*}
+\omega' t' & + k'x' \cos \theta' + k'y' \sin \theta' + \delta' \\
+& \equiv \omega \left( \frac{t' + Vx'/c^{2}}{\sqrt{1 - (V/c)^{2}}} \right) 
++ k \left( \frac{x' + Vt'}{\sqrt{1 - (V/c)^{2}}} \right) \cos \theta 
++ k y' \sin \theta + \delta.
+\end{align*}
+Consequently,
+\begin{align*}
+\omega' & = \frac{\omega}{\sqrt{1 - (V/c)^{2}}} \left( 1 + \frac{V}{c} \cos \theta \right), \\
+k' \cos \theta' & = \frac{k}{\sqrt{1 - (V/c)^{2}}} \left( \cos \theta + \frac{V}{c} \right), \\
+k' \sin \theta' & = k \sin \theta \qand \delta' = \delta.
+\end{align*}
+Hence, the relations describing the Doppler effect for electromagnetic waves in vacuum are of the form:
+\begin{align*}
+\omega & = \frac{\omega_{0} \sqrt{1 - (V/c)^{2}}}{1 + \frac{V}{c} \cos \theta} \qand \\
+\nu & = \frac{\nu_{0} \sqrt{1 - (V/c)^{2}}}{1 + \frac{V}{c} \cos \theta}.
+\end{align*}
+
+\subsection{}\label{31.6.2} At low velocities of the wave source with respect to the detector $(V \ll c)$, the relativistic formula for the Doppler effect \ssect{31.6.1} coincides with the classical formula \ssect{30.6.3}:
+\begin{equation*}%
+\nu \approx \nu_{0} \left( 1 - \frac{V}{c} \cos \theta \right).
+\end{equation*}
 When the source travels with respect to the detector along the
-straight line that joins them (0 = 0 or jt ), the longitudinal
-Doppler effect is observed. If the source and detector approach
-each other (0 = ic)
-, /" 1 + F/c
-V = V ° F T = v 7 T > v »'
-whereas if they travel away from each other (0 = 01
-/" 1 —F/c
-v = v « V 7 + W < v »-
+straight line that joins them (\theta = 0 or $\pi$ ), the \redem{longitudinal Doppler effect} is observed. If the source and detector approach each other $(\theta = \pi)$:
+\begin{equation*}%
+\nu = \nu_{0} \sqrt{\frac{1 + V/c}{1 - V/c}} > \nu_{0},
+\end{equation*}
+whereas if they travel away from each other $(\theta = 0)$,
+\begin{equation*}%
+\nu = \nu_{0} \sqrt{\frac{1 + V/c}{1 - V/c}} < \nu_{0}.
+\end{equation*}
 
-\subsection{}\label{31.6.3} Following from relativistic theory of the Doppler effect
-\ssect{31.6.1} is the existence of the transverse Doppler effect. It is
-observed when 0 = jt/2 and 0 = 3xc/2, i.e. when the source
+\subsection{}\label{31.6.3} Following from relativistic theory of the Doppler effect \ssect{31.6.1} is the existence of the \redem{transverse Doppler effect}. It is observed when $0 = \pi/2$ and $\theta = 3\pi/2$, i.e. when the source
 travels perpendicular to the line of observation. Thus
-v = v0/l-(F/c)*.
+\begin{equation*}%
+\nu = \nu_{0} \sqrt{1 - (V/c)^{2}}.
+\end{equation*}
 The transverse Doppler effect is substantially weaker than the
-longitudinal effect (due to the smallness of V/c). This effect is
-due to the different passage of time in the frames of reference in
-which the detector and source of waves are fixed. Therefore,
-the experimental detection of the transverse Doppler effect
-was one of the most vital experimental proofs of the special theory
-of relativity.
+longitudinal effect (due to the smallness of $V/c$). This effect is due to the different passage of time in the frames of reference in which the detector and source of waves are fixed. Therefore, the experimental detection of the transverse Doppler effect was one of the most vital experimental proofs of the special theory of relativity.
 
-\subsection{}\label{31.6.4} The Doppler effect, associated with the thermal motion of
-the gas! atoms! ;that radiate light, leads to Doppler broadening
-of spectral lines. >The range of frequencies of light recorded by
-the detector extends from v0 — Avd/2J to v0 -f- Av /2, where
-v0 is the frequency of monochromatic radiation of a stationary
-atom. The amount of Doppler broadening Av  oc YT/m,
-where T is the absolute temperature and m is the mass of the
-a tom.
+\subsection{}\label{31.6.4} The Doppler effect, associated with the thermal motion of the gas atoms that radiate light, leads to Doppler \redem{broadening of spectral lines}. The range of frequencies of light recorded by the detector extends from $\nu_{0} - \Delta \nu_{D}/2$ to $\nu_{0} + \Delta \nu_{D}/2$, where $\nu_{0}$ is the frequency of monochromatic radiation of a stationary atom. The amount of Doppler broadening $\Delta \nu_{D} \propto \sqrt{T/m}$, where $T$ is the absolute temperature and $m$ is the mass of the atom.
