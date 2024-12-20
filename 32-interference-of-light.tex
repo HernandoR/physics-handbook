@@ -1,0 +1,587 @@
+% !TEX root = handbook-physics.tex
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+
+
+
+
+
+\chapter{Interference of Light}
+\label{ch-32}
+
+\section{Monochromaticity and Time Coherence of Light}
+\label{sec-32.1} 
+
+\subsection{}\label{32.1.1} \redem{Optics} is the branch of physics concerned with the study of the nature of light \ssect{31.4.3}, the laws of its production, propagation
+and interaction with matter. Wave optics deals with optical
+phenomena in which the wave nature of light is manifested
+(for instance, interference, diffraction, polarization and dispersion of light). Since light comprises electromagnetic waves, wave optics is based on Maxwell’s equations \ssect{27.4.3} and the relations that follow from them for electromagnetic waves (Section \ref{sec-31.1}).
+
+Classical wave optics deals with media that are linear with
+respect to their optical properties \ssect{30.1.7}, i.e. media in which the dielectric constant er and the magnetic permeability $\mu_{r}$ are independent of the intensity of the light \ssect{31.2.4}. Consequently, the principle of superposition \ssect{30.4.1} is valid in wave optics.
+
+Phenomena that are observed in the propagation of light in
+nonlinear media are investigated in \redem{nonlinear optics}. Nonlinear optical effects become appreciable at the very high intensities of light radiated by powerful lasers \ssect{39.6.8}.
+
+\subsection{}\label{32.1.2} It has been experimentally established that the effect of light on a photocell, photographic film, fluorescent screen or other devices that record light is determined by the \redem{electric vector} $\vb{E}$ of the electromagnetic field set up by the light wave.
+The same conclusion is reached by classical electronic theory,
+according to which the processes caused in matter by light are
+associated with the effect of the field of the light wave on charged particles of matter, i.e. on the electrons and ions. The frequency of visible and more short-waved light is so high $(\nu \gtrsim \SI{d15}{\hertz})$ that only electrons can execute forced vibration anywhere near appreciable in amplitude. 
+
+The force exerted by the electromagnetic
+field \ssect{24.1.5} on an electron is
+\begin{equation*}%
+\vb{F} = - e (\vb{E} + [\vb{v}_{1}\cross \vb{B}])  = -e (\vb{E} + \mu_{r}\mu_{0} [\vb{v}_{1}\cross \vb{H}]) .
+\end{equation*}
+Where $-e$ and $\vb{v}_{1}$ are the charge and velocity of the electron, and $\vb{B} = \mu_{r}\mu_{0}\vb{H}$ is the vector of magnetic induction. It follows from \ssect{31.1.5} that the absolute value of the magnetic component
+of force $\vb{F}$ is substantially less than its electrical component.
+
+Thus
+\begin{equation*}%
+\mu_{r}\mu_{0} [\vb{v}_{1}\cross \vb{H}] \leqslant \mu_{r}\mu_{0} {v}_{1}H = \frac{v_{1}}{v} E \ll E \qand \vb{F} \approx -e \vb{E},
+\end{equation*}
+because the velocity of electromagnetic waves is $v \approx  \SI{d8}{\meter\per\second}$, and the velocity of the electron in the atom upon forced vibrations set up by light is $v_{1} \approx \SI{d6}{\meter\per\second}$.
+
+\subsection{}\label{32.1.3} In superposing light from two nonlaser sources\sidenote{This refers to ordinary light sources (incandescent lamps, discharge lamps, electric arcs, etc.), based on the principle of spontaneous radiation \ssect{39.6.6}} (for instance, two identical gas-discharge lamps), or even from different portions of the same source, no interference \ssect{30.5.2} is observed. Consequently, independent sources of light are incoherent \ssect{30.5.1} and their radiation is non-monochromatic
+\ssect{31.1.6}. 
+
+The reason for this resides in the very mechanism by which light is radiated by the atoms (or molecules or ions) of the source. The excited atom radiates during an extremely
+short de-excitation time, of the order of $\tau \approx \SI{d-8}{\second}$ \ssect{31.3.4}, after which it returns to its normal (unexcited) state, having expended its surplus energy on radiation. Following a certain period of time the atom may again be excited, obtaining energy externally, and begin to emit radiation again. Such intermittent radiation of light by atoms in the form of separate short impulses -- \redem{wave trains}, or \redem{packets} -- is typical of any light source, regardless of the specific processes that occur in the source and excite its atoms. In spontaneous radiation \ssect{39.6.6}, the atoms emit radiation independently of one another with random initial phases that vary without any order from one event of emission to another. Therefore, spontaneously radiating atoms are incoherent sources of light.
+
+
+Induced, or stimulated, emission of radiation is quite
+another matter. It is produced in a nonequilibrium (active)
+medium by the action of a variable electromagnetic field \ssect{39.6.1}. Stimulated emission of radiation by all the particles of a system is coherent with the monochromatic radiation that it is produced by, having the same frequency, polarization and direction of propagation. These features of stimulated emission of radiation are made use of in lasers and masers \ssect{39.8.8}.
+
+\subsection{}\label{32.1.4} A real wave, radiated during a limited period of time and encompassing a limited region of space, is not monochromatic. The spectrum of its angular frequencies \ssect{28.4.7} is of finite width $\Delta \omega$, i.e. it includes angular frequencies from $ \omega - \Delta  \omega/2$ to $ \omega + \Delta  \omega/2$. During the time interval $\Delta t \ll = \tau_{coh} = \pi/ \Delta \omega$
+such a wave can be considered as an approximately monochromatic wave with the angular frequency $\omega$. 
+
+The quantity $\tau_{coh}$ is called the \redem{time coherence of a nonmonochromatic wave}. During the time interval $\tau_{coh}$ the phase difference of the vibrations corresponding to waves of the frequencies $ \omega + \Delta  \omega/2$ and $ \omega +-\Delta  \omega/2$ changes by $\pi$. A wave with the angular frequency co and phase velocity $v$ propagates during this time over the distance $l_{coh} =  \tau_{coh} = \pi v/\Delta \omega$.
+
+The quantity $l_{coh}$ is called the \redem{coherence length}, or the \redem{harmonic wave train length}, of the corresponding nonmonochromatic wave being considered. The closer a given wave is to a monochromatic one, the less the width $\Delta \omega$ of its frequency spectrum and the greater its coherence time and coherence length. For example, for visible sunlight, having a continuous frequency spectrum from \num{4d14} to \SI{8d14}{\hertz}, $\tau_{coh} \approx \SI{d-14}{\second}$ and $l_{coh} \approx \SI{d-8}{\meter}$. The coherence time of stimulated radiation is substantially longer than the de-excitation time of the atom \ssect{31.3.4}. For example, $\tau_{coh}$ reaches \SI{d-5}{\second} for a continuous-wave laser and the coherence length $l_{coh} \approx \SI{d3}{\meter}$.
+
+\section{Interference of Light. Spatial Coherence of Light}
+\label{sec-32.2} 
+
+
+\subsection{}\label{32.2.1} To obtain coherent light waves by means of conventional
+(nonlaser) light sources, light from a single source is split into
+two or more systems of waves. Each system represents the
+radiation of the same atoms of the source. Hence, by virtue of
+their common origin, these systems of waves are coherent with
+one another and interfere when superposed. Light can be split
+into coherent systems of waves by its reflection or refraction.
+Illustrated as an example in Fig. 32.1 is the principle of the
+Fresnel mirrors. Light from point source S is incident on two
+plane mirrors A-fi and A20 arranged perpendicular to the
+plane of the drawing and joined along line 0. The angle a be
+tween the planes of the mirrors is very small. Light from source S
+propagates after being reflected as two beams having their
+centres at points Sx and S», which
+are the virtual images of source
+S in the mirrors. These beams
+are coherent and upon being superposed
+produce an interference
+pattern on screen E (the region
+BC is sometimes called the field
+of interference). The result of the
+interference at some point M on
+the screen depends upon the wavelength
+X of the light and the path
+difference of the waves \ssect{30.5.2} from
+the coherent virtual sources
+and S2 to point M. Thus
+A = r 2 - 7*1 == M S 2 - M S
+Fig 32.1The initial phases of vibration of sources S1 and S2 are the
+same. Hence, the conditions for interference maxima and minima
+(30.5.2) are of the form
+7*2 - 7 i = ± mX fofr a maximum of the 7 ?ith order
+(771 = 0, 1, 2,...),
+r2 - t*! = ±(2m - l)-- for a minimum of the mth order
+(771 = 1, 2,...). ’
+The angle 2co at apex S between the two rays of light that converge
+at point M of the interference pattern after being reflected
+from mirrors AxO and 420 is called the aperture angle of the
+interference. This angle usually varies very little upon changing
+the position of point M within the limits of the field of interference.
+
+\subsection{}\label{32.2.2} The principles of the techniques used for observing interference
+by means of the Fresnel biprism (Fig. 32.2) and the
+Billet split lens (Fig. 32.3) are similar to those of the Fresnel
+mirrors. The biprism consists of two identical triangular prisms
+joined together at their bases and prepared as a whole. The
+refracting angles a at the upper and lower edges of the biprism
+are very small (of the order of a fraction of one degree). Light
+from source S is refracted in the hi prism and propagates in it44S
+in the form of two systems of waves, corresponding to the coherent
+virtual sources of light and S2. The interference of these waves
+is observed in the region of their overlapping on screen E.
+The Billet split lens consists of two halves and L2 of a collecting
+lens, cut along a diameter. The two halves are slightly
+displaced laterally (spread apart). In consequence, they produce
+two noncoinciding real images and S2 of the point source of
+light S. The interference of light from these coherent secondary
+sources is observed on screen E. The space between parts In and
+L2 of the split lens is covered by opaque screen A.
+The value of the aperture angle 2co of interference is shown in
+Figs. 32.2 and 32.3 for the central point M0 of the interference
+pattern obtained by means of a biprism and a split lens.
+
+\subsection{}\label{32.2.3} The width of an interference fringe (as the bands are
+called) is the distance between two adjacent interference maxima
+(or minima). When the Fresnel mirrors or similar devices (biprisms
+or split lenses) are employed to obtain interference, the
+width of an interference fringe \ssect{30.5.2} is XL/l. Here I is the
+distance between sources S1 and S2, and L is the distance from
+them to screen E. The wavelength of visible light is extremely
+short (1 « 5 X 10~7 m). Therefore, to obtain an interference
+fringe of a width that can be resolved by the eye, it is necessary
+to comply with the condition: I < L. Consequently, the angle a
+in the Fresnel mirrors and the refracting angles a of the biprism
+must be very small.
+The possibility of observing interference fringes also depends on
+I lie degree of contrast, i.e. on the degree of different illumination
+of the screen at the maxima and minima. The illuminance is
+proportional to the intensity I of the incident light. A quantitative
+characteristic of the degree of contrast of the interference
+pattern is the dimensionless quantity called the visibility of
+fringes
+y  Imax-Amin
+Anax~hAmin *
+where/max and/min are the values of the light intensities in the
+i nterference maxima and minima on the screen. The human eye
+reliably distinguishes fringes if their visibility V > 0.1,
+i.e. when An In < 0.82 Anax* . .
+In superposing two likewise polarized coherent monochromatic
+waves, with the amplitudes and intensities Aly /lt A2 and /2,
+the visibility of the fringes is
+Y  2A1A2 2 y III 2
++ AI ” /1 + /2 *
+The visibility of theiringes is a maximum (V = 1) when A± =
+- A 2>
+
+\subsection{}\label{32.2.4} In an interference arrangement of the type of the Fresnel
+mirrors, illuminated by a point source S (Fig. 32.1), the superposed
+waves are .never ideally monochromatic \ssect{32.1.3}. Hence,
+these waves are only partly coherent. They are capable of interference
+only under the condition that the vibration, excited by
+them at point M being considered on the screen, corresponds to
+one and the same harmonic train, or packet, of radiation of
+source S \ssect{32.1.4} i.e. if
+I r2 - i\ | < vxc0h or I r2 - 7T | < lcoh.
+Here r2 - i\ is the path difference of the superposed waves, v is
+their velocity, and xc0h and Aoh are coherence time and
+coherence length of light from source S \ssect{32.1.4}. Partly coherent
+vibrations are combined at point M. These vibrations are excited
+by the same source S at different instants of time, t and t + t,
+where % = \ r2 - rx \!v. Therefore, the visibility of the interference
+pattern in such arrangements essentially depends on the
+time-coherence of the vibrations, which is limited by the mono-chromaticity of the light from source S, i.e. its coherence time
+Tcoh \ssect{32.1.4}. At x < TCOh» the superposed vibrations are practically
+fully coherent and the visibility of the interference fringes
+(at equal intensity of the superposed waves) V  1. If, however,
+xcoh» the superposed vibrations are incoherent and there
+is no interference (V = 0).
+Thus, to observe the interference of light at large path differences
+r2 - rx (and corresponding large values of t) it is necessary
+for the light to have a sufficiently long coherence time, i.e. a
+sufficiently high degree of monochromaticity.
+
+\subsection{}\label{32.2.5} The positions on the screen of all the interference maxima,
+with the exception of the zero-order maximum, depend upon
+the wavelength of the light. For two wavelengths A* and X2, the
+higher the order m to be observed, the more their maxima of
+the mth order are displaced from each other. Therefore, as m is
+increased, the visibility of interference fringes, obtained by the
+illumination of Fresnel mirrors with nonmonochromatic light,
+is impaired. Fringes, corresponding to different values of X,
+are superposed on one another, and the interference pattern is
+blurred.
+Assume that the wavelength of light is within the limits from X
+to X + AX, and the angular frequency, from co to co - Aco,
+where Aco = 2nvAX/X2. Then, according to the Rayleigh criterion,
+the interference pattern is still distinguishable up to a maximum
+of the m0 order for light with the wavelength X + AX
+(where AX > 0), which is superposed on the screen on the nearest
+interference minimum for light of wavelength X:
+X X
+m0 (X + AX) = (2m0 +1) -y , from which
+Thus, interference can be observed at path differences of the
+waves that comply with the condition
+i i X2
+nv 
+|r2-ri1  isr-"ast-"oon-
+This result agrees with the assessment made in \ssect{32.2.4} on
+the basis of the concept of time coherence of vibrations.
+
+\subsection{}\label{32.2.6} Partly coherent light, of a total intensity /, can be dealt
+with as the combination of two components: the coherent component
+of intensity yl, where y is the degree of coherence of the
+light, and the incoherent component of the intensity (1-y) /.:i2.2] INTERFERENCE OF LIGHT 451
+When partly coherent waves are superposed, only their coherent
+components interfere. The incoherent components produce the
+uniformly illuminated background of the interference pattern.
+Therefore, as the degree of coherence of the light is reduced, the
+visibility V of the interference fringes decreases. Thus
+ 2 / h h
++ J a
+When the intensities of partly coherent waves are the same
+V = y.
+
+\subsection{}\label{32.2.7} As a rule, in an interference device with mirrors (or
+a biprism), a brightly illuminated narrow slit, parallel to the
+joint 0 between the mirrors, is used instead of a point source of
+light. In this case, the interference patterns, obtained on the
+screen from the various portions along the length of the slit, are displaced with respect to one another inthe direction of
+the slit S. Accordingly, a system of interference fringes, parallel
+to joint 0 of the mirrors, is observed on the screen.
+The visibility of the interference fringes is reduced as the width
+of the slit S is increased. This is due to the fact that the interference
+fringes that could be obtained on the screen from various
+narrow slits into which slit S could be conceivably divided
+would be displaced with respect to. one another. An interference
+pattern in monochromatic light of wavelength K is sharp and
+distinct if the following approximate condition is complied
+with:
+b sin co A./4,
+where b is the slit width and 2(0 is the aperture angle of interference
+\ssect{32.2.1}.
+
+\subsection{}\label{32.2.8} The principle of Young's two-slit interference method is
+illustrated in Fig. 32.4. The source of light is a brightly illuminated
+narrow slit S in screen A x. Light from slit S falls on a second
+opaque screen A2 having two identical narrow slits Si and
+S2l parallel to slit S. Two systems of cylindrical waves are
+propagated in the space beyond screen A 2\ their interference is
+observed on screen E. The visibility of the interference fringes for
+small path differences is determined mainly by the degree of
+agreement in the way the vibrations are executed at points of
+
+slits Si and S2. These slits can be considered as the “sources” of
+the waves interfering on the screen.
+
+\subsection{}\label{32.2.9} The coherence of vibrations executed at the same instant
+of time at various points of a plane (?, perpendicular to the direction
+of wave propagation, is called spatial coherence (as distinguished
+from time coherence of
+vibrations, executed at one
+and the same point, but at
+different instants of time).
+Spatial coherence depends
+upon the conditions for the
+radiation and formation of
+light waves. For instance, a
+light wave emitted by a point
+source has complete spatial
+coherence. In the case of an
+ideal plane wave, the amplitude
+and phase of the vibration
+are the same at all points, of plane Q, i.e. there is also
+complete spatial coherence. Spatial coherence is also maintained
+over the whole cross section of a light beam emitted by a laser.
+In a real wave, emitted by a host of independent atoms of an
+extended nonlaser light source, the phase difference of the
+vibrations at two points Ki and K2 of plane Q is a random function
+of time. The random variations of the phase difference increase
+with the distance between the points. The length of spatial
+coherence is the distance Zsc between points and K2 of plane
+Q at which the random changes of phase difference reach a value
+equal to it. If in Young’s two-slit interference arrangement
+the distance I between slits and S2 is greater than or equal to
+I sc the visibility of the interference fringes equals zero. To
+ensure spatial coherence in the illumination of slits S± and S2-,
+the width b of inlet slit S should be sufficiently narrow. Thus
+b < Xd/l and 0 < XII,
+where d is the distance between screens and A2j and 0 = bid
+is the angular dimension of the light source, i.e. slit S.
+The length of spatial coherence Zsc = XIQ increases with the
+distance from the light source. For example, for a star of diameter
+2), located at the distance r, 0 = Dir and Zsc = Xr/D.
+The area of a circle of radius Zsc is called the dimension of spatial
+coherence, and the volume of a right cylinder having such a circle
+as its base and a height equal to length of the harmonic wave
+train \ssect{32.1.4} lc0h ~ vxcohi Is called the volume of coherence.
+\section{Interference of Light in Thin Films}
+\label{sec-32.3}
+
+\subsection{}\label{32.3.1} Examples of light interference observed under everyday
+conditions are the iridescent colouring of thin films (soap bubbles,
+lil ms of petroleum or other oils on the surface of water, transparent
+films of oxides on the surfaces of heat-treated metal components,
+called temper colours, etc.). The formation of partly
+coherent waves, displaying interference upon superposition,
+occurs in these cases due to the reflection of light, incident on the
+film, from its upper and lower surfaces. This interference depends
+upon the phase difference acquired by the superposed waves in
+the film and depending upon their optical path difference.
+\subsection{}\label{32.3.2} The optical path, or distance, s of light is the product of
+the geometric path length I travelled by light in the medium
+by the refractive index of the medium \ssect{31.5.1}: s = nl. The
+quantity s is equal to the path travelled by light in vacuum
+during the time it covers the path I in the given medium.
+The optical-path difference of two waves is the difference in the
+optical path of these waves: As = s2 - sj (the optical-path
+difference is frequently denoted by A or 6). An optical-path
+difference As corresponds to a change in the phase by AO -
+- 2jtAs/0, where X0 = nA,is the wavelength of the light in vacuum,
+X is the light wavelength in a medium with the refractive index n.
+Paths of propagation of waves, having the same optical length,
+arc said to be tauiochronous. Light requires equal amounts
+of time to travel them. In an optical system (microscope, telescope,
+etc.), for example, all possible paths of the rays of light
+from some point on the object to the corresponding point on its
+image are tautochronous.
+\subsection{}\label{32.3.3} Assume that a plane monochromatic light wave 1 is
+incident at the angle i on a plane-parallel homogeneous plate of
+thickness d and transparent to light (Fig. 32.5). Owing to the
+reflection of light from the upper and lower surfaces of the plate,
+two plane waves propagate in the directions of the reflected rays
+1' and r. Their optical-path difference is
+As = n (AB-BC) - nx =2 dn cos r ,454 
+where % and n are the refractive indices of the surrounding
+medium and of the plate, D is the foot of a perpendicular erected
+on ray V from point C, member XJ2 takes into account the
+phase difference of n as light is reflected from point A \ssect{31.5.5},*
+r is the refractive angle, and
+is the wavelength of the
+light in vacuum.
+The conditions for interference
+maxima of reflection
+are
+Fig. 32.5 2dn cos r = ,
+or
+X
+2d cos r = (2tti + l) - , where
+m = 0, 1, 2, ... is the order
+of  e interference maximum.
+The conditions for interference minima of reflection are
+2dn cos r = mX0 or 2d cos r = mX,
+where m = 1,2, ... is the order of the interference minimum.
+The optical-path difference for the waves passing through the
+plate (rays 2' and 2n) is As = 2dn cos r, i.e. it differs from As
+for the reflected light by X0/2. Therefore, the maxima of reflection correspond to the minima of transmission of light and vice vcra.
+If the plate is illuminated with white light, it has additional
+colouring in the reflected and transmitted light.
+The maximum thickness d of the plate at which it is still possible
+to observe interference fringes is limited by the coherence time
+rcoh of the light \ssect{32.1.4}. Thus
+2dn cos r <; cxc0h or 2d cos r < Jcoh»
+where ZCoh = coh = CTcohM is the coherence length.
+
+\subsection{}\label{32.3.4} In the calculation of the optical-path difference of interfering
+waves in a plate \ssect{32.3.3} only two waves were taken into
+* It is assumed that i < isr and that n > When
+n C n 1, a phase difference of n occurs upon reflection of light
+from point B and As - 2dn cos r + X0/2, i.e. it differs from
+the value of As for the case when n > w* by h0>
+has no effect on the result of the interference. H.n] 
+account. They correspond to the first reflection from the upper
+and from the lower surfaces of the plate; the possibility of multiple
+reflection of light was neglected. Such simplification is
+justified only if the intensity J2 of the wave corresponding to the
+second reflection from the lower surface of the plate is substanti-
+nlly less than the intensity 7* of the wave corresponding to the
+first reflection. If R is the coefficient of reflection \ssect{31.5.6} from
+I lie upper and lower surfaces of the plate, then J2 = TWx. As
+m rule 1. At the interface, for instance between air and
+id ass (n2i - 1.5), at angles
+of incidence t < 50°, the
+coefficient of reflection R <c
+< 0.05. In certain special
+cases, when J2 is comparable
+to Iu it is necessary
+I o deal with multiwave interference
+(32.4).
+
+\subsection{}\label{32.3.5} In considering the
+interference of light in thin
+films, distinction is made
+between interference fringes
+of equal inclination (isoclinic
+fringes) and those of
+equal thickness (isopachic
+fringes). Equal-inclination fringes are observed when a diverging
+(or converging) beam of light is incident at various angles i on
+a thin plane-parallel film. These, for instance, are the conditions
+that prevail when the film is illuminated by an extended source
+or scattered sunlight. Since d and n arc the same all over the
+film, the optical-path difference of the interfering waves varies
+along the surface of the film only owing to the variation in the
+angle of incidence i. The conditions of interference are the same
+for all rays incident on the surface of the film and reflected from
+it at the same angle. Consequently, the interference pattern in
+this case is said to be made up of equal-inclination fringes.
+Equal-inclination fringes are observed on screen E arranged in
+the focal plane of a convergent lens L (Fig. 32.6). With no lens
+available the interference pattern could only be observed at
+infinity, at the point of intersection of the parallel rays 1' and
+7", 2' and 2" etc. Therefore, equal-inclination fringes are said to
+be localized at infinity. For their visual observation it would be
+necessary for the eyes to .accommodate to infinity.456 
+
+\subsection{}\label{32.3.6} Equal-thickness fringes are observed in reflecting a parallel
+or almost parallel beam of light rays (i = const) from a thin
+transparent film whose thickness d is not the same at various
+places. The optical-path difference of the interfering waves varies
+in going from certain points on the surface of the film to other
+points with a corresponding change in the film thickness d. Hence
+the conditions of interference are the same for points having
+the same values of d. This is why the interference pattern being
+considered is said to he made up of equal-thickness fringes.
+Equal-thickness fringes are localized close to the surface of the
+film. Hence, they can he observed
+by accommodation of the eyes practically
+to the film’s surface.
+When light interferes in a thin transparent
+wedge with a small wedge
+angle a, equal-thickness fringes have
+the form of straight hands parallel
+to the edge of the wedge. If the wedge
+is illuminated by monochromatic light
+with the wavelength X0 in " vacuum,
+normally incident on the wedge surface
+(i - 0), the width of the interference
+fringes \ssect{32.2.3} is equal to
+X0/2na, where n is the absolute refractive
+index of the wedge material.
+
+\subsection{}\label{32.3.7} Equal-thickness fr
+the :form of concentric r rings, and
+called Newton s rings, are observed in
+the interference of light in the thin
+air clearance between a flat glass
+plate A and a flat-convex lens L
+pressed tightly against the plate
+(lug. 32.7). The flat surface of the lens is parallel to the plate
+surface and light is normally incident to the lens surface. The
+centre of Newton’s rings coincides with point O of contact
+between the lens and plate. At a small distance r from point O
+the optical-path difference of the waves reflected from the upper
+and lower surfaces of the nir clearance is•TV.] MULTIWAVE 
+where n cz 1 (for air), and R is the radius of the convex surface
+on the lens.
+Note. In calculations concerning Newton’s rings, the wave reflected
+from the upper (flat) surface of the lens need not be taken
+into account because the optical-path difference between this
+wave and the waves reflected from the boundaries of the air
+clearance is greater than the coherence length for nonlaser
+light \ssect{32.3.3}.
+In reflected monochromatic light with the wavelength in air
+X = Xjn  A,0, the radii of the dark and bright Newton’s
+rings are
+r , i a r k = V m R  and rbright= y (2m + 1)--,
+where m = 0, 1, 2, ... . The dark spot in the centre of the
+pattern corresponds to the change in the phase of the wave by jt when it is reflected from the lower surface of the air clearance.
+If white light is incident on the lens, a central dark spot
+is observed in the reflected light,
+surrounded by a system of coloured
+rings. These rings correspond
+to the interference maxima of the
+reflection of light with various values
+of wavelength X.
+
+\section{Multiwave Interference}
+\label{sec-32.4}
+
+
+\subsection{}\label{32.4.1} Special interference instruments,
+such as the diffraction grating
+\ssect{33.3.4}, the Fabry-Perot etalon and others are used to obtain
+Fig. 32.8interference of many light waves
+with close or equal amplitudes.
+The amplitude A of the resultant vibration and its intensity
+I = A2 at arbitrary point M can be found by applying
+the method of vector diagrams for adding oscillations or vibrations
+having the same direction \ssect{28.4.2}.
+
+\subsection{}\label{32.4.2} Shown in Fig. 32.8 is a vector diagram of the addition
+of vibrations in interference of N waves. At the point M being
+considered, these vibrations set up coherent vibrations in the
+same direction with equal amplitudes Ax = A1 and a phase
+difference, independent of i, between (i + l)th and ith vibrations.
+Thus <I>*+1 (t) - CDj (*) = Acp0. The amplitude of the
+resultant vibration is
+A = 2x00i
+sm
+a , where a = 2ar-JVA(p0
+and 00j s*s -
+sin Acpo
+Hence,
+sin
+A=A1
+sm
+AAcp0
+2
+Aq>0
+sin2
+and I = I1‘
+NA%
+2
+, M o
+where Jx = A\ is the intensity of the vibration set up at point M
+by each of the N interfering waves separately.
+
+\subsection{}\label{32.4.3} The principal maxima in the interference of N waves
+\ssect{32.4.2} are at points M that comply with the condition: A(p0 =
+= ± 2nnf where n - 0, 1, 2, ... is the order of the principal
+Fig. 32.9
+maximum. The amplitude and intensity of vibration at the
+principal maxima are:
+•max  NA% and /max = N%Ip
+Interference minima (A *= 0) comply with the condition:
+A<p0 = ±2jtp/iV, where p may be any positive whole number
+except a multiple of N.
+The nature of the dependence of 1/Ii on Aqp0 \ssect{32.4.2} is shown
+in Fig. 32.9. Between each pair of adjacent interference minima
+there is a maximum, either a principal or a subordinate maximum.
+At high N values the intensities of the subordinate maxima
+are negligibly small compared to that of the principal maxima.
+The values Acp0 = ± (2jin ± 2n/N) correspond to two minima
+that bound a principal maximum of the nth. order. Therefore,
+the “width of the principal maximum, equal to 4n/N, is inversely
+proportional to the number N of interfering waves, and its
+intensity is proportional to A2. The 
+fact that the interference pattern
+changes in such a manner as N is
+varied fully complies with the law of \ \
+conservation of energy. The total [ener- \ \ \
+gy of vibration at all points of the aX> )Acp m
+screen on which the interference pat- \ J °
+tern is observed is proportional to A". \ / / /
+
+\subsection{}\label{32.4.4} If the number N of interfering /
+waves \ssect{32.4.2} is increased indefinitely, °
+and their amplitudes Af and phase ooTn
+differences Aqp0 are correspondingly re- Fl- 32.10
+duced so that NAf and NAcp0 remain
+finite quantities equal to A 0 and A(p, then, in the limit, the
+vector diagram (Fig. 32.8) assumes the form illustrated in
+Fig. 32.10. Vector A, the amplitude of the resultant vibration,
+closes the arc BC of a circle. The length of this arc is equal to A0
+and its central angle /LBOC = A<p. Therefore, the radius of
+the circle OB - A jAq>, and the amplitude A and intensity I
+of the resultant vibration equal
+whore IQ == AJ
+Interference minima are at points of the interference pattern
+for which
+Acp = + 2mn (where m = 1, 2, . . .).
+Interference maxima are at points for which Acp - + 2/rmJt,
+where m = 0, 1, 2, . . . is the order of the maximum. The values
+Fig. 32.11
+of factor km are determined from the transcendental equation
+tan kmn = kmn. For the central, zero-order maximum k0 = 0
+and AcpO. The amplitude and intensity of vibration at a zero-
+order maximum are equal to A0 and /0. For all other maxima
+(m> 1) it can be assumed approximately that
+km = (2m + l)/2 and Acp = + (2m + 1) it.
+Accordingly, the ratio of the intensities for the mth and zero-
+order maxima equals
+(2m -J- 1)‘2 jt2 
+461
+'PARLE 32.1
+Order of the maximum 0 1 2 3 4
+ ml I o 1 0.045 0.016 0.008 0.005
+'This ratio decreases rapidly with an increase of m (Table 32.1).
+'The shape of the curve showing the dependence of I on A(p is
+shown in Fig. 32.11.
