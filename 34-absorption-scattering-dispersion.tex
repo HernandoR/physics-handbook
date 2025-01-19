@@ -69,7 +69,7 @@ Systems of closely spaced lines, forming \redem{absorption bands}, are observed 
 \subsection{}\label{34.2.4} At sufficiently high intensities of light, deviations from the Bouguer-Lambert law \ssect{34.2.1} are observed: the absorption factor of a dielectric medium begins to depend upon $I$, decreasing with an increase in $I$. This phenomenon, inexplicable within the framework of classical light absorption theory, is readily interpreted in the quantum theory of the interaction of light with matter. In the absorption of light, a part of the molecules of the medium goes over into an excited state. The excited molecules
 cannot participate in further light absorption until they
 return, after expending their surplus energy, to the unexcited
-(“normal”) state. The higher the intensity of the light and the longer the average lifetime $\expval{\tau}$ of a molecule in the excited state, the greater the fraction of excited molecules in the medium. 
+(``normal'') state. The higher the intensity of the light and the longer the average lifetime $\expval{\tau}$ of a molecule in the excited state, the greater the fraction of excited molecules in the medium. 
 
 If this fraction of excited molecules is negligible, light is absorbed in accordance with the Bouguer-Lambert law. Otherwise, $\alpha$ decreases with an increase in the intensity of the light. It is feasible to obtain a nonequilibrium state of the medium, in which the fraction of excited molecules is so large that the absorption factor of the medium becomes negative. This phenomenon is made use of in a quantum oscillator of radio waves and light \ssect{39.8.8}.
 
@@ -137,193 +137,153 @@ u = \frac{c}{n + \nu \dfrac{\dd n}{\dd \nu}} =  \frac{v}{1 + \dfrac{\nu}{n} \dfr
 In normal dispersion the group velocity is less than the phase
 velocity $(u < v)$. In the case of anomalous dispersion $u > v$ and, in particular, if $n + \nu \dv*{n}{\nu} < 1$, then $u > c$. This does not contradict the statement of the special theory of relativity that the velocity of any signal (including a light signal) cannot exceed $c$ \ssect{5.1.3}. 
 
-The concept of group velocity correctly describes only a signal whose “shape”, i.e. the distribution of amplitudes
-and energies along its “length”, does not change when the
-signal travels through the medium. But for light, this condition is complied with only approximately; the narrower the frequency spectrum of the signal and the less the light dispersion in the medium, the more exactly the condition is complied with. In the frequency regions corresponding to anomalous dispersion, the group velocity does not coincide with the velocity of the signal because, owing to considerable dispersion of light, the “snape” of the signal changes rapidly as it propagates in the medium.
+The concept of group velocity correctly describes only a signal whose ``shape'', i.e. the distribution of amplitudes
+and energies along its ``length'', does not change when the
+signal travels through the medium. But for light, this condition is complied with only approximately; the narrower the frequency spectrum of the signal and the less the light dispersion in the medium, the more exactly the condition is complied with. In the frequency regions corresponding to anomalous dispersion, the group velocity does not coincide with the velocity of the signal because, owing to considerable dispersion of light, the ``shape'' of the signal changes rapidly as it propagates in the medium.
 
 
 \section{Classical Electron Theory of Light Dispersion}
 \label{sec-34.5} 
 
 
-\subsection{}\label{34.5.1} Optically transparent media are nonmagnetic (p,r  1),
-so that their refractive index \ssect{31.5.1} n = Y £r = Y  + Xe>
-where er and %e are the relative permittivity (dielectric constant)
-and the dielectric (or electric) susceptibility of the medium
-\ssect{18.2.4}. Therefore, the dispersion of light can he regarded
-as the dependence of er and Xe on the frequency of the variable electromagnetic field of the light, causing electronic polarization
-of the medium \ssect{18.2.2}. If each atom (or molecule) of the
-medium contains one optical electron \ssect{34.1.1}, the polarization
-vector of the medium \ssect{18.2.3} Pe = -en0 r, where -e is the
-charge of the electron, r is its displacement from the equilibrium
-position, and n0 is the concentration of atoms (or molecules)
-of the medium. On the other hand \ssect{18.2.4}, Pe = e0xeE, where
-e0 is the electric constant \ssect{14.2.7}, and E is the strength of the
+\subsection{}\label{34.5.1} Optically transparent media are non-magnetic $(\mu_{r} \approx  1)$, so that their refractive index \ssect{31.5.1}$ n = \sqrt{\varepsilon_{r}} = \sqrt{1  + \chi_{e}}$ where $\varepsilon_{r}$ and $\chi_{e}$ are the relative permittivity (dielectric constant) and the dielectric (or electric) susceptibility of the medium \ssect{18.2.4}. Therefore, the dispersion of light can he regarded as the dependence of $\varepsilon_{r}$ and $\chi_{e}$ on the frequency of the variable electromagnetic field of the light, causing electronic polarization of the medium \ssect{18.2.2}. 
+
+If each atom (or molecule) of the medium contains one optical electron \ssect{34.1.1}, the polarization vector of the medium \ssect{18.2.3} $\vb{P}_{e} = -en_{0} \vb{r}$, where $-e$ is the charge of the electron, $\vb{r}$ is its displacement from the equilibrium position, and $n_{0}$ is the concentration of atoms (or molecules) of the medium. On the other hand \ssect{18.2.4}, $\vb{P}_{e} = \varepsilon_{0}\chi_{e} \vb{E}$, where $\varepsilon_{0}$ is the electric constant \ssect{14.2.7}, and $\vb{E}$ is the strength of the
 electric field of the light.
 
-\subsection{}\label{34.5.2} An optical electron executes forced vibrations under the
-effect of the following forces:
-(a) restoring quasi-elastic force \ssect{40.3.5} Frest = - racogr, where
-m and co0 are the mass of the electron and the angular frequency
-of its free "undamped vibrations;
-(b) force of resistance Fresi = -2Pm dr/dt, where P is the damping
-factor of free vibrations of the electron; (c) driving forc F = -eE, exerted on the electron by a variable
-field of strength E.
+\subsection{}\label{34.5.2} An optical electron executes forced vibrations under the effect of the following forces:
+\begin{enumerate}[label=(\alph*)]
+\item restoring quasi-elastic force \ssect{40.3.5} $\vb{F}_{\text{rest}} = - m \omega_{0}^{2} \vb{r}$, where
+$m$ and $\omega_{0}$ are the mass of the electron and the angular frequency of its free undamped vibrations;
+\item force of resistance $\vb{F}_{\text{resi}} = -2\beta m \dv*{\vb{r}}{t}$, where $\beta$ is the damping factor of free vibrations of the electron;
+\item driving forc $\vb{F} = -e\vb{E}$, exerted on the electron by a variable field of strength $\vb{E}$.
 The equation of forced vibrations is
-2P- +«gr=
-eF
-m
+\begin{equation*}%
+\dv[2]{\vb{r}}{t} + 2 \beta \dv{\vb{r}}{t} + \omega_{0}^{2}\vb{r} = - \frac{e \vb{E}}{m}.
+\end{equation*}
+\end{enumerate}
+
 In the case of linearly polarized monochromatic light with the
-angular frequency co, the field strength E = E0 cos co£, where
-E0 = const is the amplitude vector. If, in addition, the medium
-does not absorb light, then p = 0 and the steady-state forced
-vibration of the optical electron is executed according to the
-relation
-r =
-eE
-m (cog-co2)[34
+angular frequency $\omega$, the field strength $\vb{E} = \vb{E}_{0} \cos \omega t$, where $\vb{E}_{0} = \text{const.}$ is the amplitude vector. If, in addition, the medium does not absorb light, then $\beta = 0$ and the steady-state forced vibration of the optical electron is executed according to the relation
+\begin{equation*}%
+\vb{r} = - \frac{e \vb{E}}{m (\omega_{0}^{2} - \omega^{2})}.
+\end{equation*}
 Here the polarization vector of the medium is
-rc0e2E  nog2
-e m (cog - to2) * e e 0to (wjj - co2) '
-The dependence of the refractive index of the medium on co is
-of the form
-7i2 = l ftp*2
-e0m (co- co2)
+\begin{equation*}%
+\vb{P}_{e} =  \frac{n_{0}e^{2} \vb{E}}{m (\omega_{0}^{2} - \omega^{2})} \qand \chi_{e} =  \frac{n_{0}e^{2} }{\varepsilon_{0} m (\omega_{0}^{2} - \omega^{2})}.
+\end{equation*}
+The dependence of the refractive index $n$ of the medium on $\omega$ is of the form
+\begin{equation*}%
+n^{2} = 1 + \frac{n_{0} e^{2}}{\varepsilon_{0} m (\omega_{0}^{2} - \omega^{2})}.
+\end{equation*}
 
-\subsection{}\label{34.5.3} At values of co close to co0, the absorption of light in the
-medium can no longer be neglected, assuming that P = 0. In an absorbing medium (i.e. at P  0), vibrations of the optical
-electron and of vector Pe are out of phase with respect to the
-oscillations of the field strength E \ssect{29.2.2}:
-r = A cos (co£ + <Po)»
+\subsection{}\label{34.5.3} At values of $\omega$ close to $\omega_{0}$, the absorption of light in the medium can no longer be neglected, assuming that $\beta = 0$. In an absorbing medium (i.e. at $\beta \neq 0$), vibrations of the optical electron and of vector $\vb{P}_{e}$ are out of phase with respect to the oscillations of the field strength $\vb{E}$ \ssect{29.2.2}:
+\begin{equation*}%
+\vb{r} = \vb{A} \cos (\omega t  + \varphi_{0}),
+\end{equation*}
 where
-and tan cp0 = - 2pco
-m V ()„2-q)2)2 + 4P*<o*
+\begin{equation*}%
+\vb{A} = - \frac{e \vb{E}_{0}}{m \sqrt{(\omega_{0}^{2} - \omega^{2})^{2} + 4 \beta^{2}\omega^{2}}}, \qand \tan \varphi_{0} = -\frac{2\beta \omega }{(\omega_{0}^{2} - \omega^{2})}.
+\end{equation*}
 Accordingly
-p = »0g2E0 cos (co t + cpo)
-m (cog-co2)2-I- 4P2co2
-Introduced to describe the properties of a light-absorbing medium,
-along with the complex refractive index \ssect{34.2.2} n =
-= n (1 - ix), are the complex dielectric susceptibility %e and the
-complex dielectric constant er:
-Pe
-Xe = and er = l + Xe> whereas n2 = 1 + Xe*
-Here Pe and E are complex values of the polarization and
-strength of the field:
-~ n pF e*(©< + To)  . ,
-Pe=---0 0 - -- and E = E 0ew>t.
-m /((o§-w2)2 + 4P2co2
+\begin{equation*}%
+\vb{P}_{e} = - \frac{n_{0}e^{2} \vb{E}_{0} \cos (\omega t + \varphi_{0})}{m \sqrt{(\omega_{0}^{2} - \omega^{2})^{2} + 4 \beta^{2}\omega^{2}}}.
+\end{equation*}
+Introduced to describe the properties of a light-absorbing medium, along with the complex refractive index \ssect{34.2.2} $\tilde{n} = n (1 - i \varkappa)$, are the \redem{complex dielectric susceptibility} $\tilde{\chi}_{e}$ and the
+\redem{complex dielectric constant} $\tilde{\varepsilon}_{r}$:
+\begin{equation*}%
+\tilde{\chi}_{e} = \frac{\tilde{P}_{e}}{\varepsilon_{0}\tilde{E}} \qand \tilde{\varepsilon}_{r} = 1 + \tilde{\chi}_{e}, \text{ whereas } \tilde{n}^{2} = 1 + \tilde{\chi}_{e}.
+\end{equation*}
+Here $\tilde{P}_{e}$ and $\tilde{E}$ are complex values of the polarization and strength of the field:
+\begin{equation*}%
+\tilde{P}_{e} = \frac{n_{0}e^{2}E_{0} \exp i(\omega t + \varphi_{0})}{m \sqrt{(\omega_{0}^{2} - \omega^{2})^{2} + 4 \beta^{2}\omega^{2}}} \qand \tilde{E} = E_{0} \exp i (omega t),
+\end{equation*}
 so that
-ft2 = /12 (1 - iK)2 = l
-e*<Po.
-8Qm V (o)q - co2)2 + 4p2cc
-nQe2 cos cp0
-n2 (1 -x*) = l-f
-80m Y (a)o - (02)2 + 4p2(02
-n0e2 (cog - co2) 
-= 1
-80m [(cog-co2)2 + 4P2co2] ’
-n0e1 sin cp0 2 rc0e2pco
-2n2x =
-80m Y (co2-co2)2 + 4p2co2 ' 'e0™ [(©§ - co2)2 + 4P2to2] *
+\begin{align*}%
+\tilde{n}^{2} & = n^{2} (1 - i \varkappa)^{2}\\
+&  = 1 + \frac{n_{0}e^{2}}{\varepsilon_{0} m \sqrt{(\omega_{0}^{2} - \omega^{2})^{2} + 4 \beta^{2}\omega^{2}}} \exp i \varphi_{0},\\
+n^{2} (1 - \varkappa^{2}) & = 1 + \frac{n_{0}e^{2} \cos \varphi_{0}}{\varepsilon_{0} m \sqrt{(\omega_{0}^{2} - \omega^{2})^{2} + 4 \beta^{2}\omega^{2}}} \\
+& = 1 + \frac{n_{0}e^{2} (\omega_{0}^{2} - \omega^{2})}{\varepsilon_{0} m [(\omega_{0}^{2} - \omega^{2})^{2} + 4 \beta^{2}\omega^{2}]},\\
+2 n^{2} \varkappa & = - \frac{n_{0}e^{2}\sin \varphi_{0}}{\varepsilon_{0} m \sqrt{(\omega_{0}^{2} - \omega^{2})^{2} + 4 \beta^{2}\omega^{2}}} \\
+& = \frac{2 n_{0}e^{2}\beta \omega}{\varepsilon_{0} m [(\omega_{0}^{2} - \omega^{2})^{2} + 4 \beta^{2}\omega^{2}]}.
+\end{align*}
 
-\subsection{}\label{34.5.4} In the classical electron theory of light dispersion in
-gases, each molecule of the gas is dealt with as a system of q
-linear oscillators. If coOJ* and are the natural angular frequency
-and damping factor of the ;th oscillator, then
-n2 (1 - x2) = 1
-Q
-nQe2 y
-8 0m
-3= 1 (ao'i -<o*)« + 4p;ffl*
-and
-n o.K = noe y
-zEl
+\subsection{}\label{34.5.4} In the classical electron theory of light dispersion in gases, each molecule of the gas is dealt with as a system of $q$ linear oscillators. If $\omega_{0j}$ and $\beta_{0j}$ are the natural angular frequency and damping factor of the $j$-th oscillator, then
+\begin{align*}%
+n^{2} (1 - \varkappa^{2}) & = 1 + \frac{n_{0}e^{2}}{\varepsilon_{0} m} \sum_{j=1}^{q} \frac{(\omega_{0}^{2} - \omega^{2}) f_{j}}{(\omega_{0}^{2} - \omega^{2})^{2} + 4 \beta^{2}\omega^{2}} \qand \\
+n^{2} \varkappa & = \frac{n_{0}e^{2}\omega}{\varepsilon_{0}m}  \frac{\beta_{j}f_{j}}{(\omega_{0}^{2} - \omega^{2})^{2} + 4 \beta^{2}\omega^{2}}
+\end{align*}
+The dimensionless coefficient $f_{j}$ characterizes the contribution of the $j$-th oscillator to the dispersion and absorption of light. It is called the \redem{oscillator strength}. In the classical theory of dispersion,
+the values of $\omega_{0j}$ and $f_{j}$ are assumed to he known from experimental investigations.
 
-e0m  (0)- (o2)2+4P*w* *
-The dimensionless coefficient fj characterizes the contribution of
-the /th oscillator to the dispersion and absorption of light. It is called the oscillator strength. In the classical theory of dispersion,
-the values of co07 and fj are assumed to he known from
-experimental investigations.
-For gases, 1 and n differs only slightly from unity, so that
-h2 - 1 = (n + 1) (n - 1) « 2 (n - 1). Therefore, the dependence
-of n on co is of the form
-+ 280m A ((D2J (B2)2 + 4p2<n2 •
-The curve of this equation is shown in Fig. 34.2.
-Anomalous dispersion is observed close to each of the frequencies
-co07.
+For gases, $\varkappa \ll 1$ and $n$ differs only slightly from unity, so that $n^{2} - 1 = (n + 1) (n - 1) \approx 2 (n - 1)$. Therefore, the dependence of $n$ on $\omega$ is of the form
+\begin{equation*}%
+n = 1+ \frac{n_{0}e^{2}}{2 \varepsilon_{0}m} \sum_{j=1}^{q} \frac{(\omega_{0}^{2} - \omega^{2}) f_{j}}{(\omega_{0}^{2} - \omega^{2})^{2} + 4 \beta^{2}\omega^{2}}.
+\end{equation*}
+\begin{figure}%[-3cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-34/fig-34-02.pdf}
+\sidecaption{Dependece of $n$ on $\omega$.\label{fig-34-02}}
+\end{figure}
+
+The curve of this equation is shown in \figr{fig-34-02}.
+Anomalous dispersion is observed close to each of the frequencies $\omega_{0j}$.
+
+
 
 \section{Vavilov-Cherenkov Radiation}
 \label{sec-34.6} 
 
 
-\subsection{}\label{34.6.1} Vavilov-Cherenkov radiation (or effect) is the radiation of
-light, differing from luminescence \ssect{39.7.1}, emitted in the motion
-of charged particles in a substance at velocities V greater
-than the phase velocity v of light in this substance. The condition
-for the existence of this radiation is: cln < V < c, where c
-is the velocity of light in free space (or in vacuum), and n > 1
-is the refractive index of the substance.
+\subsection{}\label{34.6.1} \redem{Vavilov-Cherenkov radiation} (or \redem{effect}) is the radiation of
+light, differing from luminescence \ssect{39.7.1}, emitted in the motion of charged particles in a substance at velocities $V$ greater than the phase velocity $v$ of light in this substance. The condition for the existence of this radiation is: $c/n < V < c$, where $c$ is the velocity of light in free space (or in vacuum), and $n > 1$ is the refractive index of the substance.
 
 In the process of Vavilov-Cherenkov radiation, the energy and
-velocity of the free emitting particle is reduced, i.e. the particle
-Is retarded. But, in contrast to braking radiation (bremsstrah-
-i ung) of slowly moving charged particles \ssect{31.3.4}, resulting from
-their change in velocity, the reduction in the velocity of particles
-in Vavilov-Cherenkov radiation is itself a consequence of this
-radiation. In other words, if the loss of energy of the particle,
+velocity of the free emitting particle is reduced, i.e. the particle is retarded. But, in contrast to braking radiation (bremsstrahlung) of slowly moving charged particles \ssect{31.3.4}, \redem{resulting from their change in velocity}, the reduction in the velocity of particles in Vavilov-Cherenkov radiation is itself a \redem{consequence} of this \redem{radiation}. 
+
+In other words, if the loss of energy of the particle,
 consumed in emitting Vavilov-Cherenkov radiation, could be
-replenished in some way and the particle would continue travelling
-in the substance at a “faster-than-light” velocity (V > v),
-Vavilov-Cherenkov radiation would still be observed, whereas
-there would be no braking radiation in this case.
+replenished in some way and the particle would continue travelling in the substance at a ``faster-than-light'' velocity $(V > v)$, Vavilov-Cherenkov radiation would still be observed, whereas there would be no braking radiation in this case.
 
-\subsection{}\label{34.6.2} A charged particle gives rise to short-duration polarization
-\ssect{18.2.2} of the substance in the vicinity of the points
-through which it travels. Hence, the molecules of the medium,
-lying on the path of the particle, become temporarily acting
-coherent sources \ssect{30.5.1} of elementary electromagnetic waves
+\subsection{}\label{34.6.2} A charged particle gives rise to short-duration polarization \ssect{18.2.2} of the substance in the vicinity of the points through which it travels. Hence, the molecules of the medium, lying on the path of the particle, become temporarily acting coherent sources \ssect{30.5.1} of elementary electromagnetic waves
 that interfere upon superposition.
-If V < v = c/n, the elementary waves cancel one another.
-Assuming that the charged particle travels at the velocity V
-(where V < v) along the OX axis (Fig. 34.3) and is at points
-A and B at the instants of time t and t + A/, respectively. The
-distance between A and B is I = VAt. The path difference of
-elementary waves, radiated from points A and B in the arbitrary
-direction n, making the angle a with vector V, is
-It is possible, for each value of the wavelength X, to find a value
-I = ia<K at which A = X/2, so that the elementary waves cancel
-one another. Thus
-l(z% -
-When I = radiation, in the direction n from any point M
-of portion AB of the path of the charged particle, is cancelled
-upon interference with radiation in the same direction from
-a like point N on the adjacent portion BC = AB = la, the
-distance between points M and N being MN = la Therefore,
-upon motion of a charged particle at uniform velocity in a
-straight line in a substance at a “slower-than-light” velocity,
-the particle docs not emit radiation.
 
-\subsection{}\label{34.6.3} If a particle travels in a substance at a “faster-than-
-light” velocity V > v dri, the value of laX, complying with
-the condition for the cancelling of elementary waves,
-X
-laX -
-2 v
-- - cos a
-can be found for all values of angle a, with the exception of
-a r c
-0 = arc cos - - arc cos -77 - . V nV
-For the direction 0 = a, the path difference of the elementary
-waves emitted by any two points A and B of the path of the
-charged particle (Fig. 34.3) equals zero. Thus
-A = DF = (v - V cos 0) At = 0.
+\begin{figure}%[-3cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-34/fig-34-03.pdf}
+\sidecaption{A charged particle emitting Vavilov-Cherenkov radiation.\label{fig-34-03}}
+\end{figure}
+
+If $V < v = c/n$, the elementary waves cancel one another.
+Assuming that the charged particle travels at the velocity $V$
+(where $V < v$) along the $OX$ axis (\figr{fig-34-03}) and is at points $A$ and $B$ at the instants of time $t$ and $t + \Delta t$, respectively. The distance between $A$ and $B$ is $l = V \Delta t$. The path difference of elementary waves, radiated from points $A$ and $B$ in the arbitrary direction $\vb{n}$, making the angle a with vector $\vb{V}$, is
+\begin{equation*}%
+\Delta = \seg{DF} = (v - V \cos \alpha) \Delta t = l \left( \dfrac{v}{V} - \cos \alpha \right).
+\end{equation*}
+It is possible, for each value of the wavelength $\lambda$, to find a value $l  = l_{\alpha \lambda}$ at which $\Delta = \lambda/2$, so that the elementary waves cancel
+one another. Thus
+\begin{equation*}%
+l_{\alpha \lambda} = \frac{\lambda}{2 \left( \dfrac{v}{V} - \cos \alpha \right)}.
+\end{equation*}
+When $l = l_{\alpha \lambda}$, radiation, in the direction n from any point $M$ of portion $AB$ of the path of the charged particle, is cancelled upon interference with radiation in the same direction from a like point $N$ on the adjacent portion $\seg{BC} = \seg{AB} = l_{\alpha \lambda}$, the distance between points $M$ and $N$ being $\seg{MN} = l_{\alpha \lambda}$. Therefore, upon motion of a charged particle at uniform velocity in a straight line in a substance at a ``slower-than-light'' velocity, the particle does not emit radiation.
+
+\subsection{}\label{34.6.3} If a particle travels in a substance at a ``faster-than-light'' velocity $V > v = c/n$, the value of $l_{\alpha \lambda}$, complying with the condition for the cancelling of elementary waves,
+\begin{equation*}%
+l_{\alpha \lambda} = \dfrac{\lambda}{2 \abs{\dfrac{v}{V} - \cos \alpha}},
+\end{equation*}
+can be found for all values of angle $\alpha$, with the exception of
+\begin{equation*}%
+\theta = \arccos \frac{v}{V} = \arccos \frac{c}{nV}.
+\end{equation*}
+For the direction $\theta = \alpha$, the path difference of the elementary waves emitted by any two points $A$ and $B$ of the path of the charged particle (\figr{fig-34-03}) equals zero. Thus
+\begin{equation*}%
+\Delta = \seg{DF} = (v - V \cos \theta) \Delta t = 0.
+\end{equation*}
 Consequently, elementary waves, propagating in the direction
-a = 0, reinforce one another upon interference, forming a resultant
-radiation in this direction. This is Vavilov-Cherenkov
-radiation. Light, emitted at each small portion of the path of
-a charged particle, is propagated along the elements of a cone,
-whose vertex 0 (Fig. 34.4) is located on this portion and whose35.i] P o l a r i z a t i o n o p L iG H t 4§5
-axis coincides with the path of the particle. The elements make
-the angle 0 = arc cos (c/nV) with the axis. The light is polarized
-so that vector E is normal to the surface of the cone, and
-vector II is tangent to it.
+$\theta = \alpha$, reinforce one another upon interference, forming a resultant radiation in this direction. This is Vavilov-Cherenkov radiation. 
+\begin{marginfigure}%[-3cm]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-34/fig-34-04.pdf}
+\sidecaption{Propagation cone of Vavilov-Cherenkov radiation.\label{fig-34-04}}
+\end{marginfigure}
+Light, emitted at each small portion of the path of a charged particle, is propagated along the elements of a cone, whose vertex $O$ (\figr{fig-34-04}) is located on this portion and whose axis coincides with the path of the particle. The elements make the angle $\theta = \arccos (c/nV)$ with the axis. The light is polarized so that vector $\vb{E}$ is normal to the surface of the cone, and vector $\vb{H}$ is tangent to it.
