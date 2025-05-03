@@ -1,0 +1,412 @@
+% !TEX root = handbook-physics.tex
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+
+
+
+
+
+\chapter{Thermal Radiation}
+\label{ch-36}
+
+\section{Thermal Radiation. Kirchhoff's Law}
+\label{sec-36.1} 
+
+
+\subsection{}\label{36.1.1} All bodies emit electromagnetic waves to one or another degree. Highly heated bodies, for instance, glow, whereas at ordinary temperatures they are the source of only invisible infrared radiation.
+
+Electromagnetic radiation, emitted by a substance and produced
+at the expense of its internal energy \ssect{9.1.2} is called \redem{thermal}, or \redem{heat radiation}. It depends only on the temperature and the optical properties of the radiating bodies. If the energy consumption of a body on thermal radiation is not replenished by supplying more heat to the body, its temperature gradually drops and the thermal radiation is reduced.
+
+\redem{Radiative heat exchange (heat exchange through radiation)} is the spontaneous process of transferring energy in the form of heat from a more heated body to a less heated one. It is accomplished by thermal radiation and the absorption of electromagnetic waves by these bodies.
+
+\subsection{}\label{36.1.2} Thermal radiation is the only kind that can be in a state of thermodynamic equilibrium \ssect{8.3.3} with matter. In equilibrium, the energy consumption on thermal radiation is compensated for by the absorption of the same amount of energy by the body owing to the radiation falling on it. \redem{Radiative (radiation)
+equilibrium} is set up in an adiabatically closed system (i.e. one that does not exchange heat with the external medium), all bodies of which are at the same temperature.
+
+\begin{marginfigure}%[-3cm] 
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-36/fig-36-01.pdf}
+\sidecaption{Heat exchange between two adiabatically closed systems.\label{fig-36-01}}
+\end{marginfigure}
+
+It follows from the second law of thermodynamics \ssect{11.3.2} that radiative equilibrium is independent of the material of the bodies that make up the closed thermodynamically equilibrium system. The volume density of the energy of radiation equilibrium and its frequency distribution are universal functions of the temperature. As a matter of fact, if this were not so, it would be possible to take two adiabatically closed systems $A$ and $B$ (\figr{fig-36-01}), at the same temperature $T_{A} = T_{B} = T$,
+and accomplish radiative heat exchange between them by making
+a small hole in the heatproof wall separating them. If the
+volume density of energy $E_{A}^{d}$ of system $A$ is greater than that
+$E_{B}^{d}$ of system $B$, i.e. $E_{A}^{d}> E_{B}^{d}$, then, owing to heat exchange between the systems, the radiant energy in system $A$ and its temperature should decrease and the radiant energy in system $B$ and its temperature should increase until the values of the volume energy densities in systems $A$ and $B$ become equal: $E_{A}^{d'} = E_{B}^{d'}$. But, in this case, $T'_{B} > T'_{A}$ so that the process being
+considered contradicts the second statement of the second law of thermodynamics \ssect{11.3.2}. Consequently, $E_{A}^{d}$ cannot be greater than $E_{B}^{d}$. In exactly the same way, $E_{B}^{d}$ cannot be greater than $E_{A}^{d}$, i.e. $E_{A}^{d} = E_{B}^{d} = E^{d} (T)$ is a universal function of
+the temperature.
+
+\subsection{}\label{36.1.3} Serving as the spectral characteristic of radiative equilibrium is the \redem{spectral density of the volume energy denstiy of this radiation}. Thus
+\begin{equation*}%
+\rho (\nu,\, T) = \dv{E^{d}}{\nu},
+\end{equation*}
+where $\dd E^{d}$ is the energy of radiative equilibrium with frequencies from $\nu$ to $\nu + \dd \nu$ enclosed within unit volume of the radiation field. The volume energy density of this field is
+\begin{equation*}%
+E^{d} = \int_{0}^{\infty} \rho (\nu,\, T) \dd \nu.
+\end{equation*}
+Radiation equilibrium is \redem{isotropic}, i.e. it is not polarized and all directions of its propagation are equally probable. The energy $\dd E$ of radiation equilibrium in vacuum at frequencies from $\nu$ to $\nu + \dd \nu$ incident in unit time on unit area of the surface of each of the bodies of a thermodynamically equilibrium system is equal to
+\begin{equation*}%
+\dd E = \frac{c}{4} \rho (\nu,\, T) \dd \nu.
+\end{equation*}
+where $c$ is the velocity of light in free space (or in a vacuum).
+
+\subsection{}\label{36.1.4} The radiant exitance* (total emissive power) of a body is
+the physical quantity Mc, numerically equal to the energy of
+electromagnetic waves of all possible frequencies (or wavelengths)
+from 0 to oo** radiated in unit time from unit area of a body’s
+surface.
+* Formerly called the radiant emittance.
+** It is practically sufficient to be restricted to the range of
+frequencies and wavelengths of optical radiation \ssect{31.4.3}.
+
+The emissive power (spectral density of radiant exitance) of a body
+is the physical quantity numerically equal to the ratio of the
+energy dE radiated in unit time from unit area of the surface of
+the body by electromagnetic waves in a narrow range of frequencies
+from v to v + dv (or wavelengths in vacuum from X to
+X dX), to the width of this range:
+dE dE c
+T  ~~dv~ °r n ~~dT’ rx~ ’W rv'
+where c is the velocity of light in vacuum. The values of rv
+(or rx) depend upon the frequency (or wavelength), temperature, chemical composition of the body and the condition of its surface.
+The radiant exitance of a body is related to rv and rx by the
+equations
+oo oo
+
+\subsection{}\label{36.1.5} The absorptance (monochromatic absorption coefficient)
+of a body is the dimensionless quantity av which indicates what
+fraction of the energy of electromagnetic waves of frequencies
+from v to v + dv, incident on the surface of the body, is absorbed
+by it. Thus
+av =    a b s a
+dEinc   
+The value of av depends upon the frequency, temperature, chemical
+composition of the body and the condition of its surface.
+A blackbody (denoted by a superscript asterisk) is one that completely
+absorbs all incident radiation, regardless of its direction,
+spectral composition and polarization, without reflecting
+or transmitting any: a* = 1. Though a blackbody is a theoretical
+ideal, it can be nearly realized in practice by an almost complete
+enclosure with a small opening (Fig. 36.2). Light entering
+the enclosure through hole O undergoes repeated reflection from
+the walls. At this the energy of the incident light is practically
+completely absorbed by the walls of the enclosure regardless
+of the material of which they are made. The emissive power of
+a blackbody is denoted in the following by r* (or r%) and its
+radiant exitance by M*.
+A greybody is one whose absorptance is less than unity and is
+independent of the frequency (or wavelength) of the light, the
+directions of its propagation and polarization:
+dv = 0 and <zgr = a g r .
+
+\subsection{}\label{36.1.6} According to the principle of detailed balance any microscopic
+process in an equilibrium system should proceed at the
+same rate as the reverse process. This principle
+of statistical physics enables a relation
+to be found between the emissive
+power rv and the absorptance av of any
+opaque body. Assume that the body is part
+of a thermodynamically equilibrium system
+at the temperature T. The energy radiated
+per unit time from unit area of the
+surface of the body being considered in
+the frequency range from v to v + dv is
+r/Arad = rvdv. During the same time, the same portion of the surface of the body absorbs
+a part of the energy of the radiation equilibrium \ssect{36.1.3}
+incident on this’surface. It is equal to dEa  )S — av (cl4) p (v, l')dv.
+Since, according to the principle of detailed balance, dETa —
+= dA'abs*
+r v
+av r* = — P(v, T).
+This equation expresses Kirchhoff's law (for radiation), which
+states that the ratio of the emissive power of a body to its absorptance
+does not depend upon the nature of the body and is
+equal to the emissive power r* of a blackbody at the same temperature
+and frequency values.
+The dependence of r* on v and T is called KirchhofJ's function:
+
+\subsection{}\label{36.1.7} It follows from Kirchhoffs law that the radiant exitance
+\ssect{36.1.4} of a body is equal to
+oo
+Me = j a vr* dv.
+o
+In particular, the radiant exitance of a greybody is
+oo
+M'f'== a*TM*    where M* = j r*dv,
+o
+is the radiant exitance of a blackbody at the same temperature.
+For a nongrey body
+Me = PM*,
+where P is the total degree of blackness of the body. It depends
+on the material of the body, the condition of its surface and the
+temperature. For all bodies except a blackbody, P < 1.
+
+\subsection{}\label{36.1.8} Radiation equilibrium at the temperature T is identical
+to thermal radiation of a blackbody at the same temperature.
+Therefore, it is often called blackbody radiation. The relation
+between the radiant exitance of a blackbody and the volume density
+of the energy of blackbody radiation is of the form
+oo
+J p(v, T)dv.
+0
+\section{Stefan-Boltzmann and Wien Laws}
+\label{sec-36.2} 
+
+
+
+\subsection{}\label{36.2.1} The Stefan-Boltzmann law states that the radiant exitance
+of a blackbody is proportional to the fourth power of its
+absolute temperature. Thus
+M* = oT  
+where a — 5.67 X 10-H W-ni“2-K“4 is the Stef an-Boltzmann
+constant. This law can be derived theoretically by considering
+the radiative equilibrium in an enclosed cavity by thermodynamic
+methods.
+
+\subsection{}\label{36.2.2} The dependence of the emissive power r* of a blackbody
+on the frequency v for several constant values of the temperature
+is shown in Fig. 36.3. In the region of low frequencies, r* CC
+oc v27   whereas for the region of high frequencies (the right-
+hand branch of the curves far away from the maxima) r* oc
+oc v3 exp [—aivlT], where a1 is a constant factor.
+The radiant energy of a blackbody is nonuniformly distributed
+in its spectrum. A blackbody displays almost no radiation in
+Fig. 36.3 . Fig. 36.4
+the regions of very high and very low frequencies. As the temperature
+is raised, the maximum of r* is shifted toward the
+higher frequencies in accordance with the law: vm = /q7   where
+vm is the frequency corresponding to maximum r* at the temperature
+T, and bj is a constant factor.
+The dependence of the emissive power of a blackbody —
+= cr*/2 \ssect{36.1.4} on the wavelength X is shown in Fig. 36.4.
+As the temperature of the blackbody is raised, the maximum of
+rj is shifted toward the shorter wavelengths in accordance with
+the Wien displacement law:
+where b — 2.9 x 10“3 m-K is the Wien constant.
+
+\subsection{}\label{36.2.3} All attempts that were made failed to theoretically sub­ stantiate the experimentally found form of Kirchhoff’s function,
+r* = / (v, T), shown in Fig. 36.3, within the framework
+of classical physics. Using thermodynamic methods, the Wien
+formula was found:
+where cp (vlT) is an unknown function of v/T.
+Rayleigh and Jeans applied the laws of electrodynamics and
+equipartition of energy in an equilibrium system \ssect{10.6.4} to
+obtain the Rayleigh-Jeans law:
+where k is Boltzmann’s constant \ssect{8.4.5}.
+The Rayleigh-Jeans law agreed with experimental data only
+in the region of low frequencies. Moreover, it leads to the absurd
+conclusion that at any temperature the radiant exitance
+M* of a blackbody and the volume density of energy of
+radiation equilibrium are inhnitely large. This conclusion, arrived
+at by classical physics in the problem of explaining the
+spectral distribution of radiation equilibrium, has been aptly
+named the “ultraviolet catastrophe”.
+
+\section{Planck's Formula}
+\label{sec-36.3} 
+
+
+\subsection{}\label{36.3.1} The volume density of energy of radiation equilibrium
+(blackbody radiation) in a closed cavity, as well as the energy
+distribution of this radiation in frequency are independent of
+the material of the cavity walls and are fully determined by the temperature. Therefore, an infinite system of harmonic oscillators
+with all possible natural frequencies can be taken as a theoretical
+model of a blackbody. Each of such oscillat ors corresponds
+to a monochromatic component of blackbody radiation. Let
+(Ev) be the average energy of an oscillator with the naturalplaNCK’S formula 519
+frequency v. Then, according to calculations, the radiant exi-
+l ance of a blackbody is
+2jiv2(Ev).
+If kT is taken for (Ev), as follows from the classical law of the
+equipartition of energy \ssect{10.6.4}*, then the preceding expression
+for r% coincides with the Rayleigh-Jeans law (36.2.3).
+
+\subsection{}\label{36.3.2} Planck was able to find the correct expression for the
+average energy (Ev) of an oscillator and for the Kirchhoff
+function by introducing the quantum hypothesis, which was entirely
+alien to classical physics. It is assumed in classical physics
+that the energy of any system can vary in a continuous manner,
+i.e. that it can take any arbitrarily close consecutive values.
+According to Planck’s quantum hypothesis, the energy
+Ev of an oscillator can have only definite discrete (quantized)
+values, equal to a whole number of elementary portions, called
+energy quanta Ev0. Thus
+Ev = nEvo, where n = 0, 1, 2, ... .
+If it is assumed that-the oscillator distribution in possible discrete
+energy states is described by the Boltzmann distribution
+law \ssect{10.4.2}, the probability pn of finding the oscillator in a
+state with the energy nEVQ at the temperature T is equal to
+Pn = C exp [—nEvJkT].
+Here k is the Boltzmann constant \ssect{8.4.5} and C is a constant
+factor determined from the normalization condition:
+2 Pn = i, i-0- C~-
+71 = 0 V exp [ — nEvJkT]
+71 = 0
+* One oscillatory degree of freedom of an oscillator accounts for twice as much energy, on an average, as one degree of translational
+or rotary motion, because the oscillator has not only
+kinetic, but potential energy as well. On an average, this potential
+energy is equal to the kinetic energy.
+The average value of the oscillator energy is
+oo
+2 n exp [~nEV0/kT]
+71= 0
+(Ev)—    pnnEv0— Evo----------------------
+n=0 V, exp [ — nEvJkT]
+n= 0
+from which
+(Ev) = - E v
+2 exp< -    >
+71=0
+2 exp ( —»£)
+71=0
+= — Ev0 -gr- In 2 exp "6) >
+71=0
+where £>= E v0/kT. Since
+oo
+2    P ( - " 6) = 1   e x 1p (   a
+7 1 = 0
+and
+— 111 V exp ( — nQ = In (1 — ,
+71=0
+then
+E.VO
+(Av> =
+— and r* = 2nv2 Ev
+-1 C2 EVQ/ k T   i
+Comparing this expression for r* with the Wien formula \ssect{36.2.3},
+it follows that a quantumof energy is equal to
+Ev0 = hv<
+where h is a universal constant, called Planck's constant (Appendix
+II).
+body is
+M 2nv2 hv
+rv = eh v/hT  i •
+Planck's radiation formula 1‘or the emissive power r* of a black-
+Accordingly, the spectral density of radiation equilibrium \ssect{36.1.3}
+is equal to
+p(v, T) = 8 j t v 2
+cA
+hv
+hv/UT
+  | *
+\subsection{}\label{36.3.3} At low frequencies (/w<C /c7T), exp [hvtkT — 1]   
+   hv/kT and the Planck radiation formula coincides with the
+Hayleigh-Jeans law \ssect{36.2.3}.
+Following from Planck’s radiation formula is the Stel'an-Boltz-
+mann law \ssect{36.2.1}:
+7 v?dv
+e c2 J ehv/hT i
+0
+oo
+  2Jt/c4r 4 !‘ Tj? dx     2nbk*
+— c2fc» ) er]—l ~ 15c2fc3 ‘
+0
+The Planck constant is related to the Stefan-Boltzmann constant
+a \ssect{36.2.1} as follows:
+* = V 1 5    - = 6-B 2 x1 0 ' 34 J's -
+
+\subsection{}\label{36.3.4} The Planck formula for the emissive power of a black-
+body is
+*   2jtc2/*. 1
+The wavelength Xm corresponding to maximum r% is determined
+from the transcendental equation
+xex — bex 5 = 0, where x = hc/XmkT.
+The root of this equation x — 4.965, and displacement law \ssect{36.2.2}:
+h c
+% nT — b, where b—    a — 2.9 X 10~3 m-K.
+4.965 k
+satisfies the Wien
+
+
+\section{Optical Pyrometry}
+\label{sec-36.4} 
+
+
+
+\subsection{}\label{36.4.1} Optical pyrometry is the name given to miscellaneous
+techniques for measuring high temperatures based on the laws
+of thermal radiation. The instruments used for this purpose are
+called pyrometers.
+Radiation pyrometers record the integrated radiation of the heated
+body being investigated; optical pyrometers record the radiation
+of a heated body in one or two narrow portions of the
+spectrum.
+
+\subsection{}\label{36.4.2} The radiant flux is the average power of optical radiation
+\ssect{31.4.3} during a time considerably greater than a period
+of oscillation of the electromagnetic field of the light.
+The irradiance Ee (radiant flux density) of a surface is the ratio
+of the flux of incident radiation on this surface to its area. Thus
+Ee = d<  >JdS, where dOe is the radiant flux incident on a portion
+of the surface of area dS.
+The radiant intensity Ie of a radiative body is the radiant flux
+emitted by the body within a unit solid angle. Thus Je =
+= dt  JdQ, where dOe is the radiant flux within the solid angle
+dQ.
+
+\subsection{}\label{36.4.3} The radiance Le of the portion dS of a radiative surface
+in a given direction is the ratio of the radiant intensity dle
+of area dS in the direction being considered to the area of the
+projection of dS on a plane perpendicular to the direction. Thus
+L dTe
+dS cos <p *
+where cp is the angle between the specified direction and the
+normal to the surface of area dS,:The spectral density of the radiance is the ratio of the radiance
+dLe, corresponding to a narrow band of the optical spectrum,
+to the width of this band. Thus
+bv = —
+dv bx dL/g
+-- and
+
+\subsection{}\label{36.4.4} A source of optical radiation is said to obey Lambert's
+law, or to be a cosine radiator, if its radiance Le, as well as its
+spectral densities bv and bx are the same in all directions, i.e.
+are independent of angle <p. A blackbody could be called a cosine
+radiator.
+The radiance of a cosine radiator and its spectral densities are
+related to its radiant exitance and its spectral densities \ssect{36.1.4}
+as follows:
+   e Me
+Jt ’bv = — and b = — . 3X x
+
+\subsection{}\label{36.4.5} In optical pyrometry, distinction is made between radiation,
+brightness and colour temperatures of a body.
+The radiation temperature Tv of a body is the temperature of
+a blackbody at which its radiance L* is equal to the radiance
+Le of the given body. If the body being investigated is a cosine
+radiator, whose total degree of blackness is P \ssect{36.1.7}, then,
+from the condition that Le (T) = L* (Tr), where T is the true
+temperature of the body, it follows that
+§M*(T) = M*(Tt) and 1  .
+
+\subsection{}\label{36.4.6} The brightness (luminance) temperature T)y of a body is
+the temperature of a blackbody at which its spectral density
+bfv of radiance fora definite wavelength X0 is equal to the spectral
+density bx of radiance for the given body for the same wavelength:
+bx (k0, T) - (X0, 77b). Usually X0 —   660 nin (red
+light).
+For a cosine radiator, whose absorptance \ssect{36.1.5} for light of
+the wavelength A,0 at the temperature T of the body is equal to
+ax (>v0, T), it follows from Kirchholf’s law \ssect{36.1.6} and from
+Planck’s formula \ssect{36.3.4} that
+T) r*x (X0, T) = r%(  0, Tb)
+and
+r) [uxp ( ) “1J =cxp (S r ) - 1 *
+where a2 = hc/k. Since ax (?t0, T)<; 1, then T > TV
+
+\subsection{}\label{36.4.7} The colour temperature Tc of a body is the temperature of
+a blackbody at which the relative distributions of the spectral
+density of the radiance b% of the blackbody and that bx of the
+body being considered are close to one another to the maximum
+degree in the visible region of the spectrum. Thus
+bx(ku T)    Tc)
+T) ~ b*(k2, Tc) *
+For a cosine radiator
+0,(  1, T) rUX,, Tc)
+rx(h2, T) - r*(K, Tc) •
+As a rule, — 655 nm (red light) and %2 — 470 nm (green
+light). The colour temperature of a greybody  \ssect{36.1.5} coincides
+with its true temperature and can be found by Wien’s displacement
+law  \ssect{36.2.2}.
