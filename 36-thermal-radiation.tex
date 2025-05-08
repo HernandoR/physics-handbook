@@ -272,91 +272,68 @@ The root of this equation $x = 4.965$, and $\lambda_{m}$ satisfies the Wien disp
 
 
 
-\subsection{}\label{36.4.1} Optical pyrometry is the name given to miscellaneous
-techniques for measuring high temperatures based on the laws
-of thermal radiation. The instruments used for this purpose are
-called pyrometers.
-Radiation pyrometers record the integrated radiation of the heated
-body being investigated; optical pyrometers record the radiation
-of a heated body in one or two narrow portions of the
-spectrum.
+\subsection{}\label{36.4.1} \redem{Optical pyrometry} is the name given to miscellaneous techniques for measuring high temperatures based on the laws of thermal radiation. The instruments used for this purpose are called \redem{pyrometers}.
 
-\subsection{}\label{36.4.2} The radiant flux is the average power of optical radiation
-\ssect{31.4.3} during a time considerably greater than a period
-of oscillation of the electromagnetic field of the light.
-The irradiance Ee (radiant flux density) of a surface is the ratio
-of the flux of incident radiation on this surface to its area. Thus
-Ee = d<  >JdS, where dOe is the radiant flux incident on a portion
-of the surface of area dS.
-The radiant intensity Ie of a radiative body is the radiant flux
-emitted by the body within a unit solid angle. Thus Je =
-= dt  JdQ, where dOe is the radiant flux within the solid angle
-dQ.
+\redem{Radiation pyrometers} record the integrated radiation of the heated body being investigated; optical pyrometers record the radiation of a heated body in one or two narrow portions of the spectrum.
 
-\subsection{}\label{36.4.3} The radiance Le of the portion dS of a radiative surface
-in a given direction is the ratio of the radiant intensity dle
-of area dS in the direction being considered to the area of the
-projection of dS on a plane perpendicular to the direction. Thus
-L dTe
-dS cos <p *
-where cp is the angle between the specified direction and the
-normal to the surface of area dS,:The spectral density of the radiance is the ratio of the radiance
-dLe, corresponding to a narrow band of the optical spectrum,
-to the width of this band. Thus
-bv = -
-dv bx dL/g
--- and
+\subsection{}\label{36.4.2} The \redem{radiant flux} $\Phi_{e}$ is the average power of optical radiation \ssect{31.4.3} during a time considerably greater than a period of oscillation of the electromagnetic field of the light.
 
-\subsection{}\label{36.4.4} A source of optical radiation is said to obey Lambert's
-law, or to be a cosine radiator, if its radiance Le, as well as its
-spectral densities bv and bx are the same in all directions, i.e.
-are independent of angle <p. A blackbody could be called a cosine
-radiator.
-The radiance of a cosine radiator and its spectral densities are
-related to its radiant exitance and its spectral densities \ssect{36.1.4}
-as follows:
-   e Me
-Jt ’bv = - and b = - . 3X x
+The \redem{irradiance} $E_{e}$ (\redem{radiant flux density}) of a surface is the ratio of the flux of incident radiation on this surface to its area. Thus $E_{e} = \dv*{\Phi_{e}}{S}$, where $\dd \Phi_{e}$ is the radiant flux incident on a portion
+of the surface of area $\dd S$.
 
-\subsection{}\label{36.4.5} In optical pyrometry, distinction is made between radiation,
-brightness and colour temperatures of a body.
-The radiation temperature Tv of a body is the temperature of
-a blackbody at which its radiance L* is equal to the radiance
-Le of the given body. If the body being investigated is a cosine
-radiator, whose total degree of blackness is P \ssect{36.1.7}, then,
-from the condition that Le (T) = L* (Tr), where T is the true
-temperature of the body, it follows that
-§M*(T) = M*(Tt) and 1  .
+The \redem{radiant intensity} $I_{e}$ of a radiative body is the radiant flux emitted by the body within a unit solid angle. Thus $I_{e} = \dv*{\Phi_{e}}{\Omega}$, where $\dd \Phi_{e}$ is the radiant flux within the solid angle $\dd \Omega$.
 
-\subsection{}\label{36.4.6} The brightness (luminance) temperature T)y of a body is
-the temperature of a blackbody at which its spectral density
-bfv of radiance fora definite wavelength X0 is equal to the spectral
-density bx of radiance for the given body for the same wavelength:
-bx (k0, T) - (X0, 77b). Usually X0 -   660 nin (red
-light).
-For a cosine radiator, whose absorptance \ssect{36.1.5} for light of
-the wavelength A,0 at the temperature T of the body is equal to
-ax (>v0, T), it follows from Kirchholf’s law \ssect{36.1.6} and from
+\subsection{}\label{36.4.3} The \redem{radiance} $L_{e}$ of the portion $\dd S$ of a radiative surface in a given direction is the ratio of the radiant intensity $\dd I_{e}$
+of area $\dd S$ in the direction being considered to the area of the projection of dS on a plane perpendicular to the direction. Thus
+\begin{equation*}%
+L_{e} = \frac{\dd I_{e}}{\dd S \cos \varphi}
+\end{equation*}
+where $\varphi$ is the angle between the specified direction and the normal to the surface of area $\dd S$.
+
+The \redem{spectral density of the radiance} is the ratio of the radiance $\dd L_{e}$, corresponding to a narrow band of the optical spectrum, to the width of this band. Thus
+\begin{equation*}%
+b_{\nu} = \dv{L_{e}}{\nu} \qand b_{\lambda} = \dv{L_{e}}{\lambda}.
+\end{equation*}
+
+\subsection{}\label{36.4.4} A source of optical radiation is said \redem{to obey Lambert's law}, or \redem{to be a cosine radiator}, if its radiance $L_{e}$, as well as its spectral densities $b_{\nu}$ and $b_{\lambda}$ are the same in all directions, i.e. are independent of angle $\varphi$. A blackbody could be called a cosine radiator.
+
+The radiance of a cosine radiator and its spectral densities are related to its radiant exitance and its spectral densities \ssect{36.1.4} as follows:
+\begin{equation*}%
+L_{e} = \frac{M_{e}}{\pi}, \quad b_{\nu} = \dv{r_{\nu}}{\pi} \qand b_{\lambda} = \dv{r_{\lambda}}{\pi}.
+\end{equation*}
+
+
+\subsection{}\label{36.4.5} In optical pyrometry, distinction is made between radiation, brightness and colour temperatures of a body.
+
+The \redem{radiation temperature} $T_{r}$ of a body is the temperature of a blackbody at which its radiance $L_{e}^{*}$ is equal to the radiance $L_{e}$ of the given body. If the body being investigated is a cosine radiator, whose total degree of blackness is $\beta$ \ssect{36.1.7}, then,
+from the condition that $L_{e} (T) = L_{e}^{*} (T_{r})$, where $T$ is the true temperature of the body, it follows that
+\begin{align*}%
+\beta M_{e}^{*} (T) & = M_{e}^{*} (T_{r}) \qand \\
+T & = \frac{T_{r}}{\sqrt[4]{\beta}} \geqslant T_{r}.
+\end{align*}
+
+\subsection{}\label{36.4.6} The \redem{brightness (luminance) temperature} $T_{b}$ of a body is the temperature of a blackbody at which its spectral density $b_{\lambda}^{*}$ of radiance for a definite wavelength $\lambda_{0}$ is equal to the spectral density $b_{\lambda}$ of radiance for the given body for the same wavelength: $b_{\lambda} (\lambda_{0}, T) = b_{\lambda}^{*}(\lambda_{0}, T_{b})$. Usually $\lambda_{0} =   \SI{660}{\nano\meter}$ (red light).
+
+For a cosine radiator, whose absorptance \ssect{36.1.5} for light of the wavelength  $\lambda_{0}$ at the temperature $T$ of the body is equal to $\alpha_{\lambda} (\lambda_{0}, T)$, it follows from Kirchholf’s law \ssect{36.1.6} and from
 Planck’s formula \ssect{36.3.4} that
-T) r*x (X0, T) = r%(  0, Tb)
+\begin{equation*}%
+\alpha_{\lambda} (\lambda_{0}, T)\, r_{\lambda}^{*} (\lambda_{0}, T) =  r_{\lambda}^{*} (\lambda_{0}, T_{b}),
+\end{equation*}
 and
-r) [uxp ( ) “1J =cxp (S r ) - 1 *
-where a2 = hc/k. Since ax (?t0, T)<; 1, then T > TV
+\begin{equation*}%
+\alpha_{\lambda} (\lambda_{0}, T)\left[ \exp \left(\frac{a_{2}}{\lambda_{0}T_{b}}\right) - 1 \right] = \exp \left(\frac{a_{2}}{\lambda_{0}T}\right) - 1, 
+\end{equation*}
+where $a_{2} = hc/k$. Since $a_{\lambda}(\lambda_{0}, T) \leqslant 1$, then $T \geqslant T_{b}$.
 
-\subsection{}\label{36.4.7} The colour temperature Tc of a body is the temperature of
-a blackbody at which the relative distributions of the spectral
-density of the radiance b% of the blackbody and that bx of the
-body being considered are close to one another to the maximum
-degree in the visible region of the spectrum. Thus
-bx(ku T)    Tc)
-T) ~ b*(k2, Tc) *
+\subsection{}\label{36.4.7} The \redem{colour temperature} $T_{c}$ of a body is the temperature of a blackbody at which the relative distributions of the spectral density of the radiance $b_{\lambda}^{*}$ of the blackbody and that $b_{\lambda}$ of the body being considered are close to one another to the maximum degree in the visible region of the spectrum. Thus
+\begin{equation*}%
+\frac{b_{\lambda} (\lambda_{1}, T)}{b_{\lambda} (\lambda_{2}, T)} = \frac{b_{\lambda}^{*} (\lambda_{1}, T_{c})}{b_{\lambda}^{*} (\lambda_{2}, T_{c})} .
+\end{equation*}
 For a cosine radiator
-0,(  1, T) rUX,, Tc)
-rx(h2, T) - r*(K, Tc) •
-As a rule, - 655 nm (red light) and %2 - 470 nm (green
-light). The colour temperature of a greybody  \ssect{36.1.5} coincides
-with its true temperature and can be found by Wien’s displacement
-law  \ssect{36.2.2}.
+\begin{equation*}%
+\frac{r_{\lambda} (\lambda_{1}, T)}{r_{\lambda} (\lambda_{2}, T)} = \frac{r_{\lambda}^{*} (\lambda_{1}, T_{c})}{r_{\lambda}^{*} (\lambda_{2}, T_{c})} .
+\end{equation*}
+As a rule, $\lambda_{1} = \SI{655}{\nano\meter}$ (red light) and $\lambda_{1} = \SI{470}{\nano\meter}$ (green light). The colour temperature of a greybody \ssect{36.1.5} coincides with its true temperature and can be found by Wien’s displacement law \ssect{36.2.2}.
 
 
 
