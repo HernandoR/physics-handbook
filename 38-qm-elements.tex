@@ -96,115 +96,81 @@ highest. No particles are observed at the places where, according to the statist
 \label{sec-38.2} 
 
 
-\subsection{}\label{38.2.1} The position of a particle in space at a given instant
-of time is determined in quantum mechanics by specifying its
-Schrddinger wave function (also called the psi function or the
-probability amplitude)  (x, y, z, i). The probability dw that
-the particle is within the element dV of volume is proportional
-to | of) |2 and to the element dV of volume. Thus
-dw = | t|) |2 dV,
-where | 2 is the square of the magnitude of the psi function:
-| > |2 = ilnj)*. Here |)* is a function that is the complex conjugate
-of 'll). The quantity | i|) |2 is the probability density | i|) |2 =
-= dw/dV = p and specifies the probability of the particle oc­ cupying the given point in space. The intensity of the de Broglie
-wave is determined by the quantity | a|) |2.
+\subsection{}\label{38.2.1} The position of a particle in space at a given instant of time is determined in quantum mechanics by specifying its \redem{Schr\"odinger wave function} (also called the \redem{psi function} or the \redem{probability amplitude})  $\psi (x,\, y,\, z,\, t)$. The probability $\dd w$ that the particle is within the element $\dd V$ of volume is proportional to $\abs{\psi}^{2}$ and to the element $\dd V$ of volume. Thus
+\begin{equation*}%
+\dd w = \abs{\psi}^{2}\, \dd V,
+\end{equation*}
+where $\abs{\psi}^{2}$ is the square of the magnitude of the psi function: $\abs{\psi}^{2} = \psi \psi^{*}$. Here $\psi^{*}$ is a function that is the complex conjugate of $\psi$. The quantity $\abs{\psi}^{2}$ is the \redem{probability density} $\abs{\psi}^{2} = \dv*{w}{V} = \rho$ and specifies the probability of the particle occupying the given point in space. The intensity of the de Broglie wave is determined by the quantity $\abs{\psi}^{2}$.
 
-\subsection{}\label{38.2.2} Following from the definition of the psi function is the
-normalization condition for probabilities:
-in which the triple integral with respect to volume is calculated
-along the coordinates x, y and z, from—oo to+°°, i.e.
-throughout the whole infinite space. The normalization condition
-indicates that it is a certain event that the particle is some­ where in space and the probability of this event should be unity-
+\subsection{}\label{38.2.2} Following from the definition of the psi function is the \redem{normalization condition for probabilities}:
+\begin{equation*}%
+ \iiint \abs{\psi}^{2}\, \dd V = 1,
+\end{equation*}
+in which the triple integral with respect to volume is calculated along the coordinates $x$, $y$ and $z$, from $-\infty$ to $+\infty$, i.e. throughout the whole infinite space. The normalization condition indicates that it is a certain event that the particle is some­ where in space and the probability of this event should be unity.
 
-\subsection{}\label{38.2.3} The wave function oj? (a:, yt z, t) is the main characteristic
-of the state of microobjects (atoms, molecules and ele-:i8.2] 
-incntary particles). This function is made use of to calculate the
-average value of some physical quantity L that characterizes
-the object which is in the state described by the wave function
-Thus
-(L) = L 1 |2 dx dy dz,
-where (L) is the average value of L and integration is carried
-out as indicated in Section~\ssect{38.2.2}.
+\subsection{}\label{38.2.3} The wave function $\psi(x, \,y,\, z,\, t)$ is the main characteristic of the state of micro-objects (atoms, molecules and elementary particles). This function is made use of to calculate the average value of some physical quantity $L$ that characterizes the object which is in the state described by the wave function $\psi$. Thus
+\begin{equation*}%
+\expval{L} = \iiint L \abs{\psi}^{2}\, \dd x \dd y \dd z,
+\end{equation*}
+where $\expval{L}$ is the average value of $L$ and integration is carried out as indicated in Section~\ssect{38.2.2}.
 
-\subsection{}\label{38.2.4} The fundamental differential equation of quantum mechanics*,
-concerning the wave function a|) ( x, y, z, t) is called
-the Schrodinger time-dependent wave equation. It determines
-the psi function for microparticles in a field of force with the
-potential energy U (x, y, z, t) \ssect{3.3.1} at the velocity i;< c,
-where c is the velocity of light in free space. The Schrodinger
-equation is of the form
-dib in — = — 2 Aop + t/ (x, y, z,
-where A is the Laplace operator, m is the mass of the particle,
-h — hi2jt, h is Planck's constant, and i = Y —1.
-The Schrodinger equation is supplemented by the following
-conditions that*are imposed on the psi function:
-(a) the psi function should be finite, single-valued and continuous;
-(b) the partial derivatives d|)/dx, d>/dy and d)/dz should be
-continuous;
-(c) the function | |2 should be integrable, i.e. the integral
-+ oo
-| ij) |2 dV should be finite. In the simplest cases, thiscon-
-— oo
-dition is reduced to the normalization of probabilities (38.2.2).
+\subsection{}\label{38.2.4} The fundamental differential equation of quantum mechanics\sidenote{See the second footnote to \ssect{38.1.1}.}, concerning the wave function $\psi(x, \,y,\, z,\, t)$ is called the \redem{Schr\"odinger time-dependent wave equation}. It determines the psi function for microparticles in a field of force with the potential energy $U (x, \,y,\, z,\, t)$ \ssect{3.3.1} at the velocity $v \ll c$, where $c$ is the velocity of light in free space. The Schr\"odinger equation is of the form
+\begin{equation*}%
+i \hbar \pdv{\psi}{t} = -\frac{\hbar^{2}}{2m} \laplacian \psi + U(x, \,y,\, z,\, t) \psi,
+\end{equation*}
+where $\laplacian$ is the Laplace operator, $m$ is the mass of the particle, $\hbar = h/2\pi$, $h$ is Planck's constant, and $i = \sqrt{-1}$.
 
-\subsection{}\label{38.2.5} In the case when the psi function is time-independent,
-i.e. i|j = (x, y, z), it satisfies the Schrodinger steady-state
-* gee the secopd footpote Ip Section~\ssect{38.1.1}
-equation:
-where E is the total energy of the particle. The remaining notation
-is given in Section~\ssect{38.2.4}. The psi functions satisfying the
-Schrodinger equation for the given form of U = U (xy y, z)
-are called eigenfunctions. They exist only at definite values of E,
-called the eigenvalues of the energy. The whole set of eigenvalues
-of E forms the energy spectrum of the particle. If U is a monotonic
-function and U -> 0 at infinity, then in the region E < 0, the
-eigenvalues of the energy form a discrete spectrum. The most
-important problem of quantum mechanics is to find the eigenvalues
-and eigenfunctions of particles (or systems of particles).
+The Schr\"odinger equation is supplemented by the following
+conditions that are imposed on the psi function:
+\begin{enumerate}[label=(\alph*),noitemsep]
+\item the psi function should be finite, single-valued and continuous;
+\item the partial derivatives $\pdv*{\psi}{x}$, $\pdv*{\psi}{y}$ and $\pdv*{\psi}{z}$ should be continuous;
+\item the function $\abs{\psi}^{2}$ should be integrable, i.e. the integral $\iiint^{+\infty}_{-\infty} L \abs{\psi}^{2}\, \dd V $ should be finite. In the simplest cases, this condition is reduced to the normalization of probabilities \ssect{38.2.2}.
+\end{enumerate}
 
-\subsection{}\label{38.2.6} Schrodinger's time-dependent equation has the solution:
-J/. Z, = y, z)e~lEt/h.
-The state of the particle at the given instant of time is described
-by a periodic function of time with the angular frequency
-co = Elh, determined by the total energy E of the particle.
-This corresponds to the relation between the total energy E of
-the particle and the de Broglie wave frequency \ssect{38.1.8}.
-If a particle is in a definite energy state with the energy E =
-= const, the probability dw of finding it in the element dV of
-volume is independent of time. Thus
-dw = | p |2 dV = ijnl)* dV.
-This is said to be the steady state of the particle. An atom in the
-steady state has constant energy and does not radiate electromagnetic
-waves \ssect{39.1.7}.
+\subsection{}\label{38.2.5} In the case when the psi function is time-independent, i.e. $\psi = \psi(x,\, y,\, z)$, it satisfies the Schr\"odinger steady-state equation:
+\begin{equation*}%
+\laplacian \psi + \frac{2m}{\hbar^{2}} (E - U) \psi = 0,
+\end{equation*}
+where $E$ is the total energy of the particle. The remaining notation is given in Section~\ssect{38.2.4}. The psi functions satisfying the Schr\"odinger equation for the given form of $U = U (x,\, y,\, z)$ are called \redem{eigenfunctions}. They exist only at definite values of $E$, called the \redem{eigenvalues of the energy}. The whole set of eigenvalues of $E$ forms the \redem{energy spectrum of the particle}. If $U$ is a monotonic function and $U \to 0$ at infinity, then in the region $E < 0$, the eigenvalues of the energy form a \redem{discrete spectrum}. The most important problem of quantum mechanics is to find the eigenvalues and eigenfunctions of particles (or systems of particles).
+
+\subsection{}\label{38.2.6} Schr\"odinger's time-dependent equation has the solution:
+\begin{equation*}%
+\psi (x,\, y,\, z,\, t ) = \psi (x,\, y,\, z) \exp \left( -\frac{iEt}{\hbar} \right).
+\end{equation*}
+The state of the particle at the given instant of time is described by a periodic function of time with the angular frequency $\omega = E/\hbar$, determined by the total energy $E$ of the particle. This corresponds to the relation between the total energy $E$ of the particle and the de Broglie wave frequency \ssect{38.1.8}.
+
+If a particle is in a definite energy state with the energy $E = \text{const.}$, the probability $\dd w$ of finding it in the element $\dd V$ of volume is independent of time. Thus
+\begin{equation*}%
+\dd w = \abs{\psi}^{2} \dd V = \psi \psi^{*} \dd V.
+\end{equation*}
+This is said to be the \redem{steady state} of the particle. An atom in the steady state has constant energy and does not radiate electromagnetic waves \ssect{39.1.7}.
 
 \section{Motion of a Free Particle}
 \label{sec-38.3} 
 
-\subsection{}\label{38.3.1} In free motion of a particle (U = 0), its total energy E
-coincides with its kinetic energy. If the OX axis is taken along
-vector v of the particle's velocity (v = const), Schrodinger's
-steady-state equation \ssect{38.2.4} has the following solution:
- = v~2mEx VtrnEx M
-where m is the mass of the particle, h = hi2jt, h is Planck's
-constant, and A and B are certain constants. The Schrodinger
-time-dependent equation \ssect{38.2.4} has, in this case, the solution
-V 2 mEx
-h )
-> (x, y, 7, t) = Ae
+\subsection{}\label{38.3.1} In free motion of a particle $(U = 0)$, its total energy $E$ coincides with its kinetic energy. If the $OX$ axis is taken along vector $\vb{v}$ of the particle's velocity $(\vb{v} = \text{const.})$, Schr\"odinger's steady-state equation \ssect{38.2.4} has the following solution:
+\begin{equation*}%
+\psi = A \exp \left(- \frac{i \sqrt{2mE} x}{\hbar} \right) + B \exp \left(\frac{i \sqrt{2mE} x}{\hbar} \right),
+\end{equation*}
+where $m$ is the mass of the particle, $\hbar = h/2\pi$, $h$ is Planck's constant, and $A$ and $B$ are certain constants. The Schr\"odinger time-dependent equation \ssect{38.2.4} has, in this case, the solution
+\begin{equation*}%
+\begin{split}
+\psi(x,\, y,\, z,\, t) & = A \exp \left(-i \frac{E}{h}t -\frac{\sqrt{2mE} x}{\hbar} \right) \\
+& + B \exp \left( i\frac{E}{h}t +\frac{\sqrt{2mE} x}{\hbar} \right),
+\end{split}
+\end{equation*}
 which is the superposition of two plane monochromatic waves
-\ssect{31.1.6} of equal frequency co — Elh, propagating, one in the
-positive direction of the OX axis with the amplitude Ay and
-the other in the opposite direction with the amplitude B.
+\ssect{31.1.6} of equal frequency $\omega = E/\hbar$, propagating, one in the positive direction of the $OX$ axis with the amplitude $A$ and the other in the opposite direction with the amplitude $B$.
 
-\subsection{}\label{38.3.2} In quantum mechanics a free particle is described by
-a plane monochromatic de Broglie wave with the wavenumber
-k \ssect{38.1.4}:
-k = — Y2mE.
-h
-The probability of finding the particle at any point in space is
-constant. For waves propagating along the positive direction
-of the OX axis,
-| |2 = n>* = | A |2.
+\subsection{}\label{38.3.2} In quantum mechanics a free particle is described by a plane monochromatic de Broglie wave with the wavenumber $k$ \ssect{38.1.4}:
+\begin{equation*}%
+k = \frac{1}{\hbar} \sqrt{2mE}.
+\end{equation*}
+The probability of finding the particle at any point in space is constant. For waves propagating along the positive direction of the $OX$ axis,
+\begin{equation*}%
+\abs{\psi}^{2} =  \psi \psi^{*} = \abs{A}^{2}.
+\end{equation*}
 
 \section{A Particle in a One-Dimensional Infinitely
 Deep Potential Well}
@@ -229,7 +195,7 @@ illustrated in Fig. 38.1 is simpler
 U i 1 than the real potential well of elec-
 J ] trons in a metal.
 
-\subsection{}\label{38.4.2} The Schrodinger steady-state
+\subsection{}\label{38.4.2} The Schr\"odinger steady-state
 equation (38.2.5) for particles in a
 potential well, considered in the preceding
 subsection, is of the form
@@ -240,7 +206,7 @@ Fig. 38.1 at boundary conditions if) (0) =
 op = 0 and | ih |2 = 0 outside the region 0 < L, i.e.
 that the probability of finding the particle outside the potential
 well is zero.
-The solution of the Schrodinger equation is
+The solution of the Schr\"odinger equation is
 i|) (a;) = A cos kx + B sin kxy
 where A and B are constants, and k = Y ZmEth is the wavenumber
 \ssect{38.1.4}. It follows from the boundary conditions that .4=0,
@@ -322,7 +288,7 @@ a2 )
 is represented by the curve in Fig. 38.3.
 
 \subsection{}\label{38.5.4} The vibration of a linear harmonic oscillator is investigated
-in quantum mechanics by means of the Schrodinger
+in quantum mechanics by means of the Schr\"odinger
 steady-state equation \ssect{38.2.5}:
 d2ty 2m I mcogx2 
 1  + - W ( E ------1— )=°>
