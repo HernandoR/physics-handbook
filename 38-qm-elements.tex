@@ -176,83 +176,60 @@ The probability of finding the particle at any point in space is constant. For w
 Deep Potential Well}
 \label{sec-38.4} 
 
-\subsection{}\label{38.4.1} A potential well is a region of space in which the potential
-energy U of a particle is less than a certain value £/max.
-In particular, at U = U (x) and £/max = oo, there is a onedimensional
-potential well of infinite depth. If the potential
-energy of the particle outside and inside the potential well
-has the following values (Fig. 38.1):
-*7 = 0 at
-U = oo at x  0 and x  L,
-the well has a “flat bottom”.
+\subsection{}\label{38.4.1} A \redem{potential well} is a region of space in which the potential energy $U$ of a particle is less than a certain value $U_{max}$. In particular, at $U = U (x)$ and $U_{max} = \infty$, there is a one dimensional potential well of infinite depth. If the potential energy of the particle outside and inside the potential well has the following values (\figr{fig-38-01}:
+\begin{align*}%
+U & = 0 \text{ at } 0 \leqslant x \leqslant L,\\
+U & = \infty \text{ at } x \leqslant 0 \qand  x \geqslant L,
+\end{align*}
+the well has a ``flat bottom''.
+
+
+\begin{marginfigure}%[-3cm] 
+\centering
+\includegraphics[width=0.5\textwidth]{figs/ch-38/fig-38-01.pdf}
+\sidecaption{A one dimensional potential well.\label{fig-38-01}}
+\end{marginfigure}
+
 The motion of collectivized electrons in a metal is dealt with
 in classical electronic theory as motion in a potential well,
-the potential energy of the electron outside the metal equalling
-zero, and that inside the metal being negative and numerically
-equal to the work function of the metal (energy required to remove
-an electron from the metal) \ssect{41.11.1}. The potential well
-illustrated in Fig. 38.1 is simpler
-U i 1 than the real potential well of elec-
-J ] trons in a metal.
+the potential energy of the electron outside the metal equalling zero, and that inside the metal being negative and numerically equal to the work function of the metal (energy required to remove an electron from the metal) \ssect{41.11.1}. The potential well illustrated in \figr{fig-38-01} is simpler than the real potential well of electrons in a metal.
 
 \subsection{}\label{38.4.2} The Schr\"odinger steady-state
-equation (38.2.5) for particles in a
-potential well, considered in the preceding
-subsection, is of the form
-oc=0 CC=L X dx2
-2m E J)= 0
-Fig. 38.1 at boundary conditions if) (0) =
-= if) (L) = 0, which indicate that
-op = 0 and | ih |2 = 0 outside the region 0 < L, i.e.
-that the probability of finding the particle outside the potential
-well is zero.
+equation (38.2.5) for particles in a potential well, considered in the preceding subsection, is of the form
+\begin{equation*}%
+\dv[2]{\psi}{x} + \frac{2m}{\hbar^{2}} E \psi = 0,
+\end{equation*}
+at boundary conditions $\psi (0) = \psi (L) = 0$, which indicate that $\psi = 0$ and $\abs{\psi}^{2} = 0$ outside the region $0 \leqslant x \leqslant L$, i.e. that the probability of finding the particle outside the potential well is zero.
+
 The solution of the Schr\"odinger equation is
-i|) (a;) = A cos kx + B sin kxy
-where A and B are constants, and k = Y ZmEth is the wavenumber
-\ssect{38.1.4}. It follows from the boundary conditions that .4=0,
-B 0 and sin kL = 0, i.e. the wavenumber can assume a set
-of discrete values that comply with the requirement: knL =
-= rcJt, where n = 1, 2, 3, ... .
+\begin{equation*}%
+\psi(x) = A \cos k x  + B \sin kx,
+\end{equation*}
+where $A$ and $B$ are constants, and $k = \sqrt{2mE/\hbar}$ is the wavenumber \ssect{38.1.4}. It follows from the boundary conditions that $A = 0$, $B \neq 0$ and $\sin kL = 0$, i.e. the wavenumber can assume a set of discrete values that comply with the requirement: $knL = n \pi$, where $n = 1, \,2, \,3, \ldots{}$
+
 The last equation means that
-2 it Jin
-~L~ or Xn 2 L
-n "
-A whole number of de Broglie half-waves should fit into the
-length of the potential well.
+\begin{equation*}%
+\frac{2\pi}{\lambda_{n}} = \frac{\pi n}{L} \qor \lambda_{n} = \frac{2L}{n}. 
+\end{equation*}
+A whole number of de Broglie half-waves should fit into the length of the potential well.
 
-\subsection{}\label{38.4.3} Physical quantities that can have only definite discrete
-values are said to be quantized (quantized physical quantities).
-The eigenvalues of the energy En of a particle in a one-dimensional
-infinitely deep potential well,
-En
-n2n2h2 (n = 1, 2,
-2 mL238.5] linear harmonic oscillator 543
-comprise a discrete set of energy values that are quantized (see
-also Section \ssect{38.2.5}).
-The quantized values of En are called energy levels, and the numbers
-n, determining the energy levels of a particle in a potential
-well, are called quantum, numbers.
+\subsection{}\label{38.4.3} Physical quantities that can have only definite discrete values are said to be \redem{quantized (quantized physical quantities)}. The eigenvalues of the energy $E_{n}$ of a particle in a one-dimensional infinitely deep potential well,
+\begin{equation*}%
+E_{n} = \frac{n^{2}\pi^{2} \hbar^{2}}{2mL^{2}} \quad (n = 1,\, 2, \, \ldots{}). 
+\end{equation*}
+comprise a discrete set of energy values that are quantized (see also Section \ssect{38.2.5}).
 
-\subsection{}\label{38.4.4} At large quantum numbers (rc> 1), the energy levels
-of a particle in a potential well become relatively closer to one
-another. The relation AElEn  2/rc< 1, where AE = En+X -
-— En = (2n +1) n2h2/2mL2. The inequality AE < En at
-1 indicates that the quantization of energy at large quantum
-numbers yields results close to those obtained in classical
-physics: the energy levels become quasi-continuous (quasi-
-continuous energy levels at ?0> 1).
-Bohr's correspondence principle states that at high quantum numbers
-the conclusions and results obtained in quantum mechanics
-should correspond to those of classical mechanics.
+The quantized values of $E_{n}$ are called \redem{energy levels}, and the numbers $n$, determining the energy levels of a particle in a potential well, are called \redem{quantum numbers}.
+
+\subsection{}\label{38.4.4} At large quantum numbers $( n \gg 1)$, the energy levels of a particle in a potential well become relatively closer to one another. The relation $\Delta E/E_{n} \approx 2/n \ll 1$, where $\Delta E = E_{n+1} -
+- E_{n} = (2n +1) n^{2}\hbar^{2}/2mL^{2}$. The inequality $\Delta E \ll E_{n}$ at $n \gg 1$ indicates that the quantization of energy at large quantum numbers yields results close to those obtained in classical physics: the energy levels become \redem{quasi-continuous} (quasi-continuous energy levels at $n \gg 1$).
+
+\redem{Bohr's correspondence principle} states that at high quantum numbers the conclusions and results obtained in quantum mechanics should correspond to those of classical mechanics.
+
 A more general statement of the correspondence principle is
 that between any theory developed from a classical one and the
 initial classical theory there must be a regular relationship:
-in definite limiting cases, the new theory must go over into the
-old one. For example, the formulas of kinematics and dynamics
-of the special theory of relativity become the formulas of Newton's
-mechanics at velocities where (y/c)2< 1 \ssect{5.3.4}. Geometrical
-optics is a limiting case of wave optics if the wavelength
-can be neglected (k 0).
+in definite limiting cases, the new theory must go over into the old one. For example, the formulas of kinematics and dynamics of the special theory of relativity become the formulas of Newton's mechanics at velocities where $(v/c)^{2} \ll 1$ \ssect{5.3.4}. Geometrical optics is a limiting case of wave optics if the wavelength can be neglected $(\lambda \to 0)$.
 
 \section{Linear Harmonic Oscillator}
 \label{sec-38.5} 
