@@ -237,7 +237,7 @@ in definite limiting cases, the new theory must go over into the old one. For ex
 
 \subsection{}\label{38.5.1} A \redem{linear (one-dimensional) harmonic oscillator} is a particle of mass $m$, vibrating with the natural angular frequency $\omega_{0}$ \ssect{28.1.2} along a certain axis $OX$ due to the action of quasi-elastic
 force $F$, which is proportional to the displacement $x$ of
-the particle from its equilibrium position. Thus $F = —kx$.
+the particle from its equilibrium position. Thus $F = -kx$.
 Here $k$ is a factor of the quasi-elastic force, related to $m$ and $\omega_{0}$ by the equation: $k = m\omega^{2}$ \ssect{28.2.3}. The potential energy $U$ of the harmonic oscillator \ssect{28.2.3} is
 \begin{equation*}%
 U(x) = \frac{kx^{2}}{2}.
@@ -258,7 +258,7 @@ E =
   \end{cases}
 \end{equation*}
 where $a$ is the amplitude of vibration of the classical harmonic oscillator. Such an oscillator cannot get outside
-the limits of the region $(—a, + a)$.
+the limits of the region $(-a, + a)$.
 
 \subsection{}\label{38.5.3} The probability $w_{cl} (x) \dd x$ of finding the oscillator on the line segment from $x$ to $x + \dd x$ in accordance with classical mechanics,
 \begin{equation*}%
@@ -333,7 +333,7 @@ the region from $x$ to $x + \dd x$ is
 \begin{equation*}%
 w_{qu} (x) \dd x = \abs{\psi_{}n (x)}^{2} \dd x.
 \end{equation*}
-Compared in \figr{fig-38-05} are the quantum probability density at $n — 1$ and the classical probability density $w_{cl} (x)$. The existence of nonzero values of $w_{qu}( x)$ beyond the limits of the classically allowed region  $\abs{x} \geqslant a$ is explained by the feasibility of the passing of particles possessing wavelike properties through a potential barrier \ssect{38.7.2}.
+Compared in \figr{fig-38-05} are the quantum probability density at $n - 1$ and the classical probability density $w_{cl} (x)$. The existence of nonzero values of $w_{qu}( x)$ beyond the limits of the classically allowed region  $\abs{x} \geqslant a$ is explained by the feasibility of the passing of particles possessing wavelike properties through a potential barrier \ssect{38.7.2}.
 
 \subsection{}\label{38.5.8} As the number $n$ is increased, the probability distribution curve $\abs{\psi}^{2}$, illustrated in \figr{fig-38-06} for $n = 10$, becomes more and more like the classical probability distribution curve \figr{fig-38-03}. This agrees with Bohr's correspondence principle \ssect{38.4.4}.
 
@@ -417,92 +417,67 @@ change is such that as a result of measurement, definite classical characteristi
 \section{Tunnel Effect}
 \label{sec-38.7} 
 
+\begin{marginfigure}%[-3cm]
+\centering
+\includegraphics[width=\textwidth]{figs/ch-38/fig-38-08.pdf}
+\sidecaption{Potential well of the form $U = U (r)$.\label{fig-38-08}}
+\end{marginfigure}
 
-\subsection{}\label{38.7.1} Potential wells in which particles are located may be of
-much more complicated shape than those dealt with in Section~\ref{sec-38.4}.
-If the potential energy of the particle is of the form U = U (r),
-as shown in Fig. 38.8, the particle moves in a field of forces that
-Fig. 38.8
-can be represented in the form of a potential barrier. This means
-that the forces act on the particle in a certain limited region of
-space. Outside of this region the particles move as free ones.
-The height H of the barrier and its width a for a given particle
-depend upon the energy E of the particle. In order for a particle
-to get out of a 'potential well or to enter it from outside, it is
-necessary, according to classical mechanics, to impart energy
-to the particle equal to or greater than | CLqX — E | = H.
 
-\subsection{}\label{38.7.2} The tunnel effect is the passing (“leaking”) of particles
-through potential barriers. The tunnel effect is a quantum-mechanical
-one and is due to the wavelike properties of the particles
-\ssect{38.1.3}.
-The penetrability (penetrability factor) D of a potential barrier is
-the quantity
-r>
-Aran
+\subsection{}\label{38.7.1} Potential wells in which particles are located may be of much more complicated shape than those dealt with in Section~\ref{sec-38.4}. If the potential energy of the particle is of the form $U = U (r)$, as shown in \figr{fig-38-08}, the particle moves in a field of forces that can be represented in the form of a \redem{potential barrier}. This means that the forces act on the particle in a certain limited region of space. Outside of this region the particles move as free ones.
 
-“ hue '
-where /fran is the intensity \ssect{30.3.6} of de Broglie waves passing
-through the potential barrier, and /inc is the intensity of the
-waves incident on the barrier,
-The penetrability of a rectangular potential barrier of the height
-U0 and width L (Fig. 38.9) is
-D = D0 exp [ — l / 2 m «70—£)l"],
-where m is the mass of the particle, and E is its energy.
+The height $H$ of the barrier and its width $a$ for a given particle depend upon the energy $E$ of the particle. In order for a particle to get out of a potential well or to enter it from outside, it is necessary, according to classical mechanics, to impart energy to the particle equal to or greater than $\abs{U_{max} - E} = H$.
+
+\subsection{}\label{38.7.2} The \redem{tunnel effect} is the passing (``leaking'') of particles through potential barriers. The tunnel effect is a quantum-mechanical one and is due to the wavelike properties of the particles \ssect{38.1.3}.
+
+The \redem{penetrability (penetrability factor)} $D$ of a potential barrier is the quantity
+\begin{equation*}%
+D = \frac{I_{tran}}{I_{inc}},
+\end{equation*}
+where $I_{tran}$ is the intensity \ssect{30.3.6} of de Broglie waves passing through the potential barrier, and $I_{inc}$ is the intensity of the waves incident on the barrier.
+
+\begin{marginfigure}%[-3cm]
+\centering
+\includegraphics[width=\textwidth]{figs/ch-38/fig-38-09.pdf}
+\sidecaption{A rectangular potential well with height $U_{0}$ and width $L$.\label{fig-38-09}}
+\end{marginfigure}
+
+The penetrability of a rectangular potential barrier of the height $U_{0}$ and width $L$ (\figr{fig-38-09}) is
+\begin{equation*}%
+D = D_{0} \exp \left[ - \frac{2}{\hbar}  \sqrt{2 m (U_{0} - E)} \, L \right],
+\end{equation*}
+where $m$ is the mass of the particle, and $E$ is its energy.
 For a potential barrier of complex shape
-x 2
-D = D0 exp | ---  — Edx
-Xi
-where xx and x2 are the coordinates of the points at the beginning
-and end of the potential barrier U (x) for a given value E of
-the total energy (Fig. 38.10). In these formulas D0 is a constant
-factor close to unity.
+\begin{equation*}%
+D = D_{0} \exp \left[ - \frac{2}{\hbar} \int_{x_{1}}^{x_{2}}  \sqrt{2 m (U_{0} - E)} \dd x \right],
+\end{equation*}
+where $x_{1}$ and $x_{2}$ are the coordinates of the points at the beginning and end of the potential barrier $U (x)$ for a given value $E$ of the total energy (\figr{fig-38-10}. In these formulas $D_{0}$ is a constant factor close to unity.
 
-\subsection{}\label{38.7.3} The tunnel effect plays an important role when the penetrability
-is not too low. This occurs in the cases when the linear
-dimensions of the potential barrier are commensurable with
-atomic dimensions. For example, at U0 — E = 10 eV for an
-electron (m  10'30 kg) and L = 10"10 m, we obtain D  He.
-Under the same conditions, excepting that L = 10-2 m, D 
- exp (—1()8). The penetrability of the barrier decreases with
-an increase in the mass of the particle and in the difference
-a ) e.
+\begin{marginfigure}%[-3cm]
+\centering
+\includegraphics[width=\textwidth]{figs/ch-38/fig-38-10.pdf}
+\sidecaption{A potential well of a complex shape.\label{fig-38-10}}
+\end{marginfigure}
 
-\subsection{}\label{38.7.4} The paradox of the tunnel effect is that the passing of
-a particle through the potential barrier enables it to be found
-in a region that is forbidden from the classical point of view.
-In this region the potential energy of the particle exceeds its
-total energy; its kinetic energy is negative and, consequently,
-the velocity (momentum) of the particle becomes an imaginary
-quantity.
+\subsection{}\label{38.7.3} The tunnel effect plays an important role when the penetrability is not too low. This occurs in the cases when the linear dimensions of the potential barrier are commensurable with atomic dimensions. For example, at $U_{0} - E = \SI{10}{\electronvolt}$ for an
+electron $(m \approx \SI{d-30}{\kilo\gram})$ and $L = \SI{d-10}{\meter}$, we obtain $D \approx 1/e$.
+
+Under the same conditions, excepting that $L = \SI{d-2}{\meter}$, $D \approx \exp (\num{d-8})$. The penetrability of the barrier decreases with an increase in the mass of the particle and in the difference $U_{0} - E$.
+
+\subsection{}\label{38.7.4} The \redem{paradox of the tunnel effect} is that the passing of a particle through the potential barrier enables it to be found in a region that is forbidden from the classical point of view. In this region the potential energy of the particle exceeds its total energy; its kinetic energy is negative and, consequently, the velocity (momentum) of the particle becomes an imaginary quantity.
+
 Actually no such paradox exists. The tunnel effect is a purely
-quantum-mechanical phenomenon and here an unexpected
-difficulty arises, from the classical point of view, in representing
-the total energy E in the form of the sum of the kinetic
-and potential energies: E = p2l2m -f U (x). Owing to the fact
-that the indeterminacy relation \ssect{38.6.2} excludes the possibility
-of simultaneously specifying definite values, to any degree of
-accuracy, for the coordinate x and momentum p of a particle,
-it is found to be inadmissible in quantum mechanics to represent
-the total energy as the sum of two exactly definite parts:
-the kinetic p2!2m and potential U (x) energies. If the coordinate
-x of the particle is fixed in the region Ax and its potential
-energy U (x) is determined with sufficient accuracy, then the
-indeterminacy Ap introduced into the value of the particle's
-momentum (A p  hi Ax) excludes the possibility of specifying
-the exact value of the kinetic energy p2/2m of the particle.
-Consequently, the previous value of the particle's total energy E
-cannot be specified either. It is found, in this case, that the change
-in the kinetic energy AE, caused by fixing the particle's
-coordinate, exceeds the difference between the barrier height
-U0 (Fig. 38.9) and the total energy E of the particle:
-> U0- E.
-Thus, AjEk exceeds the energy that the particle, inside the potential
-well, lacks to surmount the barrier “in the classical way”
-to get out of the well.
+quantum-mechanical phenomenon and here an unexpected difficulty arises, from the classical point of view, in representing the total energy E in the form of the sum of the kinetic and potential energies: $E = p^{2}/2m + U (x)$. Owing to the fact
+that the indeterminacy relation \ssect{38.6.2} excludes the possibility of simultaneously specifying definite values, to any degree of accuracy, for the coordinate x and momentum p of a particle, it is found to be inadmissible in quantum mechanics to represent the total energy as the sum of two exactly definite parts: the kinetic $p^{2}/2m$ and potential $U (x)$ energies. If the coordinate $x$ of the particle is fixed in the region $\Delta x$ and its potential energy $U (x)$ is determined with sufficient accuracy, then the indeterminacy $\Delta p$ introduced into the value of the particle's momentum $(\Delta p \approx \hbar/ A)$ excludes the possibility of specifying the exact value of the kinetic energy $p^{2}/2m$ of the particle.
+
+Consequently, the previous value of the particle's total energy $E$ cannot be specified either. It is found, in this case, that the change in the kinetic energy AE, caused by fixing the particle's coordinate, exceeds the difference between the barrier height $U_{0}$ (\figr{fig-38-09}) and the total energy $E$ of the particle:
+\begin{equation*}%
+\Delta E_{k} > U_{0} - E.
+\end{equation*}
+Thus, $\Delta E_{k}$ exceeds the energy that the particle, inside the potential well, lacks to surmount the barrier ``in the classical way'' to get out of the well.
+
 The role played by the tunnel effect in solid-state physics and
-in the phenomenon of radioactive decay is dealt with in Sects.
-\ssect{41.8.3} and \ssect{42.5.2}.
+in the phenomenon of radioactive decay is dealt with in Sections \ssect{41.8.3} and \ssect{42.5.2}.
 
 % Local Variables:
 % TeX-master: "handbook-physics"
