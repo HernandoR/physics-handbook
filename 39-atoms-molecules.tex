@@ -50,7 +50,7 @@ E_{n} = - \frac{Z^{2}Rh}{n^{2}}, \quad T_{n} = \frac{\abs{E_{n}}}{h}.
 \end{equation*}
 The magnitude $E_{n}$ is called the \redem{binding energy} of the electron in the atom. The minimum value $E_{1}$ (at $n = 1$) corresponds to the ground, or normal, state of the atom \ssect{39.1.9}. All energy values at $n > 1$ characterize \redem{excited states of the atom}. The most vital distinguishing feature of excited states is the finite lifetime t of the electron in these states: $\tau \approx \SI{d-8}{\second}$. In the ground state of the atom, isolated from all external effects, $\tau$ is unlimited.
 
-The maximum energy value  $E_{max} = 0$ as $n \to \infty$ corresponds to \redem{ionization} of the atom or \redem{ion}, i.e. to the removal of an electron from it.
+The maximum energy value  $E_{\mathrm{max}} = 0$ as $n \to \infty$ corresponds to \redem{ionization} of the atom or \redem{ion}, i.e. to the removal of an electron from it.
 
 In magnitude, the ionization energy is equal to the binding
 energy of an electron in the atom (or ion).
@@ -335,183 +335,83 @@ band. The whole electron-vibrational spectrum of the molecule in the visible and
 \section{Raman Scattering of Light}
 \label{sec-39.6} 
 
-\subsection{}\label{39.6.1} Raman scattering of light, or the Raman effect, refers to
-the shifted frequencies vs and va observed, along with the frequency
-v0 of the source of radiation, in the spectrum of light scattered
-by a solid or liquid body. A spectral line with the frequency
-vs = v0 - v is called a Stokes (red) line; one with the frequency
-va = v0 + v is called an anti-Stokes (violet) line. The set of lines
-* Commonly called combination scattering in the Soviet literature.39.6] RAMAN SCATTERING OF LIGHT 569
-with the frequencies vs and va form the Raman spectrum of the
-molecule, containing red and violet satellites with the frequency v0.
-The intensity of the violet satellites is less than that of the red
-ones, but increases with the temperature. The intensity of the
-red satellites is practically independent of the temperature.
+\subsection{}\label{39.6.1} \redem{Raman scattering of light}\sidenote{Commonly called combination scattering in the Soviet literature.}, or the Raman effect, refers to the shifted frequencies $\nu_{s}$ and $\nu_{a}$ observed, along with the frequency $\nu_{0}$ of the source of radiation, in the spectrum of light scattered by a solid or liquid body. 
 
-\subsection{}\label{39.6.2} The quantum-mechanical explanation of the Raman scattering
-phenomenon consists in an analysis of the interaction between
-a photon of incident light having the frequency v0 and a
-molecule at the ground vibrational energy level with the energy
-E™v. If, as a result of the interaction with the photon, the
-molecule is moved to higher vibrational energy level with the
-energy E1 > A1™, the energy AEm = 2?™v - required for
-this purpose is borrowed from the incident light. A photon with
-the energy hv0 is absorbed and, in its place, a photon is produced
-with lower frequency v and an energy equal to hv = hv0 - AEm.
-At this the frequency v appears in the scattered light. It equals
-and corresponds to the frequency of a red satellite. The whole set
-of red satellites are produced in transitions of the molecule to
-various excited vibrational energy states.
+A spectral line with the frequency $\nu_{s} = \nu_{0} - \nu$ is called a \redem{Stokes (red) line}; one with the frequency $\nu_{s} = \nu_{0} + \nu$ is called an \redem{anti-Stokes (violet) line}. The set of lines with the frequencies $\nu_{s}$ and $\nu_{a}$ form the Raman spectrum of the molecule, containing red and violet \redem{satellites with the frequency} $\nu_{0}$. The intensity of the violet satellites is less than that of the red ones, but increases with the temperature. The intensity of the red satellites is practically independent of the temperature.
 
-\subsection{}\label{39.6.3} If a molecule at the vibrational energy level with the energy
-E™y (39.6.2) .moves, due to interaction with a photon having
-the energy hv0, to an energy state with less energy (2?), a violet
-satellite of the frequency va is produced in the scattered light
-spectrum. This frequency
-, AEm
-where AE™ = Efv - E?Y.
-The probability of Raman scattering with an increase in frequency
-is less than the same scattering with a reduction in frequency.
-This is due to the fact that the number of molecules at the higher
-energy levels is less than the number at the lower levels. Consequently,
-the intensity of violet satellites is less than that of the
-red ones. When the temperature is raised, the molecule popula-570 STRUCTURE OF ATOMS AND MOLECULES [39
-tion of the upper energy levels increases, as does the intensity of
-the violet satellites. The number of molecules in the ground
-state changes only slightly upon heating. Therefore, the intensity
-of the red satellites, remains practically unchanged as the temperature
-is raised.
+\subsection{}\label{39.6.2} The quantum-mechanical explanation of the Raman scattering phenomenon consists in an analysis of the interaction between a photon of incident light having the frequency $\nu_{0}$ and a molecule at the ground vibrational energy level with the energy $E^{m}_{1v}$. If, as a result of the interaction with the photon, the molecule is moved to higher vibrational energy level with the energy $E^{m}_{2V} > E^{m}_{1V}$, the energy $\Delta E^{m} = E^{m}_{2V} - E^{m}_{1V}$ required for this purpose is borrowed from the incident light. A photon with the energy $h \nu_{0}$ is absorbed and, in its place, a photon is produced with lower frequency $\nu$ and an energy equal to $h \nu = h \nu_{0} - \Delta E^{m}$.
+
+At this the frequency $\nu$ appears in the scattered light. It equals 
+\begin{equation*}%
+\nu_{s} = \nu_{0} - \frac{\Delta E^{m}}{h},
+\end{equation*}
+and corresponds to the frequency of a red satellite. The whole set of red satellites are produced in transitions of the molecule to various excited vibrational energy states.
+
+\subsection{}\label{39.6.3} If a molecule at the vibrational energy level with the energy $E^{m}_{2V}$ \ssect{39.6.2} moves, due to interaction with a photon having the energy $h \nu_{0}$, to an energy state with less energy $(E^{m}_{1v})$, a violet satellite of the frequency $\nu_{a}$ is produced in the scattered light spectrum. This frequency
+\begin{equation*}%
+\nu_{a} = \nu_{0} + \frac{\Delta E^{m}}{h},
+\end{equation*}
+where $\Delta E^{m} = \Delta E^{m}_{2V} - \Delta E^{m}_{1V}$.
+
+The probability of Raman scattering with an increase in frequency is less than the same scattering with a reduction in frequency. This is due to the fact that the number of molecules at the higher energy levels is less than the number at the lower levels. Consequently, the intensity of violet satellites is less than that of the red ones. When the temperature is raised, the molecule population of the upper energy levels increases, as does the intensity of the violet satellites. The number of molecules in the ground state changes only slightly upon heating. Therefore, the intensity of the red satellites, remains practically unchanged as the  temperature is raised.
 
 \section{Luminescence. X rays}
 \label{sec-39.7} 
 
 
-\subsection{}\label{39.7.1} Luminescence is the radiation of light by bodies at a temperature
-71, which is over and above the thermal radiation (36.1.1)
-at this temperature. The duration of luminescence substantially
-exceeds the periods of radiation of atomic systems. Depending
-upon the method applied to excite the luminescent glow, distinction
-is made between cathodoluminescence, electroluminescence,
-photoluminescence and chemiluminescence. Luminescent substances
-are called luminophors.
+\subsection{}\label{39.7.1} \redem{Luminescence} is the radiation of light by bodies at a temperature $T$, which is over and above the thermal radiation \ssect{36.1.1} at this temperature. The duration of luminescence substantially exceeds the periods of radiation of atomic systems. Depending upon the method applied to excite the luminescent glow, distinction is made between cathodoluminescence, electroluminescence, photoluminescence and chemiluminescence. Luminescent substances are called \redem{luminophors}.
 
-\subsection{}\label{39.7.2} Luminescent radiation is a nonequilibrium one (cf.
-Sect. 36.1.2) and is caused by a comparatively small number of
-luminescence centres-atoms, molecules or ions-put into an excited
-state by the source of luminescence. The return of the excited
-centre to its ground or less excited state is accompanied by luminescent
-radiation. The duration of this radiation is determined by
-the duration of the excited state, which depends on the properties
-of not only the radiating centres, but of the medium surrounding
-them as well. The duration of a metastable excited state can reach
-10-4 s, thereby correspondingly increasing the duration of the
-luminescence.
+\subsection{}\label{39.7.2} Luminescent radiation is a nonequilibrium one (cf. \ssect{36.1.2}) and is caused by a comparatively small number of \redem{luminescence centres} --  atoms, molecules or ions -- put into an excited state by the source of luminescence. The return of the excited centre to its ground or less excited state is accompanied by \redem{luminescent radiation}. The duration of this radiation is determined by the duration of the excited state, which depends on the properties of not only the radiating centres, but of the medium surrounding them as well. The duration of a metastable excited state can reach \SI{d-4}{\second}, thereby correspondingly increasing the duration of the luminescence.
 
-\subsection{}\label{39.7.3} Luminescence that immediately ceases together with the
-action of the glow exciting source is called fluorescence.
-Luminescence that persists long after the action of the glow exciting
-source has ceased to act is called phosphorescence.
-The phenomenon of fluorescence is associated with the transitions
-of atoms, molecules or ions from ordinary excited states with
-a duration of the order of 10-8 s to the ground state. Phosphorescence,
-which provides for prolonged glow, is due to the transition
-of luminescence centres from metastable states to the ground state
-(39.7.2). The subdivision of luminescence into fluorescence and
-phosphorescence is arbitrary; it is sometimes difficult to establish
-a time-based boundary between them.
+\subsection{}\label{39.7.3} Luminescence that immediately ceases together with the action of the glow exciting source is called \redem{fluorescence}. Luminescence that persists long after the action of the glow exciting source has ceased to act is called \redem{phosphorescence}. 
 
-\subsection{}\label{39.7.4} The excitation of luminescence by moans of an electron
-beam is feasible provided that the kinetic energy of a bombarding•'!!).7] LUMINESCENCE. X RAYS 571
-electron satisfies the inequality
-mu2
-~Y~  Ee Eg,
-where Ee and Eg are the total energies of the luminescent particle
-in the excited and ground states.
+The phenomenon of fluorescence is associated with the transitions of atoms, molecules or ions from ordinary excited states with a duration of the order of \SI{d-8}{\second}to the ground state. Phosphorescence, which provides for prolonged glow, is due to the transition of luminescence centres from metastable states to the ground state \ssect{39.7.2}. The subdivision of luminescence into fluorescence and phosphorescence is arbitrary; it is sometimes difficult to establish a time-based boundary between them.
 
-\subsection{}\label{39.7.5} Photoluminescence is excited by electromagnetic radiation
-in the visible or ultraviolet ranges and complies with the Stokes
-law: the wavelength of photoluminescence is usually longer than
-that of the exciting light. The quantum-mechanical basis for the
-Stokes law is that in the absorption of a photon of exciting light
-with the energy hv, a photon with the energy hvum, less than hv,
-is produced. The surplus energy hv - hvum = Em, where Em is
+\subsection{}\label{39.7.4} The excitation of luminescence by moans of an electron beam is feasible provided that the kinetic energy of a bombarding electron satisfies the inequality
+\begin{equation*}%
+\frac{mv^{2}}{2} \geqslant E_{e} - E_{g},
+\end{equation*}
+where $E_{e}$ and $E_{g}$ are the total energies of the luminescent particle in the excited and ground states.
+
+\subsection{}\label{39.7.5} \redem{Photoluminescence} is excited by electromagnetic radiation in the visible or ultraviolet ranges and complies with the \redem{Stokes
+law}: the wavelength of photoluminescence is usually longer than that of the exciting light. The quantum-mechanical basis for the Stokes law is that in the absorption of a photon of exciting light with the energy $h \nu$, a photon with the energy $h \nu_{\mathrm{lum}}$, less than $h \nu$, is produced. The surplus energy $h \nu - h \nu_{\mathrm{lum}} = E^{m}$, where $E^{m}$ is
 energy expended on various processes except photoluminescence.
-As a rule, Em > 0 and V]um < v, i.e. > X in accordance
-with the Stokes law. Sometimes, anti-Stokes luminescent radiation
-is observed. It complies with a condition that is the opposite of
-the Stokes law, i.e. jura < This occurs when a definite part of the energy of thermal motion of the particles of the luminescent
-substance is added to the energy hv of the photon that excites
-the luminescence. Thus
-vium = hv+ akT,
-where a is a factor depending upon the nature of the luminescent
-substance, k is Boltzmann's constant (8.4.5), and T is the absolute
-temperature.
 
-\subsection{}\label{39.7.6} Photoluminescent energy efficiency is the ratio of the energy
-of luminescent radiation to the energy from the source absorbed
-under steady-state conditions by the luminophor.
-The quantum yield of photoluminescence is the ratio of the number
-of photons of photoluminescent radiation to the number of photons
-of the exciting light, the latter having constant energy. Vavilov s
-law states that the photoluminescent energy efficiency increases
-proportionally to the wavelength X of the absorbed radiation. Then,
-after reaching a maximum value in the wavelength range from X
-to A-max, drops rapidly to zero upon a further increase in wavelength.
-With an increase in the wavelength of the exciting light
-of given energy, there is an increase in the number of photons
-contained in the given energy of primary radiation. Each of
-these photons can produce a photon of the energy hvum. There-572 STRUCTURE OF ATOMS AND MOLECULES [39
-fore, the photoluminescent energy efficiency increases with the
-wavelength X. The sharp drop in energy efficiency at X = A,max indicates that photons with the frequency less than vmin = c /  ax
-cannot excite the particles of the luminophor.
+As a rule, $E_{m} > 0$ and $\nu_{\mathrm{lum}} < \nu$, i.e.  $\lambda_{\mathrm{lum}} > \lambda$ in accordance with the Stokes law. Sometimes, \redem{anti-Stokes luminescent radiation} is observed. It complies with a condition that is the opposite of
+the Stokes law, i.e. $\lambda_{\mathrm{lum}} < \lambda$. This occurs when a definite part of the energy of thermal motion of the particles of the luminescent substance is added to the energy $h \nu$ of the photon that excites the luminescence. Thus
+\begin{equation*}%
+h \nu_{\mathrm{lum}} = h \nu+ akT,
+\end{equation*}
+where $a$ is a factor depending upon the nature of the luminescent substance, $k$ is Boltzmann's constant \ssect{8.4.5}, and $T$ is the absolute temperature.
 
-\subsection{}\label{39.7.7} X rays are electromagnetic waves with a wavelength from
-0.01 to 800 A that are produced by braking high-speed electrons
-by a substance. There are two types of short-wave X rays.
-At electron energies, not exceeding a certain critical value that
-depends upon the substance in which the electrons are braked,
-white, or continuous, X rays are produced. It is radiated by braked
-electrons and has a continuous spectrum, bounded on the short- wavelength side by a certain boundary min, called the continuous-spectrum
-boundary. The boundary wavelength Xmin depends
-upon the kinetic energy Ak of the electrons that produce the
-bremsstrahlung and is reduced with an increase in the kinetic energy Ak. The existence of mirl is explained by the fact that the
-maximum energy frvmax of a photon of X rays, produced at the
-expense of the energy of the electron, cannot exceed Ek. Thus
-max = k*
-Consequently, Xmn = c/vmax = ch/E. Making use of data on
-the values of Ek and 7,min, this formula enables Planck's constant
-(Appendix II) to be determined. In its time this method was one
-of the most accurate and reliable ones.
+\subsection{}\label{39.7.6} \redem{Photoluminescent energy efficiency} is the ratio of the energy of luminescent radiation to the energy from the source absorbed under steady-state conditions by the luminophor.
 
-\subsection{}\label{39.7.8} The second type of X rays, characteristic X radiation of
-atoms of matter, has a line spectrum. It is an individual characteristic
-of a substance and does not change when the substance enters
-a chemical compound. It follows that, contrary to optical spectra,
-characteristic X rays are associated with processes in the deep-
-lying filled inner electron shells of atoms (39.3.6), which undergo
-no changes in chemical reactions of the atoms. Line X-ray spectra
-consist of lines composing several series. The same types of line
-series are observed in various elements, differing only in that the
-like series of lines in the heavier elements are shifted toward the
+The \redem{quantum yield of photoluminescence} is the ratio of the number of photons of photoluminescent radiation to the number of photons of the exciting light, the latter having constant energy. \redem{Vavilov's law} states that the photoluminescent energy efficiency increases proportionally to the wavelength $\lambda$ of the absorbed radiation. Then,
+after reaching a maximum value in the wavelength range from $\lambda$ to $\lambda_{\mathrm{max}}$, drops rapidly to zero upon a further increase in wavelength. With an increase in the wavelength of the exciting light of given energy, there is an increase in the number of photons contained in the given energy of primary radiation. Each of these photons can produce a photon of the energy $h \nu_{\mathrm{lum}}$. Therefore, the photoluminescent energy efficiency increases with the wavelength $\lambda$. The sharp drop in energy efficiency at $\lambda = \lambda_{\mathrm{max}}$ indicates that photons with the frequency less than $\nu_{\mathrm{min}} = c /\lambda_{\mathrm{max}}$ cannot excite the particles of the luminophor.
+
+\subsection{}\label{39.7.7} \redem{$X$-rays} are electromagnetic waves with a wavelength from 0.01 to \SI{800}{\angstrom} that are produced by braking high-speed electrons by a substance. There are two types of short-wave $X$ rays.
+
+At electron energies, not exceeding a certain critical value that depends upon the substance in which the electrons are braked, \redem{white}, or \redem{continuous, $X$ rays} are produced. It is radiated by braked electrons and has a continuous spectrum, bounded on the short-wavelength side by a certain boundary $\lambda_{\mathrm{min}}$, called the \redem{continuous-spectrum boundary}. The boundary wavelength $\lambda_{\mathrm{min}}$ depends upon the kinetic energy $E_{k}$ of the electrons that produce the bremsstrahlung and is reduced with an increase in the kinetic energy $E_{k}$. The existence of $\lambda_{\mathrm{min}}$ is explained by the fact that the maximum energy frvmax of a photon of $X$ rays, produced at the expense of the energy of the electron, cannot exceed $E_{k}$. Thus
+\begin{equation*}%
+h \nu_{\mathrm{max}} = E_{k}.
+\end{equation*}
+Consequently, 
+\begin{equation*}%
+\lambda_{\mathrm{min}} = \frac{c}{\nu_{\mathrm{max}}} = \frac{c h}{E_{k}}.
+\end{equation*}
+ Making use of data on the values of $E_{k}$ and $\lambda_{\mathrm{min}}$, this formula enables Planck's constant (Appendix~II) to be determined. In its time this method was one of the most accurate and reliable ones.
+
+\subsection{}\label{39.7.8} The second type of $X$ rays, \redem{characteristic $X$ radiation} of atoms of matter, has a line spectrum. It is an individual characteristic of a substance and does not change when the substance enters a chemical compound. It follows that, contrary to optical spectra,
+characteristic $X$ rays are associated with processes in the deep-lying filled inner electron shells of atoms \ssect{39.3.6}, which undergo no changes in chemical reactions of the atoms. \redem{Line $X$ ray spectra} consist of lines composing several series. The same types of line series are observed in various elements, differing only in that the like series of lines in the heavier elements are shifted toward the
 side of shorter wavelengths.
 
-\subsection{}\label{39.7.9} In the order of increasing wavelengths, the series of characteristic
-X rays are called the K-, L- M-, and A-series. As an
-electron is removed from one of the inner shells of an atom with
-the nuclear charge Ze, the vacant space is occupied by an electron
-from a shell farther from the nucleus and an X-ray photon is
-emitted. Thus, after removing an electron from the A-shell, the
-filling of the vacancy by electrons from L-, M- and other shells,
-produces the Ka-, Ap- and AY-lines that form the A-series,:i0.8] STIMULATED EMISSION OF RADIATION. LASERS 573
-The frequency v of the lines of characteristic X rays can be found
-by Mosley's law:
-/ v = a(Z-6),
-where a is a constant for the given series of lines (in s-1/2), and b
-is the screening constant. This constant means that an electron,
-accomplishing a transition corresponding to a certain line,
-is subject, not to the whole charge Ze of the nucleus, but to the
-charge (Z - b) e, which has been weakened by the screening action
-of other electrons.
+\subsection{}\label{39.7.9} In the order of increasing wavelengths, the series of characteristic $X$ rays are called the $K$-, $L$- $M$-, and $N$-series. As an electron is removed from one of the inner shells of an atom with the nuclear charge $Ze$, the vacant space is occupied by an electron from a shell farther from the nucleus and an $X$-ray photon is emitted. Thus, after removing an electron from the $A$-shell, the filling of the vacancy by electrons from $L$-, $M$- and other shells, produces the $K_{\alpha}$-, $K_{\beta}$- and $K_{\gamma}$-lines that form the $K$-series,
+
+The frequency $\nu$ of the lines of characteristic $X$ rays can be found by \redem{Mosley's law}:
+\begin{equation*}%
+\sqrt{\nu} = a(Z - b),
+\end{equation*}
+where $a$ is a constant for the given series of lines (in $s^{-1/2}$), and $b$ is the screening constant. This constant means that an electron, accomplishing a transition corresponding to a certain line, is subject, not to the whole charge $Ze$ of the nucleus, but to the charge $(Z - b) e$, which has been weakened by the screening action of other electrons.
 
 \section{Stimulated Emission of Radiation. Lasers}
 \label{sec-39.8} 
