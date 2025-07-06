@@ -1,0 +1,1236 @@
+% !TEX root = handbook-physics.tex
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+
+
+
+\chapter[Quantum Physics Of Solids]{An Outline of the Quantum Physics of Solids}
+\label{ch-41}
+
+\section{Basic Concepts of Quantum Statistics}
+\label{sec-41.1} 
+
+\subsection{}\label{41.1.1} \redem{Quantum statistics} is a statistical method of investigation \ssect{8.2.2} that is applied to systems consisting of a large number of particles and obeying the laws of quantum mechanics \ssect{38.1.1}.
+
+\subsection{}\label{41.1.2} In contrast to the initial propositions of classical statistical physics (\ssect{10.1.4} and \ssect{10.1.5}), quantum, statistics is based on the \redem{principle of indistinguishability of identical particles}. All identical particles (for example, all the electrons in metals or all the protons in atomic nuclei) are considered to be \redem{indistinguishable}, in principle, from one another.
+
+\subsection{}\label{41.1.3} Of prime importance in quantum statistics is the problem of distributing the particles with respect to their coordinates and velocities\sidenote{In classical statistics, the laws of Maxwell \ssect{10.3.1} and Boltzmann \ssect{10.4.2} enable a similar problem to be solved.}. It can be stated as the problem of distributing particles amongst the cells of ``phase volume'', an element of which is equal to $\Delta \Gamma = \Delta x \Delta y \Delta z \Delta p_{x} \Delta p_{y} \Delta p_{z}$ \ssect{10.1.5}. 
+
+The wave-particle dualism of the properties of particles of matter \ssect{38.1.3} and the Heisenberg indeterminacy relations \ssect{38.0.2} lead to a situation in which the element of volume $\Delta \Gamma$ cannot be less than $h^{3}$, where $h$ is Plancks constant (Appendix~II). In arranging the particles in cells of volume $h^{3}$ each, in accordance with the principle of indistinguishability of identical particles \ssect{41.1.2}, the question posed concerns the number of particles in the given cell, but not
+which, specifically, of the given sort of particles are in the cell.
+
+The state of a system of particles is not changed when identical particles arc rearranged within the given cell of the phase space, or interchanged between the cells. 
+
+\subsection{}\label{41.1.4} If an element of volume $\Delta \Gamma_{i}$ is divided intto cells with the volume $h^{3}$, then the ratio $\Delta \Gamma_{i} /h^{3} = \Delta g_{i}$ determines the \redem{number of quantum states} contained in the volume $\Delta \Gamma_{i}$, having energy within the range from $E_{i}$ to $E_{i} + \Delta E_{i}$. Particles, of a number equal to $\Delta N_{i}$, contained in the volume $\Delta \Gamma_{i}$, can be distributed in all possible ways between $\Delta g_{i}$ states having the energy $E_{i}$.
+
+\section{Bose-Einstein and Fermi-Dirac Distribution Functions}
+\label{sec-41.2} 
+
+
+\subsection{}\label{41.2.1} Particles with integer or zero spin (in $\hbar$ units) \ssect{26.1.3} are called \redem{bosons} (for instance, photons, phonons and certain nuclei). Systems of such particles are described by \redem{Bose-Einstein quantum statistics}. Bosons do not comply with the Pauli exclusion principle \ssect{39.3.1} and they are not subject to restrictions as to the number of particles that may be in a certain quantum state.
+
+
+\subsection{}\label{41.2.2} The \redem{Bose-Einstein distribution function} $f_{B}$ is the average population of bosons in a state with the given energy i.e. the average number of particles in one state. Thus
+\begin{equation*}%
+f_{B} = \frac{\Delta N (E_{i})}{\Delta  g_{i}},
+\end{equation*}
+where $\Delta N (E_{i})$ is the number of particles having energies in the range from $E_{i}$ to $E_{i} + \Delta E_{i}$ and $\Delta g_{i}$ is the number of quantum states within this energy range \ssect{41.1.4}. Function $f_{B}$ is found by considering the thermodynamic probability $P$ \ssect{11.5.2} of the distribution of the particles of the system amongst the quantum states. The most probable distribution is found under the condition that the total number $N$ of particles and the total energy $E$ of the system are conserved. Thus 
+\begin{equation*}%
+\sum_{i} \Delta N_{i} = N \qand \sum_{i} \Delta N_{i}E_{i} = E.
+\end{equation*}
+Summation is carried out over all the quantum states of the system.
+
+\subsection{}\label{41.2.3} An application of the method of Lagrangian (undetermined) multipliers to find the conditional extremum enables the following expression to be obtained for the Bose-Einstein distribution function:
+\begin{equation*}%
+f_{B} = \frac{1}{\exp \left(\dfrac{E_{i} - \mu}{kT} \right) -1}.
+\end{equation*}
+Here $k$ is Boltzmann's constant \ssect{8.4.5}, and $T$ is the absolute temperature. The quantity $\mu = (U - TS + pV)/N$ is called the \redem{chemical potential} per particle, where U is the internal energy of the system \ssect{9.1.2}, $S$ is its entropy \ssect{11.4.2}, $V$ is the volume
+of the system, and $p$ is the pressure. The chemical potential is the work done under isobaric-isothermic conditions in increasing the number of particles in the system by one.
+
+\subsection{}\label{41.2.4} Particles with half-integer spin (in $\hbar$ units) \ssect{26.1.3} are called \redem{fermions} (electrons, protons, neutrons, etc.). Systems of fermions are described by Fermi-Dirac quantum statistics. Fermions comply with the Pauli exclusion principle \ssect{39.3.1} and in a given quantum state of a system of fermions there can be no more than one particle.
+
+
+\subsection{}\label{41.2.5} The \redem{Fermi-Dirac distribution function} $f_{F}$ is determined in a way similar to that used in \ssect{41.2.2}. Thus
+\begin{equation*}%
+f_{F} = \frac{ \Delta N (E_{i})}{ \Delta g_{i}}.
+\end{equation*}
+The notation is defined in \ssect{41.2.2}. The solution of the
+problem of the most probable distribution of the fermions amongst the states under the condition of conserving total energy $E$ in the system and the total number $N$ of its particles, leads to the following form of the function $f_{F}$:
+\begin{equation*}%
+f_{F} = \frac{1}{\exp \left(\dfrac{E_{i} - \mu}{kT} \right) +1}.
+\end{equation*}
+where $\mu$ is the chemical potential per particle \ssect{41.2.3}.
+
+
+
+
+\subsection{}\label{41.2.6} The distribution functions in classical andquantum statistics, introduced as the average number of particles in one state \ssect{41.2.2}, can be expressed by a single equation:
+\begin{equation*}%
+f = \frac{1}{\exp \left(\dfrac{E_{i} - \mu}{kT} \right) + \delta}.
+\end{equation*}
+For the Maxwell-Boltzmann distribution (cf. \ssect{10.4.2})
+$\delta = 0$ and $\mu = 0$; for the Bose-Einstein distribution $\delta = -1$; and for the Fermi-
+Dirac distribution $\delta = +1$. Plots of these three distribution functions are shown in \figr{fig-41-01}.
+
+\begin{marginfigure}%[-3cm] 
+\centering
+\includegraphics[width=\textwidth]{figs/ch-41/fig-41-01.pdf}
+\sidecaption{Comparing the Maxwell-Boltzmann, Bose-Einstein, and Fermi-Dirac distributions.\label{fig-41-01}}
+\end{marginfigure}
+
+\textbf{Example.} Blackbody radiation \ssect{36.1.8} is enclosed in a cavity of volume $V$ at $T = \text{const}$, the radiation being in a state of thermodynamic equilibrium with the walls of the cavity. This radiation can be dealt with as a photon gas complying with Bose-Einstein statistics, because the spin of a photon equals $\hbar$ (\tabl{tab-43-01}). The number of quantum states of radiation in volume $V$ \ssect{40.1.4} is
+\begin{equation*}%
+\dd g = 2 \frac{4 \pi p^{2} \dd pV}{h^{3}} = \frac{8\pi E^{2} \dd E}{h^{3}c} V,
+\end{equation*}
+where $p$ is the momentum of the photon \ssect{37.2.2}, related to its energy by the equation $p = E/c$, where $c$ is the velocity of light in free space. The factor 2 appears because there are two possible directions in which light can be polarized \ssect{31.1.8}. The energy of the photon is $E = h\nu$ \ssect{37.1.4}, where $\nu$ is the frequency. According to section \ssect{41.2.2}, the number of photons with frequencies in the range from $\nu$ to $\nu + \dd \nu$ in the volume $V$ is
+\begin{equation*}%
+\dd N = \frac{\dd g}{\exp \left(\dfrac{h \nu}{kT} \right) -1} = \frac{8 \pi \nu^{2} \dd \nu V}{c^{3} [\exp \left(\dfrac{h \nu}{kT} \right) -1]}.
+\end{equation*}
+Taken into account here is the fact that the chemical potential $\mu$ \ssect{41.2.3} is equal to zero for a photon gas in which the condition for conserving the total number of particles is not complied with.
+
+The volume density of radiant energy in the frequency range
+from $\nu$ to $\nu + \dd \nu$ is
+\begin{equation*}%
+\omega (\nu, \, T) = \frac{h \nu \dd N}{V} = \frac{8 \pi \nu^{2}}{c^{3}} \frac{h \nu \dd \nu}{\exp \left(\dfrac{h \nu}{kT} \right) -1}.
+\end{equation*}
+This result is Planck's radiation formula for the volume energy density of blackbody radiation \ssect{36.1.5}.
+
+\section[Degeneracy of Systems]{Degeneracy of Systems of Particles Described by Quantum Statistics}
+\label{sec-41.3} 
+
+\subsection{}\label{41.3.1} A system of particles (in particular, an ideal gas) is
+said to be degenerate if its properties, described by quantum
+laws, differ from those of ordinary systems that obey classical
+laws. Deviation in the behaviour of Bose and Fermi gases from
+that of classical Maxwellian-Boltzmann gas is called gas degeneracy.
+This becomes appreciable at extremely low temperatures
+and high densities (41.3.3).
+
+\subsection{}\label{41.3.2} The degeneracy parameter A is the quantity
+I = en/hT
+where i is the chemical potential (41.2.3). Under the condition
+of slight degeneracy (A < 1), the ones in the denominators of
+I lie quantum distribution functions /b and /p can be neglected,
+and these functions become the classical Maxwellian-Boltzmann
+distribution function / m- b - Thus
+E t/kT
+/ j Y l - B = Ae
+The degeneracy parameter is found from the condition of normalization
+of the distribution function:  = N (41.2.2),
+i
+which indicates the conservation of the total number of particles
+in the system. The condition for slight degeneracy is of the form
+A =
+
+
+----<1 , 
+( 231771) 3/2  
+where n0 is the concentration of particles, m is the naass of the
+particles, h is Boltzmann's constant, h is Planck'sxonstant,
+and T is the absolute temperature.
+
+\subsection{}\label{41.3.3} The degeneracy temperature is the temperature at
+which degeneracy becomes appreciable (41.3.1). It is determined
+from the condition
+A = (23X77l/crd )3/2 1, from which T = h*ny 3
+2nmk *
+'The temperature criterion of degeneracy is as follows: when
+T  Td the system of particles is degenerate; when T >
+the system of particles is not degenerate, and its behaviour is
+described by classical laws.
+For example, the degeneracy parameter A  3 X 10 ~6 <C 1
+for hydrogen under standard conditions (T = 300 K and n0 m
+ 3 X 1025 m-3). The degeneracy temperature for hydrogen is  1 K. For all other gases, heavier than hydrogen, A
+is even smaller. Under standard conditions gases are not degenerate.
+Degeneracy, associated with the quantum properties of
+gases, is manifested to a considerably less degree than the dcvia-
+
+tions of gases from an ideal gas, which is due to intermolecular interaction. Photon gas is always degenerate (7 - oo) because
+the rest mass of a photon equals zero (m0 = 0, Table 43.1).
+Photon gas is described by Bose-Einstein quantum statistics
+(41.2.6).
+
+\subsection{}\label{41.3.4} Electrons in metals are an example of a degenerate gas.
+Under ordinary conditions n0  1028 to 1029 m-3. Since the mass
+of the electron is small (m  10~30 kg), 7  (16 to 20) X
+X 103 K. Electron gas does not comply with the classical Max-
+well-Boltzmann statistics.
+
+\subsection{}\label{41.3.5} The energy of degenerate electron gas (41.4.5), and
+other gases described by quantum statistics, is not a linear
+function of the temperature. Therefore, the simple physical
+interpretation of the absolute temperature (8.3.4) is not suitable
+in the region of degenerate gases (41.3.3).
+
+\section{Degenerate Electron Fermi Gas in Metals}
+\label{sec-41.4} 
+
+\subsection{}\label{41.4.1} The energy distribution of conduction electrons in
+metals is described by the Fermi-Dirac distribution function
+(41.2.5):
+/ -----------------
+'F e(E-ii)/kT + i *
+The number of quantum states of electrons per unit volume of
+metal, within the energy range from E to E dE (41.1.4) is
+dr 4ji p2dp 2it (2m)3/2 7?1/2 dE
+WKE) ~ hz - h3 - hz
+Use is made here of the relation between the momentum p of
+the electron and its energy:
+k1/2
+p1 ~ 2mE, *-(*)dE.
+The number of electrons dnQ (E) in unit volume of the metal,
+having energies within the range from E to E + dEy equals,
+according to Sect. 41.2.2:
+, or 4JI(2 m)3/2 EV* dE
+dnQ (E)=2jF dg (E)= ------------------------
+h3 exp [(E - p)lk.T]--A 'VM] DEGENERATE ELECTRON FERMI GAS 595
+Factor 2 takes into account the fact that the electrons comply
+with the Pauli exclusion principle (39.3.1). This equation
+expresses the energy distribution law for conduction electrons
+in a metal.
+
+\subsection{}\label{41.4.2} The unusual properties of electron gas have an effect
+on its behaviour at the absolute zero temperature (T - 0 K).
+If p0 is the chemical potential of the gas at T - 0 K (41.2.3),
+then
+, = 1
+,F e( E - ii0)/kT+ 1 '
+at E < p0 the difference E - p0 < 0 and
+e(M-K)/H'  1
+at E - Ho < 0 and T -* 0, oxp - E)/kT] oo and
+/jr -> 1; at E > p0, the difference E - p0 > 0 and at T -+ 0,
+exp [(E - p0)lkT] oo and fp 0.
+The curve of the Fermi distribution function fp at T = 0 K
+is given in Fig. 41.2. In the energy range from 0 to p0, function
+fp is equal to unity. In passing
+through the value E =i0,
+the function drops abruptly to
+zero. At T = 0 K, the electrons
+of the metal occupy all allowed
+energy levels with a population
+equal to unity (41.2.2) up to the
+level with the energy E = p0.
+All levels with energy exceeding
+p0 are empty; their population
+equals zero. Thus, p0 is the maximum
+energy that conduction
+electrons can have at absolute zero temperature. This quantity
+is called the Fermi energy: p0 = Ep. If the consecutive numbers
+of the energy levels are plotted along the axis of abscissas in
+Fig. 41.2, and the corresponding numbers of conduction electrons
+per unit volume are the ordinates, the maximum ordinate
+corresponds to the energy level number n j2, where n) is the
+electron concentration. The highest level occupied by electrons is called the Fermi level. It corresponds to the Fermi energy Ep,
+which an electron has at this level.
+
+\subsection{}\label{41.4.3} The energy distribution law for conduction electrons at
+r - O K is of the form
+dn0(E) = 4ji (2m)3/2£V2 dE
+h*
+It is represented graphically by the curve in Fig. 41.3.
+The total number of conduction electrons in unit volume of
+a metal is
+n0 j 0
+dn0 (E) =
+An (2m)»/!
+A* j E1/2 dE =
+An (2m.)3/2 2 „3/2
+B» T F '
+0
+Hence
+F 2m  8n )
+The average energy (E) of the electron at T = 0 K is
+1 ( 3/20 "I273
+5 F" 5 2m V 8jc /
+At 7?0 = 6 X 1028 m-3 we obtain, after substituting the values
+of h and m:
+E) = 9 X 10-19 J - 5.4 eV.
+If we compare this energy with the average energy of a molecule
+of nondegenerate monatomic gas (E) --- SkT/2 (10.2.5), we
+find the energy Ey that the molecule could have at the temperature
+T  104 K. In other words, under ordinary conditions,
+kT/EF < 1.
+
+\subsection{}\label{41.4.4} At a temperature different from zero the Fermi-Dirac
+distribution function fF is of the form shown in Fig. 41.4 by
+the full-line curve. The same figure shows the function fp at
+T - 0 K in dash lines. The curves differ in the kind of drop
+the function undergoes near the value E = p. An abrupt drop
+along a vertical line at E = jul0 = E y for the case when T =
+ 0 K (Fig. 41.2) changes to the smooth curve A B C at T =/=
+0 K. Of importance is the fact that the states of the electrons,
+at the energy levels that satisfy the condition E < jli, do not
+change when heated from 0 K to T. Distortion of the function
+I f occurs only at its “tail-end”, in an energy range of the width
+2 k T , near the value E = p, at which Jy = 1/2.
+
+\subsection{}\label{41.4.5} The chemical potential p (41.2.3) of an electron gas at
+the temperature T is
+11 = E y
+The internal energy U (9.1.2) of a mole of electron gas is
+5 Jt2 (kTY T
+12 EI J ‘
+Here N  is Avogadro's number (Appendix II), and k is Boltzmann's
+constant (8.4.5). Quantities p and U remain practically
+constant when the temperature is raised.
+The molar heat capacity C V fl (9.5.2) of an electron gas is
+A comparison with the heat capacity of a nondegenerate monatomic
+gas (10.7.1) C'y1 8 - SNjk/2, indicates that
+C'vti  hT
+/"-class ~ 3 Ew *
+t'Vix 1
+At room temperature kT/Ey  0.01 (41.4.3), and therefore
+CV|X/Cyss ~ 0.03. The heat capacity of degenerate electron
+gas is negligibly small. This is so because only a slight number of electrons, within the “drop region” of the Fermi-Dirac distribution
+function fy (hatched regions 1 and 2 in Fig. 41.4),
+participate in the process of changing the internal energy of
+the electron gas when it is heated. This removes one of the chiel
+shortcomings of the classical electron theory of the electrical
+conduction of metals (20.3.7).
+
+\section{Quantum Theory of Electrical Conduction in Metals}
+\label{sec-41.5} 
+
+
+\subsection{}\label{41.5.1} The theory of the electrical conduction of metals, based
+on quantum mechanics (38.1.1) and Fermi-Dirac quantum statistics
+(41.2.5) is called the quantum theory oj electrical conduction
+in metals. Using the Fermi-Dirac distribution function
+(41.2.5) in this theory, Ohm's law for current density (20.3.4)
+was derived. Thus
+j = xE.
+
+\subsection{}\label{41.5.2} In the quantum theory of electrical conduction, the.
+electrical conductivity x is calculated by the formula
+n0e2 (Xv)
+muy
+where nQ is the number of conduction electrons per unit volume
+of the metal, (Xy) is the mean free path of the electron (20.3.1)
+having Fermi energy (41.4.2), and uy is the velocity of thermal
+motion of such an electron. Notwithstanding the external resemblance
+between this formula and the formula for x in the
+classical electron theory (20.3.4), it has an entirely different'.1.5] QUANTUM THEORY OF ELECTRICAL CONDUCTION 599
+physical content and, in contrast to the classical formula, it
+.ompletely agrees with the experimental data.
+
+\subsection{}\label{41.5.3} Also explained in the quantum theory of electrical
+conduction of metals is the dependence of electrical conductivity
+mi temperature (x oc 1/T), as well as the anomalously large
+mean free path of the electron in a metal (20.3.7). The ordered
+motions of electrons in a metal-electric current-is dealt with
+in quantum theory as the process of propagation of electron
+<le Broglie waves (38.1.4) scattered by anharmonic thermal
+vibrations of the lattice points in the metal (40.2.4). An
+gnus phenomenon occurs in optics in the propagation of
+wave through a turbid medium, containing scattering
+(suspended particles in a liquid, colloidal solutions,
+(34.3.1) . When the distance between the scattering centres are
+<>f an order comparable to the wavelength, scattering of the
+light occurs and the intensity of the light decreases as it propagates
+in the medium. At distances between the scattering centres
+substantially less than the wavelength, the medium is optically
+liomogeneous and no light scattering occurs.
+
+\subsection{}\label{41.5.4} An ideal crystal lattice, free of all violations of periodicity
+and with stationary particles at the lattice points, behaves
+like an optically hgmogeneous medium; it does not scatter
+electron waves and conduction electrons pass through such
+a lattice without resistance. The scattering of electron waves
+occurs only when the periodicity of the lattice is violated.
+These are inhomogeneities that act as scattering centres. Such
+centres are, for example, density fluctuations in the lattice
+(11.6.3), resulting from anharmonic thermal vibrations of the
+positive ions of the metal. With the exception of superconductors
+(41.6.1) , this scattering is what leads to the existence of electrical
+resistance in pure metals.
+
+\subsection{}\label{41.5.5} The scattering of the electron waves by the thermal
+vibrations of the lattice points increases with the temperature,
+whereas the mean free path of the electrons is reduced.
+The quantity (Xp) is calculated by the formula
+n , Ed
+nn0hT '
+where E is Young's modulus (40.3.6), d is the crystal lattice
+constant, n0 is the number of atoms in unit volume, k is Boltzmann's
+constant (8.4.5), and T is the absolute temperature.600 QUANTUM PHYSICS OF SOLIDS [41
+Here the electrical conductivity is found to be inversely proportional
+to the absolute temperature and independent of n0
+for monovalent metals*. Thus
+ e*Ed
+muyKkT '
+This formula agrees with experimental data in the region of
+room temperatures. The conductivity, for instance, obtained
+for silver (E = 107 N/m2, d = 3 X 10 ~10 m, m = 9 X
+X 10~31 kg, kT  4.2 X 10“21 J, and uy = 1.4 m/s) is
+Ktheor  5 X 107 1/Q-m, whereas xexper ~ 0.3 X 107 1/Q-m.
+At very low temperatures the formulas given above are not valid.
+The mean free path under these conditions is inversely proportional
+to 715, which agrees with experimental data.
+41.5.6 Besides density fluctuations, the cause of electron wave
+scattering and the electrical resistance of metals is violation
+in the periodicity of the crystal lattice due to the inclusions of
+impurity atoms in the lattice. The resistivity p of a metal
+(p = 1/x) consists of two parts:
+p = pT + Pim,
+where pr is the resistivity due to the scattering of electron waves
+by density fluctuations, and pjm is the resistivity due to scattering
+by impurities. Of importance is the fact that pim is
+Independent of the temperature. Since as T 0, pr 0 as
+* The concentration of conduction electrons and ions in the
+lattice coincide in such metals.1.0] SUPERCONDUCTIVITY 601
+well, p pim as the temperature is lowered. The quantity
+Pim is called the residual resistivity. This resistivity remains a
+property of the metal when it is cooled even down to absolute
+zero. The dependence of the electrical resistivity on the temperature
+is shown in Fig. 41.5. The point of intersection of the
+extension of the curve (dash line) with the axis of ordinates
+(to T = 0 K) is the residual resistivity.
+
+\section{Superconductivity}
+\label{sec-41.6} 
+
+
+\subsection{}\label{41.6.1} The phenomenon of superconductivity consistsin the
+practically complete disappearance of electrical resiivity
+in certain metals and alloys at a certain temperature Tc, called
+the transition temperature to a superconductive state. Substances
+having this property are called superconductors. Today over
+500 pure elements and alloys are known that display superconductivity.
+The temperature range AB (Fig. 41.6) of the transition
+to a superconductive state does not exceed thousandths of
+a degree for pure specimens. It therefore proves expedient to
+assign a definite value to Tc. The width of the range AB depends
+on nonhomogeneities in the metal, primarily on the presence
+of impurities and internal stresses in the specimen. The
+temperatures Tc known at the present time range from 0.155 K
+(BiPt) to 23.2 K (Nb3Ge).
+The isotope effect in superconductors is the fact that the transition
+temperatures Tc of various isotopes (42.1.3) of the same
+superconducting metal are inversely proportional to the square
+roots of their atomic masses.
+\subsection{}\label{41.6.2} A sufficiently strong magnetic field at a given temperature
+destroys the superconductive state of a substance. When
+a magnetic field is applied to a superconductor, the transition
+temperature Tc (41.6.1) is lowered.
+A magnetic field of the strength IIc which, at the given temperature,
+causes the transition of a substance from the superconductive
+to the normal state is called the critical field. As the temperature
+of the superconductor is lowered, the field strength IIc
+increases. As a first approximation: 1IC - II0 [1 - (T/Tc)2.
+The curve in Fig. 41.7 separates the superconductive and normal
+states of a substance.
+The superconductive properties of a conductor disappear when
+a sufficiently heavy current is passed through them. This is602 QUANTUM PHYSICS OF SOLIDS [41
+due to the action of the magnetic field, set up by the current,
+which destroys the superconductive state.
+\subsection{}\label{41.6.3} An external magnetic field, weaker than the critical
+field (41.6.2) does not penetrate into the interior of a superconductor.
+Hence, the magnetic induction B (23.1.2) is always
+zero in the bulk of the superconductor. Shown in Fig. 41.8 is
+a uniform magnetic field (23.1.3) directed along the axis of
+a cylindrical superconductor. The superconductor seems to
+“push” the magnetic field out of the space it itself occupies and
+is an ideal diamagnetic material with a magnetic susceptibility
+of xm = -I (26.4.5). Here the relative magnetic permeability
+Hr = 1 + Km = 0 an<* B = VoVtH = 0.
+
+\subsection{}\label{41.6.4} The transition of a substance to the superconductive
+state is accompanied by changes in its thermal properties.
+In the absence of a magnetic field and at the transition temperature
+Tc (41.6.1), there is an abrupt change in the heat capacity
+(9.5.1). In the presence of a magnetic field an isothermal transition
+from the superconductive to the normal state is associated
+with a jump in the heat conductivity and heat capacity. These
+phenomena are typical features of a second-order phase transition
+(12.4.2).
+\subsection{}\label{41.6.5} In quantum-mechanical theory, the phenomenon of
+superconductivity is considered to be the superfluidity (12.4.3)
+of electrons in a metal with the absence of friction inherent
+in superfluidity. The conduction electrons move along a superconductor
+unimpeded? i.e. without any “friction” between them1.6] SUPERCONDUCTIVITY 603
+and the crystal lattice points. The main feature of superconduc-
+lors is that the mutual attraction of the electrons in them leads
+in the pairing of electrons. The cause of this attraction is interaction
+between electrons, supplementary to Coulomb repulsion,
+accomplished by the action of the crystal lattice and leading
+In the pairing. A model of this attraction is illustrated in
+'g. 41.9. Conduction electron
+c, attracts ion I of the crystal
+lattice to itself, displacing the
+ion from its equilibrium position.
+This changes the electric
+field in the crystal; ion I sets
+up an electric field that acts on
+I he conduction electrons, including
+electron e2. Thus the interaction
+between electrons el and
+r2 is accomplished by means of
+the crystal lattice. The displace- .
+ment of the ion by an electron
+ig. 41.9leads to a situation in which
+I he electron is surrounded by a “cloud” of positive charge, which
+exceeds the intrinsic negative charge of the electron. Together
+with this “cloud” the electron has a net positive charge and is
+thereby attracted to another electron.
+\subsection{}\label{41.6.6} In the quantum theory of metals attraction between
+electrons (phonon exchange) is associated with the setting up
+of elementary excitations (quasi-particles) of the crystal lattice.
+An electron, moving in a crystal and interacting with another
+electron by means of the lattice, brings the lattice into an excited
+state. As the lattice returns to the ground state it emits a
+quantum of energy of acoustic frequency, called a phonon
+(41.7.5), which is absorbed by the other electron. The attraction
+between electrons can be conceived of as their exchange of
+phonons. This attraction is found to be most effective if the
+momenta of the interacting electrons are anti-parallel.
+
+\subsection{}\label{41.6.7} The initiation of a superconductive state in a substance
+is associated with the possibility of forming bound pairs of
+electrons in the metal. The distance 6 between the electrons of
+a pair equals604 QUANTUM PHYSICS OF SOLIDS [41
+where h is Planck's constant, uy is the velocity of an electron
+at the Fermi level (41.5.2), k is Boltzmann's constant (8.4.5),
+and Tc is the transition temperature to a superconductive state
+(41.6.1). An estimation indicates that 6  10~4 cm, i.e. the
+electrons forming a pair are at a distance from each other of the
+order of 104 crystal lattice constants. The whole electronic
+system of a superconductor is a bound aggregate extending
+over huge distances on the atomic scale.
+If at arbitrarily low temperatures Coulomb repulsion between
+electrons predominates over the attraction that forms pairs,
+the substance (metal or alloy) remains normal with respect to its electrical properties. But if the forces of attraction predominate
+over those of repulsion at the temperature Tc (41.6.1),
+the substance goes over to the superconductive state.
+
+\subsection{}\label{41.6.8} The most important feature associated with the pair
+in the aggregate of electrons in a superconductor is the impossibility
+of energy exchange between the electrons and the lattice
+in small portions, smaller than the binding energy of paired
+electrons. This means that in collisions between the electrons
+and the crystal lattice points, the energy of the electrons does
+not change, and the substance behaves as a superconductor with
+zero resistivity. A quantum-mechanical analysis shows that
+there is no scattering of electron waves by the thermal vibrations
+of the lattice or impurities. This is what indicates the
+absence of electrical resistance.
+
+\subsection{}\label{41.6.9} A definite amount of energy is required to destroy the
+state of superconductivity. At T > Tc (41.6.1), the bound
+states of the paired electrons are violated, attraction between
+the electrons ceases and superconductivity no longer exists.
+
+\subsection{}\label{41.6.10} Superconductivity is being used to produce strong
+magnetic fields because there are no thermal losses when heavy
+currents, required lo set up strong magnetic fields, are passed
+through superconductors. But, since a magnetic field destroys
+the state of superconductivity (41.6.2), special type-2 superconductors
+have been developed for obtaining strong magnetic
+fields. These are certain alloys and superconducting thin films.
+In such superconductors magnetic fields with a field strength
+greater than IIC (41.6.2) penetrate the substance in the form of
+threads piercing the specimen. The substance between the
+threads is found to be superconductive, and heavy currents can set up ultrastrong magnetic fields. Magnets, based on the application
+of superconducting solenoids, are being extensively used.
+
+\section{Heat Capacity of Solids}
+\label{sec-41.7} 
+
+
+\subsection{}\label{41.7.1} No distinction is made for solids between the heat capacities
+Cv and Cp (9.5.4 and 9.5.7). In nonmetallic solids,"the largest
+contribution to heat capacity is made by the energy of
+thermal vibration of the particles at the crystal lattice points.
+Tor metals, a slight contribution is made by the degenerate"
+electron gas (41.4.5). /
+
+\subsection{}\label{41.7.2} The classical theory of the heat capacity of solids /is
+based on the principle of equipartition of energy (10.6.4).
+A homogeneous solid is dealt with as a system of particles,
+independent of one another, having three degrees of freedom and
+executing thermal vibrations with the same frequency. Thex
+average energy (E) per degree of freedom is (E) = kT (10.6.5).
+'The internal energy U (9.1.2) per mole of a solid is
+U = 3 Na(E) = SNAkT = 3 RT,
+where NA is Avogadro's number (Appendix II), k is Boltzmann's
+constant (8.4.5), and R - kNA is the universal gas constant
+(8.4.4). The molar heat capacity* (9.5.4) of a solid with an atomic
+crystal lattice is
+'V =
+dU
+dT = 3i? = 25 J
+mol-K 5.97 cal
+mol-K
+The Dulong-Petit law states that the molar heat capacity of all
+chemically simple crystalline solids equals approximately
+6 cal/mol-K. According to this law tha molar heat capacity
+does not depend on either the temperature or any characteristics
+of the crystals. Experiments disprove this statement and indicate
+1 hat the heat capacity depends on the temperature, especially
+in the region of low temperatures (Fig. 41.10). The reason why
+t he classical theory of the heat capacity of solids disagrees with
+experimental data is in the limited nature of the principle of
+equipartition of energy and its inadequacy in the region of low
+temperatures. At these temperatures the average energy of the
+* Frequently, the heat capacity is referred to one gram-atom of
+the substance.606 QUANTUM PHYSICS OP SOLIDS [41
+vibrating particles must be calculated in accordance with
+the laws of quantum mechanics (38.5.9).
+\subsection{}\label{41.7.3} In the initial quantum theory of heat capacity of solids,
+a crystal was treated as a system of N atoms, each of which is
+a quantum harmonic oscillator. All the atoms vibrate independently
+of one another with the same frequency w. The average
+energy (E) per degree of freedom of the atom (as a quantum
+harmonic oscillator) is equal (38.5.9) to
+<£> =
+ho>
+exp (fito/kT) - 1
+hv
+exp (hv/kT) - 1 *
+The internal energy U (9.1.2) of a mole of a solid is expressed
+as follows:
+U = 3Na (E) - 3Aa hv
+exp (hv/kT) - 1
+from which the molar heat capacity of a solid can be found
+r  oR / exp (hv/ItT)
+““ kT) [oxp (liv/kT)- l]2 -41.7] HEAT CAPACITY OF SOLIDS 607
+If we introduce the characteristic temperature Tq = hv/kT, then
+This result, qualitatively describes the dependence of the heat
+capacity of solids on the temperature. Curves of this dependence
+are plotted in Fig. 41.10.
+At high temperatures (hv < kT), as shown in Sect. 38.5.9,
+(E) = kT in accordance with the law of equipartition of energy
+(10.6.4) and C = SR.
+At low temperatures (hv > kT)
+eW  i  ehv/kT and C(i = 3ff j 2e-V r.
+As T 0, Tq/T oo and exp (- TjT) 0 more rapidly
+than the increase in (TV?7)2. Therefore, as T -> 0, the heat
+capacity C 0. This qualitatively agrees with experimental
+data. But simple quantum theory does not explarmthe quantitative
+behaviour of solids in the vicinity of absolute zero.
+
+\subsection{}\label{41.7.4} The assumption that all the atoms of a. solid execute thermal vibrations independently of one anotheiat the same
+frequency oversimplifies the true picture of particle vibration
+in a crystal lattice. The interaction between the atoms (or other
+particles) of a solid is so strong that all N particles of the body
+form a bound system having SN degrees of freedom, and the
+vibration of all the atoms may proceed at various frequencies.
+The extremely complex problem of the frequency distribution
+of atomic vibration in a solid was, in its time, the basis for the
+refined theory of heat capacity of solids. A solid has a wide
+spectrum of vibrational frequencies. There are vibrations with
+sufficiently low and with higher frequencies. The low frequencies
+correspond to elastic vibration of the crystal in the acoustic (or
+ultrasonic) range. Owing to the bonds between the particles of
+a crystal lattice, elastic acoustic waves propagate in the crystal.
+The physical idea of the theory of the heat capacity of solids,
+refining the theory discussed in Sect. 41.7.3, is that the main
+contribution to the energy of thermal vibration of the crystal
+is made by low-frequency vibration, corresponding to elastic
+waves with wavelengths, exceeding the crystal lattice constant.
+This follows, in particular, from Fig. 38.7, which shows that668
+QUANTUM PHYSICS OF SOLIDS [41
+the maximum contribution to the average energy of a quantum
+oscillator is made by vibrations with low frequencies (38.5.9).
+The propagating elastic waves behave as if they were propagating
+in a continuous medium. The atomic structure of the crystal
+has no effect on the propagation in it of elastic waves of wavelengths
+exceeding >imin = i>/vmax, where v is the velocity of the
+corresponding elastic wave, and vmax is its frequency. The
+wavelength Xm[n should be commensurable with the lattice
+constant, i.e. i mjn ~ d  (V/N)1/3, where N is the number of
+particles (crystal lattice points) in a crystal of volume V.
+
+\subsection{}\label{41.7.5} Elastic waves in a crystal have quantum properties
+consisting in the existence of a minimum portion of energy,
+a quantum of energy of the wave with the given frequency v.
+This enables a wave with the frequency v to be correlated to
+a quasi-particle, the phonon, whose propagation at the velocity
+of sound v corresponds to an acoustic wave.
+A phonon has the energy E = hv, where h is Planck's constant
+(Appendix II), and the quasi-momentum p = hv/v. The quasimomentum
+p of the phonon is in the direction coinciding with
+that of the propagation of the acoustic wave. The most essential
+difference between the quasi-momentum and the momentum
+is that in the collision of phonons in crystals the quasi-momentum
+can be transferred in discrete portions to the crystal lattice.
+In this case it is not conserved*.
+In short, the quantization of the acoustic field leads to phonons
+in the same way as the quantization of the electromagnetic field
+leads to photons (37.1.4).
+
+\subsection{}\label{41.7.6} Phonon spin equals zero and, therefore, phonons comply
+with Bose-Einstein statistics (41.2.2). Phonons can be emitted
+and they can be absorbed, but their number is not maintained
+constant, hence the chemical potential for phonon gas (41.2.3)
+equals zero (cf. Sect. 41.2.6). The energy of a crystal can be dealt with as the energy of a phonon
+gas and can be calculated as in Sect. 41.2.6. The number dN
+of phonons with frequencies in the range from v to v + dv is
+dN = dg
+eh v/k T i '
+* A detailed discussion of the properties of quasi-particles,
+associated with the role of periodicity of crystal structure, is
+beyond the scope of this handbook.41.7] HEAT CAPACITY OF SOLIDS 609
+where dg is the number of quantum states (number of cells)
+in volume V of the crystal:
+Q 4jxp* dpV
+0 4jtv2 dv Tr
+dg ~6 5® V'
+where p = hv/v is the quasi-momentum of the phonon, and v
+is the velocity of sound in the crystal. The factor 3 takes into
+account the fact that longitudinal and transverse waves, with
+two mutually perpendicular polarizations, can propagate in
+a crystal* (31.1.8). Thus
+12 nv2dvV
+vHeh kT-i) '
+The internal energy U (9.1.2) of a crystal (accurate to zero-
+point energy) is
+U hv dN = 12jt Vh
+v3
+v3 dv
+ehv/kTi »
+where Vmax = v (SN/kV)1/3 is the upper frequencyboundary
+of the phonons that contribute to the energy of/tfiermat vibration
+of the crystal. An assessment of the order/of magnitude of
+vmax *s giyen ii1 Sect. 41.7.4.
+Introduced in calculating U is the Debye characteristic temperature
+To ~ max* The following two limiting cases are considered.
+(a) High temperatures T >» Tjy.
+Here ehvhT- 1 hv ,
+kT and
+12jiFkT v2 dv -2nVkT,
+v3
+X -2 -=3NkT.
+O
+* The difference in the velocities of the longitudinal and transverse
+waves is ignored, the number of quantum states of the
+phonons being simply tripled.
+39-0186610 QtFANtfUM PHYSICS OF SOLIDS [4i
+For one mole of the crystal N = where N is Avogadro's
+number (Appendix II), and the molar heat capacity C„ complies
+with the Dulong-Petit law (41.7.2):
+c» = - = 3 N Ak=3R .
+(b) Low temperatures T€ TB.
+Vmax
+(* v3 dv
+In calculating the integral  ---- --7 -7 = 7 - T a new
+ J exp hv/kT)- 1
+0
+variable, %=hv/kT, is introduced and the upper limit is
+replaced by 00. Thus
+vmax
+12ji Vh
+v3
+I
+v3 dv
+exp (hv/kT) - 1
+0
+12jiVh (kTk f dl
+v3  h ) J
+0
+4ji *k*V
+5h3v3
+The molar heat capacity is proportional to the cube of the absolute
+temperature and obeys the Debye T3 law. Thus
+dU
+dT
+16n*k*VT3
+5h3v3 = const T3.
+
+\section{Band Theory of Solids}
+\label{sec-41.8} 
+
+\subsection{}\label{41.8.1} Long-range order in crystals (40.1.1) leads to a situation
+in which an electric field, which is a periodic function of the
+coordinates, exists in solids. In a metal, for example, where the
+positive ions are located in strict order at the lattice points,
+the potential energy of an electron varies along some direction
+OX as shown in Fig. 41.11. Energy minima correspond to the
+places where the positive ions are located.
+
+\subsection{}\label{41.8.2} A periodic electric field in a crystal of any type (40.1.3)
+essentially changes the energy states of the electrons in a solid'.
+as compared to their state in single atoms. In single atoms the
+electrons are in discrete energy states (38.2.5). In a solid, the
+energy states of the electrons are determined both by their
+interaction with the nucleus of their atom and by the electric
+Held of the crystal lattice, i.e. by their interaction with other
+atoms. As a result of this interaction, the energy levels of the
+o  T  A A / W
+Fig.J41.llj
+electrons are split. Thus, in a solid containing N interacting
+atoms, N closely spaced energy levels are formed in place of
+the discrete energy level typical of a single atom. These N
+energy levelsmake up an en ergy b a n d . A ban d en ergy sp ectru m
+of the electron s is formed in crystals.
+
+\subsection{}\label{41.8.3} The, formation of a band energy spectrum in a crystal
+follows from the indeterminacy principle (38.6.6). Owing to the
+finite lifetime x of the electron in an excited state (x » 10~8 s)
+(39.1.5) the width AE of the energy level in a single atom is
+E « - « 10"7 eV
+x
+(natural energy level width).
+The valence electrons (39.3.9) of the atoms in a crystal are more
+weakly bound to the nuclei than the inner-shell electrons and
+can pass from one atom to another by means of the tunnel effect
+(38.7.2). In this way electrons penetrate the potential barrier
+(38.7.1) separating the atoms of the crystal.
+To assess the average lifetime x of a valence electron in a given
+atom it is assumed that the penetrability D of the barrier is
+expressed by the simple formula (38.7.2)
+-4- V2m(Uq- E) L
+I) « e h
+
+where U0 - E is the barrier height, consisting of the ionization
+energy, and amounts to approximately 10 eY, and L is
+the barrier width, which is commensurate with the crystal
+lattice constant: L  d zz 10~10 m. The frequency v of penetration
+of an electron through the barrier is
+V2m(l/0- E) L
+where v is the velocity of the electron in the atom (potential
+well) and can be taken equal to v  106 m/s. The average lifetime
+x of an electron in the given atom is
+1 d d Y  2m(u0-E)L
+X = -« - e
+V V
+After substituting the values of all the quantities, x  10"15 s
+is obtained. From the indeterminacy relation
+AE iK - « l eV.
+X
+Instead of the natural width AE » 10~7 eV of the electron
+energy level in a single atom, a band of allowed values of energy
+is formed in a crystal.
+
+\subsection{}\label{41.8.4} The frequency of the penetration of inner-shell electrons
+in atoms through a potential barrier and their transitions to
+other atoms is negligible. This is due to the increase in barrier
+height: U0 - E  103 eV and the increase in barrier width:
+L  3 X 10"10 m. According to calculations, x  1020 years.
+The broadening of the energy levels of the inner-shell electrons
+is unessential, and these electrons behave in crystals practically
+in the same way as in single atoms.
+
+\subsection{}\label{41.8.5} If N is the total number of atoms in a solid, then the
+energy band, formed from the electronic energy level of the
+valence electron of the atom consists of N closely spaced levels.
+Adjacent energy levels in a band are at about 10~22 eV from each
+other.
+The allowed energy bands are separated by regions that are
+forbidden bands of electron energy values. The width of the for- 1.8] BAND THEORY OF SOLIDS 613
+hidden bands is commensurable with that of the allowed bands.
+With an increase in energy the width of the allowed energy
+hands increases and that of the forbidden bands decreases.
+A schematic diagram of the energy bands of a solid is shown
+in Fig. 41.12.
+
+\subsection{}\label{41.8.6} The allowed energy bands in a solid can be filled in
+different ways by electrons. In limiting cases they can be completely
+filled or entirely empty (41.9.1). The electrons in a solid
+can move from one allowed band to another. For an electron
+to move from a lower band to the next higher one it is necessary
+to expend energy equal to the width of the forbidden band between
+the two allowed ones (of the order of several eV).
+Very little energy is required for intraband transitions. For
+example, an energy of 10 ~4 to 10~8 eV is sufficient for this purpose,
+and it is acquired by an electron in a metal by the action
+of an electric field over a free path length at ordinary potential
+differences. But this energy is insufficient to move an electron
+from one band to another. The action of thermal excitation can
+impart various energies to electrons, sufficient both for intra-
+hand and interband transitions.614 QUANTUM PHYSICS OF SOLIDS 
+
+
+\section{Metals and Dielectrics in the Band Theory}
+\label{sec-41.9} 
+
+
+\subsection{}\label{41.9.1} Differences in the electric properties of solids are explained
+by the band theory (41.8.2) by the fact that the allowed
+energy bands (41.8.2) are differently filled by electrons and by
+the different widths of the forbidden bands (41.8.5). These two
+factors determine whether a given solid is a conductor of electric
+current or is a dielectric. A necessary condition for a solid to be
+a conductor is the availability of empty energy levels to which
+the electric field can raise the electrons. It should be taken into
+consideration that the field can bring about only intraband
+transitionsjof the electrons (41.8.6).
+
+\subsection{}\label{41.9.2} Typical examples of conductors are the metals of the
+first group of Mendeleev's periodic table (39.3.5), for instance,
+sodium. In a single atom of sodium there are two filled electron
+shells, containing 2 and 8 electrons, respectively (39.3.4).
+According to the Pauli principle (39.3.1), the eleventh valence
+electron of the sodium atom only fills half of the upper energy
+level. In a crystal of sodium, the first two filled shells of single
+atoms correspond to the energy bands completely filled with
+electrons.
+The valence electrons of the sodium atoms in a crystal half
+fill the levels of the band of allowed energy values (horizontally
+hatched in Fig. 41.13). This is called the conduction band because
+the electrons in it participate in producing the conduction current
+(20.1.2). By the action of the electric field, set up in the
+Forbidden band
+Empty energy levels
+Filled levels
+Fig. 41.13
+crystal by the source of electrical energy, the valence electrons
+acquire more energy and move to higher, unoccupied energy
+levels in the conduction hand. This initiates their ordered motion
+and produces a current in the crystal.41.10] CONDUCTION OF SEMICONDUCTORS 615
+Thus, if the band is n o t co m p le te ly occupied b y valence electrons,
+a so lid is alw ays a conductor of e le ctric current.
+
+\subsection{}\label{41.9.3} Hybridization o f a llow ed energy bands m a y occur in
+crystals. A band form ed in s p littin g an upper excited le ve l m a y
+o verlap a band produced b y the s p littin g o f a lo w e r state of
+valence electrons. T his phenom enon is observed in the crystals
+of elem ents of the second group in M endeleev's p e rio d ic ta b le
+(Be, Cd, M g, Z n and others). T his form s a w id e r hybrid band
+in w h ich valence electrons are located, fillin g it o n ly p a rtly .
+H ence, a h y b rid band is a co n duction band, and such crystals are
+conductors o f e le ctric current.
+41.9.4 The energy bands do n o t overlap in so lid d ie le ctrics,
+and the band th a t com bines the energy levels o f the valence
+electrons of atom s or ions is co m p le te ly fille d w ith electrons,
+whereas a ll higher bands are e n tire ly e m p ty a t T = 0 K . The
+band com p le te ly fille d w ith electrons is calle d the valence band.
+The e m p ty bands are conduction bands. A n exam ple o f a c ry s ta llin
+e d ie le ctric is com m on sa lt (N aC l). The N aC l m olecule has
+a heteropolar bond (39.4.4), w h ich leads to the fo rm a tio n o f
+N a + and C l“ ions w ith co m p le te ly fille d electron shells. The
+N aC l crysta l has a valence band of the C l" io n and a ll low er
+bands are com p le te ly fille d , whereas the upper N a + io n band,
+located above, is e n tire ly em pty. The C l“ and N a + bands are
+separated b y 6 eV, and the source of e le c tric a l energy cannot
+excite the electrons fro m the co m p le te ly fille d C l“ band to the
+e m pty N a + conduction band. T his exp e d ie le ctric properties
+of N aC l.
+
+\section{Electrical Conduction of Semiconductors}
+\label{sec-41.10} 
+
+
+\subsection{}\label{41.10.1} Semiconductors in clu d e a large class o f substances
+whose re s is tiv ity varies in a w ide range fro m 10 "6 to 108 Q -m ,
+and is reduced ve ry ra p id ly , according to an e xp o n e n tia l la w ,
+as the tem perature is raised (41.10.2). The m ost ty p ic a l and
+e xtensively em ployed sem iconductor m a te ria ls are the chem ical
+elem ents germ anium , s ilic o n and te llu riu m . In the outer sh e ll
+of germ anium and s ilic o n atom s there are fo u r valence electrons,
+w hich fo rm covalent bonds (39.4.5) w ith the valence electrons
+of adjacent atom s. There are no “free” valence electrons in
+ch e m ica lly pure crystals o f these sem iconductors. O n the basis
+of the band theory (41.8.2) c ry s ta llin e sem iconductors belong616 QUANTUM PHYSICS OF SOLIDS [41
+to the type of solids in w h ich the valence band (41.9.4) is separated
+fro m the e m p ty conduction band (at T - 0 K ) b y a com p
+a ra tiv e ly narrow energy region |A  0 (F ig. 41.14), less th a n th a t
+in d ie le ctric crystals (41.9.4).
+F or silico n A E0 = 1.1 eV;
+fo r germ anium A £'0= 0 .7 2 eV.
+Conduction band
+
+\subsection{}\label{41.10.2}
+d u ctio n of ch e m ica lly pure
+H I
+sem iconductors is calle d the
+'.M0
+intrinsic conduction. Electron
+conduction (n-type conduction)
+:
+" - Valence band
+occurs w hen electrons are
+transferred fro m the va lence
+band to the conduction
+band. T his requires an expenF ig. 41.14
+d
+itu re of energy, n o t less than
+the w id th A E0 of the fo rbidden
+band (F ig. 41.14). The q u a n tity AE0 is called the activation
+energy of in trin s ic conduction. As the tem perature of the
+sem iconductor is raised, an increased num ber of electrons m ove
+fro m the valence band to the co n duction band and p a rtic ip a te
+in e le ctrica l conduction. The conducti v ity (20.3.4) of sem iconductors
+increases w ith the tem perature T according to the la w
+v. = v . « - A B o / 2 f t r
+where k is B o ltzm a n n 's constant (9.4.5). The re s is tiv ity (20.3.4)
+of sem iconductors d ra s tic a lly decreases as the tem perature is
+raised according to the re la tio n
+= p0e  2hT,
+T his feature of sem iconductors esse n tia lly d ifferentiates them
+fro m m etals (20.3.7).
+
+\subsection{}\label{41.10.3}. The tra n s itio n of an electron fro m the valence band
+of a sem iconductor to the conduction band in d ica tes th a t the
+co va le nt bonds (39.4.5) of the atom s are vio la te d in the sem iconductor
+crysta l. A ce rta in one of the valence electrons of one
+of the atom s in the la ttic e leaves its place. The abandoned place,
+or vacancy, displays surplus p o sitive charge. Such a vacancy
+is called a positive hole, and is treated as a p o sitive charge
+carrier. In the band theory th is m eans th a t a vacant energy
+le ve l appears in the valence band of the crysta l. A p o sitive41.10] CONDUCTION OF SEMICONDUCTORS 617
+hole behaves like a positive charge, equal in magnitude to the
+charge of the electron. Another electron may move to the place
+(hole) abandoned by the previous electron. This is equivalent
+to the movement of the positive hole; it appears at a new place,
+left by the second electron. In the external electric field, the
+electrons throughout the mass of the semiconductor move in
+the direction opposite to that of the electric field strength
+(15.1.2) . The positive holes move in the direction of the field
+strength, i.e. in the direction that a positive charge would
+travel when subject to an electric field.
+The electrical conduction of a semiconductor that is due to the
+motion of holes is called hole, or p-type, conduction.
+
+\subsection{}\label{41.10.4} The intrinsic conduction of semiconductors is due to
+the presence of two kinds of current carriers: electrons in the
+conduction band and holes in the valence band. Each electron
+excited to the conduction band corresponds to one hole in the
+valence band. The electron concentration ne and hole concentration
+nh are the same and increase rapidly with the temperature
+T according to the law
+ne = nh = const e-AB°/2fe:r,
+where AE0 is the activation energy >f intrinsic conduction
+(41.10.2) , and k is Boltzmann's constant (9.4.5). This explains
+the nature of the dependence of the electrical conductivity and
+resistivity of semiconductors (41.10.2) on the temperature, which
+strongly differs from the dependence of these quantities in
+metals (20.3.7).
+\subsection{}\label{41.10.5} The electrical conduction of semiconductors due to
+the presence in them of impurity centres is called extrinsic,
+or impurity, conduction.
+Impurity centres (or simply impurities) may be atoms or ions
+of foreign elements, and various defects and distortion of the
+crystal lattice (vacant points, displacements due to deformation
+of the crystal, etc.).
+Impurities change the periodic electric field in a solid and affect
+the motion of the electrons and their energy states. The energy
+levels of the valence electrons of impurity atoms are not located
+in the allowed energy bands (41.9.2) of the main, or host, crys-
+tal, and impurity energy levels (localized levels) are formed in the
+forbidden band.618 QUANTUM PHYSICS OF SOLIDS [41
+
+\subsection{}\label{41.10.6} Impurities can be a supplementary source of electrons
+in a solid. For example, in the substitution of one tetravalent
+atom of germanium by an atom of an impurity having five
+valence electrons (phosphorus, antimony or arsenic) one of the
+electrons of the impurity cannot form a covalent bond (39.4.5)
+with the germanium atoms and is thereby “superfluous”. The
+energy levels of such electrons are below the conduction band
+of the host crystal (Fig. 41.15). Such levels, filled with electrons,
+are called donor levels, and the atoms of the impurity that supply
+the “superfluous” electrons are called donor atoms. Only a small
+amount of energy AEe is required to excite electrons from the
+donor levels to the conduction band. This energy is obtained,
+for instance, from thermal excitation. For silicon AEe =
+= 0.054 eV if the impurity is arsenic. When electrons are transferred
+from the donor levels to the conduction band, electron
+impurity, or extrinsic, conduction (n-type impurity conduction)
+occurs. Such semiconductors are called electron impurity semiconductors
+(n-type semiconductors).
+
+\subsection{}\label{41.10.7} If a tetravalent atom in the lattice of the semiconductor
+is replaced by a trivalent impurity atom (boron, aluminium or
+indium) there will be a lack of one electron to form saturated
+covalent bonds. The lacking electron can be borrowed from the
+lattice of the neighbouring atom of germanium, in which a posi-/11.10] CONDUCTION OF SEMICONDUCTORS 619
+live hole is thereby formed (41.10.3). The consecutive filling
+of the holes formed in the germanium atoms by electrons is
+equivalent to the movement of the holes and leads to conduction
+in the semiconductor. The impurity energy levels, not occupied
+by electrons, are called trapping, or acceptor, levels. In this
+case, the impurity atoms are said to he acceptor atoms. Acceptor
+levels are located above the upper edge of the valence band
+(41.9.4) of the host crystal (Fig. 41.16). When silicon crystals
+are doped with boron (the addition of impurities to a semicond-
+ductor is called doping), the acceptor levels are an amount
+AjEh = 0.08 eV above the valence band. The transfer of electrons
+from the filled valence hand to the acceptor level produces
+positive holes in this band, and the valence band becomes
+a band of hole conduction. This leads to hole impurity conduction
+( p-type impurity conduction). Such semiconductors are called
+hole impurity semiconductors (p-type semiconductors).
+
+\subsection{}\label{41.10.8} When a semiconductor is doped with both donor and
+acceptor impurities at the same time, the nature of the conduction
+(n- or p-type) depends upon which impurity produces the
+higher concentration of current carriers. The concentration and
+energy of the electrons (and holes) in semiconductors depend
+very strongly, in contrast to those of metals, on the temperature,
+and increase when the temperature is raised.
+
+\section{Concept of Contact Electrical Phenomena in Metals and Semiconductors}
+\label{sec-41.11} 
+
+\subsection{}\label{41.11.1} The work junction <P in removing an electron from a
+metal is the work it is necessary to do for the electron to emerge
+from the metal into vacuum. The work 0 is done against the
+attractive forces developed by the surplus positive charge in the
+metal resulting from the removal of the electron. Besides, it is
+necessary to overcome the repulsion forces of the previously
+emerged electrons if they have not been removed and form an
+electron “cloud” at the surface of the conductor. The work
+function has a value of the order of several eV and depends upon
+El
+Fig. 41.17
+the kind of metal and the condition of its surface; it is changed
+by the presence of dirt, traces of moisture, etc. In the quantum
+theory of solids, the work function is reckoned from the upper
+electron-filled Fermi level (41.4.2) (Fig. 41.17).
+
+\subsection{}\label{41.11.2} Since the fastest electrons fly out of the metal, a lack
+of negative charge is formed in the metallic conductor and
+a surplus in the surrounding space. This is evident in a very
+thin layer (of a thickness equal to several interatomic distances
+in the metal) on both sides of the surface of the conductor. It
+is contended that the surface of the metal is a double electric
+layer (contact layer) similar to an extremely thin capacitor
+(17.2.4).
+
+\subsection{}\label{41.11.3} The potential difference AV (16.2.7), characterizing
+the electric field of the double layer, is called the surface paten
+Hal jump at the metal-vacuum boundary, or the contact potential
+difference between a metal and a vacuum. Thus
+(D
+af = t >
+where O is the work function (41.11.1), and e is the magnitude
+of the electron charge.
+There is no electric field outside the double layer, and the potential
+outside the metal and beyond the double layer equals
+zero. Inside the metal the potential is positive and equal to AF.
+The potential energy of the conduction electrons (20.3.1) is
+negative and is equal to - eAV - -O. The whole volume of
+the metal is a potential well (38.4.1) for the conduction electrons;
+the depth of the well equals the work function ® .
+
+\subsection{}\label{41.11.4} In the contact of two dissimilar metals, 1 and 2,
+having the work functions and <J>2 electrons pass predominantly
+from the metal with the lower work function to that with
+the higher one. The metals acquire unlike charges and, in a state
+of thermodynamic equilibrium (8.3.3), there is a potential difference
+AF12 between the two contacting dissimilar metals. It is
+called the internal contact potential difference.
+The potential difference AFJ2 between two points located close
+to but outside the surfaces of the first and second contacting
+metals is called the external contact potential difference.
+In the contact of the two metals shown in Fig. 41.17 (® x < d>2),
+the electrons pass predominantly in the direction from metal 1
+to metal 2 and they become charged positively and negatively,
+respectively. At the same time, a shift occurs in the energy
+levels of the electrons: upward in metal 2 and downward in
+metal 1. In a state of thermodynamic equilibrium, the Fermi
+levels (41.4.2) in the two metals coincide (Fig. 41.18).
+It is evident from Fig. 41.18 that the external contact potential
+difference V[2 depends upon the work functions <DX and d>2.
+Thus
+A71, -
+e
+The internal contact potential difference depends upon the
+Fermi levels in the metals. Thus
+AF12 = F i - F 2 = - vFl~622 QUANTUM PHYSICS OF SOLIDS [4i
+The potential changes from V1 to V2 within the limits of the
+double electric layer (41.11.2) of thickness I (Fig. 41.19) that
+can be approximately assessed by the formula
+I = l/ " 2s°AFi2 (in SI units). V enQ y
+Here n0 is the concentration of charges in the double layer, e0
+is the electric constant in SI units (14.2.7), and e is the electron
+charge.
+The thickness of the double layer in contacting metals is of
+the order of the lattice constants in metals, and the resistivity
+Fig. 41.18 Fig. 41.19
+of this layer is the same as that of the rest of the metal. Electric current passes equally well in both directions through the contact
+layer of two metals, and there is no rectifying (barrier-layer)
+effect of the contact, or function, i.e. unilateral conduction.
+
+\subsection{}\label{41.11.5} Contact between a metal and an ra-type semiconductor
+(41.10.6) leads to unilateral conduction of the junction. Assume
+that <!>!> 0 n, where and O n are the work functions of the
+metal and the rc-type semiconductor, respectively. The arrangement
+of the conduction band of the metal (41.9.2), the completely
+filled band of the semiconductor and its donor levels before
+contact has been made are shown in Fig. 41.20. After the metal
+makes contact with the semiconductor, electrons from the donor
+levels of the rc-type semiconductor (41.10.6) move into the
+metal.
+The charge in the contact layer (41.11.2) is positive on the side
+of the rc-type semiconductor and negative on the metal side.
+Owing to the low electron concentration in the semiconductor
+in comparison to that of the metal (1015 cm”3 instead of 1022 cm"3),
+the thickness of the contact layer at the metal-semiconductor
+boundary is found to be approximately 104 times greater than
+that in the metal.
+
+\subsection{}\label{41.11.6} The small number of current carriers in the contact
+layer and its large thickness indicate that the resistivity of
+this layer is substantially greater than that of the rest of the
+Before making contact
+Fig, 41.20
+semiconductor. Here the contact layer is called the depletion,
+or space-charge, layer (formerly called the barrier, or blocking,
+layer). The*depletion layer is the basisAfor rectificationjof alternating
+current at a metal-semiconductor junction. When the
+metal is connected to the positive terminal of a source of electrical
+energy, and the semiconductor to the negative terminal,
+the external electric field is directed from the metal toward the
+semiconductor. In this case the electrons are pulled from the
+bulk of the semiconductor into the double layer. The thickness
+of this layer is reduced and the conduction increases. In this
+conducting direction, electric current passes through the metal-
+semiconductor junction. When the external electric field is
+directed from the semiconductor toward the metal, the electrons
+are forced out of the double layer deep into the semiconductor.
+This increases the width and resistance of the depletion layer
+and in this reverse (nonconducting) direction, the metal-semiconductor
+junction blocks the electric current. This unilateral624 
+conduction of the junction means that an alternating current
+passing through it is rectified.
+
+\subsection{}\label{41.11.7} The region of contact of two semiconductors having
+different, n- and p-type, conduction is called an electron-hole
+------
+Fig. 41.22 Fig. 41.23
++
+junction ( p-n junction). A double electric layer (41.11.2) is
+formed at a p-n junction as a result of electron and hole motion
+through the interface. Electrons from the ?z-type semiconductor
+pass into the p-type semiconductor, and the holes pass in the
+opposite direction. This forms surplus charges of opposite sign
+in the ab regions of the ra-type semiconductor and the be regions
+of the p-type semiconductor (Fig. 41.21). The double layer of
+thickness I sets up a contact electric field with the strength Enp
+and a certain potential difference at the boundaries of the layer.
+This field impedes further counter migration of electrons and
+holes. At a definite thickness of the p-n junction a state of
+equilibrium is set up, corresponding to the equalizing of the
+Fermi levels in the two semiconductors. This forms an equilibrium
+contact layer, which is a barrier layer (41.11.6), having
+higher resistance than that of the remaining regions of the
+semiconductors.
+
+\subsection{}\label{41.11.8} When a p-n semiconductor junction is connected into
+the external circuit of a source of electrical energy in the way
+shown in Fig. 41.22, the external (applied) electric field, strengthening
+the field of the contact layer, causes electrons to migrate
+to the ra-type semiconductor and holes to the p-type semiconductor
+at opposite sides of the junction. The thickness of the barrier
+layer and its resistance increase. This direction of the applied
+electric field is said to be the reverse one. In this direction practically
+no current passes through the p-n junction. When the polarity
+of the external applied voltage is reversed (Fig. 41.23),
+the external electric field with the strength Eext opposes the
+field of the contact layer (41.11.7). The counter motion of electrons
+and holes, forced by the external field to move from the
+bulk of the semiconductors to the region of the p-n junction,
+increases the number of mobile current carriers at the junction.
+This reduces the thickness and resistance of the contact layer,
+and, in this forw.ard direction, current passes through the p-n
+junction. The blocking effect of a p-n junction is similar to the
+rectification of a two-electrode valve, or tube, called a diode.
+Accordingly, a semiconductor device containing one p-n junction
+is called a semiconductor diode. Crystal triodes, or transistors,
+contain two p-n junctions.
+
+% Local Variables:
+% TeX-master: "handbook-physics"
+% coding: utf-8
+% End:
