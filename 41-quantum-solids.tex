@@ -140,217 +140,159 @@ f_{F} = \frac{1}{\exp \left(\dfrac{E - \mu}{kT} \right) +1}.
 \end{equation*}
 The number of quantum states of electrons per unit volume of
 metal, within the energy range from $E$ to $E + \dd E$ \ssect{41.1.4} is
-
-dr 4ji p2dp 2it (2m)3/2 7?1/2 dE
-WKE) ~ hz - h3 - hz
+\begin{equation*}%
+\dd g(E) = \frac{\dd \Gamma}{h^{3}} =\frac{4 \pi^{2 } \dd p}{h^{3}}= \frac{2 \pi (2m)^{3/2} \sqrt{E} \dd E}{h^{3}}.
+\end{equation*}
 Use is made here of the relation between the momentum $p$ of
 the electron and its energy:
-k1/2
-p1 ~ 2mE, *-(*)dE.
-The number of electrons dnQ (E) in unit volume of the metal,
-having energies within the range from E to E + dEy equals,
-according to \ssect{41.2.2}:
-, or 4JI(2 m)3/2 EV* dE
-dnQ (E)=2jF dg (E)= ------------------------
-h3 exp [(E - p)lk.T]
+\begin{equation*}%
+p^{2} = 2mE, \quad \dd p = \sqrt{\frac{m}{2E}} \dd E.
+\end{equation*}
+The number of electrons $\dd n_{0} (E)$ in unit volume of the metal, having energies within the range from $E$ to $E + \dd E$ equals, according to \ssect{41.2.2}:
+\begin{equation*}%
+\dd n_{0} (E) = 2 f_{F} \dd g(E)  = \frac{4 \pi (2m)^{3/2}}{h^{3}} \, \frac{\sqrt{E} \dd E}{\exp \left(\dfrac{E - \mu}{kT} \right) + 1}.
+\end{equation*}
 Factor 2 takes into account the fact that the electrons comply with the Pauli exclusion principle \ssect{39.3.1}. This equation expresses the energy distribution law for conduction electrons in a metal.
 
-\subsection{}\label{41.4.2} The unusual properties of electron gas have an effect
-on its behaviour at the absolute zero temperature (T - 0 K).
-If p0 is the chemical potential of the gas at T - 0 K \ssect{41.2.3},
-then
-, = 1
-,F e( E - ii0)/kT+ 1 '
-at E < p0 the difference E - p0 < 0 and
-e(M-K)/H'  1
-at E - Ho < 0 and T -* 0, oxp - E)/kT] oo and
-/jr -> 1; at E > p0, the difference E - p0 > 0 and at T -+ 0,
-exp [(E - p0)lkT] oo and fp 0.
-The curve of the Fermi distribution function fp at T = 0 K
-is given in Fig. 41.2. In the energy range from 0 to p0, function
-fp is equal to unity. In passing
-through the value E =i0,
-the function drops abruptly to
-zero. At T = 0 K, the electrons
-of the metal occupy all allowed
-energy levels with a population
-equal to unity \ssect{41.2.2} up to the
-level with the energy E = p0.
-All levels with energy exceeding
-p0 are empty; their population
-equals zero. Thus, p0 is the maximum
-energy that conduction
-electrons can have at absolute zero temperature. This quantity
-is called the Fermi energy: p0 = Ep. If the consecutive numbers
-of the energy levels are plotted along the axis of abscissas in
-Fig. 41.2, and the corresponding numbers of conduction electrons
-per unit volume are the ordinates, the maximum ordinate
-corresponds to the energy level number n j2, where n) is the
-electron concentration. The highest level occupied by electrons is called the Fermi level. It corresponds to the Fermi energy Ep,
-which an electron has at this level.
+\subsection{}\label{41.4.2} The unusual properties of electron gas have an effect on its behaviour at the absolute zero temperature $(T = \SI{0}{\kelvin})$. If $\mu_{0}$ is the chemical potential of the gas at $T = \SI{0}{\kelvin}$ \ssect{41.2.3}, then
+\begin{equation*}%
+f_{F} = \frac{1}{\exp \left(\dfrac{E - \mu_{0}}{kT} \right) +1}.
+\end{equation*}
+at $E < \mu_{0}$ the difference $E - \mu_{0} < 0$ and
+\begin{equation*}%
+f_{F} = \frac{1}{\dfrac{1}{\exp \left(\dfrac{ \mu_{0} - E}{kT} \right) +1}};
+\end{equation*}
+at $E - \mu_{0} < 0$ and $T \to 0$, $\exp [(\mu_{0} - E)/kT] \to \infty$ and $f_{F} \to 1$; at $E > \mu_{0}$, the difference $ E - \mu_{0} > 0$ and at $T \to 0$, $\exp [(E - \mu_{0})/kT] \to  \infty$ and $f_{F} \to 0$.
 
-\subsection{}\label{41.4.3} The energy distribution law for conduction electrons at
-r - O K is of the form
-dn0(E) = 4ji (2m)3/2£V2 dE
-h*
-It is represented graphically by the curve in Fig. 41.3.
+
+
+
+The curve of the Fermi distribution function fp at $T = \SI{0}{\kelvin}$ is given in \figr{fig-41-02}. In the energy range from 0 to $\mu_{0}$, function $f_{F}$ is equal to unity. In passing through the value $E = \mu_{0}$, the function drops abruptly to zero. At $T = \SI{0}{\kelvin}$, the electrons of the metal occupy all allowed energy levels with a population equal to unity \ssect{41.2.2} up to the level with the energy $E = \mu_{0}$.
+
+
+All levels with energy exceeding $\mu_{0}$ are empty; their population equals zero. Thus, $\mu_{0}$ is the maximum energy that conduction electrons can have at absolute zero temperature. This quantity is called the \redem{Fermi energy}: $\mu_{0} = E_{F}$. If the consecutive numbers of the energy levels are plotted along the axis of abscissas in \figr{fig-41-02}, and the corresponding numbers of conduction electrons per unit volume are the ordinates, the maximum ordinate corresponds to the energy level number $n_{0}/2$, where $n_{0}$ is the electron concentration. The highest level occupied by electrons is called the \redem{Fermi level}. It corresponds to the Fermi energy $E_{F}$, which an electron has at this level.
+
+\begin{marginfigure}[-4cm] 
+\centering
+\includegraphics[width=\textwidth]{figs/ch-41/fig-41-02.pdf}
+\sidecaption{The Fermi distribution function.\label{fig-41-02}}
+\end{marginfigure}
+
+
+\begin{marginfigure}[2cm] 
+\centering
+\includegraphics[width=\textwidth]{figs/ch-41/fig-41-03.pdf}
+\sidecaption{The energy distribution law for conduction electrons at $T = \SI{0}{\kelvin}$.\label{fig-41-03}}
+\end{marginfigure}
+
+
+\subsection{}\label{41.4.3} The energy distribution law for conduction electrons at $T = \SI{0}{\kelvin}$ is of the form
+\begin{equation*}%
+\dd n_{0}(E) = \frac{4\pi (2m)^{3} \sqrt{E} \dd E}{h^{3}}
+\end{equation*}
+It is represented graphically by the curve in \figr{fig-41-03}.
 The total number of conduction electrons in unit volume of
 a metal is
-n0 j 0
-dn0 (E) =
-An (2m)»/!
-A* j E1/2 dE =
-An (2m.)3/2 2  3/2
-B» T F '
-0
+\begin{align*}%
+ n_{0} & = \int_{0}^{E_{F}} \dd n_{0} (E) = \frac{4\pi (2m)^{3} }{h^{3}} \int_{0}^{E_{F}} \sqrt{E} \dd E \\
+ & = \frac{4\pi (2m)^{3} }{h^{3}} \frac{2}{3} E_{F}^{3/2}.
+\end{align*}
 Hence
-F 2m  8n )
-The average energy (E) of the electron at T = 0 K is
-1 ( 3/20 "I273
-5 F" 5 2m V 8jc /
-At 7?0 = 6 X 1028 m-3 we obtain, after substituting the values
-of h and m:
-E) = 9 X 10-19 J - 5.4 eV.
-If we compare this energy with the average energy of a molecule
-of nondegenerate monatomic gas (E) --- SkT/2 \ssect{10.2.5}, we
-find the energy Ey that the molecule could have at the temperature
-T  104 K. In other words, under ordinary conditions,
-kT/EF < 1.
+\begin{equation*}%
+E_{F} = \frac{h^{2}}{2m} \left( \frac{3 n_{0}}{8\pi}\right)^{2/3}.
+\end{equation*}
+The average energy $\expval{E}$ of the electron at $T = \SI{0}{\kelvin}$ is
+\begin{equation*}%
+\expval{E} = \frac{3}{5} E_{F} = \frac{3}{5} \frac{h^{2}}{2m} \left( \frac{3 n_{0}}{8\pi}\right)^{2/3}.
+\end{equation*}
+At $n_{0} = \SI{6d-28}{\per\meter\cubed}$ we obtain, after substituting the values of $h$ and $m$:
+\begin{equation*}%
+\expval{E} = \SI{9d-19}{\joule} = \SI{5.4}{\electronvolt}.
+\end{equation*}
+If we compare this energy with the average energy of a molecule of nondegenerate monatomic gas $\expval{E} = 3kT/2$ \ssect{10.2.5}, we find the energy $E_{F}$ that the molecule could have at the temperature $T  \approx \SI{d4}{\kelvin}$. In other words, under ordinary conditions, $kT/E_{F} \ll 1$.
 
-\subsection{}\label{41.4.4} At a temperature different from zero the Fermi-Dirac
-distribution function fF is of the form shown in Fig. 41.4 by
-the full-line curve. The same figure shows the function fp at
-T - 0 K in dash lines. The curves differ in the kind of drop
-the function undergoes near the value E = p. An abrupt drop
-along a vertical line at E = jul0 = E y for the case when T =
- 0 K (Fig. 41.2) changes to the smooth curve A B C at T =/=
-0 K. Of importance is the fact that the states of the electrons,
-at the energy levels that satisfy the condition E < jli, do not
-change when heated from 0 K to T. Distortion of the function
-I f occurs only at its ``tail-end'', in an energy range of the width
-2 k T , near the value E = p, at which Jy = 1/2.
+\subsection{}\label{41.4.4} At a temperature different from zero the Fermi-Dirac distribution function $f_{F}$ is of the form shown in \figr{fig-41-04} by the full-line curve. The same figure shows the function  $f_{F}$ at $T = \SI{0}{\kelvin}$ in dash lines. The curves differ in the kind of drop the function undergoes near the value $E = \mu$. 
+\begin{marginfigure}[-3cm] 
+\centering
+\includegraphics[width=\textwidth]{figs/ch-41/fig-41-04.pdf}
+\sidecaption{Fermi-Dirac distribution at different temperature than $T = \SI{0}{\kelvin}$.\label{fig-41-04}}
+\end{marginfigure}
 
-\subsection{}\label{41.4.5} The chemical potential p \ssect{41.2.3} of an electron gas at
-the temperature T is
-11 = E y
-The internal energy U \ssect{9.1.2} of a mole of electron gas is
-5 Jt2 (kTY T
-12 EI J 
-Here N  is Avogadro's number (Appendix~II), and k is Boltzmann's
-constant \ssect{8.4.5}. Quantities p and U remain practically
-constant when the temperature is raised.
-The molar heat capacity C V fl \ssect{9.5.2} of an electron gas is
-A comparison with the heat capacity of a nondegenerate monatomic
-gas \ssect{10.7.1} C'y1 8 - SNjk/2, indicates that
-C'vti  hT
-/"-class ~ 3 Ew *
-t'Vix 1
-At room temperature kT/Ey  0.01 \ssect{41.4.3}, and therefore
-CV|X/Cyss ~ 0.03. The heat capacity of degenerate electron
-gas is negligibly small. This is so because only a slight number of electrons, within the ``drop region'' of the Fermi-Dirac distribution
-function fy (hatched regions 1 and 2 in Fig. 41.4),
-participate in the process of changing the internal energy of
-the electron gas when it is heated. This removes one of the chiel
-shortcomings of the classical electron theory of the electrical
-conduction of metals \ssect{20.3.7}.
+An abrupt drop along a vertical line at $E = \mu_{0} = E_{F}$ for the case when $T = \SI{0}{\kelvin}$ (\figr{fig-41-02}) changes to the smooth curve $ABC$ at $T \neq \SI{0}{\kelvin}$. Of importance is the fact that the states of the electrons, at the energy levels that satisfy the condition $E \ll \mu$, do not change when heated from \SI{0}{\kelvin} to $T$. Distortion of the function $f_{F}$ occurs only at its ``tail-end'', in an energy range of the width $2 k T$, near the value $E = \mu$, at which $f_{F} = 1/2$.
+
+\subsection{}\label{41.4.5} The chemical potential  $\mu$\ssect{41.2.3} of an electron gas at the temperature $T$ is
+\begin{equation*}%
+\mu =  E_{F} \left[ 1 - \frac{\pi^{2}}{12} \left( \frac{kT}{E_{F}}\right)^{2} \right].
+\end{equation*}
+The internal energy $U$ \ssect{9.1.2} of a mole of electron gas is
+\begin{equation*}%
+U =  \frac{3}{5} N_{A}E_{F}  \left[ 1 + \frac{15}{12}  \frac{\pi^{2} (kT)^{2}}{E_{F}^{2}} \right].
+\end{equation*}
+Here $N$ is Avogadro's number (Appendix~II), and $k$ is Boltzmann's constant \ssect{8.4.5}. Quantities $\mu$ and $U$ remain practically constant when the temperature is raised.
+
+The molar heat capacity $C_{V \mu}$ \ssect{9.5.2} of an electron gas is 
+\begin{equation*}%
+C_{V\mu} =  \pdv{U}{T} = \frac{\pi^{2}}{2} N_{A}k \frac{kT}{E_{F}}.
+\end{equation*}
+A comparison with the heat capacity of a nondegenerate monatomic gas \ssect{10.7.1} $C^{\text{class}}_{V \mu} = 3 N_{A}k/2$, indicates that
+\begin{equation*}%
+\frac{C_{V\mu}}{C^{\text{class}}_{V \mu}} =   \frac{\pi^{3}}{3} \frac{kT}{E_{F}}.
+\end{equation*}
+At room temperature $kT/E_{F}  \approx 0.01$ \ssect{41.4.3}, and therefore $C_{V\mu}/C^{\text{class}}_{V \mu} \approx 0.03$. The heat capacity of degenerate electron gas is negligibly small. This is so because only a slight number of electrons, within the ``drop region'' of the Fermi-Dirac distribution function $f_{F}$ (hatched regions $\mathit{1}$ and $\mathit{2}$ in \figr{fig-41-04}), participate in the process of changing the internal energy of the electron gas when it is heated. This removes one of the chief shortcomings of the classical electron theory of the electrical conduction of metals \ssect{20.3.7}.
 
 \section{Quantum Theory of Electrical Conduction in Metals}
 \label{sec-41.5} 
 
 
-\subsection{}\label{41.5.1} The theory of the electrical conduction of metals, based
-on quantum mechanics \ssect{38.1.1} and Fermi-Dirac quantum statistics
-\ssect{41.2.5} is called the quantum theory oj electrical conduction
-in metals. Using the Fermi-Dirac distribution function
-\ssect{41.2.5} in this theory, Ohm's law for current density \ssect{20.3.4}
-was derived. Thus
-j = xE.
+\subsection{}\label{41.5.1} The theory of the electrical conduction of metals, based on quantum mechanics \ssect{38.1.1} and Fermi-Dirac quantum statistics
+\ssect{41.2.5} is called the \redem{quantum theory of electrical conduction in metals}. Using the Fermi-Dirac distribution function \ssect{41.2.5} in this theory, Ohm's law for current density \ssect{20.3.4} was derived. Thus
+\begin{equation*}%
+\vb{j} = \varkappa \vb{E}.
+\end{equation*}
+\subsection{}\label{41.5.2} In the quantum theory of electrical conduction, the electrical conductivity $\varkappa $ is calculated by the formula
+\begin{equation*}%
+\varkappa  = \frac{n_{0}e^{2} \expval{\lambda_{F}}}{m u_{F}}.
+\end{equation*}
+where $n_{0}$ is the number of conduction electrons per unit volume of the metal, $\expval{\lambda_{F}}$ is the mean free path of the electron \ssect{20.3.1} having Fermi energy \ssect{41.4.2}, and $u_{F}$ is the velocity of thermal motion of such an electron. Notwithstanding the external resemblance
+between this formula and the formula for $\varkappa$ in the
+classical electron theory \ssect{20.3.4}, it has an entirely different physical content and, in contrast to the classical formula, it completely agrees with the experimental data.
 
-\subsection{}\label{41.5.2} In the quantum theory of electrical conduction, the.
-electrical conductivity x is calculated by the formula
-n0e2 (Xv)
-muy
-where nQ is the number of conduction electrons per unit volume
-of the metal, (Xy) is the mean free path of the electron \ssect{20.3.1}
-having Fermi energy \ssect{41.4.2}, and uy is the velocity of thermal
-motion of such an electron. Notwithstanding the external resemblance
-between this formula and the formula for x in the
-classical electron theory (20.3.4), it has an entirely different'.1.5] QUANTUM THEORY OF ELECTRICAL CONDUCTION 599
-physical content and, in contrast to the classical formula, it
-.ompletely agrees with the experimental data.
-
-\subsection{}\label{41.5.3} Also explained in the quantum theory of electrical
-conduction of metals is the dependence of electrical conductivity
-mi temperature (x oc 1/T), as well as the anomalously large
-mean free path of the electron in a metal (20.3.7). The ordered
-motions of electrons in a metal-electric current-is dealt with
+\subsection{}\label{41.5.3} Also explained in the quantum theory of electrical conduction of metals is the dependence of electrical conductivity mi temperature ($\varkappa \propto 1/T$), as well as the anomalously large mean free path of the electron in a metal \ssect{20.3.7}. The ordered motions of electrons in a metal --- electric current --- is dealt with
 in quantum theory as the process of propagation of electron
-<le Broglie waves (38.1.4) scattered by anharmonic thermal
-vibrations of the lattice points in the metal (40.2.4). An
-gnus phenomenon occurs in optics in the propagation of
-wave through a turbid medium, containing scattering
-(suspended particles in a liquid, colloidal solutions,
-(34.3.1) . When the distance between the scattering centres are
-<>f an order comparable to the wavelength, scattering of the
-light occurs and the intensity of the light decreases as it propagates
-in the medium. At distances between the scattering centres
-substantially less than the wavelength, the medium is optically
-liomogeneous and no light scattering occurs.
+de Broglie waves \ssect{38.1.4} scattered by anharmonic thermal vibrations of the lattice points in the metal \ssect{40.2.4}. 
 
-\subsection{}\label{41.5.4} An ideal crystal lattice, free of all violations of periodicity
-and with stationary particles at the lattice points, behaves
-like an optically hgmogeneous medium; it does not scatter
-electron waves and conduction electrons pass through such
-a lattice without resistance. The scattering of electron waves
-occurs only when the periodicity of the lattice is violated.
-These are inhomogeneities that act as scattering centres. Such
-centres are, for example, density fluctuations in the lattice
-(11.6.3), resulting from anharmonic thermal vibrations of the
-positive ions of the metal. With the exception of superconductors
-(41.6.1) , this scattering is what leads to the existence of electrical
-resistance in pure metals.
+Analogus phenomenon occurs in optics in the propagation of
+wave through a turbid medium, containing scattering (suspended particles in a liquid, colloidal solutions,
+\ssect{34.3.1} . When the distance between the scattering centres are of an order comparable to the wavelength, scattering of the light occurs and the intensity of the light decreases as it propagates in the medium. At distances between the scattering centres substantially less than the wavelength, the medium is optically homogeneous and no light scattering occurs.
 
-\subsection{}\label{41.5.5} The scattering of the electron waves by the thermal
-vibrations of the lattice points increases with the temperature,
-whereas the mean free path of the electrons is reduced.
-The quantity (Xp) is calculated by the formula
-n , Ed
-nn0hT '
-where E is Young's modulus (40.3.6), d is the crystal lattice
-constant, n0 is the number of atoms in unit volume, k is Boltzmann's
-constant (8.4.5), and T is the absolute temperature.600 QUANTUM PHYSICS OF SOLIDS [41
-Here the electrical conductivity is found to be inversely proportional
-to the absolute temperature and independent of n0
-for monovalent metals*. Thus
- e*Ed
-muyKkT '
+\subsection{}\label{41.5.4} An ideal crystal lattice, free of all violations of periodicity and with stationary particles at the lattice points, behaves like an optically hgmogeneous medium; it does not scatter electron waves and conduction electrons pass through such a lattice without resistance. The scattering of electron waves occurs only when the periodicity of the lattice is violated. These are inhomogeneities that act as scattering centres. Such centres are, for example, density fluctuations in the lattice \ssect{11.6.3}, resulting from anharmonic thermal vibrations of the positive ions of the metal. With the exception of superconductors \ssect{41.6.1} , this scattering is what leads to the existence of electrical resistance in pure metals.
+
+\subsection{}\label{41.5.5} The scattering of the electron waves by the thermal vibrations of the lattice points increases with the temperature, whereas the mean free path of the electrons is reduced. The quantity $(\expval{\lambda_{F}})$ is calculated by the formula
+\begin{equation*}%
+\expval{\lambda_{F}} = \frac{E\, d}{\pi n_{0} kT}
+\end{equation*}
+where $E$ is Young's modulus \ssect{40.3.6}, $d$ is the crystal lattice constant, $n_{0}$ is the number of atoms in unit volume, $k$ is Boltzmann's constant \ssect{8.4.5}, and T is the absolute temperature. Here the electrical conductivity is found to be inversely proportional to the absolute temperature and independent of $n_{0}$ for monovalent metals\sidenote{The concentration of conduction electrons and ions in the lattice coincide in such metals.}. Thus
+\begin{equation*}%
+\varkappa =  \frac{e^{2} E\, d}{m u_{F} \pi kT}
+\end{equation*}
 This formula agrees with experimental data in the region of
 room temperatures. The conductivity, for instance, obtained
-for silver (E = 107 N/m2, d = 3 X 10 ~10 m, m = 9 X
-X 10~31 kg, kT  4.2 X 10``21 J, and uy = 1.4 m/s) is
-Ktheor  5 X 107 1/Q-m, whereas xexper ~ 0.3 X 107 1/Q-m.
-At very low temperatures the formulas given above are not valid.
-The mean free path under these conditions is inversely proportional
-to 715, which agrees with experimental data.
-41.5.6 Besides density fluctuations, the cause of electron wave
-scattering and the electrical resistance of metals is violation
-in the periodicity of the crystal lattice due to the inclusions of
-impurity atoms in the lattice. The resistivity p of a metal
-(p = 1/x) consists of two parts:
-p = pT + Pim,
-where pr is the resistivity due to the scattering of electron waves
-by density fluctuations, and pjm is the resistivity due to scattering
-by impurities. Of importance is the fact that pim is
-Independent of the temperature. Since as T 0, pr 0 as
-* The concentration of conduction electrons and ions in the
-lattice coincide in such metals.1.0] SUPERCONDUCTIVITY 601
-well, p pim as the temperature is lowered. The quantity
-Pim is called the residual resistivity. This resistivity remains a
-property of the metal when it is cooled even down to absolute
-zero. The dependence of the electrical resistivity on the temperature
-is shown in Fig. 41.5. The point of intersection of the
-extension of the curve (dash line) with the axis of ordinates
-(to T = 0 K) is the residual resistivity.
+for silver ($E = \SI{d7}{\newton\per\meter\squared}$, $d = \SI{3d-10}{\meter}$, $E = \SI{d7}{\newton\per\meter\squared}$, $m = \SI{9d-31}{\kilo\gram}$
+, $kT = \SI{4.2d-32}{\joule}$, and $u_{F} = \SI{1.4}{\meter\per\second}$) is
+ $\varkappa_{\text{theor}} \approx \SI{5d7}{\per\ohm\per\meter}$, whereas  $\varkappa_{\text{exper}} \approx \SI{6.3d7}{\per\ohm\per\meter}$.
+
+At very low temperatures the formulas given above are not valid. The mean free path under these conditions is inversely proportional to $T^{5}$, which agrees with experimental data.
+
+\subsection{}\label{41.5.6} Besides density fluctuations, the cause of electron wave scattering and the electrical resistance of metals is violation in the periodicity of the crystal lattice due to the inclusions of impurity atoms in the lattice. The resistivity $\rho$ of a metal ($\rho = 1/\varkappa$) consists of two parts: 
+\begin{equation*}%
+\rho =  \rho_{T} + \rho_{\text{imp}},
+\end{equation*}
+\begin{marginfigure}[-3cm] 
+\centering
+\includegraphics[width=\textwidth]{figs/ch-41/fig-41-05.pdf}
+\sidecaption{Resistivity $\rho$ of a metal as a function of the temperature.\label{fig-41-05}}
+\end{marginfigure}
+where $\rho_{T}$ is the resistivity due to the scattering of electron waves by density fluctuations, and $\rho_{\text{imp}}$ is the resistivity due to scattering by impurities. Of importance is the fact that $\rho_{\text{imp}}$ is independent of the temperature. Since as $T \to 0$, $\rho_{T} \to 0$ as well, $\rho_{T} \to \rho_{\text{imp}}$ as the temperature is lowered. The quantity $\rho_{\text{imp}}$ is called the \redem{residual resistivity}. This resistivity remains a property of the metal when it is cooled even down to absolute zero. The dependence of the electrical resistivity on the temperature is shown in \figr{fig-41-05}. The point of intersection of the extension of the curve (dash line) with the axis of ordinates (to $T = \SI{0}{\kelvin}$) is the residual resistivity.
 
 \section{Superconductivity}
 \label{sec-41.6} 
