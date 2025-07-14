@@ -385,205 +385,124 @@ greater than $H_{c}$ \ssect{41.6.2} penetrate the substance in the form of threa
 \label{sec-41.7} 
 
 
-\subsection{}\label{41.7.1} No distinction is made for solids between the heat capacities
-Cv and Cp (9.5.4 and 9.5.7). In nonmetallic solids,"the largest
-contribution to heat capacity is made by the energy of
-thermal vibration of the particles at the crystal lattice points.
-Tor metals, a slight contribution is made by the degenerate"
-electron gas (41.4.5). /
+\subsection{}\label{41.7.1} No distinction is made for solids between the heat capacities $C_{v}$ and $C_{p}$ \ssect{9.5.4} and \ssect{9.5.7}. In nonmetallic solids, the largest contribution to heat capacity is made by the energy of thermal vibration of the particles at the crystal lattice points. For metals, a slight contribution is made by the degenerate electron gas \ssect{41.4.5}. 
 
-\subsection{}\label{41.7.2} The classical theory of the heat capacity of solids /is
-based on the principle of equipartition of energy (10.6.4).
-A homogeneous solid is dealt with as a system of particles,
-independent of one another, having three degrees of freedom and
-executing thermal vibrations with the same frequency. Thex
-average energy (E) per degree of freedom is (E) = kT (10.6.5).
-'The internal energy U (9.1.2) per mole of a solid is
-U = 3 Na(E) = SNAkT = 3 RT,
-where NA is Avogadro's number (Appendix II), k is Boltzmann's
-constant (8.4.5), and R - kNA is the universal gas constant
-(8.4.4). The molar heat capacity* (9.5.4) of a solid with an atomic
-crystal lattice is
-'V =
-dU
-dT = 3i? = 25 J
-mol-K 5.97 cal
-mol-K
-The Dulong-Petit law states that the molar heat capacity of all
-chemically simple crystalline solids equals approximately
-6 cal/mol-K. According to this law tha molar heat capacity
-does not depend on either the temperature or any characteristics
-of the crystals. Experiments disprove this statement and indicate
-1 hat the heat capacity depends on the temperature, especially
-in the region of low temperatures (Fig. 41.10). The reason why
-t he classical theory of the heat capacity of solids disagrees with
-experimental data is in the limited nature of the principle of
-equipartition of energy and its inadequacy in the region of low
-temperatures. At these temperatures the average energy of the
-* Frequently, the heat capacity is referred to one gram-atom of
-the substance.606 QUANTUM PHYSICS OP SOLIDS [41
-vibrating particles must be calculated in accordance with
-the laws of quantum mechanics (38.5.9).
-\subsection{}\label{41.7.3} In the initial quantum theory of heat capacity of solids,
-a crystal was treated as a system of N atoms, each of which is
-a quantum harmonic oscillator. All the atoms vibrate independently
-of one another with the same frequency w. The average
-energy (E) per degree of freedom of the atom (as a quantum
-harmonic oscillator) is equal (38.5.9) to
-<£> =
-ho>
-exp (fito/kT) - 1
-hv
-exp (hv/kT) - 1 *
-The internal energy U (9.1.2) of a mole of a solid is expressed
-as follows:
-U = 3Na (E) - 3Aa hv
-exp (hv/kT) - 1
+\subsection{}\label{41.7.2} The classical theory of the heat capacity of solids /is based on the principle of equipartition of energy \ssect{10.6.4}. A homogeneous solid is dealt with as a system of particles, independent of one another, having three degrees of freedom and executing thermal vibrations with the same frequency. The
+average energy $\expval{E}$ per degree of freedom is $\expval{E} = kT$ \ssect{10.6.5)}. 
+
+The internal energy $U$ \ssect{9.1.2} per mole of a solid is
+\begin{equation*}%
+U = 3 N_{A}\expval{E} = 3 N_{A}kT = 3 RT,
+\end{equation*}
+where $N_{A}$ is Avogadro's number (Appendix~II), $k$ is Boltzmann's constant \ssect{8.4.5}, and $R = kN_{A}$ is the universal gas constant \ssect{8.4.4}. The molar heat capacity \sidenote{Frequently, the heat capacity is referred to one gram-atom of the substance.} \ssect{9.5.4} of a solid with an atomic crystal lattice is
+\begin{equation*}%
+C_{\mu} = \pdv{U}{T} = 3 R = \SI{25}{\joule\per\mole\per\kelvin} = \SI{25}{\calorie\per\mole\per\kelvin},
+\end{equation*}
+The \redem{Dulong-Petit law} states that the molar heat capacity of all chemically simple crystalline solids equals approximately \SI{6}{\calorie\per\mole\per\kelvin}. According to this law tha molar heat capacity does not depend on either the temperature or any characteristics of the crystals. 
+
+\begin{marginfigure}%[1cm] 
+\centering
+\includegraphics[width=\textwidth]{figs/ch-41/fig-41-10.pdf}
+\sidecaption{Heat capacity as a function of temperature.\label{fig-41-10}}
+\end{marginfigure}
+
+
+Experiments disprove this statement and indicate that the heat capacity depends on the temperature, especially  in the region of low temperatures (\figr{fig-41-10}). The reason why t he classical theory of the heat capacity of solids disagrees with experimental data is in the limited nature of the principle of equipartition of energy and its inadequacy in the region of low temperatures. At these temperatures the average energy of the vibrating particles must be calculated in accordance with the laws of quantum mechanics \ssect{38.5.9}.
+
+
+\subsection{}\label{41.7.3} In the initial quantum theory of heat capacity of solids, a crystal was treated as a system of $N$ atoms, each of which is a quantum harmonic oscillator. All the atoms vibrate independently of one another with the same frequency $\omega$. The average energy $\expval{E}$ per degree of freedom of the atom (as a quantum harmonic oscillator) is equal \ssect{38.5.9} to
+\begin{equation*}%
+\expval{E} = \frac{\hbar \omega}{\exp (\hbar \omega/kT) - 1}
+= \frac{h \nu}{\exp (h \nu /kT) - 1},
+\end{equation*}
+The internal energy $U$ \ssect{9.1.2} of a mole of a solid is expressed as follows:
+\begin{equation*}%
+U = 3 N_{A} \expval{E} = 3 N_{A} \frac{h \nu}{\exp (h \nu /kT) - 1},
+\end{equation*}
 from which the molar heat capacity of a solid can be found
-r  oR / exp (hv/ItT)
-```` kT) [oxp (liv/kT)- l]2 -41.7] HEAT CAPACITY OF SOLIDS 607
-If we introduce the characteristic temperature Tq = hv/kT, then
-This result, qualitatively describes the dependence of the heat
-capacity of solids on the temperature. Curves of this dependence
-are plotted in Fig. 41.10.
-At high temperatures (hv < kT), as shown in Sect. 38.5.9,
-(E) = kT in accordance with the law of equipartition of energy
-(10.6.4) and C = SR.
-At low temperatures (hv > kT)
-eW  i  ehv/kT and C(i = 3ff j 2e-V r.
-As T 0, Tq/T oo and exp (- TjT) 0 more rapidly
-than the increase in (TV?7)2. Therefore, as T -> 0, the heat
-capacity C 0. This qualitatively agrees with experimental
-data. But simple quantum theory does not explarmthe quantitative
-behaviour of solids in the vicinity of absolute zero.
+\begin{equation*}%
+C_{\mu} = 3 R \left( \frac{h \nu}{kT} \right)^{2} = \frac{\exp (h \nu /kT)}{[\exp (h \nu /kT) - 1]^{2}}
+\end{equation*}
+If we introduce the \redem{characteristic temperature} $T_{\theta} = h\nu/kT$, then 
+\begin{equation*}%
+C_{\mu} = 3 R \left( \frac{T_{\theta}}{T} \right)^{2} = \frac{\exp (T_{\theta}/T)}{[\exp (T_{\theta}/T) - 1]^{2}}.
+\end{equation*}
+This result, qualitatively describes the dependence of the heat capacity of solids on the temperature. Curves of this dependence are plotted in \figr{fig-41-10}.
 
-\subsection{}\label{41.7.4} The assumption that all the atoms of a. solid execute thermal vibrations independently of one anotheiat the same
-frequency oversimplifies the true picture of particle vibration
-in a crystal lattice. The interaction between the atoms (or other
-particles) of a solid is so strong that all N particles of the body
-form a bound system having SN degrees of freedom, and the
-vibration of all the atoms may proceed at various frequencies.
+At high temperatures $(h \nu \ll kT)$, as shown in \ssect{38.5.9}, $\expval{E}  = kT$ in accordance with the law of equipartition of energy \ssect{10.6.4} and $C_{\mu} = 3R$.
+
+At low temperatures $(h \nu \gg kT)$, hence $\exp (h \nu /kT) - 1 \approx \exp (h \nu /kT)$ and
+\begin{equation*}%
+C_{\mu} = 3 R \left( \frac{T_{\theta}}{T} \right)^{2}  \exp (-T_{\theta}/T).
+\end{equation*}
+As $T \to 0$, $T_{\theta}/T \to \infty$ and $\exp (- T_{\theta}/T) \to 0$ more rapidly than the increase in $(T_{\theta}/T)^{2}$. Therefore, as $T \to 0$, the heat
+capacity $C_{\mu} \to 0$. This qualitatively agrees with experimental data. But simple quantum theory does not explain the quantitative behaviour of solids in the vicinity of absolute zero.
+
+\subsection{}\label{41.7.4} The assumption that all the atoms of a solid execute thermal vibrations independently of one anotheiat the same frequency oversimplifies the true picture of particle vibration in a crystal lattice. The interaction between the atoms (or other particles) of a solid is so strong that all $N$ particles of the body form a bound system having $3N$ degrees of freedom, and the vibration of all the atoms may proceed at various frequencies.
+
 The extremely complex problem of the frequency distribution
-of atomic vibration in a solid was, in its time, the basis for the
-refined theory of heat capacity of solids. A solid has a wide
-spectrum of vibrational frequencies. There are vibrations with
-sufficiently low and with higher frequencies. The low frequencies
-correspond to elastic vibration of the crystal in the acoustic (or
-ultrasonic) range. Owing to the bonds between the particles of
-a crystal lattice, elastic acoustic waves propagate in the crystal.
-The physical idea of the theory of the heat capacity of solids,
-refining the theory discussed in Sect. 41.7.3, is that the main
-contribution to the energy of thermal vibration of the crystal
-is made by low-frequency vibration, corresponding to elastic
-waves with wavelengths, exceeding the crystal lattice constant.
-This follows, in particular, from Fig. 38.7, which shows that668
-QUANTUM PHYSICS OF SOLIDS [41
-the maximum contribution to the average energy of a quantum
-oscillator is made by vibrations with low frequencies (38.5.9).
-The propagating elastic waves behave as if they were propagating
-in a continuous medium. The atomic structure of the crystal
-has no effect on the propagation in it of elastic waves of wavelengths
-exceeding >imin = i>/vmax, where v is the velocity of the
-corresponding elastic wave, and vmax is its frequency. The
-wavelength Xm[n should be commensurable with the lattice
-constant, i.e. i mjn ~ d  (V/N)1/3, where N is the number of
-particles (crystal lattice points) in a crystal of volume V.
+of atomic vibration in a solid was, in its time, the basis for the refined theory of heat capacity of solids. A solid has a wide spectrum of vibrational frequencies. There are vibrations with sufficiently low and with higher frequencies. The low frequencies correspond to elastic vibration of the crystal in the acoustic (or ultrasonic) range. Owing to the bonds between the particles of a crystal lattice, elastic acoustic waves propagate in the crystal.
 
-\subsection{}\label{41.7.5} Elastic waves in a crystal have quantum properties
-consisting in the existence of a minimum portion of energy,
-a quantum of energy of the wave with the given frequency v.
-This enables a wave with the frequency v to be correlated to
-a quasi-particle, the phonon, whose propagation at the velocity
-of sound v corresponds to an acoustic wave.
-A phonon has the energy E = hv, where h is Planck's constant
-(Appendix II), and the quasi-momentum p = hv/v. The quasimomentum
-p of the phonon is in the direction coinciding with
-that of the propagation of the acoustic wave. The most essential
-difference between the quasi-momentum and the momentum
-is that in the collision of phonons in crystals the quasi-momentum
-can be transferred in discrete portions to the crystal lattice.
-In this case it is not conserved*.
-In short, the quantization of the acoustic field leads to phonons
-in the same way as the quantization of the electromagnetic field
-leads to photons (37.1.4).
+The physical idea of the theory of the heat capacity of solids, refining the theory discussed in \ssect{41.7.3}, is that the main contribution to the energy of thermal vibration of the crystal is made by low-frequency vibration, corresponding to elastic waves with wavelengths, exceeding the crystal lattice constant.
 
-\subsection{}\label{41.7.6} Phonon spin equals zero and, therefore, phonons comply
-with Bose-Einstein statistics (41.2.2). Phonons can be emitted
-and they can be absorbed, but their number is not maintained
-constant, hence the chemical potential for phonon gas (41.2.3)
-equals zero (cf. Sect. 41.2.6). The energy of a crystal can be dealt with as the energy of a phonon
-gas and can be calculated as in Sect. 41.2.6. The number dN
-of phonons with frequencies in the range from v to v + dv is
-dN = dg
-eh v/k T i '
-* A detailed discussion of the properties of quasi-particles,
-associated with the role of periodicity of crystal structure, is
-beyond the scope of this handbook.41.7] HEAT CAPACITY OF SOLIDS 609
-where dg is the number of quantum states (number of cells)
-in volume V of the crystal:
-Q 4jxp* dpV
-0 4jtv2 dv Tr
-dg ~6 5® V'
-where p = hv/v is the quasi-momentum of the phonon, and v
-is the velocity of sound in the crystal. The factor 3 takes into
-account the fact that longitudinal and transverse waves, with
-two mutually perpendicular polarizations, can propagate in
-a crystal* (31.1.8). Thus
-12 nv2dvV
-vHeh kT-i) '
-The internal energy U (9.1.2) of a crystal (accurate to zero-
-point energy) is
-U hv dN = 12jt Vh
-v3
-v3 dv
-ehv/kTi »
-where Vmax = v (SN/kV)1/3 is the upper frequencyboundary
-of the phonons that contribute to the energy of/tfiermat vibration
-of the crystal. An assessment of the order/of magnitude of
-vmax *s giyen ii1 Sect. 41.7.4.
-Introduced in calculating U is the Debye characteristic temperature
-To ~ max* The following two limiting cases are considered.
-(a) High temperatures T >» Tjy.
-Here ehvhT- 1 hv ,
-kT and
-12jiFkT v2 dv -2nVkT,
-v3
-X -2 -=3NkT.
-O
-* The difference in the velocities of the longitudinal and transverse
-waves is ignored, the number of quantum states of the
-phonons being simply tripled.
-39-0186610 QtFANtfUM PHYSICS OF SOLIDS [4i
-For one mole of the crystal N = where N is Avogadro's
-number (Appendix II), and the molar heat capacity C  complies
-with the Dulong-Petit law (41.7.2):
-c» = - = 3 N Ak=3R .
-(b) Low temperatures T TB.
-Vmax
-(* v3 dv
-In calculating the integral  ---- --7 -7 = 7 - T a new
- J exp hv/kT)- 1
-0
-variable, %=hv/kT, is introduced and the upper limit is
-replaced by 00. Thus
-vmax
-12ji Vh
-v3
-I
-v3 dv
-exp (hv/kT) - 1
-0
-12jiVh (kTk f dl
-v3  h ) J
-0
-4ji *k*V
-5h3v3
-The molar heat capacity is proportional to the cube of the absolute
-temperature and obeys the Debye T3 law. Thus
-dU
-dT
-16n*k*VT3
-5h3v3 = const T3.
+This follows, in particular, from \figr{fig-38-07}, which shows that the maximum contribution to the average energy of a quantum oscillator is made by vibrations with low frequencies \ssect{38.5.9}.
+
+The propagating elastic waves behave as if they were propagating in a continuous medium. The atomic structure of the crystal has no effect on the propagation in it of elastic waves of wavelengths exceeding $\lambda_{min} = v / \lambda_{max}$, where $v$ is the velocity of the corresponding elastic wave, and vmax is its frequency. The wavelength $\lambda_{min}$ should be commensurable with the lattice constant, i.e. i $\lambda_{min} \approx d \approx (V/N)^{1/3}$, where $N$ is the number of particles (crystal lattice points) in a crystal of volume $V$.
+
+\subsection{}\label{41.7.5} Elastic waves in a crystal have quantum properties consisting in the existence of a minimum portion of energy, a quantum of energy of the wave with the given frequency $\nu$. This enables a wave with the frequency $\nu$ to be correlated to a \redem{quasi-particle}, the \redem{phonon}, whose propagation at the velocity of sound $v$ corresponds to an acoustic wave.
+
+A phonon has the energy $E = h\nu$, where $h$ is Planck's constant (Appendix~II), and the quasi-momentum $p = h\nu /v$. The \redem{quasimomentum $\vb{p}$ of the phonon} is in the direction coinciding with that of the propagation of the acoustic wave. The most essential difference between the quasi-momentum and the momentum is that in the collision of phonons in crystals the quasi-momentum can be transferred in discrete portions to the crystal lattice. In this case it is not conserved.\sidenote{A detailed discussion of the properties of quasi-particles, associated with the role of periodicity of crystal structure, is beyond the scope of this handbook.} 
+
+In short, the quantization of the acoustic field leads to phonons in the same way as the quantization of the electromagnetic field leads to photons \ssect{37.1.4}.
+
+\subsection{}\label{41.7.6} Phonon spin equals zero and, therefore, phonons comply with Bose-Einstein statistics \ssect{41.2.2}. Phonons can be emitted and they can be absorbed, but their number is not maintained constant, hence the chemical potential for phonon gas \ssect{41.2.3}
+equals zero (cf. \ssect{41.2.6}). 
+
+The energy of a crystal can be dealt with as the energy of a phonon gas and can be calculated as in \ssect{41.2.6}. The number $\dd N$ of phonons with frequencies in the range from $\nu$ to $\nu + \dd \nu$ is
+\begin{equation*}%
+\dd N = \frac{\dd g}{\exp (h \nu/k T)-1},
+\end{equation*}
+where $\dd g$ is the number of quantum states (number of cells) in volume $V$ of the crystal:
+\begin{equation*}%
+\dd g = 3 \frac{4 \pi p^{2} \dd p \, V}{h^{3}} = 3 \frac{4 \pi \nu^{2} \dd \nu}{v^{3}} V,
+\end{equation*}
+where $p = h\nu/v$ is the quasi-momentum of the phonon, and $v$ is the velocity of sound in the crystal. The factor 3 takes into account the fact that longitudinal and transverse waves, with two mutually perpendicular polarizations, can propagate in a crystal\sidenote{The difference in the velocities of the longitudinal and transverse waves is ignored, the number of quantum states of the phonons being simply tripled.} \ssect{31.1.8}. Thus
+\begin{equation*}%
+\dd N = \frac{12 \pi \nu^{2} \dd \nu \, V}{v^{3}(\exp (h \nu/k T)-1)}.
+\end{equation*}
+The internal energy $U$ \ssect{9.1.2} of a crystal (accurate to zero-point energy) is
+\begin{equation*}%
+U = \int_{0}^{\nu_{max}}h \nu \dd N = \frac{12 \pi  Vh}{v^{3}} 
+\int_{0}^{\nu_{max}} \frac{\nu^{3} \dd \nu}{\exp (h \nu/k T)-1},
+\end{equation*}
+where $\nu_{max} = v (3N/4 \pi V)^{1/3}$ is the upper frequency boundary of the phonons that contribute to the energy of/tfiermat vibration of the crystal. An assessment of the order of magnitude of $\nu_{max}$ is given in \ssect{41.7.4}.
+
+Introduced in calculating $U$ is the \redem{Debye characteristic temperature} $T_{D} = h\nu_{max}/k$. The following two limiting cases are considered.
+\begin{enumerate}[label = (\alph*)]
+\item \emph{High temperatures $T \gg T_{D}$.}
+
+Here $\exp h\nu / kT - 1 \approx \frac{h\nu}{kT}$, and 
+\begin{equation*}%
+U = \frac{12 \pi V}{v^{3}} kT \int_{0}^{\nu_{max}} \nu^{2} \dd \nu = \frac{12\pi V kT}{v^{3}}  \, \frac{\nu_{max}^{3}}{3} = 3 NkT.
+\end{equation*}
+For one mole of the crystal $N = N_{A}$ where $N$ is Avogadro's number (Appendix~II), and the molar heat capacity $C_{\mu}$ complies with the Dulong-Petit law \ssect{41.7.2}:
+\begin{equation*}%
+C_{\mu} = \pdv{U}{T} = 3 N_{A} k=3R.
+\end{equation*}
+\item \emph{Low temperatures $T \ll T_{D}$.}
+In calculating the integral $\int_{0}^{\nu_{max}} \frac{\nu^{3} \dd \nu}{\exp (h \nu/k T)-1}$, a new variable $\xi = \exp (h \nu/k T)$, is introduced and the upper limit is
+replaced by $\infty$. Thus
+\begin{align*}%
+U & = \frac{12 \pi Vh}{v^{3}} \int_{0}^{\nu_{max}} \frac{\nu^{3} \dd \nu}{\exp (h \nu/k T)-1}\\
+& = \frac{12 \pi V h}{v^{3}}  \left( \frac{kT}{h}\right)^{4} \int_{0}^{\infty} \frac{\xi^{3} \dd \xi}{\exp \xi - 1}\\
+& = \frac{4 \pi^{4}k^{4}V}{5h^{3}v^{3}} T^{4}.
+\end{align*}
+The molar heat capacity is proportional to the cube of the absolute temperature and obeys the \redem{Debye $T^{3}$ law}. Thus 
+\begin{equation*}%
+C_{\mu} = \pdv{U}{T} = \frac{16\pi^{5}k^{4}V T^{3}}{5 h^{3}v^{3}} = \text{const } T^{3}.
+\end{equation*}
+
+\end{enumerate}
 
 \section{Band Theory of Solids}
 \label{sec-41.8} 
