@@ -507,172 +507,95 @@ C_{\mu} = \pdv{U}{T} = \frac{16\pi^{5}k^{4}V T^{3}}{5 h^{3}v^{3}} = \text{const 
 \section{Band Theory of Solids}
 \label{sec-41.8} 
 
-\subsection{}\label{41.8.1} Long-range order in crystals (40.1.1) leads to a situation
-in which an electric field, which is a periodic function of the
-coordinates, exists in solids. In a metal, for example, where the
-positive ions are located in strict order at the lattice points,
-the potential energy of an electron varies along some direction
-OX as shown in Fig. 41.11. Energy minima correspond to the
-places where the positive ions are located.
+\subsection{}\label{41.8.1} Long-range order in crystals \ssect{40.1.1} leads to a situation in which an electric field, which is a periodic function of the coordinates, exists in solids. In a metal, for example, where the positive ions are located in strict order at the lattice points, the potential energy of an electron varies along some direction
+$OX$ as shown in \figr{fig-41-11}. Energy minima correspond to the places where the positive ions are located.
 
-\subsection{}\label{41.8.2} A periodic electric field in a crystal of any type (40.1.3)
-essentially changes the energy states of the electrons in a solid'.
-as compared to their state in single atoms. In single atoms the
-electrons are in discrete energy states (38.2.5). In a solid, the
-energy states of the electrons are determined both by their
-interaction with the nucleus of their atom and by the electric
-Held of the crystal lattice, i.e. by their interaction with other
-atoms. As a result of this interaction, the energy levels of the
-o  T  A A / W
-Fig.J41.llj
-electrons are split. Thus, in a solid containing N interacting
-atoms, N closely spaced energy levels are formed in place of
-the discrete energy level typical of a single atom. These N
-energy levelsmake up an en ergy b a n d . A ban d en ergy sp ectru m
-of the electron s is formed in crystals.
+\begin{marginfigure}%[1cm] 
+\centering
+\includegraphics[width=\textwidth]{figs/ch-41/fig-41-11.pdf}
+\sidecaption{Energy in a lattice is dependent on the position of ions. \label{fig-41-11}}
+\end{marginfigure}
 
-\subsection{}\label{41.8.3} The, formation of a band energy spectrum in a crystal
-follows from the indeterminacy principle (38.6.6). Owing to the
-finite lifetime x of the electron in an excited state (x » 10~8 s)
-(39.1.5) the width AE of the energy level in a single atom is
-E « - « 10"7 eV
-x
-(natural energy level width).
-The valence electrons (39.3.9) of the atoms in a crystal are more
-weakly bound to the nuclei than the inner-shell electrons and
-can pass from one atom to another by means of the tunnel effect
-(38.7.2). In this way electrons penetrate the potential barrier
-(38.7.1) separating the atoms of the crystal.
-To assess the average lifetime x of a valence electron in a given
-atom it is assumed that the penetrability D of the barrier is
-expressed by the simple formula (38.7.2)
--4- V2m(Uq- E) L
-I) « e h
+\subsection{}\label{41.8.2} A periodic electric field in a crystal of any type \ssect{40.1.3} essentially changes the energy states of the electrons in a solid as compared to their state in single atoms. In single atoms the electrons are in discrete energy states \ssect{38.2.5}. In a solid, the energy states of the electrons are determined both by their interaction with the nucleus of their atom and by the electric Held of the crystal lattice, i.e. by their interaction with other atoms. 
 
-where U0 - E is the barrier height, consisting of the ionization
-energy, and amounts to approximately 10 eY, and L is
-the barrier width, which is commensurate with the crystal
-lattice constant: L  d zz 10~10 m. The frequency v of penetration
-of an electron through the barrier is
-V2m(l/0- E) L
-where v is the velocity of the electron in the atom (potential
-well) and can be taken equal to v  106 m/s. The average lifetime
-x of an electron in the given atom is
-1 d d Y  2m(u0-E)L
-X = -« - e
-V V
-After substituting the values of all the quantities, x  10"15 s
-is obtained. From the indeterminacy relation
-AE iK - « l eV.
-X
-Instead of the natural width AE » 10~7 eV of the electron
-energy level in a single atom, a band of allowed values of energy
-is formed in a crystal.
+As a result of this interaction, the energy levels of the electrons are split. Thus, in a solid containing $N$ interacting atoms, $N$ closely spaced energy levels are formed in place of the discrete energy level typical of a single atom. These $N$ energy levels make up an \redem{energy band}. A \redem{band energy spectrum of the electrons} is formed in crystals.
 
-\subsection{}\label{41.8.4} The frequency of the penetration of inner-shell electrons
-in atoms through a potential barrier and their transitions to
-other atoms is negligible. This is due to the increase in barrier
-height: U0 - E  103 eV and the increase in barrier width:
-L  3 X 10"10 m. According to calculations, x  1020 years.
-The broadening of the energy levels of the inner-shell electrons
-is unessential, and these electrons behave in crystals practically
-in the same way as in single atoms.
+\subsection{}\label{41.8.3} The, formation of a band energy spectrum in a crystal follows from the indeterminacy principle \ssect{38.6.6}. Owing to the finite lifetime $\tau$ of the electron in an excited state $(\tau \approx \SI{d-8}{\second})$ \ssect{39.1.5} the width $\Delta E$ of the energy level in a single atom is
+\begin{equation*}%
+\Delta E \approx \frac{\hbar}{\tau} = \approx \SI{d-7}{\electronvolt},
+\end{equation*}
+(\redem{natural} energy level \redem{width}).
 
-\subsection{}\label{41.8.5} If N is the total number of atoms in a solid, then the
-energy band, formed from the electronic energy level of the
-valence electron of the atom consists of N closely spaced levels.
-Adjacent energy levels in a band are at about 10~22 eV from each
+The valence electrons \ssect{39.3.9} of the atoms in a crystal are more weakly bound to the nuclei than the inner-shell electrons and can pass from one atom to another by means of the tunnel effect \ssect{38.7.2}. In this way electrons penetrate the potential barrier \ssect{38.7.1} separating the atoms of the crystal.
+
+To assess the average lifetime x of a valence electron in a given atom it is assumed that the penetrability $D$ of the barrier is expressed by the simple formula \ssect{38.7.2}
+\begin{equation*}%
+D \approx \exp \left( -\frac{2}{\hbar} \sqrt{2m(U_{0}- E) } L \right),
+\end{equation*}
+where $U_{0} - E$ is the barrier height, consisting of the ionization energy, and amounts to approximately \approx \SI{10}{\electronvolt}, and $L$ is the barrier width, which is commensurate with the crystal lattice constant: $L \approx  d \approx \SI{d-10}{\meter}$. The frequency $\nu$ of penetration of an electron through the barrier is
+\begin{equation*}%
+\nu  = \frac{v}{d} D \approx \frac{v}{d} \exp \left( -\frac{2}{\hbar} \sqrt{2m(U_{0}- E) } L \right),
+\end{equation*}
+where $v$ is the velocity of the electron in the atom (potential well) and can be taken equal to $v = \SI{d6}{\meter\per\second}$. The average lifetime $\tau$ of an electron in the given atom is 
+\begin{equation*}%
+\tau  = \frac{1}{\nu}  \approx \frac{d}{v} \exp \left(\frac{2}{\hbar} \sqrt{2m(U_{0}- E) } L \right).
+\end{equation*}
+After substituting the values of all the quantities, $\tau = \SI{d-15}{\second}$ is obtained. From the indeterminacy relation
+\begin{equation*}%
+\Delta E \approx \frac{\hbar}{\tau} \approx \SI{1}{\electronvolt}
+\end{equation*}
+Instead of the natural width $\Delta E \approx \SI{d-7}{\electronvolt}$ of the electron energy level in a single atom, a band of allowed values of energy is formed in a crystal.
+
+\subsection{}\label{41.8.4} The frequency of the penetration of inner-shell electrons in atoms through a potential barrier and their transitions to other atoms is negligible. This is due to the increase in barrier height: $U_{0} - E \approx \SI{d3}{\electronvolt}$ and the increase in barrier width:
+$L \approx \SI{3d-10}{\meter}$. According to calculations, $\tau \approx \num{d20}$ years. The broadening of the energy levels of the inner-shell electrons is unessential, and these electrons behave in crystals practically in the same way as in single atoms.
+
+\subsection{}\label{41.8.5} If $N$ is the total number of atoms in a solid, then the energy band, formed from the electronic energy level of the valence electron of the atom consists of N closely spaced levels. Adjacent energy levels in a band are at about $\SI{d-22}{\electronvolt}$ from each
 other.
-The allowed energy bands are separated by regions that are
-forbidden bands of electron energy values. The width of the for- 1.8] BAND THEORY OF SOLIDS 613
-hidden bands is commensurable with that of the allowed bands.
-With an increase in energy the width of the allowed energy
-hands increases and that of the forbidden bands decreases.
-A schematic diagram of the energy bands of a solid is shown
-in Fig. 41.12.
 
-\subsection{}\label{41.8.6} The allowed energy bands in a solid can be filled in
-different ways by electrons. In limiting cases they can be completely
-filled or entirely empty (41.9.1). The electrons in a solid
-can move from one allowed band to another. For an electron
-to move from a lower band to the next higher one it is necessary
-to expend energy equal to the width of the forbidden band between
-the two allowed ones (of the order of several eV).
+The allowed energy bands are separated by regions that are
+\redem{forbidden bands} of electron energy values. The width of the forhidden bands is commensurable with that of the allowed bands. With an increase in energy the width of the allowed energy hands increases and that of the forbidden bands decreases. A schematic diagram of the energy bands of a solid is shown in \figr{fig-41-12}.
+
+\begin{figure}%[1cm] 
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-41/fig-41-12.pdf}
+\sidecaption{A schematic diagram of the energy bands of a solid.\label{fig-41-12}}
+\end{figure}
+
+\subsection{}\label{41.8.6} The allowed energy bands in a solid can be filled in different ways by electrons. In limiting cases they can be completely \ssect{41.9.1}. The electrons in a solid can move from one allowed band to another. For an electron to move from a lower band to the next higher one it is necessary to expend energy equal to the width of the forbidden band between the two allowed ones (of the order of several eV).
+
 Very little energy is required for intraband transitions. For
-example, an energy of 10 ~4 to 10~8 eV is sufficient for this purpose,
-and it is acquired by an electron in a metal by the action
-of an electric field over a free path length at ordinary potential
-differences. But this energy is insufficient to move an electron
-from one band to another. The action of thermal excitation can
-impart various energies to electrons, sufficient both for intra-
-hand and interband transitions.614 QUANTUM PHYSICS OF SOLIDS 
+example, an energy of \num{d-4} to $\SI{d-8}{\electronvolt}$ is sufficient for this purpose, and it is acquired by an electron in a metal by the action of an electric field over a free path length at ordinary potential differences. But this energy is insufficient to move an  electron from one band to another. The action of thermal excitation can impart various energies to electrons, sufficient both for intraband and interband transitions.
 
 
 \section{Metals and Dielectrics in the Band Theory}
 \label{sec-41.9} 
 
 
-\subsection{}\label{41.9.1} Differences in the electric properties of solids are explained
-by the band theory (41.8.2) by the fact that the allowed
-energy bands (41.8.2) are differently filled by electrons and by
-the different widths of the forbidden bands (41.8.5). These two
-factors determine whether a given solid is a conductor of electric
-current or is a dielectric. A necessary condition for a solid to be
-a conductor is the availability of empty energy levels to which
-the electric field can raise the electrons. It should be taken into
-consideration that the field can bring about only intraband
-transitionsjof the electrons (41.8.6).
+\subsection{}\label{41.9.1} Differences in the electric properties of solids are explained by the band theory \ssect{41.8.2} by the fact that the allowed energy bands \ssect{41.8.2} are differently filled by electrons and by
+the different widths of the forbidden bands \ssect{41.8.5}. These two factors determine whether a given solid is a conductor of electric current or is a dielectric. A necessary condition for a solid to be a conductor is the availability of empty energy levels to which the electric field can raise the electrons. It should be taken into consideration that the field can bring about only intraband transitionsjof the electrons \ssect{41.8.6}.
 
-\subsection{}\label{41.9.2} Typical examples of conductors are the metals of the
-first group of Mendeleev's periodic table (39.3.5), for instance,
-sodium. In a single atom of sodium there are two filled electron
-shells, containing 2 and 8 electrons, respectively (39.3.4).
-According to the Pauli principle (39.3.1), the eleventh valence
-electron of the sodium atom only fills half of the upper energy
-level. In a crystal of sodium, the first two filled shells of single
-atoms correspond to the energy bands completely filled with
-electrons.
+\subsection{}\label{41.9.2} Typical examples of conductors are the metals of the first group of Mendeleev's periodic table \ssect{39.3.5}, for instance, sodium. In a single atom of sodium there are two filled electron shells, containing 2 and 8 electrons, respectively \ssect{39.3.4}.
+
+According to the Pauli principle \ssect{39.3.1}, the eleventh valence electron of the sodium atom only fills half of the upper energy level. In a crystal of sodium, the first two filled shells of single atoms correspond to the energy bands completely filled with electrons.
+
+\begin{marginfigure}%[1cm] 
+\centering
+\includegraphics[width=\textwidth]{figs/ch-41/fig-41-13.pdf}
+\sidecaption{Schematic representation of forbidden and empty energy levels of electron in a solid.\label{fig-41-13}}
+\end{marginfigure}
+
 The valence electrons of the sodium atoms in a crystal half
-fill the levels of the band of allowed energy values (horizontally
-hatched in Fig. 41.13). This is called the conduction band because
-the electrons in it participate in producing the conduction current
-(20.1.2). By the action of the electric field, set up in the
-Forbidden band
-Empty energy levels
-Filled levels
-Fig. 41.13
-crystal by the source of electrical energy, the valence electrons
-acquire more energy and move to higher, unoccupied energy
-levels in the conduction hand. This initiates their ordered motion
-and produces a current in the crystal.41.10] CONDUCTION OF SEMICONDUCTORS 615
-Thus, if the band is n o t co m p le te ly occupied b y valence electrons,
-a so lid is alw ays a conductor of e le ctric current.
+fill the levels of the band of allowed energy values (horizontally hatched in \figr{fig-41-13}). This is called the \redem{conduction band} because the electrons in it participate in producing the conduction current \ssect{20.1.2}. By the action of the electric field, set up in the crystal by the source of electrical energy, the valence electrons acquire more energy and move to higher, unoccupied energy levels in the conduction hand. This initiates their ordered motion and produces a current in the crystal.
 
-\subsection{}\label{41.9.3} Hybridization o f a llow ed energy bands m a y occur in
-crystals. A band form ed in s p littin g an upper excited le ve l m a y
-o verlap a band produced b y the s p littin g o f a lo w e r state of
-valence electrons. T his phenom enon is observed in the crystals
-of elem ents of the second group in M endeleev's p e rio d ic ta b le
-(Be, Cd, M g, Z n and others). T his form s a w id e r hybrid band
-in w h ich valence electrons are located, fillin g it o n ly p a rtly .
-H ence, a h y b rid band is a co n duction band, and such crystals are
-conductors o f e le ctric current.
-41.9.4 The energy bands do n o t overlap in so lid d ie le ctrics,
-and the band th a t com bines the energy levels o f the valence
-electrons of atom s or ions is co m p le te ly fille d w ith electrons,
-whereas a ll higher bands are e n tire ly e m p ty a t T = 0 K . The
-band com p le te ly fille d w ith electrons is calle d the valence band.
-The e m p ty bands are conduction bands. A n exam ple o f a c ry s ta llin
-e d ie le ctric is com m on sa lt (N aC l). The N aC l m olecule has
-a heteropolar bond (39.4.4), w h ich leads to the fo rm a tio n o f
-N a + and C l`` ions w ith co m p le te ly fille d electron shells. The
-N aC l crysta l has a valence band of the C l" io n and a ll low er
-bands are com p le te ly fille d , whereas the upper N a + io n band,
-located above, is e n tire ly em pty. The C l`` and N a + bands are
-separated b y 6 eV, and the source of e le c tric a l energy cannot
-excite the electrons fro m the co m p le te ly fille d C l`` band to the
-e m pty N a + conduction band. T his exp e d ie le ctric properties
-of N aC l.
+Thus, if the band is not completely occupied by valence electrons, a solid is always a conductor of electric current.
+
+\subsection{}\label{41.9.3} 
+
+\redem{Hybridization} of allowed energy bands may occur in crystals. A band formed in splitting an upper excited level may overlap a band produced by the splitting of a lower state of valence electrons. This phenomenon is observed in the crystals of elements of the second group in Mendeleev's periodic table (\ce{Be}, \ce{Cd}, \ce{Mg}, \ce{Zn} and others). This forms a wider \redem{hybrid band} in which valence electrons are located, filling it only partly. Hence, a hybrid band is a conduction band, and such crystals are conductors of electric current.
+
+\subsection{}\label{41.9.4}
+
+The energy bands do not overlap in solid dielectrics, and the band that combines the energy levels of the valence electrons of atoms or ions is completely filled with electrons, whereas all higher bands are entirely empty at $T = \SI{0}{\kelvin}$. The band completely filled with electrons is called the \redem{valence band}. The empty bands are conduction bands. An example of a crystalline dielectric is common salt (\ce{NaCl}). The NaCl molecule has a heteropolar bond \ssect{39.4.4}, which leads to the formation of \ce{Na+} and \ce{Cl-} ions with completely filled electron shells. The \ce{NaCl} crystal has a valence band of the \ce{Cl-} ion and all lower bands are completely filled, whereas the upper \ce{Na+} ion band, located above, is entirely empty. The \ce{Cl-} and \ce{Na+} bands are separated by \SI{6}{\electronvolt}, and the source of electrical energy cannot excite the electrons from the completely filled \ce{Cl-} band to the empty \ce{Na+} conduction band. This explains the dielectric properties of \ce{NaCl}.
 
 \section{Electrical Conduction of Semiconductors}
 \label{sec-41.10} 
