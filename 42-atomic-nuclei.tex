@@ -304,301 +304,174 @@ from which
 \begin{equation*}%
 \frac{N_{p}}{N_{d}} = \frac{\lambda_{p}}{\lambda_{s}} = \frac{T_{p}}{T_{d}},
 \end{equation*}
-where $T_{p}$ and $T_{d}$ are the half-lives \ssect{42.3.5} of the parent and daughter nuclei. The product $A = \lambda N$ is called the \redem{activity} of the given radioactive substance and represents the number of decays in unit time. Activity referred to unit mass of the substance is called \redem{specific activity}. Activity is measured by the number of nuclei of a radioactive substance that decays in unit time (\si{\per\second}). The unit of activity is called the becquerel (\si{bequerel}).
+where $T_{p}$ and $T_{d}$ are the half-lives \ssect{42.3.5} of the parent and daughter nuclei. The product $A = \lambda N$ is called the \redem{activity} of the given radioactive substance and represents the number of decays in unit time. Activity referred to unit mass of the substance is called \redem{specific activity}. Activity is measured by the number of nuclei of a radioactive substance that decays in unit time (\si{\per\second}). The unit of activity is called the becquerel (\si{\becquerel}).
 
 \section{ Alpha Decay}
 \label{sec-42.5} 
 
 
-\subsection{}\label{42.5.1} Alpha decay is the emission of alpha particles by the
-nuclei of certain chemical elements. Alpha decay (42.5.2) is
-a property of heavy nuclei having mass numbers A > 200
-and nuclear charges Ze > 82. Formed inside such nuclei are
-separate alpha particles, eacli consisting of two protons and
-two neutrons. This is facilitated by the saturation of nuclear
-forces (42.3.4). The formed alpha particles are subject to more
-Coulomb force repulsion from the protons of the nucleus than
-single protons are. At the same time, an alpha particle is subject
-to less nuclear attraction to the nucleons in the nucleus than
-single nucleons.
+\subsection{}\label{42.5.1} \redem{Alpha decay} is the emission of alpha particles by the nuclei of certain chemical elements. Alpha decay \ssect{42.5.2} is a property of heavy nuclei having mass numbers $A > 200$ and nuclear charges $Z_{e} > $82. Formed inside such nuclei are separate alpha particles, eacli consisting of two protons and two neutrons. This is facilitated by the saturation of nuclear forces \ssect{42.3.4}. The formed alpha particles are subject to more Coulomb force repulsion from the protons of the nucleus than single protons are. At the same time, an alpha particle is subject to less nuclear attraction to the nucleons in the nucleus than single nucleons.
 
-\subsection{}\label{42.5.2} The nucleus is a potential barrier (38.7.1) for alpha particles
-and its height U is greater than E, the energy of the alpha
-particle in the nucleus. Alpha decay occurs by the penetration
-of alpha particles through the potential barrier by means of
-the tunnel effect (38.7.2). The formula for the penetrability D
-of the potential barrier indicates that even negligible changes
-in the energy of an alpha particle in the nucleus lead to a drastic
-change of the quantity
-*2
-exp  -  j Y2m*[V(x)-K d * .
-*1
-This explains the great differences in the half-lives of alpha
-radiators, from 109 years to 10~7 s, at a comparatively small
-increase in the energy of the alpha particles, from 4 to 9 MeV.
+\subsection{}\label{42.5.2} The nucleus is a potential barrier \ssect{38.7.1} for alpha particles and its height $U$ is greater than $E$, the energy of the alpha particle in the nucleus. Alpha decay occurs by the penetration of alpha particles through the potential barrier by means of
+the tunnel effect \ssect{38.7.2}. The formula for the penetrability $D$ of the potential barrier indicates that even negligible changes in the energy of an alpha particle in the nucleus lead to a drastic change of the quantity
+\begin{equation*}%
+\exp  \left\{-\frac{2}{\hbar} \int_{x_{1}}^{x_{2}} \sqrt{2m_{\alpha}[U(x) - E]} \dd x \right\}.
+\end{equation*}
+This explains the great differences in the half-lives of alpha radiators, from \num{d9} years to \SI{d-7}{\second}, at a comparatively small increase in the energy of the alpha particles, from \qtyrange{4}{9}{\mega\electronvolt}.
 
-\subsection{}\label{42.5.3} The decay constant X (42.4.4) is related to the penetrability
-D of the potential barrier for alpha particles. For a simplified
-model of a potential barrier of length L (38.7.2)
-X = Dn,
-where n is the number of collisions of the alpha particle with
-the barrier wall in unit time, equal to n = y/2L, and v =
-= Y2E/ma is the velocity of the alpha particle in the nucleus.
-The quantity L is commonly taken equal to the radius R of
-the nucleus (27? is the width of the potential barrier).
-The simplified formula for the alpha-radioactive decay constant
-is
-e x P [ ----------2m« (Uo-E)  ] .
+\subsection{}\label{42.5.3} The decay constant $\lambda$ \ssect{42.4.4} is related to the penetrability $D$ of the potential barrier for alpha particles. For a simplified
+model of a potential barrier of length $L$ \ssect{38.7.2}
+\begin{equation*}%
+\lambda = D\,n,
+\end{equation*}
+where $n$ is the number of collisions of the alpha particle with the barrier wall in unit time, equal to $n = v/2L$, and $v = \sqrt{2E/m_{\alpha}}$ is the velocity of the alpha particle in the nucleus. The quantity $L$ is commonly taken equal to the radius $R$ of the nucleus ($2R$ is the width of the potential barrier).
 
-\subsection{}\label{42.5.4} The Geiger-Nuttall rule, or relation, states that the
-larger the decay constant X of a radioactive element, the longer42.6] B E T A D E C A Y 639
-the range Ra (path length) of the alpha particles it emits in
-air. Thus
-In % = A -f- B In
-where A and B are empirical constants, having different values
-for the various radioactive families (42.4.7).
+The simplified formula for the alpha-radioactive decay constant is
+\begin{equation*}%
+\lambda = \frac{1}{2R}\sqrt{\frac{2E}{m_{\alpha}}}   \exp  \left[-\frac{2}{\hbar} \sqrt{2 m_{\alpha}(U_{0}-E)}R \right].
+\end{equation*}
 
-\subsection{}\label{42.5.5} On the basis of data, which is given in Sects. 42.5.3
-and 42.5.4, it has been shown that the same alpha-radioactive
-element has several groups of alpha particles with different
-ranges (path lengths). Constancy of the ranges is observed
-within each group. It follows that the alpha particles emitted
-by the nuclei have a definite energy spectrum and, consequently,
-the atomic nuclei have discrete energy levels.
+\subsection{}\label{42.5.4} The \redem{Geiger-Nuttall rule}, or \redem{relation}, states that the larger the decay constant $\lambda$ of a radioactive element, the longer the range $R_{\alpha}$ (path length) of the alpha particles it emits in air. Thus
+\begin{equation*}%
+\ln \lambda = A + B \ln R_{\alpha},
+\end{equation*}
+where $A$ and $B$ are empirical constants, having different values for the various radioactive families \ssect{42.4.7}.
+
+\subsection{}\label{42.5.5} On the basis of data, which is given in \ssect{42.5.3} and \ssect{42.5.4}, it has been shown that the same alpha-radioactive element has several groups of alpha particles with different ranges (path lengths). Constancy of the ranges is observed within each group. It follows that the alpha particles emitted by the nuclei have a definite energy spectrum and, consequently,
+the atomic nuclei have \redem{discrete energy} levels.
 
 \section{Beta Decay}
 \label{sec-42.6} 
 
-
-
-\subsection{}\label{42.6.1} The concept of beta decay unites three kinds of nuclear
-transformations: electron decay (p~), positron decay (P+) and
-electron capture (e or K capture). The first two kinds of transformations
-consist in the emission by the nucleus of an electron
-(or positron) and an electron antineutrino (or electron neutrino).
-These processes involve the transformation of one kind of nucleon
-in the nucleus into another: a neutron into a proton or a
-proton into a neutron. The transformations occur as follows:
-on iP + - ? e + > e (p~ decay),
-lP ->- on + + ie + g v e (P+ decay).
-Here Jn and Jp are the symbols for the neutron and proton, ?e
-and +5e are the symbols for the electron and positron, and Jve
-and ve are the symbols for the electron neutrino and antineutrino
-(42.4.2).
-In the case of e capture, the proton is transformed into a neutron
-as follows:
-iP + - t e -* on + ove*
-This procedure consists in the disappearance of one of the electrons
-from the K shell of the atom, which is closest to the nucleus.
-The proton, in being transformed into a neutron, seems
-to capture an electron. This gave rise to the term electron cap-640 STRUCTURE AND PROPERTIES OP ATOMIC NUCLEI [42
-ture (or e capture). A feature of this kind of beta decay is the
-emission from the nucleus of only a single particle, the neutrino
-SJve. An example of e capture is the transformation of the radioactive
-nucleus of beryllium JBe into a stable nucleus of lithium
-JLi. In contrast to  decay, electron capture is accompanied by
-characteristic X radiation, belonging to the K line of the corresponding
-element (39.7.9).
+\subsection{}\label{42.6.1} The concept of beta decay unites three kinds of nuclear transformations: \redem{electron} decay $(\beta^{-})$, \redem{positron} decay $(\beta^{+})$ and \redem{electron capture} ($e$ or $K$ capture). The first two kinds of transformations consist in the emission by the nucleus of an electron (or positron) and an electron antineutrino (or electron neutrino). These processes involve the transformation of one kind of nucleon in the nucleus into another: a neutron into a proton or a proton into a neutron. The transformations occur as follows:
+\begin{align*}%
+\ce{^{1}_{0}{n} & \to ^{1}_{1}{p} + ^{0}_{-1}{e} + ^{0}_{0}{\tilde{\nu}_e}} && (\beta^{-} \text{ decay}),\\
+\ce{^{1}_{1}{p} & \to ^{1}_{0}{n} + ^{0}_{+1}{e} + ^{0}_{0}{{\nu}_e}} && (\beta^{+} \text{ decay}).
+\end{align*}
+Here \ce{^{1}_{0}n} and \ce{^{1}_{1}p} are the symbols for the neutron and proton, \ce{^{0}_{-1}e} and \ce{^{0}_{+1}{e}} are the symbols for the electron and positron,  $\ce{^{0}_{0}\nu_{e}}$ and $\ce{^{0}_{0}{\tilde{\nu}_{e}}}$ 
+ are the symbols for the electron neutrino and antineutrino \ssect{42.4.2}.
+ 
+In the case of $e$ capture, the proton is transformed into a neutron as follows:
+\begin{equation*}%
+\ce{^{1}_{1}{p} + ^{0}_{-1}{e} \to ^{1}_{0}{n} + ^{0}_{0}{\tilde{\nu}_e}}.
+\end{equation*}
+This procedure consists in the disappearance of one of the electrons from the $K$ shell of the atom, which is closest to the nucleus. The proton, in being transformed into a neutron, seems to capture an electron. This gave rise to the term electron capture (or $e$ capture). A feature of this kind of beta decay is the emission from the nucleus of only a single particle, the neutrino $\ce{^{0}_{0}\nu_{e}}$. An example of $e$ capture is the transformation of the radioactive nucleus of beryllium \ce{^{7}_{4}Be} into a stable nucleus of lithium \ce{^{7}_{3}Li}. In contrast to  decay, electron capture is accompanied by characteristic $X$ radiation, belonging to the $K$ line of the corresponding
+element \ssect{39.7.9}.
 
 
 \subsection{}\label{42.6.2} 
 
-P" decay occurs in both natural and artifical radioactive
-nuclei; P+ decay is typical of only artificial radioactivity, i.e.
-the initiation of intrinsic radioactive radiation of nuclei due
-to the action of alpha particles, neutrons or other particles.
-This violates the conditions of stability of the atomic nucleus
-(42.2.5). For example, the artificially radioactive isotope of
-carbon XJG is obtained from the stable nucleus of nitrogen by
-the action of neutrons and with the emission of protons:
-i4N + ln  l4 C + lp
+$\beta^{-}$ decay occurs in both natural and artifical radioactive nuclei; P+ decay is typical of only artificial radioactivity, i.e. the initiation of intrinsic radioactive radiation of nuclei due to the action of alpha particles, neutrons or other particles. This violates the conditions of stability of the atomic nucleus \ssect{42.2.5}. For example, the artificially radioactive isotope of carbon \ce{^{14}_{6}C} is obtained from the stable nucleus of nitrogen by the action of neutrons and with the emission of protons:
+\begin{equation*}%
+\ce{^{14}_{7}N + ^{1}_{0}n \to  ^{14}_{6}C + ^{1}_{1}p},
+\end{equation*}
 and, after undergoing beta decay, is again transformed into
-the stable isotope 1fN. Thus
-14C 14N + 0e + 0-
-Violation of the stability conditions (42.2.5) by introducing
-surplus protons into the nucleus leads to artificial P+ decay.
+the stable isotope \ce{^{14}_{7}N}. Thus
+\begin{equation*}%
+\ce{^{14}_{6}C \to ^{14}_{7}N +  ^{0}_{-1}e + ^{0}_{0}\tilde{\nu_{e}}},
+\end{equation*}
+Violation of the stability conditions \ssect{42.2.5} by introducing surplus protons into the nucleus leads to artificial $\beta^{+}$ decay.
 This is evident from the following example:
-‘JB + JHe -> ‘fN -> *?N +Jn,
-4?N -  C + e + gve,
-where +?e is a positron and gve is an electron neutrino.
+\begin{align*}%
+\ce{^{10}_{5}B + ^{4}_{2}He 
+& \to  ^{14}_{7}N \to ^{13}_{7}N + ^{1}_{0}n},\\
+\ce{^{13}_{7}N & \to ^{13}_{6}C +  ^{0}_{+1}e + ^{0}_{0}\nu_{e}},
+\end{align*}
+where \ce{^{0}_{+1}e} is a positron and \ce{^{0}_{0}\nu_{e}} is an electron neutrino.
 
 
-\subsection{}\label{42.6.3} Natural P~ decay takes place so that the neutron Jn
-is spontaneously transformed into a proton. The rest energy
-(5.7.3) of the neutron exceeds that of a hydrogen atom (i.e.
-the proton and electron taken together) by 782 keV. Hence,
-a transformation of the type (42.6.1)
-on “* P + -? e + 8 ve
-is feasible with respect to energy outside the nucleus as well.
-The radioactive decay of free neutrons has been observed in high-
-intensity streams of neutrons released in nuclear reactors.
-This decay takes place with a half-life (42.4.5) of (1.01 +
-:J:- 0.03) X 103 s. In heavy nuclei, overloaded with neutrons,
-such transformations lead to natural radioactivity.
-Transformations (42.6.1) of the type p -> Jn + +Je + Jve are
-only possible in nuclei where the required energy is borrowed
-from neighbouring particles. This transformation leads to
-artificial (3 + decay.
+\subsection{}\label{42.6.3} Natural $\beta^{-}$ decay takes place so that the neutron \ce{^{1}_{0}n} is spontaneously transformed into a proton. The rest energy \ssect{5.7.3} of the neutron exceeds that of a hydrogen atom (i.e. the proton and electron taken together) by \SI{782}{\kilo\electronvolt}. Hence, a transformation of the type \ssect{42.6.1} 
+\begin{equation*}%
+\ce{^{1}_{0}n \to ^{1}_{1}p +  ^{0}_{-1}e + ^{0}_{0}\tilde{\nu_{e}}},
+\end{equation*}
+is feasible with respect to energy outside the nucleus as well. The \redem{radioactive decay of free neutrons} has been observed in high-intensity streams of neutrons released in nuclear reactors.
 
-\subsection{}\label{42.6.4} The half-lives of beta decays (42.4.5) vary for various
-sources of  radioactive radiation in an extensive time range
-from 10-a s to 1012 years, which is incommensurably long compared
-to nuclear time (10~22 to 10~23 s) (43.2.6). This indicates
-that beta decay is due to weak interaction (43.2.8).
+This decay takes place with a half-life \ssect{42.4.5} of \SI{1.01(3)e3}{\second}. In heavy nuclei, overloaded with neutrons, such transformations lead to natural radioactivity.
+
+Transformations \ssect{42.6.1} of the type $\ce{^{1}_{1}{p} \to ^{1}_{0}{n} + ^{0}_{+1}{e} + ^{0}_{0}{\nu_{e}}}$ are only possible in nuclei where the required energy is borrowed from neighbouring particles. This transformation leads to artificial $\beta^{+}$ decay.
+
+\subsection{}\label{42.6.4} The half-lives of beta decays \ssect{42.4.5} vary for various sources of $\beta^{\pm}$ radioactive radiation in an extensive time range from \SI{d-2}{\second} to \num{d12} years, which is incommensurably long compared to nuclear time (\qtyrange{d-22}{d-23}{\second}) \ssect{43.2.6}. This indicates that beta decay is due to weak interaction \ssect{43.2.8}.
 
 
-\subsection{}\label{42.6.5} The decisive experimental fact in understanding the
-mechanism of |3- decay and establishing a suitable theory was
-an investigation of the energy spectrum of the emitted electrons.
-This spectrum was found to be continuous, extending to E -
-= Emax (Fig* 42.2). The energy £max is called the upper energy
-limit of the spectrum; it is a characteristic of the source of
-P" radioactive radiation. Electrons with an energy exceeding
-max cannot be obtained with the given source.
+\subsection{}\label{42.6.5} The decisive experimental fact in understanding the mechanism of $\beta^{-}$ decay and establishing a suitable theory was an investigation of the energy spectrum of the emitted electrons. This spectrum was found to be continuous, extending to $E = E_{max}$ (\figr{fig-42-02}). The energy $E_{max}$ is called the \redem{upper energy limit} of the $\beta^{-}$ spectrum; it is a characteristic of the source of $\beta^{-}$ radioactive radiation. Electrons with an energy exceeding $E_{max}$ cannot be obtained with the given source.
 
-\subsection{}\label{42.6.6} To reconcile the continuity of the electron energy spectrum
-with the discrete nature of the energy levels of the nucleus
-(42.5.5), it is necessary to assume that, together with the elec- 41
-41 -0186642 STRUCTURE AND PROPERTIES OF ATOMIC NUCLEI [42
-tron ?e, another particle, the electron antineutrino* (jve, is
-emitted from the nucleus. The total energy lost by the nucleus
-in a beta decay is equal to 2?max, but it is variously distributed
-between the electron and electron antineutrino**. In particular,
-the limit point of the curve in Fig. 42.2 means that all the energy
-of the P~ decay is carried away by the electron. Zero energy of
-the electron on the curve would correspond to all the energy
-being carried away by the antineutrino Jjve.
-For the p~ radioactivity of free neutrons Emax = 782 keV,
-which fully corresponds to that discussed in Sect. 42.6.3.
+\begin{marginfigure}[-2cm] 
+\centering
+\includegraphics[width=\textwidth]{figs/ch-42/fig-42-02.pdf}
+\sidecaption{The energy specture on $\beta^{-}$ decay.\label{fig-42-02}}
+\end{marginfigure}
 
-\subsection{}\label{42.6.7} Neither the mass number A nor the spin of the nucleus
-(42.1.5) changes in a beta decay. The conservation of spin is
-explained by the fact that the spin of the electron antineutrino
-is Til2 (see Table 43.1), and the combined spins of this particle
-and of the electron, also equal to fr/2, are equal to zero when
-the spins of the two particles arc oppositely oriented.
+\subsection{}\label{42.6.6} To reconcile the continuity of the electron energy spectrum with the discrete nature of the energy levels of the nucleus \ssect{42.5.5}, it is necessary to assume that, together with the electron \ce{^{0}_{+1}e}, another particle, the electron antineutrino\sidenote[][1cm]{Antiparticles are discussed in \ssect{43.5.1}.} $\ce{^{0}_{0}\tilde{\nu}_{e}}$, is emitted from the nucleus. The total energy lost by the nucleus in a beta decay is equal to $E_{max}$, but it is variously distributed between the electron and electron antineutrino.\sidenote{It is evident that $E_{max}$ determines the difference $\Delta E_{ik}$ in the energies of two levels of the nucleus.} In particular, the limit point of the curve in \figr{fig-42-02} means that all the energy of the $\beta^{-}$ decay is carried away by the electron. Zero energy of the electron on the curve would correspond to all the energy being carried away by the antineutrino $\ce{^{0}_{0}\tilde{\nu}_{e}}$.
+
+
+For the $\beta^{-}$ radioactivity of free neutrons $E_{max} = \SI{782}{\kilo\electronvolt}$, which fully corresponds to that discussed in \ssect{42.6.3}.
+
+\subsection{}\label{42.6.7} Neither the mass number $A$ nor the spin of the nucleus \ssect{42.1.5} changes in a beta decay. The conservation of spin is explained by the fact that the spin of the electron antineutrino is $\hbar/2$ (see  \tabl{tab-43.1}), and the combined spins of this particle
+and of the electron, also equal to $\hbar/2$, are equal to zero when the spins of the two particles are oppositely oriented.
 
 \section{Gamma Rays}
 \label{sec-42.7} 
 
 
  
-\subsection{}\label{42.7.1} Gamma rays constitute hard electromagnetic radiation
-whose energy is released in nuclear transitions from excited
-energy states to the ground or less excited states (42.5.5), as
-well as in nuclear reactions. In the first case, according to the
-Bohr frequency condition (39.1.6), the energy of a photon of
-gamma rays is equal to the difference in the energies of the
+\subsection{}\label{42.7.1} \redem{Gamma rays} constitute hard electromagnetic radiation whose energy is released in nuclear transitions from excited energy states to the ground or less excited states \ssect{42.5.5}, as well as in nuclear reactions. In the first case, according to the Bohr frequency condition \ssect{39.1.6}, the energy of a photon of gamma rays is equal to the difference in the energies of the
 final and initial energy levels of the nucleus:
-vik ~ ~
-where vik is the frequency of the photon corresponding to the
-transition of the nucleus from the state with energy Et to the
-state with energy E. The magnitude of AEih is of the order of
-0.1 MeV and considerably exceeds the difference of the energies
-of the electron levels in the atom (39.1.5). Gamma rays are
-extremely short-wave electromagnetic radiation of a wavelength
-not exceeding 10~2 nm, i.e. 0.1 A. The discrete line spectrum of
-* Antiparticlcs arc discussed in Sect. 43.5.1.
-** It is evident that E rnax determines the difference AEih in
-the energies of two levels of the nucleus.gamma rays is confirmation of the aforesaid (see Sect. 42.7.4).
+\begin{equation*}%
+\hbar \nu_{ik} = E_{i} - E_{k} = \Delta E_{ik},
+\end{equation*}
+where $\nu_{ik}$ is the frequency of the photon corresponding to the transition of the nucleus from the state with energy $E_{k}$ to the state with energy $E$. The magnitude of $\Delta E_{ik}$ is of the order of \SI{0.1}{\mega\electronvolt} and considerably exceeds the difference of the energies of the electron levels in the atom \ssect{39.1.5}. Gamma rays are extremely short-wave electromagnetic radiation of a wavelength not exceeding \SI{d-2}{\nano\meter}, i.e. \SI{0.1}{\angstrom}. The discrete line spectrum of gamma rays is confirmation of the aforesaid (see \ssect{42.7.4}).
 
 
-\subsection{}\label{42.7.2} Gamma radiation is not an independent type of radioactivity
-(42.4.2). It accompanies the processes of a and P decays
-and causes no changes in the charge or mass number of
-nuclei. It has been established that gamma rays are emitted
-by a daughter nucleus (42.4.3) which turns out to be excited at
-the instant it is formed (42.7.4). The excited nucleus loses its
-energy during a time ranging from 10~13 to 10-14 s, which is
-considerably less than the lifetime of the excited atom (approx.
-10-8 s).
+\subsection{}\label{42.7.2} Gamma radiation is not an independent type of radioactivity \ssect{42.4.2}. It accompanies the processes of $\alpha$ and $\beta$ decays and causes no changes in the charge or mass number of nuclei. It has been established that gamma rays are emitted by a daughter nucleus \ssect{42.4.3} which turns out to be excited at the instant it is formed \ssect{42.7.4}. The excited nucleus loses its energy during a time ranging from \qtyrange{d-13}{d-14}{\second}, which is considerably less than the lifetime of the excited atom ($\approx \SI{d-8}{\second}$).
 
 
-\subsection{}\label{42.7.3} The origin and properties of gamma rays are confirmed
-by the laws of internal conversion of gamma rays, which consists
-in photoelectric-effect phenomena (37.1.1) of the electrons of
-the atom's inner shells as a result of gamma radiation of its
-nucleus. Electrons formed by such an internal photoelectric
-effect are said to be conversion electrons.
-In many cases all the energy of the gamma rays is expended on
-internai conversion phenomena, and only conversion electrons
-are observed instead of gamma radiation. The energy eVn of
-a conversion photoelectron is related to the energy hv of a photon
-of gamma rays by Einstein's photoelectric emission equation
-(37.1.4):
-eVn = hv - 0>n>
-where <T>n is the work function of an electron from the rath electron
-shell o f'the atom, numerically equal to the energies of
-electrons located at definite energy levels in the atom (39.1.5).
-These energies are known from data on characteristic X-ray
-spectra of atoms (39.7.9). A gamma photon of the energy hv
-can remove an electron from any inner shell (/v, Af, etc.) of
-the atom (39.3.6). Accordingly, the energies eVn of the conversion
-electrons are expressed by
-eVL = hv - d)L, eVM = hv - eVN = hv - <N, etc.
-where d)L, Om, <bN, etc. are the X ray energy levels of the
-atom.
+\subsection{}\label{42.7.3} The origin and properties of gamma rays are confirmed by the laws of \redem{internal conversion} of gamma rays, which consists in photoelectric-effect phenomena \ssect{37.1.1} of the electrons of the atom's inner shells as a result of gamma radiation of its nucleus. Electrons formed by such an internal photoelectric effect are said to be \redem{conversion electrons}.
+
+In many cases all the energy of the gamma rays is expended on internal conversion phenomena, and only conversion electrons are observed instead of gamma radiation. The energy $eV_{n}$ of a conversion photoelectron is related to the energy $h\nu$ of a photon of gamma rays by Einstein's photoelectric emission equation \ssect{37.1.4}:
+\begin{equation*}%
+eV_{n} = h\nu - \Phi_{n},
+\end{equation*}
+where $\Phi_{n}$ is the work function of an electron from the $n$-th electron shell of the atom, numerically equal to the energies of electrons located at definite energy levels in the atom \ssect{39.1.5}.
+
+These energies are known from data on characteristic $X$-ray
+spectra of atoms \ssect{39.7.9}. A gamma photon of the energy $h\nu$ can remove an electron from any inner shell ($K$, $M$, etc.) of the atom \ssect{39.3.6}. Accordingly, the energies $eV_{n}$ of the conversion electrons are expressed by
+\begin{align*}%
+eV_{L} & = h\nu - \Phi_{L},\\
+eV_{M} & = h\nu - \Phi_{M},\\
+eV_{N} & = h\nu - \Phi_{N}, \text{ etc.}
+\end{align*}
+where $\Phi_{L}$, $\Phi_{M}$, $\Phi_{N}$, etc. are the $X$-ray energy levels of the atom.
 
 
-\subsection{}\label{42.7.4} The result of internal conversion (42.7.3) is the loss of
-electrons from the inner shells of the atom and, consequently,
-the provision of conditions for producing the X ray characteristic
-spectrum (39.7.9). Internal conversion is accompanied by
-the emission of characteristic X rays. A measurement of the 41
+\subsection{}\label{42.7.4} The result of internal conversion \ssect{42.7.3} is the loss of electrons from the inner shells of the atom and, consequently, the provision of conditions for producing the $X$-ray characteristic spectrum \ssect{39.7.9}. Internal conversion is accompanied by the emission of characteristic $X$-rays. A measurement of the energy of the conversed electrons and the data on the quantities $\Phi_{L}$, $\Phi_{M}$, $\Phi_{N}$, etc. \ssect{42.7.3} enabled it to be shown that the nucleus can emit a definite series of monochromatic gamma rays, i.e. that gamma rays have a line spectrum. Besides, these data showed that gamma rays are emitted by a daughter nucleus rather than a parent one.
 
-energy of the conversed electrons and the data on the quantities
-Ojl, etc. (42.7.3) enabled it to be shown that the
-nucleus can emit a definite series of monochromatic gamma rays,
-i.e. that gamma rays have a line spectrum. Besides, these data
-showed that gamma rays are emitted by a daughter nucleus
-rather than a parent one.
+\subsection{}\label{42.7.5} Gamma rays have a very strong effect on matter, in particular, on biological substances. The effect of gamma rays and other kinds of ionizing radiation is evaluated by the absorbed \redem{radiation dose} $D$, the ratio of the energy of radiation to the mass of the irradiated matter. The unit of the dose is \si{\joule\per\kilo\gram}, which is the dose of absorbed radiation at which a mass of \SI{1}{\kilo\gram} of irradiated matter receives \SI{1}{\joule} of energy of ionizing radiation.\sidenote{Owing to the specific nature of information on the biological effect of gamma rays, the pertinent units of physical quantities are given here instead of in the Appendix.} This unit is called the \redem{gray} (\si{\gray}). Also used is the off-system unit called the rad: $1~\text{rad} = \SI{d-2}{\gray}$.
 
-\subsection{}\label{42.7.5} Gamma rays have a very strong effect on matter, in
-particular, on biological substances. The effect of gamma rays and other kinds of ionizing radiation is evaluated by the absorbed
-radiation dose D, the ratio of the energy of radiation to the
-mass of the irradiated matter. The unit of the dose is J/kg, which
-is the dose of absorbed radiation at which a mass of 1 kg of irradiated
-matter receives 1 joule of energy of ionizing radiation*.
-This unit is called the gray (Gy). Also used is the off-system
-unit called the rad: 1 rad = 10~2 Gy.
-The dose rate N of radiation is the absorbed dose D referred to
-unit time. Thus
-N Dlt.
-The unit of dose rate is a watt per kilogram: W/kg = Gy/s.
+The \redem{dose rate $N$ of radiation} is the absorbed dose $D$ referred to unit time. Thus 
+\begin{equation*}
+N = \frac{D}{t}.
+\end{equation*} 
+The unit of dose rate is a watt per kilogram: \si{\watt\per\kilo\gram} = \si{\gray\per\second}.
 
 
-\subsection{}\label{42.7.6} The energy characteristic of radiation, evaluated on
-the basis of the ionization of dry atmospheric air, is the exposure
-dose De. It is measured in coulombs per kilogram (G/kg). One
-coulomb per kilogram of exposure dose of X or gamma radiation
-is the amount at which the sum of the electric charges of ions
-of the same sign, produced by the electrons released by irradiated
-air of 1 kg mass, fully utilizing the ionizing capacity, is
-equal to one coulomb. An off-system unit of exposure dose is the
-roentgen R, with 1 R = 2.58 X 10 "4 G/kg.
-With an exposure dose equal to 1 R, a total charge of ions of
-the same charge equal to (1/3) X 10~9 C is obtained in 10~6 m3
-of dry air at standard atmospheric pressure.
-The exposure dose rate Ne is the exposure dose per unit time:
-Ne = Djt, measured in amperes per kilogram (A/kg). One
-unit of exposure dose rate is the electromagnetic radiation at
-which the exposure dose increases by one coulomb per kilogram
-in one second. The off-system units of the exposure dose rate
-* Owing to the specific nature of information on the biological
-effect of gamma rays, the pertinent units of physical quantities
-are given here instead of in the Appendix.42.8] MOSSBAUER EFFECT 645
-are: 1 R/s -- 2.58 X 10 “4 A/kg, 1 R/min = 4.30 X 10~6 A/kg
-and 1 R/li = 7.17 X 10~8 A/kg.
+\subsection{}\label{42.7.6} The energy characteristic of radiation, evaluated on the basis of the ionization of dry atmospheric air, is the \redem{exposure dose} $D_{e}$. It is measured in coulombs per kilogram (\si{\coulomb\per\kilo\gram}). One coulomb per kilogram of exposure dose of $X$ or gamma radiation is the amount at which the sum of the electric charges of ions of the same sign, produced by the electrons released by irradiated air of \SI{1}{\kilo\gram} mass, fully utilizing the ionizing capacity, is equal to one coulomb. An off-system unit of exposure dose is the \redem{roentgen} R, with $1~\text{R} = \SI{2.58d-4}{\coulomb\per\kilo\gram}$.
 
-\subsection{}\label{42.7.7} A radiation dose can also be evaluated on the basis of
-its biological effect. The unit applied for this purpose is called
-the roentgen equivalent man (rem). This is the absorbed energy
-of radiation that produces the same biological effect as that produced
-by one roentgen. Thus
-1 rem = 10“2 J/kg.
+With an exposure dose equal to 1~R, a total charge of ions of the same charge equal to $(1/3)~\SI{d-9}{\coulomb}$ is obtained in \SI{d-6}{\meter\cubed} of dry air at standard atmospheric pressure. 
+
+The \redem{exposure dose rate} $N_{e}$ is the exposure dose per unit time: $N_{e} = D_{e}/t$, measured in amperes per kilogram (\si{\ampere\per\kilo\gram}). One unit of exposure dose rate is the electromagnetic radiation at which the exposure dose increases by one coulomb per kilogram in one second. The off-system units of the exposure dose rate * 
+are: 
+\begin{align*}%
+1~\text{R/s} & = \SI{2.58d-4}{\ampere\per\kilo\gram},\\
+1~\text{R/min} & = \SI{4.30d-6}{\ampere\per\kilo\gram},\\
+1~\text{R/h} & = \SI{7.17d-8}{\ampere\per\kilo\gram}.
+\end{align*}
+
+\subsection{}\label{42.7.7} A radiation dose can also be evaluated on the basis of its biological effect. The unit applied for this purpose is called the \redem{roentgen equivalent man} (rem). This is the absorbed energy of radiation that produces the same biological effect as that produced by one roentgen. Thus 
+\begin{equation*}%
+1~\text{rem} = \SI{d-2}{\joule\per\kilo\gram}.
+\end{equation*}
 The safe dose rate for humans is considered to be one about
-250 times that produced by the background of space and by radioactive
-radiation from the earth's interior.
+250 times that produced by the background of space and by radioactive radiation from the earth's interior.
 
 \section{M\"ossbauer Effect}
 \label{sec-42.8} 
