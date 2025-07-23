@@ -456,9 +456,9 @@ The unit of dose rate is a watt per kilogram: \si{\watt\per\kilo\gram} = \si{\gr
 
 \subsection{}\label{42.7.6} The energy characteristic of radiation, evaluated on the basis of the ionization of dry atmospheric air, is the \redem{exposure dose} $D_{e}$. It is measured in coulombs per kilogram (\si{\coulomb\per\kilo\gram}). One coulomb per kilogram of exposure dose of $X$ or gamma radiation is the amount at which the sum of the electric charges of ions of the same sign, produced by the electrons released by irradiated air of \SI{1}{\kilo\gram} mass, fully utilizing the ionizing capacity, is equal to one coulomb. An off-system unit of exposure dose is the \redem{roentgen} R, with $1~\text{R} = \SI{2.58d-4}{\coulomb\per\kilo\gram}$.
 
-With an exposure dose equal to 1~R, a total charge of ions of the same charge equal to $(1/3)~\SI{d-9}{\coulomb}$ is obtained in \SI{d-6}{\meter\cubed} of dry air at standard atmospheric pressure. 
+With an exposure dose equal to 1~R, a total charge of ions of the same charge equal to $(1/3) \times \SI{d-9}{\coulomb}$ is obtained in \SI{d-6}{\meter\cubed} of dry air at standard atmospheric pressure. 
 
-The \redem{exposure dose rate} $N_{e}$ is the exposure dose per unit time: $N_{e} = D_{e}/t$, measured in amperes per kilogram (\si{\ampere\per\kilo\gram}). One unit of exposure dose rate is the electromagnetic radiation at which the exposure dose increases by one coulomb per kilogram in one second. The off-system units of the exposure dose rate * 
+The \redem{exposure dose rate} $N_{e}$ is the exposure dose per unit time: $N_{e} = D_{e}/t$, measured in amperes per kilogram (\si{\ampere\per\kilo\gram}). One unit of exposure dose rate is the electromagnetic radiation at which the exposure dose increases by one coulomb per kilogram in one second. The off-system units of the exposure dose rate 
 are: 
 \begin{align*}%
 1~\text{R/s} & = \SI{2.58d-4}{\ampere\per\kilo\gram},\\
@@ -477,484 +477,287 @@ The safe dose rate for humans is considered to be one about
 \label{sec-42.8} 
 
 
-\subsection{}\label{42.8.1} All excited energy levels of the nucleus have energy
-values determined to an accuracy of AE, which is determined
-from the indeterminacy relation (38.6.6). Thus
-where At is the lifetime of the nucleus in the excited state.
-Only for the ground state of a stable nucleus is At -- oo and
-AE - 0, i.e. the energy value of the nucleus is exactly equal
-to E*. For example, a nucleus of iridium xIr goes over from
-the excited state with the energy E = 129 keV to the ground
-state, emitting a gamma photon, during the time At, which
-can be taken equal to the half-life (42.4.5) T - 10~10 s. The
-energy indeterminacy AE is found to equal AE  5 X 10"6 eV.
-The finite lifetime of the excited energy states of the nucleus
-leads to a lack of monochromaticity of the gamma radiation
-that accompanied the transition of the nucleus from the excited
-to the ground state. This lack of monochromaticity is called the
-natural linewidth of gamma radiation, and the indeterminacy
-* This is equally true for the energy levels of electrons in atoms.646 STRUCTURE AND PROPERTIES OF ATOMIC NUCLEI [42
-A of the energy of an excited state is called the natural width
-F of the energy level of the nucleus*.
+\subsection{}\label{42.8.1} All excited energy levels of the nucleus have energy values determined to an accuracy of $\Delta E$, which is determined from the indeterminacy relation (38.6.6). Thus
+\begin{equation*}%
+\Delta E = \frac{\hbar}{\Delta t},
+\end{equation*}
+where $\Delta t$ is the lifetime of the nucleus in the excited state. Only for the ground state of a stable nucleus is $\Delta t = \infty$ and $\Delta E = 0$, i.e. the energy value of the nucleus is exactly equal to $E$.\sidenote{This is equally true for the energy levels of electrons in atoms.} For example, a nucleus of iridium \ce{^{191}_{77}Ir} goes over from the excited state with the energy $E = \SI{129}{\keV}$ to the ground state, emitting a gamma photon, during the time $\Delta t$, which can be taken equal to the half-life \ssect{42.4.5} $T  = \SI{d-10}{\second}$. The
+energy indeterminacy $\Delta E$ is found to equal $\Delta E \approx  \SI{5d-6}{\eV}$.
 
-\subsection{}\label{42.8.2} Resonance absorption of gamma rays by nuclei implies
-the absorption by the nuclei of gamma photons of such frequency
-v that the energy hv of a photon is equal to the difference in the
-energies of one of the excited states and the ground state of the
-nucleus. The name means that the line of the gamma photon,
-emitted in the transition of the nucleus from an excited state
-to its ground state, has the same frequency v.
+The finite lifetime of the excited energy states of the nucleus leads to a lack of monochromaticity of the gamma radiation that accompanied the transition of the nucleus from the excited to the ground state. This lack of monochromaticity is called the \redem{natural linewidth} of gamma radiation, and the indeterminacy $\Delta E$ of the energy of an excited state is called the \redem{natural width $\Gamma$ of the energy level of the nucleus}.\sidenote{This definition also holds for transitions of atoms from an excited to the ground state. But here the lack of monochromaticity is called the \redem{natural spectral linewidth}, and the indeterminacy is the \redem{natural width of energy levels of electrons} in the atom.}
+
+\subsection{}\label{42.8.2}  \redem{Resonance absorption} of gamma rays by nuclei implies the absorption by the nuclei of gamma photons of such frequency $\nu$ that the energy $h\nu$ of a photon is equal to the difference in the energies of one of the excited states and the ground state of the nucleus. The name means that the line of the gamma photon, emitted in the transition of the nucleus from an excited state to its ground state, has the same frequency $\nu$.
+
 When gamma photons are emitted or absorbed by a nucleus, the
-recoil of the nucleus is taken into account. In a transition of a
-nucleus from an excited state with the energy E to the ground
-state (of an energy taken equal to zero), the gamma photon
-acquires the energy £ph equal to
-em -ph % N <
-where E is the nuclear recoil energy.
-In exciting the nucleus and its transition from the ground state
-to the state with the energy E, the gamma photon should have
-the energy Eu, equal to hvahll = E'lh = E + EN > E.
-The frequencies at the maxima of the emission lines (vem) and
-absorption lines (vabS) are shifted with respect to one another
-by the amount
-vabs - vem = Av, which is such that hkv = 2E.
-The energy % of nuclear recoil can be determined from the
-momentum pph of the photon (37.2.2), which, in the processes
-of emitting and absorbing a gamma photon, should equal the
-momentum of the nucleus (pph - pn):
-hv  2 1
-c ) 2M n
-where A/n is the mass of the nucleus. For the nucleus JIr,
-with the energy E = 129 keV of its excited state, calculations
-yield E n = 0 .05 eV and a shift Av 2E!h of the maxima of
-* This definition also holds for transitions of atoms from an
-excited to the ground state. But here the lack of monochromaticity
-is called the natural spectral linewidth, and the indeterminacy
-is the natural width of energy levels of electrons in the atom.
-647
-omission and absorption lines. At this, hAv = 0.1 eV, which
-considerably exceeds the natural width of level r (42.8.1).
+ \redem{recoil of the nucleus} is taken into account. In a transition of a nucleus from an excited state with the energy E to the ground state (of an energy taken equal to zero), the gamma photon acquires the energy £ph equal to
+\begin{equation*}%
+h \nu_{em} = E_{ph} = E - E_{N}  < E,
+\end{equation*} 
+where $E_{N}$ is the nuclear recoil energy.
 
-\subsection{}\label{42.8.3} A drastic reduction in the energy of nuclear recoil in
-absorbing and emitting gamma rays is evident when these processes
-are observed in nuclei in the crystal lattice, i.e. in the
-bound state. Under these conditions, the momentum and energy
-are imparted to the crystal lattice as a whole, rather than to the
-single nucleus that emits (or absorbs) a gamma photon. The
-mass of the crystal is substantially greater than that of a nucleus,
+In exciting the nucleus and its transition from the ground state to the state with the energy $E$, the gamma photon should have the energy $E_{ph}'$, equal to $h\nu_{abs} = E_{ph}' = E + E_{N} > E$.
+
+The frequencies at the maxima of the emission lines $(\nu_{em})$ and absorption lines $(\nu_{abs})$ are shifted with respect to one another by the amount
+\begin{equation*}%
+\nu_{abs} - \nu_{em} = \Delta \text{ such that } h \Delta \nu = 2 E_{N}.
+\end{equation*} 
+The energy $E_{N}$ of nuclear recoil can be determined from the momentum $\vb{p}_{ph}$ of the photon \ssect{37.2.2}, which, in the processes of emitting and absorbing a gamma photon, should equal the momentum of the nucleus $(\vb{p}_{ph} - \vb{p}_{N})$:
+\begin{equation*}%
+E_{N} = \frac{p^{2}_{N}}{2M_{N}} =\frac{p^{2}_{ph}}{2M_{N}} = \left( \frac{h \nu}{c}\right)^{2} \frac{1}{2M_{N}},
+\end{equation*}
+where $M_{N}$ is the mass of the nucleus. For the nucleus \ce{^{191}_{77}Ir}, with the energy $E = \SI{129}{\keV}$ of its excited state, calculations yield $E_{N} = \SI{0.05}{\eV}$ and a shift $\Delta \nu = 2E_{N}/h$ of the maxima of
+emission and absorption lines. At this, $h \Delta \nu = \SI{0.1}{\eV}$, which considerably exceeds the natural width of level $\Gamma$ \ssect{42.8.1}.
+
+\subsection{}\label{42.8.3} A drastic reduction in the energy of nuclear recoil in absorbing and emitting gamma rays is evident when these processes are observed in nuclei in the crystal lattice, i.e. in the bound state. Under these conditions, the momentum and energy are imparted to the crystal lattice as a whole, rather than to the single nucleus that emits (or absorbs) a gamma photon. The mass of the crystal is substantially greater than that of a nucleus,
 and the loss of energy E- in emission or absorption of gamma
-rays becomes extremely small. In this case, resonance absorption
-and emission of a gamma photon of a strictly dehnite
-frequency v is observed and the linewidth is comparable to the
-natural width (42.8.1). The phenomenon of resonance absorption
-(or emission) of gamma rays without recoil is called the
-Mossbauer effect.
+rays becomes extremely small. In this case, resonance absorption and emission of a gamma photon of a strictly dehnite frequency $\nu$ is observed and the linewidth is comparable to the natural width \ssect{42.8.1}. The phenomenon of resonance absorption (or emission) of gamma rays without recoil is called the \redem{M\"ossbauer effect}.
 
-\subsection{}\label{42.8.4} The Mossbauer effect is made use of in nuclear spectroscopy
-to make precise measurements of the energy levels of atomic
-nuclei. In the gamma transition in 57Fe nuclei, for instance,
-with the energy of the transition E = 14.4 keV, the change in
-the energy of the level is determined with an accuracy to VIE -
-- 3 X 10~13. For the gamma transition in 67Zn with the energy
-of the transition E*= 93 keV, the quantity VlE was found to
-equal 5 X 10-16.
-The Mossbauer effect has been used to check the conclusion on
-shift of spectral line frequencies in a gravitational held (6.2.1).
-As a photon travels in a gravitational held its energy is changed
-by the amount AE = -m (cp2 - cPi)> where m = hvlc2 is the
-mass of the photon (37.2.1), and cpx and cp2 are the potentials
-of the gravitational held at points 1 and 2 (6.2.4). The minus
-sign indicates that the increase in the energy of a photon in a
-gravitational held is at the expense of its own energy E ~ hv:
-h Av = -m Acp.
-The relative change in frequency of a photon as it passes through
-a gravitational potential difference Acp is
-A v
- Acp
-Here Acp > 0 because the potential of zero gravity of the sun
-increases with the distance from the sun. At the earth's surface648 STRUCTURE AND PROPERTIES OF ATOMIC NUCLEI [42
-it is greater than at that of the sun. Consequently, Aviv < 0
-and all frequencies of spectral lines of the sun and stars, recorded
-on the earth, are shifted toward the red end of the spectrum.
-This effect is called the gravitational red shift.
-The Mossbauer effect enabled the gravitational frequency shift
-of the gamma photon to be observed in its motion in the earth's
-gravitational field. In vertical motion from the floor to the
-ceiling of the laboratory to a height of about 10 m, the relative
-change in frequency is
-- A(P -- IQ-15
-V c 2 c 2 '
-where g is the acceleration due to gravity (7.3.3). To record this
-frequency shift it is necessary to provide for resonance absorption
-of gamma photons in such manner that the source and detector
-of the gamma rays have a relative linewidth equal to
-or less than 10-15. Then there will be no absorption if the frequency
-of the gamma photon incident on the nucleus differs from
-the frequency of the photon that the nucleus can absorb by the
-amount Av = 10 ~15 v.
+\subsection{}\label{42.8.4} The M\"ossbauer effect is made use of in \redem{nuclear spectroscopy} to make precise measurements of the energy levels of atomic nuclei. In the gamma transition in \ce{^{57}Fe} nuclei, for instance,
+with the energy of the transition $E = \SI{14.1}{\keV}$, the change in the energy of the level is determined with an accuracy to $\Gamma/E = \num{3d-13}$. For the gamma transition in \ce{^{67}Zn} with the energy of the transition $E = \SI{93}{\keV}$, the quantity $\Gamma/E$ was found to
+equal \num{5d-16}.
+
+The M\"ossbauer effect has been used to check the conclusion on shift of spectral line frequencies in a gravitational field \ssect{6.2.1}. As a photon travels in a gravitational field its energy is changed by the amount $\Delta E = -m (\varphi_{2} - \varphi_{1})$, where $m = h\nu/c^{2}$ is the mass of the photon \ssect{37.2.1}, and $\varphi_{1}$ and $\varphi_{2}$ are the potentials of the gravitational held at points $\mathit{1}$ and $\mathit{2}$ \ssect{6.2.4}. The minus sign indicates that the increase in the energy of a photon in a gravitational held is at the expense of its own energy $E = h\nu$:
+\begin{equation*}%
+h \Delta \nu = -m \Delta \varphi.
+\end{equation*}
+The relative change in frequency of a photon as it passes through a gravitational potential difference Acp is
+\begin{equation*}%
+\frac{\Delta \nu}{ \nu} = \frac{\Delta \varphi}{c^{2}},
+\end{equation*}
+Here $\Delta \varphi > 0$ because the potential of zero gravity of the sun increases with the distance from the sun. At the earth's surface it is greater than at that of the sun. Consequently, $\Delta \nu / \nu < 0$ and all frequencies of spectral lines of the sun and stars, recorded on the earth, are shifted toward the red end of the spectrum. This effect is called the \redem{gravitational red shift}. 
+
+The M\"ossbauer effect enabled the gravitational frequency 
+shift of the gamma photon to be observed in its motion in the earth's gravitational field. In vertical motion from the floor to the ceiling of the laboratory to a height of about \SI{10}{\meter}, the relative change in frequency is
+\begin{equation*}%
+\abs{\frac{\Delta \nu}{ \nu}} = \frac{\Delta \varphi}{c^{2}} = \frac{g \Delta h}{c^{2}} \approx \num{d-15}, 
+\end{equation*}
+where $g$ is the acceleration due to gravity \ssect{7.3.3}. To record this frequency shift it is necessary to provide for resonance absorption of gamma photons in such manner that the source and detector of the gamma rays have a relative linewidth equal to or less than \num{d-15}. Then there will be no absorption if the frequency of the gamma photon incident on the nucleus differs from the frequency of the photon that the nucleus can absorb by the amount $\Delta \nu = \num{d-15} \nu$.
+
 This experiment was conducted with two identical crystal
-sources of gamma rays, one of which could be placed at a height
-of 20 m above the other. When the detector of gamma photons
-was at the same height as the source of gamma photons, resonance
-absorption occurred. As the detector was raised 20 m the
-absorption ceased owing to the gravitational shift in frequency.
-The Doppler effect (30.6.1) was employed to restore absorption.
-At a definite velocity at which the detector and source approach each other, the Doppler increase in frequency exactly compensated
-for its gravitational reduction, and resonance absorption
-was restored. This experiment was a confirmation under
-laboratory conditions of the gravitational red shift.
+sources of gamma rays, one of which could be placed at a height of \SI{20}{\meter} above the other. When the detector of gamma photons was at the same height as the source of gamma photons, resonance absorption occurred. As the detector was raised \SI{20}{\meter} the absorption ceased owing to the gravitational shift in frequency.
+
+The Doppler effect \ssect{30.6.1} was employed to restore absorption. At a definite velocity at which the detector and source approach each other, the Doppler increase in frequency exactly compensated for its gravitational reduction, and resonance absorption was restored. This experiment was a confirmation under laboratory conditions of the gravitational red shift.
 
 \section{Nuclear Reactions}
 \label{sec-42.9} 
 
 
-\subsection{}\label{42.9.1} Nuclear reactions are transformations of atomic nuclei
-brought about by their interactions with one another or with
-elementary particles (43.1.1). As a rule, nuclear reactions involve
+\subsection{}\label{42.9.1} \redem{Nuclear reactions} are transformations of atomic nuclei brought about by their interactions with one another or with elementary particles \ssect{43.1.1}. As a rule, nuclear reactions involve
 two nuclei and two particles. One pair, a nucleus and a
-particle, is said to be the initial, and the other, the final pair.
+particle, is said to be the \redem{initial}, and the other, the \redem{final} pair.
+
 Nuclear reactions are represented in one of the following ways:
-A + a -> B + b or A (a, b) B,
-where A and B are the initial and final nuclei, and a and b are
-the initial and final particles in the reaction. In many cases
-a nuclear reaction can proceed in more than one way, the preceding
-reaction being A + a C + c, i.e. A (a, c) G, or some
-other version. The possible ways in which a nuclear reaction
-may proceed are called its channels. The initial phase of a reaction
-is called its entrance channel.
+\begin{equation*}%
+A + a \to B + b \qor A \,(a,\, b)\, B,
+\end{equation*}
+where $A$ and $B$ are the initial and final nuclei, and $a$ and $b$ are the initial and final particles in the reaction. In many cases a nuclear reaction can proceed in more than one way, the preceding reaction being $A + a \to C + c$, i.e. $A\, (a,\, c) \,C$, or some other version. The possible ways in which a nuclear reaction may proceed are called its \redem{channels}. The initial phase of a reaction is called its \redem{entrance channel}.
 
-\subsection{}\label{42.9.2} A nuclear reaction is characterized by its energy Q (called
-the nuclear reaction energy), which is equal to the difference
-between the energies of the final and initial pairs in the reaction
-(42.9.1). When Q < 0, the reaction proceeds with the absorption
-of energy and is said to be endothermic (or endoenergic)
-when Q > 0, the reaction proceeds with the release of energy
-and is said to be exothermic (or exoergic). An endothermic nuclear
-reaction is found to be feasible at a certain minimum
-(threshold) kinetic energy Zth of the nuclei or particles causing
-the reaction:
-th'-=
-M a M a
-Mk
-where Ma is the mass of the stationary (target) nucleus, and
-Ma is the mass of the particle (or nucleus) bombarding the
-target nucleus. ' Nuclear reactions comply with the laws of conservation of energy,
-momentum, electrical charge and mass number. If the kinetic
-energy of the particles entering a reaction is sufficient for
-the creation of a nucleon-antinucleon pair (43.5.6), the mass
-number may change. Besides, nuclear physics has certain conservation
-laws not found in other branches of physics (see Sects.
-43.4.1 through 43.4.4).
+\subsection{}\label{42.9.2} A nuclear reaction is characterized by its energy $Q$ (called the \redem{nuclear reaction energy}), which is equal to the difference
+between the energies of the final and initial pairs in the reaction \ssect{42.9.1}. When $Q < 0$, the reaction proceeds with the absorption of energy and is said to be \redem{endothermic} (or \redem{endoenergic}) when $Q > 0$, the reaction proceeds with the release of energy and is said to be \redem{exothermic} (or \redem{exoergic}). An endothermic nuclear reaction is found to be feasible at a certain minimum (threshold) kinetic energy $E_{th}$ of the nuclei or particles causing the reaction:
+\begin{equation*}%
+E_{th} = \frac{M_{A}+ M_{a}}{M_{A}}Q,
+\end{equation*}
+where $M_{A}$ is the mass of the stationary (target) nucleus, and $M_{a}$ is the mass of the particle (or nucleus) bombarding the target nucleus. 
 
-\subsection{}\label{42.9.3} The efficiency of a nuclear reaction is determined by
-the magnitude of the effective cross section a of the given reaction
-(reaction cross section). Quantity o has the dimension of
-area and characterizes the “yidd” of the reaction per particle
+Nuclear reactions comply with the laws of conservation of energy, momentum, electrical charge and mass number. If the kinetic energy of the particles entering a reaction is sufficient for the creation of a nucleon-antinucleon pair \ssect{43.5.6}, the mass number may change. Besides, nuclear physics has certain conservation laws not found in other branches of physics (see \ssect{43.4.1} through \ssect{43.4.4}).
+
+\subsection{}\label{42.9.3} The efficiency of a nuclear reaction is determined by the magnitude of the effective cross section a of the given reaction (reaction cross section). Quantity $\sigma$ has the dimension of area and characterizes the ``yield'' of the reaction per particle
 irradiating the nucleus. Thus
-a =
-dn0
-n0N0 
-It is assumed in this definition that a plane-parallel stream,
-containing n0 particles is incident in unit time on unit area of
-the cross section of a substance containing N0 nuclei in unit
-volume; dn0 is the number of the particles that undergo the
-nuclear reaction in a layer of the thickness dx.
+\begin{equation*}%
+\sigma = \frac{\dd n_{0}}{n_{0}N_{0} \dd x} 
+\end{equation*}
+It is assumed in this definition that a plane-parallel stream, containing $n_{0}$ particles is incident in unit time on unit area of the cross section of a substance containing $N_{0}$ nuclei in unit volume; $\dd n_{0}$ is the number of the particles that undergo the nuclear reaction in a layer of the thickness $\dd x$.
 
-\subsection{}\label{42.9.4} Depending upon the nature of the interaction of particle
-a with the target A, distinction is made between direct interaction,
-in which nuclear reactions proceed in a single stage according
-to some process (42.9.1) and nuclear reactions that proceed
-in two stages with the formation of a compound nucleus.
-In the first stage the incident particle is captured by the target
-nucleus and the particle's energy is not imparted to any particular
-nucleon, but is shared equally by all the particles of the
-compound nucleus. Thus none of the particles gains sufficient
-energy to be ejected from the nucleus*. The compound nucleus
-is dealt with as an excited statistical system of particles, having
-random motions similar to those of particles in a drop of liquid.
-Such rapid redistribution of energy between the particles of the nucleus is possible only upon frequent collisions of the particles,
-this being typical for the redistribution of energy between
-the particles in a drop of liquid. As the result of chance deviations
-from uniform distributions of the excitation energy amongst
-the particles of the compound nucleus, sufficient energy is concentrated
-on one of them to be ejected from the nucleus. This
-second stage of the nuclear reaction occurs after a lapse of time
-(1()7 to 108) Tn following the first stage, where tn is the characteristic
-nuclear time (43.2.6).
-The sequence of a nuclear reaction proceeding with the formation
-of a compound nucleus is as follows:
-zJX -|- a Y z® C + b,
-where is the initial target nucleus, a is the incident particle,
-y|2Y is the compound nucleus, is the product nucleus and b
-is the particle ejected from the nucleus as a result of the reaction.
-If a - b, particles are being scattered by the nucleus (scattering
-is elastic or inelastic according to whether the energy of the
-particles is the same or different before and after scattering).
-* The “missile” captured by the nucleus, for instance, an alpha
-particle or deuteron, can consist of several particles.
+\subsection{}\label{42.9.4} Depending upon the nature of the interaction of particle a with the target $A$, distinction is made between \redem{direct interaction}, in which nuclear reactions proceed in a single stage according to some process \ssect{42.9.1} and nuclear reactions that proceed
+in two stages with the formation of a \redem{compound nucleus}.
 
-I f b a a nuclear reaction is proceeding in the true sense ol! the
-term.
+In the first stage the incident particle is captured by the target nucleus and the particle's energy is not imparted to any particular nucleon, but is shared equally by all the particles of the compound nucleus. Thus none of the particles gains sufficient energy to be ejected from the nucleus.\sidenote{The ``missile'' captured by the nucleus, for instance, an alpha particle or deuteron, can consist of several particles.} The compound nucleus is dealt with as an excited statistical system of particles, having random motions similar to those of particles in a drop of liquid.
+Such rapid redistribution of energy between the particles of the nucleus is possible only upon frequent collisions of the particles, this being typical for the redistribution of energy between the particles in a drop of liquid. As the result of chance deviations from uniform distributions of the excitation energy amongst the particles of the compound nucleus, sufficient energy is concentrated on one of them to be ejected from the nucleus. This second stage of the nuclear reaction occurs after a lapse of time (\numrange{d7}{d8}) $\tau_{N}$ following the first stage, where $\tau_{N}$  is the characteristic nuclear time \ssect{43.2.6}.
 
-\subsection{}\label{42.9.5} Nuclear reactions are classified according to various
-ol' their features: according to the energy of the particles that
-initiate them, according to the energy of the particles partici­ pating in them, and according to the nature of the nuclear transformations
+The sequence of a nuclear reaction proceeding with the formation of a compound nucleus is as follows:
+%\begin{equation*}%
+%\nuc{X}{A_{1}}{Z_{1}} + \mathrm{a} \to \nuc{Y}{A_{2}}{Z_{2}} \to \nuc{C}{A_{3}}{Z_{3}} + \mathrm{b},
+%\end{equation*}
+\begin{equation*}%
+^{\mathrm{A}_{1}}_{\mathrm{Z}_{1}}\mathrm{X} + \mathrm{a} \to ^{\mathrm{A}_{2}}_{\mathrm{Z}_{2}}\mathrm{Y} \to ^{\mathrm{A}_{3}}_{\mathrm{Z}_{3}}\mathrm{C} + \mathrm{b},
+\end{equation*}
+where $^{\mathrm{A}_{1}}_{\mathrm{Z}_{1}}\mathrm{X}$ is the initial target nucleus, a is the incident particle, $^{\mathrm{A}_{2}}_{\mathrm{Z}_{2}}\mathrm{Y}$ is the compound nucleus, is the product nucleus $^{\mathrm{A}_{3}}_{\mathrm{Z}_{3}}\mathrm{C}$ and b is the particle ejected from the nucleus as a result of the reaction.
+
+If $\mathrm{a} = \mathrm{b}$, particles are being scattered by the nucleus (scattering is elastic or inelastic according to whether the energy of the particles is the same or different before and after scattering). If $\mathrm{b} \neq \mathrm{a}$, a nuclear reaction is proceeding in the true sense of the term.
+
+\subsection{}\label{42.9.5} Nuclear reactions are classified according to various of their features: according to the energy of the particles that initiate them, according to the energy of the particles partici­ pating in them, and according to the nature of the nuclear transformations
 that occur in them. Nuclear reactions at low energies
-(of the order of 1 eV) proceed mainly with the participation
-of neutrons. Reactions at medium energies (up to several MeV)
-arc induced, in addition to neutrons, by various charged particles
-(alpha particles, protons, deuterons, nuclei of heavy hydrogen,
-etc.), as well as gamma photons. Charged particles that
-cause nuclear reactions may be multiply charged ions of heavy
-chemical elements, as well as charged particles accelerated in
-accelerators. Reactions at high energies (hundreds and thousands
-of MeV) lead to the creation of elementary particles (mesons,
-hyperons, etc.) that are absent in the free state.
+(of the order of \SI{1}{\eV}) proceed mainly with the participation of neutrons. Reactions at medium energies (up to several \si{\MeV}) are induced, in addition to neutrons, by various charged particles (alpha particles, protons, deuterons, nuclei of heavy hydrogen, etc.), as well as gamma photons. Charged particles that cause nuclear reactions may be multiply charged ions of heavy chemical elements, as well as charged particles accelerated in accelerators. Reactions at high energies (hundreds and thousands of \si{\MeV}) lead to the creation of elementary particles (mesons, hyperons, etc.) that are absent in the free state.
 
-\subsection{}\label{42.9.6} The following are examples of nuclear reactions initiated
-by alpha particles and deuterons ?D:
-(a) historically, the first nuclear reaction for the transformation
+\subsection{}\label{42.9.6} The following are examples of nuclear reactions initiated by alpha particles and deuterons \ce{^{2}_{1}D}:
+\begin{enumerate}[label = (\alph*)]
+\item historically, the first nuclear reaction for the transformation
 of nitrogen into oxygen was the following:
-4N + 4H e > ( 18F )  1  0 + ;p,
+%\begin{equation*}%
+%\nuc{N}{14}{7} + \nuc{He}{4}{2} \to ( \nuc{F}{18}{9}) \to \nuc{O}{17}{8} + \nuc{p}{1}{1},
+%\end{equation*}
+\begin{equation*}%
+\ce{^{14}_{7}N} + \ce{^{4}_{2}He} \to ( \ce{^{18}_{9}F}) \to \ce{^{17}_{8}O} + \ce{^{1}_{1}p},
+\end{equation*}
 or in shorter notation:
-17N (a, p) ”0;
-(b) the nuclear reaction in which neutrons were first obtained
-was:
-Sne-hSHe-*iG + ‘n;
-(c) nuclear reactions initiated by deuterons ?D, the nuclei of
-heavy hydrogen (deuterium), can lead to the fusion of heavy
-nuclei, tritium JH, or the light isotope of helium ?He, with the
-formation of a proton or neutron:
-?I) + ?D-*?H + |P and ?D + fl) - jjHe + Jn
-(see also 42.9.13).
+\begin{equation*}
+\nuc{N}{14}{7} \, (\alpha, \textrm{p}) \, \nuc{O}{17}{8};
+\end{equation*}
+\item the nuclear reaction in which neutrons were first obtained was:
+\begin{equation*}%
+\nuc{Be}{9}{4} + \nuc{He}{4}{2} \to \nuc{C}{12}{6} + \nuc{n}{1}{0};
+\end{equation*}
+\item nuclear reactions initiated by deuterons \ce{^{2}_{1}D}, the nuclei of heavy hydrogen (deuterium), can lead to the fusion of heavy nuclei, tritium \ce{^{3}_{1}H}, or the light isotope of helium \ce{^{3}_{2}He}, with the formation of a proton or neutron:
+\begin{equation*}%
+\nuc{D}{2}{1} + \nuc{D}{2}{1} \to \nuc{H}{3}{1} + \nuc{p}{1}{1} \qand \nuc{D}{2}{1} + \nuc{D}{2}{1} \to \nuc{He}{3}{2} + \nuc{n}{1}{0},
+\end{equation*}
+(see also \sect{42.9.13}).
+\end{enumerate}
 
-\subsection{}\label{42.9.7} The action of neutrons Jn leads to the formation of
-artificial radioactive isotopes, such as radiocarbon with
-a half-life (42.4.5) exceeding 5000 years:
-(*)652 STRUCTURE AND PROPERTIES OF ATOMIC NUCLEI [42
+\subsection{}\label{42.9.7} The action of neutrons \ce{^{1}_{0}n} leads to the formation of artificial radioactive isotopes, such as radiocarbon  \ce{^{14}_{6}C} with a half-life \ssect{42.4.5} exceeding 5000 years:
+\begin{equation*}%
+\nuc{N}{14}{7} + \nuc{n}{1}{0} \to \nuc{C}{14}{6} + \nuc{p}{1}{1}.\tag{$\star$}
+\end{equation*}
 Subsequent decay proceeds according to the process
-4C-*»N + ?e + 0ve,
-where Jje and Jve represent the electron and electron antineu­ trino. The long half-life of 1C is the basis for the radiocarbon
-(carbon-14) dating technique used in archaeology. By determining
-the relative amount of undecayed radioactive carbon,
-which ceased to be accumulated in a living organism when it
-died, it is possible, according to reaction (*), to establish the
-time when the organism no longer absorbed the isotope 1JG from
-the atmosphere. This isotope is formed in the atmosphere from
-nitrogen by the action of cosmic-ray neutrons.
+\begin{equation*}%
+\nuc{C}{14}{6} \to  \nuc{N}{14}{7} + \nuc{e}{0}{-1} + ^{0}_{0}\tilde{\nu_{e}}.
+\end{equation*}
+where $\nuc{e}{0}{-1}$ and $^{0}_{0}\tilde{\nu_{e}}$ represent the electron and electron antineutrino. The long half-life of \ce{^{14}_{6}C} is the basis for the radiocarbon (carbon-14) dating technique used in archaeology. By determining the relative amount of undecayed radioactive carbon, which ceased to be accumulated in a living organism when it died, it is possible, according to reaction ($\star$), to establish the time when the organism no longer absorbed the isotope \ce{^{14}_{6}C} from
+the atmosphere. This isotope is formed in the atmosphere from nitrogen by the action of cosmic-ray neutrons.
 
-\subsection{}\label{42.9.8} Slow neutrons are ones whose de Broglie wavelength
-(38.1.4) exceeds the nuclear radius R: % >> hi mu a.nd, accordingly,
-v < TihnR. Their energy does not exceed 100 keV. Neutrons
-with energies up to 0.5 eV are called thermal neutrons. As such
-neutrons pass through matter they undergo capture, the absorption
-of the neutrons by the nuclei. If the energy of the neutrons
-coincides with that of the compound nucleus (42.9.4), resonance
-absorption (resonance capture) of the neutrons occurs. This
-process is the basis of the technique for obtaining transuranic
-chemical elements. The transuranic element neptunium 2;!.?NP
-is formed upon resonance capture of neutrons by the most abundant
-isotope of uranium 2JflJ according to the reaction
-*8U + Jn - *|SU 2Np,
-where the half-life of radioactive isotope 2U is indicated,
-which is transformed into 2ijjJNp. Next, the nucleus of isotope
-2iJ;?Np is transformed into plutonium 2i.JPu:
-P-
-2«n'Np -
-----> 2™Pu.
-* 2.3 days 1,4
-Owing to its efficient fission by the action of thermal neutrons
-(42.9.10), plutonium plays a prominent role in the production
-of nuclear energy. Plutonium 2i]JPu is radioactive by alpha particle
-emission and has a huge half-life (24 000 years). It is trans-'.2.9] NUCLEAR REACTIONS 653
-formed into the stable isotope of uranium 2i]|U according to the
+\subsection{}\label{42.9.8} \redem{Slow neutrons} are ones whose de Broglie wavelength \ssect{38.1.4} exceeds the nuclear radius $R$: $\lambda \gg \hbar/mv$ and, accordingly,
+$v \ll \hbar/mR$. Their energy does not exceed \SI{100}{\keV}. Neutrons with energies up to \SI{0.5}{\keV}are called \redem{thermal neutrons}. As such neutrons pass through matter they undergo capture, the absorption of the neutrons by the nuclei. If the energy of the neutrons
+coincides with that of the compound nucleus \ssect{42.9.4}, \redem{resonance absorption} (resonance capture) of the neutrons occurs. This process is the basis of the technique for obtaining \redem{transuranic chemical elements}. The transuranic element neptunium \ce{^{239}_{93}Np}
+is formed upon resonance capture of neutrons by the most abundant isotope of uranium \ce{^{238}_{92}U} according to the reaction
+\begin{equation*}
+\ce{^{238}_{92}U} + \ce{^{1}_{0}n} \to \ce{^{239}_{92}U} 
+\xrightarrow[\text{23 min}]{\beta^{-}}  
+\ce{^{239}_{93}Np},
+\end{equation*}
+where the half-life of radioactive isotope  \ce{^{239}_{92}U} is indicated, which is transformed into \ce{^{239}_{93}Np}. Next, the nucleus of isotope
+\ce{^{239}_{93}Np} is transformed into plutonium \ce{^{239}_{94}Pu}:
+\begin{equation*}
+\ce{^{239}_{93}Np} 
+\xrightarrow[\text{2.3 days}]{\beta^{-}}  
+\ce{^{239}_{94}Pu}.
+\end{equation*}
+Owing to its efficient fission by the action of thermal neutrons \ssect{42.9.10}, plutonium plays a prominent role in the production of nuclear energy. Plutonium \ce{^{239}_{94}Pu} is radioactive by alpha particle emission and has a huge half-life (24,000 years). It is transformed into the stable isotope of uranium \ce{^{235}_{92}U} according to the
 reaction:
--> 235[
-2.4x 1 0 J years
+\begin{equation*}
+\ce{^{239}_{94}Pu}
+\xrightarrow[\text{\num{2.4d4} years}]{\alpha} \ce{^{235}_{92}U}.
+\end{equation*}
 
-\subsection{}\label{42.9.9} Nuclear reactions using accelerated nuclei of chemical
-(dements enabled advancement in Mendeleev's table up to the
-(dement with the number Z - 107. The element with Z - 105
-was named nilsbohrium (Ns). Upon bombarding the isotope
-•VjfPu with nuclei of neon ?Ne a chemical element with Z = 104
-(kurchatovium fgijKu) is obtained. After capture of the nucleus
-75 Ne by plutonium, the compound nucleus of kurchatovium
-i'jjJKu is formed. Then, in one out of ten thousand million compound
-nuclei, the nucleus of the element 2§JKu was produced
-after emitting four neutrons. Thus
-iJPu + fSNo - fgJK u -* J82Ku + 4Jn.
-In the most powerful beams of accelerated neon nuclei, one nucleus
-of kurchatovium is created in several hours.
+\subsection{}\label{42.9.9} Nuclear reactions using accelerated nuclei of chemical elements enabled advancement in Mendeleev's table up to the (dement with the number $Z = 107$. The element with $Z = 105$ was named nilsbohrium (Ns). Upon bombarding the isotope \ce{^{242}_{94}Pu} with nuclei of neon \ce{^{22}_{10}Ne} a chemical element with $Z = 104$
+(kurchatovium \ce{^{260}_{104}Ku}) is obtained. After capture of the nucleus \ce{^{22}_{10}Ne} by plutonium, the compound nucleus of kurchatovium \ce{^{264}_{104}Ku} is formed. Then, in one out of ten thousand million compound
+nuclei, the nucleus of the element \ce{^{260}_{104}Ku} was produced after emitting four neutrons. Thus
+\begin{equation*}
+\ce{^{242}_{94}Pu} + \ce{^{22}_{10}Ne} \to \ce{^{264}_{104}Ku} \to \ce{^{260}_{104}Ku} + 4\ce{^{1}_{0}n}.
+\end{equation*}
+In the most powerful beams of accelerated neon nuclei, one nucleus of kurchatovium is created in several hours.
 
-\subsection{}\label{42.9.10} A heavy compound nucleus, excited in the resonance
-capture of a neutron, can divide into two approximately equal
-parts (fission reaction of heavy nuclei). The parts that are formed
-are called fission fragments. The instability of heavy nuclei
-against fission is due to the large number of protons they contain
-which are subject to Coulomb repulsion from one another.
-The fissure of a heavy nucleus into two fragments is accompanied
-by the evolution of a huge amount of energy. This follows from
-a comparison of the specific binding energies of nuclei of elements
-located in the middle and at the end of Mendeleev's periodic
-system. The energy released in the fission reaction is proportional
-to the difference in the specific binding energies of
-an unstable “friable” nucleus and two “tightly packed” stable
-fission fragments. This difference constitutes 1.1 MeV per nucleon
-(42.2.4). In the fission of a nucleus of uranium 2ljfU, containing
-238 nucleons, the evolved energy should be of the order
-of 200 MeV. In the fission of nuclei contained in 1 gram of uranium
-2jj|U, the energy produced is 8 X 1010 J or 22 000 kWh.
+\subsection{}\label{42.9.10} A heavy compound nucleus, excited in the resonance capture of a neutron, can divide into two approximately equal parts (\redem{fission reaction of heavy nuclei}). The parts that are formed are called \redem{fission fragments}. The instability of heavy nuclei
+against fission is due to the large number of protons they contain which are subject to Coulomb repulsion from one another.
+
+The fissure of a heavy nucleus into two fragments is accompanied by the evolution of a huge amount of energy. This follows from a comparison of the specific binding energies of nuclei of elements located in the middle and at the end of Mendeleev's periodic system. The energy released in the fission reaction is proportional to the difference in the specific binding energies of an unstable ``friable'' nucleus and two ``tightly packed'' stable fission fragments. This difference constitutes \SI{1.1}{\MeV} per nucleon
+\ssect{42.2.4}. In the fission of a nucleus of uranium \ce{^{238}_{92}U}, containing 238 nucleons, the evolved energy should be of the order of  \SI{200}{\MeV}. In the fission of nuclei contained in 1 gram of uranium \ce{^{235}_{92}U}, the energy produced is \SI{8d10}{\joule} or \SI{22000}{\kWh}.
+
+
 Heavy nuclei are capable of fission if they comply with the
-condition: Z2/A  17, where Z2fA is called the fission parameter.
-This condition is complied with for all nuclei beginning with654 STRUCTURE AND PROPERTIES OF ATOMIC NUCLEI [42
-silver  A g for which Z2lA  20. Nuclei for which (Z2/U)cr>
- 49 (the critical fission parameters) are entirely unstable with
-respect to fission and cannot exist. For kurchatovium (Z - 104)
-(42.9.9). Z2/A  41. Spontaneous nuclear fission is possible at
-values Z2/A < (Z2M)cr, which proceeds similar to radioactivity
-by alpha-particle emission (42.5.1), employing the tunnel effect
-(38.7.2). The half-life (42.4.5) for spontaneous nuclear fission
-is from 1016 to 1017 years.
+condition: $Z^{2}/A \geqslant 17$, where $Z^{2}/A$ is called the \redem{fission parameter}. This condition is complied with for all nuclei beginning with silver  \ce{^{168}_{47}Ag} for which $Z^{2}/A \approx 20$. Nuclei for which $(Z^{2}/U)_{cr} \geqslant 49$  (the \redem{critical fission parameters}) are entirely unstable with respect to fission and cannot exist. For kurchatovium ($Z = 104$) \ssect{42.9.9}. $Z^{2}/A \approx 41$. \redem{Spontaneous nuclear fission} is possible at values $Z^{2}/A < (Z^{2}/A)_{cr}$, which proceeds similar to radioactivity by alpha-particle emission \ssect{42.5.1}, employing the tunnel effect
+\ssect{38.7.2}. The half-life \ssect{42.4.5} for spontaneous nuclear fission is from \numrange{d16}{d17} years.
 
-\subsection{}\label{42.9.11} At the instant they are formed fission fragments have
-a neutron excess, i.e. the number of neutrons are in excess of
-the number of protons. Excess neutrons, emitted by the fragments,
-are called fission neutrons. Their number may vary and
-the nuclear fission process is accompanied by neutron multiplication,
-characterized by the average number (v) of emitted
-neutrons per fission event. For nuclei of plutonium 2jJPu and
-uranium 2g|U, in which fission is due to thermal neutrons, (v)
-equals 3.0 and 2.5, respectively. Fission neutrons include prompt
-(secondary) and delayed neutrons. Prompt neutrons are emitted
-coincident with nuclear fission during a time of the order of
-10~14 s. Delayed neutrons arc emitted by the fission products at
-some time after fission occurs.
+\subsection{}\label{42.9.11} At the instant they are formed fission fragments have a neutron excess, i.e. the number of neutrons are in excess of the number of protons. Excess neutrons, emitted by the fragments, are called \redem{fission neutrons}. Their number may vary and the nuclear fission process is accompanied by neutron multiplication, characterized by the average number $\expval{\nu}$ of emitted neutrons per fission event. For nuclei of plutonium \ce{^{239}_{94}Pu} and uranium \ce{^{235}_{92}U}, in which fission is due to thermal neutrons, $\expval{\nu}$ equals 3.0 and 2.5, respectively. Fission neutrons include \redem{prompt (secondary)} and \redem{delayed neutrons}. Prompt neutrons are emitted coincident with nuclear fission during a time of the order of \SI{d-14}{\second}. Delayed neutrons arc emitted by the fission products at some time after fission occurs.
 
-\subsection{}\label{42.9.12} If each of the prompt neutrons emitted in a fission
-reaction (42.9.11) interacts with neighbouring nuclei of the
-fissible substance, inducing fission in them, there will be an
-avalanche-like build-up of acts of nuclear division. This is
-called a chain fission reaction. A condition for the initiation of
-a nuclear chain reaction is the availability of neutron multiplication.
-The neutron multiplication factor k is the ratio of the number of
-neutrons emitted at a given stage of the reaction to the number
-of such neutrons in the preceding stage. The condition for a self-
-sustaining reaction is k  1. The practical feasibility of nuclear
-fission chain reactions has been proved by the development of
-nuclear power engineering, a branch of engineering in which various
-types of nuclear reactors have been designed and developed.
-Such reactors are devices in which controlled nuclear chain reactions
-are carried out.
+\subsection{}\label{42.9.12} If each of the prompt neutrons emitted in a fission reaction \ssect{42.9.11} interacts with neighbouring nuclei of the fissible substance, inducing fission in them, there will be an avalanche-like build-up of acts of nuclear division. This is called a \redem{chain fission reaction}. A condition for the initiation of a nuclear chain reaction is the availability of neutron multiplication.
 
-\subsection{}\label{42.9.13} The reaction of the fusion of nuclei of tritium or helium
-from nuclei of deuterium, discussed in item (c) of Sect. 42.9.6,
-is a second method of producing intranuclear energy in addition
-to the fission of heavy nuclei. The specific binding energies
-(42.2.4) in three nuclei-fl), :]H and i|He-are approximately.9] NUCLEAR REACTIONS 655
-in the ratio 1:3:6. This means that the nuclear reactions discussed
-in Sect. 42.9.6 are accompanied by the evolution of
-great amounts of energy: 4.04 MeV in the first reaction and 3.27
-MeV in the second. Still more energy, 17.58 MeV, is released
-in the reaction
-iD + i H |He + Jn.
-Per particle this energy is equal to 17.6/5 MeV - 3.5 MeV,
-i.o. approximately four times as much as in the fission of uranium
-288U (42.9.10): 200/238 MeV == 0.85 MeV. Even more
-efficient with respect to the specific evolution of energy is the
-fusion of nuclei of helium file from four protons. This energy
-amounts to 6.70 MeV per particle.
+The \redem{neutron multiplication factor} $k$ is the ratio of the number of neutrons emitted at a given stage of the reaction to the number of such neutrons in the preceding stage. The condition for a self-sustaining reaction is $k \geqslant 1$. The practical feasibility of nuclear fission chain reactions has been proved by the development of \redem{nuclear power engineering}, a branch of engineering in which various types of \redem{nuclear reactors} have been designed and developed. Such reactors are devices in which controlled nuclear chain reactions are carried out.
 
-\subsection{}\label{42.9.14} The fusion reaction of light nuclei, requiring the overcoming
-of the potential energy of their repulsion, can be efficiently
-carried out at super-high temperatures of the order of
-108 or 109 K, which exceeds the temperature in the central regions
-of the sun (T - 1.3 X 107 K). Such reactions are called
-thermonuclear reactions and they take place in matter in a plasma
-state (22.6.1). Thermonuclear reactions are evidently the sources
-of energy of the stars, compensating for their loss of energy
-through radiation. The sun radiates 3.8 X 1026 J of energy per
-second. This corresponds to the evolution of energy per unit
-mass per second of only 1.88 X 10~4 J/s-kg. This is only one
-per cent of the specific energy production of a living organism
-in the process of metabolism.
-It is thought that thermonuclear reactions take place on the sun
-in the form of thermonuclear chains, or cycles, in which energy is released by the transformation of hydrogen nuclei into helium
-nuclei.
-One of the versions of the proton-proton chain, or deuterium
-cycle, begins with combination of two protons to form deuterium
-with the emission of a positron and an electron neutrino:
-Jp + !p-> fD++?o+gve.
+\subsection{}\label{42.9.13} The reaction of the fusion of nuclei of tritium or helium from nuclei of deuterium, discussed in item (c) of \ssect{42.9.6}, is a second method of producing intranuclear energy in addition to the fission of heavy nuclei. The specific binding energies \ssect{42.2.4} in three nuclei --- \ce{^{2}_{1}D}, \ce{^{3}_{1}H} and \ce{^{3}_{2}He} --- are approximately in the ratio $1:3:6$. This means that the nuclear reactions discussed in \ssect{42.9.6} are accompanied by the evolution of great amounts of energy: \SI{4.04}{\MeV} in the first reaction and \SI{3.27}{\MeV} in the second. Still more energy, \SI{17.58}{\MeV}, is released in the reaction
+\begin{equation*}
+\ce{^{2}_{1}D} + \ce{^{3}_{1}H} \to \ce{^{3}_{2}He} + \ce{^{1}_{0}n}.
+\end{equation*}
+Per particle this energy is equal to $17.6/5 \si{\MeV} = \SI{3.5}{\MeV}$, i.e. approximately four times as much as in the fission of uranium \ce{^{238}_{92}U} \ssect{42.9.10}: $200/238 \si{\MeV} = \SI{0.85}{\MeV}$. Even more efficient with respect to the specific evolution of energy is the fusion of nuclei of helium \ce{^{4}_{2}He} from four protons. This energy amounts to \SI{6.70}{\MeV} per particle.
+
+\subsection{}\label{42.9.14} The fusion reaction of light nuclei, requiring the overcoming of the potential energy of their repulsion, can be efficiently carried out at super-high temperatures of the order of \num{d8} or \SI{d9}{\kelvin}, which exceeds the temperature in the central regions of the sun ($T = \SI{1.3d7}{\kelvin}$). Such reactions are called \redem{thermonuclear reactions} and they take place in matter in a plasma state \ssect{22.6.1}. 
+
+Thermonuclear reactions are evidently the sources
+of energy of the stars, compensating for their loss of energy through radiation. The sun radiates \SI{3.8d26}{\joule} of energy per second. This corresponds to the evolution of energy per unit mass per second of only \SI{1.88d-4}{\joule\per\second\per\kg}. This is only one per cent of the specific energy production of a living organism in the process of metabolism.
+
+It is thought that thermonuclear reactions take place on the sun in the form of \redem{thermonuclear chains}, or cycles, in which energy is released by the transformation of hydrogen nuclei into helium nuclei.
+
+One of the versions of the \redem{proton-proton chain}, or deuterium cycle, begins with combination of two protons to form deuterium with the emission of a positron and an electron neutrino:
+\begin{equation*}%
+\ce{^{1}_{1}p} + \ce{^{1}_{1}p} \to \ce{^{2}_{1}D} + \ce{^{0}_{+1}e} + \ce{^{0}_{0}\nu_{e}}.
+\end{equation*}
 The chain continues according to the reaction
-?D fJp->fHe + y
+\begin{equation*}%
+\ce{^{2}_{1}D} + \ce{^{1}_{1}p} \to \ce{^{3}_{2}He} + \gamma,
+\end{equation*}
 where gamma radiation is emitted, not only as excess energy,
 but in the combination of the positron with electrons, which
-always exist in plasma (43.5.4). A probable continuation of the
-chain is a reaction with the evolution of energy:
-iHe + IHe - |He + 2p,
-where |He is the symbol for the alpha particle.
-In the carbon-nitrogen cycle, the carbon nuclei are “catalysts”
-in the reaction for the fusion of hydrogen nuclei into a helium
-nuclei.
-At the beginning of the cycle a fast proton penetrates a carbon
-nucleus:
+always exist in plasma \ssect{43.5.4}. A probable continuation of the chain is a reaction with the evolution of energy:
+\begin{equation*}%
+\ce{^{3}_{2}He} + \ce{^{3}_{2}He}  \to \ce{^{4}_{2}He} +  2\ce{^{1}_{1}p}, 
+\end{equation*}
+where \ce{^{4}_{2}He} is the symbol for the alpha particle.
 
-‘Jc+Jp-h
-n + y.
-The radioactive isotope of nitrogen 1fN, with a half-life of
-14 min, decays (42.6.1): p *n + +?e f- jjve and a nucleus
-of a carbon isotope is formed:
-OJIVJ . 13 p i 0P J0V 7iN -> 0e.
-Approximately after each 2.7 million years, a nucleus of ‘jjG
-captures a proton, forming the nucleus of the stable nitrogen isotope N:
- C + J p -  f N + y.
-On an average of 32 million years later, the nucleus of captures
-a proton and is transformed into a nucleus of oxygen 2|0:
+In the \redem{carbon-nitrogen cycle}, the carbon nuclei are ``catalysts'' in the reaction for the fusion of hydrogen nuclei into a helium nuclei.
 
-n + Jp-so+y-
-The unstable nucleus of 1|0, with a half-life of 3 min, emits a
-positron and a neutrino as it is transformed into the nucleus
-of «N:
-0-?N + +?e + 8ve.
-The cycle is completed by a reaction that takes place approximately
-after 100 thousand years:
-N + lP-C + JI-le.
-The result of the cycle is the transformation of four protons into
-a helium nucleus with the emission of two positrons and gamma
-radiation. The released energy amounts to 26.8 MeV per helium
-nucleus. This corresponds to an energy output of 700 thousand
-kWh per gram-atom of helium. This energy is sufficient to com-pensate for the energy the sun loses in radiation. Various stages
-of the cycle arc separated by tremendous lengths of time when
-judged according to the time scale on the earth. But this cycle
-is closed and continuous. Hence, all the stages of the cycle
-proceed simultaneously on the sun, having begun at various
-instants of time.
+At the beginning of the cycle a fast proton penetrates a carbon nucleus:
+\begin{equation*}%
+\ce{^{12}_{6}C} + \ce{^{1}_{1}p}  \to \ce{^{13}_{7}N} +  \gamma. 
+\end{equation*}
+The radioactive isotope of nitrogen \ce{^{13}_{7}N}, with a half-life of 14 min, decays \ssect{42.6.1}: 
+\begin{equation*}%
+\ce{^{1}_{1}p} \to \ce{^{1}_{0}n} + \ce{^{0}_{+1}e} +\ce{^{0}_{0}\nu_{e}},
+\end{equation*}
+and a nucleus of a carbon isotope is formed:
+\begin{equation*}%
+\ce{^{13}_{7}N} \to \ce{^{13}_{6}C} + \ce{^{0}_{+1}e} +\ce{^{0}_{0}\nu_{e}}.
+\end{equation*}
+Approximately after each 2.7 million years, a nucleus of  \ce{^{13}_{6}C} captures a proton, forming the nucleus of the stable nitrogen isotope \ce{^{14}_{7}N}:
+\begin{equation*}%
+\ce{^{13}_{6}C} + \ce{^{1}_{1}p}  \to \ce{^{14}_{7}N} + \gamma. 
+\end{equation*}
+On an average of 32 million years later, the nucleus of captures a proton and is transformed into a nucleus of oxygen \ce{^{15}_{8}O}:
+\begin{equation*}%
+\ce{^{14}_{7}N} + \ce{^{1}_{1}p}  \to \ce{^{15}_{8}O} +  \gamma. 
+\end{equation*}
+The unstable nucleus of \ce{^{15}_{8}O}, with a half-life of 3 min, emits a positron and a neutrino as it is transformed into the nucleus of \ce{^{15}_{7}N}:
+\begin{equation*}%
+\ce{^{15}_{8}O} \to \ce{^{15}_{7}N} +\ce{^{0}_{+1}e} +\ce{^{0}_{0}\nu_{e}}. 
+\end{equation*}
+The cycle is completed by a reaction that takes place approximately after 100 thousand years:
+\begin{equation*}%
+\ce{^{15}_{7}N}  + \ce{^{1}_{1}p}  \to \ce{^{12}_{6}C} +  \ce{^{4}_{2}He}. 
+\end{equation*}
+The result of the cycle is the transformation of four protons into a helium nucleus with the emission of two positrons and gamma radiation. The released energy amounts to \SI{26.8}{\MeV} per helium nucleus. This corresponds to an energy output of 700 thousand kWh per gram-atom of helium. This energy is sufficient to compensate for the energy the sun loses in radiation. Various stages of the cycle are separated by tremendous lengths of time when judged according to the time scale on the earth. But this cycle is closed and continuous. Hence, all the stages of the cycle proceed simultaneously on the sun, having begun at various instants of time.
 
 \subsection{}\label{42.9.15} Conditions, close to those prevailing in the interior of
-the sun, were provided in a thermonuclear, or fusion, bomb
-(more commonly called the hydrogen, or II, bomb). In this bomb
-a self-sustaining thermonuclear fusion reaction of an explosive
-nature is initiated in a mixture of deuterium and tritium.
-Thus
-?D + ? H  4He + Jn. (*)
+the sun, were provided in a \redem{thermonuclear}, or \redem{fusion, bomb} (more commonly called the \redem{hydrogen}, or \redem{H, bomb}). In this bomb
+a self-sustaining thermonuclear fusion reaction of an explosive nature is initiated in a mixture of deuterium and tritium. Thus
+\begin{equation*}%
+\ce{^{2}_{1}D}  + \ce{^{3}_{1}H}  \to \ce{^{4}_{2}He} +  \ce{^{1}_{0}n}. \tag{$\star$}
+\end{equation*}
 The high temperature required for a thermonuclear reaction
-was obtained by the explosion of an “ordinary” atomic bomb,
-operating on the principle of a rapid chain reaction in the fission
-of heavy nuclei.
-The theoretical basis for controlled thermonuclear fusion is a
-reaction of the type
-fD + ? H -* H e + Jn ,-
+was obtained by the explosion of an ``ordinary'' atomic bomb, operating on the principle of a rapid chain reaction in the fission of heavy nuclei.
+
+The theoretical basis for controlled thermonuclear fusion is a reaction of the type
+\begin{equation*}%
+\ce{^{2}_{1}D}  + \ce{^{3}_{1}H}  \to \ce{^{4}_{2}He} +  \ce{^{1}_{0}n}. 
+\end{equation*}
 as well as of the type
-?D + ?l)-*?H + !p or J[j|2D  3 He.|..in> (**)
-The feasibility of these reactions reduces to the necessity to
-meet two requirements: the availability of a certain least temperature
-and a definite restriction of the product nx:
-nx > 1016 and T > 109 K for reaction (**),
-nx > 1014 and T > 108 K for reaction (*).
-Here n is the concentration of matter in the plasma, and x
-is the time the particles are confined in the plasma. The preceding
-inequalities indicate that the number of nuclei reacting
-in thermonuclear fusion should be proportional to the concentration
-of matter and the time of existence of the nucleus.
+\begin{equation*}%
+\ce{^{2}_{1}D} + \ce{^{2}_{1}D}   \to  \ce{^{3}_{1}H} + \ce{^{1}_{1}p} \qor \ce{^{2}_{1}D} + \ce{^{2}_{1}D}   \to  \ce{^{3}_{2}He} + \ce{^{1}_{0}n}. \tag{$\star \star$}
+\end{equation*}
+The feasibility of these reactions reduces to the necessity to meet two requirements: the availability of a certain least temperature and a definite restriction of the product $n \tau$:
+\begin{align*}%
+n \tau & > \num{d16} \qand T > \SI{d9}{\kelvin} \text{ for reaction } (\star \star),\\
+n \tau & > \num{d14} \qand T > \SI{d8}{\kelvin} \text{ for reaction } (\star),
+\end{align*}
+Here $n$ is the concentration of matter in the plasma, and $\tau$ is the time the particles are confined in the plasma. The preceding inequalities indicate that the number of nuclei reacting in thermonuclear fusion should be proportional to the concentration of matter and the time of existence of the nucleus.
+
 The practical realization of controlled thermonuclear fusion
 reactions is a timely problem of enormous importance and its
 solution should be reached in the near future.

@@ -182,6 +182,11 @@
 %\newunicodechar{“}{``}
 %\newunicodechar{”}{''}
 
+% https://tex.stackexchange.com/questions/715252/writing-nuclear-reactions-without-the-mhchem-package
+% \nuc{X}{A}{Z} gives X^{A}_{Z}
+\newcommand{\nuc}[3]{\ensuremath{{}^{#2}_{#3} \textrm{#1}}}
+
+
 %\reversemarginpar  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
