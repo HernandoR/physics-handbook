@@ -1,0 +1,116 @@
+\documentclass[fontsize=9pt,twoside]{scrbook}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{
+	paperwidth=300mm,
+	paperheight=150mm,
+	top=15mm,
+	bottom=15mm,
+	textheight=120mm,
+	headsep=5mm, left=10mm,
+	marginpar=10mm,
+	textwidth=280mm,
+	marginparsep=5mm,
+	footskip=7mm
+} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{longtable}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\setcounter{table}{0}         
+\renewcommand{\thetable}{43.\arabic{table}} 
+\begin{document}
+\setcounter{page}{994}
+
+\renewcommand{\arraystretch}{1.25}  % Increases row height by 1.5×
+
+\begin{small}
+\begin{center}
+\begin{longtable}{p{3cm}ccccccccp{1.75cm}p{2.75cm}}
+\caption{Elementary Particles and Their Properties.} \label{tab:particles} \\
+\toprule
+\textbf{Particles/} & \textbf{Symbol} & \textbf{Charge} & \textbf{Mass} & \textbf{Lifetime} & \textbf{Spin} & \textbf{Baryon} & \textbf{Strangeness} & \textbf{Isospin} & \textbf{Isospin} & \textbf{Dominant} \\
+\textbf{Anti-particles} &  & $e$ & MeV & s & $\hbar$ & \textbf{Charge} & & & \textbf{Projection} & \textbf{Decay Mode} \\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{Particles/} & \textbf{Symbol} & \textbf{Charge} & \textbf{Mass} & \textbf{Lifetime} & \textbf{Spin} & \textbf{Baryon} & \textbf{Strangeness} & \textbf{Isospin} & \textbf{Isospin} & \textbf{Dominant} \\
+\textbf{Anti-particles} &  & $e$ & MeV & s & $\hbar$ & \textbf{Charge} & & & \textbf{Projection} & \textbf{Decay Mode} \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{11}{r}{\textit{Continued on next page}} \\
+\midrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+Photon & $\gamma$ & 0 & 0 & Stable & 1 & 0 & -- & -- & -- & Stable \\
+\midrule
+\textbf{Leptons} & & & & & & & & \\
+\emph{Neutrinos} & & & & & & & & \\
+Electron Neutrino & $\nu_{e}$ & 0 & 0 & Stable & 1/2 & 0 & 0 & 1/2 & +1/2 & Stable \\
+Electron Antineutrino & $\tilde{\nu}_{e}$ & 0 & 0 & Stable & 1/2 & 0 & 0 & 1/2 & $-1/2$ & Stable \\
+Muon Neutrino & $\nu_{\mu}$ & 0 & 0 & Stable & 1/2 & 0 & 0 & 1/2 & +1/2 & Stable \\
+Muon Antineutrino & $\tilde{\nu}_{\mu}$ & 0 & 0 & Stable & 1/2 & 0 & 0 & 1/2 & $-1/2$ & Stable \\
+\midrule
+\emph{Electrons} & & & & & & & & \\
+Electron & $e^{-}$ & $-1$ & 0.511 & Stable & 1/2 & 0 & 0 & 1/2 & $-1/2$ & Stable \\
+Positron & $e^{+}$ & +1 & 0.511 & Stable & 1/2 & 0 & 0 & 1/2 & +1/2 & \\
+\midrule
+\emph{Muons} & & & & & & & & \\
+Muon$^{-}$ & $\mu^{-}$ & $-1$ & 105.7 & $2.2\times10^{-6}$ & 1/2 & 0 & 0 & 1/2 & $-1/2$ & $\mu^{-} \to e^{-} + \tilde{\nu}_{e} + \nu_{\mu}$ \\
+Muon$^{+}$ & $\mu^{+}$ & +1 & 105.7 & $2.2\times10^{-6}$ & 1/2 & 0 & 0 & 1/2 & +1/2 & $\mu^{+} \to e^{+} + \nu_{e} + \tilde{\nu}_{\mu}$ \\
+\midrule
+\textbf{Mesons} & & & & & & & & \\
+\emph{Pions} & & & & & & & & \\
+$\pi^{+}$ Meson & $\pi^{+}$ & +1 & 139.6 & $2.6\times10^{-8}$ & 0 & 0 & 0 & 1 & +1 & $\pi^{+} \to \mu^{+}+ \nu_{\mu}$ \\
+$\pi^{-}$ Meson& $\pi^{-}$ & $-1$ & 139.6 & $2.6\times10^{-8}$ & 0 & 0 & 0 & 1 & $-1$ & $\pi^{-} \to \mu^{-} + \tilde{\nu}_{\mu}$ \\
+$\pi^{0}$ Meson& $\pi^{0}$ & 0 & 135.0 & $8.4\times10^{-17}$ & 0 & 0 & 0 & 1 & 0 & $\pi^{0} \to \gamma + \gamma$ \\
+\midrule
+\emph{Kaons} & & & & & & & & \\
+Kaon$^{+}$ & $K^{+}$ & +1 & 493.7 & $1.24\times10^{-8}$ & 0 & 0 & +1 & 1/2 & +1/2 & $K^{+} \to \mu^{+} + \nu_{\mu}$ \\
+Kaon$^{-}$ & $K^{-}$ & $-1$ & 493.7 & $1.24\times10^{-8}$ & 0 & 0 & $-1$ & 1/2 & $-1/2$ & $K^{-} \to \mu^{-} + \tilde{\nu}_\mu
+$ \\
+$K^{0}$ Meson & $K^{0}$ & 0 & 497.6 & $K_{0}^{S}: \num{8.6d-11}$ & 0 & 0 & +1 & 1/2 & $-1/2$ & $K^{0}_{S} \to \pi^{+} + \pi^{-}$ \newline
+$K^{0}_{S} \to \pi^{0} + \pi^{0}$ \\
+anti-$K^{0}$ Meson & $\tilde{K}^{0}$ & 0 & 497.6 & $K_{0}^{L}: \num{5.38d-8}$ & 0 & 0 & $-1$ & 1/2 & +1/2 & 
+$K^{0}_{L} \to \pi^{\pm} + e^{\mp} + \nu_{e}$ \newline
+$K^{0}_{L} \to \pi^{\pm} + \mu^{\mp} + \nu_{\mu}$ \newline
+$K^{0}_{L} \to \pi^{+} + \pi^{-} + \pi^{0}$
+ \\
+$\eta^{0}$ Meson & $\eta^{0}$ & 0 & 547.9 & $ 5.0\times10^{-19}$ & 0 & 0 & 0 & 0 & 0 & $\eta^{0} \to \gamma + \gamma$ \newline $\eta^{0} \to \pi^{+} + \pi^{-} + \pi^{0}$ \newline $\eta^{0} \to 3\pi^{0}$ \\
+\midrule
+\textbf{Baryons} & & & & & & & & \\
+\emph{Nucleons} & & & & & & & & \\
+Proton & $p$ & +1 & 938.3 & Stable & 1/2 & +1 & 0 & 1/2 & +1/2 & \\
+Antiproton & $\tilde{p}$ & $-1$ & 938.3 & Stable & 1/2 & $-1$ & 0 & 1/2 & $-1/2$ &  \\
+Neutron & $n$ & 0 & 939.6 & $880$ s & 1/2 & +1 & 0 & 1/2 & $-1/2$ & $n \to p + e^{-} + \tilde{\nu}_{e}$ \\
+Antineutron & $\tilde{n}$ & 0 & 939.6 &$880$ s & 1/2 & $-1$ & 0 & 1/2 & +1/2 & $\tilde{n} \to \tilde{p} + e^{+} + \nu_{e}$ \\
+\midrule
+\emph{Hyperons} & & & & & & & & \\
+$\Lambda^{0}$ Hyperon& $\Lambda^{0}$ & 0 & 1115.7 & \num{2.6d-10} & 1/2 & +1 & $-1$ & 0 & 0 & $\Lambda^{0} \to p + \pi^{-}$ \\
+Anti-$\Lambda^{0}$ Hyperon & $\tilde{\Lambda}^{0}$ & 0 & 1115.7 & \num{2.6d-10} & 1/2 & $-1$ & +1 & 0 & 0 & $\tilde{\Lambda}^{0} \to \tilde{p} +\pi^{+}$ \\
+$\Sigma^{+}$ Hyperon& $\Sigma^{+}$ & +1 & 1189.4 & \num{8d-11} & 1/2 & +1 & $-1$ & 1 & +1 & $ \Sigma^{+} \to p + \pi^{0},\newline \Sigma^{+} \to  n + \pi^{+}$ \\
+Anti-$\Sigma^{+}$Hyperon & $\tilde{\Sigma}^{+}$ & $-1$ & 1189.4 & \num{8d-11} & 1/2 & $-1$ & +1 & 1 & $-1$ & $ \tilde{\Sigma}^{+} \to \tilde{p} + \pi^{0},\newline \tilde{\Sigma}^{+} \to  \tilde{n} + \pi^{+}$ \\
+$\Sigma^{-}$ Hyperon & $\Sigma^{-}$ & $-1$ & 1197.4 & \num{1.5d-10} & 1/2 & +1 & $-1$ & 1 &$-1$ & $\Sigma^{-} \to n + \pi^{-}$ \\
+Anti-$\Sigma^{+}$ Hyperon & $\tilde{\Sigma}^{+}$ & +1 & 1197.4 &  \num{1.5d-10} & 1/2 &$-1$ & +1 & 1 & +1 & $\tilde{\Sigma}^{-} \to \tilde{n} + \pi^{+}$ \\
+$\Sigma^{0}$ Hyperon& $\Sigma^{0}$ & 0 & 1192.6 & \num{7.4d-20} & 1/2 & +1 &$-1$ & 1 & 0 & $\Sigma^{0} \to \Lambda^{0} + \gamma$ \\
+Anti-$\Sigma^{0}$ Hyperon & $\tilde{\Sigma}^{0}$ & 0 & 1192.6 & \num{7.4d-20} & 1/2 &$-1$ & +1 & 1 & 0 & $\tilde{\Sigma}^{0} \to \tilde{\Lambda}^{0} + \gamma$ \\
+$\Xi^{-}$ Hyperon& $\Xi^{-}$ &$-1$ & 1321.7 & \num{1.6d-10} & 1/2 & +1 & $-2$ & 1/2 & $-1/2$ & $\Xi^{-} \to \Lambda^{0} +\pi^{-}$ \\
+Anti-$\Xi^{+}$ Hyperon& $\tilde{\Xi}^{+}$ & +1 & 1321.7 & \num{1.6d-10} & 1/2 &$-1$ & +2 & 1/2 & +1/2 & $\tilde{\Xi}^{-} \to \tilde{\Lambda}^{0} + \pi^{+}$ \\
+$\Xi^{0}$ Hyperon& $\Xi^{0}$ & 0 & 1314.9 & \num{2.9d-10} & 1/2 & +1 & $-2$ & 1/2 & +1/2 & $\Xi^{0} \to \Lambda^{0} + \pi^{0}$ \\
+Anti-$\Xi^{0}$ Hyperon& $\tilde{\Xi}^{0}$ & 0 & 1314.9 & \num{2.9d-10} & 1/2 &$-1$ & +2 & 1/2 & $-1/2$ & $\tilde{\Xi}^{0} \to \tilde{\Lambda^{0}} + \pi^{0}$ \\
+$\Omega^{-}$ Hyperon& $\Omega^{-}$ &$-1$ & 1672.4 & \num{8.2d-11} & 3/2 & +1 & $-3$ & 0 & 0 & $\Omega^{-} \to \Lambda^{0}+ K^{-}$\newline $\Omega^{-} \to  \Xi^{0} + \pi^{-}$ \newline $\Omega^{-} \to \Xi^{-} + \pi^{0}$\\
+Anti-$\Omega^{+}$ Hyperon& $\tilde{\Omega}^{+}$ & +1 & 1672.4 & \num{8.2d-11} & 3/2 &$-1$ & +3 & 0 & 0 & $\tilde{\Omega}^{+} \to \tilde{\Lambda}^{0}+ K^{+}$\newline $\tilde{\Omega}^{+} \to  \tilde{\Xi}^{0} + \pi^{+}$ \newline $\tilde{\Omega}^{-} \to \tilde{\Xi}^{+} + \pi^{0}$ \\
+\bottomrule
+\end{longtable}
+\end{center}
+\end{small}
+
+\end{document}
