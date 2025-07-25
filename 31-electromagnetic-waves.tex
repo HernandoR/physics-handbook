@@ -83,7 +83,13 @@ Hence, for a \redem{variable} field of a plane  wave $E_{x} = H_{x} = 0$, and th
 where $\vu{j}$ and $\vu{k}$ are unit vectors of the
 coordinate axes.
 
-\subsection{}\label{31.1.5} Vectors $\vb{E}$ and $\vb{H}$ of the field of an electromagnetic wave are mutually perpendicular, so that $\vb{v}$, $\vb{E}$ and $\vb{H}$ form a right-hand set of three vectors (\figr{Fig. 31.1}).
+\begin{marginfigure}%[-1.5cm]
+\centering
+\includegraphics[width=\textwidth]{figs/ch-31/fig-31-01.pdf}
+\sidecaption{Mutually perpendicular vectors $\vb{E}$ and $\vb{H}$ of the field of an electromagnetic wave.\label{fig-31-01}}
+\end{marginfigure}
+
+\subsection{}\label{31.1.5} Vectors $\vb{E}$ and $\vb{H}$ of the field of an electromagnetic wave are mutually perpendicular, so that $\vb{v}$, $\vb{E}$ and $\vb{H}$ form a right-hand set of three vectors (\figr{fig-31-01}).
 
 As a matter of fact, for the field of a plane wave \ssect{31.1.4},
 \begin{align*}%
@@ -253,7 +259,7 @@ located in vacuum, the vectors $\vb{E}$ and $\vb{H}$ of the radiation field at t
 \end{align*}
 \begin{marginfigure}%[-1.5cm]
 \centering
-\includegraphics[width=0.9\textwidth]{figs/ch-31/fig-31-03.pdf}
+\includegraphics[width=0.7\textwidth]{figs/ch-31/fig-31-03.pdf}
 \sidecaption{Orientation of $\vb{E}$, $\vb{H}$ and $\vb{r}$ form a right-hand set of three vectors.
  \label{fig-31-03}}
 \end{marginfigure}
@@ -267,11 +273,18 @@ Vector $\vb{E}$ is tangent to the meridian, and vector $\vb{H}$ is tangent to th
 \end{equation*}
 where $\theta$ is the angle between vectors $\vb{p}_{0}$ and $\vb{r}$.
 
+\begin{marginfigure}%[-3cm]
+%\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-31/fig-31-04.pdf}
+\sidecaption{The dependence of $I$ on $\theta$. \label{fig-31-04}}
+\end{marginfigure}
+
+
 The intensity of the electromagnetic wave at point $M$ is
 \begin{equation*}%
 I =  \frac{\mu_{0}\omega^{4}p_{0}^{2}\sin^{2} \theta}{32 \pi^{2 c r^{2}}}
 \end{equation*}
-The dependence of $I$ on $\theta$ for a fixed value of $r$, shown in polar coordinates (\figr{Fig. 31.4}), is called the \redem{polar directional diagram of oscillator (dipole) radiation}. The dipole radiates most intensively in directions that make an angle $\theta = \pi/2$ with its axis, i.e. in a plane passing through the middle of the dipole and perpendicular to its axis. Along its axis ($\theta = 0$ and $\theta = \pi$) the dipole does not radiate at all.
+The dependence of $I$ on $\theta$ for a fixed value of $r$, shown in polar coordinates (\figr{fig-31-04}), is called the \redem{polar directional diagram of oscillator (dipole) radiation}. The dipole radiates most intensively in directions that make an angle $\theta = \pi/2$ with its axis, i.e. in a plane passing through the middle of the dipole and perpendicular to its axis. Along its axis ($\theta = 0$ and $\theta = \pi$) the dipole does not radiate at all.
 
 The average power of radiation of a linear harmonic oscillator is
 \begin{equation*}%
@@ -363,9 +376,10 @@ Submillimetric waves & \SI{d-3}{} to \SI{d-5}{} & \SI{3e11}{} to \SI{6e12}{} \\
 
 \subsection{}\label{31.4.2} Radio frequencies are divided into twelve bands according to the international regulations for radio communications. These bands and their corresponding wavelength in free space are listed in Table 31.2.
 
-\begin{small}
+%\begin{small}
 \begin{table*}[H]
 \centering
+{\small
 \begin{tabular}{@{}p{1.25cm}p{2.25cm}p{2.75cm}p{2.25cm}p{2.75cm}@{}}
 \toprule
 \textbf{Band No.} & \textbf{Frequency\newline Band} & \textbf{Designation} & \textbf{Wavelength \newline Band} & \textbf{Wave \newline Designation} \\
@@ -383,11 +397,11 @@ Band 10 & \SI{3}{\giga\hertz} to \SI{30}{\giga\hertz} & Super High Frequency (SH
 Band 11 & \SI{30}{\giga\hertz} to \SI{300}{\giga\hertz} & Extremely High Frequency (EHF) & \SI{10}{\milli\meter} to \SI{1}{\milli\meter} & Millimetric waves\\
 Band 12 & \SI{0.3}{\tera\hertz} to \SI{3}{\tera\hertz} & Hyper High Frequency (HHF) & \SI{1}{\milli\meter} to \SI{0.1}{\milli\meter} & Decimillimetric waves\\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \sidecaption[][5cm]{Radio-frequency band designations with corresponding frequency and wavelength ranges. Note: In the terminology accepted in the U.S.A. the extremely low frequency (ELF) band includes frequencies from \SI{3}{\hertz}
 \SI{3}{\kilo\hertz}, i.e. the first three bands of the list given here.\label{tab-31.2}}
 \end{table*}
-\end{small}
+%\end{small}
 %
 %TABLE 31.2
 %Radio-frequency band designation
@@ -607,8 +621,8 @@ $p$-wave & $\pi$ & 0 & 0 & $\pi$ \\
 $s$-wave & $\pi$ & 0 & $\pi$ & 0 \\
 \bottomrule
 \end{tabular}
-\sidecaption{The values of the phase difference in the oscillation of vector $\vb{E}$ upon the reflection of $p-$ and $s-$type electromagnetic waves.}
-\label{tab-31-03}
+\sidecaption{The values of the phase difference in the oscillation of vector $\vb{E}$ upon the reflection of $p-$ and $s-$type electromagnetic waves.\label{tab-31-03}}
+
 \end{table}
 
 
