@@ -73,7 +73,7 @@ For the Maxwell-Boltzmann distribution (cf. \ssect{10.4.2})
 $\delta = 0$ and $\mu = 0$; for the Bose-Einstein distribution $\delta = -1$; and for the Fermi-
 Dirac distribution $\delta = +1$. Plots of these three distribution functions are shown in \figr{fig-41-01}.
 
-\begin{marginfigure}%[-3cm] 
+\begin{marginfigure}[-3cm] 
 \centering
 \includegraphics[width=\textwidth]{figs/ch-41/fig-41-01.pdf}
 \sidecaption{Comparing the Maxwell-Boltzmann, Bose-Einstein, and Fermi-Dirac distributions.\label{fig-41-01}}
@@ -120,7 +120,7 @@ where $n_{0}$ is the concentration of particles, $m$ is the mass of the particle
 from the condition
 \begin{align*}%
 A & = \frac{n_{0}h^{3}}{(2 \pi m kT_{d})^{3/2}} = 1, \text{ from which}\\
-T_{d} & = \frac{h^{2}n_{0}^{2/3}}{2 \pi mk}
+T_{d} & = \frac{h^{2}n_{0}^{2/3}}{2 \pi mk}.
 \end{align*}
 The temperature criterion of degeneracy is as follows: when
 $T \ll T_{d}$ the system of particles is degenerate; when $T \gg T_{d}$ the system of particles is not degenerate, and its behaviour is described by classical laws.
@@ -179,11 +179,6 @@ All levels with energy exceeding $\mu_{0}$ are empty; their population equals ze
 \end{marginfigure}
 
 
-\begin{marginfigure}[2cm] 
-\centering
-\includegraphics[width=\textwidth]{figs/ch-41/fig-41-03.pdf}
-\sidecaption{The energy distribution law for conduction electrons at $T = \SI{0}{\kelvin}$.\label{fig-41-03}}
-\end{marginfigure}
 
 
 \subsection{}\label{41.4.3} The energy distribution law for conduction electrons at $T = \SI{0}{\kelvin}$ is of the form
@@ -197,6 +192,11 @@ a metal is
  n_{0} & = \int_{0}^{E_{F}} \dd n_{0} (E) = \frac{4\pi (2m)^{3} }{h^{3}} \int_{0}^{E_{F}} \sqrt{E} \dd E \\
  & = \frac{4\pi (2m)^{3} }{h^{3}} \frac{2}{3} E_{F}^{3/2}.
 \end{align*}
+\begin{marginfigure}[2cm] 
+\centering
+\includegraphics[width=\textwidth]{figs/ch-41/fig-41-03.pdf}
+\sidecaption{The energy distribution law for conduction electrons at $T = \SI{0}{\kelvin}$.\label{fig-41-03}}
+\end{marginfigure}
 Hence
 \begin{equation*}%
 E_{F} = \frac{h^{2}}{2m} \left( \frac{3 n_{0}}{8\pi}\right)^{2/3}.
@@ -212,13 +212,13 @@ At $n_{0} = \SI{6d-28}{\per\meter\cubed}$ we obtain, after substituting the valu
 If we compare this energy with the average energy of a molecule of nondegenerate monatomic gas $\expval{E} = 3kT/2$ \ssect{10.2.5}, we find the energy $E_{F}$ that the molecule could have at the temperature $T  \approx \SI{d4}{\kelvin}$. In other words, under ordinary conditions, $kT/E_{F} \ll 1$.
 
 \subsection{}\label{41.4.4} At a temperature different from zero the Fermi-Dirac distribution function $f_{F}$ is of the form shown in \figr{fig-41-04} by the full-line curve. The same figure shows the function  $f_{F}$ at $T = \SI{0}{\kelvin}$ in dash lines. The curves differ in the kind of drop the function undergoes near the value $E = \mu$. 
+
+An abrupt drop along a vertical line at $E = \mu_{0} = E_{F}$ for the case when $T = \SI{0}{\kelvin}$ (\figr{fig-41-02}) changes to the smooth curve $ABC$ at $T \neq \SI{0}{\kelvin}$. Of importance is the fact that the states of the electrons, at the energy levels that satisfy the condition $E \ll \mu$, do not change when heated from \SI{0}{\kelvin} to $T$. Distortion of the function $f_{F}$ occurs only at its ``tail-end'', in an energy range of the width $2 k T$, near the value $E = \mu$, at which $f_{F} = 1/2$.
 \begin{marginfigure}[-3cm] 
 \centering
 \includegraphics[width=\textwidth]{figs/ch-41/fig-41-04.pdf}
 \sidecaption{Fermi-Dirac distribution at different temperature than $T = \SI{0}{\kelvin}$.\label{fig-41-04}}
 \end{marginfigure}
-
-An abrupt drop along a vertical line at $E = \mu_{0} = E_{F}$ for the case when $T = \SI{0}{\kelvin}$ (\figr{fig-41-02}) changes to the smooth curve $ABC$ at $T \neq \SI{0}{\kelvin}$. Of importance is the fact that the states of the electrons, at the energy levels that satisfy the condition $E \ll \mu$, do not change when heated from \SI{0}{\kelvin} to $T$. Distortion of the function $f_{F}$ occurs only at its ``tail-end'', in an energy range of the width $2 k T$, near the value $E = \mu$, at which $f_{F} = 1/2$.
 
 \subsection{}\label{41.4.5} The chemical potential  $\mu$\ssect{41.2.3} of an electron gas at the temperature $T$ is
 \begin{equation*}%
@@ -287,9 +287,9 @@ At very low temperatures the formulas given above are not valid. The mean free p
 \begin{equation*}%
 \rho =  \rho_{T} + \rho_{\text{imp}},
 \end{equation*}
-\begin{marginfigure}[-3cm] 
+\begin{marginfigure}[-4cm] 
 \centering
-\includegraphics[width=\textwidth]{figs/ch-41/fig-41-05.pdf}
+\includegraphics[width=0.8\textwidth]{figs/ch-41/fig-41-05.pdf}
 \sidecaption{Resistivity $\rho$ of a metal as a function of the temperature.\label{fig-41-05}}
 \end{marginfigure}
 where $\rho_{T}$ is the resistivity due to the scattering of electron waves by density fluctuations, and $\rho_{\text{imp}}$ is the resistivity due to scattering by impurities. Of importance is the fact that $\rho_{\text{imp}}$ is independent of the temperature. Since as $T \to 0$, $\rho_{T} \to 0$ as well, $\rho_{T} \to \rho_{\text{imp}}$ as the temperature is lowered. The quantity $\rho_{\text{imp}}$ is called the \redem{residual resistivity}. This resistivity remains a property of the metal when it is cooled even down to absolute zero. The dependence of the electrical resistivity on the temperature is shown in \figr{fig-41-05}. The point of intersection of the extension of the curve (dash line) with the axis of ordinates (to $T = \SI{0}{\kelvin}$) is the residual resistivity.
@@ -310,40 +310,41 @@ The temperature range $AB$ (\figr{fig-41-06}) of the transition to a superconduc
 
 The \redem{isotope effect} in superconductors is the fact that the transition temperatures $T_{c}$ of various isotopes \ssect{42.1.3} of the same superconducting metal are inversely proportional to the square roots of their atomic masses.
 
-\subsection{}\label{41.6.2} A sufficiently strong magnetic field at a given temperature destroys the superconductive state of a substance. When a magnetic field is applied to a superconductor, the transition temperature $T_{c}$ \ssect{41.6.1} is lowered.
-
-A magnetic field of the strength $H_{c}$ which, at the given temperature, causes the transition of a substance from the superconductive to the normal state is called the \redem{critical field}. As the temperature of the superconductor is lowered, the field strength $H_{c}$ increases. As a first approximation: 
-\begin{marginfigure}[-1cm] 
+\begin{marginfigure}%[-2cm] 
 \centering
 \includegraphics[width=\textwidth]{figs/ch-41/fig-41-07.pdf}
 \sidecaption{The superconductive and normal states of a substance.\label{fig-41-07}}
 \end{marginfigure}
+
+\subsection{}\label{41.6.2} A sufficiently strong magnetic field at a given temperature destroys the superconductive state of a substance. When a magnetic field is applied to a superconductor, the transition temperature $T_{c}$ \ssect{41.6.1} is lowered.
+
+A magnetic field of the strength $H_{c}$ which, at the given temperature, causes the transition of a substance from the superconductive to the normal state is called the \redem{critical field}. As the temperature of the superconductor is lowered, the field strength $H_{c}$ increases. As a first approximation: 
 \begin{equation*}%
 H_{c} =  H_{0} \left[ 1 - \left( \frac{T}{T_{c}} \right)^{2} \right].
 \end{equation*}
 The curve in \figr{fig-41-07} separates the superconductive and normal states of a substance.
-
-
-The superconductive properties of a conductor disappear when
-a sufficiently heavy current is passed through them. This is 
-due to the action of the magnetic field, set up by the current, which destroys the superconductive state.
-
-\begin{marginfigure}[1cm] 
+\begin{marginfigure}[-1cm] 
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-41/fig-41-08.pdf}
 \sidecaption{The external magnetic field weaker than the critical field does not penetrate interior of a superconductor.\label{fig-41-08}}
 \end{marginfigure}
 
+The superconductive properties of a conductor disappear when
+a sufficiently heavy current is passed through them. This is 
+due to the action of the magnetic field, set up by the current, which destroys the superconductive state.
+
+
+
 \subsection{}\label{41.6.3} An external magnetic field, weaker than the critical field \ssect{41.6.2} does not penetrate into the interior of a superconductor. Hence, the magnetic induction B \ssect{23.1.2} is always zero in the bulk of the superconductor. Shown in \figr{fig-41-08} is a uniform magnetic field \ssect{23.1.3} directed along the axis of a cylindrical superconductor. The superconductor seems to ``push'' the magnetic field out of the space it itself occupies and is an ideal diamagnetic material with a magnetic susceptibility of $\chi_{m} = -1$ \ssect{26.4.5}. Here the relative magnetic permeability $\mu_{r} = 1 + \chi_{m} = 0$ and $B = \mu_{0}\mu_{r}H = 0$.
 
-
-\subsection{}\label{41.6.4} The transition of a substance to the superconductive state is accompanied by changes in its thermal properties. In the absence of a magnetic field and at the transition temperature $T_{c}$ \ssect{41.6.1}, there is an abrupt change in the heat capacity \ssect{9.5.1}. In the presence of a magnetic field an isothermal transition from the superconductive to the normal state is associated with a jump in the heat conductivity and heat capacity. These phenomena are typical features of a second-order phase transition
-\ssect{12.4.2}.
 \begin{marginfigure}%[1cm] 
 \centering
 \includegraphics[width=\textwidth]{figs/ch-41/fig-41-09.pdf}
 \sidecaption{A model of supercoductivity based on attraction between electrons and their pairing.\label{fig-41-09}}
 \end{marginfigure}
+\subsection{}\label{41.6.4} The transition of a substance to the superconductive state is accompanied by changes in its thermal properties. In the absence of a magnetic field and at the transition temperature $T_{c}$ \ssect{41.6.1}, there is an abrupt change in the heat capacity \ssect{9.5.1}. In the presence of a magnetic field an isothermal transition from the superconductive to the normal state is associated with a jump in the heat conductivity and heat capacity. These phenomena are typical features of a second-order phase transition
+\ssect{12.4.2}.
+
 \subsection{}\label{41.6.5} In quantum-mechanical theory, the phenomenon of superconductivity is considered to be the superfluidity \ssect{12.4.3} of electrons in a metal with the absence of friction inherent in superfluidity. The conduction electrons move along a superconductor unimpeded, i.e. without any ``friction'' between them and the crystal lattice points. The main feature of superconductors is that the mutual attraction of the electrons in them leads in the pairing of electrons. The cause of this attraction is interaction between electrons, supplementary to Coulomb repulsion, accomplished by the action of the crystal lattice and leading
 in the pairing. 
 
@@ -646,15 +647,15 @@ where $\Delta E_{0}$ is the activation energy of intrinsic conduction \ssect{41.
 \redem{Impurity centres} (or simply \redem{impurities}) may be atoms or ions of foreign elements, and various defects and distortion of the crystal lattice (vacant points, displacements due to deformation of the crystal, etc.).
 
 Impurities change the periodic electric field in a solid and affect the motion of the electrons and their energy states. The energy levels of the valence electrons of impurity atoms are not located in the allowed energy bands \ssect{41.9.2} of the main, or host, crystal, and \redem{impurity energy levels} (\redem{localized levels}) are formed in the forbidden band.
-
-
-\subsection{}\label{41.10.6} Impurities can be a supplementary source of electrons in a solid. For example, in the substitution of one tetravalent atom of germanium by an atom of an impurity having five valence electrons (phosphorus, antimony or arsenic) one of the electrons of the impurity cannot form a covalent bond \redem{39.4.5} with the germanium atoms and is thereby ``superfluous''. The energy levels of such electrons are below the conduction band of the host crystal (\figr{fig-41-15}). Such levels, filled with electrons, are called \redem{donor levels}, and the atoms of the impurity that supply the ``superfluous'' electrons are called \redem{donor atoms}. 
-
 \begin{marginfigure}%[-3cm] 
 \centering
 \includegraphics[width=\textwidth]{figs/ch-41/fig-41-15.pdf}
 \sidecaption{Effect of pentavalent impurity on electron energy levels in bands.\label{fig-41-15}}
 \end{marginfigure}
+
+\subsection{}\label{41.10.6} Impurities can be a supplementary source of electrons in a solid. For example, in the substitution of one tetravalent atom of germanium by an atom of an impurity having five valence electrons (phosphorus, antimony or arsenic) one of the electrons of the impurity cannot form a covalent bond \redem{39.4.5} with the germanium atoms and is thereby ``superfluous''. The energy levels of such electrons are below the conduction band of the host crystal (\figr{fig-41-15}). Such levels, filled with electrons, are called \redem{donor levels}, and the atoms of the impurity that supply the ``superfluous'' electrons are called \redem{donor atoms}. 
+
+
 
 
 Only a small amount of energy $\Delta E_{e}$ is required to excite electrons from the donor levels to the conduction band. This energy is obtained, for instance, from thermal excitation. For silicon $\Delta E_{e} = \SI{0.054}{\electronvolt}$ if the impurity is arsenic. When electrons are transferred from the donor levels to the conduction band, \redem{electron impurity}, or \redem{extrinsic, conduction ($n$-type impurity conduction)} occurs. Such semiconductors are called \redem{electron impurity semiconductors (n-type semiconductors)}.
@@ -674,7 +675,7 @@ Acceptor levels are located above the upper edge of the valence band \ssect{41.9
 
 \subsection{}\label{41.10.8} When a semiconductor is doped with both donor and acceptor impurities at the same time, the nature of the conduction ($n$- or $p$-type) depends upon which impurity produces the higher concentration of current carriers. The concentration and energy of the electrons (and holes) in semiconductors depend very strongly, in contrast to those of metals, on the temperature, and increase when the temperature is raised.
 
-\section{Concept of Contact Electrical Phenomena in Metals and Semiconductors}
+\section[Electrical Contact Phenomena]{Concept of Contact Electrical Phenomena in Metals and Semiconductors}
 \label{sec-41.11} 
 
 \begin{marginfigure}%[-3cm] 
@@ -718,13 +719,7 @@ It is evident from \figr{fig-41-18} that the external contact potential differen
 \begin{equation*}%
 \Delta V_{12}' = \frac{\Phi_{1} - \Phi_{2}}{e},
 \end{equation*}
-\begin{marginfigure}[-2cm] 
-\centering
-\includegraphics[width=0.8\textwidth]{figs/ch-41/fig-41-19.pdf}
-\sidecaption{The double electric layer at interface of two metals.\label{fig-41-19}}
-\end{marginfigure}
-The internal contact potential difference depends upon the
-Fermi levels in the metals. Thus
+The internal contact potential difference depends upon the Fermi levels in the metals. Thus
 \begin{equation*}%
 \Delta V_{12} = V_{1} - V_{2} = \frac{E_{F_{1}} - E_{F_{2}}}{e},
 \end{equation*}
@@ -734,18 +729,24 @@ l = \sqrt{\frac{2 \varepsilon_{0} \Delta V_{12}'}{en_{0}}} \text{ (in SI units).
 \end{equation*}
 Here $n_{0}$ is the concentration of charges in the double layer, $\varepsilon_{0}$ is the electric constant in SI units \ssect{14.2.7}, and $e$ is the electron charge.
 
+\begin{marginfigure}[-2cm] 
+\centering
+\includegraphics[width=0.8\textwidth]{figs/ch-41/fig-41-19.pdf}
+\sidecaption{The double electric layer at interface of two metals.\label{fig-41-19}}
+\end{marginfigure}
 
 The thickness of the double layer in contacting metals is of
 the order of the lattice constants in metals, and the resistivity of this layer is the same as that of the rest of the metal. Electric current passes equally well in both directions through the contact layer of two metals, and there is no \redem{rectifying (barrier-layer) effect of the contact, or function}, i.e. \redem{unilateral conduction}.
 
 
-\begin{marginfigure}[-3cm] 
+
+\subsection{}\label{41.11.5} Contact between a metal and an $n$-type semiconductor \ssect{41.10.6} leads to unilateral conduction of the junction. Assume that $\Phi_{1} > \Phi_{n}$ , where $\Phi_{1}$ and $\Phi_{n}$ are the work functions of the metal and the $n$-type semiconductor, respectively. The arrangement of the conduction band of the metal \ssect{41.9.2}, the completely filled band of the semiconductor and its donor levels before contact has been made are shown in \figr{fig-41-20}. After the metal makes contact with the semiconductor, electrons from the donor levels of the $n$-type semiconductor \ssect{41.10.6} move into the metal.
+
+\begin{marginfigure}%[-3cm] 
 \centering
 \includegraphics[width=\textwidth]{figs/ch-41/fig-41-20.pdf}
 \sidecaption{Fermi levels in a metal and a semiconductor before making contact.\label{fig-41-20}}
 \end{marginfigure}
-
-\subsection{}\label{41.11.5} Contact between a metal and an $n$-type semiconductor \ssect{41.10.6} leads to unilateral conduction of the junction. Assume that $\Phi_{1} > \Phi_{n}$ , where $\Phi_{1}$ and $\Phi_{n}$ are the work functions of the metal and the $n$-type semiconductor, respectively. The arrangement of the conduction band of the metal \ssect{41.9.2}, the completely filled band of the semiconductor and its donor levels before contact has been made are shown in \figr{fig-41-20}. After the metal makes contact with the semiconductor, electrons from the donor levels of the $n$-type semiconductor \ssect{41.10.6} move into the metal.
 
 The charge in the contact layer \ssect{41.11.2} is positive on the side of the $n$-type semiconductor and negative on the metal side. Owing to the low electron concentration in the semiconductor in comparison to that of the metal (\SI{d15}{\per\centi\meter\cubed} instead of \SI{d22}{\per\centi\meter\cubed}), the thickness of the contact layer at the metal-semiconductor boundary is found to be approximately \num{d4} times greater than that in the metal.
 
@@ -770,7 +771,7 @@ formed at a $p$-$n$ junction as a result of electron and hole motion through the
 The double layer of thickness $l$ sets up a contact electric field with the strength $\vb{E}_{np}$ and a certain potential difference at the boundaries of the layer. This field impedes further counter migration of electrons and holes. At a definite thickness of the \emph{p-n} junction a state of equilibrium is set up, corresponding to the equalizing of the
 Fermi levels in the two semiconductors. This forms an \redem{equilibrium contact layer}, which is a barrier layer \ssect{41.11.6}, having higher resistance than that of the remaining regions of the semiconductors.
 
-\begin{marginfigure}[-2cm] 
+\begin{marginfigure}[-1cm] 
 \centering
 \includegraphics[width=\textwidth]{figs/ch-41/fig-41-22.pdf}
 \sidecaption{The $p$-$n$ junction when connected to external applied electric field.\label{fig-41-22}}
@@ -779,7 +780,7 @@ Fermi levels in the two semiconductors. This forms an \redem{equilibrium contact
 \subsection{}\label{41.11.8} When a \emph{p-n} semiconductor junction is connected into the external circuit of a source of electrical energy in the way shown in \figr{fig-41-22}, the external (applied) electric field, strengthening the field of the contact layer, causes electrons to migrate to the $p$-type semiconductor and holes to the $p$-type semiconductor at opposite sides of the junction. The thickness of the barrier
 layer and its resistance increase. This direction of the applied electric field is said to be the \redem{reverse} one. In this direction practically no current passes through the \emph{p-n} junction. 
 
-\begin{marginfigure}[-2cm] 
+\begin{marginfigure}[-1cm] 
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-41/fig-41-23.pdf}
 \sidecaption{The $p$-$n$ junction when connected to external applied electric field is reversed.\label{fig-41-23}}

@@ -85,7 +85,7 @@ coordinate axes.
 
 \begin{marginfigure}%[-1.5cm]
 \centering
-\includegraphics[width=\textwidth]{figs/ch-31/fig-31-01.pdf}
+\includegraphics[width=0.7\textwidth]{figs/ch-31/fig-31-01.pdf}
 \sidecaption{Mutually perpendicular vectors $\vb{E}$ and $\vb{H}$ of the field of an electromagnetic wave.\label{fig-31-01}}
 \end{marginfigure}
 
@@ -122,6 +122,12 @@ E_{z} & = A_{1} \sin (\omega t - kx + \varphi),\quad  & H_{z} & = - \sqrt{\frac{
 \end{align*}
 where $\omega = 2\pi \nu$ is the angular frequency of the wave, $k$ is the wavenumber \ssect{30.2.6}, $A_{1}$ and $A_{2}$ are the amplitudes of $E_{y}$ and $E_{z}$, and $\varphi$ is the phase difference between the oscillations of $E_{z}$ and $E_{y}$.
 
+\begin{marginfigure}%[-1.5cm]
+\centering
+\includegraphics[width=\textwidth]{figs/ch-31/fig-31-02.pdf}
+\sidecaption{Velocity vector of energy transfer by the wave.\label{fig-31-02}}
+\end{marginfigure}
+
 \subsection{}\label{31.1.7} For an arbitrary value of $\varphi$ \ssect{31.1.6}, a plane monochromatic wave is \redem{elliptically polarized}, i.e. at each point of the wave's field, vectors $\vb{E}$ and $\vb{H}$, while remaining mutually perpendicular,
 vary with time so that their heads describe ellipses lying in a
 plane perpendicular to the direction of wave propagation:
@@ -135,11 +141,6 @@ E_{y}^{2} + E_{z}^{2} = A_{1}^{2} \qand  H_{y}^{2} + H_{z}^{2} = \frac{\varepsil
 \end{equation*}
 Such a wave is said to be \redem{circularly polarized}.
 
-\begin{marginfigure}%[-1.5cm]
-\centering
-\includegraphics[width=\textwidth]{figs/ch-31/fig-31-02.pdf}
-\sidecaption{Velocity vector of energy transfer by the wave.\label{fig-31-02}}
-\end{marginfigure}
 
 
 When $\varphi = \pm m \pi$ , where $m = 0,\, 1,\, 2,\, \ldots{\,}$, the ellipses degenerate into straight lines:
@@ -329,9 +330,10 @@ generation, the full range of radio waves is commonly divided
 into nine bands (\tabl{tab-31.1}).
 
 
-\begin{small}
+%\begin{small}
 \begin{table*}[h]
 \begin{center}
+{\small
 \begin{tabular}{@{}p{4.25cm}ll@{}}
 \toprule
 \textbf{Band Name} & \textbf{Wavelength (\si{\meter})} & \textbf{Frequency (\si{\hertz})} \\
@@ -346,11 +348,11 @@ Centimetric waves & \SI{d-1}{} to \SI{d-2}{} & \SI{3e9}{} to \SI{3e10}{} \\
 Millimetric waves & \SI{d-2}{} to \SI{d-3}{} & \SI{3e10}{} to \SI{3e11}{} \\
 Submillimetric waves & \SI{d-3}{} to \SI{d-5}{} & \SI{3e11}{} to \SI{6e12}{} \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \sidecaption[][-4cm]{Full range of radio waves divided into nine bands. \label{tab-31.1}}
 \end{center}
 \end{table*}
-\end{small}
+%\end{small}
 
 %
 %TABLE 31.1
@@ -377,7 +379,7 @@ Submillimetric waves & \SI{d-3}{} to \SI{d-5}{} & \SI{3e11}{} to \SI{6e12}{} \\
 \subsection{}\label{31.4.2} Radio frequencies are divided into twelve bands according to the international regulations for radio communications. These bands and their corresponding wavelength in free space are listed in Table 31.2.
 
 %\begin{small}
-\begin{table*}[H]
+\begin{table*}%[H]
 \centering
 {\small
 \begin{tabular}{@{}p{1.25cm}p{2.25cm}p{2.75cm}p{2.25cm}p{2.75cm}@{}}
@@ -562,6 +564,11 @@ E_{\tau}^{0} + E_{\tau}^{\text{rfl}} & = E_{\tau}^{\text{rfr}}, & \quad \varepsi
 H_{\tau}^{0} + H_{\tau}^{\text{rfl}} & = H_{\tau}^{\text{rfr}}, & \quad (H_{n}^{0} + H_{n}^{\text{rfl}}) & = H_{n}^{\text{rfr}}.
 \end{align*}
 Here $E_{\tau}$, $H_{\tau}$, $E_{n}$ and $H_{n}$ are the projections of vectors $\vb{E}$ and $\vb{H}$ on the tangential plane and the normal to the interface between the media. It follows from these relations that in the incidence of a plane monochromatic wave on a smooth plane interface between media, the following laws are complied with (regardless of the kind of polarization of this wave):
+\begin{marginfigure}% [-4.5cm]
+\centering
+\includegraphics[width=\textwidth]{figs/ch-31/fig-31-06.pdf}
+\sidecaption{$P$-waves reflected and refracted from interface of the media.\label{fig-31-06}}
+\end{marginfigure}
 \begin{enumerate}[label=(\alph*)]
 \item The reflected and refracted waves are also monochromatic
 waves of the same frequency as the incident one.
@@ -571,22 +578,18 @@ waves of the same frequency as the incident one.
 \frac{\sin i}{\sin r} = \frac{n_{2}}{n_{1}} = n_{21}.
 \end{equation*}
 \end{enumerate}
-\begin{marginfigure}[-4.5cm]
-\centering
-\includegraphics[width=\textwidth]{figs/ch-31/fig-31-06.pdf}
-\sidecaption{$P$-waves reflected and refracted from interface of the media.\label{fig-31-06}}
-\end{marginfigure}
+
 
  
 \subsection{}\label{31.5.4} Making use of the boundary conditions \ssect{31.5.3} the relations can be found between the phases, amplitudes and intensities of incident, reflected and refracted monochromatic waves.
-\begin{marginfigure}[-1.5cm]
+
+
+It is sufficient for this purpose, according to \ssect{31.1.8}, to know the above-indicated relations for linearly polarized waves of two types: \redem{p-waves}, whose vector $\vb{E} = \vb{E}_{p}$ lies in the plane of incidence and whose vector $\vb{H} = \vb{H}_{p}$ is perpendicular to this plane (\figr{fig-31-06}), and \redem{s-waves}, whose vector $\vb{E} = \vb{E}_{s}$ is perpendicular to the plane of incidence and whose vector $\vb{H} = \vb{H}_{s}$ lies in this plane (\figr{fig-31-07}).
+\begin{marginfigure}%[-1.5cm]
 \centering
 \includegraphics[width=\textwidth]{figs/ch-31/fig-31-07.pdf}
 \sidecaption{$S$-waves reflected and refracted from interface of the media.\label{fig-31-07}}
 \end{marginfigure}
-
-It is sufficient for this purpose, according to \ssect{31.1.8}, to know the above-indicated relations for linearly polarized waves of two types: \redem{p-waves}, whose vector $\vb{E} = \vb{E}_{p}$ lies in the plane of incidence and whose vector $\vb{H} = \vb{H}_{p}$ is perpendicular to this plane (\figr{fig-31-06}), and \redem{s-waves}, whose vector $\vb{E} = \vb{E}_{s}$ is perpendicular to the plane of incidence and whose vector $\vb{H} = \vb{H}_{s}$ lies in this plane (\figr{fig-31-07}).
-
 The relations between the amplitudes of oscillation of vector $\vb{E}$ in the incident $(A^{0})$, reflected $(A^{\text{rfl}})$ and refracted $(A^{\text{rfr}})$ waves in the cases of $p$- and $s$-waves are expressed by the \redem{Fresnel formulas}:
 \begin{align*}%
 A^{\text{rfl}}_{p} & = - A_{p}^{0} \frac{\tan (i -r)}{\tan (i +r)}, & \quad A^{\text{rfr}}_{p} & = A_{p}^{0} \frac{2 \cos i \sin r}{\sin (i + r) \cos (i -r)},\\
@@ -673,13 +676,13 @@ The angle of incidence at which the refractive angle becomes equal to $\pi/2$ is
 
 
 \subsection{}\label{31.6.1} Upon motion of the source and detector of electromagnetic waves toward each other the Doppler effect is observed \ssect{30.6.1}. The laws governing this phenomenon for electromagnetic waves can he established on the basis of the special theory of relativity.
-
-Assume the detector $D$ to be stationary with respect to an inertial frame of reference $K$, and that the source $S$ travels with respect to $K$ along the positive direction of axis $OX$ at the velocity $\vb{V}$ (\figr{fig-31-08}). Source $S$ is stationary in frame of reference $K'$ and is located at its origin of coordinates. The axes of coordinate systems $K$ and $K'$ are parallel pairwise (axis $O'X'$ coincides with axis $OX$). Illustrated in \figr{fig-31-08} is the position of source $S$ at the instant of time $t = t' = 0$. 
 \begin{marginfigure}%[-1.5cm]
 \centering
-\includegraphics[width=\textwidth]{figs/ch-31/fig-31-08.pdf}
+\includegraphics[width=0.8\textwidth]{figs/ch-31/fig-31-08.pdf}
 \sidecaption{Source $S$ moving with velocity $\vb{V}$ in frame $K$.\label{fig-31-08}}
 \end{marginfigure}
+Assume the detector $D$ to be stationary with respect to an inertial frame of reference $K$, and that the source $S$ travels with respect to $K$ along the positive direction of axis $OX$ at the velocity $\vb{V}$ (\figr{fig-31-08}). Source $S$ is stationary in frame of reference $K'$ and is located at its origin of coordinates. The axes of coordinate systems $K$ and $K'$ are parallel pairwise (axis $O'X'$ coincides with axis $OX$). Illustrated in \figr{fig-31-08} is the position of source $S$ at the instant of time $t = t' = 0$. 
+
 
 According to Einstein's relativity principle \ssect{5.1.2}, the equation of a spherical monochromatic wave \ssect{30.2.8}, sent by the source at this instant of time in the direction of the detector $D$, is of identical form in frames of reference $K$ and $K'$:
 \begin{align*}%

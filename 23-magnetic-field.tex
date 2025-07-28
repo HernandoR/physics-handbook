@@ -70,7 +70,7 @@ B & = \frac{c}{I} \, \left( \dv{F}{l}\right)_{\text{max}} && \text{(in Gaussian 
 where $c$ is the electrodynamic constant (Appendix~I).
 
 \subsection{}\label{23.1.6} In contrast to electrostatic forces \ssect{14.2.2}, Ampere's force is not a central one \ssect{3.3.4}. Ampere's force is perpendicular to the lines of magnetic induction and to the current-carrying conductors.
-\begin{marginfigure}[-2cm]
+\begin{marginfigure}%[-2cm]
 \centering
 \includegraphics[width=0.9\textwidth]{figs/ch-23/fig-23-02.pdf}
 \sidecaption{Biot-Savart Laplace law to find magnetic induction at any point in a magnetic field set up by a direct electric current flowing along a conductor of any shape.\label{fig-23-02}}
@@ -125,11 +125,7 @@ where $\alpha$ is the angle between vectors $\dd \vb{l}$ and $\vb{r}$.
 \subsection{}\label{23.2.4} It follows from a comparison of the characteristics of electric ($\vb{E}$ and $\vb{D}$) and magnetic ($\vb{B}$ and $\vb{H}$) fields that the electric field strength vector $\vb{E}$ is analogous to the magnetic vector $\vb{B}$. Both vectors specify the force effects of the fields and depend upon the properties of the medium in which the field is set up.
 
 The analogue of vector $\vb{D}$ of electric displacement \ssect{15.3.1} is the magnetic field strength vector $\vb{H}$.
-\begin{marginfigure}%[-2cm]
-\centering
-\includegraphics[width=0.7\textwidth]{figs/ch-23/fig-23-03.pdf}
-\sidecaption{Magnetic field by a travelling electric charge in an unbounded homogeneous and isotropic medium at the constant velocity.\label{fig-23-03}}
-\end{marginfigure}
+
 \subsection{}\label{23.2.5} An electric charge $q$, travelling in an unbounded homogeneous and isotropic medium at the constant velocity $\vb{v}$, sets up a magnetic field whose magnetic induction $\vb{B}_{q}$ can be calculated by the formula
 \begin{alignat*}{3}%
 \vb{B}_{q} & = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{q}{r^{3}}
@@ -138,6 +134,11 @@ The analogue of vector $\vb{D}$ of electric displacement \ssect{15.3.1} is the m
 [\vb{v} \cross \vb{r}],\,\, && {B}_{q} = \frac{ \mu_{r}}{c}\, \frac{qv \sin \beta}{r^{2}}\,\, && \text{(in Gaussian units.)}
 \end{alignat*}
 where $\beta$ is the angle between vectors $\vb{v}$ and $\vb{r}$, and $\vb{r}$ is the radius vector from the travelling charge to the point $A$ being considered in the field. Vectors $\vb{B}_{q}$ and $\vb{H}_{q}$ are perpendicular to the plane passing through vectors $\vb{v}$ and $\vb{r}$.
+\begin{marginfigure}[-1cm]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/ch-23/fig-23-03.pdf}
+\sidecaption{Magnetic field by a travelling electric charge in an unbounded homogeneous and isotropic medium at the constant velocity.\label{fig-23-03}}
+\end{marginfigure}
 
 When $q > 0$, the shortest rotation from vector $\vb{v}$ to vector $\vb{r}$ is seen from the head of vector $\vb{B}_{q}$ (and $\vb{H}_{q}$) to be counter­
 \figr{fig-23-03} clockwise (\figr{fig-23-03}~\drkgry{(a)}). When $q < 0$, then $\vb{B}_{q}$ (and $\vb{H}_{q}$) have the opposite direction (\figr{fig-23-03}~\drkgry{(b)}). The magnetic field of a moving charge is variable, because the radius vector $\vb{r}$ varies in magnitude and direction as charge $q$ travels even if $\vb{v} = \text{const}$. The magnetic field of a moving charge, depending upon angle $\beta$ between vectors $\vb{v}$ and $\vb{r}$, is not spherically symmetrical, as in the case of the electrostatic field of a point charge \ssect{14.2.3}. The magnetic field being considered has mirror symmetry with respect to the direction of $\vb{v}$. The field strength is maximum at points in a plane passed through the charge perpendicularly to vector $\vb{v}$ (under the condition that $v \ll c$). At all points on a straight line coinciding with vector $\vb{v}$ there is no magnetic field induction,
@@ -208,7 +209,7 @@ B & =  \frac{1}{c} \mu_{r}\, \frac{2 \pi IR^{2}}{(R^{2}+h^{2})^{3/2}} = \frac{1}
 \end{alignat*}
 where $h$ is the distance from point $A$ to the centre of the turn (loop), $R$ is the radius and $S$ is the area of the turn.
 
-\begin{marginfigure}[-2cm]
+\begin{marginfigure}[-4cm]
 \centering
 \includegraphics[width=0.6\textwidth]{figs/ch-23/fig-23-06.pdf}
 \sidecaption{The magnetic field at the centre of a circular turn, or loop.\label{fig-23-06}}
@@ -224,13 +225,13 @@ The magnitudes of vectors $\vb{B}$ and $\vb{H}$ equal
 B & = \mu_{0} \mu_{r}\, \frac{I}{2R}, \,\, && H  = \frac{I}{2R}\,\, &&  \text{(in SI units),} \\
 B & =  \frac{2 \pi}{c} \mu_{r}\, \frac{I}{R}, \,\, && H  = \frac{1}{c} \, \frac{2 \pi I}{R}\,\, &&  \text{(in Gaussian units.)}
 \end{alignat*}
-The direction of the magnetic field is along the axis of the loop and perpendicular to its plane (\figr{fig-23-06}).
-
-\begin{marginfigure}%[-2cm]
+\begin{marginfigure}[-4cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-23/fig-23-07.pdf}
 \sidecaption{The magnetic field at the centre of a toroid.\label{fig-23-07}}
 \end{marginfigure}
+The direction of the magnetic field is along the axis of the loop and perpendicular to its plane (\figr{fig-23-06}).
+
 
 \subsection{}\label{23.3.7} A \redem{toroid} is an annular coil wound on a core having the shape of a torus (\figr{fig-23-07}). The magnetic field of a toroid is completely confined within its volume.
 

@@ -9,6 +9,7 @@
 	top=15mm,
 	bottom=15mm,
 	textheight=120mm,
+	head=18.0pt,
 	headsep=5mm, left=10mm,
 	marginpar=50mm,
 	textwidth=80mm,
@@ -31,8 +32,10 @@
 \usepackage{mlmodern}
 %\usepackage{bm}
 %\usepackage{boisik}
+\usepackage[protrusion=true,expansion=true,tracking=smallcaps,letterspace=100]{microtype}
+\microtypecontext{spacing=nonfrench}
 
-\usepackage[protrusion=allmath,tracking=smallcaps,letterspace=100]{microtype}
+%\usepackage[protrusion=allmath,tracking=smallcaps,letterspace=100]{microtype}
 
 \usepackage[utf8]{inputenc}
 
@@ -86,17 +89,35 @@
 \newcommand{\hltxt}[1]{\textcolor{OrangeRed}{#1}}% prints in red
 \newcommand{\redem}[1]{\hltxt{\emph{#1}}}% prints in red
 
+% redefine chapter, section headings using koma style
 
-\titleformat{\chapter}
-  {\normalfont\bfseries\huge\color{DarkBlue}}
-  {\thechapter}{1em}{}
-\titleformat{\section}
-  {\normalfont\bfseries\Large\color{Maroon}}
-  {\thesection}{1em}{}
-\titleformat{\subsection}
-  {\normalfont\bfseries\large\color{Maroon!70}}
-  {\thesubsection}{1.5em}{}
-%\setlength{\parskip}{0.5\baselineskip}
+\RedeclareSectionCommand[
+  beforeskip=1em,
+  afterskip=.5em,
+  font=\normalfont\bfseries\huge\color{DarkBlue}
+]{chapter}
+
+\RedeclareSectionCommand[
+  beforeskip=1em,
+  afterskip=.5em,
+  font=\normalfont\bfseries\Large\color{Maroon}
+]{section}
+
+\RedeclareSectionCommand[
+  beforeskip=1em,
+  afterskip=.5em,
+  font=\normalfont\bfseries\large\color{Maroon!70}
+]{subsection}
+
+
+\RedeclareSectionCommand[
+  tocnumwidth=3.5em
+]{section}
+
+\tracinglostchars=1
+%https://tex.stackexchange.com/questions/731957/how-to-supress-missing-character-there-is-no-u003b-in-font-nullfont
+\hfuzz=1pt
+% This tells LaTeX not to warn about overfull boxes unless they’re more than 1pt over.
 
 \newcommand*\figr[1]{\hyperref[#1]{Figure~\ref{#1}}}
 \newcommand*\tabl[1]{\hyperref[#1]{Table~\ref{#1}}}

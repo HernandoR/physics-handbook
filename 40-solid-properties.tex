@@ -107,23 +107,23 @@ The \redem{degree of elasticity} is the ratio of the work that can be done by a 
 
 \subsection{}\label{40.3.3} The physical quantity equal to the elastic force $\dd \vb{F}_{el}$ per unit area $\dd S$ of the cross section of the body being deformed is called the \redem{stress} $\sigma$:
 \begin{equation*}%
-\sigma = \dv{\vb{F}_{el}}{S}
+\sigma = \dv{\vb{F}_{el}}{S}.
 \end{equation*}
 The stress is said to be \redem{normal} if force $\dd \vb{F}_{el}$ is normal to the surface $\dd S$ and \redem{tangential}, or \redem{shearing}, if the force is tangential to this surface. 
 
 \subsection{}\label{40.3.4} A measure of the deformation is the \redem{unit strain}, or \redem{relative deformation}. It is equal to the ratio of the absolute deformation $\Delta x$ to the initial value of the quantity $x$, which characterizes the shape or dimensions of a deformed body: $\Delta x/x$.
-
+\begin{marginfigure}%[-3cm] 
+\centering
+\includegraphics[width=\textwidth]{figs/ch-40/fig-40-01.pdf}
+\sidecaption{Stress as a function of the unit deformation.\label{fig-40-01}}
+\end{marginfigure}
 \redem{Hooke's law} states that the stress in an elastically deformed body is proportional to its unit strain. Thus
 \begin{equation*}%
 \sigma = K_{x} \frac{\Delta x}{x},
 \end{equation*}
 where $K_{x}$ is the modulus of elasticity, equal in magnitude to the stress developed in relative deformation equal to unity. The quantity $\alpha_{x} = 1/K_{x}$ is called the \redem{coefficient of elasticity}. Hooke's law is valid only for sufficiently small relative deformation. The stress $\sigma_{p}$ at which the deformation is no longer proportional to the stress is called the \redem{proportional elastic limit} (point $A$ in \figr{fig-40-01}).
 
-\begin{marginfigure}%[-3cm] 
-\centering
-\includegraphics[width=\textwidth]{figs/ch-40/fig-40-01.pdf}
-\sidecaption{Stress as a function of the unit deformation.\label{fig-40-01}}
-\end{marginfigure}
+
 
 
 \subsection{}\label{40.3.5} In addition to elastic forces, there are forces of other origin than elastic forces, but which satisfy the equation
@@ -148,12 +148,13 @@ strain continues to increase without increasing the stress (horizontal portion $
 \subsection{}\label{40.3.8} If the load on a body, deformed to the stress $\sigma_{a}$ (point $a$ in the diagram in \figr{fig-40-01}) is slowly removed, the curve $\sigma =
  \varphi (\Delta l/l)$ is the straight line $aR$, parallel to the straight portion $OA$ of the diagram. The line segment $OR$ determines the \redem{permanent set}, typical of plastic deformation.
 
-\subsection{}\label{40.3.9} \redem{Shear} is the deformation of a body in which all its flat layers, parallel to a certain \redem{shear plane}, are displaced parallel in one another without distortion or any changes in dimensions (\figr{fig-40-02}). Shear results from the action of tangential force $\vb{F}$, applied to face $BC$, parallel to the shear plane. Face $AD$, parallel to face $BC$, is fixed. For small shear deformation
 \begin{marginfigure}%[-3cm] 
 \centering
 \includegraphics[width=\textwidth]{figs/ch-40/fig-40-02.pdf}
 \sidecaption{Shear in a body.\label{fig-40-02}}
 \end{marginfigure}
+
+\subsection{}\label{40.3.9} \redem{Shear} is the deformation of a body in which all its flat layers, parallel to a certain \redem{shear plane}, are displaced parallel in one another without distortion or any changes in dimensions (\figr{fig-40-02}). Shear results from the action of tangential force $\vb{F}$, applied to face $BC$, parallel to the shear plane. Face $AD$, parallel to face $BC$, is fixed. For small shear deformation
 \begin{equation*}%
 \gamma \approx \tan \gamma = \frac{\overline{CC'}}{\overline{CD}},
 \end{equation*}
@@ -185,7 +186,14 @@ r_{m} = u_{l} - u_{s} + p (v_{l} - v_{s}),
 \end{equation*}
 where $u_{l}$ and $u_{s}$ are the specific internal energies \ssect{9.1.2} of the substance (internal energies per unit volume) in the liquid and solid phases, $v_{l}$ and $v_{s}$ are the specific volumes of the liquid and solid phases, and $p$ is the constant pressure at which the first-order transition proceeds \ssect{12.4.2}.
 
-\subsection{}\label{40.4.4} The melting point Tm depends upon the pressure $p$. A change of $\dd p$ in the pressure leads to a change in the melting point by $\dd T_{m}$. The dependence $T_{m} = Tm ( p)$ is expressed by the Clapeyron-Clausius equation (see also \ssect{13.6.5}):
+\subsection{}\label{40.4.4} 
+\begin{marginfigure}%[-1.5cm] 
+\centering
+\includegraphics[width=0.7\textwidth]{figs/ch-40/fig-40-04.pdf}
+\sidecaption{Dependence of phases on pressure and temperature, a $pT$ diagram.\label{fig-40-04}}
+\end{marginfigure}
+
+The melting point Tm depends upon the pressure $p$. A change of $\dd p$ in the pressure leads to a change in the melting point by $\dd T_{m}$. The dependence $T_{m} = Tm ( p)$ is expressed by the Clapeyron-Clausius equation (see also \ssect{13.6.5}):
 \begin{equation*}%
 \dv{T_{m}}{p} = \frac{T_{m} (v_{l} - v_{s})}{r_{m}}.
 \end{equation*}
@@ -193,24 +201,16 @@ The notation is defined in \ssect{40.4.3}. The Clapeyron-Clausius (equation is v
 
 In the overwhelming majority of cases the melting of a substance leads to an increase in its specific volume, i.e. $v_{l} > v_{s}$ and ($\dv*{T_{m}}{p} > 0$, $(r_{m} >0)$, i.e. the melting point increases with the pressure. Such substances can be in the solid state at high pressures in the temperature region above the critical temperature \ssect{12.3.1}.
 
-The specific volume of certain substances (water, bismuth, gallium) increases in melting, so that $v_{l} < v_{s}$. Ice, for instance, at \SI{0}{\degreeCelsius} has a lower density than water. For such substances $\dv*{T_{m}}{p} < 0$, i.e. the melting point decreases as the pressure is increased.
-\begin{marginfigure}[-1.5cm] 
-\centering
-\includegraphics[width=0.7\textwidth]{figs/ch-40/fig-40-04.pdf}
-\sidecaption{Dependence of phases on pressure and temperature, a $pT$ diagram.\label{fig-40-04}}
-\end{marginfigure}
-
-\begin{marginfigure}[3cm] 
+\begin{marginfigure}%[3cm] 
 \centering
 \includegraphics[width=0.6\textwidth]{figs/ch-40/fig-40-05.pdf}
 \sidecaption{Dependence of phases on pressure and temperature, a $pT$ diagram.\label{fig-40-05}}
 \end{marginfigure}
 
-\begin{marginfigure}[7.75cm] 
-\centering
-\includegraphics[width=0.6\textwidth]{figs/ch-40/fig-40-06.pdf}
-\sidecaption{Dependence of phases on pressure and temperature, a $pT$ diagram.\label{fig-40-06}}
-\end{marginfigure}
+The specific volume of certain substances (water, bismuth, gallium) increases in melting, so that $v_{l} < v_{s}$. Ice, for instance, at \SI{0}{\degreeCelsius} has a lower density than water. For such substances $\dv*{T_{m}}{p} < 0$, i.e. the melting point decreases as the pressure is increased.
+
+
+
 
 \subsection{}\label{40.4.5} In a $pT$ diagram, the dependence
 of the temperature on the pressure $p = f (T)$ in a first-order
@@ -221,6 +221,11 @@ two-phase system: liquid-vapour. Since $v_{v} - v_{l} > 0$ (where $v_{v}$ is the
 curves of the two-phase solid-liquid states for the cases
 when $v_{l} > v_{s}$ and $v_{l} < v_{s}$, respectively.
 
+\begin{marginfigure}%[7.75cm] 
+\centering
+\includegraphics[width=0.6\textwidth]{figs/ch-40/fig-40-06.pdf}
+\sidecaption{Dependence of phases on pressure and temperature, a $pT$ diagram.\label{fig-40-06}}
+\end{marginfigure}
 
 \subsection{}\label{40.4.6} In cooling liquids to a certain temperature, called the \redem{freezing point} $T_{f}$ (or \redem{temperature of solidification}), the substance is solidified (crystallized, or frozen). This is the transition from a liquid to a solid crystalline state. In this process a quantity of heat is evolved that is equal to the heat of melting \ssect{40.4.3}. The freezing point is equal to the melting point and depends upon the presence of impurities in the substance. Impurities lower Tf if they do not form mixed crystals with the substance. These are called solid solutions. Sea water, for instance, containing dissolved salts, freezes at a lower temperature than distilled water. This serves as the basis for producing cooling mixtures.
 
