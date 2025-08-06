@@ -9,19 +9,19 @@
 \label{sec-7.1}
 \subsection{}\label{7.1.1} It is assumed in classical (Newtonian) mechanics that distances and time intervals remain unchanged in going over from one frame of reference to any other frame that is in motion in even the most arbitrary manner with re­spect to the first frame. For example, assume that $K$ is 
 an inertial frame with origin at point $O^{*}$ and $S$ is a \emph{non-inertial} frame with its origin at point $O$ (\figr{fig-07-01}).
-\begin{figure}[!ht]
+\begin{marginfigure}%[!ht]
 %\begin{wrapfigure}{r}{0.5\linewidth}
 \centering
-\includegraphics[width=0.5\textwidth]{figs/ch-07/fig-07-01.pdf}
+\includegraphics[width=0.8\textwidth]{figs/ch-07/fig-07-01.pdf}
 %\input{figs/ch-03/fig-03-01}
 %  \vspace{-13pt}
-\caption{Inertial and non-inertial frames of reference.}
-\label{fig-07-01}
-\end{figure}
+\sidecaption{Inertial and non-inertial frames of reference.
+\label{fig-07-01}}
+\end{marginfigure}
 
 In the general case, the mo­tion of frame $S$ with respect to frame $K$ can be regarded as the sum of two motions: translational motion of point $O$ at the velocity $\vb{v}_{0}$ and rotation about this point at the angular velocity $\pmb{\Omega}$. Radius vectors $\vb{r}^{*}$ and $\vb{r}$ of arbitrary particle $M$, measured in frames $K$ and $S$, are related by the equation
 \begin{equation*}%
-\vb{r}^{*} = \vb{r}^{*}_{0} + \vb{r}
+\vb{r}^{*} = \vb{r}^{*}_{0} + \vb{r},
 \end{equation*}
 where $\vb{r}^{*}_{0}$ is the radius vector of point $O$ measured in frame of reference $K$.
 
@@ -29,37 +29,37 @@ where $\vb{r}^{*}_{0}$ is the radius vector of point $O$ measured in frame of re
 
 The \emph{relative velocity} $\vb{v}_{r}$ of particle $M$, i.e. its velocity with respect to frame $S$, equals
 \begin{equation*}%
-\vb{v}_{r} = \dv{x}{t} \vb{i} +\dv{y}{t} \vb{j} + \dv{z}{t} \vb{k} 
+\vb{v}_{r} = \dv{x}{t} \vu{i} +\dv{y}{t} \vu{j} + \dv{z}{t} \vu{k}, 
 \end{equation*}
-where $x$, $y$ and $z$ are the Cartesian coordinates of particle $M$, and $\vb{i}$, $\vb{k}$ and $\vb{k}$ are the unit vectors of the coordinate axes in frame $S$.
+where $x$, $y$ and $z$ are the Cartesian coordinates of particle $M$, and $\vu{i}$, $\vu{k}$ and $\vu{k}$ are the unit vectors of the coordinate axes in frame $S$.
 
 The \emph{absolute velocity} of particle $M$, i.e. its velocity $\vb{v}$ in the frame of reference $K$, equals
 \begin{equation*}%
-\vb{v} = \dv{\vb{r}^{*}}{t}= \vb{v}_{0} + x\dv{\vb{i}}{t}  + y\dv{\vb{j}}{t}  + z \dv{ \vb{k}}{t} + \vb{v}_{r}
+\vb{v} = \dv{\vb{r}^{*}}{t}= \vb{v}_{0} + x\dv{\vu{i}}{t}  + y\dv{\vu{j}}{t}  + z \dv{ \vu{k}}{t} + \vb{v}_{r},
 \end{equation*}
 where $\vb{v}_{0}= \dv*{\vb{r}^{*}_{0}}{t}$ is the absolute velocity of point $O$. Since the unit vectors of moving frame $S$ can change in frame of reference $K$ only due to the rotation of frame $S$ about point $O$ at the angular velocity $\pmb{\Omega}$,
 \begin{align*}%
 \dv{\vb{i}}{t} & = \qty[\pmb{\Omega} \vb{i}], \quad \dv{\vb{j}}{t} = \qty[\pmb{\Omega} \vb{j}], \quad \dv{\vb{k}}{t} = \qty[\pmb{\Omega} \vb{k}] \\
 \intertext{and}
-\vb{v} & =  \vb{v}_{t} + \vb{v}_{r}
+\vb{v} & =  \vb{v}_{t} + \vb{v}_{r},
 \end{align*}
 where $\vb{v}_{t} = \vb{v}_{0}+ \qty[\pmb{\Omega} \vb{k}]$ is the \emph{velocity of transportation} of par­ticle $M$. It is also called the \emph{bulk}, or \emph{drift}, \emph{velocity} and is equal to the absolute velocity of the point of moving frame of ref­erence $S$ (i.e. rigidly fixed in this frame) in which particle $M$ is located at the given instant of time.
 
 \subsection{}\label{7.1.3} The \emph{relative acceleration} $\vb{a}_{r}$ of particle $M$ (its acceleration with respect to frame $S$) equals
 \begin{equation*}%
-\vb{a}_{r} = \dv[2]{x}{t} \vb{i} +\dv[2]{y}{t} \vb{j} + \dv[2]{z}{t} \vb{k} 
+\vb{a}_{r} = \dv[2]{x}{t} \vb{i} +\dv[2]{y}{t} \vb{j} + \dv[2]{z}{t} \vb{k}.
 \end{equation*}
 The \emph{absolute acceleration} of particle $M$, i.e. its acceleration with respect to frame $K$, equals
 \begin{equation*}%
-\vb{a} = \dv{\vb{v}}{t} = \vb{a}_{t} + \vb{a}_{C}  + \vb{a}_{r}
+\vb{a} = \dv{\vb{v}}{t} = \vb{a}_{t} + \vb{a}_{C}  + \vb{a}_{r}.
 \end{equation*}
 Here
 \begin{equation*}%
-\vb{a}_{t} = \dv{\vb{v}_{0}}{t} + \left[ \dv{\pmb{\Omega}}{t} \vb{r} \right] + \qty[\pmb{\Omega}[\pmb{\Omega}\vb{r}]]
+\vb{a}_{t} = \dv{\vb{v}_{0}}{t} + \left[ \dv{\pmb{\Omega}}{t} \vb{r} \right] + \qty[\pmb{\Omega}[\pmb{\Omega}\vb{r}]],
 \end{equation*}
 is the \emph{acceleration of transportation} of particle $M$. It is equal to the absolute acceleration of the point in moving frame $S$ in which particle $M$ is located at the given instant of time, and
 \begin{equation*}%
-\vb{a}_{C} = 2\qty[\pmb{\Omega}\vb{v}_{r}]
+\vb{a}_{C} = 2\qty[\pmb{\Omega}\vb{v}_{r}],
 \end{equation*}
 is the \emph{Coriolis acceleration} of particle $M$. The Coriolis accelera­tion has its maximum value if the relative velocity $\vb{v}_{r}$ of the particle is perpendicular to the vector $\pmb{\Omega}$ of angular velocity of the moving frame of reference. It is equal to zero if the angle between vectors $\vb{v}_{r}$ and $\pmb{\Omega}$ equals zero or $\pi$, or if even one of these vectors equals zero.
 
@@ -70,33 +70,33 @@ is the \emph{Coriolis acceleration} of particle $M$. The Coriolis accelera­tion
 
 \subsection{}\label{7.2.2} The fundamental law of dynamics for a particle in non-inertial frames of reference can be derived from Newton's second law and the relation between the absolute and relative accel­erations of a particle. It follows from \ssect{7.1.3} that the product of the mass $m$ of a particle by its relative acceleration equals
 \begin{equation*}%
-m \vb{a}_{r} = m \vb{a} - m \vb{a}_{t} - m \vb{a}_{C}
+m \vb{a}_{r} = m \vb{a} - m \vb{a}_{t} - m \vb{a}_{C}.
 \end{equation*}
 According to Newton's second law, formulated to apply to the absolute motion of a particle, i.e. its motion with respect to inertial frame $K$,
 \begin{equation*}%
-m \vb{a} = \vb{F}
+m \vb{a} = \vb{F},
 \end{equation*}
 where $\vb{F}$ is the vector sum of all forces acting on the particle. Hence, the \emph{fundamental equation of dynamics of a particle's relative motion} is of the form:
 \begin{equation*}%
-m \vb{a}_{r} = \vb{F} -  m \vb{a}_{t} - m \vb{a}_{C}
+m \vb{a}_{r} = \vb{F} -  m \vb{a}_{t} - m \vb{a}_{C}.
 \end{equation*}
 This equation can be reduced to a form similar to the funda­mental law of dynamics for the absolute motion of a particle:
 \begin{equation*}%
-m \vb{a}_{r} = \vb{F} + \vb{I}_{t} + \vb{I}_{C}
+m \vb{a}_{r} = \vb{F} + \vb{I}_{t} + \vb{I}_{C}.
 \end{equation*}
 The vector quantities $\vb{I}_{t} = - m\vb{a}_{t}$ and $\vb{I}_{C} = - m\vb{a}_{C}$ have the dimensionality of force and are called the \emph{inertial force of trans­portation} and the \emph{Coriolis inertial force}, respectively.
 
 \subsection{}\label{7.2.3} It follows from \ssect{7.1.3} that in the general case the inertial force of transportation is the sum of three terms:
 \begin{equation*}%
-\vb{I}_{t} = -m \dv{\vb{v}_{0}}{t} - m \left[ \dv{\pmb{\Omega}}{t} \vb{r} \right] - m\qty[\pmb{\Omega}[\pmb{\Omega}\vb{r}]]
+\vb{I}_{t} = -m \dv{\vb{v}_{0}}{t} - m \left[ \dv{\pmb{\Omega}}{t} \vb{r} \right] - m\qty[\pmb{\Omega}[\pmb{\Omega}\vb{r}]].
 \end{equation*}
 The last term on the right-hand side of this equation
 \begin{equation*}%
-\vb{I}_{c\!f} = - m\qty[\pmb{\Omega}[\pmb{\Omega}\vb{r}]]
+\vb{I}_{c\!f} = - m\qty[\pmb{\Omega}[\pmb{\Omega}\vb{r}]],
 \end{equation*}
 is called the \emph{centrifugal force of inertia}, or simply the \emph{centrifugal force}, because this vector is perpendicular to the instantaneous axis of rotation (to vector $\pmb{\Omega}$) of the non-inertial frame $S$ and its direction is away from this axis. Numerically the centri­fugal force equals
 \begin{equation*}%
-I_{c\!f} = - m\Omega^{2} \rho
+I_{c\!f} = - m\Omega^{2} \rho,
 \end{equation*}
 where $\rho$ is the distance from a particle of mass $m$ to the instan­taneous axis of rotation of the frame of reference.
 
@@ -104,7 +104,7 @@ The inertial force of transportation coincides with the centri­fugal force when
 
 \subsection{}\label{7.2.4} The Coriolis inertial force is 
 \begin{equation*}%
-I_{C} = 2 m \qty[\vb{v}_{r}\pmb{\Omega}]
+I_{C} = 2 m \qty[\vb{v}_{r}\pmb{\Omega}].
 \end{equation*}
 This force acts on the particle only when the non-inertial frame of reference rotates and the particle moves with respect to this frame. Thus, for example, particles of water in rivers of the Northern Hemisphere that flow meridionally are subject to the action of a Coriolis inertial force. This force is perpen­dicular to the velocity of flow of the river and leads to under­ mining the right bank in the direction of flow.
 
@@ -121,26 +121,26 @@ There can be no closed systems of bodies in non-inertial frames of reference bec
 
 It follows from the equations in \ssect{7.2.2} and \ssect{7.2.3} that the equation of relative motion of a particle of mass $m$ in a frame of reference fixed to the earth is of the form
 \begin{equation*}%
-m \vb{a}_{r} = \vb{F} + \vb{F}_{g\!r} + \vb{I}_{c\!f} + \vb{I}_{C}
+m \vb{a}_{r} = \vb{F} + \vb{F}_{g\!r} + \vb{I}_{c\!f} + \vb{I}_{C},
 \end{equation*}
 where $\vb{I}_{c\!f}$ and $ \vb{I}_{C}$ are the cen­trifugal and Coriolis inertial forces. $\vb{F}_{g\!r}$ is the gravitation­ al attraction of the earth for the particle \ssect{6.1.3}, and $\vb{F}$ is the sum of all the other forces acting on the particle, with the exception of the gravitational forces. 
-\begin{figure}[!ht]
+\begin{marginfigure}%[!ht]
 %\begin{wrapfigure}{r}{0.5\linewidth}
 \centering
-\includegraphics[width=0.5\textwidth]{figs/ch-07/fig-07-02.pdf}
+\includegraphics[width=0.8\textwidth]{figs/ch-07/fig-07-02.pdf}
 %\input{figs/ch-03/fig-03-01}
 %  \vspace{-13pt}
-\caption{The Coriolis force in a non-inertial frame of reference.}
-\label{fig-07-02}
-\end{figure}
+\sidecaption{The Coriolis force in a non-inertial frame of reference.
+\label{fig-07-02}}
+\end{marginfigure}
 
 \subsection{}\label{7.3.2} The \emph{gravity force of a body} is the force P, applied to the body and equal to the vector sum of the force $\vb{F}_{g\!r}$ of gravitational attraction of the earth for the body \ssect{6.1.3} and the centrifugal inertial force $\vb{I}_{c\!f}$ due to the diurnal rotation of the earth (\figr{fig-07-02}):
 \begin{equation*}%
-\vb{P} = \vb{F}_{g\!r} + \vb{I}_{c\!f}
+\vb{P} = \vb{F}_{g\!r} + \vb{I}_{c\!f}.
 \end{equation*}
 i.e.
 \begin{equation*}%
-\vb{P} = - G \frac{mM_{\Earth}}{r^{3}}\vb{r} - m \qty[\pmb{\Omega}[\pmb{\Omega}\vb{r}]]
+\vb{P} = - G \frac{mM_{\Earth}}{r^{3}}\vb{r} - m \qty[\pmb{\Omega}[\pmb{\Omega}\vb{r}]].
 \end{equation*}
 Here $m$ and $M_{\Earth}$ are the masses of the body and the earth, $\vb{r}$ is the radius vector drawn from the centre of the earth to the place where the body is located, $\pmb{\Omega}$ is the angular velocity of diurnal rotation of the earth, and $G$ is the gravitational constant \ssect{6.1.1}.
 
@@ -160,7 +160,7 @@ The gravity force of a body coincides with the gravitational attraction of the e
 
 The free fall acceleration of a body falling to the earth, mea­ sured in a non-inertial frame of reference rotating together with the earth, can he found by the motion equation \ssect{7.3.1} by putting $\vb{F} = 0, \,\, \vb{F}_{g\!r} + \vb{I}_{c\!f} = m\vb{g}$ and $I_{C} = 2m \qty[\vb{v}_{r}\pmb{\Omega}]$. Then
 \begin{equation*}%
-\vb{a}_{r}= \vb{g} + 2\qty[\vb{v}_{r}\pmb{\Omega}]
+\vb{a}_{r}= \vb{g} + 2\qty[\vb{v}_{r}\pmb{\Omega}].
 \end{equation*}
 If $\vb{v}_{r} = 0, \,\, \vb{a}_{r} = \vb{g}$.
 
@@ -168,23 +168,23 @@ Consequently, vector $\vb{g}$ is equal to the free fall acceleration of the body
 
 If the relative velocity of a freely falling body $\vb{v}_{r}=0$, its acceleration with respect to the earth is not $\vb{g}: \vb{g} = \vb{a}_{r}+ 2\qty[\vb{v}_{r}\pmb{\Omega}]$. At velocities $v_{r} < \SI{680}{\meter\per\second}$, however, the values of $\vb{g}$ and $\vb{a}_{r}$ differ by less than one per cent. It can therefore be assumed in many cases that with respect to an observer on the earth free fall of a body is caused only by the gravity force acting on and imparting the acceleration g to the body. In a similar manner the action of the Coriolis inertial force on a freely falling body can be treated as a comparatively small perturbation. Thus, for instance, a freely falling body is deviated by the Coriolis force to the east of the direction assumed by a plumb line, i.e. from the direction of the vector $\vb{P} = m\vb{g}$. This devia­tion for a body falling freely without any initial velocity from the height $h$ is equal, at the latitude $\varphi$, to
 \begin{equation*}%
-s = \frac{2}{3} \Omega h \sqrt{\dfrac{2h}{g}} \cos \varphi
+s = \frac{2}{3} \Omega h \sqrt{\dfrac{2h}{g}} \cos \varphi.
 \end{equation*}
 If, for example, $h = \SI{160}{\meter}$ and $\varphi = \ang{45},\,\, s = \SI{1.55}{\centi\meter}$. 
 
 \subsection{}\label{7.3.6} The \emph{weight of a body} is the force $\vb{Q}$ with which it acts, due to the earth's gravity, on a support or suspension that prevents it from falling freely. It is assumed that the body and its support (or suspension) are fixed with respect to the frame of reference in which the weight is determined. The force $-\vb{Q}$ is exerted by the support or suspension on the body. It follows from the fundamental equation of dynamics of rela­tive motion \ssect{7.2.2}, where $\vb{a}_{r} =\vb{a}_{C} = 0$ and $\vb{F} = \vb{F}_{g\!r} - \vb{Q}$, that
 \begin{equation*}%
-\vb{Q} = \vb{F}_{g\!r} + \vb{I}_{t}
+\vb{Q} = \vb{F}_{g\!r} + \vb{I}_{t},
 \end{equation*}
 where $\vb{F}_{g\!r}$ is the force of gravitational attraction of the earth for the body, and $\vb{I}_{t}$ is the inertial force of transportation due to the non-inertial nature of the frame of reference. 
 
 \noindent\hlblue{Example 1.} The weight of a body in a frame of reference fixed to the earth is equal to the gravity force of the body \ssect{7.3.2}:
 \begin{equation*}%
-\vb{Q} = \vb{F}_{g\!r} + \vb{I}_{c\!f} = \vb{P}
+\vb{Q} = \vb{F}_{g\!r} + \vb{I}_{c\!f} = \vb{P}.
 \end{equation*}
 \hlblue{Example 2.} The weight of a body in a frame of reference at­tached to a lift (elevator) which travels with translational motion with respect to the earth with the acceleration $\vb{a}_{0}$:
 \begin{equation*}%
-\vb{Q} = \vb{P} - m \vb{a}_{0}
+\vb{Q} = \vb{P} - m \vb{a}_{0}.
 \end{equation*}
 If the lift falls freely, $\vb{a}_{0}= \vb{g}$, the free fall acceleration, and the weight of the body in the lift is $\vb{Q} = 0$, i.e. the body is in the state of weightlessness.
 
