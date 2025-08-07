@@ -46,8 +46,7 @@ It is the closing line of the polygon of forces $\vb{F_{1}}, \,\vb{F_{2}},\,\vb{
 %\includegraphics{figs/ch-02/fig-02-01.pdf}
 \input{figs/ch-02/fig-02-01}
 %  \vspace{-13pt}
-\caption{Resultant force is equal to vector sum of the component forces.}
-\label{fig-02-01}
+\sidecaption{Resultant force is equal to vector sum of the component forces. \label{fig-02-01}}
 \end{figure}
 %\end{wrapfigure}
 
@@ -81,7 +80,7 @@ These propositions of Newtonian mechanics were reconsidered and revised in relat
 
 \subsection{}\label{2.3.2} The density $\rho$ of a body at a given point $M$ is the ratio of the mass dm of an infinitely small element of the body, which includes point $M$, to the quantity $dV$, which is the volume of this element. Thus
 \begin{equation*}%
-\rho = \frac{dm}{dV}
+\rho = \dv{m}{V}.
 \end{equation*}
 The size of the element being considered should be so small that any variation of density within its limits can be neglected. On the other hand, this size should he a great many times larger than intermolecular distances.
 
@@ -89,24 +88,24 @@ A body is said to be \redem{homogeneous} if the density is constant at all of it
 
 The mass of a nonhomogeneous body is
 \begin{equation*}%
-m = \int_{(V)} \rho dV
+m = \int_{(V)} \rho \dd V,
 \end{equation*}
 where $\rho$ is a function of the coordinates, and integrating is carried out over the whole volume of the body. The average den­sity $\expval{\rho}$ of a nonhomogeneous body is the ratio of its mass to its volume: $\expval{\rho} = m/V$.
 
 \subsection{}\label{2.3.3} The centre of inertia, or centre of mass, of a system of par­ticles is point $C$, whose radius vector $\vb{r}_{c}$ equals
 \begin{equation*}%
-\vb{r}_{C} = \frac{1}{m} \sum_{i=1}^{n} m_{i} \vb{r}_{i}
+\vb{r}_{C} = \frac{1}{m} \sum_{i=1}^{n} m_{i} \vb{r}_{i},
 \end{equation*}
 where $m_{i}$ and $\vb{r}_{i}$ are the mass and radius vector of the $i$th par­ticle, $n$ is the total number of particles in the system, and $m = \sum_{i=1}^{n} m_{i}$ is the mass of the whole system.
 
 The velocity of the centre of mass is
 \begin{equation*}%
-\vb{v}_{C} = \dv{\vb{r}_{C}}{t} =  \frac{1}{m} \sum_{i=1}^{n} m_{i} \vb{v}_{i}
+\vb{v}_{C} = \dv{\vb{r}_{C}}{t} =  \frac{1}{m} \sum_{i=1}^{n} m_{i} \vb{v}_{i}.
 \end{equation*}
 
 \subsection{}\label{2.3.4} The vector quantity $\vb{p}_{i}$, equal to the product of the mass $m_{i}$ of a particle by its velocity $\vb{v}_{i}$, is called the \redem{momentum of this particle}. The momentum of a system of particles is the vector $\vb{p}$, which is the geometric sum of the momenta of all the particles making up the system:
 \begin{equation*}%
-\vb{p} =   \sum_{i=1}^{n} \vb{p}_{i}
+\vb{p} =   \sum_{i=1}^{n} \vb{p}_{i}.
 \end{equation*}
 The momentum of a system is equal to the product of the mass of the whole system by the velocity of its centre of mass: $\vb{p}= m\vb{v}_{C}$.
 
@@ -115,7 +114,7 @@ The momentum of a system is equal to the product of the mass of the whole system
 
 \subsection{}\label{2.4.1} The basic law of the dynamics of a particle is Newton's second law, which discusses how the mechanical motion of a particle is changed by the effect of forces applied to it. \redem{New­ton's second law} states: the rate of change in the momentum p of a particle is equal to the force $\vb{F}$ acting on it. Thus
 \begin{equation*}%
-\dv{\vb{p}}{t} = \vb{F} \,\,\textrm{or}\,\,\dv{t} (m \vb{v}) = \vb{F}
+\dv{\vb{p}}{t} = \vb{F} \qor \dv{t} (m \vb{v}) = \vb{F},
 \end{equation*}
 where $m$ and $\vb{v}$ are the mass and velocity of the particle.
 
@@ -126,38 +125,36 @@ the general case, depends upon the time $t$.
 
 According to Newton's second law, the change in the momentum of a particle is equal to the impulse of the force acting on it:
 \begin{equation*}%
-\dd \vb{p} =  \vb{F} \dd t = \Delta \vb{p} = \vb{p}_{2} - \vb{p}_{1}  =\int_{t_{1}}^{t_{2}} \vb{F} \dd t
+\dd \vb{p} =  \vb{F} \dd t = \Delta \vb{p} = \vb{p}_{2} - \vb{p}_{1}  =\int_{t_{1}}^{t_{2}} \vb{F} \dd t.
 \end{equation*}
 where $\vb{p}_{2}= \vb{p} (t_{2})$ and $\vb{p}_{1}= \vb{p} (t_{1})$ are the values of the momen­tum of a particle at the end  $t = t_{2}$ and beginning $t = t_{1}$ of Ihe time interval being considered.
 
 \subsection{}\label{2.4.3} Since in Newtonian mechanics the mass $m$ of a particle is independent of its state of motion, $\dv*{m}{t} = 0$. Hence, the mathematical expression of Newton's second law can also be presented in the form
 \begin{equation*}%
-\vb{a} = \frac{\vb{F}}{m}
+\vb{a} = \frac{\vb{F}}{m},
 \end{equation*}
 where $\vb{a} = \dv*{\vb{v}}{t} = \dv*[2]{\vb{r}}{t}$ is the acceleration of the particle and $\vb{r}$ is its radius vector. The corresponding statement of \redem{Newton's second law reads}: the acceleration of a particle coin­cides in direction with the force acting on it and is equal to the ratio of this force to the mass of the particle. The tangential and normal accelerations of a particle (\ref{1.4.4}, \ref{1.4.5} and \ref{1.4.6}) are determined by the corresponding compo­nents of force $\vb{F}$:
 \begin{align*}%
-\vb{a}_{\tau} & = \frac{\vb{F}_{\tau}}{m}, \,\, a_{\tau} = \dv{v}{t} = \frac{F_{\tau}}{m}\\
-and& \\
+\vb{a}_{\tau} & = \frac{\vb{F}_{\tau}}{m}, \,\, a_{\tau} = \dv{v}{t} = \frac{F_{\tau}}{m} \qand \\
 \vb{a}_{n} & = \frac{\vb{F}_{n}}{m}, \,\, a_{n} = \frac{v^{2}}{R} = \frac{F_{n}}{m}
 \end{align*}
-where $v$ is Ihe magnitude of the particle's velocity vector, and $R$ is the radius of curvature of its path. The force $F_{n}$, imparting normal acceleration to a particle, is directed toward the centre
-of curvature \ssect{1.2.4} of the particle's path and is therefore called the \redem{centripetal force}.
+where $v$ is the magnitude of the particle's velocity vector, and $R$ is the radius of curvature of its path. The force $F_{n}$, imparting normal acceleration to a particle, is directed toward the centre of curvature \ssect{1.2.4} of the particle's path and is therefore called the \redem{centripetal force}.
 
 \subsection{}\label{2.4.4} If a particle is subject to the simultaneous action of sev­ eral forces, $\vb{F_{1}}, \,\vb{F_{2}},\,\vb{F_{3}},\ldots{} \,\vb{F_{n}}$, its acceleration is
 \begin{equation*}%
-\vb{a} = \frac{1}{m} \sum_{l=1}^{n}\vb{F}_{l} = \sum_{l=1}^{n}\vb{a}_{l} 
+\vb{a} = \frac{1}{m} \sum_{l=1}^{n}\vb{F}_{l} = \sum_{l=1}^{n}\vb{a}_{l},
 \end{equation*}
 where $\vb{a}_{l} = \vb{F}_{l}/m$. Consequently, each of the forces acting si­multaneously on a particle imparts to it the acceleration it would have if there were no other forces (\redem{principle of superposi­tion, or independence, of forces}).
 
 The equation
 \begin{equation*}%
-m \dv[2]{\vb{r}}{t}  = \vb{F} = \sum_{l=1}^{n} \vb{F}_{l}
+m \dv[2]{\vb{r}}{t}  = \vb{F} = \sum_{l=1}^{n} \vb{F}_{l},
 \end{equation*}
 is called the \redem{differential equation of motion of a particle}.
 
 In projections on the axes of a rectangular Cartesian coordinate system, this equation is of the form
 \begin{equation*}%
-m \dv[2]{x}{t}  = F_{x},\,\,m \dv[2]{y}{t}  = F_{y},\,\,m \dv[2]{z}{t}  = F_{z}
+m \dv[2]{x}{t}  = F_{x},\,\,m \dv[2]{y}{t}  = F_{y},\,\,m \dv[2]{z}{t}  = F_{z},
 \end{equation*}
 where $x$, $y$ and $z$ are the coordinates of the moving particle.
 
@@ -170,29 +167,29 @@ where $x$, $y$ and $z$ are the coordinates of the moving particle.
 
 If $\vb{F}_{ik}$ is a force exerted on the $i$th particle by the $k$th one, and $\vb{F}_{ki}$ is, the force exerted on the $k$th particle by the $i$th one, then, according to Newton's third law,
 \begin{equation*}%
-\vb{F}_{ki} = - \vb{F}_{ik}
+\vb{F}_{ki} = - \vb{F}_{ik}.
 \end{equation*}
 Forces $\vb{F}_{ik}$ and $\vb{F}_{ki}$ are applied to different particles and can be mutually counterbalanced only when particles $i$ and $k$ belong to the same perfectly rigid body.
 
 \subsection{}\label{2.5.2} Newton's third law is an essential supplement to the first and second laws. It permits us to go over from the dynam­ics of a separate particle to that of an arbitrary mechanical system (system of particles). It follows from Newton's third law that in any mechanical system the geometric sum of all the internal forces \ssect{2.2.4} equals zero:
 \begin{equation*}%
-\sum_{i=1}^{n}\sum_{k=1}^{n} \vb{F}_{ik} = 0
+\sum_{i=1}^{n}\sum_{k=1}^{n} \vb{F}_{ik} = 0,
 \end{equation*}
 where $n$ is the number of particles in the system, and $\vb{F}_{ii} = 0$. The vector $\vb{F}^{\textrm{ext}}$, equal to the vector sum of all the external forces \ssect{2.2.4} acting on the system, is called the \redem{principal vector of external forces}:
 \begin{equation*}%
-\vb{F}^{\textrm{ext}} = \sum_{i=1}^{n} \vb{F}^{\textrm{ext}}_{i}
+\vb{F}^{\textrm{ext}} = \sum_{i=1}^{n} \vb{F}^{\textrm{ext}}_{i},
 \end{equation*}
 where $\vb{F}^{\textrm{ext}}_{i}$ is the resultant external force applied to the $i$th particle.
 
 \subsection{}\label{2.5.3} It follows from Newton's first and second laws that the first derivative with respect to the time $t$ of the momentum $\vb{p}$ of a mechanical system \ssect{2.3.4} is equal to the principal vector of all external forces applied to the system. Thus
 \begin{equation*}%
-\dv{\vb{p}}{t} = \vb{F}^{\textrm{ext}}
+\dv{\vb{p}}{t} = \vb{F}^{\textrm{ext}}.
 \end{equation*}
 This equation expresses the \redem{law of the change in the momentum of a system}. 
 
 Since $\vb{p}=m\vb{v}_{c}$, where $m$ is the mass of a system and $\vb{v}_{c}$ is the velocity of its centre of inertia, or mass, the \redem{law of motion of the centre of mass} of a mechanical system is of the form
 \begin{equation*}%
-\dv{t} (m\vb{v}_{c}) = \vb{F}^{\textrm{ext}}\,\,\textrm{or}\,\, m\vb{a}_{c} = \vb{F}^{\textrm{ext}}
+\dv{t} (m\vb{v}_{c}) = \vb{F}^{\textrm{ext}} \qor m\vb{a}_{c} = \vb{F}^{\textrm{ext}},
 \end{equation*}
 where $\vb{a}_{c} = \dv*{\vb{v}_{c}}{t}$ is the acceleration of the centre of mass. Thus, the centre of mass (centre of inertia) of a mechanical system travels like a particle whose mass is equal to the mass of the whole system and which is subject to a force equal to the principal vector of the external forces applied to the system. If the system being considered is a rigid body that travels with translational motion \ssect{1.5.1}, the velocities $\vb{v}_{i}$of all the points of the body and $\vb{v}_{c}$ of its centre of mass are the same and are equal to velocity $\vb{v}$ of the body. Correspondingly, the accelera­tion of the body $\vb{a} = \vb{a}_{c}$ and the \redem{basic equation in the dynamics of translational motion of a rigid body} is of the form
 $m \vb{a} = \vb{F}^{\textrm{ext}}$.
@@ -204,14 +201,14 @@ $m \vb{a} = \vb{F}^{\textrm{ext}}$.
 
 \redem{The equation of translational motion of a body of variable mass (Meshchersky equation)} is
 \begin{equation*}%
-m \dv{\vb{v}}{t} = \vb{F}^{\textrm{ext}} + (\vb{v}_{1} - \vb{v} ) \dv{m}{t}
+m \dv{\vb{v}}{t} = \vb{F}^{\textrm{ext}} + (\vb{v}_{1} - \vb{v} ) \dv{m}{t},
 \end{equation*}
 where $m$ and $\vb{v}$ are the mass and velocity of the body at the instant of time being considered, $\vb{F}^{\textrm{ext}}$ is the principal vector of the external forces \ssect{2.5.2} acting on the body, and $\vb{v}_{1}$ is the velocity of the detracted particles \redem{after separation} from the rocket (if $\dv*{m}{t} < 0$) or the added particles \redem{before being joined} (if $\dv*{m}{t} > 0$).
 
 \subsection{}\label{2.6.2} The second member on the right-hand side of the Me­ shchersky equation represents the additional force acting on a body of variable mass. It is called the \redem{reactive force}:
 \begin{equation*}%
 \vb{F}_{\textrm{r}}= (\vb{v}_{1} - \vb{v} ) \dv{m}{t}
-= \vb{u}  \dv{m}{t}
+= \vb{u}  \dv{m}{t},
 \end{equation*}
 where $\vb{u} = \vb{v}_{1} - \vb{v} $ is the relative velocity of the particles being separated from or joined to the body, i.e. their velocity with respect to a reference frame in translational motion together with the body.
 
@@ -219,28 +216,28 @@ The reactive force characterizes the mechanical action exerted on the body by th
 
 \subsection{}\label{2.6.3} The equation of motion of a rocket not subject to the action of external forces is
 \begin{equation*}%
-m \dv{\vb{v}}{t} = \vb{u} \dv{m}{t}
+m \dv{\vb{v}}{t} = \vb{u} \dv{m}{t}.
 \end{equation*}
 If the initial velocity of the rocket is zero the rocket flies in a straight line in the direction opposite to that of the relative velocity $\vb{u}$ of the exhaust gases ejected from the engine nozzle. Here
 \begin{equation*}%
-m \dv{v}{t} = -u \dv{m}{t}
+m \dv{v}{t} = -u \dv{m}{t},
 \end{equation*}
 and at $\vb{u} = \textrm{const}$ the relation between the velocity of the rocket and its mass is expressed by \redem{Tsiolkovsky's formula}
 \begin{equation*}%
-v = u \ln \frac{m_{0}}{m}
+v = u \ln \frac{m_{0}}{m},
 \end{equation*}
 where $m_{0}$ is the initial, or launching, mass of the rocket. 
 
 \subsection{}\label{2.6.4} The maximum velocity that a rocket can reach in the absence of external forces is called its \redem{characteristic velocity}. This velocity is acquired at the moment the rocket engine stops because it has used up all the fuel and oxidizer that were on board,
 \begin{equation*}%
-v_{\textrm{max}}=  u \ln  \frac{m_{0}}{m_{0}-m_{\textrm{f}}}
+v_{\textrm{max}}=  u \ln  \frac{m_{0}}{m_{0}-m_{\textrm{f}}},
 \end{equation*}
 where $m_{\textrm{f}}$ is the initial mass of the fuel and oxidizer.
 The effects of the earth's gravity and air resistance lead to an appreciable reduction in the maximum velocity actually ac­quired by the rocket, during the operation of its engine, as com­pared to the characteristic velocity.
 
 \subsection{}\label{2.6.5} The \redem{characteristic velocity of a multistage} (combination) \redem{rocket} is
 \begin{equation*}%
-v_{\textrm{max}}= \sum_{i=1}^{n} u_{i} \ln  \frac{m_{0i}}{m_{0i}-m_{\textrm{f}i}}
+v_{\textrm{max}}= \sum_{i=1}^{n} u_{i} \ln  \frac{m_{0i}}{m_{0i}-m_{\textrm{f}i}},
 \end{equation*}
 where $n$ is the total number of stages of the rocket, $m_{\textrm{f}i}$ is the mass of the fuel and oxidizer intended for the operation of the $i$th stage engine, $ u_{i}$ is the exhaust gas velocity (nozzle velocity) of the $i$th stage engine, and $m_{0i}$ is the launching mass of the multistage rocket, including all the stages from the $i$th to the $n$th. The velocity increase of a multistage rocket, compared to that of a single-stage one having the same launching mass and the same fuel and oxidizer capacity, is due to the reduction in the mass of the rocket as the first, second and subsequent stages are consecutively jettisoned when their fuel has been ex­hausted.
 	
@@ -249,7 +246,7 @@ where $n$ is the total number of stages of the rocket, $m_{\textrm{f}i}$ is the 
 
 \subsection{}\label{2.7.1} The \redem{law of conservation of momentum} is: the momentum $\vb{p}$ of a closed, or isolated, system does not change in the course of time, i.e.
 \begin{equation*}%
-\dv{\vb{p}}{t} \equiv 0\,\,\textrm{and}\,\,\vb{p}= \textrm{const}
+\dv{\vb{p}}{t} \equiv 0\,\,\textrm{and}\,\,\vb{p}= \textrm{const.}
 \end{equation*}
 In contrast to Newton's laws, the law, or principle, of conser­vation of momentum is valid not only within the framework of classical mechanics. It belongs to the most fundamental of physical laws because it is concerned with a definite property of the symmetry of space: its homogeneity. The \redem{homogeneity of space} is manifested in the fact that the physical properties of a closed system and the laws of its motion are independent of the choice of position of the origin of the inertial reference frame, i.e. these properties and laws are unchanged by a parallel translation of the closed system as a whole in space. According to modern concepts, fields can also have momentum, not only particles and bodies. Light, for example, exerts a pressure on the surface of a body that reflects or absorbs it because the electromagnetic field of the light wave has momentum.
 
@@ -257,15 +254,15 @@ In contrast to Newton's laws, the law, or principle, of conser­vation of moment
  
 $\vb{F}^{\textrm{ext}}\equiv 0$ and the principle of conservation of momentum follows from \ssect{2.5.3}:
 \begin{equation*}%
-\vb{p} = \sum{i=1}{n} m_{i} \vb{v}_{i} = \textrm{const}
+\vb{p} = \sum{i=1}{n} m_{i} \vb{v}_{i} = \textrm{const.},
 \end{equation*}
 where $m_{i}$ and $\vb{v}_{i}$ are the mass and velocity of the $i$th particle of the system, which consists of $n$ particles.
 
 Consequently, there is also no change in the projections of the momentum of a closed system onto the axes of Cartesian coordi­nates of an inertial reference frame:
 \begin{align*}%
-p_{x} & = \sum_{i=1}^{n} m_{i} v_{ix} = \textrm{const}\\
-p_{y} & = \sum_{i=1}^{n} m_{i} v_{iy} = \textrm{const}\\
-p_{z} & = \sum_{i=1}^{n} m_{i} v_{iz} = \textrm{const}
+p_{x} & = \sum_{i=1}^{n} m_{i} v_{ix} = \textrm{const},\\
+p_{y} & = \sum_{i=1}^{n} m_{i} v_{iy} = \textrm{const},\\
+p_{z} & = \sum_{i=1}^{n} m_{i} v_{iz} = \textrm{const}.
 \end{align*}
 The momentum of the system is $\vb{p} = m\vb{v}_{c}$, where $m$ is the mass of the system and $\vb{v}_{c}$ is the velocity of its centre of mass \ssect{2.3.4}. It follows, therefore, from the principle of conservation of mo­mentum that in any processes occurring within a closed system the velocity of its centre of mass does not change: $\vb{v}_{c} = \textrm{const}$. 
 
@@ -279,15 +276,15 @@ under the condition that $F^{\textrm{ext}}_{x} \equiv 0$. If, for instance, no o
 \section[Galilean Transformations]{Galilean Transformations. Mechanical Principle of Relativity}
 \label{sec-2.8} 
 
-\subsection{}\label{2.8.1} A \redem{Galilean transformation} is a transformation of coordi­nates and time that is applied in Newtonian mechanics in going over from one inertial frame of reference $K (x, y, z, t)$ to another $K' (x , y', z', t')$ which travels with translational motion with respect to $K$ at the constant velocity $\vb{V}$. The Galilean transformation is based on axioms concerning the absolute nature of time intervals and of lengths. The first axiom con­tends that the passage of time (time interval between any two events) is the same in all inertial frames of reference. According to the second axiom, the dimensions of a body are independent of its velocity of motion with respect to the frame of ref­erence.
+\subsection{}\label{2.8.1} A \redem{Galilean transformation} is a transformation of coordi­nates and time that is applied in Newtonian mechanics in going over from one inertial frame of reference $K (x, y, z, t)$ to another $K' (x , y', z', t')$ which travels with translational motion with respect to $K$ at the constant velocity $\vb{V}$. The Galilean transformation is based on axioms concerning the absolute nature of time intervals and of lengths. The first axiom con­tends that the passage of time (time interval between any two events) is the same in all inertial frames of reference. According to the second axiom, the dimensions of a body are independent of its velocity of motion with respect to the frame of reference.
 \begin{figure}[!ht]
 %\begin{wrapfigure}{r}{0.5\linewidth}
 \centering
 %\includegraphics[width=0.5\textwidth]{figs/ch-02/fig-02-02.pdf}
 \input{figs/ch-02/fig-02-02}
 %  \vspace{-13pt}
-\caption{A general Galilean transformation between two frames of reference $K$ and $K'$ moving with a constant velocity $\vb{V}$.}
-\label{fig-02-02}
+\sidecaption{A general Galilean transformation between two frames of reference $K$ and $K'$ moving with a constant velocity $\vb{V}$.
+\label{fig-02-02}}
 \end{figure}
 %\end{wrapfigure}
 If the like axes of Cartesian coordinates of inertial reference frames $K$ and $K'$ are drawn parallel to one another pairwise and if at the initial instant of time $(t = t' = 0)$ the origins $O$ and $O'$ of coordinates coincide with each other (\figr{fig-02-02}), the Galilean transformations are of the form:
@@ -299,20 +296,20 @@ where $x, y, z$ and $x', y', z'$ are the coordinates of point M in the frames of
 
 The coordinate axes are usually arranged so that frame of ref­erence $K'$ travels along the positive direction of axis $OX$ (\figr{fig-02-03}). Under this condition the Galilean transformations are of their simplest form:
 \begin{equation*}%
-x = x - Vt, \,\,y' = y, \,\,z'= z \,\,\textrm{and}\,\, t' = t
+x = x - Vt, \,\,y' = y, \,\,z'= z \,\,\textrm{and}\,\, t' = t.
 \end{equation*}
 
 \subsection{}\label{2.8.2} A consequence of the Galilean transformations is the following law for transforming the velocity of arbitrary point $M$ (\figr{fig-02-02}) in going over from one inertial frame of reference $K$ (the velocity of the point is $\vb{v} = \dv*{\vb{r}}{t}$) to another $K'$ (in which the velocity of the same point is $\vb{v}' = \dv*{\vb{r}'}{t}$):
 \begin{equation*}%
-\vb{v}' = \vb{v} - \vb{V}
+\vb{v}' = \vb{v} - \vb{V}.
 \end{equation*}
 The projections of the velocity on like coordinate axes are transformed accordingly:
 \begin{equation*}%
-v_{x'}' = v_{x} - V_{x}, \,\,v_{y'}' = v_{y} - V_{y} \,\,\textrm{and}\,\,v_{z'}' = v_{z} - V_{z} 
+v_{x'}' = v_{x} - V_{x}, \,\,v_{y'}' = v_{y} - V_{y} \,\,\textrm{and}\,\,v_{z'}' = v_{z} - V_{z} .
 \end{equation*}
 In particular, when reference frame $K'$ travels along the positive direction of axis $OX$ (\figr{fig-02-03})
 \begin{equation*}%
-v_{x'}' = v_{x} - V, \,\,v_{y'}' = v_{y} \,\,\textrm{and}\,\,v_{z'}' = v_{z}
+v_{x'}' = v_{x} - V, \,\,v_{y'}' = v_{y} \,\,\textrm{and}\,\,v_{z'}' = v_{z}.
 \end{equation*}
 The accelerations of point $M$ in frames of reference $K' (\vb{a} =\dv*{\vb{v}}{t})$ and $K' (\vb{a}' =\dv*{\vb{v}'}{t})$ are the same: $\vb{a}' = \vb{a}$.
 
@@ -322,17 +319,17 @@ The accelerations of point $M$ in frames of reference $K' (\vb{a} =\dv*{\vb{v}}{
 %\includegraphics[width=0.5\textwidth]{figs/ch-02/fig-02-03.pdf}
 \input{figs/ch-02/fig-02-03}
 %  \vspace{-13pt}
-\caption{Galilean transformation between two frames of reference $K$ and $K'$ when $K'$ travels along direction of axis $OX$.}
-\label{fig-02-03}
+\sidecaption[-2cm]{Galilean transformation between two frames of reference $K$ and $K'$ when $K'$ travels along direction of axis $OX$.
+\label{fig-02-03}}
 \end{figure}
 %\end{wrapfigure}
 Hence, the acceleration of a particle is independent of the choice of the inertial frame of reference or, in other words, it is inva­riant with respect to Galilean transformations.
 
 \subsection{}\label{2.8.3} The forces of interaction between particles depend only upon their relative position and their velocity with respect to one another. The relative position of any two particles, 2 and 1, is represented by a vector equal to the difference between the radius vectors of the two particles, i.e. to the vector $\vb{r}_{21} = \vb{r}_{2} - \vb{r}_{1}$ in reference frame $K$ and to the vector $\vb{r}_{21}' = \vb{r}_{2}' - \vb{r}_{1}'$( in reference frame $K'$. It follows from the Galilean transformations that $\vb{r}_{21} = \vb{r}_{21}' - \vb{r}_{21}$. Therefore, the distance between particles 1 and 2 is the same in reference frames $K$ and $K'$:
 \begin{align*}%
-\vb{r}_{21}' & = \vb{r}_{21} = \,\,\textrm{or}\\
-(x_{2}' - x_{1}')^{2} & + (y_{2}' - y_{1}')^{2} + (z_{2}' - z_{1}')^{2}\\
-= (x_{2} - x_{1})^{2} & + (y_{2} - y_{1})^{2} + (z_{2} - z_{1})^{2}
+\vb{r}_{21}' & = \vb{r}_{21} \qor  \\
+& = (x_{2}' - x_{1}')^{2}  + (y_{2}' - y_{1}')^{2} + (z_{2}' - z_{1}')^{2},\\
+& = (x_{2} - x_{1})^{2}  + (y_{2} - y_{1})^{2} + (z_{2} - z_{1})^{2}.
 \end{align*}
 The velocity of particle 2 with respect to particle 1 is equal to the difference of the velocities of these two particles: $\vb{v}_{2}- \vb{v}_{1}$(in reference frame $K$) and $\vb{v}_{2}'- \vb{v}_{1}'$ (in reference frame $K'$). It follows from the Galilean transformations that $\vb{v}_{2}'- \vb{v}_{1}' = \vb{v}_{2}- \vb{v}_{1}$. 
 
@@ -340,8 +337,8 @@ Thus, the relative position and the velocity of relative motion of any two parti
 
 \subsection{}\label{2.8.4} Equations expressing Newton's laws \ssect{2.4.3} and \ssect{2.5.1} are invariant with respect to Galilean transformations, i.e. their form is unchanged in transforming the coordinates and time from one inertial frame of reference $(K)$ to another $(K')$:
 \begin{align*}%
-m\vb{a} = \vb{F}\,\,\textrm{and}\,\, \vb{F}_{ki} = - \vb{F}_{ik}\,\, \intertext{(in reference frame $K$)}\\
-m'\vb{a}' = \vb{F}'\,\,\textrm{and}\,\, \vb{F}_{ki}' = - \vb{F}_{ik}'\,\, \intertext{(in reference frame $K'$)}
+m\vb{a} & = \vb{F} \qand \vb{F}_{ki} = - \vb{F}_{ik} \,\, \text{ (in reference frame } K),\\
+m'\vb{a}' & = \vb{F}' \qand \vb{F}_{ki}' = - \vb{F}_{ik}' \,\, \text{ (in reference frame } K').
 \end{align*}
 where $m' = m$ is the mass of the particle being considered and is the same in all frames of reference.
 
