@@ -12,24 +12,24 @@
 \vb{F}_{12} = -G \frac{m_{1}m_{2}}{r_{12}^{3}} \vb{r}_{12} \,\,\textrm{and}\,\,\vb{F}_{21} = -G \frac{m_{1}m_{2}}{r_{21}^{3}} \vb{r}_{21}.
 \end{equation*}
 Here $\vb{r}_{12} = \vb{r}_{1} - \vb{r}_{2}$ and $\vb{r}_{21}= \vb{r}_{2} - \vb{r}_{1}$ are radius vectors from the second particle to the first and from the first to the second, respectively, and $r_{12} = r_{21}= \abs{\vb{r}_{12}}= \abs{\vb{r}_{21}}$ is the distance between the particles. 
-\begin{marginfigure}%[!ht]
-%\begin{wrapfigure}{r}{0.5\linewidth}
-\centering
-\includegraphics[width=0.7\textwidth]{figs/ch-06/fig-06-01.pdf}
-%\input{figs/ch-03/fig-03-01}
-%  \vspace{-13pt}
-\sidecaption{The gravitational interaction between two bodies of arbitrary size and shape.\label{fig-06-01}}
-\end{marginfigure}
+
 The proportionality factor $G$ is called the \redem{constant of universal gravitation}, or the \redem{gravitational constant}. In value the gravitational constant is equal to the force of mutual attraction of two particles of unit mass with a distance of unit length between them. It has been found from experi­ments that
 \begin{equation*}%
 G = \SI{6.6720 \pm 0.0041d-11}{\newton\metre\squared\per\kilo\gram\squared}.
 \end{equation*}
 \subsection{}\label{6.1.2} The gravitational interaction of two bodies of arbitrary size and shape (\figr{fig-06-01}) is described by the equation
 \begin{equation*}%
-\vb{F}_{12} = -G \int_{(V_{1}} \rho_{1} \dd V_{1} \int_{(V_{2}} \frac{\rho_{2}}{r_{12}^{3}} \vb{r}_{12} \dd V_{2},
+\vb{F}_{12} = -G \int_{(V_{1})} \rho_{1} \dd V_{1} \int_{(V_{2})} \frac{\rho_{2}}{r_{12}^{3}} \vb{r}_{12} \dd V_{2},
 \end{equation*}
 where $\vb{r}_{12}$ is the radius vector from the infinitely small element $\dd V_{2}$ of volume of the second body to the infinitely small el­ement $\dd V_{2}$ of volume of the first body, $\rho_{1}$ and $\rho_{2}$ are the densities of the two elements, and integration is carried out throughout the whole volume of both bodies.
-
+\begin{figure}[H]
+%\begin{wrapfigure}{r}{0.5\linewidth}
+\centering
+\includegraphics[width=0.7\textwidth]{figs/ch-06/fig-06-01.pdf}
+%\input{figs/ch-03/fig-03-01}
+%  \vspace{-13pt}
+\sidecaption{The gravitational interaction between two bodies of arbitrary size and shape.\label{fig-06-01}}
+\end{figure}
 The calculations of force $\vb{F}_{12}$ are substantially simplified in two cases:
 \begin{enumerate}[label=(\alph*)]
 \item when there is a spherically symmetrical distribution of the masses in the two bodies, i.e. both bodies are of spherical shape and the density of each body depends only upon the distance to its centre (in particular, the bodies can be homogeneous); \item when one of the bodies is of negligibly small size with respect to the other body in which the distribution of its mass is spherically symmetrical.
@@ -163,6 +163,9 @@ where $\alpha$ is the angle between vectors $\vb{g}_{f}$ and $\dd \vb{r}$, $\dd 
 According to the relativistic theory of gravitation, the geo­metrical properties (metric) of the space-time continuum depend upon the distribution of gravitating masses and their motion in space. Bodies setting up a gravitational field ``distort'' real three-dimensional space and differently change the passage of time at various points in this space. This means that the bodies cause a deviation of the metric of space-time from that of the ``flat'' space-time described by Euclidean geometry and dealt with in the special theory of relativity. Therefore, the motion of a body in a gravitational field can be regarded as inertial motion, but in a ``distorted'' (non-Euclidean) space-time continuum. Accordingly, a particle, subject to the action of a gravitational field, travels neither in a straight line nor at uniform velocity in a real three-dimensional space.
 
 It was shown in the relativistic theory of gravitation that the principle of superposition \ssect{6.2.3} does not hold for arbitrary gravitational fields. This principle, as well as the whole non-relativistic theory of gravitation, is sufficiently accurate only in weak fields $(\abs{\, \varphi \,} \ll c^{2})$ and for motion in these fields at low velocities $v \ll c$.
+
+
+\clearpage
 
 \section{Kepler's Laws. Space Velocities}
 \label{sec-6.3}
