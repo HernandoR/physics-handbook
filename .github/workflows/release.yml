@@ -1,0 +1,36 @@
+name: Release
+
+# Build the bilingual handbook and publish it as a GitHub Release.
+# Runs only for tags such as `release-v1.0`.
+on:
+  push:
+    tags:
+      - "release-v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Full TeX Live image: includes ctex/luatexja, Fandol fonts and mlmodern.
+      - name: Compile with LuaLaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: handbook-physics.tex
+          latexmk_use_lualatex: true
+
+      - name: Rename PDF
+        run: cp handbook-physics.pdf "handbook-physics-bilingual-${GITHUB_REF_NAME#release-}.pdf"
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: A Modern Handbook of Physics (EN/ZH) ${{ github.ref_name }}
+          body: |
+            Bilingual English / Simplified Chinese edition of Yavorsky & Detlaf, *A Modern Handbook of Physics* (Mir, 1982),
+            built from `${{ github.sha }}`. Released under CC BY-NC 4.0 (Mir Titles project).
+          files: handbook-physics-bilingual-*.pdf

@@ -19,7 +19,10 @@
 
 \usepackage{graphicx}
 
-
+% Chinese (Simplified) support for the bilingual edition. Loaded before fontenc/mlmodern
+% so the Latin text keeps the T1 mlmodern fonts; CJK glyphs come from luatexja.
+% fontset=fandol ships with TeX Live; switch to e.g. fontset=noto if those fonts are installed.
+\usepackage[scheme=plain,fontset=fandol]{ctex}
 
 %\usepackage{}
 %\let\widering\relax
@@ -88,6 +91,22 @@
 \newcommand{\inred}[1]{\textcolor{IndianRed}{#1}}% prints in red
 \newcommand{\hltxt}[1]{\textcolor{OrangeRed}{#1}}% prints in red
 \newcommand{\redem}[1]{\hltxt{\emph{#1}}}% prints in red
+
+% Bilingual (English / Simplified Chinese) layout: each Chinese translation is typeset
+% directly below its English source in a lighter tone.
+\colorlet{zhcolor}{black!55}
+\newcommand{\zhstyle}{\color{zhcolor}%
+  \renewcommand{\hltxt}[1]{\textcolor{OrangeRed!55}{##1}}%
+  % cross-references read in Chinese inside translations
+  \renewcommand*\figr[1]{\hyperref[##1]{图~\ref{##1}}}%
+  \renewcommand*\tabl[1]{\hyperref[##1]{表~\ref{##1}}}%
+  \renewcommand*\sect[1]{\hyperref[##1]{（第~\ref{##1}~节）}}}
+% \zhpar{...}: translation of the preceding paragraph (\zh itself is a luatexja unit)
+\newcommand{\zhpar}[1]{\par{\zhstyle #1\par}}
+% \zhtitle{...}: translation of the preceding \chapter/\section heading
+\newcommand{\zhtitle}[1]{{\noindent\zhstyle\large\bfseries #1\par}\nobreak\smallskip\noindent}
+% \zhcap{...}: translation inside a \caption/\sidecaption, on a new line
+\DeclareRobustCommand{\zhcap}[1]{\newline{\color{IndianRed!60}#1}}
 
 % redefine chapter, section headings using koma style
 
@@ -189,6 +208,9 @@
 \renewcommand*{\marginfont}{\small}
 
 \usepackage[version=4]{mhchem}
+% fontspec (loaded by ctex) makes chemgreek emit Unicode Greek, which the T1 mlmodern
+% text fonts lack; keep the math-italic Greek of the original edition in \ce{}
+\selectchemgreekmapping{default}
 \newcommand{\cpr}[2]{[\bm{#1} \cross \bm{#2}]} % defines cross product makes the entries bold
 \usepackage{url}
 \usepackage{pdfpages}

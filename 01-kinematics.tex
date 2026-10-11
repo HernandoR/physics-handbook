@@ -5,197 +5,255 @@
 
 \chapter{Kinematics}
 \label{ch-01}
+\zhtitle{运动学}
 
 \section{Mechanical Motion. The Subject Matter of Mechanics}
 \label{sec-1.1}
+\zhtitle{机械运动。力学的研究对象}
 \subsection{}\label{1.1.1} The simplest form of motion in nature is \redem{mechanical motion}. It consists of changes in the relative positions of bodies or their parts in space in the course of time. The branch of phys­ics dealing with the laws of mechanical motion is called \redem{me­chanics}. In a more narrow sense of the word, this is often under­ stood to mean \redem{classical mechanics}, which deals with the motion of macroscopic bodies travelling at velocities a great many times less than that of light in free space. Classical mechanics is based on Newton's laws and is therefore frequently referred to as \redem{Newtonian mechanics}. The laws of motion of bodies at velocities close to that of light in free space are taken up in \redem{relativistic mechanics} \ssect{5.1.1}, and the laws of motion of micro­ particles (for example, the electrons in atoms, molecules, crystals, etc.) are the subject matter of \redem{quantum mechanics} \ssect{38.1.1}. 
+\zhpar{自然界中最简单的运动形式是\redem{机械运动}。它是指物体或其各部分在空间中的相对位置随时间的变化。研究机械运动规律的物理学分支称为\redem{力学}。在较狭义的意义上，力学常被理解为\redem{经典力学}，它研究以远小于真空中光速的速度运动的宏观物体的运动。经典力学以牛顿定律为基础，因此常被称为\redem{牛顿力学}。运动速度接近真空中光速的物体的运动规律由\redem{相对论力学}\ssect{5.1.1}讨论；微观粒子（例如原子、分子、晶体中的电子等）的运动规律则是\redem{量子力学}\ssect{38.1.1}的研究对象。}
 
 \subsection{}\label{1.1.2}Classical mechanics comprises three basic branches: sta­tics, kinematics and dynamics. Statics deals with the laws for the composition of forces and the conditions for the equilibrium of bodies. \redem{Kinematics} provides a mathematical description of all possible kinds of mechanical motion, regardless of what causes each particular kind of motion. \redem{Dynamics} investigates the effect of the interaction between bodies on their mechanical motion. 
+\zhpar{经典力学包括三个基本分支：静力学、运动学和动力学。静力学研究力的合成法则以及物体的平衡条件。\redem{运动学}对各种可能的机械运动给出数学描述，而不考虑引起每种特定运动的原因。\redem{动力学}研究物体之间的相互作用对其机械运动的影响。}
 
 \subsection{}\label{1.1.3}The mechanical properties of bodies are determined by their chemical nature, internal structure and state. These are beyond the scope of mechanics and are studied in other branches of physics. Hence, in accordance with the conditions of each specific problem on hand, various simplified models are employed to describe real bodies in motion. These include the particle, the perfectly rigid body, the perfectly elastic body, the perfectly inelastic body and others.
+\zhpar{物体的力学性质由其化学本性、内部结构和状态决定。这些超出了力学的范围，需由物理学的其他分支加以研究。因此，根据每个具体问题的条件，人们采用各种简化模型来描述运动中的实际物体，包括质点、绝对刚体、完全弹性体、完全非弹性体以及其他模型。}
 
 A \redem{material point}, or \redem{particle}, is a body whose shape and size are of no consequence under the conditions of the problem being considered. For example, in a first approximation, the motion of a ship from one point to another can be dealt with as the motion of a particle. If, however, it becomes necessary to take into account such details of this motion as the pitching and rolling of the ship by swells or heavy seas, the ship should be dealt with as an extended body of definite shape. In the liter­ature the word particle is more frequently used than mate­rial point.
+\zhpar{在所讨论的问题条件下，形状和大小无关紧要的物体称为\redem{质点}（material point）。例如，在一级近似下，船只从一点运动到另一点可以当作质点的运动来处理；但若需要考虑船只因涌浪或风浪而产生的纵摇和横摇等细节，则必须将船视为具有确定形状的有限大小物体。文献中更常用“particle”一词，而较少使用“material point”。}
 
 Any extended body or system of such bodies, making up the \redem{mechanical system} being investigated, can be regarded as a \redem{system of particles}. For this purpose, all the bodies of the system can be conceived of as being broken down into such a large number of parts that the size of each part is negligibly small compared to the sizes of the bodies themselves.
+\zhpar{作为所研究的\redem{力学系统}的任何有限大小的物体或由此类物体组成的系统，都可以看作\redem{质点系}。为此，可以设想将系统中的所有物体分割成数量足够多的部分，使得每一部分的尺寸与物体本身的尺寸相比可以忽略不计。}
 
 \subsection{}\label{1.1.4} A \redem{perfectly rigid body}, or simply \redem{rigid body}, is one whose deformation can be neglected under the conditions of the given problem. The distance between any two points of a rigid body remains constant no matter what action the body is subjected to. A perfectly rigid body can be regarded as a system of par­ticles rigidly connected to one another.
+\zhpar{在所给问题的条件下，形变可以忽略不计的物体称为\redem{绝对刚体}，或简称\redem{刚体}。无论对绝对刚体施加何种作用，其上任意两点之间的距离都保持不变。绝对刚体可以看作由彼此刚性连接的质点组成的质点系。}
 
 A \redem{perfectly elastic body} is one whose deformation obeys Hooke's law \ssect{40.3.4}. After the external forces applied to such a body have been removed, its initial size and shape are completely restored.
+\zhpar{形变服从胡克定律\ssect{40.3.4}的物体称为\redem{完全弹性体}。撤去作用于这种物体的外力后，其初始的大小和形状可以完全恢复。}
 
 A \redem{perfectly inelastic body} is one that completely retains its deformed state, caused by external forces applied to the body, when these forces have been removed.
+\zhpar{在撤去作用于物体的外力后，仍完全保持由外力引起的形变状态的物体称为\redem{完全非弹性体}。}
 
 \section[Frames of Reference. Path, Path Length]{Frames of Reference. Path, Path Length and Displacement Vector of a Particle}
 \label{sec-1.2}
+\zhtitle{参考系。质点的轨迹、路程和位移矢量}
 
 \subsection{}\label{1.2.1} The position of a body in space can be specified only in reference to other bodies. It makes sense, for instance, to speak of the location of the planets with respect to the sun, that of an air liner or steamship with respect to the earth, but we cannot indicate their position in space ``in general'' without ref­erence to some specific body. A perfectly rigid body in which a coordinate system is rigidly fixed, furnished with a ``clock'' and employed to determine the position of bodies and particles being investigated in space at various instants of time, is called a frame of reference. Sometimes the frame of reference is the coordinate system itself if it is provided with a ``clock'' and the solid in which the system is rigidly fixed is called the body of reference. In each specific problem the frame of refer­ence is selected so as to simplify the problem to the maximum extent. Inertial frames of reference \ssect{2.1.2} are the most com­monly used in physics.
+\zhpar{物体在空间中的位置只能相对于其他物体来确定。例如，谈论行星相对于太阳的位置、飞机或轮船相对于地球的位置是有意义的，但若不指明某一具体物体，就无法给出物体在空间中“一般”的位置。刚性固连有坐标系、并配有“时钟”、用于确定所研究的物体和质点在不同时刻空间位置的绝对刚体，称为\redem{参考系}。有时，若坐标系本身配有“时钟”，则参考系即为该坐标系，而固定该坐标系的刚体称为参考体。在每一具体问题中，参考系的选取应使问题尽可能简化。物理学中最常用的是\redem{惯性参考系}（见\ssect{2.1.2}）。}
 
 \subsection{}\label{1.2.2} Most extensively employed is the Cartesian rectangular system of coordinates (\figr{fig-01-01}) whose orthonormal (normal orthogonal) basis is formed by the three vectors $\vu{i}$, $\vu{j}$ and $\vu{k}$, which  are unit vectors with respect to their magnitudes, mutually orthogonal and pass through the origin $O$ of coordinates. The position of an arbitrary point $M$ is specified by the radius vector $\vb{r}$, which connects the ori­gin $O$ of coordinates to point $M$. Vector $\vb{r}$ can be resolved along the axes $\vu{i}$, $\vu{j}$ and $\vu{k}$ of the basis as follows:
+\zhpar{最常用的是笛卡儿直角坐标系（见\figr{fig-01-01}），其正交归一基底由三个矢量 $\vu{i}$、$\vu{j}$ 和 $\vu{k}$ 构成。它们都是单位矢量，彼此相互正交，并且都通过坐标原点 $O$。任意点 $M$ 的位置由位矢 $\vb{r}$ 确定，$\vb{r}$ 连接坐标原点 $O$ 与点 $M$。位矢 $\vb{r}$ 沿基底的三个矢量 $\vu{i}$、$\vu{j}$ 和 $\vu{k}$ 的分解式如下：}
 \begin{equation*}%
 \vb{r}= x \vu{i} + y \vu{j} + z \vu{k},
 \end{equation*}
 where $x\vu{i}$, $y\vu{j}$ and $z\vu{k}$ are the com­ponents of vector $\vb{r}$ along the coordinate axes. The coefficients of resolution, $x$, $y$ and $z$, are the Cartesian coordinates of point $M$ and, due to the orthogo­nality of the vectors of the basis, the projections of radius vector $\vb{r}$ on the corresponding coordinate axes.
+\zhpar{式中，$x\vu{i}$、$y\vu{j}$ 和 $z\vu{k}$ 是位矢 $\vb{r}$ 沿各坐标轴的分量。分解系数 $x$、$y$ 和 $z$ 即为点 $M$ 的笛卡儿坐标；由于基底矢量相互正交，它们也就是位矢 $\vb{r}$ 在相应坐标轴上的投影。}
 
 \begin{marginfigure}[-1cm]
 \centering
 \includegraphics[width=\textwidth]{figs/ch-01/fig-01-01.pdf}
-\caption{Cartesian system of coordinates.
+\caption{Cartesian system of coordinates.\zhcap{笛卡儿直角坐标系。}
 \label{fig-01-01}}
 \end{marginfigure}
 
 The motion of a particle is completely specified if three continuous and single-valued functions of the time $t$,
+\zhpar{若给定关于时间 $t$ 的三个连续且单值函数，则质点的运动被完全确定：}
 \begin{equation*}%
 x= x(t), \,\,y= y(t) \qand  z= z(t),
 \end{equation*}
 are given to describe the changes in the coordinates of the particle with time.
+\zhpar{这些函数用于描述质点坐标随时间的变化。}
 
 
 These equations are said to be the \redem{kinematic equations of motion of a particle}. They are equivalent to the single vector equation
 $\vb{r} = \vb{r} (t)$, for a moving particle.
+\zhpar{这些方程称为\redem{质点运动学方程}。它们等价于运动质点的一个矢量方程 $\vb{r} = \vb{r} (t)$。}
 
 \subsection{}\label{1.2.3} The line described by a moving particle in space is called its \redem{path}. The kinematic equations of motion of a particle spec­ify the equation of its path in parametric form (the parameter being the time $t$). Depending upon the shape of the path, distinction is made between \redem{rectilinear} and \redem{curvilinear} motion. The motion of a particle is said to be \redem{plane} if its path lies com­pletely in a single plane.
+\zhpar{运动质点在空间中描绘的线称为其\redem{轨迹}。质点的运动学方程以时间 $t$ 为参数，给出了轨迹的参数形式方程。根据轨迹形状的不同，可区分\redem{直线运动}与\redem{曲线运动}。若质点的轨迹完全位于同一平面内，则称该运动为\redem{平面运动}。}
 
 The mechanical motion of a body is relative, i.e. the nature of the motion and, in particular, the kind of path travelled by the points of the body depend upon the chosen frame of re­ference.
+\zhpar{物体的机械运动是相对的，即运动的性质，特别是物体上各点所经过的轨迹的类型，取决于所选取的参考系。}
 
 \subsection{}\label{1.2.4} In the general case, the path of a moving particle is a spatial, rather than plane, curve. Introduced for such curves is the concept of an \redem{osculating plane}. The osculating plane at the arbitrary point $M$ of a curve is in the limiting position of a plane passing through any three points of the curve when these points approach point $M$ without limit.
+\zhpar{一般情形下，质点的轨迹是空间曲线而非平面曲线。对于这类曲线，引入了\redem{密切平面}的概念：曲线上任一点 $M$ 处的密切平面，是指过曲线上任意三点的平面在这三点无限趋近于点 $M$ 时的极限位置。}
 
 An \redem{osculating circle} at point $M$ of a curve is the limit of a circle passing through three points of the curve being considered when these points approach po­int $M$ without limit. The oscu­lating circle lies in the oscula­ting plane. The centre of the osculating circle and its radius are called the \redem{centre of curvature} and \redem{radius of curvature}, at point $M$, of the curve being considered. The straight line connecting point $M$ to the centre of curvature is called the \redem{principal normal} to the curve at point $M$. The tan­gent to the curve at point $M$ is perpendicular to the principal normal and also lies in the osculating plane.
+\zhpar{曲线上点 $M$ 处的\redem{密切圆}，是过曲线上任意三点的圆在这三点无限趋近于点 $M$ 时的极限。密切圆位于密切平面内。密切圆的圆心和半径分别称为曲线在点 $M$ 处的\redem{曲率中心}和\redem{曲率半径}。连接点 $M$ 与曲率中心的直线称为曲线在点 $M$ 处的\redem{主法线}。曲线在点 $M$ 处的切线垂直于主法线，并且同样位于密切平面内。}
 
 \subsection{}\label{1.2.5} The \redem{path length} is the sum of the lengths of all the por­tions of the path over which the particle passes in the given interval of time. The instant of time $t = t_{0}$, from which we begin to consider the motion of a particle, is called the initial instant of time, and the position of the particle at this instant (point $A$ in \figr{fig-01-02}) is called its initial position. Owing to the arbitrary nature of the time reference point it is usually as­sumed that $t_{0}= 0$. 
+\zhpar{\redem{路程}是质点在给定时间间隔内经过的全部轨迹段的长度之和。开始考察质点运动的时刻 $t = t_{0}$ 称为初始时刻，质点在该时刻的位置（如\figr{fig-01-02}中的点 $A$ 所示）称为其初始位置。由于时间起点可以任意选取，通常假定 $t_{0}= 0$。}
 \begin{marginfigure}[-2cm]
 %\begin{wrapfigure}{l}[10pt]{0.55\linewidth}
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-01/fig-01-01.pdf}
 %\includegraphics[width=0.9\textwidth]{figs/ch-01/fig-01-02.pdf}
 %  \vspace{-13pt}
-\sidecaption{A particle moving on a curve.\label{fig-01-02}}
+\sidecaption{A particle moving on a curve.\zhcap{质点沿曲线运动。}\label{fig-01-02}}
 %\end{wrapfigure}
 \end{marginfigure}
 
 The path length $s$, travelled by the particle from its initial position, is a scalar function of time: $s = s (t)$. As is obvious from its definition, the path length of a particle cannot be a negative quantity. If the particle travels along an arc of the path $AB$ (\figr{fig-01-02}), always in the same direction and is at point $M$ at the instant of time $t$, then $s(t)= \wideparen{AM}$. If the particle travels along the path in a more complicated way, for example if it travels from $A$ to $B$, reaching $B$ at the instant of time $t_{1}< t$, and then reverses, returning to point $M$ at instant $t$, then $s (t) = \wideparen{AB} + \wideparen{BM}$.
+\zhpar{质点自其初始位置出发所经过的路程 $s$ 是时间的标量函数：$s = s (t)$。由其定义显然可知，质点的路程不可能为负值。若质点始终沿同一方向运动，沿轨迹上的弧段 $AB$（见\figr{fig-01-02}）运动，并在时刻 $t$ 位于点 $M$，则 $s(t)= \wideparen{AM}$。若质点的运动较为复杂，例如先从 $A$ 运动到 $B$，于时刻 $t_{1}< t$ 到达 $B$，然后折返，并于时刻 $t$ 回到点 $M$，则 $s (t) = \wideparen{AB} + \wideparen{BM}$。}
 
 
 \subsection{}\label{1.2.6} The displacement vector of a moving particle during the time interval from $t= t_{1}$ to $t= t_{2}$ is the vector from the, position of the particle at the instant of time $t_{1}$ to its position at instant $t_{2}$. It is equal to the increment in the radius vector of the particle during the time interval being considered:
+\zhpar{在时间间隔从 $t= t_{1}$ 到 $t= t_{2}$ 内，运动质点的\redem{位移矢量}是由质点在时刻 $t_{1}$ 的位置指向其在时刻 $t_{2}$ 的位置的矢量。它等于该时间间隔内质点位矢的增量：}
 \begin{equation*}%
 \vb{r_{2}} - \vb{r_{1}} = \vb{r}(t_{2}) - \vb{r}(t_{1}).
 \end{equation*}
 The displacement vector is always directed along the chord subtending the corresponding portion of the path.
+\zhpar{位移矢量总是沿着与相应轨迹段对应的弦的方向。}
 
 Shown in \figr{fig-01-02} is the displacement vector of the particle for the time interval from $t_{0}$ to $t$. It is equal to $\vb{r}- \vb{r_{0}} = \vb{r} (t)- \vb{r}(t_{0})$.
+\zhpar{如\figr{fig-01-02}所示，质点在时间间隔从 $t_{0}$ 到 $t$ 内的位移矢量，它等于 $\vb{r}- \vb{r_{0}} = \vb{r} (t)- \vb{r}(t_{0})$。}
 
 The displacement vector of a moving particle for the time inter­val from $t$ to $t + \Delta t$ equals
+\zhpar{运动质点在时间间隔从 $t$ 到 $t + \Delta t$ 内的位移矢量等于：}
 \begin{equation*}%
 \Delta r = r (t + \Delta t) - r (t) = \Delta x \times \vu{i} + \Delta y \times \vu{j} + \Delta z \times \vu{k},
 \end{equation*}
 where $\Delta x$, $\Delta y$ and $\Delta z$ are the increments (changes) in the coordi­nates of the particle during the time interval being considered. 
+\zhpar{式中，$\Delta x$、$\Delta y$ 和 $\Delta z$ 分别为所考虑的时间间隔内质点坐标的增量（变化量）。}
 
 \subsection{}\label{1.2.7} A particle travelling freely in space can accomplish only three \redem{independent motions}, i.e. motions that cannot be repre­sented as combinations of the other two. As a matter of fact, the motion of a particle along each of the axes of a Cartesian rectangular coordinate system cannot be obtained by its motion along the other two axes. The number of independent motions that a mechanical system can accomplish is called the \redem{number of degrees of freedom} of the system. Hence, a free particle has three degrees of freedom.
+\zhpar{在空间中自由运动的质点只能完成三种\redem{独立运动}，即不能由其他两种运动组合而成的运动。事实上，质点沿笛卡儿直角坐标系中每一坐标轴的运动，都无法由其沿另外两个坐标轴的运动得到。一个力学系统能够完成的独立运动的数目，称为该系统的\redem{自由度数}。因此，自由质点具有三个自由度。}
 
 \section{Velocity}
 \label{sec-1.3}
+\zhtitle{速度}
 
 \subsection{}\label{1.3.1} The concept of velocity is introduced in mechanics to characterize the rate of motion of bodies. It is the time rate of change in the position of moving bodies. The \redem{average velocity} of a moving particle in the time interval from $t$ to $t + \Delta t$ is the vector $\vb{v_{av}}$, equal to the ratio of the increment $\Delta \vb{r}$ in the radius vector of the particle during this time interval to the length of the time interval $\Delta t$:
+\zhpar{速度的概念是力学中为描述物体运动快慢而引入的，它是运动物体位置随时间的变化率。质点在时间间隔从 $t$ 到 $t + \Delta t$ 内的\redem{平均速度}是矢量 $\vb{v_{av}}$，它等于该时间间隔内质点位矢的增量 $\Delta \vb{r}$ 与时间间隔长度 $\Delta t$ 之比：}
 \begin{equation*}%
 \vb{v_{av}} = \frac{\Delta \vb{r}}{\Delta t}.
 \end{equation*}
 Vector $\vb{v_{av}}$ has the same direction as $\Delta \vb{r}$, i.e. along the chord subtending the corresponding portion of the particle's path. 
+\zhpar{矢量 $\vb{v_{av}}$ 与 $\Delta \vb{r}$ 方向相同，即沿与质点相应轨迹段对应的弦的方向。}
 
 \subsection{}\label{1.3.2} The \redem{velocity} (or \redem{instantaneous velocity}) of a moving particle is the vector quantity $\vb{v}$, equal to the first time derivative of the radius vector $\vb{r}$ of the particle being considered:
+\zhpar{运动质点的\redem{速度}（或\redem{瞬时速度}）是矢量 $\vb{v}$，它等于所考虑质点的位矢 $\vb{r}$ 对时间的一阶导数：}
 \begin{equation*}%
 \vb{v} = \dv{\vb{r}}{t}.
 \end{equation*}
 The velocity of the particle at the instant of time $t$ is the lim­iting value that the average velocity $\vb{v_{av}}$ approaches for an infinitely small value of the time interval $\Delta t$. Thus
+\zhpar{质点在时刻 $t$ 的速度，是当时间间隔 $\Delta t$ 无限小时，平均速度 $\vb{v_{av}}$ 所趋近的极限值。于是}
 \begin{equation*}%
 \vb{v} = \lim_{\Delta t \to 0}\frac{\Delta \vb{r}}{\Delta t} = \lim_{\Delta t \to 0}\vb{v_{av}}.
 \end{equation*}
 The velocity vector $\vb{v}$ of the particle has the direction along a tangent to the path toward the motion in the same way as the vector $d\vb{r} = \vb{v} dt$ of infinitely small displacement of the particle during an infinitely short time interval $dt$.
+\zhpar{质点的速度矢量 $\vb{v}$ 沿轨迹的切线方向，并指向质点运动的方向，与质点在无限短时间间隔 $dt$ 内的无限小位移矢量 $d\vb{r} = \vb{v} dt$ 方向相同。}
 
 The path length $ds$ travelled by the particle during the length of time $dt$ is equal to the magnitude of the displacement vector: $ds = \abs{d\vb{r}}$. Therefore the magnitude of the velocity vector of a moving particle is equal to the first time derivative of the path length:
+\zhpar{质点在时间 $dt$ 内经过的路程 $ds$ 等于位移矢量的大小：$ds = \abs{d\vb{r}}$。因此，运动质点速度矢量的大小等于路程对时间的一阶导数：}
 \begin{equation*}%
 v = \abs{\,\vb{v}\,} = \dv{s}{t}.
 \end{equation*}
 
 \subsection{}\label{1.3.3} The resolution of vector $\vb{v}$ along the basis of a Cartesian rectangular coordinate system is of the following form:
+\zhpar{速度矢量 $\vb{v}$ 沿笛卡儿直角坐标系基底的分解式具有如下形式：}
 \begin{equation*}%
 \vb{v} = v_{x} \times \vu{i} + v_{y} \times \vu{j} +v_{z} \times \vu{k}.
 \end{equation*}
 The projections of the velocity of a moving particle on the coor­dinate axes are equal to the first time derivative of the corres­ponding coordinates of the particle:
+\zhpar{运动质点的速度在各坐标轴上的投影，等于相应坐标对时间的一阶导数：}
 \begin{equation*}%
 v_{x}= \dv{x}{t}, \,\, v_{y}= \dv{y}{t}, \,\, v_{z}= \dv{z}{t},
 \end{equation*}
 and the magnitude of the velocity vector, sometimes called the \redem{speed}, is
+\zhpar{速度矢量的大小（有时称为\redem{速率}）为：}
 \begin{equation*}%
 v = \abs{\,\vb{v}\,} = \sqrt{\left( \dv{x}{t} \right)^{2} + \left(\dv{y}{t}\right)^{2} + \left(\dv{z}{t}\right)^{2}}.
 \end{equation*}
 
 \subsection{}\label{1.3.4} In rectilinear motion of a particle, the direction of its velocity vector remains constant. The motion of a particle is said to be \redem{uniform} if the magnitude of its velocity does not change with time: $v = \dv*{s}{t} = \text{const}$. The path length $s$ tra­velled by a uniformly moving particle is a linear function of time: $s = vt$ (provided that $t_{0}= 0$, see \ssect{1.2.5}).
+\zhpar{在直线运动中，质点速度矢量的方向保持不变。若质点速度的大小不随时间变化，即 $v = \dv*{s}{t} = \text{const}$，则称该运动为\redem{匀速运动}。匀速运动的质点所经过的路程 $s$ 是时间的线性函数：$s = vt$（设 $t_{0}= 0$，参见\ssect{1.2.5}）。}
 
 If the magnitude of the particle's velocity, i.e. its speed, increa­ses with time $(\dv*{v}{t} > 0)$, the motion is said to be \redem{accelerated}; if the speed decreases with time $(\dv*{v}{t} < 0)$, the motion is said to be \redem{decelerated}.
+\zhpar{若质点速度的大小，即速率，随时间增大（$\dv*{v}{t} > 0$），则称该运动为\redem{加速运动}；若速率随时间减小（$\dv*{v}{t} < 0$），则称该运动为\redem{减速运动}。}
 
 \subsection{}\label{1.3.5} The \redem{average velocity of nonuniform motion} of a particle over a given portion of its path is the scalar $v_{\textrm{av}}$, called the \redem{travelling speed}, which is equal to the ratio of the length $\Delta s$ of this portion to the length $\Delta t$ of the time interval required to travel over this portion:
+\zhpar{质点沿其轨迹某一段的\redem{非匀速运动的平均速度}是标量 $v_{\textrm{av}}$，称为\redem{行程速率}（即平均速率）。它等于该段路程的长度 $\Delta s$ 与通过该段所需时间间隔长度 $\Delta t$ 之比：}
 \begin{equation*}%
 v_{\textrm{av}} = \frac{\Delta s}{\Delta t}.
 \end{equation*}
 It is equal to the speed of uniform motion in which the time required to travel the same path length $\Delta s$ is the same as in the nonuniform motion being considered.
+\zhpar{它等于这样一种匀速运动的速率：在该匀速运动中，经过相同路程所需的时间与所考虑的非匀速运动相同。}
 
 In curvilinear motion of a particle $\abs{\, \Delta \vb{r} \, } < \Delta s$. Therefore, in the general case, the average velocity (travelling speed) $v_{\textrm{av}}$ of the particle is not equal to the magnitude of its average velocity $\vb{v_{av}}$ over the same portion of its path \ssect{1.3.1}: $v_{\textrm{av}} \geqslant \abs{\,\vb{v}\,}$ where the equality sign corresponds to a rectilinear portion of the path.
+\zhpar{在曲线运动中，$\abs{\, \Delta \vb{r} \, } < \Delta s$。因此，一般而言，质点的平均速度（行程速率）$v_{\textrm{av}}$ 不等于其在同一轨迹段上的平均速度 $\vb{v_{av}}$ 的大小（见\ssect{1.3.1}），即 $v_{\textrm{av}} \geqslant \abs{\,\vb{v}\,}$，其中等号对应于轨迹的直线段。}
 
 \subsection{}\label{1.3.6} In the case of plane motion of a particle $M$ \ssect{1.2.3}, it often proves convenient to use the polar coordinates $r$ and $\varphi$, where $r$ is the distance from pole $O$ to particle $M$ and $\varphi$ is the vec­torial angle measured from polar axis $OA$ (\figr{fig-01-03}).
+\zhpar{在质点 $M$ 做平面运动的情形（见\ssect{1.2.3}）下，常常使用极坐标 $r$ 和 $\varphi$ 较为方便，其中 $r$ 为极点 $O$ 到质点 $M$ 的距离，$\varphi$ 为自极轴 $OA$ 量起的极角（见\figr{fig-01-03}）。}
 %\begin{wrapfigure}{l}[0pt]{0.5\linewidth}
 \begin{marginfigure}[-2cm]
 \centering
 %\includegraphics[width=0.8\textwidth]{figs/ch-01/fig-01-03.pdf}
 \input{figs/ch-01/fig-01-03}
 %  \vspace{-13pt}
-\sidecaption{Polar coordinates of a moving particle.\label{fig-01-03}}
+\sidecaption{Polar coordinates of a moving particle.\zhcap{运动质点的极坐标。}\label{fig-01-03}}
 \end{marginfigure}
 %\end{wrapfigure}
 The velocity $\vb{v}$ of particle $M$ can be resolved into two mutually perpendicular components: the \redem{radial velocity} $\vb{v}_{r}$ and the \redem{transverse velocity} $\vb{v}_{\varphi}$:
+\zhpar{质点 $M$ 的速度 $\vb{v}$ 可以分解为两个相互垂直的分量：\redem{径向速度} $\vb{v}_{r}$ 和\redem{横向速度} $\vb{v}_{\varphi}$：}
 \begin{equation*}%
 \vb{v} = \vb{v}_{r} + \vb{v}_{\varphi},
 \end{equation*}
 in which
+\zhpar{其中：}
 \begin{equation*}%
 \vb{v}_{r} = \frac{1}{r} \dv{r}{t} \vb{r}, \qand \vb{v}_{\varphi} =  \dv{\varphi}{t} [\vb{kr}],
 \end{equation*}
 where $\vb{r}$ is the polar radius vector of particle $M$, and $\vu{k}$ is the unit vector directed perpendicular to the plane of motion of the particle so that the rotation of radius vector $\vb{r}$ upon an increase in angle $\varphi$ is seen, from the head of unit vector $\vu{k}$, to be counterclockwise.
+\zhpar{式中 $\vb{r}$ 为质点 $M$ 的极径矢量，$\vu{k}$ 为垂直于质点运动平面的单位矢量，其方向使得从 $\vu{k}$ 的末端看去，极径矢量 $\vb{r}$ 随角度 $\varphi$ 增大而发生的转动为逆时针方向。}
 
 The magnitude $v$ of the velocity vector of particle $M$, in plane motion, is
+\zhpar{平面运动中，质点 $M$ 的速度矢量的大小 $v$ 为：}
 \begin{equation*}%
 v = \sqrt{\left(\dv{r}{t} \right)^{2} + \left( r \dv{\varphi}{t} \right)^{2} }.
 \end{equation*}
 During the infinitely short length of time $dt$, polar radius vector $\vb{r}$ of the particle in plane motion sweeps over a sector of a circle, the area of the sector being $dS = r^{2} \,d\varphi/2$. Hence, the quantity
+\zhpar{在无限短的时间间隔 $dt$ 内，平面运动质点的极径矢量 $\vb{r}$ 扫过一个圆扇形，其面积为 $dS = r^{2} \,d\varphi/2$。因此，下式所示的量：}
 \begin{equation*}%
 \sigma = \dv{S}{t} = \frac{1}{2}r^{2}\dv{\varphi}{t}=\frac{1}{2} r v_{\varphi},
 \end{equation*}
 is called the \redem{areal} velocity.
+\zhpar{称为\redem{面速度}。}
 
 \section{Acceleration}
 \label{sec-1.4}
+\zhtitle{加速度}
 
 
 \subsection{}\label{1.4.1} The concept of acceleration is introduced in mechanics to characterize the rate of change of the velocity vector of a mov­ ing particle. The \redem{average acceleration} in the time interval from $t$ to $t + \Delta t$ is 	the vector $\vb{a_{\textrm{av}}}$, which is equal to the ratio of the increment $\Delta \vb{v}$ of the velocity vector of the particle, during the time interval, to the length of the time interval $\Delta t$:
+\zhpar{加速度的概念是力学中为描述运动质点速度矢量变化快慢而引入的。质点在时间间隔从 $t$ 到 $t + \Delta t$ 内的\redem{平均加速度}是矢量 $\vb{a_{\textrm{av}}}$，它等于该时间间隔内质点速度矢量的增量 $\Delta \vb{v}$ 与时间间隔长度 $\Delta t$ 之比：}
 \begin{equation*}%
 \vb{a_{\textrm{av}}} = \frac{\Delta \vb{v}}{\Delta t}.
 \end{equation*}
 
 \subsection{}\label{1.4.2} \redem{Acceleration} (or \redem{instantaneous acceleration}) of a moving particle is the vector quantity $\vb{a}$, equal to the first time deriv­ative of the velocity $\vb{v}$ of the particle being considered or, other­ wise, the second time derivative of the particle's radius vector $\vb{r}$:
+\zhpar{运动质点的\redem{加速度}（或\redem{瞬时加速度}）是矢量 $\vb{a}$，它等于质点速度 $\vb{v}$ 对时间的一阶导数，或者说，等于质点位矢 $\vb{r}$ 对时间的二阶导数：}
 \begin{equation*}%
 \vb{a} = \dv{\vb{v}}{t} = \dv[2]{\vb{r}}{t}.
 \end{equation*}
 The acceleration of a moving particle at the instant of time $t$ is the limiting value that the average acceleration $\vb{a_{\textrm{av}}}$ approaches for an infinitely small time interval $\Delta t$. Thus
+\zhpar{质点在时刻 $t$ 的加速度，是当时间间隔 $\Delta t$ 无限小时，平均加速度 $\vb{a_{\textrm{av}}}$ 所趋近的极限值。于是}
 \begin{equation*}%
 \vb{a} = \lim_{\Delta t \to 0}\frac{\Delta \vb{v}}{\Delta t} = \lim_{\Delta t \to 0} \vb{a_{\textrm{av}}}.
 \end{equation*}
 
 \subsection{}\label{1.4.3} The resolution of vector $\vb{a}$ along the basis of a rectangular Cartesian coordinate system is of the form:
+\zhpar{加速度矢量 $\vb{a}$ 沿笛卡儿直角坐标系基底的分解式具有如下形式：}
 \begin{equation*}%
 \vb{a} = a_{x} \vu{i} + a_{y} \vu{j} + a_{z} \vu{k}.
 \end{equation*}
 The projections of the acceleration vector of a moving particle on the coordinate axes are equal to the first time derivatives of the corresponding velocity projections or, otherwise, the second time derivatives of the corresponding coordinates of the par­ticle:
+\zhpar{运动质点的加速度矢量在各坐标轴上的投影，等于相应速度投影对时间的一阶导数，或者说，等于相应坐标对时间的二阶导数：}
 \begin{equation*}%
 a_{x} = \dv{v_{x}}{t} = \dv[2]{x}{t}, \,\,a_{y} = \dv{v_{y}}{t} = \dv[2]{y}{t}, \,\,a_{z} = \dv{v_{z}}{t} = \dv[2]{z}{t}.
 \end{equation*}
 The magnitude of the acceleration vector is
+\zhpar{加速度矢量的大小为}
 \begin{align*}%
 a = \abs{\,a\,} & = \sqrt{\left( \dv{v_{x}}{t}\right)^{2}+\left( \dv{v_{y}}{t}\right)^{2}
 +\left( \dv{v_{z}}{t}\right)^{2}}, \\
@@ -205,6 +263,7 @@ a = \abs{\,a\,} & = \sqrt{\left( \dv{v_{x}}{t}\right)^{2}+\left( \dv{v_{y}}{t}\r
 
 
 \subsection{}\label{1.4.4} The acceleration vector of a moving particle lies in the osculating plane \ssect{1.2.4} passing through point $M$ of the path being considered and is direct­ ed toward the concavity of the path $BC$ (\figr{fig-01-04}). In this plane the acceleration vector $\vb{a}$ can be resolved into two mutually perpendicular components $\vb{a}_{\tau}$ and $\vb{a}_{n}$:
+\zhpar{运动质点的加速度矢量位于过轨迹上所考虑点 $M$ 的密切平面（见\ssect{1.2.4}）内，并指向轨迹 $BC$ 的凹侧（见\figr{fig-01-04}）。在该平面内，加速度矢量 $\vb{a}$ 可以分解为两个相互垂直的分量 $\vb{a}_{\tau}$ 和 $\vb{a}_{n}$：}
 \begin{equation*}%
 \vb{a} = \vb{a}_{\tau} + \vb{a}_{n}.
 \end{equation*}
@@ -215,132 +274,167 @@ a = \abs{\,a\,} & = \sqrt{\left( \dv{v_{x}}{t}\right)^{2}+\left( \dv{v_{y}}{t}\r
 \includegraphics[width=0.8\textwidth]{figs/ch-01/fig-01-04.pdf}
 %\input{figs/ch-01/fig-01-04}
 %  \vspace{-13pt}
-\sidecaption{Tangential and normal components of the acceleration of a moving particle.\label{fig-01-04}}
+\sidecaption{Tangential and normal components of the acceleration of a moving particle.\zhcap{运动质点加速度的切向分量和法向分量。}\label{fig-01-04}}
 \end{marginfigure}
 %\end{wrapfigure}
 
 \subsection{}\label{1.4.5} Component $\vb{a}_{\tau}$ is called the \redem{tangential acceleration} of the moving particle. It is directed along the tangent to the path and equals 
+\zhpar{分量 $\vb{a}_{\tau}$ 称为运动质点的\redem{切向加速度}。它沿轨迹的切线方向，并且等于}
 \begin{equation*}%
 \vb{a}_{\tau} = \dv{v}{t} \vb{\tau}  \qand  a_{\tau} = \dv{v}{t},
 \end{equation*}
 where $\vb{\tau} = \vb{v}/v$ is the unit vector of the tangent, from point $M$ of the path in the direction of velocity $\vb{v}$ of the particle, and $a_{\tau}$ is the projection of the tangential acceleration on the direction of vector $\vb{v}$. The tangential acceleration characterizes the rate of change of the magnitude of the particle's velocity vector. Vectors $\vb{a}_{\tau}$ and $\vb{v}$ coincide in direction, i.e. $a_{\tau} > 0$, in accelerat­ed motion \ssect{1.3.4}; vectors $\vb{a}_{\tau}$ and $\vb{v}$ are opposite in direction $a_{\tau} < 0$, in decelerated motion of the particle; and $a_{\tau} = 0$ in its uniform motion. If $a_{\tau} = \textrm{const} \neq 0$, the motion is said to be uniformly variable. In uniformly variable motion the magni­tude of the particle's velocity is linearly time-dependent:
+\zhpar{其中 $\vb{\tau} = \vb{v}/v$ 为轨迹切线方向的单位矢量，方向由轨迹上点 $M$ 指向质点速度 $\vb{v}$ 的方向；$a_{\tau}$ 为切向加速度在矢量 $\vb{v}$ 方向上的投影。切向加速度描述质点速度矢量大小的变化率。在加速运动（见\ssect{1.3.4}）中，$\vb{a}_{\tau}$ 与 $\vb{v}$ 方向相同，即 $a_{\tau} > 0$；在减速运动中，$\vb{a}_{\tau}$ 与 $\vb{v}$ 方向相反，$a_{\tau} < 0$；在匀速运动中，$a_{\tau} = 0$。若 $a_{\tau} = \textrm{const} \neq 0$，则称该运动为\redem{匀变速运动}。在匀变速运动中，质点速度的大小与时间呈线性关系：}
 \begin{equation*}%
 v = v_{0} + a_{\tau}t,
 \end{equation*}
 where $v_{0} = v (0)$ is the magnitude of the initial velocity, i.e. the velocity at the initial instant of time $t = 0$. If $a_{\tau} = \textrm{const} > 0$, the motion of the particle is said to be \redem{uniformly accelerated}, whereas if $a_{\tau} = \textrm{const} < 0$, it is said to be \redem{uniformly de­celerated}.
+\zhpar{式中 $v_{0} = v (0)$ 为初速度的大小，即初始时刻 $t = 0$ 时的速度。若 $a_{\tau} = \textrm{const} > 0$，则称质点的运动为\redem{匀加速运动}；若 $a_{\tau} = \textrm{const} < 0$，则称其为\redem{匀减速运动}。}
 
 \subsection{}\label{1.4.6} Component $\vb{a}_{n}$ of acceleration $\vb{a}$ of the moving particle is called its \redem{normal acceleration}. It is directed along the principal normal to the path at point $M$ being considered, toward the centre of curvature \ssect{1.2.4} of the path. Therefore, $\vb{a}_{n}$ is often called the \redem{centripetal acceleration} of the particle. The normal acceleration equals
+\zhpar{分量 $\vb{a}_{n}$ 称为运动质点的\redem{法向加速度}。它沿所考虑点 $M$ 处轨迹的主法线方向，指向轨迹的曲率中心（见\ssect{1.2.4}）。因此，它也常被称为质点的\redem{向心加速度}。法向加速度等于：}
 \begin{equation*}%
 \vb{a}_{n} = \frac{v^{2}}{R} \vu{n},
 \end{equation*}
 where $\vb{n}$ is the unit vector of the principal normal, and $R$ is the radius of curvature of the path. The normal acceleration characterizes the rate of change in direction of the particle's velocity vector.
+\zhpar{式中 $\vb{n}$ 为主法线的单位矢量，$R$ 为轨迹的曲率半径。法向加速度描述质点速度矢量方向的变化率。}
 
 If the particle travels in a straight line the normal acceleration $\vb{a}_{n} = 0$ and the acceleration is equal to the tangential accele­ration of the particle: $\vb{a} = \vb{a}_{\tau}$.
+\zhpar{若质点沿直线运动，则法向加速度 $\vb{a}_{n} = 0$，加速度等于质点的切向加速度：$\vb{a} = \vb{a}_{\tau}$。}
 
 
 \section[Translational and Rotary Motion of a Rigid Body]{Translational and Rotary Motion of a Rigid Body\protect\footnote{Only perfectly rigid bodies are dealt with in this section; for the sake of brevity, they have been called simply ``rigid bodies''.}}
 \label{sec-01.05}
+\zhtitle{刚体的平动和转动}
+\zhpar{注：本节仅讨论绝对刚体，为简便起见，将其简称为“刚体”。}
 
 \subsection{}\label{1.5.1} \redem{Translation} is the kind of motion of a rigid body in which any straight line rigidly fixed in the body (for instance, line $AB$ in \figr{fig-01-05}), remains paral­lel to its initial position ($A_{0}B_{0}$). With respect to the earth, a lift cabin (elevator car), lathe tool, and many other items have translational motion.
+\zhpar{\redem{平动}是刚体的一种运动，在这种运动中，刚体上任意固连于刚体的直线（例如\figr{fig-01-05}中的直线 $AB$）始终与其初始位置（$A_{0}B_{0}$）保持平行。相对于地球而言，电梯轿厢、车床刀具以及许多其他物体都做平动。}
 %\begin{wrapfigure}{l}[0pt]{0.5\linewidth}
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-01/fig-01-05.pdf}
 %\input{figs/ch-01/fig-01-05}
 %  \vspace{-13pt}
-\sidecaption{Translational motion of a rigid body.\label{fig-01-05}}
+\sidecaption{Translational motion of a rigid body.\zhcap{刚体的平动。}\label{fig-01-05}}
 \end{figure}
 %\end{wrapfigure}
 In the translational motion of a rigid body all of its points are displaced in an identical way.
+\zhpar{在刚体的平动中，其上所有点的位移都相同。}
 
 
 During the infinitely short time $\dd t$ the radius vectors of these
 points are changed by the same amount $\dd r$. Hence the velocity
 of all points of the body is the same in each instant of time and is equal to $\dd\vb{r}/\dd t$ and consequently, their acceleration is also the same. For this reason, a kinematic discussion of the translational motion of a rigid body reduces to the investigation of the motion of any one of its points, or particles. Dynamics usually deals with the motion of the centre of mass of the body \ssect{2.3.3}. A rigid body travel­ ling freely in space has three translational degrees of freedom \ssect{1.2.7}, corresponding to its translational motions along the three coordinate axes.
+\zhpar{在无限短的时间 $\dd t$ 内，这些点的位矢改变了相同的量 $\dd r$。因此，在每一时刻，刚体上所有点的速度都相同，均等于 $\dd\vb{r}/\dd t$，其加速度也相同。由此，刚体平动的运动学讨论可归结为研究其上任一点（或任一质点）的运动。动力学通常研究刚体质心的运动（见\ssect{2.3.3}）。在空间中自由运动的刚体具有三个平动自由度（见\ssect{1.2.7}），分别对应于沿三个坐标轴方向的平动。}
 
 \subsection{}\label{1.5.2} The motion of a rigid body in which two of its points, $A$ and $B$, remain fixed is called \redem{rotation (or rotary motion) of the body about a fixed axis}. The fixed straight line $AB$ is the axis of rotation. In the rotation of a rigid body about a fixed axis all the points of the body describe circles whose centres lie on the axis of rotation and whose planes are perpendicular to this axis. The rotors of turbines, motors and generators, for exam­ple, have rotary motion with respect to the earth if these ma­chines are rigidly mounted.
+\zhpar{刚体上有两点 $A$ 与 $B$ 保持不动的运动称为\redem{绕定轴的转动}（或\redem{旋转运动}）。固定的直线 $AB$ 为转轴。刚体绕定轴转动时，其上所有点都描绘以转轴上的点为圆心、且所在平面垂直于转轴的圆。例如，涡轮机、电动机和发电机的转子，若其安装牢固，则相对地球而言做转动。}
 
 A rigid body rotating about a fixed axis has only one degree of freedom \ssect{1.2.7}. Its position in space can be completely defined by specifying the angle of rotation (position angle) $\varphi$ from some definite (initial) position.
+\zhpar{绕定轴转动的刚体只有一个自由度（见\ssect{1.2.7}）。其在空间中的位置可以由相对于某一确定（初始）位置的转角（位置角）$\varphi$ 完全确定。}
 
 
 \subsection{}\label{1.5.3} The angular velocity serves to characterize the rate and direction of rotation of a body about an axis. The \redem{angular veloc­ity} is the vector $\pmb{\omega}$, which is equal in magnitude to the first derivative of the angle of rotation $\varphi$ with respect to time $t$ and is directed along the fixed axis of rotation in such a way that from its head the rotation of the body is counterclockwise (\figr{fig-01-06}) \sidenote[][-3cm]{The direction of vector $\pmb{\omega}$ can also be determined by the \redem{right-hand screw rule}. It coincides with the direction of transla­tional motion of a right-hand screw rotating together with the body. Vectors like $\pmb{\omega}$, whose direction is related to the direction of rotation and is reversed in transforming from a right-handed to a left-handed system of coordinates, are called \redem{pseudovectors}, or \redem{axial vectors} (in distinction to ordinary, \redem{polar vectors}, which are not reversed in the above-mentioned transformation of coor­ dinates). For example, the vector product of two polar vectors is a pseudovector, and that of a pseudovector and a polar vector is a polar vector.}:
+\zhpar{角速度用于描述物体绕轴转动的快慢和转向。\redem{角速度}是矢量 $\pmb{\omega}$，其大小等于转角 $\varphi$ 对时间 $t$ 的一阶导数，其方向沿定转轴，并使得从其末端看去，物体的转动为逆时针方向（见\figr{fig-01-06}）：}
+\zhpar{注：矢量 $\pmb{\omega}$ 的方向也可由\redem{右手螺旋定则}确定：它与随物体一起转动的右手螺旋前进的方向一致。像 $\pmb{\omega}$ 这样方向与转动方向相关、并在由右手坐标系变换为左手坐标系时方向反向的矢量，称为\redem{赝矢量}（即\redem{轴矢量}）；而普通矢量（即\redem{极矢量}）在上述坐标变换下方向不变。例如，两个极矢量的矢积为赝矢量，赝矢量与极矢量的矢积则为极矢量。}
 \begin{equation*}%
 \pmb{\omega} = \dv{\pmb{\varphi}}{t} \qand \omega = \dv{\varphi}{t}.
 \end{equation*}
 Here $\dd\pmb{\varphi}$ is the vector of an element of rotation of the body dur­ing the time $dt$. This vector is directed along the axis of rota­tion, also according to the right-hand screw rule (\figr{fig-01-06}). Axial vectors $\dd\pmb{\varphi}$ and $\pmb{\omega}$ have no definite points of application: they can be laid off from any point on the axis of rotation. In \figr{fig-01-06} they are laid off from a certain point $O$ of the fixed axis of rotation. This point is also taken as the origin of the reference frame.
+\zhpar{这里 $\dd\pmb{\varphi}$ 是物体在时间 $dt$ 内的元转角矢量。该矢量沿转轴方向，同样依右手螺旋定则确定方向（见\figr{fig-01-06}）。轴矢量 $\dd\pmb{\varphi}$ 和 $\pmb{\omega}$ 没有确定的作用点：它们可以从转轴上的任一点画出。在\figr{fig-01-06}中，它们是从定转轴上的某一点 $O$ 画出的，该点也取作参考系的原点。}
 %\begin{wrapfigure}{l}[0pt]{0.5\linewidth}
 \begin{marginfigure}%[!ht]
 \centering
 \includegraphics[width=0.4\textwidth]{figs/ch-01/fig-01-06.pdf}
 %\input{figs/ch-01/fig-01-06}
 %  \vspace{-13pt}
-\sidecaption{Angular velocity and right-hand rule.\label{fig-01-06}}
+\sidecaption{Angular velocity and right-hand rule.\zhcap{角速度与右手螺旋定则。}\label{fig-01-06}}
 \end{marginfigure}
 %\end{wrapfigure}
 
 
 Rotation of a body is said to be \redem{uniform} if the magnitude of its angular velocity remains constant with time $\omega = \textrm{const}$. In this case the angle of rotation of the body is linearly dependent on time: $\varphi = \omega t$.
+\zhpar{若刚体角速度的大小保持不变（$\omega = \textrm{const}$），则称该刚体的转动为\redem{匀速转动}。此时，刚体的转角与时间成线性关系：$\varphi = \omega t$。}
 
 \subsection{}\label{1.5.4} An arbitrary point $M$ of a rigid body rotating about fixed axis $OZ$ with the angular velocity $\pmb{\omega}$ describes a circle of radius $\rho$ with its centre at point $O'$ (\figr{fig-01-07}). As distinct from the angular velocity of the body, the velocity $\vb{v}$ of point M is often called the \redem{linear velocity}. It is perpendicular both to the axis of rotation (i.e. to vector $\pmb{\omega}$) and to radius vector $\pmb{\rho}$, from the centre $O'$ of the circle to point $M$, and is equal to their vector product:
+\zhpar{绕定轴 $OZ$ 以角速度 $\pmb{\omega}$ 转动的刚体上任一点 $M$，描绘半径为 $\rho$、圆心位于点 $O'$ 的圆（见\figr{fig-01-07}）。与刚体的角速度不同，点 $M$ 的速度 $\vb{v}$ 常被称为\redem{线速度}。它既垂直于转轴（即垂直于矢量 $\pmb{\omega}$），也垂直于由圆心 $O'$ 指向点 $M$ 的矢径 $\pmb{\rho}$，并且等于二者的矢积：}
 \begin{equation*}%
 \vb{v} = [\pmb{\omega \rho}]=[\pmb{\omega}\vb{r}] \qand  v = \omega  \rho.
 \end{equation*}
 Here $\vb{r} = \vb{OO'} + \pmb{\rho}$ and is the radius vector of point $M$, from point $O$ of the axis of rotation. Point $O$ is taken as the origin of coordinates.
+\zhpar{此处 $\vb{r} = \vb{OO'} + \pmb{\rho}$，它是点 $M$ 相对于转轴上点 $O$ 的位矢。点 $O$ 取作坐标原点。}
 
 \subsection{}\label{1.5.5} The \redem{period of revolution} is the time interval $T$ required for a body, rotating uniformly at the angular velocity $\omega$, to com­plete one revolution about its axis of rotation (i.e. to rotate through the angle $\varphi = 2\pi$): 
+\zhpar{\redem{转动周期}是指以角速度 $\omega$ 匀速转动的刚体绕其转轴完成一周（即转过角度 $\varphi = 2\pi$）所需的时间间隔 $T$：}
 \begin{equation*}%
 T = \frac{2\pi}{\omega}.
 \end{equation*}
 The \redem{rotational speed} $n = 1/T = \omega/2\pi$ is the number of revolutions made by a body in unit time in uniform rotation at the angular velocity $\omega$.
+\zhpar{\redem{转速} $n = 1/T = \omega/2\pi$ 是以角速度 $\omega$ 匀速转动的刚体在单位时间内完成的转数。}
 
 \subsection{}\label{1.5.6} The rotation of a rigid body in which one of its points remains fixed is said to be \redem{rotation about a fixed point}. This point is usually taken as the origin of the fixed reference frame. In such rotation, all the points of the body travel along the surfaces of concentric spheres whose centre is at the fixed point. 
+\zhpar{刚体上有一点保持不动的转动称为\redem{绕定点的转动}。该点通常取作固定参考系的原点。在这种转动中，刚体上所有点都沿以定点为公共球心的同心球面运动。}
 
 At each instant of time, this motion of the rigid body can be regarded as rotation about a certain axis that passes through the fixed point and is called the instantaneous axis of rotation. In the general case, the position of the \redem{instantaneous axis of rotation} varies with respect to both a fixed reference frame and one rigidly fixed in the rotating body.
+\zhpar{在每一时刻，刚体的这种运动都可以看作绕某一通过定点的轴的转动，该轴称为\redem{瞬时转轴}。一般情形下，瞬时转轴的位置相对于固定参考系以及相对于固连在转动刚体上的参考系都会发生变化。}
 
 The velocity $\vb{v}$ of arbitrary point $M$ of such a body is 
+\zhpar{刚体上任意点 $M$ 的速度 $\vb{v}$ 为：}
 \begin{equation*}%
 \vb{v} = [\pmb{\omega}\vb{r}] \qand v = \omega\rho.
 \end{equation*}
 Here $\pmb{\omega} = \dd \pmb{\varphi}/\dd t$ is the angular velocity of the body and is directed along the instantaneous axis of rotation as is the vector­ $\dd \pmb{\varphi}$ of an element of rotation of the body during the infinitely short time $\dd t$, $\vb{r}$ is the radius vector from fixed point $O$, about which the body rotates, to point $M$, and $\rho$ is the distance from point $M$ to the instantaneous axis of rotation. Such a body can have three independent motions: it can rotate about each of three mutually perpendicular axes passing through fixed point $O$. It consequently has three degrees of freedom \ssect{1.2.7}.
+\zhpar{此处 $\pmb{\omega} = \dd \pmb{\varphi}/\dd t$ 为刚体的角速度，其方向沿瞬时转轴，与刚体在无限短时间 $\dd t$ 内的元转角矢量 $\dd \pmb{\varphi}$ 方向一致；$\vb{r}$ 为由刚体绕其转动的定点 $O$ 指向点 $M$ 的位矢；$\rho$ 为点 $M$ 到瞬时转轴的距离。这种刚体可以具有三种独立运动：它可以绕过定点 $O$ 的三条相互垂直的轴中的任一条转动。因此，它具有三个自由度（见\ssect{1.2.7}）。}
 
 \subsection{}\label{1.5.7} The \redem{angular acceleration} vector $\pmb{\epsilon}$ is introduced to indicate the rate of change of the angular velocity vector with time in nonuniform rotation of a body about a fixed axis or its rotation about a fixed point. Vector $\pmb{\epsilon}$ is equal to the first derivative of the angular velocity $\pmb{\omega}$ of the body with respect to the time $t$:
+\zhpar{为描述刚体绕定轴转动或绕定点转动时非匀速转动中角速度矢量随时间变化的快慢，引入了\redem{角加速度}矢量 $\pmb{\epsilon}$。矢量 $\pmb{\epsilon}$ 等于刚体角速度 $\pmb{\omega}$ 对时间 $t$ 的一阶导数：}
 \begin{equation*}%
 \pmb{\epsilon} = \dv{\pmb{\omega}}{t}.
 \end{equation*}
 If the body rotates about a fixed axis, vector $\pmb{\epsilon}$ is directed along this axis. It coincides in direction with $\pmb{\omega}$ in accelerated rota­tion ($\dd\omega /\dd t > 0$) and is opposite to $\pmb{\omega}$ in direction in decelerated rotation ($\dd\omega /\dd t < 0$). The projection of the angular acceleration on the fixed axis $OZ$ of rotation is equal to 
+\zhpar{若刚体绕定轴转动，则矢量 $\pmb{\epsilon}$ 沿该轴方向。在加速转动（$\dd\omega /\dd t > 0$）中，它与 $\pmb{\omega}$ 方向相同；在减速转动（$\dd\omega /\dd t < 0$）中，它与 $\pmb{\omega}$ 方向相反。角加速度在定转轴 $OZ$ 上的投影为：}
 \begin{equation*}%
 \epsilon_{z} = \dv{\omega_{z}}{t},
 \end{equation*}
 where $\omega_{z}$ is the projection of vector $\pmb{\omega}$ on the same axis.
+\zhpar{式中 $\omega_{z}$ 为矢量 $\pmb{\omega}$ 在同一转轴上的投影。}
 
 \subsection{}\label{1.5.8} As distinct from the angular acceleration, the accelera­tion a of arbitrary point $M$ of a rigid body rotating about fixed point $O$, or about a fixed axis passing through point $O$, is often called the \redem{linear acceleration}. It equals
+\zhpar{与角加速度不同，刚体绕定点 $O$ 转动、或绕通过点 $O$ 的定轴转动时，其上任意点 $M$ 的加速度 $\vb{a}$ 常被称为\redem{线加速度}。它等于：}
 \begin{equation*}%
 \vb{a} = \dv{\vb{v}}{t} = \dv{t}[\pmb{\omega} \vb{r}] = \vb{a}_{r} + \vb{a}_{\textrm{ax}},
 \end{equation*}
 where $\vb{a}_{r} = [\pmb{\epsilon}\vb{r}]$ is the \redem{rotary acceleration} of the point, and $\vb{a}_{\textrm{ax}} = [\pmb{\omega}[\pmb{\omega}\vb{r}]]$ is its \redem{axipetal acceleration}, which is directed toward the instantaneous axis of rotation.
+\zhpar{式中 $\vb{a}_{r} = [\pmb{\epsilon}\vb{r}]$ 为该点的\redem{转动加速度}，$\vb{a}_{\textrm{ax}} = [\pmb{\omega}[\pmb{\omega}\vb{r}]]$ 为其\redem{向轴加速度}，它指向瞬时转轴。}
 %\begin{wrapfigure}{l}[0pt]{0.5\linewidth}
 \begin{marginfigure}%[!ht]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-01/fig-01-07.pdf}
 %\input{figs/ch-01/fig-01-07}
 %  \vspace{-13pt}
-\sidecaption{Relation between linear and rotational acceleration.
+\sidecaption{Relation between linear and rotational acceleration.\zhcap{线加速度与转动加速度的关系。}
 \label{fig-01-07}}
 \end{marginfigure}
 %\end{wrapfigure}
 If the body rotates about the fixed axis $OZ$ (\figr{fig-01-07}), the rotary acceleration of point $M$ coincides with its tangential accelera­tion $\vb{a}_{\tau}$ \ssect{1.4.5}, and its axipetal acceleration coincides with its normal acceleration \ssect{1.4.6}:
+\zhpar{若刚体绕定轴 $OZ$ 转动（见\figr{fig-01-07}），则点 $M$ 的转动加速度与其切向加速度 $\vb{a}_{\tau}$（见\ssect{1.4.5}）相重合，其向轴加速度与其法向加速度（见\ssect{1.4.6}）相重合：}
 \begin{equation*}%
 \vb{a}_{\tau} = [\pmb{\epsilon}\vb{r}] = [\pmb{\epsilon \rho}] \qand \vb{a}_{n} = - \, \pmb{\omega^{2}\rho}.
 \end{equation*}
 \subsection{}\label{1.5.9} Any complex motion of a rigid body can be broken down into two simple motions: translational motion at the velocity $\vb{v}_{A}$ of a certain arbitrarily chosen point $A$ of the body and rota­tion about an instantaneous axis passing through this point. The angular velocity $\pmb{\omega}$ of rotation is independent of the choice of point $A$. The velocity of arbitrary point $M$ of the body is
+\zhpar{刚体的任何复杂运动都可以分解为两种简单运动：以刚体上某任意选定点 $A$ 的速度 $\vb{v}_{A}$ 进行的平动，以及绕过该点的瞬时转轴的转动。转动的角速度 $\pmb{\omega}$ 与所选点 $A$ 的位置无关。刚体上任意点 $M$ 的速度为：}
 \begin{equation*}%
 \vb{v}= \vb{v}_{A}+ [ \pmb{\omega}(\vb{r} - \vb{r}_{A})],
 \end{equation*}
 where $\vb{r}$ and $\vb{r}_{A}$ are the radius vectors of points $M$ and $A$. 
+\zhpar{式中 $\vb{r}$ 和 $\vb{r}_{A}$ 分别为点 $M$ 和点 $A$ 的位矢。}
 
 In the dynamics of a rigid body it usually proves convenient to deal with its complex motion as the combination of two simul­taneous motions: translational motion at the velocity of the body's centre of mass \ssect{2.3.3} and rotation about the centre of mass.
+\zhpar{在刚体动力学中，通常更便于将刚体的复杂运动看作两个同时进行的运动的组合：一是以刚体质心的速度做的平动（见\ssect{2.3.3}），二是绕质心的转动。}
 
 The simplest case of complex motion of a body is \redem{plane}, or \redem{plane-parallel}, \redem{motion}, in which all the points of the body trav­el in parallel planes. This is the motion, for instance, of a homogeneous circular cylinder rolling down an inclined plane. In plane motion the direction of the instantaneous axis of ro­tation of the body about point $A$ remains constant and vectors $\pmb{\omega}$ and $\vb{v}_{A}$ are perpendicular to each other.
+\zhpar{刚体最简单的复杂运动是\redem{平面运动}（或\redem{平行平面运动}），即刚体上所有点都在相互平行的平面内运动。例如，均匀圆柱体沿斜面滚下即属于这种运动。在平面运动中，刚体绕过点 $A$ 的瞬时转轴的方向保持不变，且矢量 $\pmb{\omega}$ 与 $\vb{v}_{A}$ 相互垂直。}
 
 
 

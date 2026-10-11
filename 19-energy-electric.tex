@@ -9,70 +9,89 @@
 
 \chapter{Energy Of An Electric Field}
 \label{ch-19}
+\zhtitle{电场的能量}
 
 \section{Energy of a Charged Conductor and an Electric Field}\sidenote{It is assumed in this chapter that the electric charges and charged bodies are in an isotropic, homogeneous, nonferromagnetic \ssect{18.4.1} medium.}
 \label{sec-19.1}
+\zhtitle{带电导体与电场的能量}
+\zhpar{注：本章假定电荷与带电物体处于各向同性、均匀且无铁磁性的介质中（参见 \ssect{18.4.1}）。}
 
 \subsection{}\label{19.1.1} The charging of an electric conductor requires the performance of work that must be done in overcoming the Coulomb forces of repulsion between like charges. This work increases the electrical energy of a charged conductor in the same sense as the potential energy in mechanics \ssect{3.3.1}. The work $\delta W$ done in bringing a charge $\dd q$ from infinity to the conductor is
+\zhpar{使导体带电需要做功，这一功须用于克服同号电荷之间的库仑斥力。这部分功使带电导体的电能增加，其意义与力学中的势能相同（参见 \ssect{3.3.1}）。将电荷 $\dd q$ 从无穷远处移至导体上所做的功 $\delta W$ 为}
 \begin{equation*}%
 \delta W = V \, \dd q = CV \, \dd V,
 \end{equation*}
 where $C$ and $V$ are the capacitance and potential of the conductor.
+\zhpar{式中 $C$ 和 $V$ 分别为导体的电容和电势。}
 
 The work required to charge a conductor from zero potential to the potential $V$ is
+\zhpar{使导体从零电势充电至电势 $V$ 所需做的功为}
 \begin{equation*}%
 W = \int_{0}^{V} CV \, \dd V = \frac{CV^{2}}{2}.
 \end{equation*}
 Correspondingly, the energy of a \redem{charged isolated conductor} (\redem{intrinsic energy of a charged conductor}) is
+\zhpar{相应地，\redem{带电孤立导体}的能量（即\redem{带电导体的固有能量}）为}
 \begin{equation*}%
 E_{e} = \frac{CV^{2}}{2} = \frac{q^{2}}{2C} = \frac{1}{2} \, Vq.
 \end{equation*}
 The \redem{energy of a charged capacitor} is
+\zhpar{\redem{带电电容器的能量}为}
 \begin{equation*}%
 E_{e} = \frac{C(\Delta V)^{2}}{2} = \frac{q^{2}}{2C} = \frac{1}{2} \,\Delta Vq.
 \end{equation*}
 where $C$ and $q$ are the capacitance and charge of the capacitor, and $\Delta V$ is the potential difference between oppositely charged plates of the capacitor.
+\zhpar{式中 $C$ 和 $q$ 分别为电容器的电容和电荷量，$\Delta V$ 为电容器带异号电荷的两极板之间的电势差。}
 
 \subsection{}\label{19.1.2} The energy of a system of charges, distributed continuously throughout the volume of a dielectric or vacuum, and along the surfaces of charged conductors and an electrified dielectric, is
+\zhpar{连续分布于电介质或真空的体积内以及带电导体和带电电介质的表面上的电荷系统，其能量为}
 \begin{equation*}%
 E = \frac{1}{2} \int_{S_{\text{char}}} V \sigma \, \dd S = \frac{1}{2} \int_{v_{\text{char}}} V \rho \, \dd v, 
 \end{equation*}
 where $\sigma$ and $\rho$ are the surface and volume density of free charges, $V$ is the potential of the resultant held of all the surface and volume charges at the points of the elements $\dd S$ or $\dd v$ of the charged surface or volume (to avoid confusion, volume is denoted here by the lower-case $v$). Integration is carried out over all charged surfaces $S_{\text{char}}$ and throughout all charged volumes $v_{\text{char}}$. The effect of the dielectric is that with a constant distribution of the free charges the values of $V$ differ for the different dielectrics. Thus, in a homogeneous isotropic dielectric that fills the whole field, $S_{\text{char}}$ is $\varepsilon_{r}$-fold less than in vacuum. 
+\zhpar{式中 $\sigma$ 和 $\rho$ 分别为自由电荷的面密度和体密度，$V$ 为所有面电荷与体电荷在带电面元 $\dd S$ 或体元 $\dd v$ 所在点处产生的合电势（为避免混淆，此处用小写字母 $v$ 表示体积）。积分遍及所有带电表面 $S_{\text{char}}$ 和所有带电体积 $v_{\text{char}}$。电介质的作用在于：当自由电荷分布保持不变时，不同电介质中 $V$ 的值各不相同。因此，在充满整个场的均匀各向同性电介质中，$S_{\text{char}}$ 为真空中相应值的 $1/\varepsilon_{r}$。}
 
 \subsection{}\label{19.1.3} The intrinsic energy of a charged conductor is, at the same time, the \redem{energy} of its \redem{electrostatic field}. Hence, for the uniform electrostatic field \ssect{15.1.3} of a parallel-plate capacitor \ssect{17.2.5} we have
+\zhpar{带电导体的固有能量同时也就是其\redem{静电场}的\redem{能量}。因此，对于平行板电容器（见 \ssect{17.2.5}）的均匀静电场（见 \ssect{15.1.3}），有}
 \begin{align*}
 E_{e} & = \frac{1}{2} (\Delta V)^{2}C  = \frac{\varepsilon_{0}\varepsilon_{r}E^{2}}{2}\, Sd = \frac{\varepsilon_{0}\varepsilon_{r}E^{2}}{2} \, v && \text{(in SI units.)} \\
 E_{e} & =  = \frac{\varepsilon_{r}E^{2}}{8\pi} \, v&& \text{(in cgse units).}
 \end{align*}
 where $v = Sd$ is the volume of the electrostatic field between the capacitor plates. The energy of the field is proportional to its volume, and the energy per unit volume of the electrostatic field, called the \redem{volume energy density} $E_{e}^{d}$ at all points of a uniform field:
 is the same
+\zhpar{式中 $v = Sd$ 为两极板之间静电场的体积。场的能量与其体积成正比。单位体积静电场的能量称为\redem{体积能量密度} $E_{e}^{d}$。在均匀场的所有点上，该能量密度都相同，即}
 \begin{align*}
 E_{e}^{d} & = \frac{E_{e}}{v} = \frac{\varepsilon_{0}\varepsilon_{r}E^{2}}{2} = \frac{ED}{2} && \text{(in SI units.)} \\
 E_{e}^{d} & = \frac{E_{e}}{v} = \frac{\varepsilon_{r}E^{2}}{8 \pi} = \frac{ED}{8 \pi}&& \text{(in cgse units).}
 \end{align*}
 
 \subsection{}\label{19.1.4} In the case of nonuniform electrostatic fields, set up by arbitrary charged bodies, the volume energy density at each point of an isotropic medium is expressed by the formulas in the preceding subsection. But when the medium is electrically anisotropic, the volume energy density of the electric field is
+\zhpar{对于由任意带电物体产生的非均匀静电场，在各向同性介质中，各点处的体积能量密度可由上一小节的公式表示。但当介质为电各向异性时，电场的体积能量密度为}
 \begin{align*}
 E_{e}^{d} & = \frac{1}{2} \, \vb{D} \, \vb{E}&& \text{(in SI units.)} \\
 E_{e}^{d} & = \frac{1}{8 \pi} \, \vb{D} \, \vb{E}&& \text{(in cgse units).}
 \end{align*}
 
 \subsection{}\label{19.1.5} The energy $\dd E_{e}$ of an infinitesimal volume of an arbitrary electrostatic field in an isotropic medium is
+\zhpar{在各向同性介质中，任意静电场的无限小体积元的能量 $\dd E_{e}$ 为}
 \begin{equation*}%
 \dd E_{e} = E_{e}^{d} \, \dd v = \frac{\varepsilon_{0}\varepsilon_{r}E^{2}}{2} \, \dd v \quad \text{(in SI units).}
 \end{equation*}
 The total energy $E_{e}$ of an electrostatic field is
+\zhpar{静电场的总能量 $E_{e}$ 为}
 \begin{equation*}%
  E_{e} = \int_{v_{\text{field}}} \frac{\varepsilon_{0}\varepsilon_{r}E^{2}}{2} \, \dd v 
 \end{equation*}
 where integration is carried out throughout the whole volume $v_{\text{field}}$ of the field.
+\zhpar{式中积分遍及场的整个体积 $v_{\text{field}}$。}
 
 
 \subsection{}\label{19.1.6} The total energy of an electrostatic field set up by an arbitrary charged body is equal to the intrinsic energy of the body \ssect{19.1.1}:
+\zhpar{任意带电物体所产生的静电场的总能量，等于该物体的固有能量（见 \ssect{19.1.1}）：}
 \begin{equation*}%
 E_{e} = \frac{CV^{2}}{2} = \int_{v_{\text{field}}} \frac{\varepsilon_{0}\varepsilon_{r}E^{2}}{2} \, \dd v 
 \end{equation*}
 This equation can be generalized for the case of an electrostatic field set up by an arbitrary system of charges. The total energy of such a system \ssect{19.1.2} coincides with the total energy of the electrostatic field set up by this system of charges:
+\zhpar{上式可推广到任意电荷系统所产生的静电场的情形。这种电荷系统的总能量（见 \ssect{19.1.2}）与该系统所产生的静电场的总能量相等：}
 \begin{equation*}%
 \int_{v_{\text{field}}} E_{e}^{d} \, \dd v = \frac{1}{2} \int_{s_{\text{char}}} V \sigma \, \dd S + \frac{1}{2} \int_{v_{\text{char}}} V \rho \, \dd v.
 \end{equation*}
@@ -80,18 +99,23 @@ This equation can be generalized for the case of an electrostatic field set up b
 
 \section{Energy of a Polarized Dielectric}
 \label{sec-19.2}
+\zhtitle{极化电介质的能量}
 
 \subsection{}\label{19.2.1}  The process of polarizing a homogeneous isotropic dielectric, placed in an external electric field, is accompanied by work done in deforming the electron shells in the atoms and molecules or in turning the dipole axes of the molecules into alignment with the field strength. Therefore, a polarized dielectric has a margin of electric energy.
+\zhpar{将均匀各向同性电介质置于外电场中使其极化的过程，伴随着做功：一方面使原子和分子中的电子壳层发生形变，另一方面使分子的偶极轴转向与场强方向一致。因此，极化电介质具有附加的电能。}
 
 \subsection{}\label{19.2.2}  The volume energy density of a polarized dielectric at a point with the field strength $\vb{E}$ equals:
+\zhpar{在场强为 $\vb{E}$ 的某点处，极化电介质的体积能量密度为：}
 \begin{equation*}%
 \dd E_{e\,\, \text{diel}}^{d} = \frac{\varepsilon_{0}( \varepsilon_{r} -1)}{2} \, E^{2} \quad \text{(in SI units).}
 \end{equation*}
 The volume energy density of a field with the same strength $\vb{E}$ in vacuum is
+\zhpar{相同场强 $\vb{E}$ 在真空中的场的体积能量密度为}
 \begin{equation*}%
 \dd E_{e\,\, \text{vac}}^{d} = \frac{\varepsilon_{0}E^{2}}{2}.
 \end{equation*}
 The volume energy density of a field in a dielectric is $E_{e}^{d} = \varepsilon_{0}\varepsilon_{r}E^{2}/2$, and according to the energy conservation law it equals
+\zhpar{电介质中场的体积能量密度为 $E_{e}^{d} = \varepsilon_{0}\varepsilon_{r}E^{2}/2$，根据能量守恒定律，它等于}
 \begin{equation*}%
  E_{e}^{d} = E_{e\,\, \text{vac}}^{d} + E_{e\,\, \text{diel}}^{d}.
 \end{equation*}

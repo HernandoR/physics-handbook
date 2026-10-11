@@ -9,142 +9,194 @@
 
 \chapter{Direct Electric Current}
 \label{ch-20}
+\zhtitle{直流电流}
 
 \section{Concept of an Electric Current}
 \label{sec-20.1}
+\zhtitle{电流的概念}
 
 \subsection{}\label{20.1.1} 
 \redem{Electrodynamics} is the main branch of the science of electricity that deals with the phenomena and processes involved in the motion of electric charges or macroscopic charged bodies. The most vital concept in electrodynamics is that of electric current.
+\zhpar{\redem{电动力学}是电学的主要分支，研究电荷运动或宏观带电物体运动所涉及的现象和过程。电动力学中最重要的概念是电流。}
 
 \subsection{}\label{20.1.2} An \redem{electric current} is any ordered motion of electric charges. An electric current produced in conductive media as the result of the ordered motion of free charges by the action of an electric field is called \redem{conduction current}. Examples of conduction currents are the currents in metals and semiconductors, associated with the ordered motion of ``free'' electrons, and currents in electrolytes, which are the ordered displacement of ions of opposite signs.
+\zhpar{\redem{电流}是电荷的任何有序运动。在电场作用下，导电介质中自由电荷的有序运动所形成的电流称为\redem{传导电流}。传导电流的例子有金属和半导体中与“自由”电子有序运动相联系的电流，以及电解质中正、负离子有序位移所形成的电流。}
 
 A \redem{convection current} is the ordered motion in space of charged macroscopic bodies. An example of such a current is that associated with the motion of the earth, having a surplus negative charge, along its orbit.
+\zhpar{\redem{对流电流}是带电宏观物体在空间中的有序运动。这种电流的一个例子是：带有多余负电荷的地球沿其轨道运动所形成的电流。}
 
 \subsection{}\label{20.1.3} Upon ordered motion of electric charges in a conductor, the equilibrium distribution of charges is violated and the surface of the conductor is no longer an equipotential surface \ssect{16.4.3}. On the surface of the conductor there is a tangential component of the field strength ($E_{\tau} \neq 0$) and there should be an electric field inside the conductor (cf. \ssect{16.4.3}). The electric current continues until all the points of the conductor become equipotential.
+\zhpar{导体中的电荷发生有序运动时，电荷的平衡分布被破坏，导体表面不再是等势面（见\ssect{16.4.3}）。导体表面存在场强的切向分量（$E_{\tau} \neq 0$），导体内部也应存在电场（参见\ssect{16.4.3}）。电流将持续流动，直至导体上所有各点的电势相等为止。}
 
 \subsection{}\label{20.1.4} The conditions required for the initiation and existence of an electric current in a conducting medium are as follows: 
+\zhpar{在导电介质中产生并维持电流所需的条件如下：}
 \begin{enumerate}[label=(\alph*)]
 \item The availability of free \redem{current carriers} -- charged particles -- in the medium, capable of ordered motion in it. In metals and semiconductors suitable particles are the conduction electrons \ssect{16.4.1}; in liquid conductors (electrolytes) they are the positive and negative ions; in gases they are the oppositely charged ions and electrons.
+\zhpar{介质中必须存在能够在其中做有序运动的\redem{载流子}，即带电粒子。在金属和半导体中，合适的粒子是导电电子（见\ssect{16.4.1}）；在液态导体（电解质）中，它们是正、负离子；在气体中，它们是带相反电荷的离子和电子。}
 \item The existence in the given medium of an external electric field whose energy is spent in providing ordered motion of tin; electric charges. To maintain an electric current, the energy of the electric field must be continuously replenished, i.e. \redem{a source of electric energy} is required. This is a device that converts some kind of energy into the energy of an electric field. 
+\zhpar{介质中存在外电场，其能量用于维持电荷的有序运动。要维持电流，电场的能量必须不断得到补充，即需要\redem{电源}。电源是一种将某种形式的能量转换为电场能量的装置。}
 \end{enumerate}
 
 \subsection{}\label{20.1.5} The direction of ordered motion of the positive electric charges is conventionally taken as the direction of the electric current. As a matter of fact, in metallic conductors the current consists of the ordered motion of electrons, which move in the direction opposite to that of the current.
+\zhpar{习惯上取正电荷有序运动的方向为电流方向。实际上，在金属导体中，电流是由电子的有序运动构成的，电子的运动方向与电流方向相反。}
 
 \section{Current and Current Density}
 \label{sec-20.2}
+\zhtitle{电流与电流密度}
 
 \subsection{}\label{20.2.1} The \redem{current strength} (or simply the \redem{current}) $I$ is a scalar quantity, the rate of flow of electricity. It is equal to the ratio of the charge $\dd q$, conveyed through the surface\sidenote{In the case of conduction current, through the cross section of the conductor.} being considered during a small interval of time, to the amount of this time $\dd t$:
+\zhpar{\redem{电流强度}（或简称\redem{电流}）$I$ 是一个标量，表示电荷的流动速率。它等于所考虑的表面在微小时间间隔内输送的电荷 $\dd q$ 与该时间间隔 $\dd t$ 之比：}
+\zhpar{注：对于传导电流，是指通过导体的横截面。}
 \begin{equation*}%
 I = \dv{q}{t}.
 \end{equation*}
 An electric current is said to be \redem{direct} (\redem{direct electric current}) if its magnitude and direction remain constant with time. For direct current
+\zhpar{若电流的大小和方向均不随时间变化，则称其为\redem{直流}（\redem{直流电流}）。对于直流电流，}
 \begin{equation*}%
 I = \frac{q}{t},
 \end{equation*}
 where $q$ is the electric charge conveyed through the surface\sidenote{See the note above.} being considered during the finite time interval from 0 to $t$. 
+\zhpar{式中 $q$ 为在从0到$t$的有限时间间隔内，通过所考虑表面输送的电荷。}
+\zhpar{注：参见上文的注释。}
 
 \subsection{}\label{20.2.2} If the current is a direct one, the charges cannot accumulate or be depleted at any part of the conductor. A direct current circuit should be closed and comply with the condition $Q_{S_{1}} = Q_{S_{2}}$ where $Q_{S_{1}}$ the total electric charge passing in unit time through surface $S_{1}$ into the volume of the conductor enclosed between the cross sections $S_{1}$ and $S_{2}$ and $Q_{S_{2}}$ is the total electric charge emerging from this volume in unit time through surface $S_{2}$.
+\zhpar{若电流为直流，则导体的任何部分都不会积累或耗尽电荷。直流电路应为闭合电路，并满足条件 $Q_{S_{1}} = Q_{S_{2}}$，其中 $Q_{S_{1}}$ 为单位时间内通过表面 $S_{1}$ 进入由横截面 $S_{1}$ 与 $S_{2}$ 所围导体体积的总电荷，$Q_{S_{2}}$ 为单位时间内通过表面 $S_{2}$ 从该体积中流出的总电荷。}
 
 \subsection{}\label{20.2.3} The current density determines the current direction at various points of the surface being considered and the distribution of the current over this surface. The \redem{current density vector} $\vb{j}$ is opposite in direction to the motion of the electrons that carry the current in metals\sidenote{In other conducting media vector $\vb{j}$ coincides in direction with that of the positively charged current carrier.} and is numerically equal to the ratio of the current $\dd I$ through an element of surface normal to the motion of the charged particles to the quantity $\dd S'$, which is the area of this element of surface:
+\zhpar{电流密度决定了所考虑表面上各点的电流方向以及电流在该表面上的分布。\redem{电流密度矢量} $\vb{j}$ 的方向与在金属中输运电流的电子运动方向相反，其大小等于通过与带电粒子运动方向垂直的面元的电流 $\dd I$ 与该面元面积 $\dd S'$ 之比：}
+\zhpar{注：在其他导电介质中，矢量 $\vb{j}$ 的方向与带正电的载流子的运动方向一致。}
 \begin{equation*}%
 I = \dv{I}{S'}.
 \end{equation*}
 A more general relation between the current density $\vb{j}$ and an element of current $\dd I$ is
+\zhpar{电流密度 $\vb{j}$ 与电流元 $\dd I$ 之间更一般的关系为：}
 \begin{equation*}%
 \dd I = \vb{j} \, \dd \vb{S},
 \end{equation*}
 where $\vb{S} = \vu{n}\, \dd S$ is the vector of an element of surface, and $\vu{n}$ is the unit vector of the normal to surface $\dd S$ and makes angle $\alpha$ with vector $\vb{j}$.
+\zhpar{式中 $\vb{S} = \vu{n}\, \dd S$ 为面元矢量，$\vu{n}$ 为面元 $\dd S$ 的单位法线矢量，它与矢量 $\vb{j}$ 的夹角为 $\alpha$。}
 
 \subsection{}\label{20.2.4} The current through an arbitrary surface $S$ is
+\zhpar{通过任意表面 $S$ 的电流为：}
 \begin{equation*}%
  I = \int_{S} \vb{j} \, \dd \vb{S} = \int_{S} j_{n} \, \dd S,
 \end{equation*}
 where $j_{n} = j\, \cos \alpha$ is the projection of vector $\vb{j}$ on the direction of normal $\vu{n}$ \ssect{20.2.3}, and integration is carried out over the whole area of surface $S$. If the conduction current is being calculated on the basis of the cross section of the conductor for which $j_{n} = j$, then
+\zhpar{式中 $j_{n} = j\, \cos \alpha$ 为矢量 $\vb{j}$ 在法线 $\vu{n}$ 方向上的投影（见\ssect{20.2.3}），积分遍及表面 $S$ 的整个面积。若按导体的横截面计算传导电流，此时 $j_{n} = j$，则有：}
 \begin{equation*}%
  I = \int_{S} j \, \dd S.
 \end{equation*}
 
 \subsection{}\label{20.2.5} The density of direct current is the same over the whole cross section $S$ of a homogeneous conductor. Here
+\zhpar{在均匀导体的整个横截面 $S$ 上，直流电流密度处处相同。此时}
 \begin{equation*}%
  I = j \, S.
 \end{equation*}
 In a direct current circuit, the current density of two cross sections $S_{1}$ and $S_{2}$ is inversely proportional to the cross-sectional areas:
+\zhpar{在直流电路中，两个横截面 $S_{1}$ 与 $S_{2}$ 上的电流密度与横截面积成反比：}
 \begin{equation*}%
 \frac{j_{1}}{j_{2}} = \frac{S_{2}}{S_{1}}.
 \end{equation*}
 \section[Electron Theory of Electrical Conduction]{Fundamentals of the Classical Electron Theory of Electrical Conduction in Metals}
 \label{sec-20.3}
+\zhtitle{金属导电的经典电子理论基础}
 
 \subsection{}\label{20.3.1} The high electrical conduction of metals is due to the fact that metals contain an immense number of current carriers, the \redem{conduction electrons}, which are formed of the valence electrons \ssect{39.3.9} of the atoms of metal. These electrons do not belong to any definite atom, but are \redem{collective electrons}. According to the classical Drude-Lorentz electron theory, these electrons are regarded as an electron gas \ssect{16.4.1} that possesses all the properties of a monoatomic ideal gas \ssect{8.4.1}.
+\zhpar{金属的高导电性源于金属中含有数量极大的载流子——\redem{传导电子}。这些电子由金属原子的价电子（见\ssect{39.3.9}）形成，不属于某个特定的原子，而是\redem{共有化电子}。根据经典的德鲁德-洛伦兹电子理论，这些电子被看作一种电子气（见\ssect{16.4.1}），它具有单原子理想气体（见\ssect{8.4.1}）的全部性质。}
 
 The number of conduction electrons in unit volume of a monovalent metal is
+\zhpar{单价金属单位体积内的传导电子数为：}
 \begin{equation*}%
 n_{0} = \frac{N_{A}}{m_{a}} \, \rho,
 \end{equation*}
 where $N_{A}$ is Avogadro's number (Appendix~II), $m_{a}$ is the atomic mass of the metal and $\rho$ is its density. In order of magnitude $n_{0} \approx $(\num{d28}to \num{d29}) \si{\per\meter\cubed}.
+\zhpar{式中 $N_{A}$ 为阿伏伽德罗常量（见附录II），$m_{a}$ 为金属的原子质量，$\rho$ 为其密度。按数量级，$n_{0} \approx $（\num{d28}至\num{d29}）\si{\per\meter\cubed}。}
 
 In the absence of an electric held inside the metal the conduction electrons move at random and collide with the ions of the crystal lattice of the metal \ssect{40.1.1}. It is assumed that the mean free path $(\expval{\lambda})$ of the electron \ssect{10.5.1} should be of the order of magnitude of crystal lattice constants of the metal, i.e. $\expval{\lambda} \approx \SI{d-10}{\meter}$.
+\zhpar{在金属内部无电场时，传导电子做无规热运动，并与金属晶格的离子发生碰撞（见\ssect{40.1.1}）。假定电子的平均自由程 $(\expval{\lambda})$（见\ssect{10.5.1}）与金属晶格常量的数量级相当，即 $\expval{\lambda} \approx \SI{d-10}{\meter}$。}
 
 The average kinetic energy of thermal motion of the electrons \ssect{10.2.4} is
+\zhpar{电子热运动的平均动能（见\ssect{10.2.4}）为：}
 \begin{equation*}%
 \frac{mv^{2}_{\text{rms}}}{2} = \frac{3}{2} kT,
 \end{equation*}	
 where m is the mass and $v_{\text{rms}}$ is the root-mean-square velocity of the electrons \ssect{10.2.3}. At the temperature $T = \SI{273}{\kelvin}$, the velocity $v_{\text{rms}} \approx \SI{d3}{\meter\per\second}$.
+\zhpar{式中 m 为电子的质量，$v_{\text{rms}}$ 为电子的方均根速率（见\ssect{10.2.3}）。在温度 $T = \SI{273}{\kelvin}$ 时，$v_{\text{rms}} \approx \SI{d3}{\meter\per\second}$。}
 
 The arithmetic mean velocity $\expval{u}$ of thermal motion of the electrons \ssect{10.3.6} is of the same order of magnitude.
+\zhpar{电子热运动的算术平均速率 $\expval{u}$（见\ssect{10.3.6}）与之为同一数量级。}
 
 \subsection{}\label{20.3.2} Electric current in a metal is initiated by the action of the external electric held \ssect{20.1.4}, which leads to ordered motion of the electrons. The current density $\vb{j}$ is equal to the charge of all the electrons that pass in unit time through unit area of the conductor's cross section,
+\zhpar{金属中的电流是在外电场（见\ssect{20.1.4}）作用下产生的，外电场使电子做有序运动。电流密度 $\vb{j}$ 等于单位时间内通过导体横截面单位面积的所有电子所携带的电荷之和：}
 \begin{equation*}%
 \vb{j} = n_{0} e  \expval{\vb{v}},
 \end{equation*}
 where $n_{0}$ is the number of conduction electrons per unit volume, $e$ is the magnitude of the charge of the electron, and $\expval{\vb{v}}$ is the average velocity of ordered motion of the electrons due to the action of the external field. At the highest current densities $\expval{\vb{v}}$ is \SI{d-4}{\meter\per\second} and is negligibly small compared to the thermal velocities of the electrons \ssect{20.3.1}.
+\zhpar{式中 $n_{0}$ 为单位体积内的传导电子数，$e$ 为电子电荷的大小，$\expval{\vb{v}}$ 为外场作用下电子有序运动的平均速度。在最大电流密度下，$\expval{\vb{v}}$ 约为 \SI{d-4}{\meter\per\second}，与电子的热运动速度（见\ssect{20.3.1}）相比可以忽略不计。}
 
 \subsection{}\label{20.3.3} A steady electric current is established in a circuit in the time $t = L/c$, where $L$ is the length of the circuit and $c$ is the velocity of light in vacuum. The time $t$ coincides with the time required to establish a steady-state electric field along the circuit and the initiation of ordered motion of the electrons along the whole circuit. Therefore, electric current is started practically simultaneously with the closing of the circuit. 
+\zhpar{稳恒电流在电路中建立所需的时间为 $t = L/c$，其中 $L$ 为电路的长度，$c$ 为真空中的光速。时间 $t$ 恰好等于沿电路建立稳恒电场以及电子沿整个电路开始有序运动所需的时间。因此，电流几乎与电路闭合同时开始流动。}
 
 \subsection{}\label{20.3.4} \redem{Ohm's law for current density (Ohm's law in differential form)} is
+\zhpar{\redem{电流密度形式的欧姆定律（微分形式的欧姆定律）}为：}
 \begin{equation*}%
 \vb{j} = \varkappa \, \vb{E} = \frac{1}{\rho} \vb{E}.
 \end{equation*}
 The current density in a conductor is the product of the \redem{electrical conductivity} $\varkappa$ by the electric field strength $\vb{E}$. The quantity $\rho = 1/\varkappa$ is called the \redem{electrical resistivity}.
+\zhpar{导体中的电流密度等于\redem{电导率} $\varkappa$ 与电场强度 $\vb{E}$ 的乘积。量 $\rho = 1/\varkappa$ 称为\redem{电阻率}。}
 
 According to the classical electron theory, electrical conductivity and resistivity arc calculated by the formulas
+\zhpar{根据经典电子理论，电导率和电阻率由下列公式计算：}
 \begin{equation*}%
 \varkappa = \frac{n_{0}e^{2}\expval{\lambda}}{2m \expval{u}} \qand \rho = \frac{2m \expval{u}}{n_{0}e^{2}\expval{\lambda}},
 \end{equation*}
 where $n_{0}$ is the number of electrons in unit volume of the metal, $\expval{u}$ is the mean free path of the electron \ssect{10.5.1}, $\expval{u}$ is the arithmetic mean velocity of thermal motion of the electrons \ssect{10.3.6}, and $e$ and $m$ are the magnitude of the charge of the electron and its mass.
+\zhpar{式中 $n_{0}$ 为金属单位体积内的电子数，$\expval{u}$ 为电子的平均自由程（见\ssect{10.5.1}），$\expval{u}$ 为电子热运动的算术平均速率（见\ssect{10.3.6}），$e$ 和 $m$ 分别为电子电荷的大小和电子的质量。}
 
 \subsection{}\label{20.3.5} By the action of the field the electron acquires a velocity equal to $v_{\text{max}}$ at the end of its mean free path. Upon collision with an ion at this point, the electron loses its velocity and the energy of ordered motion of the electron is converted into internal energy of the conductor, which is heated as the current passes through.
+\zhpar{在电场作用下，电子在其平均自由程末端获得的速度为 $v_{\text{max}}$。电子在该处与离子碰撞时失去速度，其有序运动的能量转化为导体的内能，导体因电流通过而发热。}
 
 The \redem{volume density $E_{h}^{d} $ of the heating capacity of a current} is the
 amount of energy generated in unit volume of a conductor in unit time. The \redem{Joule-Lenz law} for the volume density of the healing capacity of a current is
+\zhpar{\redem{电流发热本领的体密度 $E_{h}^{d}$} 是单位时间内导体单位体积中产生的能量。\redem{焦耳-楞次定律}给出电流发热本领体密度的表达式为：}
 \begin{equation*}%
 E_{h}^{d} = \vb{j}\, \vb{E} = \varkappa \, E^{2} = \frac{1}{\rho} E^{2}.
 \end{equation*}
 The \redem{Joule-Lenz law in its differential form} states: the volume density of the heating capacity of a current is equal to the scalar product of the current density vector by the electric held strength vector.
+\zhpar{\redem{微分形式的焦耳-楞次定律}指出：电流发热本领的体密度等于电流密度矢量与电场强度矢量的标积。}
 
 The volume density of the heating capacity of a current is independent of the kind of collisions of the electrons with the crystal lattice points [elastic or inelastic collision \ssect{3.5.3}]. It follows from the laws of conservation of energy and momentum that the energy, $\Delta E$ transmitted to the ion upon a collision of the electron with an ion, is only a small part of the electron's energy $E_{el}$. In an inelastic collision 
+\zhpar{电流发热本领的体密度与电子同晶格格点碰撞的类型（弹性或非弹性碰撞，见\ssect{3.5.3}）无关。由能量守恒和动量守恒定律可知，电子与离子碰撞时传递给离子的能量 $\Delta E$ 只是电子能量 $E_{el}$ 的很小一部分。在非弹性碰撞中}
 \begin{equation*}%
 \frac{\Delta E}{E_{el}} = \frac{m}{m + M},
 \end{equation*}
 whereas in an elastic collision 
+\zhpar{而在弹性碰撞中}
 \begin{equation*}%
 \frac{\Delta E}{E_{el}} = \frac{4mM}{(m + M)^{2}},
 \end{equation*}
 where $m$ is the mass of the electron and $M$ is the mass of the ion. Practically, in either case,
+\zhpar{式中 $m$ 为电子的质量，$M$ 为离子的质量。实际上，在两种情况下都有}
 \begin{equation*}%
 \frac{\Delta E}{E_{el}} \approx \frac{m}{M} \approx \num{d-4}.
 \end{equation*}
 
 \subsection{}\label{20.3.6} The \redem{Wiedemann-Franz law} states that for all metals the ratio of the thermal conductivity $K$ \ssect{10.8.5} to the electrical conductivity $\varkappa$ is directly proportional to the absolute temperature $T$:
+\zhpar{\redem{维德曼-弗兰兹定律}指出：对于所有金属，热导率 $K$（见\ssect{10.8.5}）与电导率 $\varkappa$ 之比与热力学温度 $T$ 成正比：}
 \begin{equation*}%
 \frac{K}{\varkappa} \approx 3 \left( \frac{k}{e}\right)^{2} \, T,
 \end{equation*}
 where $k$ is Boltzmann's constant \ssect{8.4.5} and $e$ is the charge of the electron.
+\zhpar{式中 $k$ 为玻尔兹曼常量（见\ssect{8.4.5}），$e$ 为电子的电荷。}
 
 \subsection{}\label{20.3.7} The classical electron theory of electrical conduction of metals has the following shortcomings:
+\zhpar{金属导电的经典电子理论存在以下缺陷：}
 \begin{enumerate}[label=(\alph*)]
 \item it cannot explain the experimentally observed linear relation, in a wide temperature range, between the resistivity $\rho$ and the absolute temperature: $\rho \propto T$.
+\zhpar{它无法解释在较宽温度范围内实验观测到的电阻率 $\rho$ 与热力学温度之间的线性关系 $\rho \propto T$。}
 
 \item it yields an incorrect value for the molar heat capacity of metals. This should be equal, according to this theory, to \SI{9}{\calorie\per\mole\per\kelvin} and be the sum of the heat capacity of the ionic crystal lattice (\SI{6}{\calorie\per\mole\per\kelvin}) and the heat capacity of the mon­oatomic electron gas (\SI{3}{\calorie\per\mole\per\kelvin}). It is known, however, from the experimentally established Dulong and Petit law \ssect{41.7.2} that the molar heat capacity of metals differs only slightly from that of other solids and is approximately \SI{6}{\calorie\per\mole\per\kelvin}. It is impossible on the basis of classical theory to explain the absence of an electron component of heat capacity of metals;
+\zhpar{它给出的金属摩尔热容数值不正确。按该理论，摩尔热容应等于 \SI{9}{\calorie\per\mole\per\kelvin}，即离子晶格的热容（\SI{6}{\calorie\per\mole\per\kelvin}）与单原子电子气的热容（\SI{3}{\calorie\per\mole\per\kelvin}）之和。然而，由实验确定的杜隆-珀蒂定律（见\ssect{41.7.2}）表明，金属的摩尔热容与其他固体的差别很小，约为 \SI{6}{\calorie\per\mole\per\kelvin}。依据经典理论，无法解释金属热容中不存在电子分量这一事实；}
 \item the experimental value of the resistivity $\rho$ and the theoretical value of the arithmetic mean velocity $\expval{u}$ of the electrons lead, in formulas of Section \ssect{20.3.4}, to a value of the mean free path $\expval{\lambda}$ of the electron that exceeds the crystal lattice constant of the metal by two orders of magnitude. This contradicts the assumptions of the classical electron theory of the electrical conduction of metals.
+\zhpar{由电阻率 $\rho$ 的实验值与电子算术平均速率 $\expval{u}$ 的理论值，依据\ssect{20.3.4}中的公式可得电子的平均自由程 $\expval{\lambda}$，其值比金属晶格常量大两个数量级。这与金属导电的经典电子理论的假设相矛盾。}
 \end{enumerate}
