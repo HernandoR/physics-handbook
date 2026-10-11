@@ -96,8 +96,8 @@
 % directly below its English source in a lighter tone.
 \colorlet{zhcolor}{black!55}
 \newcommand{\zhstyle}{\color{zhcolor}\renewcommand{\hltxt}[1]{\textcolor{OrangeRed!55}{##1}}}
-% \zh{...}: translation of the preceding paragraph
-\newcommand{\zh}[1]{\par{\zhstyle #1\par}}
+% \zhpar{...}: translation of the preceding paragraph (\zh itself is a luatexja unit)
+\newcommand{\zhpar}[1]{\par{\zhstyle #1\par}}
 % \zhtitle{...}: translation of the preceding \chapter/\section heading
 \newcommand{\zhtitle}[1]{{\noindent\zhstyle\large\bfseries #1\par}\nobreak\smallskip\noindent}
 % \zhcap{...}: translation inside a \caption/\sidecaption, on a new line
