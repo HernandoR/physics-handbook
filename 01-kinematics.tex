@@ -16,7 +16,7 @@
 
 A \redem{material point}, or \redem{particle}, is a body whose shape and size are of no consequence under the conditions of the problem being considered. For example, in a first approximation, the motion of a ship from one point to another can be dealt with as the motion of a particle. If, however, it becomes necessary to take into account such details of this motion as the pitching and rolling of the ship by swells or heavy seas, the ship should be dealt with as an extended body of definite shape. In the liter­ature the word particle is more frequently used than mate­rial point.
 
-Any extended body or system of such bodies, making up the \redem{mechanical system} being investigated, can be regarded as a \redem{system of particles}. For this purpose, ail the bodies of the system can be conceived of as being broken down into such a large number of parts that the size of each part is negligibly small compared to the sizes of the bodies themselves.
+Any extended body or system of such bodies, making up the \redem{mechanical system} being investigated, can be regarded as a \redem{system of particles}. For this purpose, all the bodies of the system can be conceived of as being broken down into such a large number of parts that the size of each part is negligibly small compared to the sizes of the bodies themselves.
 
 \subsection{}\label{1.1.4} A \redem{perfectly rigid body}, or simply \redem{rigid body}, is one whose deformation can be neglected under the conditions of the given problem. The distance between any two points of a rigid body remains constant no matter what action the body is subjected to. A perfectly rigid body can be regarded as a system of par­ticles rigidly connected to one another.
 
@@ -60,7 +60,7 @@ The mechanical motion of a body is relative, i.e. the nature of the motion and, 
 
 An \redem{osculating circle} at point $M$ of a curve is the limit of a circle passing through three points of the curve being considered when these points approach po­int $M$ without limit. The oscu­lating circle lies in the oscula­ting plane. The centre of the osculating circle and its radius are called the \redem{centre of curvature} and \redem{radius of curvature}, at point $M$, of the curve being considered. The straight line connecting point $M$ to the centre of curvature is called the \redem{principal normal} to the curve at point $M$. The tan­gent to the curve at point $M$ is perpendicular to the principal normal and also lies in the osculating plane.
 
-\subsection{}\label{1.2.5} The \redem{path length} is the sum of the lengths of all the por­tions of the path over which the particle passes m the given interval of time. The instant of time $t = t_{0}$, from which we begin to consider the motion of a particle, is called the initial instant of time, and the position of the particle at this instant (point $A$ in \figr{fig-01-02}) is called its initial position. Owing to the arbitrary nature of the time reference point it is usually as­sumed that $t_{0}= 0$. 
+\subsection{}\label{1.2.5} The \redem{path length} is the sum of the lengths of all the por­tions of the path over which the particle passes in the given interval of time. The instant of time $t = t_{0}$, from which we begin to consider the motion of a particle, is called the initial instant of time, and the position of the particle at this instant (point $A$ in \figr{fig-01-02}) is called its initial position. Owing to the arbitrary nature of the time reference point it is usually as­sumed that $t_{0}= 0$. 
 \begin{marginfigure}[-2cm]
 %\begin{wrapfigure}{l}[10pt]{0.55\linewidth}
 \centering
@@ -76,7 +76,7 @@ The path length $s$, travelled by the particle from its initial position, is a s
 
 \subsection{}\label{1.2.6} The displacement vector of a moving particle during the time interval from $t= t_{1}$ to $t= t_{2}$ is the vector from the, position of the particle at the instant of time $t_{1}$ to its position at instant $t_{2}$. It is equal to the increment in the radius vector of the particle during the time interval being considered:
 \begin{equation*}%
-\vb{r_{2}} - \vb{r_{1}} = \vb{r}(t_{2}) - \vb{r}t_{1}.
+\vb{r_{2}} - \vb{r_{1}} = \vb{r}(t_{2}) - \vb{r}(t_{1}).
 \end{equation*}
 The displacement vector is always directed along the chord subtending the corresponding portion of the path.
 
@@ -124,10 +124,10 @@ v_{x}= \dv{x}{t}, \,\, v_{y}= \dv{y}{t}, \,\, v_{z}= \dv{z}{t},
 \end{equation*}
 and the magnitude of the velocity vector, sometimes called the \redem{speed}, is
 \begin{equation*}%
-v = \abs{\,\vb{v}\,} = \sqrt{\left( \dv{x}{t} \right)^{2} + \left(\dv{y}{t}\right)^{2} + \left(\dv{x}{t}\right)^{2}}.
+v = \abs{\,\vb{v}\,} = \sqrt{\left( \dv{x}{t} \right)^{2} + \left(\dv{y}{t}\right)^{2} + \left(\dv{z}{t}\right)^{2}}.
 \end{equation*}
 
-\subsection{}\label{1.3.4} In rectilinear motion of a particle, the direction of its velocity vector remains constant. The motion of a particle is said to be \redem{uniform} if the magnitude of its velocity does not change with time: $v = \dv*{s}{d} = \text{const}$. The path length $s$ tra­velled by a uniformly moving particle is a linear function of time: $s = vt$ (provided that $t_{0}= 0$, see \ssect{1.2.5}).
+\subsection{}\label{1.3.4} In rectilinear motion of a particle, the direction of its velocity vector remains constant. The motion of a particle is said to be \redem{uniform} if the magnitude of its velocity does not change with time: $v = \dv*{s}{t} = \text{const}$. The path length $s$ tra­velled by a uniformly moving particle is a linear function of time: $s = vt$ (provided that $t_{0}= 0$, see \ssect{1.2.5}).
 
 If the magnitude of the particle's velocity, i.e. its speed, increa­ses with time $(\dv*{v}{t} > 0)$, the motion is said to be \redem{accelerated}; if the speed decreases with time $(\dv*{v}{t} < 0)$, the motion is said to be \redem{decelerated}.
 
@@ -135,7 +135,7 @@ If the magnitude of the particle's velocity, i.e. its speed, increa­ses with ti
 \begin{equation*}%
 v_{\textrm{av}} = \frac{\Delta s}{\Delta t}.
 \end{equation*}
-It is equal to the speed of uniform motion in which the time required to travel the same path length As is the same as in the nonuniform motion being considered.
+It is equal to the speed of uniform motion in which the time required to travel the same path length $\Delta s$ is the same as in the nonuniform motion being considered.
 
 In curvilinear motion of a particle $\abs{\, \Delta \vb{r} \, } < \Delta s$. Therefore, in the general case, the average velocity (travelling speed) $v_{\textrm{av}}$ of the particle is not equal to the magnitude of its average velocity $\vb{v_{av}}$ over the same portion of its path \ssect{1.3.1}: $v_{\textrm{av}} \geqslant \abs{\,\vb{v}\,}$ where the equality sign corresponds to a rectilinear portion of the path.
 
@@ -173,9 +173,9 @@ is called the \redem{areal} velocity.
 \label{sec-1.4}
 
 
-\subsection{}\label{1.4.1} The concept of acceleration is introduced in mechanics to characterize the rate of change of the velocity vector of a mov­ ing particle. The \redem{average acceleration} in the time interval from $t$ to $t + \Delta t$ is 	the vector $\vb{a_{\textrm{av}}}$, which is equal to the ratio of the increment $\Delta \vb{v}$ of the velocity vector of the particle, during the lime interval, to the length of the time interval $\Delta t$:
+\subsection{}\label{1.4.1} The concept of acceleration is introduced in mechanics to characterize the rate of change of the velocity vector of a mov­ ing particle. The \redem{average acceleration} in the time interval from $t$ to $t + \Delta t$ is 	the vector $\vb{a_{\textrm{av}}}$, which is equal to the ratio of the increment $\Delta \vb{v}$ of the velocity vector of the particle, during the time interval, to the length of the time interval $\Delta t$:
 \begin{equation*}%
-\vb{v_{\textrm{av}}} = \frac{\Delta \vb{v}}{\Delta t}.
+\vb{a_{\textrm{av}}} = \frac{\Delta \vb{v}}{\Delta t}.
 \end{equation*}
 
 \subsection{}\label{1.4.2} \redem{Acceleration} (or \redem{instantaneous acceleration}) of a moving particle is the vector quantity $\vb{a}$, equal to the first time deriv­ative of the velocity $\vb{v}$ of the particle being considered or, other­ wise, the second time derivative of the particle's radius vector $\vb{r}$:
@@ -221,7 +221,7 @@ a = \abs{\,a\,} & = \sqrt{\left( \dv{v_{x}}{t}\right)^{2}+\left( \dv{v_{y}}{t}\r
 
 \subsection{}\label{1.4.5} Component $\vb{a}_{\tau}$ is called the \redem{tangential acceleration} of the moving particle. It is directed along the tangent to the path and equals 
 \begin{equation*}%
-\vb{a}_{\tau} = \dv{v}{t} \vb{\tau}  \qand  \vb{a}_{t} = \dv{v}{t},
+\vb{a}_{\tau} = \dv{v}{t} \vb{\tau}  \qand  a_{\tau} = \dv{v}{t},
 \end{equation*}
 where $\vb{\tau} = \vb{v}/v$ is the unit vector of the tangent, from point $M$ of the path in the direction of velocity $\vb{v}$ of the particle, and $a_{\tau}$ is the projection of the tangential acceleration on the direction of vector $\vb{v}$. The tangential acceleration characterizes the rate of change of the magnitude of the particle's velocity vector. Vectors $\vb{a}_{\tau}$ and $\vb{v}$ coincide in direction, i.e. $a_{\tau} > 0$, in accelerat­ed motion \ssect{1.3.4}; vectors $\vb{a}_{\tau}$ and $\vb{v}$ are opposite in direction $a_{\tau} < 0$, in decelerated motion of the particle; and $a_{\tau} = 0$ in its uniform motion. If $a_{\tau} = \textrm{const} \neq 0$, the motion is said to be uniformly variable. In uniformly variable motion the magni­tude of the particle's velocity is linearly time-dependent:
 \begin{equation*}%
@@ -229,7 +229,7 @@ v = v_{0} + a_{\tau}t,
 \end{equation*}
 where $v_{0} = v (0)$ is the magnitude of the initial velocity, i.e. the velocity at the initial instant of time $t = 0$. If $a_{\tau} = \textrm{const} > 0$, the motion of the particle is said to be \redem{uniformly accelerated}, whereas if $a_{\tau} = \textrm{const} < 0$, it is said to be \redem{uniformly de­celerated}.
 
-\subsection{}\label{1.4.6} Component $\vb{a}_{n}$ of acceleration $\vb{a}$ of the moving particle is called its \redem{normal acceleration}. It is directed along the principal normal to the path at point $M$ being considered, toward the centre of curvature \ssect{1.2.4} of the path. Therefore, an is often called the \redem{centripetal acceleration} of the particle. The normal acceleration equals
+\subsection{}\label{1.4.6} Component $\vb{a}_{n}$ of acceleration $\vb{a}$ of the moving particle is called its \redem{normal acceleration}. It is directed along the principal normal to the path at point $M$ being considered, toward the centre of curvature \ssect{1.2.4} of the path. Therefore, $\vb{a}_{n}$ is often called the \redem{centripetal acceleration} of the particle. The normal acceleration equals
 \begin{equation*}%
 \vb{a}_{n} = \frac{v^{2}}{R} \vu{n},
 \end{equation*}
@@ -251,12 +251,12 @@ If the particle travels in a straight line the normal acceleration $\vb{a}_{n} =
 \sidecaption{Translational motion of a rigid body.\label{fig-01-05}}
 \end{figure}
 %\end{wrapfigure}
-In the translational motion of a rigid rigid body all of its points are displaced in an identical way.
+In the translational motion of a rigid body all of its points are displaced in an identical way.
 
 
 During the infinitely short time $\dd t$ the radius vectors of these
 points are changed by the same amount $\dd r$. Hence the velocity
-of all points of the body is the same in each instant of time and is equal to $\dd\vb{r}/\dd t$ and consequently, their accelerating is also the same. For this reason, a kinematic discussion of the translational motion of a rigid body reduces to the investigation of the motion of any one of its points, or particles. Dynamics usually deals with the motion of the centre of mass of the body \ssect{2.3.3}. A rigid body travel­ ling freely in space has three translational degrees of freedom \ssect{1.2.7}, corresponding to its translational motions along the three coordinate axes.
+of all points of the body is the same in each instant of time and is equal to $\dd\vb{r}/\dd t$ and consequently, their acceleration is also the same. For this reason, a kinematic discussion of the translational motion of a rigid body reduces to the investigation of the motion of any one of its points, or particles. Dynamics usually deals with the motion of the centre of mass of the body \ssect{2.3.3}. A rigid body travel­ ling freely in space has three translational degrees of freedom \ssect{1.2.7}, corresponding to its translational motions along the three coordinate axes.
 
 \subsection{}\label{1.5.2} The motion of a rigid body in which two of its points, $A$ and $B$, remain fixed is called \redem{rotation (or rotary motion) of the body about a fixed axis}. The fixed straight line $AB$ is the axis of rotation. In the rotation of a rigid body about a fixed axis all the points of the body describe circles whose centres lie on the axis of rotation and whose planes are perpendicular to this axis. The rotors of turbines, motors and generators, for exam­ple, have rotary motion with respect to the earth if these ma­chines are rigidly mounted.
 
