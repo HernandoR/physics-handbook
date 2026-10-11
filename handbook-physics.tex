@@ -95,7 +95,12 @@
 % Bilingual (English / Simplified Chinese) layout: each Chinese translation is typeset
 % directly below its English source in a lighter tone.
 \colorlet{zhcolor}{black!55}
-\newcommand{\zhstyle}{\color{zhcolor}\renewcommand{\hltxt}[1]{\textcolor{OrangeRed!55}{##1}}}
+\newcommand{\zhstyle}{\color{zhcolor}%
+  \renewcommand{\hltxt}[1]{\textcolor{OrangeRed!55}{##1}}%
+  % cross-references read in Chinese inside translations
+  \renewcommand*\figr[1]{\hyperref[##1]{图~\ref{##1}}}%
+  \renewcommand*\tabl[1]{\hyperref[##1]{表~\ref{##1}}}%
+  \renewcommand*\sect[1]{\hyperref[##1]{（第~\ref{##1}~节）}}}
 % \zhpar{...}: translation of the preceding paragraph (\zh itself is a luatexja unit)
 \newcommand{\zhpar}[1]{\par{\zhstyle #1\par}}
 % \zhtitle{...}: translation of the preceding \chapter/\section heading
