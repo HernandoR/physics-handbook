@@ -9,124 +9,162 @@
 
 \chapter{Magnetic Field Of Direct Current}
 \label{ch-23}
+\zhtitle{直流电的磁场}
 
 \section{Magnetic Field. Ampere's Law}
 \label{sec-23.1}
+\zhtitle{磁场。安培定律}
 
 \subsection{}\label{23.1.1} 
 
 A \redem{magnetic field} is one of the forms of an electromagnetic field \ssect{15.1.2}. A magnetic field is set up by moving charged particles, as well as moving bodies carrying electric charges. Magnetic fields act only on moving electric charges and moving charged bodies.
+\zhpar{磁场是电磁场的一种形式\ssect{15.1.2}。运动的带电粒子以及携带电荷的运动物体都能产生磁场。磁场只作用于运动的电荷和运动的带电物体。}
 
 Variable electric fields (displacement currents) \ssect{27.3.1} are
 also sources of magnetic fields.
+\zhpar{变化的电场（位移电流，见\ssect{27.3.1}）也是磁场的源。}
 
 \subsection{}\label{23.1.2} The main force characteristic of a magnetic field is
 \redem{vector of magnetic induction} $\vb{B}$ (also called \redem{magnetic flux density}, \redem{magnetic displacement}, or, simply, \redem{magnetic vector}). Vector B is determined by one of three methods:
+\zhpar{磁场的主要力学特征量是\redem{磁感应强度矢量} $\vb{B}$（又称\redem{磁通密度}、\redem{磁位移}，或简称\redem{磁矢量}）。矢量 $\vb{B}$ 可用下列三种方法之一确定：}
 \begin{enumerate}[label= (\alph*)]
 \item from Ampere's law \ssect{23.1.4};
+\zhpar{由安培定律确定（见\ssect{23.1.4}）；}
 \item from the effect of the magnetic field on a current-carrying loop \ssect{23.4.2};
+\zhpar{由磁场对载流回路的作用确定（见\ssect{23.4.2}）；}
 \item from the expression for the Lorentz force \ssect{24.1.3}.
+\zhpar{由洛伦兹力的表达式确定（见\ssect{24.1.3}）。}
 \end{enumerate}
 
 \subsection{}\label{23.1.3} Magnetic fields are represented graphically by lines of magnetic induction. \redem{Lines of magnetic induction (lines of magnetic force)} are curves whose tangent at each point coincides with vector $\vb{B}$ at this point of the field. The directions of the magnetic vector and the lines of magnetic induction are determined by the \redem{corkscrew (Maxwell) rule} (also called the \redem{right-hand screw rule}): if a corkscrew with right-hand thread is screwed in the direction of the current density vector in the conductor \ssect{20.2.3}, the direction that the corkscrew handle turns indicates the direction of the lines of magnetic induction and the magnetic vector.
+\zhpar{磁场可以用磁感应线来图示。\redem{磁感应线（磁力线）}是这样一些曲线，其上每一点的切线方向都与该点处的矢量 $\vb{B}$ 重合。磁矢量及磁感应线的方向由\redem{右手螺旋定则}（又称\redem{麦克斯韦定则}）确定：若沿导体中电流密度矢量的方向旋进右旋螺钉（见\ssect{20.2.3}），则螺钉手柄的转动方向即表示磁感应线的方向以及磁矢量的方向。}
 
 Lines of magnetic induction are not interrupted at any point of the magnetic field, i.e. they neither begin nor end. These lines are either closed curves or they extend from infinity to infinity or they are wound infinitely on some surface, covering it densely all over, but never returning again to any point of the surface. A similar situation is observed, for example, in a field set up by a system of a circular current and an infinite rectilinear current passing through the centre of the circular current and perpendicular to its plane. 
+\zhpar{磁感应线在磁场中的任何一点都不中断，即它既无起点，也无终点。这些线或者是闭合曲线，或者从无穷远延伸到无穷远，或者无限地缠绕在某一曲面上并密集地布满该曲面，但从不回到曲面上的同一点。例如，由圆形电流和通过该圆电流中心并垂直于其平面的无限长直电流所组成的系统所产生的磁场，就属于这种情况。}
 
 A magnetic field is said to be \redem{uniform}, or \redem{homogeneous}, if vector $\vb{B}$ is constant at any point in the field. Otherwise, it is said to be \redem{nonuniform (nonhomogeneous}).
+\zhpar{若矢量 $\vb{B}$ 在场中各点都是常矢量，则称该磁场为\redem{均匀磁场}（或\redem{匀强磁场}）；否则称为\redem{非均匀磁场}（非匀强磁场）。}
 
 \subsection{}\label{23.1.4} The force exerted by a magnetic field on a current-carrying conductor placed in the field is called \redem{Ampere's force}. 
+\zhpar{磁场作用于置于场中的载流导体上的力，称为\redem{安培力}。}
 
 \redem{Ampere's law} states that an element of force $\dd \vb{F}$ exerted on a small element of length $\dd l$ of a conductor, carrying a current and located in a magnetic field, is proportional to the vector product of the element $\dd \vb{l}$ of conductor length by the magnetic induction $\vb{B}$:
+\zhpar{\redem{安培定律}指出：置于磁场中的载流导体，其长度元 $\dd \vb{l}$ 所受的力元 $\dd \vb{F}$ 正比于导体长度元矢量 $\dd \vb{l}$ 与磁感应强度 $\vb{B}$ 的矢积：}
 \begin{align*}%
 \dd F & = I \, [\dd \vb{l} \cross \vb{B}] && \text{(in SI units),}\\
 \dd F & = \frac{I}{c} \, [\dd \vb{l} \cross \vb{B}]&& \text{(in Gaussian units, see Appendix~I),}
 \end{align*}
 Here $\dd \vb{l}$ is a vector with the magnitude $\dd l$ and has the same direction as the density vector $\vb{j}$ of the current in the conductor \ssect{20.2.3}.
+\zhpar{式中 $\dd \vb{l}$ 为长度为 $\dd l$ 的矢量，其方向与导体中电流密度矢量 $\vb{j}$ 的方向相同（见\ssect{20.2.3}）。}
 
 Ampere's force $\vb{F}$, acting in a magnetic field on a current-carrying conductor of finite length, is
+\zhpar{在磁场中，长度有限的载流导体所受的安培力 $\vb{F}$ 为}
 \begin{equation*}%
 \vb{F} = \int I \,  [\dd \vb{l} \cross \vb{B}],
 \end{equation*}
 in which integration is carried out over the whole length of the conductor. In the case of a uniform magnetic field \ssect{23.1.3}.
+\zhpar{式中积分沿导体的整个长度进行。对于均匀磁场（见\ssect{23.1.3}），有}
 \begin{align*}%
 \dd F & = I \, Bl \sin \alpha && \text{(in SI units),}\\
 \dd F & = \frac{I}{c} \, Bl \sin \alpha && \text{(in Gaussian units),}
 \end{align*}
 where $\alpha$ is the angle between the density vector of the current in the conductor and vector $\vb{B}$. The relative positions of vectors $\dd \vb{F}$, $\vb{B}$ and $\dd \vb{l}$ are shown in \figr{fig-23-01}. If $\dd \vb{l}$ is perpendicular to $\vb{B}$, the direction of force $\dd \vb{F}$ is found by the \redem{left-hand rule}: if the left hand, opened flat with the fingers parallel to one another and the thumb perpendicular to the fingers, is held so that the magnetic induction vector enters the palm and the fingers indicate the direction of the electric current, the thumb indicates the direction of the force exerted by the magnetic field on the current-carrying conductor. 
+\zhpar{式中 $\alpha$ 为导体中电流密度矢量与矢量 $\vb{B}$ 之间的夹角。矢量 $\dd \vb{F}$、$\vb{B}$ 与 $\dd \vb{l}$ 的相对位置如\figr{fig-23-01}所示。若 $\dd \vb{l}$ 与 $\vb{B}$ 垂直，则力 $\dd \vb{F}$ 的方向可由\redem{左手定则}确定：将左手摊开，使各手指彼此平行，拇指与其余手指垂直；若使磁感应强度矢量穿入手心，四指指向电流方向，则拇指所指的方向即为磁场作用于载流导体的力的方向。}
 
 It is evident from \figr{fig-23-01} that vector $\dd \vb{F}$ is perpendicular to the plane passing through vectors $\dd \vb{l}$ and $\vb{B}$, and that its direction is such that from the head of vector $\dd \vb{F}$ the direction of shortest rotation from vector d to vector $\vb{B}$ is counter-clockwise. In other words, vector $\dd \vb{F}$ coincides in direction with the vector product $[\dd \vb{l} \cross \vb{B}]$.
+\zhpar{由\figr{fig-23-01}可见，矢量 $\dd \vb{F}$ 垂直于 $\dd \vb{l}$ 与 $\vb{B}$ 所在的平面，并且其方向满足：从 $\dd \vb{F}$ 的末端看去，由矢量 $\dd \vb{l}$ 转向矢量 $\vb{B}$ 的最短转动方向为逆时针。换言之，矢量 $\dd \vb{F}$ 的方向与矢积 $[\dd \vb{l} \cross \vb{B}]$ 的方向一致。}
 
 \begin{marginfigure}[-2cm]
 \centering
 \includegraphics[width=0.9\textwidth]{figs/ch-23/fig-23-01.pdf}
-\sidecaption{Directions of vectors $\dd \vb{F}$, $\dd \vb{l}$ and $\vb{B}$.\label{fig-23-01}}
+\sidecaption{Directions of vectors $\dd \vb{F}$, $\dd \vb{l}$ and $\vb{B}$.\zhcap{矢量 $\dd \vb{F}$、$\dd \vb{l}$ 与 $\vb{B}$ 的方向。}\label{fig-23-01}}
 \end{marginfigure}
 
 \subsection{}\label{23.1.5} It follows that the magnetic induction vector in SI units is numerically equal to the limit of the following ratio: the force exerted by a magnetic field on an element of a current-carrying conductor to the product of the current by the length of an element of the conductor, the limit being taken as the length of the element approaches zero and is positioned in the field so that the limit reaches its maximum value. Thus
+\zhpar{由此可知，在国际单位制中，磁感应强度矢量在数值上等于如下比值的极限：磁场作用于载流导体长度元上的力，与电流和导体长度元之积的比值；取极限时，导体长度元趋于零，并且其在磁场中的位置使该比值达到最大值。即}
 \begin{align*}%
 B & = \frac{1}{I} \, \left( \dv{F}{l}\right)_{\text{max}} && \text{(in SI units),}\\
 B & = \frac{c}{I} \, \left( \dv{F}{l}\right)_{\text{max}} && \text{(in Gaussian units),}
 \end{align*}
 where $c$ is the electrodynamic constant (Appendix~I).
+\zhpar{式中 $c$ 为电动力学常量（见附录 I）。}
 
 \subsection{}\label{23.1.6} In contrast to electrostatic forces \ssect{14.2.2}, Ampere's force is not a central one \ssect{3.3.4}. Ampere's force is perpendicular to the lines of magnetic induction and to the current-carrying conductors.
+\zhpar{与静电力\ssect{14.2.2}不同，安培力不是有心力（\ssect{3.3.4}）。安培力垂直于磁感应线以及载流导体。}
 \begin{marginfigure}%[-2cm]
 \centering
 \includegraphics[width=0.9\textwidth]{figs/ch-23/fig-23-02.pdf}
-\sidecaption{Biot-Savart Laplace law to find magnetic induction at any point in a magnetic field set up by a direct electric current flowing along a conductor of any shape.\label{fig-23-02}}
+\sidecaption{Biot-Savart Laplace law to find magnetic induction at any point in a magnetic field set up by a direct electric current flowing along a conductor of any shape.\zhcap{用于求任意形状导体中直流电流所产生磁场中任一点磁感应强度的毕奥-萨伐尔-拉普拉斯定律。}\label{fig-23-02}}
 \end{marginfigure}
 
 \section{The Biot-Savart-Laplace Law}
 \label{sec-23.2}
+\zhtitle{毕奥-萨伐尔-拉普拉斯定律}
  
 \subsection{}\label{23.2.1} The \redem{Biot-Savart-Laplace law} determines the magnetic induction at any point in a magnetic field set up by a direct electric current flowing along a conductor of any shape. The vector $\dd \vb{B}$ of magnetic induction at any point $C$ of a magnetic field, set up by an element of a conductor carrying the current $I$ and of the length $\dd l$ is determined by the formula
+\zhpar{\redem{毕奥-萨伐尔-拉普拉斯定律}确定了任意形状的直流载流导体所产生的磁场中任一点的磁感应强度。设载流为 $I$、长度元为 $\dd l$ 的导体元在磁场中任一点 $C$ 产生的磁感应强度矢量为 $\dd \vb{B}$，它由下式确定：}
 \begin{equation*}%
 \dd \vb{B}= k \mu_{r} \, [\dd \vb{l} \cross \vb{r}],
 \end{equation*}
 where $\dd \vb{l}$ is the vector of an element of length of the conductor \ssect{23.1.4}, $\vb{r}$ is the radius vector from the element $\dd \vb{l}$ of the conductor to point $C$ (\figr{fig-23-02}), $r$ is the magnitude of the radius vector $\vb{r}$, $k$ is a factor depending only upon the chosen system of units, and $\mu_{r}$ is a dimension­ less quantity that characterizes the magnetic properties of the medium and called the \redem{relative magnetic permeability} (or simply  \redem{relative permeability}) of the medium. The relative permeability does not depend upon the choice of units and equals unity for vacuum. For all substances, except ferromagnetic ones, p,r differs only slightly from unity \ssect{26.5.1}. See \ssect{26.4.5} for a general definition of $\mu_{r}$.
+\zhpar{式中 $\dd \vb{l}$ 为导体长度元矢量（见\ssect{23.1.4}），$\vb{r}$ 为从导体元 $\dd \vb{l}$ 到场点 $C$ 的位矢（见\figr{fig-23-02}），$r$ 为位矢 $\vb{r}$ 的大小，$k$ 为仅取决于所选单位制的因子，$\mu_{r}$ 为无量纲量，表征介质的磁性质，称为介质的\redem{相对磁导率}。相对磁导率与单位制的选取无关，在真空中等于 1。除铁磁质外，对于所有物质，$\mu_{r}$ 与 1 仅略有差别（见\ssect{26.5.1}）。关于 $\mu_{r}$ 的一般定义，参见\ssect{26.4.5}。}
 
 
 
 \subsection{}\label{23.2.2} In SI units $k = \mu_{0}/4\pi$, where $\mu_{0} = 4\pi \times \SI{d-7}{\henry\per\meter}$ is the \redem{permeability} of free space, or the \redem{magnetic constant} (Appen­dix~II). In Gaussian units, $k = 1/c$, where $c = \SI{3d10}{\centi\meter\per\second}$ is the electrodynamic constant (Appendix~I).
+\zhpar{在国际单位制中，$k = \mu_{0}/4\pi$，其中 $\mu_{0} = 4\pi \times \SI{d-7}{\henry\per\meter}$ 为\redem{真空磁导率}，又称\redem{磁常量}（见附录 II）。在高斯单位制中，$k = 1/c$，其中 $c = \SI{3d10}{\centi\meter\per\second}$ 为电动力学常量（见附录 I）。}
 
 The Biot-Savart-Laplace law is of the form
+\zhpar{毕奥-萨伐尔-拉普拉斯定律的形式为}
 \begin{equation*}%
 \dd \vb{B} = \frac{\mu_{0} \mu_{r}}{4 \pi} \, \frac{I}{r^{3}} \, [\dd \vb{l} \cross \vb{r}]
 \end{equation*}
 This form of the Biot-Savart-Laplace law and of all the electromagnetic field equations is said to be \redem{rationalized}.
+\zhpar{这种形式的毕奥-萨伐尔-拉普拉斯定律以及所有电磁场方程，称为\redem{有理化}形式。}
 
 The product $\mu_{0} \mu_{r}$ is sometimes called the \redem{absolute magnetic permeability} (or simply \redem{permeability}) of the medium.
+\zhpar{乘积 $\mu_{0} \mu_{r}$ 有时称为介质的\redem{绝对磁导率}（或简称\redem{磁导率}）。}
 
 In Gaussian units 
+\zhpar{在高斯单位制中}
 \begin{equation*}%
 \dd \vb{B} = \frac{1}{c} \, \frac{I}{r^{3}} \, [\dd \vb{l} \cross \vb{r}]
 \end{equation*}
 The magnitude of vector $\dd \vb{B}$ is equal to
+\zhpar{矢量 $\dd \vb{B}$ 的大小等于}
 \begin{align*}%
 \dd \vb{B} & = \frac{\mu_{0} \mu_{r}}{4 \pi} \frac{I \dd l \sin \alpha}{r^{2}} && \text{(in SI units),} \\
 \dd \vb{B} & = \frac{\mu_{r}}{c} \frac{I \dd l \sin \alpha}{r^{2}}  && \text{(in Gaussian units.)}
 \end{align*}
 where $\alpha$ is the angle between vectors $\dd \vb{l}$ and $\vb{r}$.
+\zhpar{式中 $\alpha$ 为矢量 $\dd \vb{l}$ 与 $\vb{r}$ 之间的夹角。}
 
 \subsection{}\label{23.2.3} The \redem{magnetic field strength} $\vb{H}$ is the vector characteristic of a magnetic field that, for a homogeneous isotropic medium, is related to B as follows:
+\zhpar{\redem{磁场强度} $\vb{H}$ 是表征磁场的矢量，对于均匀各向同性介质，它与 $\vb{B}$ 的关系如下：}
 \begin{align*}%
 \vb{H} & = \frac{\vb{B}}{\mu_{0} \mu_{r}} && \text{(in SI units),} \\
 \vb{H} & = \frac{\vb{B}}{\mu_{r}}  && \text{(in Gaussian units.)}
 \end{align*}
 The universal relation between vectors $\vb{B}$ and $\vb{H}$ for a magnetic field in an arbitrary medium and the more general definition of the magnetic field strength vector $\vb{H}$ are discussed in \ssect{26.4.4}.
+\zhpar{关于任意介质中矢量 $\vb{B}$ 与 $\vb{H}$ 之间的普遍关系，以及磁场强度矢量 $\vb{H}$ 的更一般定义，参见\ssect{26.4.4}。}
 
 The strength of a magnetic field set up by a direct current in a homogeneous isotropic medium is independent of the magnetic properties of the medium. Thus
+\zhpar{在均匀各向同性介质中，由直流电所产生的磁场强度与介质的磁学性质无关。因此有}
 \begin{alignat*}{3}%
 \dd \vb{H} & = \frac{I}{4 \pi r^{3}}\, [\dd \vb{l} \cross \vb{r}], \quad  && \dd H  = \frac{I \dd l \sin \alpha}{4 \pi r^{2}} \,\, && \text{(in SI units),} \\
 \dd \vb{H} & =  \frac{I}{c r^{3}}\, [\dd \vb{l} \cross \vb{r}], \quad && \dd H  = \frac{I \dd l \sin \alpha}{c r^{2}} \,\,&& \text{(in Gaussian units.)}
 \end{alignat*}
 where $\alpha$ is the angle between vectors $\dd \vb{l}$ and $\vb{r}$.
+\zhpar{式中 $\alpha$ 为矢量 $\dd \vb{l}$ 与 $\vb{r}$ 之间的夹角。}
 
 \subsection{}\label{23.2.4} It follows from a comparison of the characteristics of electric ($\vb{E}$ and $\vb{D}$) and magnetic ($\vb{B}$ and $\vb{H}$) fields that the electric field strength vector $\vb{E}$ is analogous to the magnetic vector $\vb{B}$. Both vectors specify the force effects of the fields and depend upon the properties of the medium in which the field is set up.
+\zhpar{比较电场（$\vb{E}$ 与 $\vb{D}$）和磁场（$\vb{B}$ 与 $\vb{H}$）的特征量可知，电场强度矢量 $\vb{E}$ 与磁矢量 $\vb{B}$ 相类似。二者都描述场的力效应，并且都依赖于场所在介质的性质。}
 
 The analogue of vector $\vb{D}$ of electric displacement \ssect{15.3.1} is the magnetic field strength vector $\vb{H}$.
+\zhpar{电位移矢量 $\vb{D}$（见\ssect{15.3.1}）的对应量是磁场强度矢量 $\vb{H}$。}
 
 \subsection{}\label{23.2.5} An electric charge $q$, travelling in an unbounded homogeneous and isotropic medium at the constant velocity $\vb{v}$, sets up a magnetic field whose magnetic induction $\vb{B}_{q}$ can be calculated by the formula
+\zhpar{以恒定速度 $\vb{v}$ 在无界均匀各向同性介质中运动的电荷 $q$，所产生的磁感应强度 $\vb{B}_{q}$ 可由下式计算：}
 \begin{alignat*}{3}%
 \vb{B}_{q} & = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{q}{r^{3}}
 [\vb{v} \cross \vb{r}],\,\,  && {B}_{q}  = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{qv \sin \beta}{r^{2}} \,\, && \text{(in SI units),} \\
@@ -134,93 +172,113 @@ The analogue of vector $\vb{D}$ of electric displacement \ssect{15.3.1} is the m
 [\vb{v} \cross \vb{r}],\,\, && {B}_{q} = \frac{ \mu_{r}}{c}\, \frac{qv \sin \beta}{r^{2}}\,\, && \text{(in Gaussian units.)}
 \end{alignat*}
 where $\beta$ is the angle between vectors $\vb{v}$ and $\vb{r}$, and $\vb{r}$ is the radius vector from the travelling charge to the point $A$ being considered in the field. Vectors $\vb{B}_{q}$ and $\vb{H}_{q}$ are perpendicular to the plane passing through vectors $\vb{v}$ and $\vb{r}$.
+\zhpar{式中 $\beta$ 为矢量 $\vb{v}$ 与 $\vb{r}$ 之间的夹角，$\vb{r}$ 为从运动电荷到场中所考察点 $A$ 的位矢。矢量 $\vb{B}_{q}$ 与 $\vb{H}_{q}$ 都垂直于矢量 $\vb{v}$ 与 $\vb{r}$ 所在的平面。}
 \begin{marginfigure}[-1cm]
 \centering
 \includegraphics[width=0.7\textwidth]{figs/ch-23/fig-23-03.pdf}
-\sidecaption{Magnetic field by a travelling electric charge in an unbounded homogeneous and isotropic medium at the constant velocity.\label{fig-23-03}}
+\sidecaption{Magnetic field by a travelling electric charge in an unbounded homogeneous and isotropic medium at the constant velocity.\zhcap{以匀速运动的电荷在无界均匀各向同性介质中产生的磁场。}\label{fig-23-03}}
 \end{marginfigure}
 
 When $q > 0$, the shortest rotation from vector $\vb{v}$ to vector $\vb{r}$ is seen from the head of vector $\vb{B}_{q}$ (and $\vb{H}_{q}$) to be counter­
 \figr{fig-23-03} clockwise (\figr{fig-23-03}~\drkgry{(a)}). When $q < 0$, then $\vb{B}_{q}$ (and $\vb{H}_{q}$) have the opposite direction (\figr{fig-23-03}~\drkgry{(b)}). The magnetic field of a moving charge is variable, because the radius vector $\vb{r}$ varies in magnitude and direction as charge $q$ travels even if $\vb{v} = \text{const}$. The magnetic field of a moving charge, depending upon angle $\beta$ between vectors $\vb{v}$ and $\vb{r}$, is not spherically symmetrical, as in the case of the electrostatic field of a point charge \ssect{14.2.3}. The magnetic field being considered has mirror symmetry with respect to the direction of $\vb{v}$. The field strength is maximum at points in a plane passed through the charge perpendicularly to vector $\vb{v}$ (under the condition that $v \ll c$). At all points on a straight line coinciding with vector $\vb{v}$ there is no magnetic field induction,
+\zhpar{当 $q > 0$ 时，从 $\vb{B}_{q}$（及 $\vb{H}_{q}$）的末端看去，由矢量 $\vb{v}$ 转向矢量 $\vb{r}$ 的最短转动为逆时针方向（\figr{fig-23-03}~\drkgry{(a)}）。当 $q < 0$ 时，$\vb{B}_{q}$（及 $\vb{H}_{q}$）的方向与之相反（\figr{fig-23-03}~\drkgry{(b)}）。运动电荷的磁场是变化的，因为即使 $\vb{v} = \text{const}$，电荷 $q$ 运动时位矢 $\vb{r}$ 的大小和方向也在变化。与点电荷静电场（见\ssect{14.2.3}）的球对称性不同，运动电荷的磁场依赖于 $\vb{v}$ 与 $\vb{r}$ 之间的夹角 $\beta$，不具有球对称性。所考察的磁场关于 $\vb{v}$ 的方向具有镜像对称性。在过电荷并且垂直于矢量 $\vb{v}$ 的平面上各点，磁场强度最大（条件是 $v \ll c$）。在与矢量 $\vb{v}$ 重合的直线上的所有点，磁感应强度均为零。}
 
 \section[Simplest Cases of Magnetic Fields]{Simplest Cases of Magnetic Fields Set Up by Direct Currents}
 \label{sec-23.3}
+\zhtitle{直流电产生的磁场的最简单情形}
 
 \subsection{}\label{23.3.1} Making use of the Biot-Savart-Laplace law we can determine the characteristics ($\vb{B}$ and $\vb{H}$) of a magnetic field set up by an electric current flowing in a conductor of finite dimensions and arbitrary shape. According to the principle of superposition of fields \ssect{15.2.2} the magnetic induction $\vb{B}$ at an arbitrary point of a magnetic field of a conductor carrying the current $I$ is equal to
+\zhpar{利用毕奥-萨伐尔-拉普拉斯定律，可以确定任意形状的有限尺寸导体中电流所产生的磁场的特征量（$\vb{B}$ 与 $\vb{H}$）。根据场的叠加原理（见\ssect{15.2.2}），载流为 $I$ 的导体在磁场中任一点的磁感应强度 $\vb{B}$ 等于}
 \begin{equation*}%
 \vb{B} = \int_{L} \dd \vb{B},
 \end{equation*}
 where $\dd \vb{B}$ is the magnetic induction of the field set up by an element
 of the conductor with the length $\dd l$. Integration is carried out over the
 whole length $L$ of the conductor.
+\zhpar{式中 $\dd \vb{B}$ 为长度为 $\dd l$ 的导体元所产生的磁感应强度。积分沿导体的整个长度 $L$ 进行。}
 
 \subsection{}\label{23.3.2} A \redem{straight conductor} $MN$ carrying the current I sets up a magnetic field with induction B and strength H at an arbitrary point A equal to\sidenote{It is assumed in all the examples of \ssect{sec-23.3} that the medium is homogeneous, isotropic and completely fills all the space in which the magnetic field exists.}
+\zhpar{载流为 $I$ 的\redem{直导线} $MN$ 在其外任一点 $A$ 处产生的磁感应强度 $B$ 与磁场强度 $H$ 分别为}
+\zhpar{注：\ssect{sec-23.3} 中的所有例题都假定介质是均匀、各向同性的，并且完全充满磁场存在的整个空间。}
 \begin{alignat*}{3}%
 B & = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{I}{r_{0}} \,(\cos \varphi_{1} - \cos \varphi_{2}),\,\,  && H  = \frac{B}{\mu_{0} \mu_{r}} \,\,&& \text{(in SI units),} \\
 B & =  \frac{1}{c}\, \frac{I}{r_{0}}, (\cos \varphi_{1} - \cos \varphi_{2}),\,\,  && H = \frac{B}{\mu_{r}} \,\,&& \text{(in Gaussian units.)}
 \end{alignat*}
 where $r_{0}$ is the distance from point $A$ to the conductor, $\varphi_{1}$ and $\varphi_{2}$ are the angles formed by the radius vectors from point $A$ to the beginning and end of the conductor (\figr{fig-23-04}), $\mu_{r}$ is the relative magnetic permeability of the medium, and $\mu_{0}$ is the magnetic constant in SI units (Appendix~II).
+\zhpar{式中 $r_{0}$ 为场点 $A$ 到导线的距离，$\varphi_{1}$ 与 $\varphi_{2}$ 分别为由场点 $A$ 指向导线始端与末端的位矢所成的角（见\figr{fig-23-04}），$\mu_{r}$ 为介质的相对磁导率，$\mu_{0}$ 为国际单位制中的磁常量（见附录 II）。}
 \begin{marginfigure}[-2cm]
 \centering
 \includegraphics[width=0.6\textwidth]{figs/ch-23/fig-23-04.pdf}
-\sidecaption{Magnetic field by a current carrying conductor.\label{fig-23-04}}
+\sidecaption{Magnetic field by a current carrying conductor.\zhcap{载流导体产生的磁场。}\label{fig-23-04}}
 \end{marginfigure}
 For an infinitely long conductor $\varphi_{1} = 0$ and ($\varphi_{2} = \pi$)
+\zhpar{对于无限长导体，$\varphi_{1} = 0$，$\varphi_{2} = \pi$，于是有}
 \begin{alignat*}{3}%
 B & = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{I}{r_{0}} \,(\cos \varphi_{1} - \cos \varphi_{2}),  \,\, && H  = \frac{B}{\mu_{0} \mu_{r}} \,\, &&  \text{(in SI units),} \\
 B & =  \frac{1}{c}\, \frac{I}{r_{0}}, (\cos \varphi_{1} - \cos \varphi_{2}), \,\, &&  H = \frac{B}{\mu_{r}} \,\, &&  \text{(in Gaussian units.)}
 \end{alignat*}
 
 \subsection{}\label{23.3.3} For the magnetic field at the centre of a \redem{rectangular turn (loop) carrying the current} $I$
+\zhpar{载有电流 $I$ 的\redem{矩形线圈（回路）}中心处的磁场为}
 \begin{alignat*}{3}%
 B & = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{8I\sqrt{a^{2}+b^{2}}}{ab},  \,\, && H  = \frac{B}{\mu_{0} \mu_{r}} \,\, &&  \text{(in SI units),} \\
 B & =  \frac{1}{c}\, \mu_{r} \, \frac{8I\sqrt{a^{2}+b^{2}}}{ab}, \,\, &&  H = \frac{B}{\mu_{r}} \,\, &&  \text{(in Gaussian units.)}
 \end{alignat*}
 where $a$ and $b$ are the sides of the rectangle.
+\zhpar{式中 $a$ 与 $b$ 为矩形的边长。}
 
 \subsection{}\label{23.3.4} The \redem{magnetic moment} $\vb{p}_{m}$ of a closed loop of arbitrary shape, carrying the current $I$, is equal to
+\zhpar{载有电流 $I$ 的任意形状闭合回路的\redem{磁矩} $\vb{p}_{m}$ 等于}
 \begin{align*}%
 \vb{p}_{m} & = I \int_{S} \vb{n}\, \dd S && \text{(in SI units),} \\
 \vb{p}_{m} & = \frac{I}{c}\int_{S} \vb{n}\, \dd S  && \text{(in Gaussian units.)}
 \end{align*}
 where $\vb{n}$ is a unit vector of the outward normal to element $\dd S$ of the surface $S$, bounded by the current-carrying loop. In the case of a flat loop, surface $S$ is plane and all the normals have the same direction. Hence
+\zhpar{式中 $\vb{n}$ 为沿外法线方向、与闭合载流回路所围曲面 $S$ 的面元 $\dd S$ 垂直的单位矢量。对于平面回路，曲面 $S$ 为平面，所有法线方向相同。因此有}
 \begin{alignat*}{3}%
 \vb{p}_{m} & = I S \vb{n},  \,\, && p_{m}  = IS \,\, &&  \text{(in SI units),} \\
 \vb{p}_{m} & =  \frac{1}{c} I S \vb{n}, \,\, &&  p_{m} = \frac{1}{c}IS \,\, &&  \text{(in Gaussian units.)}
 \end{alignat*}
 Vector $\vb{p}_{m}$ is directed so that from its head the current in the circuit is seen to be flowing counterclockwise (\figr{fig-23-05}).
+\zhpar{矢量 $\vb{p}_{m}$ 的方向规定为：从其末端看去，回路中的电流沿逆时针方向流动（见\figr{fig-23-05}）。}
 \begin{marginfigure}[-2cm]
 \centering
 \includegraphics[width=0.6\textwidth]{figs/ch-23/fig-23-05.pdf}
-\sidecaption{Orientation of magnetic moment vector.\label{fig-23-05}}
+\sidecaption{Orientation of magnetic moment vector.\zhcap{磁矩矢量的方向。}\label{fig-23-05}}
 \end{marginfigure}
 
 \subsection{}\label{23.3.5} The magnetic field set up by a circular turn, or loop, carrying the current $I$, at an arbitrary point $A$ on the axis of the turn (loop) (\figr{fig-23-06}), is specified by
+\zhpar{载有电流 $I$ 的圆形线圈（回路）轴线上任一点 $A$（见\figr{fig-23-06}）处的磁场由下式给出}
 \begin{alignat*}{3}%
 \vb{B} & = \frac{\mu_{0} \mu_{r}}{4 \pi }\, \frac{2\vb{p}_{m}}{(R^{2}+h^{2})^{3/2}},  \,\, && \vb{H}  = \frac{\vb{B}}{\mu_{0} \mu_{r}} \,\, &&  \text{(in SI units),} \\
 \vb{B} & =  \mu_{r}\, \frac{2\vb{p}_{m}}{(R^{2}+h^{2})^{3/2}},  \,\, && \vb{H}  = \frac{\vb{B}}{\mu_{r}}\,\, &&  \text{(in Gaussian units.)}
 \end{alignat*}
 Here $\vb{p}_{m}$ is the magnetic moment of a current-carrying turn, or loop, \ssect{23.3.4}.
+\zhpar{式中 $\vb{p}_{m}$ 为载流线圈（回路）的磁矩（见\ssect{23.3.4}）。}
 
 The magnitudes of vectors $\vb{B}$ and $\vb{H}$ equal
+\zhpar{矢量 $\vb{B}$ 与 $\vb{H}$ 的大小分别为}
 \begin{alignat*}{3}%
 B & = \frac{\mu_{0} \mu_{r}}{2}\, \frac{IR^{2}}{(R^{2}+h^{2})^{3/2}} = \frac{\mu_{0} \mu_{r}IS}{2 \pi (R^{2}+h^{2})^{3/2}},  \,\, && H  = \frac{B}{\mu_{0} \mu_{r}} \\ &  \text{(in SI units),} \\
 B & =  \frac{1}{c} \mu_{r}\, \frac{2 \pi IR^{2}}{(R^{2}+h^{2})^{3/2}} = \frac{1}{c} \mu_{r} \frac{2IS}{(R^{2}+h^{2})^{3/2}},  \,\, && H  = \frac{B}{\mu_{r}}\\ &  \text{(in Gaussian units.)}
 \end{alignat*}
 where $h$ is the distance from point $A$ to the centre of the turn (loop), $R$ is the radius and $S$ is the area of the turn.
+\zhpar{式中 $h$ 为场点 $A$ 到线圈（回路）中心的距离，$R$ 为线圈的半径，$S$ 为线圈的面积。}
 
 \begin{marginfigure}[-4cm]
 \centering
 \includegraphics[width=0.6\textwidth]{figs/ch-23/fig-23-06.pdf}
-\sidecaption{The magnetic field at the centre of a circular turn, or loop.\label{fig-23-06}}
+\sidecaption{The magnetic field at the centre of a circular turn, or loop.\zhcap{圆形线圈中心处的磁场。}\label{fig-23-06}}
 \end{marginfigure}
 
 \subsection{}\label{23.3.6} The magnetic field at the centre of a circular turn, or loop, has the characteristics \ssect{23.3.5}:
+\zhpar{圆形线圈（回路）中心处的磁场具有\ssect{23.3.5}中所给出的特征：}
 \begin{alignat*}{3}%
 \vb{B} & = \frac{\mu_{0} \mu_{r}}{4 \pi}\, \frac{2 \vb{p}_{m}}{R^{3}},  \,\, && \vb{H}  = \frac{\vb{B}}{\mu_{0} \mu_{r}} &&  \text{(in SI units),} \\
 \vb{B} & =  \mu_{r}\, \frac{2 \vb{p}_{m}}{(R^{3}},\,\, && \vb{H}  = \frac{\vb{B}}{\mu_{r}} &&  \text{(in Gaussian units.)}
 \end{alignat*}
 The magnitudes of vectors $\vb{B}$ and $\vb{H}$ equal
+\zhpar{矢量 $\vb{B}$ 与 $\vb{H}$ 的大小分别为}
 \begin{alignat*}{3}%
 B & = \mu_{0} \mu_{r}\, \frac{I}{2R}, \,\, && H  = \frac{I}{2R}\,\, &&  \text{(in SI units),} \\
 B & =  \frac{2 \pi}{c} \mu_{r}\, \frac{I}{R}, \,\, && H  = \frac{1}{c} \, \frac{2 \pi I}{R}\,\, &&  \text{(in Gaussian units.)}
@@ -228,236 +286,304 @@ B & =  \frac{2 \pi}{c} \mu_{r}\, \frac{I}{R}, \,\, && H  = \frac{1}{c} \, \frac{
 \begin{marginfigure}[-4cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-23/fig-23-07.pdf}
-\sidecaption{The magnetic field at the centre of a toroid.\label{fig-23-07}}
+\sidecaption{The magnetic field at the centre of a toroid.\zhcap{螺绕环中心处的磁场。}\label{fig-23-07}}
 \end{marginfigure}
 The direction of the magnetic field is along the axis of the loop and perpendicular to its plane (\figr{fig-23-06}).
+\zhpar{磁场方向沿线圈（回路）的轴线，并垂直于线圈所在的平面（见\figr{fig-23-06}）。}
 
 
 \subsection{}\label{23.3.7} A \redem{toroid} is an annular coil wound on a core having the shape of a torus (\figr{fig-23-07}). The magnetic field of a toroid is completely confined within its volume.
+\zhpar{\redem{螺绕环}是绕在环形芯子上的环状线圈（见\figr{fig-23-07}）。螺绕环的磁场完全限制在其体积之内。}
 
 The characteristics of this magnetic field are calculated by the formulas
+\zhpar{该磁场的特征量由下列公式计算：}
 \begin{alignat*}{3}%
 B & = \mu_{0} \mu_{r}\, \frac{NI}{2\pi r}, \,\, && H  = \frac{NI}{2 \pi r} &&  \text{(in SI units),} \\
 B & =  \frac{1}{c} \mu_{r}\, \frac{2NI}{r}, \,\, && H  = \frac{1}{c} \, \frac{2 N I}{r}\,\, &&  \text{(in Gaussian units.)}
 \end{alignat*}
 The magnetic induction ${B}$ and the strength ${H}$ of the magnetic field on the circular centre line of the toroid are equal to
+\zhpar{螺绕环的中心线（圆周）上的磁感应强度 $B$ 与磁场强度 $H$ 分别为}
 \begin{equation*}%
 B_{\text{cl}} = \mu_{0} \mu_{r}\, \frac{NI}{2\pi R_{\text{cl}}} =  \mu_{0} \mu_{r}nI, \quad H = nI \quad   \text{(in SI units).}
 \end{equation*}
 Here $N$ is the number of turns of the toroid, $I$ is the current in the turns, $r$ is the radius of a circle in the toroid, $ R_{\text{cl}} = (R_{1} + R_{2})/2$, $R_{1}$ and $R_{2}$ are the external and internal radii of the torus, and $n$ is the number of turns per unit length of the toroid's centre line.
+\zhpar{式中 $N$ 为螺绕环的匝数，$I$ 为线圈中的电流，$r$ 为螺绕环中某一圆周的半径，$R_{\text{cl}} = (R_{1} + R_{2})/2$，$R_{1}$ 与 $R_{2}$ 分别为环形的外半径与内半径，$n$ 为螺绕环中心线单位长度上的匝数。}
 
 \subsection{}\label{23.3.8} A \redem{solenoid} is a cylindrical coil consisting of a large number of turns of wire in the form of a helix. If the turns are wound tight up against or sufficiently close to one another, the solenoid is dealt with as a system of circular closed current-carrying loops connected in series and having the same radius and a common axis.
+\zhpar{\redem{螺线管}是由大量导线绕成螺旋状的圆柱形线圈。若各匝导线紧密贴合或彼此充分靠近，则可以把螺线管看作由一系列半径相同、轴线重合、彼此串联的圆形闭合载流回路所组成的系统。}
 
 The magnetic moment $\vb{p}_{m}$ \ssect{23.3.4} of the solenoid is equal to the vector sum of the magnetic moments of all $N$ of its turns. Thus
+\zhpar{螺线管的磁矩 $\vb{p}_{m}$（见\ssect{23.3.4}）等于其全部 $N$ 匝线圈磁矩的矢量和。因此有}
 \begin{equation*}%
 \vb{p}_{m}= NIS\vb{n},
 \end{equation*}
 where $I$ is the current in the solenoid's turns, $S$ is the area of a turn, and $\vb{n}$ is a unit vector of the normal to the plane of a turn. Vector $\vb{p}_{m}$ is along the axis of the solenoid and coincides in direction with the magnetic field as determined by the cork­ screw rule \ssect{23.1.3}.
+\zhpar{式中 $I$ 为螺线管线圈中的电流，$S$ 为每匝线圈的面积，$\vb{n}$ 为线圈平面法线方向的单位矢量。矢量 $\vb{p}_{m}$ 沿螺线管的轴线方向，并且其方向与按右手螺旋定则（见\ssect{23.1.3}）确定的磁场方向一致。}
 \begin{figure}%[-2cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-23/fig-23-08.pdf}
-\sidecaption{The magnetic field of a solenoid.\label{fig-23-08}}
+\sidecaption{The magnetic field of a solenoid.\zhcap{螺线管的磁场。}\label{fig-23-08}}
 \end{figure}
 
 The magnetic induction ${B}$ and strength ${H}$ of the solenoid's magnetic field at an arbitrary point $A$, lying on its axis, are numerically equal to
+\zhpar{螺线管轴线上任一点 $A$ 处的磁感应强度 $B$ 与磁场强度 $H$ 在数值上分别等于}
 \begin{alignat*}{3}%
 B & = \frac{\mu_{0} \mu_{r}}{2}\, NI \, (\cos \alpha_{2} - \cos \alpha_{1}), && H  = \frac{B}{\mu_{0} \mu_{r}} &&  \text{(in SI units),} \\
 B & =  \frac{1}{c} \, {2 \pi \mu_{r} n I}\mu_{r}\,(\cos \alpha_{2} - \cos \alpha_{1}),   && H  =\frac{B}{\mu_{0} \mu_{r}}\,\, &&  \text{(in Gaussian units.)}
 \end{alignat*}
 where $n = N/L$ is the number of turns per unit length of the solenoid, $\alpha_{2}$ and $\alpha_{1}$ are angles at which the ends of the solenoid are seen from point $A$ $(\alpha_{2}< \alpha_{1})$,
+\zhpar{式中 $n = N/L$ 为螺线管单位长度上的匝数，$\alpha_{2}$ 与 $\alpha_{1}$ 为从场点 $A$ 看螺线管两端时的张角（$\alpha_{2}< \alpha_{1}$），其中余弦值由下式确定：}
 \begin{equation*}%
 \cos \alpha_{1} = - \frac{l_{1}}{\sqrt{R^{2}+l_{1}^{2}}}, \quad \cos \alpha_{2} =  \frac{L - l_{1}}{\sqrt{R^{2}+(L - l_{1})^{2}}},].
 \end{equation*}
 $L$ is the length of the solenoid (\figr{fig-23-08}), and $R$ is the radius of the cylindrical coil.
+\zhpar{$L$ 为螺线管的长度（见\figr{fig-23-08}），$R$ 为圆柱形线圈的半径。}
 
 
 \subsection{}\label{23.3.9} Under the condition that $L \gg R$, the magnetic field inside the solenoid at points on its axis sufficiently distant from its ends is characterized by the values
+\zhpar{当 $L \gg R$ 时，在螺线管内部远离两端的轴线上各点，磁场的特征量为}
 \begin{alignat*}{3}%
 B & = \mu_{0} \mu_{r}nI, && H  = nI &&  \text{(in SI units),} \\
 B & =  \frac{1}{c} \, 4 \pi \mu_{r} n I,   && H  = \frac{1}{c} \,4 \pi nI\,\, &&  \text{(in Gaussian units.)}
 \end{alignat*}
 The magnetic induction $B$ and strength $H$ of the magnetic field of a solenoid of sufficient length, at points of its axis coinciding with its ends, are equal to
+\zhpar{对于足够长的螺线管，在其轴线上与端点重合的各点处，磁感应强度 $B$ 与磁场强度 $H$ 分别为}
 \begin{alignat*}{3}%
 B & = \frac{\mu_{0} \mu_{r}}{2}\, nI, && H  = \frac{1}{2}nI &&  \text{(in SI units),} \\
 B & =  \frac{1}{c} \, {2 \pi \mu_{r} n I},   && H  =\frac{1}{c} \,2 \pi nI\,\, &&  \text{(in Gaussian units.)}
 \end{alignat*}
 
 \section[Interaction of Conductors]{Interaction of Conductors. Effect of a Magnetic Field on Current-Carrying Conductors}\label{sec-23.4}
+\zhtitle{导体间的相互作用。磁场对载流导体的作用}
 
 \subsection{}\label{23.4.1} Ampere's force \ssect{23.1.4}, which acts on an element $\dd l$ of length of a straight conductor carrying the current $I_{1}$ and is exerted by a long straight conductor carrying the current $I_{2}$, located parallel to the first conductor at a distance of $a$, is numerically equal to
+\zhpar{载流为 $I_{1}$ 的直导线的长度元 $\dd l$ 所受的安培力（见\ssect{23.1.4}），是由与之平行、相距为 $a$ 的另一长直导线（载流为 $I_{2}$）所施加的，其数值等于}
 \begin{align*}%
 \dd F & = \frac{\mu_{0} \mu_{r}}{4 \pi}\, \frac{2I_{1}I_{2}}{a} \, \dd l, &&  \text{(in SI units),} \\
 \dd F & =  \frac{1}{c} \, \mu_{r} \frac{2I_{1}I_{2}}{a} \, \dd l, &&  \text{(in Gaussian units.)}
 \end{align*}
 where $\mu_{0}$ is the magnetic constant in SI units \ssect{23.2.2} and $c$ is the electrodynamic constant (Appendix~I). The force $\dd F$ is a force of magnetic interaction \ssect{24.1.4}.
+\zhpar{式中 $\mu_{0}$ 为国际单位制中的磁常量（见\ssect{23.2.2}），$c$ 为电动力学常量（见附录 I）。力 $\dd F$ 是磁相互作用力（见\ssect{24.1.4}）。}
 
 It is assumed that the lengths of the conductors are many times greater than the distance a between them, and that element $\dd l$ is located far from the ends of the first conductor. It is moreover assumed that the conductors are in a homogeneous isotropic medium having the relative magnetic permeability $\mu_{r}$.
+\zhpar{假定导线的长度远大于两者之间的距离 $a$，并且长度元 $\dd l$ 位于第一根导线远离其端点的地方。此外还假定，导线处于相对磁导率为 $\mu_{r}$ 的均匀各向同性介质中。}
 
 The force ${F}$ exerted on a current-carrying conductor of length $l$ is equal to
+\zhpar{长度为 $l$ 的载流导体所受的力 $F$ 等于}
 \begin{align*}%
 F & = \frac{\mu_{0} \mu_{r}}{4 \pi}\, \frac{2I_{1}I_{2}}{a} \, l, &&  \text{(in SI units),} \\
 F & =  \frac{1}{c} \, \mu_{r} \frac{2I_{1}I_{2}}{a} \, l, &&  \text{(in Gaussian units.)}
 \end{align*}
 Conductors carrying currents $I_{1}$ and $I_{2}$ that flow in the same direction attract each other. If the currents flow in opposite directions, the conductors repulse each other (see also Sect. \ssect{24.1.4}).
+\zhpar{电流 $I_{1}$ 与 $I_{2}$ 同向时，两导体相互吸引；反向时，两导体相互排斥（另见\ssect{24.1.4}）。}
 
 \subsection{}\label{23.4.2} A closed flat current-carrying loop, of arbitrary geometric shape, placed in a uniform magnetic held \ssect{23.1.3}, is subject to a moment of force (torque) $\vb{M}$ equal to
+\zhpar{置于均匀磁场（见\ssect{23.1.3}）中的任意几何形状的闭合平面载流回路，所受的力矩（转矩）$\vb{M}$ 等于}
 \begin{equation*}%
 \vb{M} = [\vb{p}_{m} \cross \vb{B}],
 \end{equation*}
 where $\vb{p}_{m}$ is the magnetic moment vector of a current-carrying loop \ssect{23.3.4}, and $\vb{B}$ is the vector of magnetic induction \ssect{23.1.2} of the held. Torque $\vb{M}$ is perpendicular to the plane passing through vectors $\vb{p}_{m}$ and $\vb{B}$ in such a manner that the shortest rotation from $\vb{p}_{m}$ to $\vb{B}$ is seen from the head of vector $\vb{M}$ to be counterclockwise. The torque tends to turn the loop to a position of stable equilibrium, in which vectors $\vb{p}_{m}$ and $\vb{M}$ are parallel to each other.
+\zhpar{式中 $\vb{p}_{m}$ 为载流回路的磁矩矢量（见\ssect{23.3.4}），$\vb{B}$ 为磁场的磁感应强度矢量（见\ssect{23.1.2}）。力矩 $\vb{M}$ 垂直于 $\vb{p}_{m}$ 与 $\vb{B}$ 所在的平面，并且从 $\vb{M}$ 的末端看去，由 $\vb{p}_{m}$ 转向 $\vb{B}$ 的最短转动为逆时针方向。力矩使回路转到稳定平衡位置，在该位置上矢量 $\vb{p}_{m}$ 与 $\vb{M}$ 相互平行。}
 
 The preceding formula provides for a definition of the magnetic induction $\vb{B}$ \ssect{23.1.2}: the magnitude of the magnetic induction vector at a given point of a uniform magnetic field is equal to the maximum value of the torque $M_{\text{max}}$ acting in the vicinity of the point on a small flat closed current-carrying loop, having a magnetic moment ${p}_{m}$ of unit magnitude:
+\zhpar{由上述公式可以给出磁感应强度 $\vb{B}$（见\ssect{23.1.2}）的定义：均匀磁场中某点的磁感应强度矢量的大小，等于该点附近磁矩 ${p}_{m}$ 为单位大小的小型闭合平面载流回路所受的最大力矩 $M_{\text{max}}$ 的值：}
 \begin{align*}%
 B & = \frac{M_{\text{max}}}{{p}_{m}} = \frac{M_{\text{max}}}{IS} &&  \text{(in SI units),} \\
 B & =  \frac{M_{\text{max}}}{{p}_{m}} = \frac{M_{\text{max}}}{\dfrac{1}{c}IS} &&  \text{(in Gaussian units).}
 \end{align*}
 
 \subsection{}\label{23.4.3} When a closed current-carrying loop is placed into a nonuniform magnetic field \ssect{23.1.3} in which the magnetic induction $\vb{B}$ of the field varies over distances comparable to the linear dimensions of the loop, the loop is subject to the force $\vb{F}$ equal to
+\zhpar{当闭合载流回路置于非均匀磁场（见\ssect{23.1.3}）中，且场中磁感应强度 $\vb{B}$ 发生变化的距离与回路的线度相当时，回路所受的力 $\vb{F}$ 等于}
 \begin{equation*}%
 \vb{F} = p_{mx} \pdv{\vb{B}}{x} + p_{my} \pdv{\vb{B}}{y} + p_{mz} \pdv{\vb{B}}{z},
 \end{equation*}
 where $p_{mx}$, $p_{my}$ and $p_{mz}$ are the projections of vector $\vb{p}_{m}$ on the axes of Cartesian coordinates. In particular, when vector $\vb{B}$ is along the $OX$ axis and depends only on coordinate $x$ [i.e. $B_{x} = B(x)$, $B_{y}= B_{z} = 0$ and $\vb{B} = \vb{B}_{x}\vu{i}$ then
+\zhpar{式中 $p_{mx}$、$p_{my}$ 与 $p_{mz}$ 为矢量 $\vb{p}_{m}$ 在笛卡儿直角坐标轴上的投影。特别地，当矢量 $\vb{B}$ 沿 $OX$ 轴方向且仅依赖于坐标 $x$ 时（即 $B_{x} = B(x)$，$B_{y}= B_{z} = 0$，且 $\vb{B} = \vb{B}_{x}\vu{i}$），则有}
 \begin{equation*}%
 \vb{F} = p_{mx} \dv{{B}}{x} \vu{i}.
 \end{equation*}
 By the action of force $\vb{F}$ an unfastened current-carrying loop is attracted into a region with a stronger magnetic field.
+\zhpar{在力 $\vb{F}$ 的作用下，可自由移动的载流回路被吸引到磁场较强的区域。}
 
 \section{Total Current Law. Magnetic Circuits}
 \label{sec-23.5}
+\zhtitle{全电流定律。磁路}
 
 \subsection{}\label{23.5.1} The \redem{circulation} of the magnetic induction vector $\vb{B}$ along a closed circuit $L$ is an integral of the form:
+\zhpar{磁感应强度矢量 $\vb{B}$ 沿闭合回路 $L$ 的\redem{环流}是如下形式的积分：}
 \begin{equation*}%
 \oint_{L} \vb{B}\, \dd \vb{l}  = \oint_{L} {B}\, \dd \vb{l} \cos \alpha,
 \end{equation*}
 where $L$ is the closed loop of arbitrary shape, $\alpha$ is the angle between vectors $\vb{B}$ and $\dd \vb{l}$, and $\dd \vb{l}$ is the vector of an element of length of the loop in the direction it is circuited.
+\zhpar{式中 $L$ 为任意形状的闭合回路，$\alpha$ 为矢量 $\vb{B}$ 与 $\dd \vb{l}$ 之间的夹角，$\dd \vb{l}$ 为沿回路绕行方向的长度元矢量。}
 
 \subsection{}\label{23.5.2} The \redem{total current law for a magnetic field in vacuum states}: 
+\zhpar{真空中磁场的\redem{全电流定律}表述如下：}
 \begin{quote}
 the circulation of the magnetic induction vector of a magnetic field along a closed loop in vacuum is proportional to the algebraic sum of the currents bounded by the loop. 
+\zhpar{真空中磁场的磁感应强度矢量沿闭合回路的环流，与该回路所包围的电流的代数和成正比。}
 \end{quote}
 Thus	
+\zhpar{即有}
 \begin{align*}%
 \oint_{L} \vb{B}\, \dd \vb{l}  & = \mu_{0} \sum_{k =1}^{n}I_{k} &&  \text{(in SI units),} \\
 \oint_{L} \vb{B}\, \dd \vb{l}  & =  \frac{4 \pi}{c} \sum_{k =1}^{n}I_{k} &&  \text{(in Gaussian units).}
 \end{align*}
 where $\mu_{0}$ is the magnetic constant in SI units \ssect{23.2.2}, $c$ is the electrodynamic constant \ssect{23.2.2} and $n$ is the number of current-carrying conductors bounded by loop $L$ of arbitrary shape. This law is valid for current-carrying conductors of any shape or size.
+\zhpar{式中 $\mu_{0}$ 为国际单位制中的磁常量（见\ssect{23.2.2}），$c$ 为电动力学常量（见\ssect{23.2.2}），$n$ 为被回路 $L$ 所包围的载流导体的数目。该定律适用于任意形状和尺寸的载流导体。}
 
 In calculating the algebraic sum of the currents, a current is considered positive if from the head of the current density vector \ssect{20.2.3} the circuiting of loop $L$ is seen to be counter­ clockwise. Otherwise, the current is considered to be negative. For a generalization of the total current law to cover magnetic fields in an arbitrary media, see \ssect{26.4.2}.
+\zhpar{计算电流的代数和时，若从电流密度矢量（见\ssect{20.2.3}）的末端看去，回路 $L$ 的绕行方向为逆时针，则该电流取正值；否则取负值。关于全电流定律在任意介质中的推广，参见\ssect{26.4.2}。}
 
 \subsection{}\label{23.5.3} In contrast to an electrostatic conservative field, in which the circulation of the strength $\vb{E}$ along any closed path equals zero \ssect{16.1.4}, a magnetic field has a curl (it is called a \redem{rotational}, \redem{vortical} or \redem{circuital field}). In such a field the circulation of the magnetic induction vector $\vb{B}$ of the field along a closed path is not equal to zero. If no currents are bound by loop $L$, the circulation of vector $\vb{B}$ along this loop equals zero. But this does not alter the rotational nature of the magnetic field.
+\zhpar{静电场是保守场，其场强 $\vb{E}$ 沿任意闭合路径的环流为零（见\ssect{16.1.4}）。与之不同，磁场具有旋度（称为\redem{有旋场}、\redem{涡旋场}或\redem{环流场}）。在磁场中，磁感应强度矢量 $\vb{B}$ 沿闭合路径的环流不为零。若回路 $L$ 所包围的电流为零，则矢量 $\vb{B}$ 沿该回路的环流为零，但这并不改变磁场的有旋性质。}
 
 \subsection{}\label{23.5.4} The total current law can be written for either vacuum or for an arbitrary medium in the form of the circulation of field strength vector $\vb{H}$ \ssect{23.2.3} along an arbitrary closed loop $L$ that bounds the currents:
+\zhpar{全电流定律对真空或任意介质均可写成沿包围电流的任意闭合回路 $L$ 的场强矢量 $\vb{H}$（见\ssect{23.2.3}）的环流形式：}
 \begin{align*}%
 \oint_{L} \vb{H}\, \dd \vb{l}  & = \mu_{0} \sum_{k =1}^{n}I_{k} &&  \text{(in SI units),} \\
 \oint_{L} \vb{H}\, \dd \vb{l}  & =  \frac{4 \pi}{c} \sum_{k =1}^{n}I_{k} &&  \text{(in Gaussian units).}
 \end{align*}
 If no currents are bounded by loop $L$, the circulation of vector $\vb{H}$ along this loop equals zero.
+\zhpar{若回路 $L$ 所包围的电流为零，则矢量 $\vb{H}$ 沿该回路的环流为零。}
 
 \subsection{}\label{23.5.5} The \redem{flux of the magnetic induction vector} $\vb{B}$ (\redem{magnetic flux}) through a surface element of area $\dd S$ is the scalar physical quantity equal to
+\zhpar{面元 $\dd S$ 上磁感应强度矢量 $\vb{B}$ 的通量（\redem{磁通量}）是标量，其定义为}
 \begin{equation*}%
 \dd \Phi_{m} = \vb{B} \, \dd S = B_{n} \dd S = B \, \dd S \cos \gamma,
 \end{equation*}
 where $\dd S = \vu{n} \dd S$, $\vu{n}$ is the unit vector of the normal to the surface of area $\dd S$, $B_{n}$ is the projection of vector $\vb{B}$ on the direction of the normal (\figr{fig-23-09}), and $\gamma$ is the angle between vectors $\vb{B}$ and $\vu{n}$. The magnetic flux $\Phi_{m}$ through an arbitrary surface $S$ is
+\zhpar{式中 $\dd \vb{S} = \vu{n} \dd S$，$\vu{n}$ 为面元 $\dd S$ 法线方向的单位矢量，$B_{n}$ 为矢量 $\vb{B}$ 在法线方向上的投影（见\figr{fig-23-09}），$\gamma$ 为矢量 $\vb{B}$ 与 $\vu{n}$ 之间的夹角。任意曲面 $S$ 的磁通量 $\Phi_{m}$ 为}
 \begin{equation*}%
 \Phi_{m} = \int_{S} \vb{B}\, \dd S = \int_{S} B_{n} \, \dd S.
 \end{equation*}
 In calculating this integral, the vectors $\vu{n}$ of the normals to the elements of surface $\dd S$ should be all in the same direction with respect to surface $S$. Thus, if $S$ is a closed surface, vectors $\vu{n}$ should be directed either all outward or all inward. 
+\zhpar{计算该积分时，曲面 $S$ 上各面元的法线矢量 $\vu{n}$ 相对于曲面 $S$ 应取同一方向。因此，若 $S$ 为闭合曲面，则矢量 $\vu{n}$ 应全部指向外侧或全部指向内侧。}
 
 When the field is uniform and $S$ is a plane surface perpendicular to vector $\vb{B}$, then $B_{n} = B = \text{const.}$ and $\Phi_{m}= BS$.
+\zhpar{若磁场是均匀的，并且 $S$ 为与矢量 $\vb{B}$ 垂直的平面，则 $B_{n} = B = \text{const.}$，$\Phi_{m}= BS$。}
 \begin{marginfigure}%[-2cm]
 \centering
 \includegraphics[width=0.5\textwidth]{figs/ch-23/fig-23-09.pdf}
-\sidecaption{The projection of vector $\vb{B}$ on the direction of the normal.\label{fig-23-09}}
+\sidecaption{The projection of vector $\vb{B}$ on the direction of the normal.\zhcap{矢量 $\vb{B}$ 在法线方向上的投影。}\label{fig-23-09}}
 \end{marginfigure}
 
 
 \subsection{}\label{23.5.6} The \redem{Ostrogradsky-Gauss for a magnetic field} states that the magnetic flux through an arbitrary closed surface equals zero.
 Thus
+\zhpar{\redem{磁场的高斯定理}指出：通过任意闭合曲面的磁通量等于零。即有}
 \begin{equation*}%
  \oint_{S} \vb{B}\, \dd \vb{S} = \int_{S} B_{n} \, \dd S = 0.
 \end{equation*}
 This theorem is a mathematical expression of the fact that in nature there are no magnetic charges at which lines of magnetic induction begin or end \ssect{23.1.3}.
+\zhpar{这一定理在数学上表达了自然界中不存在磁荷这一事实，即磁感应线既无起点也无终点（见\ssect{23.1.3}）。}
 
 The differential form of the Ostrogradsky-Gauss theorem for a magnetic field is one of Maxwell's equations for an electromagnetic field \ssect{27.4.2}.
+\zhpar{磁场高斯定理的微分形式是电磁场的麦克斯韦方程组之一（见\ssect{27.4.2}）。}
 
 \subsection{}\label{23.5.7} A \redem{magnetic circuit} is a set of bodies or regions of space to which a magnetic field is confined. For example, the internal region of a toroid \ssect{23.3.7} and that of an infinitely long solenoid \ssect{23.3.9} are magnetic circuits. To strengthen their magnetic fields, magnetic circuits are made of materials having a high relative magnetic permeability $\mu_{r}$ \ssect{23.2.1}, such as iron. The design of magnetic circuits, which are the essential components of electrical machinery and such electric devices as transformers and electromagnets, is based on the laws of magnetic circuits. 
+\zhpar{\redem{磁路}是磁场被限制其中的物体或空间区域的集合。例如，螺绕环的内部区域（见\ssect{23.3.7}）和无限长螺线管的内部区域（见\ssect{23.3.9}）都是磁路。为了增强磁场，磁路通常由相对磁导率 $\mu_{r}$ 较高的材料（如铁）制成（见\ssect{23.2.1}）。电机以及变压器、电磁铁等电气设备的关键部件，其磁路的设计依据磁路定律进行。}
 
 \subsection{}\label{23.5.8} \redem{Ohm's law for a closed magnetic circuit} (the \redem{Hopkinson formula}) is 
+\zhpar{闭合磁路的\redem{欧姆定律}（即\redem{霍普金森公式}）为}
 \begin{equation*}%
 \Phi_{m} = \frac{F_{m}}{R_{m}},
 \end{equation*}
 where $\Phi_{m}$ is the magnetic flux, which is constant along each portion of the magnetic circuit, $F_{m} = IN$ is the \redem{magnetomotive} force (\redem{mmf}) or \redem{magnetizing force} (in SI units), $N$ is the number of turns carrying the electric current $I$ for magnetizing the circuit, and $R_{m}$ is the \redem{total magnetic resistance} (\redem{reluctance}) of the circuit. The magnetic resistance of a magnetic circuit of length $l_{i}$ is
+\zhpar{式中 $\Phi_{m}$ 为磁通量，沿磁路各部分保持不变；$F_{m} = IN$ 为\redem{磁动势}（\redem{mmf}），或称\redem{磁化力}（国际单位制中）；$N$ 为磁化该磁路的线圈匝数，线圈中通有电流 $I$；$R_{m}$ 为磁路的\redem{总磁阻}（\redem{磁阻}）。长度为 $l_{i}$ 的磁路的磁阻为}
 \begin{equation*}%
 R_{mi} = \int^{l_{i}} \frac{\dd l}{\mu_{0}\mu_{r}S}\,\, \text{(in SI units),}
 \end{equation*}
 where $\mu_{r}$ is the relative magnetic permeability of the given circuit, $\mu_{0}$ is the magnetic constant in SI units \ssect{23.2.2}, and $S$ is the cross-sectional area of the circuit. When $S = \text{const.}$,
 $R_{mi} = l_{i}/\mu_{0}\mu_{r}S$ (in SI units).
+\zhpar{式中 $\mu_{r}$ 为该磁路的相对磁导率，$\mu_{0}$ 为国际单位制中的磁常量（见\ssect{23.2.2}），$S$ 为磁路的横截面积。当 $S = \text{const.}$ 时，$R_{mi} = l_{i}/\mu_{0}\mu_{r}S$（国际单位制）。}
 
 \subsection{}\label{23.5.9} The total magnetic resistance $R_{m}$ of the parts of a magnetic circuit connected in series is
+\zhpar{磁路各部分串联时，其总磁阻 $R_{m}$ 为}
 \begin{equation*}%
 R_{m} = \sum_{i =1}^{n} R_{mi},
 \end{equation*}
 where $R_{mi}$ is the magnetic resistance of the $i$-th part of the magnetic circuit, and $n$ is the number of parts that make up the circuit.
+\zhpar{式中 $R_{mi}$ 为磁路第 $i$ 部分的磁阻，$n$ 为组成该磁路的部分数。}
 
 If $n$ magnetic resistances are connected in parallel, the total magnetic resistance $R_{m}$ of the circuit is
+\zhpar{若 $n$ 个磁阻并联，则磁路的总磁阻 $R_{m}$ 为}
 \begin{equation*}%
 R_{m} = \frac{1}{\displaystyle\sum_{i =1}^{n} \dfrac{1}{R_{mi}}}.
 \end{equation*}
 
 \subsection{}\label{23.5.10} A \redem{branch point} of a magnetic circuit is a region of space or bodies where there are more than two possible directions of the lines of magnetic induction \ssect{23.1.3}.
+\zhpar{磁路的\redem{分支点}是指空间区域或物体中，磁感应线可能有多于两个方向的地方（见\ssect{23.1.3}）。}
 
 \redem{Kirchhoff's first law for branched magnetic circuits} states that the algebraic sum of the magnetic fluxes in the branches that join in a branch point is equal to zero. Thus
+\zhpar{分支磁路的\redem{基尔霍夫第一定律}指出：在分支点处相汇合的各支路磁通量的代数和为零。因此有}
 \begin{equation*}%
 \sum_{i =1}^{n} \Phi_{mi} = 0,
 \end{equation*}
 where $n$ is the number of branches joined at the branch point cf. \ssect{23.3.1}.
+\zhpar{式中 $n$ 为在该分支点相汇的支路数（参见\ssect{23.3.1}）。}
 
 A magnetic flux is considered positive if the lines of induction enter the branch point, and negative if the lines emerge from it. 
+\zhpar{若磁感应线进入分支点，则该支路磁通量取正值；若磁感应线从分支点流出，则取负值。}
 
 \subsection{}\label{23.5.11} \redem{Kirchhoff's second law for magnetic circuits} states that in any closed loop (mesh of a network), arbitrarily chosen in a branched magnetic circuit (network), the algebraic sum of the products of the magnetic fluxes by the magnetic resistances of the corresponding portions of the circuit \ssect{23.5.8} equals the algebraic sum of the magnetomotive forces in this loop \ssect{23.5.8}:
+\zhpar{分支磁路（网络）中任意选取的闭合回路（网络的网孔）上，\redem{基尔霍夫第二定律}指出：各段磁通量与相应磁路段磁阻的乘积之代数和（见\ssect{23.5.8}），等于该回路中磁动势的代数和（见\ssect{23.5.8}）：}
 \begin{equation*}%
 \sum_{i =1}^{k} \Phi_{mi} R_{mi}= \sum_{i =1}^{k} F_{mi},
 \end{equation*}
 where $k$ is the number of portions that make up the closed loop (cf. \ssect{21.3.2}). The fluxes and mmf's $F_{mi}$ are considered positive if the directions of the corresponding lines of magnetic induction \ssect{23.1.3} coincide with the arbitrarily chosen direction for circuiting the loop.
+\zhpar{式中 $k$ 为组成该闭合回路的段数（参见\ssect{21.3.2}）。磁通量与磁动势 $F_{mi}$ 的符号规定为：若相应磁感应线的方向与任意选定的回路绕行方向一致，则取正值。}
 
 \section[Work Done in a Magnetic Field]{Work Done in Moving a Current-Carrying Conductor in a Magnetic Field}
 \label{sec-23.6}
+\zhtitle{载流导体在磁场中运动时所做的功}
 
 \subsection{}\label{23.6.1} An unfixed current-carrying conductor is moved by Ampere's force \ssect{23.1.4} when it is placed in a magnetic field. The element of work done by the Ampere force in moving an element, of length $\dd l$, of a conductor carrying the current $I$ is
+\zhpar{载流导体放入磁场后，若其不被固定，则会受安培力（见\ssect{23.1.4}）的作用而运动。载流为 $I$、长度元为 $\dd l$ 的导体元在安培力作用下运动时，安培力所做的元功为}
 \begin{align*}%
 \delta W^{*} & = I \, \dd \Phi_{m}^{*} &&  \text{(in SI units),} \\
 \delta W^{*} & = \frac{1}{c}\,I \, \dd \Phi_{m}^{*}&&  \text{(in Gaussian units),}
 \end{align*}
 where $\dd \Phi_{m}^{*}$ is the element of magnetic flux \ssect{23.5.5} through the element of surface $\dd S$ generated by the element of the conductor, of length $\dd l$, in its small displacement, and $c$ is the electrodynamic constant \ssect{23.2.2}.
+\zhpar{式中 $\dd \Phi_{m}^{*}$ 为长度元 $\dd l$ 在其微小位移中所扫过的面元 $\dd S$ 上的磁通量元（见\ssect{23.5.5}），$c$ 为电动力学常量（见\ssect{23.2.2}）。}
 
 \subsection{}\label{23.6.2} In a small displacement of a current-carrying conductor of finite length, the work $\delta W$ done by the Ampere forces is the sum of the elements of work for all the elements of length of the
 conductor. It is equal to the integral of $\delta W^{*}$ calculated along the whole length $I$ of the conductor. Thus
+\zhpar{载流导体在有限长度上作微小位移时，安培力所做的功 $\delta W$ 等于导体所有长度元的元功之和，即沿导体整个长度 $I$ 对 $\delta W^{*}$ 积分的结果。因此有}
 \begin{align*}%
 \delta W & = \int_{l} I \, \dd \Phi_{m}^{*} = I \, \dd \Phi_{m}&&  \text{(in SI units),} \\
 \delta W & = \frac{1}{c}\,I \, \dd \Phi_{m}&&  \text{(in Gaussian units),}
 \end{align*}
 where $\dd \Phi_{m}$ is the magnetic flux through the surface generated by the conductor of length $l$ in a small displacement.
+\zhpar{式中 $\dd \Phi_{m}$ 为长度为 $l$ 的导体在微小位移中所扫过的曲面上的磁通量。}
 
 \subsection{}\label{23.6.3} If a conductor of finite length $l$ carries a constant current $I$ and is moved a finite distance, the required work of the Ampere forces for this motion is
+\zhpar{若长度为 $l$ 的导体中通有恒定电流 $I$，并被移动有限距离，则安培力为完成这一运动所需做的功为}
 \begin{equation*}%
 W = I \Phi_{m},
 \end{equation*}
 where $\Phi_{m}$ is the magnetic flux through the surface generated by the conductor in its motion.
+\zhpar{式中 $\Phi_{m}$ 为导体运动所扫过的曲面上的磁通量。}
 
 \subsection{}\label{23.6.4} The work done by Ampere forces in the displacement of a closed flat loop carrying the constant current $I$ in a magnetic field from initial position $\mathit{1}$ to final position $\mathit{2}$ is equal to
+\zhpar{载有恒定电流 $I$ 的闭合平面回路在磁场中从初始位置 $\mathit{1}$ 移动到终止位置 $\mathit{2}$ 时，安培力所做的功等于}
 \begin{equation*}%
 W_{12} = I (\Phi_{m2} - \Phi_{m1}),
 \end{equation*}
 where $\Phi_{m1}$ and $\Phi_{m2}$ are magnetic fluxes ``linked to the loop'' in positions $\mathit{1}$ and $\mathit{2}$, i.e. the magnetic fluxes through a surface bounded by the loop. In calculating these magnetic fluxes, the direction of normal $\vu{n}$ \ssect{23.5.5} is coordinated with the direction of the current in the loop by the corkscrew rule: from the head of the vector of the normal, the current is seen flowing counter­ clockwise in the loop.
+\zhpar{式中 $\Phi_{m1}$ 与 $\Phi_{m2}$ 分别为位置 $\mathit{1}$ 与 $\mathit{2}$ 时“与回路交链”的磁通量，即穿过以该回路为边界的曲面的磁通量。计算这些磁通量时，法线 $\vu{n}$（见\ssect{23.5.5}）的方向按右手螺旋定则与回路中的电流方向相协调：从法线矢量的末端看去，回路中的电流为逆时针方向。}
 
 \subsection{}\label{23.6.5} The formulas given above are valid for a current-carrying coil of $N$ turns moving in a magnetic field by Ampere forces, or, in general, for a loop of arbitrary shape. For example, the work done in a small displacement of a coil carrying the current $I$ is equal to
+\zhpar{上述公式适用于在磁场中受安培力作用而运动的、匝数为 $N$ 的载流线圈，一般而言也适用于任意形状的回路。例如，载有电流 $I$ 的线圈作微小位移时所做的功为}
 \begin{equation*}%
 \delta W = I \sum_{i = 1}^{N} \dd \Phi_{mi} = Id \left(\sum_{i = 1}^{N} \dd \Phi_{mi} \right) = I\, \dd \Psi,
 \end{equation*}
 where $\Psi = \sum_{i = 1}^{N}\Phi_{mi}$ is the total magnetic flux through all $N$
 turns of the coil; it is called the \redem{flux linkage of the circuit}. 
+\zhpar{式中 $\Psi = \sum_{i = 1}^{N}\Phi_{mi}$ 为穿过线圈全部 $N$ 匝的总磁通量，称为\redem{回路的磁链}。}
 
 \subsection{}\label{23.6.6} The work required to move a conductor or closed loop carrying a constant current in a magnetic field is done at the expense of the energy consumed in the current source \ssect{21.1.3}.
+\zhpar{在磁场中移动载有恒定电流的导体或闭合回路时所需做的功，是由电流源消耗的能量提供的（见\ssect{21.1.3}）。}
 
 
 
