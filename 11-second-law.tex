@@ -4,67 +4,87 @@
 
 \chapter{Second Law Of Thermodynamics}
 \label{ch-11}
+\zhtitle{热力学第二定律}
 
 
 \section{Cycles. The Carnot Cycle}
 \label{sec-11.1}
+\zhtitle{循环。卡诺循环}
 
 \subsection{}\label{11.1.1}A \redem{cycle} is a succession of thermodynamic processes \ssect{8.3.7} as a result of which the system returns to its initial state. In $pV$, $pT$ and other thermodynamic diagrams, equilibrium cycles \ssect{8.3.7} are represented in the form of closed curves, because two identical states, the beginning and end of the cycle, correspond to the same point of the diagram. A thermodynamic system that accomplishes a cycle and exchanges energy with other bodies is called the \redem{working medium}, or \redem{substance}. This medium is usually a gas.
+\zhpar{\redem{循环}是指一系列热力学过程，经过这些过程，系统回到其初始状态。在 $pV$、$pT$ 及其他热力学图上，平衡循环（\ssect{8.3.7}）用闭合曲线表示，因为循环的起点与终点是两个相同的状态，对应于图上的同一点。完成循环并与其他物体交换能量的热力学系统称为\redem{工作物质}，或\redem{工质}。工作物质通常是气体。}
 
 \subsection{}\label{11.1.2} The arbitrary equilibrium cycle $C_{1}aC_{2}bC_{1}$ \figr{fig-11-01}, using an ideal gas, can be divided into the process of expansion of the gas from state $C_{1}$, to state $C_{2}$ (curve $C_{1}aC_{2}$) and the process of compressing the gas from state $C_{2}$ to state $C_{1}$ (curve $C_{2}bC_{1}$). In expansion the gas does positive work $W_{1}$ measured by the area under the curve $C_{1}aC_{2}$ (the area of the figure $V_{1}C_{1}C_{2}V_{2}$ see Sect. \ssect{9.4.2}. The gas is compressed by external forces that do positive work $W_{2}' = -W_{2}$ measured by the area under the curve $C_{1}bC_{2}$ (the area of the figure $V_{1}C_{1}bC_{2}V_{2}$). Since $W_{1}> W_{2}'$ (\figr{fig-11-01}), the gas does the \redem{positive} work $W = W_{1} + W_{2} = W_{1} - W_{2}'$ in the cycle. This work is measured by the hatched area, bounded by the curve $C_{1}aC_{2}bC_{1}$ of the process.
+\zhpar{对于使用理想气体的任意平衡循环 $C_{1}aC_{2}bC_{1}$（见\figr{fig-11-01}），可以分为两个过程：气体从状态 $C_{1}$ 膨胀到状态 $C_{2}$（曲线 $C_{1}aC_{2}$），以及气体从状态 $C_{2}$ 压缩回状态 $C_{1}$（曲线 $C_{2}bC_{1}$）。在膨胀过程中，气体对外做正功 $W_{1}$，其大小由曲线 $C_{1}aC_{2}$ 下方的面积（即图形 $V_{1}C_{1}C_{2}V_{2}$ 的面积，参见 \ssect{9.4.2}）度量。气体被外力压缩，外力做正功 $W_{2}' = -W_{2}$，其大小由曲线 $C_{1}bC_{2}$ 下方的面积（即图形 $V_{1}C_{1}bC_{2}V_{2}$ 的面积）度量。由于 $W_{1}> W_{2}'$（见\figr{fig-11-01}），气体在循环中做正功 $W = W_{1} + W_{2} = W_{1} - W_{2}'$。该功由过程曲线 $C_{1}aC_{2}bC_{1}$ 所围的阴影面积度量。}
 
 
 \begin{marginfigure}%[!ht]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-11/fig-11-01.pdf}
-\sidecaption{An arbitrary equilibrium of a cycle.
+\sidecaption{An arbitrary equilibrium of a cycle.\zhcap{任意平衡循环。}
 \label{fig-11-01}}
 \end{marginfigure}
 
 \subsection{}\label{11.1.3} A \redem{direct cycle} is one in which the system does positive work $W =\oint p \,\dd V > 0$.In a $pV$ diagram a direct cycle is represented by a closed curve along which the working medium passes in the clockwise direction \figr{fig-11-01}. An example of a direct cycle is that accomplished by the working medium in a heat engine. In such an engine the working medium \ssect{11.1.1} receives energy in the form of heat \ssect{9.2.1} from external sources and gives a part of it up in the form of work \ssect{9.2.1} (see Sect. \ssect{11.1.5}).
+\zhpar{\redem{正循环}是指系统对外做正功 $W =\oint p \,\dd V > 0$ 的循环。在 $pV$ 图上，正循环用沿顺时针方向经过的闭合曲线表示。热机中工作物质所完成的循环就是正循环的一个例子。在热机中，工作物质（\ssect{11.1.1}）从外部热源吸收热量（\ssect{9.2.1}），并将其中一部分以功的形式（\ssect{9.2.1}）输出（参见 \ssect{11.1.5}）。}
 
 \subsection{}\label{11.1.4} A \redem{reverse cycle} is one in which the system does negative work $W =\oint p \, \dd V < 0$. In a $pV$ diagram a reverse cycle is represented by a closed curve along which the working medium passes in the counterclockwise direction. An example of a re­ verse cycle is that accomplished by the working medium in a refrigerator. In such a device the working medium receives energy in the form of work and transmits energy in the form of heat from a cold body to a hotter one (see Sect. \ssect{11.1.5}). 
+\zhpar{\redem{逆循环}是指系统对外做负功 $W =\oint p \, \dd V < 0$ 的循环。在 $pV$ 图上，逆循环用沿逆时针方向经过的闭合曲线表示。制冷机中工作物质所完成的循环就是逆循环的一个例子。在制冷机中，工作物质以功的形式接受能量，并以热量的形式将能量从冷体传递给热体（参见 \ssect{11.1.5}）。}
 
 \subsection{}\label{11.1.5} Since the total change in the internal energy of a gas in a cycle is equal to zero \ssect{9.1.3}, the first law of thermo­ dynamics \ssect{9.3.1} for such a process is of the form
+\zhpar{由于气体在循环中内能的总改变量为零（\ssect{9.1.3}），热力学第一定律（\ssect{9.3.1}）对该过程的形式为：}
 \begin{equation*}%
 Q = \Delta U + W = W,
 \end{equation*}
 where $Q$ is the total quantity of heat delivered to the gas in the cycle, and $W$ is the work done by the gas in this cycle.
+\zhpar{式中 $Q$ 为循环中传给气体的总热量，$W$ 为气体在该循环中所做的功。}
 
 In a direct cycle \ssect{11.1.3} $Q > 0$ and $A > 0$,and the gas does work owing to the heat delivered to it. In a reverse cycle \ssect{11.1.4} the work done \redem{on the gas} is $W' = -W$ (where $W > 0$) and a quantity of heat equivalent to this work is removed from the gas. 
+\zhpar{在正循环中 $Q > 0$，$A > 0$，气体因吸收热量而对外做功。在逆循环中，外力对气体所做的功为 $W' = -W$（其中 $W > 0$），与此功相当的热量则从气体中放出。}
 
 
 \begin{marginfigure}%[!ht]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-11/fig-11-02.pdf}
-\sidecaption{The Carnot cycle.
+\sidecaption{The Carnot cycle.\zhcap{卡诺循环。}
 \label{fig-11-02}}
 \end{marginfigure}
 
 
 \subsection{}\label{11.1.6} The \redem{Carnot cycle} is the one shown in \figr{fig-11-02}. The \redem{direct Carnot cycle} consists of four consecutive processes: isother­mal expansion $1-1'$ at the temperature $T_{1}$ (where $T_{1}' = T_{2}$) adiabatic expansion $1'-2$, isothermal compression $2-2'$ at the temperature $T_{2}$ (where $T_{2}' = T_{2}$), and adiabatic compres­sion $2'-1$.
+\zhpar{\redem{卡诺循环}如\figr{fig-11-02}所示。\redem{正卡诺循环}由以下四个连续过程组成：在温度 $T_{1}$（其中 $T_{1}' = T_{2}$）下的等温膨胀 $1-1'$，绝热膨胀 $1'-2$，在温度 $T_{2}$（其中 $T_{2}' = T_{2}$）下的等温压缩 $2-2'$，以及绝热压缩 $2'-1$。}
 
 \subsection{}\label{11.1.7} In practice a direct Carnot cycle could be carried out by means of a gas enclosed in a vessel with a movable piston. In the process $1-1'$ the gas is in thermal contact with a \redem{heat source (heater)} at the constant temperature $T_{1}$\footnote{For instance, a large tank filled with water.}. From the heater the gas receives a certain quantity of heat $Q_{1}$ (where $Q_{1} > 0$). It is assumed that this does not change the temperature of the heater. This is possible, strictly speaking, only if the heater has an infinite heat capacity. In the process $1'-2$ the gas is thermally isolated and its expansion is adiabatic\footnote{ For instance, the cylinder with the gas is covered with a thick layer of felt.} \ssect{9.5.10}. In the process $2-2'$ the gas is brought into thermal contact with a \redem{cooler (heat sink)} having the constant temperature $T_{2}$ (where $T_{2} < T_{1}$). Here the gas is isothermically compressed and gives off the quantity of heat $-Q_{2}$ to the cooler (assuming that $Q$ is the quantity of heat received by the gas from the cooler). The heat capacity of the cooler is assumed to be infinitely high. In the state $2'$ the gas is again thermally insulated and contracts adiabatically to its initial state $1$.
+\zhpar{实际中，正卡诺循环可以用装在带可移动活塞容器中的气体来实现。在过程 $1-1'$ 中，气体与温度恒定为 $T_{1}$ 的\redem{热源（加热器）}热接触。气体从加热器获得热量 $Q_{1}$（其中 $Q_{1} > 0$）。假定这不改变加热器的温度。严格地说，只有当加热器的热容为无穷大时，这一假定才可能成立。在过程 $1'-2$ 中，气体与外界热绝缘，其膨胀为绝热膨胀（\ssect{9.5.10}）。在过程 $2-2'$ 中，气体与温度恒定为 $T_{2}$（其中 $T_{2} < T_{1}$）的\redem{冷却器（冷源）}热接触。此时气体被等温压缩，并向冷却器放出热量 $-Q_{2}$（假定 $Q$ 为气体从冷却器获得的热量）。冷却器的热容假定为无穷大。在状态 $2'$，气体再次与外界热绝缘，并绝热收缩回到其初始状态 $1$。}
+\zhpar{注：例如，装满水的大型水箱。}
+\zhpar{注：例如，盛有气体的圆筒外面包有一层厚厚的毛毡。}
 
 \subsection{}\label{11.1.8} The work done by the gas in an equilibrium (8.3.7) direct Carnot cycle is
+\zhpar{在平衡态（\ssect{8.3.7}）下进行的正卡诺循环中，气体所做的功为：}
 \begin{equation*}%
 W = Q = Q_{1} + Q_{2} = Q_{1} - \abs{Q_{2}}.
 \end{equation*}
 It is evident from the equation that $W< Q_{1}$ i, i.e. the work done by the working medium \ssect{11.1.1} in the Carnot cycle is less than the energy received from the heater by the amount of energy given up to the cooler in the form of heat. This is valid for an arbitrary process: the work $W$ done in the cycle is always less than the sum $Q_{\textrm{del}}$ of all the quantities of heat delivered to the working medium from heaters. 
+\zhpar{由该式可见，$W< Q_{1}$，即正卡诺循环中工作物质所做的功，小于其从加热器吸收的能量，其差额恰为以热量形式交给冷却器的能量。这一结论对任意过程都成立：循环中所做的功 $W$ 总是小于由各加热器传给工作物质的所有热量之和 $Q_{\textrm{del}}$。}
 
 The operation of heat engines is based on the direct Carnot cycle.
+\zhpar{热机的工作即基于正卡诺循环。}
 
 \subsection{}\label{11.1.9} The \redem{thermal efficiency} $\eta$ is the ratio of the work $W$ done by the working medium in a direct cycle to the sum $Q_{\textrm{del}}$ of all quantities of heat delivered in this cycle to the working medium by heaters:
+\zhpar{\redem{热效率} $\eta$ 是工作物质在正循环中所做的功 $W$ 与该循环中加热器传给工作物质的所有热量之和 $Q_{\textrm{del}}$ 之比，即：}
 \begin{equation*}%
 \eta = \frac{W}{Q_{\textrm{del}}}.
 \end{equation*}
 The quantity $\eta$ characterizes the economy of operation of a heat engine.
+\zhpar{$\eta$ 表征热机工作的经济性。}
 
 \subsection{}\label{11.1.10} The thermal efficiency of a direct equilibrium Carnot cycle carried out with an ideal gas is
+\zhpar{以理想气体为工作物质进行的正平衡卡诺循环，其热效率如下式所示：}
 \begin{equation*}%
 \eta_{c} = \frac{Q_{1}+Q_{2}}{Q_{1}} = \frac{T_{1}-T_{2}}{T_{1}} = 1 - \frac{T_{2}}{T_{1}}.
 \end{equation*}
 The value of $\eta_{c}$ depends only on the ratio of the temperatures of the cooler $(T_{2})$ and the heater $(T_{1})$.
+\zhpar{$\eta_{c}$ 的值仅取决于冷却器温度 $(T_{2})$ 与加热器温度 $(T_{1})$ 之比。}
 
 \begin{marginfigure}%[!ht]
 %\begin{wrapfigure}{r}{0.5\linewidth}
@@ -72,132 +92,176 @@ The value of $\eta_{c}$ depends only on the ratio of the temperatures of the coo
 \includegraphics[width=0.8\textwidth]{figs/ch-11/fig-11-03.pdf}
 %\input{figs/ch-03/fig-03-01}
 %  \vspace{-13pt}
-\sidecaption{The reverse Carnot cycle.
+\sidecaption{The reverse Carnot cycle.\zhcap{逆卡诺循环。}
 \label{fig-11-03}}
 \end{marginfigure}
 
 \subsection{}\label{11.1.11} The \redem{reverse Carnot cycle} is shown in \figr{fig-11-03}. In isothermal compression, carried out in the process $1'-1$, the quantity of heat $Q_{1}$ is removed from the gas at the temperature $T_{1}$, which remains constant. In the process of isothermal expansion $2'-2$ at the temperature $T_{2} < T_{1}$,the quantity of heat $Q_{2}$ is delivered to the gas. In the reverse Carnot cycle $Q_{1} < 0$, $Q_{2} > 0$ and the work $W$ done by the gas in one cycle is negative: $W= (Q_{1} + Q_{2}) < 0$. This conclusion is valid for any reverse cycle. If the working medium carries out a reverse cycle, energy can be transferred in the form of heat \ssect{9.2.1} from a cold body to a hotter one at the expense of the corresponding work done by external forces. This principle is used in all refrigerating devices. The less the work $W'= -W$ done by external forces to extract the quantity of heat $Q_{2}$ from a cold body, the higher the economical efficiency (coefficient of performance) of a refrigerator:
+\zhpar{\redem{逆卡诺循环}如\figr{fig-11-03}所示。在等温压缩过程 $1'-1$ 中，热量 $Q_{1}$ 在温度 $T_{1}$（保持不变）下从气体中移出。在等温膨胀过程 $2'-2$ 中（温度为 $T_{2} < T_{1}$），热量 $Q_{2}$ 传给气体。在逆卡诺循环中，$Q_{1} < 0$，$Q_{2} > 0$，气体在一个循环中所做的功 $W= (Q_{1} + Q_{2}) < 0$。这一结论对任意逆循环都成立。若工作物质进行逆循环，则可以借助外力做功，以热量的形式将能量从低温物体传递到高温物体。所有制冷装置都利用这一原理。外力为从低温物体中提取热量 $Q_{2}$ 而做的功 $W'= -W$ 越小，制冷机的经济效率（即制冷系数）就越高：}
 \begin{equation*}%
 Q_{2} = W_{1} - Q_{1} = W - \frac{W}{\eta} = - \frac{1 - \eta}{\eta} W,
 \end{equation*}
 where $\eta$ is the thermal efficiency of the direct cycle between the same temperatures $T_{1}$ and $T_{2}$ \ssect{11.1.3} and \ssect{11.1.4}.
+\zhpar{式中 $\eta$ 为在相同温度 $T_{1}$ 与 $T_{2}$ 之间进行的正循环的热效率（参见 \ssect{11.1.3} 和 \ssect{11.1.4}）。}
 
 
 \section{Reversible and Irreversible Processes}
 \label{sec-11.2}
+\zhtitle{可逆过程与不可逆过程}
 
 \subsection{}\label{11.2.1} A thermodynamic process is said to be reversible (\redem{rever­sible process}) if the thermodynamic system \ssect{8.3.1}, in carrying out the process first in the direct and then in the exactly re­ versed order, returns, together with all the external bodies with which it interacts, to its initial state. In other words, in a rever­sible process the thermodynamic system returns to its initial state without leaving any changes in the surrounding medium. A necessary and sufficient condition for the reversibility of a thermodynamic process is the equilibrium (8.3.3) of all the consecutive states in the process. Here all corresponding states of the thermodynamic system in the direct and reverse pro­cesses are absolutely identical.
+\zhpar{若热力学系统（\ssect{8.3.1}）先沿正方向、然后严格按相反的次序完成某一过程，并且系统与其相互作用的所有外界物体都回到初始状态，则称该热力学过程为可逆的（\redem{可逆过程}）。换言之，在可逆过程中，热力学系统回到初始状态时，周围介质中不留下任何变化。过程可逆的充分必要条件是：过程中所有相继的状态都是平衡态（参见 \ssect{8.3.3}）。此时，正向过程与逆向过程中系统的所有对应状态完全相同。}
 
 \textbf{Example~1.} The mechanical motion of a body in a vacuum in the complete absence of friction is a reversible process. Assume, for instance, that a body under these conditions is thrown with a certain initial velocity into a gravitational field \ssect{6.2.1} at a definite angle to the horizon. After describing a parabolic path the body drops to the earth at a certain place. Now, if the body is thrown from this place at the same angle and the same initial velocity, but in the opposite direction, it describes the same path in the opposite direction and drops to the earth at the initial point. Any intermediate states of the moving body in the forward and reverse motions are entirely identical. The \redem{reversibility of mechanical motions} indicates their symmetry with respect to the interchanging of the future by the past, i.e. with respect to the reversal of the sign of the time. The re­versibility of mechanical motions follows from the differential equations of motion \ssect{2.4.4}. When the sign of the time is changed, this changes the sign of the velocity as well, but the acceleration, in the motion equations, retains its sign. 
+\zhpar{\textbf{例 1.} 物体在真空中、完全没有摩擦时的机械运动是可逆过程。例如，设物体在这种条件下以一定的初速度、与水平面成一定角度抛入重力场（\ssect{6.2.1}）。物体沿抛物线轨迹运动后，落到地面的某一点。若物体从该点以相同的角度、相同的初速度，但沿相反的方向抛出，则它将沿相同的路径反向运动，并落回到初始点。运动物体在正向与反向运动中的任何中间状态都完全相同。机械运动的可逆性表明，它们关于将未来与过去互换（即关于时间符号的反转）是对称的。机械运动的可逆性由运动微分方程（\ssect{2.4.4}）得出。当时间的符号改变时，速度的符号也随之改变，但运动方程中的加速度保持其符号不变。}
 
 \textbf{Example~2.} Another reversible process is the undamped vibrations of a body suspended in a vacuum on a perfectly elastic spring \ssect{28.2.3}. The body-spring system is a conservative one \ssect{3.1.7}. Its mechanical vibrations do not change the energy of thermal random motion of its particles. Only changes in the configuration and velocity of the system lead to a change of its state. But these changes are completely repeated after each period $T$ \ssect{28.1.2} of vibration. Hence, the conditions for the
 reversibility \ssect{11.2.1} of the process are complied with.
+\zhpar{\textbf{例 2.} 另一个可逆过程是真空中，物体悬挂在完全弹性弹簧（\ssect{28.2.3}）上的无阻尼振动。物体-弹簧系统是保守系统（\ssect{3.1.7}）。其机械振动并不改变粒子无规热运动的能量，只有系统的构形与速度发生变化，才会导致系统状态的改变。但这些变化在每个振动周期 $T$（\ssect{28.1.2}）之后都会完全重复。因此，该过程满足可逆性的条件（\ssect{11.2.1}）。}
 
 \subsection{}\label{11.2.2} Any process that does not comply with the conditions for reversibility is said to be irreversible (\redem{irreversible process}). 
+\zhpar{任何不满足可逆性条件的过程称为不可逆过程（\redem{不可逆过程}）。}
 
 \textbf{Example~1.} The direct process of braking a moving body by means of friction forces is an irreversible process. If these forces are the only ones acting on the body, its velocity is reduced and it finally stops. The energy of mechanical motion of the body as a whole is reduced and is expended in increasing the energy of random motion of particles of the body and the surrounding medium. The internal energy \ssect{9.1.2} of the body and the medium is increased; they are heated by the action of the friction forces. The direct process dealt with here proceeds spontaneously; it is carried out without any processes taking place in surrounding bodies. For the reverse process to occur, returning the system to its initial state, it would be necessary for the braked and stopped body to start moving again by cooling it and the surrounding medium. As is evident from experiments, the thermal random motion of particles of a body cannot spon­taneously lead to the initiation of ordered motion of all the particles of the body as a whole. To accomplish such motion it is necessary to provide for an \redem{additional compensating process} in which the body and surrounding medium are cooled to the initial temperature. In this process, the quantity of heat $Q$ is given up to the cooler and the work $A' = Q$ is performed on the body.
+\zhpar{\textbf{例 1.} 借助摩擦力使运动物体制动，是不可逆过程。若只有这些摩擦力作用于物体，则物体的速度逐渐减小，最后停止运动。物体整体的机械运动能量减少，并转化为物体及周围介质中粒子无规热运动能量的增加。物体与介质的内能（\ssect{9.1.2}）增加，即它们因摩擦力的作用而被加热。这里讨论的正向过程是自发进行的，无需周围物体发生任何其他过程。若要实现使系统回到初始状态的逆过程，则必须使已经制动并静止的物体重新运动，这需要冷却物体及周围介质。实验表明，物体中粒子的无规热运动不可能自发地导致物体所有粒子的整体有序运动。要实现这种运动，必须设置一个\redem{附加补偿过程}，使物体与周围介质冷却到初始温度。在这一过程中，热量 $Q$ 被传给冷却器，并对物体做功 $A' = Q$。}
 
 Thus, the consecutive performance of such direct and reverse processes returns the body-medium system to its initial state, but the states of external bodies are changed. Hence, all pro­cesses accompanied by friction are irreversible ones.
+\zhpar{因此，这样的正向过程与逆向过程相继进行，可使物体-介质系统回到初始状态，但外界物体的状态已经改变。因此，所有伴有摩擦的过程都是不可逆过程。}
 
 \textbf{Example~2.} The direct process of heat exchange \ssect{9.2.4} between two bodies having different temperatures is a spontaneous one. The reverse process, heating one body by cooling another that initially has the same temperature as the first body, cannot proceed spontaneously. To accomplish this process, a refrigerat­ing device \ssect{11.1.11} is required. The process of heat exchange at a finite temperature difference is an irreversible one.
+\zhpar{\textbf{例 2.} 两个温度不同的物体之间的热交换（\ssect{9.2.4}）是自发进行的正向过程。其逆过程，即通过冷却与第一个物体初始温度相同的另一个物体来加热第一个物体，则不能自发进行。要实现这一过程，需要制冷装置（\ssect{11.1.11}）。有限温差下的热交换过程是不可逆过程。}
 
 
 \section{Second Law of Thermodynamics}
 \label{sec-11.3}
+\zhtitle{热力学第二定律}
 
 \subsection{}\label{11.3.1} The reference in the preceding section to experiments that prove the irreversibility of the processes of heat exchange and motion with friction \ssect{11.2.2} was no chance one. The first law of thermodynamics \ssect{9.3.1} cannot describe thermodynamic processes comprehensively. An essential limitation of the first law is that it cannot be used to predict in which direction a thermodynamic process will proceed. Any process that does not violate the law of conservation of energy is feasible from the point of view of the first law of thermodynamics. Among others, (he spontaneous transfer of energy in the form of heat from a cooler body to a hotter body is also possible. Also feasible is a process whose only result would be the obtaining of a certain quantity of heat from a body and the conversion of this heat into an equivalent amount of work. A periodic-action device, based on the first law of thermodynamics, which performs work by cooling a single source of heat (for instance, the internal energy of large bodies of water), is called a \redem{perpetual motion machine of the second kind}.
+\zhpar{前一节中引用的关于热交换与有摩擦运动过程不可逆性的实验，并非偶然。热力学第一定律（\ssect{9.3.1}）无法全面描述热力学过程。第一定律的一个本质局限在于，它无法用来预言热力学过程将沿哪个方向进行。凡不违反能量守恒定律的过程，从热力学第一定律的观点来看都是可行的。例如，热量从低温物体自发地传递到高温物体也是可能的。又如，从某物体中吸取热量并将其全部转化为等量的功，而没有其他任何结果，这样的过程也是可行的。一种基于热力学第一定律、通过冷却单一热源（例如大水体的内能）而做功的周期性装置，称为\redem{第二类永动机}。}
 
 \subsection{}\label{11.3.2} The \redem{second law of thermodynamics} is the experimentally established statement of the impossibility of building a perpe­tual motion machine of the second kind \ssect{11.3.1}. The two most common statements of the second law, equivalent to each other, are:
+\zhpar{\redem{热力学第二定律}是关于不可能制成第二类永动机这一实验事实的表述（\ssect{11.3.1}）。第二定律最常见的两种表述是等价的，分别为：}
 \begin{enumerate}[label=(\alph*),noitemsep,nolistsep]
 \item no process is possible whose sole result is the conversion of all the heat received from a certain body into an equivalent amount of work;
+\zhpar{不可能发生这样一种过程，其唯一结果是将从某一物体吸取的全部热量转化为等量的功；}
 \item no process is possible whose sole result is the transfer of energy in the form of heat from a cold body to a hotter one. 
+\zhpar{不可能发生这样一种过程，其唯一结果是将热量形式的能量从冷体传递到热体。}
 \end{enumerate}
 
 \subsection{}\label{11.3.3} It follows from the second law of thermodynamics that work and heat are not equivalent forms of transferring energy. The conversion of orderly motion of a body as a whole into the random motion of its particles is an irreversible process, pro­ceeding without compensating processes \ssect{11.2.2}. The conver­sion of random motion of the particles of a body into ordered motion of the body as a whole requires the provision of some simultaneous compensating process.
 \textbf{Example~1.} In the isothermal expansion of an ideal gas work is done that is fully equivalent to the quantity of heat delivered (o the gas \ssect{9.5.9}. The heat received by the gas is completely converted into an equivalent amount of work. But the gas does not return to its initial state. It expands and its specific volume is increased. The conversion of heat into work\sidenote{Such a process is sometimes, not quite correctly, called the ``conversion of heat into work''.} is not the sole result of the isothermal expansion of an ideal gas.
+\zhpar{由热力学第二定律可知，功与热量并不是等价的能量传递形式。物体整体的有序运动转变为其粒子的无规运动，是一个不伴随补偿过程（\ssect{11.2.2}）的不可逆过程。反之，要使物体粒子的无规运动转变为物体整体的有序运动，则必须同时发生某种补偿过程。\textbf{例 1.} 理想气体的等温膨胀过程中，所做的功与传给气体的热量完全等价（\ssect{9.5.9}）。气体所吸收的热量全部转化为等量的功。但是，气体并未回到其初始状态：它膨胀了，比体积增大了。因此，将热量转化为功并非理想气体等温膨胀的唯一结果。}
+\zhpar{注：这种过程有时（不太确切地）被称为“将热量转化为功”。}
 
 
 \textbf{Example~2.} In a heat engine based on the direct Carnot cycle \ssect{11.1.8}, work is done owing to the heat delivered from the heater. But a part of the quantity of heat obtained is given up to the cooler \ssect{11.1.7}. Hence, the work done in a cycle is not equi­valent to the whole quantity of heat delivered to the working medium.
+\zhpar{\textbf{例 2.} 在基于正卡诺循环（\ssect{11.1.8}）的热机中，功是由加热器传来的热量所做的。但所获得的热量中，有一部分交给了冷却器（\ssect{11.1.7}）。因此，循环中所做的功并不等价于传给工作物质的全部热量。}
 
 \textbf{Example~3.} In refrigerating devices operating on the reverse Carnot cycle \ssect{11.1.11}, a certain quantity of heat is transferred from a cold body to a hotter one. But external forces do work to accomplish this and, consequently, a compensating process is being carried out.
+\zhpar{\textbf{例 3.} 在按逆卡诺循环（\ssect{11.1.11}）工作的制冷装置中，一定量的热量从低温物体传递到高温物体。但为实现这一过程，需要外力做功，因而同时进行着一个补偿过程。}
 
 \subsection{}\label{11.3.4} The \redem{Carnot theorem} states that the thermal efficiency \ssect{11.1.9} of the reversible Carnot cycle does not depend upon the composition of the working medium and is always ex­ pressed by the formula \ssect{11.1.10}:
+\zhpar{\redem{卡诺定理}指出：可逆卡诺循环的热效率（\ssect{11.1.9}）与工作物质的组成无关，并且总是由下式表示（\ssect{11.1.10}）：}
 \begin{equation*}%
 \eta_{C} = \frac{Q_{1}+Q_{2}}{Q_{1}} = \frac{T_{1} - T_{2}}{T_{1}}.
 \end{equation*}
 The thermal efficiency $\eta_{C\,\textrm{ir}}$ of the irreversible Carnot cycle is always less than the thermal efficiency $\eta_{C\,\textrm{rev}}$ of the reversible Carnot cycle, carried out at the same temperatures $T_{1}$ and $T_{2}$: $\eta_{C\,\textrm{ir}} < \eta_{C\,\textrm{rev}}$.
+\zhpar{不可逆卡诺循环的热效率 $\eta_{C\,\textrm{ir}}$ 总是小于在相同温度 $T_{1}$ 与 $T_{2}$ 下进行的可逆卡诺循环的热效率 $\eta_{C\,\textrm{rev}}$，即 $\eta_{C\,\textrm{ir}} < \eta_{C\,\textrm{rev}}$。}
 
 The thermal efficiency of any reversible cycle cannot be higher than that $\eta_{C}$, of a reversible Carnot cycle being accomplished by means of a heater and cooler having the temperatures $T_{1}$ and $T_{2}$:
+\zhpar{任何可逆循环的热效率都不可能高于在温度分别为 $T_{1}$ 与 $T_{2}$ 的加热器与冷却器之间完成的可逆卡诺循环的热效率 $\eta_{C}$，即：}
 \begin{equation*}%
 \eta_{\textrm{rev}} \leq \eta_{C} = \frac{T_{1} - T_{2}}{T_{1}}.
 \end{equation*}
 
 \subsection{}\label{11.3.5} The Carnot theorem \ssect{11.3.4} is used to establish the \redem{thermodynamic temperature scale}. It follows from the first equation in the preceding subsection that $T_{2}/T_{1} = -Q_{2}/Q_{1}$ or, since $Q_{2} < 0$,
+\zhpar{卡诺定理（\ssect{11.3.4}）用于建立\redem{热力学温标}。由上一小节的第一式可得 $T_{2}/T_{1} = -Q_{2}/Q_{1}$，或者由于 $Q_{2} < 0$，有：}
 \begin{equation*}%
 \frac{T_{2}}{T_{1}} = \frac{\abs{Q_{2}}}{Q_{1}}.
 \end{equation*}
 In order to compare the temperatures $T_{1}$ and $T_{2}$ of two bodies it is necessary to carry out a reversible Carnot cycle in which these bodies are the heater and cooler. Then, according to the ratio of the numerical values of the quantities of heat delivered to and received from the bodies, the ratio of their temperatures is determined. The result of such a comparison of temperatures does not depend upon the chemical composition of the working medium \ssect{11.3.4}. Therefore, the thermodynamic temperature scale is independent of the properties of the temperature-indicating substance \ssect{8.3.4} and, in this respect, has great generali­ty. However, since all real thermodynamic processes are irre­versible, the comparison of temperatures by the above-men­tioned procedure is unfeasible; it has only a theoretical signi­ficance.
+\zhpar{为了比较两个物体的温度 $T_{1}$ 与 $T_{2}$，需要进行一个以这两个物体分别作为加热器与冷却器的可逆卡诺循环。然后，根据传给物体及从物体获得的热量数值之比，即可确定它们的温度之比。这种温度比较的结果与工作物质的化学成分无关（\ssect{11.3.4}）。因此，热力学温标与测温物质的性质无关（\ssect{8.3.4}），在这方面具有很大的普遍性。然而，由于所有实际的热力学过程都是不可逆的，上述温度比较方法无法实际实施，它只具有理论意义。}
 
 \section{Entropy and Free Energy}
 \label{sec-11.4}
+\zhtitle{熵与自由能}
 
 \subsection{}\label{11.4.1} The ratio of the quantity of heat $Q$, received by a body in an isothermal process, to the temperature $T$ of the body giving up the heat is called the \redem{reduced quantity of heat} $Q*$, i.e. $Q* = Q/T$. In heating a body $(Q > 0)$, $Q*$ is positive; in cooling $(Q < 0)$, $Q*$ is negative.
+\zhpar{物体在等温过程中吸收的热量 $Q$ 与放出该热量的物体的温度 $T$ 之比，称为\redem{约化热量} $Q*$，即 $Q* = Q/T$。物体受热（$Q > 0$）时，$Q*$ 为正；物体放热（$Q < 0$）时，$Q*$ 为负。}
 
 The reduced quantity of heat delivered to a body in an infinitely small portion of an arbitrary process, is equal to $\delta Q/T$ where $T$ is the temperature of the corresponding heater.\footnote{In the case of a reversible process, $T$ coincides with the tem­perature of the body that is carrying out the process.} The reduced quantity of heat ($Q*_{1-2}$for the arbitrary portion $1 \to 2$ of the process $C_{1}C_{2}$ is
+\zhpar{在任意过程的无穷小一段中，传给物体的约化热量等于 $\delta Q/T$，其中 $T$ 为相应加热器的温度。对于过程 $C_{1}C_{2}$ 中任一段 $1 \to 2$，约化热量 $Q*_{1-2}$ 如下式所示：}
+\zhpar{注：对于可逆过程，$T$ 与进行该过程的物体的温度相同。}
 \begin{equation*}%
 Q*_{1-2} = \int_{C_{1}}^{C_{2}} \frac{\delta Q}{T}. 
 \end{equation*}
 
 \subsection{}\label{11.4.2} The reduced quantity of heat $Q*_{\textrm{rev}}$ delivered to a body in any reversible cycle equals zero:
+\zhpar{在任意可逆循环中，传给物体的约化热量 $Q*_{\textrm{rev}}$ 等于零，即：}
 \begin{equation*}%
 Q*_{\textrm{rev}} = \oint_{\textrm{rev}} \frac{\delta Q}{T} = 0.
 \end{equation*}
 Here $T$ is the temperature at which an element of the quantity of heat $\delta Q$ is delivered to the body. It follows from the equation in the preceding subsection that the function $\delta Q/T$ is a complete differential of a certain function $S$ [in contrast to $\delta Q$, which is not a complete differential \ssect{9.4.3}]:
+\zhpar{式中 $T$ 为传给物体热量元 $\delta Q$ 时物体所处的温度。由上一小节的方程可知，函数 $\delta Q/T$ 是某一函数 $S$ 的全微分（与不是全微分的 $\delta Q$ 不同，参见 \ssect{9.4.3}），即：}
 \begin{equation*}%
 \dd S = \left( \frac{\delta Q}{T} \right)_{\textrm{rev}}.
 \end{equation*}
 The single-valued state function \ssect{9.1.3} $S$, whose complete differential is determined by the preceding equation, is called the \redem{entropy} of a body. It is evident from this equation that $\dd S$ and $\delta Q$ have the same sign. Consequently, from the way in which the entropy varies it is possible to determine in which direction heat exchange \ssect{9.2.4} takes place. In heating a body $(\delta Q > 0)$ its entropy increases $(\dd S >0)$. If a body is cooled $(\delta Q < 0)$, its entropy decreases $(\dd S < 0)$.
+\zhpar{由上式唯一确定其全微分的单值状态函数（\ssect{9.1.3}）$S$，称为物体的\redem{熵}。由该式可知，$\dd S$ 与 $\delta Q$ 具有相同的符号。因此，根据熵的变化可以确定热交换的方向。物体受热（$\delta Q > 0$）时，其熵增加（$\dd S >0$）；物体放热（$\delta Q < 0$）时，其熵减少（$\dd S < 0$）。}
 
 \textbf{Example.} The complete differential of the entropy of an ideal gas is expressed by the equation 
+\zhpar{理想气体熵的全微分由下式表示：}
 \begin{equation*}%
 \dd S = \left( \frac{\delta Q}{T} \right)_{\textrm{rev}}= \frac{M}{\mu} C_{V \mu} \frac{\dd T}{T} + \frac{M}{\mu} R \frac{\dd V}{V},
 \end{equation*}
 where $M$ is the mass of the gas, $\mu$, is its molar mass \ssect{8.4.3}, $C_{V \mu}$ is its molar heat capacity at constant volume \ssect{9.5.4}, $R$ is the universal gas constant \ssect{8.4.4}, $T$ is its temperature, and $V$ is its volume. This result is obtained on the basis of the first law of thermodynamics \ssect{9.3.1} for $\delta Q$, with the Mendeleev-Clapeyron equation \ssect{8.4.4} taken into account.
+\zhpar{式中 $M$ 为气体的质量，$\mu$ 为其摩尔质量（\ssect{8.4.3}），$C_{V \mu}$ 为其定容摩尔热容（\ssect{9.5.4}），$R$ 为摩尔气体常量（\ssect{8.4.4}），$T$ 为其温度，$V$ 为其体积。该结果是在利用热力学第一定律（\ssect{9.3.1}）求出 $\delta Q$、并考虑门捷列夫-克拉珀龙方程（\ssect{8.4.4}）的基础上得到的。}
 
 The change $\Delta S_{1 \to 2}$ in the entropy of an ideal gas going over from state 1 to state 2 does not depend upon the kind of pro­ cess $1 \to 2$ used in this transition:
+\zhpar{理想气体由状态 1 变化到状态 2 时，其熵的变化 $\Delta S_{1 \to 2}$ 与实现这一转变所采用的过程 $1 \to 2$ 的类型无关，即：}
 \begin{equation*}%
 \Delta S_{1 \to 2} = S_{2} - S_{1} = \frac{M}{\mu}  \left( C_{V \mu} \ln \frac{T_{2}}{T_{1}} +  R \ln \frac{V_{2}}{V_{1}} \right).
 \end{equation*}
 \subsection{}\label{11.4.3} Certain of the most important properties of the entropy of closed systems \ssect{2.2.4} are:
+\zhpar{闭合系统（\ssect{2.2.4}）的熵的几个最重要的性质如下：}
 \begin{enumerate}[label=(\alph*),noitemsep,nolistsep]
 \item The entropy of a closed system in a reversible Carnot cycle \ssect{11.1.6} does not change:
+\zhpar{闭合系统在可逆卡诺循环（\ssect{11.1.6}）中，熵不变：}
 \begin{equation*}%
 \Delta S_{\textrm{rev}} = 0 \qand S = \textrm{const.}
 \end{equation*}
 \item The entropy of a closed system increases in an irreversible Carnot cycle:
+\zhpar{闭合系统在不可逆卡诺循环中，熵增加：}
 \begin{equation*}%
 \Delta S_{\textrm{ir}} > 0.
 \end{equation*}
 \item In any processes that occur in a closed system its entropy never decreases:
+\zhpar{在闭合系统中发生的任何过程中，其熵永不减少：}
 \begin{equation*}%
 \Delta S_{\textrm{rev}} \geqslant 0.
 \end{equation*}
 \end{enumerate}
 In an element of change in the state of a closed system, the entropy does not decrease: $\Delta S_{\textrm{rev}} \geq 0$.
+\zhpar{对于闭合系统状态的任一无穷小变化，其熵不减少：$\Delta S_{\textrm{rev}} \geq 0$。}
 
 The equality sign pertains to reversible processes and the greater-than sign to irreversible ones. Item~(c) is one of the statements of the second law of thermodynamics.
+\zhpar{等号适用于可逆过程，大于号适用于不可逆过程。第 (c) 项是热力学第二定律的表述之一。}
 
 \subsection{}\label{11.4.4} The following relation is valid for an arbitrary process occurring in a thermodynamic system \ssect{8.3.1}:
+\zhpar{对于热力学系统（\ssect{8.3.1}）中发生的任意过程，下列关系式成立：}
 \begin{equation*}%
 \delta Q \leq  T \dd S,
 \end{equation*}
 where $T$ is the temperature of the body that transfers the energy $\delta Q$ to the thermodynamic system in the process of an infinitely small change in the state of the system. Making use of an equa­tion of the first law of thermodynamics \ssect{9.3.1} for $\delta Q$, the preceding inequality can be rewritten in the form
+\zhpar{式中 $T$ 为在系统状态发生无穷小变化的过程中，向热力学系统传递能量 $\delta Q$ 的物体的温度。利用热力学第一定律关于 $\delta Q$ 的方程，上述不等式可改写为如下形式：}
 \begin{equation*}%
 T \dd \, S \geq \dd U + \delta W,
 \end{equation*}
 combining the first and second laws.
+\zhpar{这里综合了第一定律与第二定律。}
 
 \subsection{}\label{11.4.5} For a reversible process 
+\zhpar{对于可逆过程，有：}
 \begin{align*}%
 \delta W & = -(\dd U - T \dd  \, S), \qor \\
 \delta W & = -\dd (U - T S) - S  \\ 
@@ -205,132 +269,178 @@ combining the first and second laws.
 \end{align*}
 where $F = U - TS$
 is called the \redem{free energy}. The free, or available, energy is the difference of two state functions \ssect{8.3.8} and is therefore also a state function of the thermodynamic system.
+\zhpar{其中 $F = U - TS$ 称为\redem{自由能}。自由能（或可用能）是两个状态函数之差，因此它本身也是热力学系统的状态函数。}
 
 If the system carries out a reversible isothermal process, $\dd T = 0$ and $\delta W_{\textrm{isot}} = - \dd F$. When the system passes from state 1 to state 2 in a reversible isothermal process,
+\zhpar{若系统经历可逆等温过程，则 $\dd T = 0$，且 $\delta W_{\textrm{isot}} = - \dd F$。当系统在可逆等温过程中由状态 1 变化到状态 2 时，有：}
 \begin{equation*}%
 W_{\textrm{isot}}  = F_{1} - F_{2}.
 \end{equation*}
 The decrease in free energy is the measure of the work done by a system (or body) in a reversible isothermal process.
+\zhpar{自由能的减少，是系统（或物体）在可逆等温过程中所做功的量度。}
 
 
 \subsection{}\label{11.4.6} It follows from the equation $U = F + TS \, $ that the internal energy of a body (or system) is equal to the sum of the free energy $F$ and the \redem{bound energy} $TS$. The bound, or unavailable, energy is the part of the internal energy of a body (or system) that cannot be transferred in the form of work in an isothermal process. In this sense, this part of the internal energy is ``depreciated''. The more the entropy of the body (or system), the more the bound energy. Therefore, the entropy of a body (or system) serves as a measure of the ``depreciation'' of its energy.
+\zhpar{由 $U = F + TS$ 可知，物体（或系统）的内能等于自由能 $F$ 与\redem{束缚能} $TS$ 之和。束缚能，或称不可用能，是物体（或系统）内能中在等温过程中不能以功的形式传递的那一部分。在这个意义上，内能的这一部分是“贬值”的。物体（或系统）的熵越大，其束缚能就越多。因此，物体（或系统）的熵可作为其能量“贬值”程度的量度。}
 
 
 \section{Statistical Interpretation of the Second Law of Thermodynamics}
 \label{sec-11.5}
+\zhtitle{热力学第二定律的统计解释}
 
 
 \subsection{}\label{11.5.1} The statement of the second law of thermodynamics on the impossibility of a decrease in the entropy in an isolated system \ssect{11.4.3} can be interpreted statistically, on the basis of the molecular-kinetic theory of the structure of matter, by means of Boltzmann's relation:
+\zhpar{借助分子动理论，可以通过玻尔兹曼关系式从统计意义上解释热力学第二定律关于孤立系统熵不能减少的表述：}
 \begin{equation*}%
 S = k \ln P + \textrm{const.}
 \end{equation*}
 where $S$ is the entropy of the system, $k$ is Boltzmann's constant \ssect{8.4.5}, and $P$ is the thermodynamic probability of the state. 
+\zhpar{式中 $S$ 为系统的熵，$k$ 为玻尔兹曼常量（\ssect{8.4.5}），$P$ 为状态的热力学概率。}
 
 \subsection{}\label{11.5.2} The \redem{thermodynamic probability} $P$ of a state of a body (or system) is equal to the number of all possible kinds of coordinate and velocity distributions of its particles corresponding to the given thermodynamic state \ssect{8.3.3}. By definition, $P$ is a whole number not less than unity $(P \geq 1)$.The Boltzmann relation \ssect{11.5.1} leads to the following statistical interpretation of the second law of thermodynamics: the thermodynamic prob­ ability of a state of a closed system cannot decrease, regardless of the processes that occur in it. In any process that proceeds in a closed system and brings it from state 1 to state 2, the change $\Delta P$ in the thermodynamic probability is either posi­tive or zero: $\Delta P = P_{2} - P_{1} \geq 0$.
+\zhpar{物体（或系统）某一状态的\redem{热力学概率} $P$，等于与给定热力学状态（\ssect{8.3.3}）相对应的、其粒子所有可能的坐标与速度分布方式的数目。根据定义，$P$ 为不小于 1 的整数 $(P \geq 1)$。由玻尔兹曼关系式（\ssect{11.5.1}）可得热力学第二定律的如下统计解释：无论闭合系统内发生什么过程，其状态的热力学概率都不会减小。在使闭合系统由状态 1 变到状态 2 的任意过程中，热力学概率的变化 $\Delta P$ 要么为正，要么为零：$\Delta P = P_{2} - P_{1} \geq 0$。}
 
 In a reversible process  $\Delta P = 0$, i.e. the thermodynamic probability $P$ is constant. If the process is irreversible,  $\Delta P > 0$ and $P$ increases. This means that an irreversible process transfers the system from a less probable state to a more probable one and, in the limit, to an equilibrium state \ssect{8.3.3}.
+\zhpar{在可逆过程中 $\Delta P = 0$，即热力学概率 $P$ 保持不变。若过程是不可逆的，则 $\Delta P > 0$，$P$ 增大。这意味着，不可逆过程使系统从较小概率的状态过渡到较大概率的状态，并在极限情况下过渡到平衡态（\ssect{8.3.3}）。}
 
 \subsection{}\label{11.5.3} Being a statistical law, the second law of thermodynamics describes the laws of random motion of a great number of particles making up a closed system. In systems that consist of a relatively small number of particles, fluctuations \ssect{11.6.1} are observed. They are deviations from the second law of thermodynamics.
+\zhpar{热力学第二定律是统计规律，描述的是组成闭合系统的大量粒子无规运动的规律。在粒子数较少的系统中，可以观察到涨落（\ssect{11.6.1}）。涨落即是对热力学第二定律的偏离。}
 
 \subsection{}\label{11.5.4} The second law of thermodynamics, established for closed systems on the earth, cannot be applied to the whole infinite universe. Such an application leads to the conclusion that the temperatures of all bodies in the universe equalize. This is incorrect from both the philosophical and physical points of view. According to this erroneous conclusion, all forms of motion, except random thermal motion, will cease and the universe will then reach a state of so-called ``heat death''. Actually, owing to the infinity of the universe, fluctuations \ssect{11.6.1} are inevitable in certain of its parts. These violate thermal equilibrium. The duration and magnitude of the fluctuations can be extremely great. It has been proven that there can be no equilibrium state, corresponding to ``heat death'', for the infinite universe.
+\zhpar{热力学第二定律是针对地球上的闭合系统建立的，不能应用于整个无限宇宙。若将其应用于整个宇宙，将得出所有物体温度趋于相等的结论。无论从哲学还是物理学的观点来看，这一结论都是错误的。按照这一错误结论，除无规热运动之外的一切运动形式都将停止，宇宙将进入所谓的“热寂”状态。实际上，由于宇宙无限，其某些部分中的涨落是不可避免的。这些涨落会破坏热平衡。涨落的持续时间和幅度可能非常大。已经证明，对于无限宇宙而言，不可能存在对应于“热寂”的平衡态。}
 
 \section{Fluctuations}
 \label{sec-11.6}
+\zhtitle{涨落}
 
 \subsection{}\label{11.6.1} Substantial deviations of certain physical quantities, characterizing a system, from their average values may occur in systems consisting of a comparatively small number of particles. Such deviations are called \redem{fluctuations} of physical quantities. For instance, in highly rarified gases the density at var­ious places in the volume of the gas may differ from the aver­ age density corresponding to the equilibrium state for definite $p$ and $T$ values. Chance deviations of the temperature $T$, pressure $p$ and other physical quantities may occur in exactly the same way.
+\zhpar{在由相对较少粒子组成的系统中，表征系统的某些物理量可能显著偏离其平均值。这种偏离称为物理量的\redem{涨落}。例如，在高度稀薄的气体中，气体体积中不同位置的密度，可能偏离对应于给定 $p$ 与 $T$ 值的平衡态平均密度。温度 $T$、压强 $p$ 以及其他物理量的偶然偏差，也可能以完全相同的方式出现。}
 
 \subsection{}\label{11.6.2} If $M$ is the true value of a physical quantity, and $\expval{\,M\,}$ is its average value, then the quantity $\Delta M$, where $\Delta M = M - \expval{\,M\,}$, and its average value $\expval{\Delta M} = \expval{\,M - \expval{\,M\,}}$ cannot be measures of the fluctuation of the quantity $M$. The quantity $\Delta M$ is not constant with time, and the quantity
+\zhpar{设 $M$ 为某一物理量的真实值，$\expval{\,M\,}$ 为其平均值，则量 $\Delta M$（其中 $\Delta M = M - \expval{\,M\,}$）及其平均值 $\expval{\Delta M} = \expval{\,M - \expval{\,M\,}}$，都不能作为物理量 $M$ 涨落的量度。量 $\Delta M$ 随时间并非恒定，而其平均值为（如下式所示）：}
+\zhpar{注：此处用到了这一论断：恒定量的平均值与该量本身相等。}
 \begin{equation*}%
 \expval{\Delta M\,} = \expval{\,M\,} - \expval{\,M\,} = 0.\sidenote{Used here is the statement that the mean value $\expval{\,M\,}$ of a constant quantity coincides with the quantity.}
 \end{equation*}
 
 This last equation follows from the fact that the deviation of the quantity $M$ from $\expval{\,M\,}$ occurs in both directions, towards values larger than the average and towards values smaller than the average, with equal frequency.
+\zhpar{上式（即最后一个等式）源于以下事实：物理量 $M$ 对 $\expval{\,M\,}$ 的偏离，既可能偏向大于平均值的一侧，也可能偏向小于平均值的一侧，且两种偏离出现的频率相同。}
 
 \subsection{}\label{11.6.3} A measure of the fluctuations of the physical quantity $M$ is the mean square of the difference $\Delta M$. It is called the \redem{mean square fluctuation}:
+\zhpar{物理量 $M$ 涨落的度量是 $\Delta M$ 的均方值，称为\redem{均方涨落}：}
+\zhpar{注：该式由平均值的代数运算规则得出，它强调指出：某量平方的平均值 $\expval{\,M^{2}\,}$ 不应与平均值的平方 $(\expval{\,M\,})^{2}$ 相混淆。}
 \begin{equation*}%
 \expval{\,\Delta (M^{2})\,} = \expval{\,(M - \Delta M)^{2}\,} = \expval{\,M^{2}\,} - (\expval{\,M\,})^{2}.\sidenote{This last equation, following from the rules of algebraic oper­ations with average values, underlines the fact that the average value $\expval{\,M^{2}\,}$ of the square of a quantity should not be confused with the square of the average value $(\expval{\,M\,})^{2}$.}
 \end{equation*}
 The mean square fluctuation is essentially positive or zero: $(\expval{\,(\Delta M)^{2}\,} \geq 0$. 
+\zhpar{均方涨落本质上为正或为零：$(\expval{\,(\Delta M)^{2}\,} \geq 0$。}
 
 The \redem{absolute fluctuation} is the quantity $\sqrt{\expval{\,(\Delta M)^{2}\,}}$, which also characterizes the deviation of $M$ from $\expval{\,M\,}$. A small absolute fluctuation signifies that large deviations of $M$ from $\expval{\,M\,}$ occur very rarely.
+\zhpar{\redem{绝对涨落}是量 $\sqrt{\expval{\,(\Delta M)^{2}\,}}$，它同样表征 $M$ 对 $\expval{\,M\,}$ 的偏离。绝对涨落较小，意味着 $M$ 对 $\expval{\,M\,}$ 的较大偏离极少出现。}
 
 The \redem{relative fluctuation} $\delta_{M}$ is the ratio of the absolute fluctuation to the average value $\expval{\,M \,}$ of a physical quantity:
+\zhpar{\redem{相对涨落} $\delta_{M}$ 是物理量的绝对涨落与其平均值 $\expval{\,M \,}$ 之比：}
 \begin{equation*}%
 \delta_{M} = \frac{\sqrt{\expval{\,(\Delta M)^{2}\,}}}{\expval{\,M \,}}.
 \end{equation*}
 The relative fluctuations in the concentration of particles (or density) of a gas, and in its pressure and temperature, decrease with an increase in the number N of gas molecules contained in the vessel:
+\zhpar{随着容器中所含气体分子数 $N$ 的增加，气体粒子浓度（或密度）、压强和温度的相对涨落都减小：}
 \begin{align*}%
 \delta_{\rho} & = \frac{\sqrt{\expval{\,(\Delta \rho)^{2}\,}}}{\expval{\,\rho \,}} \propto \frac{1}{\sqrt{N}}, \\
 \delta_{p} & = \frac{\sqrt{\expval{\,(\Delta p)^{2}\,}}}{\expval{\,p \,}} \propto \frac{1}{\sqrt{N}}, \\
 \delta_{T} & = \frac{\sqrt{\expval{\,(\Delta T)^{2}\,}}}{\expval{\,T \,}} \propto \frac{1}{\sqrt{N}}.
 \end{align*}
 When $N = N_{A}$ (Avogadro's number, see Appendix~II), $\delta_{\rho}$, $\delta_{p}$ and $\delta_{T}$ have values of the order of \num{d-14}.
+\zhpar{当 $N = N_{A}$（阿伏伽德罗常量，见附录 II）时，$\delta_{\rho}$、$\delta_{p}$ 与 $\delta_{T}$ 的数量级为 \num{d-14}。}
 
 If a system consists of $N$ independent particles, the relative fluctuation of an additive state function \ssect{9.1.3} of the system is inversely proportional to the square root of $N$:
+\zhpar{若系统由 $N$ 个独立粒子组成，则系统的可加性状态函数（\ssect{9.1.3}）的相对涨落与 $N$ 的平方根成反比，即：}
 \begin{equation*}%
 \delta_{M} \propto \frac{1}{\sqrt{N}}.
 \end{equation*}
 
 \subsection{}\label{11.6.4} The following are examples of fluctuations of physical quantities.
+\zhpar{下面是物理量涨落的一些例子。}
 
 \textbf{Example~1.} In measuring the temperature by means of a gas thermometer filled with an ideal gas \ssect{8.4.1}, the thermometer readings are not constant owing to fluctuations of temperature. The variations in temperature measured by the thermometer cannot be less than the absolute fluctuation of the thermometer indication, equal to $\sqrt{\expval{\,(\Delta T)^{2}\,}}$, i.e. $\Delta t \geq \sqrt{\expval{\,(\Delta T)^{2}\,}}$.
 The absolute fluctuation can be determined by the formula in \ssect{11.6.3}:
+\zhpar{\textbf{例 1.} 在用充有理想气体的气体温度计测量温度时（\ssect{8.4.1}），由于温度涨落，温度计的读数并不恒定。温度计所测得的温度变化量不可能小于其示数的绝对涨落，其值为 $\sqrt{\expval{\,(\Delta T)^{2}\,}}$，即 $\Delta t \geq \sqrt{\expval{\,(\Delta T)^{2}\,}}$。绝对涨落可由 \ssect{11.6.3} 中的公式确定，如下式所示：}
 \begin{equation*}%
 \sqrt{\expval{\,(\Delta T)^{2}\,}} \propto \frac{\expval{\,T \,}}{\sqrt{N}}.
 \end{equation*}
 Thus
+\zhpar{因此有：}
 \begin{equation*}%
 \Delta t \geq \sqrt{\expval{\,(\Delta T)^{2}\,}} \propto \frac{\expval{\,T \,}}{\sqrt{N}}.
 \end{equation*}
 If the gas thermometer contains \num{d-8} mole of gas, i.e. $N = \num{6.02d15}$, then the minimum changes in temperature $\Delta t$ that can he detected by the instrument, are of the order of magnitude $\Delta t \approx \num{d-10}\expval{\,T \,}$. This value indicates the limit of sensitivity of the gas thermometer.
+\zhpar{若气体温度计中含有 \num{d-8} 摩尔的气体，即 $N = \num{6.02d15}$，则仪器能够探测到的最小温度变化 $\Delta t$ 的数量级为 $\Delta t \approx \num{d-10}\expval{\,T \,}$。这一数值表明了气体温度计的灵敏度极限。}
 
 Real variations in temperature, commonly encountered in experiments, are incommensurably larger than $\Delta t$.
+\zhpar{实验中通常遇到的实际温度变化，远大于 $\Delta t$。}
 
 \textbf{Example~2.} Electrical fluctuations in circuits restrict the lim­its of sensitivity of radio receiving equipment. Among others, fluctuations in the number of electrons emitted by the incandescent cathode lead to fluctuations in the current supplied to the vacuum tube. This is called \redem{shot}, or \redem{Schottky, noise}. A measure of the shot noise is the mean square fluctuation of the current:
+\zhpar{\textbf{例 2.} 电路中的电涨落限制了无线电接收设备的灵敏度极限。此外，白炽阴极发射的电子数的涨落，会引起供给电子管的电流的涨落。这种现象称为\redem{散粒噪声}（或\redem{肖特基噪声}）。散粒噪声的度量是电流的均方涨落：}
 \begin{equation*}%
 \expval{\,(\Delta I)^{2}\,} \approx \frac{e I_{0}}{t}.
 \end{equation*}
 where $e$ is the charge of the electron, and $I_{0}$ is the average current over the time $t$ during which it is measured. Here $t \gg \tau$, where $\tau$ is the time of flight of the electron in the tube.
+\zhpar{式中 $e$ 为电子的电荷，$I_{0}$ 为测量时间 $t$ 内的平均电流。此处 $t \gg \tau$，其中 $\tau$ 为电子在电子管中的飞越时间。}
 
 \section{Brownian Movement}
 \label{sec-11.7}
+\zhtitle{布朗运动}
 
 \subsection{}\label{11.7.1} The \redem{Brownian movement} is the continuous haphazard zig­zag motion of small particles suspended in a gas or liquid and can be observed in a microscope. The Brownian movement is caused by fluctuations \ssect{11.6.1} in the pressure exerted by the molecules of gas or liquid on the surfaces of the minute suspend­ ed particles. As a result of pressure fluctuations the Brownian particles are subject on all sides to the action of unbalanced forces which cause their complex motions that are observed. 
+\zhpar{\redem{布朗运动}是悬浮于气体或液体中的微小粒子所做的连续、无规则的折线运动，可以在显微镜下观察到。布朗运动是由气体或液体分子作用于微小悬浮粒子表面上的压强涨落引起的。由于压强涨落，布朗粒子在各个方向上受到不平衡力的作用，正是这些力导致了所观察到的复杂运动。}
 
 \subsection{}\label{11.7.2} Under constant external conditions, no changes are observed in the motions of the Brownian particles and they continue indefinitely. This is testimony to the continuous na­ture of random thermal motion of the molecules to which the displacements of the Brownian particles are due. The velocity $v$ and energy $E$ of motion of these particles depend upon their size, but not on their chemical composition. The values of $v$ and $E$ increase with the temperature and with a reduction in the viscosity of the gas or liquid.
+\zhpar{在外部条件恒定的情况下，布朗粒子的运动不会发生变化，并将无限持续下去。这证明了引起布朗粒子位移的分子无规热运动是连续的。这些粒子运动的速度 $v$ 与能量 $E$ 取决于粒子的尺寸，而与其化学成分无关。$v$ 与 $E$ 的值随温度升高以及气体或液体黏性减小而增大。}
 
 \subsection{}\label{11.7.3} It has been experimentally established that Brownian particles can move upwards, rising in the fluid. This occurs when the molecules of the gas (or liquid) transmit an uncompensated momentum directed upwards to the particle. This increases the potential energy of the particle at the expense of the kinetic energy of the molecules surrounding it, thereby leading to localized cooling of the gas or liquid. This means that the mechanical energy of the Brownian particle has increased by cooling a single source of heat, the liquid or gas, thereby contradicting the second law of thermodynamics \ssect{11.3.2}. In this manner, Brownian movement is proof of the limited appli­cation of the second law of thermodynamics and of its statisti­cal nature \ssect{11.5.1}.
+\zhpar{实验证明，布朗粒子可以向上运动，在流体中上升。这种情形发生在气体（或液体）分子对粒子传递了一个指向上方的未被补偿的动量时。这使粒子的势能增加，而增加的能量取自周围分子的动能，从而导致气体或液体局部降温。这意味着，布朗粒子的机械能是通过冷却单一热源（即液体或气体）而增加的，这与热力学第二定律（\ssect{11.3.2}）相矛盾。由此可见，布朗运动证明了热力学第二定律的适用范围是有限的，并证明了它的统计性质（\ssect{11.5.1}）。}
 
 \subsection{}\label{11.7.4} The motions of Brownian particles are completely chao­tic. Therefore, the average displacement $\expval{\, x \,}$ of a particle along an arbitrary direction equals zero. Then mean square displacement $\expval{\, x^{2} \,}$ is proportional to the time $t$ of observation of the particle and is expressed by \redem{Einstein's equation}:
+\zhpar{布朗粒子的运动完全是混乱的，因此粒子沿任一方向的平均位移 $\expval{\, x \,}$ 为零。于是，粒子的均方位移 $\expval{\, x^{2} \,}$ 与观察粒子的时间 $t$ 成正比，并由\redem{爱因斯坦方程}表示（如下式所示）：}
 \begin{equation*}
 \expval{\, x^{2} \,} = 2 \,D t,
 \end{equation*}
 where $D$ is the diffusion coefficient of the Brownian particles. For spherical particles of radius $r$
+\zhpar{式中 $D$ 为布朗粒子的扩散系数。对于半径为 $r$ 的球形粒子，其扩散系数如下式所示：}
 \begin{equation*}
 D = \frac{RT}{6 \pi \eta r N_{A}}.
 \end{equation*}
 Here $T$ is the absolute temperature, $R$ is the universal gas con­stant \ssect{8.4.4}, $\eta$ is the coefficient of viscosity of the liquid or gas \ssect{10.8.4}, and $N_{A}$ is Avogadro's number (Appendix~II).
+\zhpar{式中 $T$ 为绝对温度，$R$ 为摩尔气体常量（\ssect{8.4.4}），$\eta$ 为液体或气体的黏度系数（\ssect{10.8.4}），$N_{A}$ 为阿伏伽德罗常量（见附录 II）。}
 
 \section{Third Law of Thermodynamics}
 \label{sec-11.8}
+\zhtitle{热力学第三定律}
  
 \subsection{}\label{11.8.1} As a single-valued state function of a system entropy is introduced by means of a differential relation \ssect{11.4.2}. Hence, the entropy can be determined up to an arbitrary constant, which cannot be found from the first and second laws of thermo­ dynamics. It is consequently impossible to determine the absolute value of the entropy.
+\zhpar{作为系统的单值状态函数，熵是通过微分关系式（\ssect{11.4.2}）引入的。因此，熵只能确定到任意常数，而该常数无法由热力学第一定律和第二定律求出。所以，熵的绝对值无法确定。}
 
 \subsection{}\label{11.8.2} An experimental investigation of the properties of substances at ultra-low temperatures led to the establishment of the \redem{third law of thermodynamics}. This law, also called the \redem{Nernst heat theorem}, states that the change in entropy equals zero in any isothermal process conducted at absolute zero:
+\zhpar{对物质在超低温下性质的实验研究，导致了\redem{热力学第三定律}的建立。该定律也称为\redem{能斯特热定理}，它指出：在绝对零度下进行的任意等温过程中，熵的变化为零，即：}
 \begin{equation*}%
 \Delta S_{T \to 0} = 0 \qand S = S_{0} = \textrm{const},
 \end{equation*}
 regardless of the changes in any other state variables (for example, volume, pressure, and intensity of the external force field). The third law does not enable the absolute value of the entropy to be determined. But the fact that the entropy is constant as $T \to 0$ permits this constant value to be employed as the reference point for entropy values. This enables the change in en­tropy to be determined in processes being investigated.
+\zhpar{无论其他状态变量（例如体积、压强以及外力场的强度）如何变化，上述结论均成立。第三定律并不能确定熵的绝对值。但是，由于熵在 $T \to 0$ 时为常量，可以将该常数取为熵值的参考点。这使得我们能够确定所研究过程中的熵变。}
 
 \subsection{}\label{11.8.3} Planck extended Nernst's heat theorem by stating that the entropy of a system equals zero at absolute zero tempera­ture. If $E_{0}$, $E_{1}, \ldots , E_{n}$ is a sequence of energy levels \ssect{38.2.5} of a system, then at absolute zero temperature the system in equilibrium is in a quite definite lowest state with energy exactly equal to $E_{0}$. Here the thermodynamic probability $P$ of the state \ssect{11.5.2} is equal to unity $(P = 1)$ and, according to Boltzmann's relation \ssect{11.5.1},
+\zhpar{普朗克推广了能斯特热定理，指出系统在绝对零度时的熵等于零。设 $E_{0}$、$E_{1}, \ldots , E_{n}$ 为系统的能级序列（\ssect{38.2.5}），则在绝对零度下处于平衡态的系统，将处于能量恰为 $E_{0}$ 的一个确定的最低状态。此时，该状态的热力学概率 $P$（\ssect{11.5.2}）等于 1（$P = 1$），并且由玻尔兹曼关系式（\ssect{11.5.1}）得到（如下式所示）：}
 \begin{equation*}%
 S_{0}= k \ln P = 0.
 \end{equation*}
 
 \subsection{}\label{11.8.4} The heat capacity $C_{V \mu}$ at constant volume \ssect{9.5.4} for all bodies vanishes at $T = \SI{0}{\kelvin}$. As a matter of fact, if the temperature of a system is sufficiently low, so that the average kinetic energy $kT$ of a particle \ssect{10.6.4} is substantially less than the difference $\Delta E$ between the lowest and first energy lev­els $(\Delta E > kT)$, then the thermal excitation of the system is insufficient to transfer it from the state with the energy $E_{0}$ to one with the energy $E_{1}$ Therefore, at ultra-low temperatures the system should be in a state having the least energy $E_{0}$. The internal energy $U_{0}$ of the system \ssect{9.1.2} is equal to $E_{0}$, i.e. $U_{0}= E_{0}$. Hence the heat capacity of the system at constant volume 
+\zhpar{对于所有物体，当 $T = \SI{0}{\kelvin}$ 时，定容热容 $C_{V \mu}$ 都等于零。事实上，若系统温度足够低，使粒子的平均动能 $kT$（\ssect{10.6.4}）远小于最低能级与第一激发能级之差 $\Delta E$（即 $\Delta E > kT$），则系统的热激发不足以使其从能量为 $E_{0}$ 的状态跃迁到能量为 $E_{1}$ 的状态。因此，在超低温下，系统应处于能量最低的状态 $E_{0}$。系统的内能（\ssect{9.1.2}）$U_{0}$ 等于 $E_{0}$，即 $U_{0}= E_{0}$。因此，系统的定容热容为（如下式所示）：}
 \begin{equation*}%
 C_{V \mu} = \left( \dv{U}{T}\right)_{V} = \left( \dv{E_{0}}{T}\right)_{V} = 0 \qas T \to 0.
 \end{equation*}
 The coefficient of cubic expansion \ssect{40.2.3} also vanishes at absolute zero temperature.
+\zhpar{体膨胀系数（\ssect{40.2.3}）在绝对零度时同样为零。}
 
 It follows from the third law that a process in which a body could be cooled to absolute zero temperature is impossible (\redem{principle of the unattainability of absolute zero temperature}, sometimes called the \redem{Nernst principle}).
+\zhpar{由热力学第三定律可知，不可能将物体冷却到绝对零度（\redem{绝对零度不可达到原理}，有时也称为\redem{能斯特原理}）。}
