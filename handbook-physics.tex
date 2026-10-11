@@ -19,7 +19,10 @@
 
 \usepackage{graphicx}
 
-
+% Chinese (Simplified) support for the bilingual edition. Loaded before fontenc/mlmodern
+% so the Latin text keeps the T1 mlmodern fonts; CJK glyphs come from luatexja.
+% fontset=fandol ships with TeX Live; switch to e.g. fontset=noto if those fonts are installed.
+\usepackage[scheme=plain,fontset=fandol]{ctex}
 
 %\usepackage{}
 %\let\widering\relax
@@ -88,6 +91,17 @@
 \newcommand{\inred}[1]{\textcolor{IndianRed}{#1}}% prints in red
 \newcommand{\hltxt}[1]{\textcolor{OrangeRed}{#1}}% prints in red
 \newcommand{\redem}[1]{\hltxt{\emph{#1}}}% prints in red
+
+% Bilingual (English / Simplified Chinese) layout: each Chinese translation is typeset
+% directly below its English source in a lighter tone.
+\colorlet{zhcolor}{black!55}
+\newcommand{\zhstyle}{\color{zhcolor}\renewcommand{\hltxt}[1]{\textcolor{OrangeRed!55}{##1}}}
+% \zh{...}: translation of the preceding paragraph
+\newcommand{\zh}[1]{\par{\zhstyle #1\par}}
+% \zhtitle{...}: translation of the preceding \chapter/\section heading
+\newcommand{\zhtitle}[1]{{\noindent\zhstyle\large\bfseries #1\par}\nobreak\smallskip\noindent}
+% \zhcap{...}: translation inside a \caption/\sidecaption, on a new line
+\DeclareRobustCommand{\zhcap}[1]{\newline{\color{IndianRed!60}#1}}
 
 % redefine chapter, section headings using koma style
 
