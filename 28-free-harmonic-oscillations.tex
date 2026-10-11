@@ -9,332 +9,413 @@
 
 \chapter{Free Harmonic Oscillations}
 \label{ch-28}
+\zhtitle{自由简谐振动}
 
 \section{Harmonic Oscillations}
 \label{sec-28.1} 
+\zhtitle{简谐振动}
 
 
 \subsection{}\label{28.1.1} \redem{Oscillations}, including vibrations and variations, are processes (motions or changes of state) that are repeated more or less regularly with time. According to the physical nature of the oscillatory process and the ``mechanism'' by which it is initiated, distinction is made between \redem{mechanical oscillations}, commonly called vibrations (swinging of pendulums; vibration of strings; reciprocation and oscillation of machine components; vibration of buildings, bridges and other structures; compression and rarefaction of air as sound is propagated through it; rolling, pitching and heaving of ships; sea waves; etc.), \redem{electromagnetic oscillations} (oscillations of alternating electric current in a circuit, variations in the field strength and magnetic induction vectors, $\vb{E}$ and $\vb{B}$, of an alternating electromagnetic field, etc.), and \redem{electromechanical vibrations} (vibration of the diaphragm of a telephone receiver, of the diaphragm in an electromagnetic loudspeaker, etc.) and others.
+\zhpar{\redem{振荡}（包括振动与变化）是指在时间上或多或少有规律地重复出现的过程（运动或状态的变化）。根据振荡过程的物理性质以及引起该过程的“机制”，可将振荡区分为：\redem{机械振动}，通常称为振动（如摆的摆动、弦的振动、机器部件的往复运动与振动、建筑物、桥梁及其他结构的振动、声波在空气中传播时空气的压缩与稀疏、船舶的横摇、纵摇与升沉、海浪等）；\redem{电磁振荡}（如电路中交变电流的振荡、交变电磁场中电场强度矢量 $\vb{E}$ 与磁感应强度矢量 $\vb{B}$ 的变化等）；\redem{机电振动}（如电话受话器膜片的振动、电磁扬声器中膜片的振动等）以及其他类型的振荡。}
 
 The system executing the oscillation (or vibration) is called the \redem{oscillatory (vibratory) system}. \redem{Free (natural) oscillations} are ones that occur in the absence of externally applied variable action on the system. They are due to some initial deviation of the system from a state of stable equilibrium. \redem{Forced oscillations (vibrations)} are ones set up in a system as a result of variable external effects (for instance, current oscillation in an electric circuit caused by a varying emf, swinging of a pendulum due to varying external forces, etc.).
+\zhpar{执行振荡（或振动）的系统称为\redem{振荡（振动）系统}。\redem{自由振动}（或\redem{固有振动}）是指系统在不受外加变化作用时发生的振动，它是由系统偏离稳定平衡状态的某一初始偏离所引起的。\redem{受迫振动}则是系统在外部变化作用下建立起来的振动（例如，电路中由变化的电动势引起的电流振荡，摆在变化的外力作用下的摆动等）。}
 
 \subsection{}\label{28.1.2} Oscillations (vibrations) are said to be \redem{periodic} if all the physical quantities that characterize the oscillatory (vibratory) system and vary during its oscillation are repeated in successive time intervals. The minimum time interval $T$ complying with this condition is called the \redem{period of oscillation} (or vibration). This is the time required for one \redem{complete oscillation} (vibration) of the system. The \redem{frequency} of \redem{periodic oscillations} (vibrations) is the quantity $\nu = 1/T$, equal to the number of complete oscillations (vibrations) executed by the system in unit time. The angular, or circular, frequency is the quantity $\omega = 2\pi \nu = 2\pi/T$, which is equal to the number of complete oscillations accomplished in $2\pi$ units of time.
+\zhpar{若振荡（振动）系统中所有表征该系统且在振荡过程中发生变化的物理量，都在连续相等的时间间隔内重复出现，则称该振荡（振动）为\redem{周期性的}。满足这一条件的最小时间间隔 $T$ 称为\redem{振荡周期}（或振动周期），它是系统完成一次\redem{全振动}（或全振荡）所需的时间。周期性振荡（振动）的\redem{频率}为 $\nu = 1/T$，它等于系统在单位时间内完成的全振动次数。\redem{角频率}（或称圆频率）为 $\omega = 2\pi \nu = 2\pi/T$，它等于在 $2\pi$ 个单位时间内完成的全振动次数。}
 
 \subsection{}\label{28.1.3} In periodic oscillations the dependence of a varying quantity $s$ on the time $t$ complies with the condition $s \,(t+ T)= s(t)$.
+\zhpar{在周期性振荡中，变化量 $s$ 与时间 $t$ 的关系满足条件 $s \,(t+ T)= s(t)$。}
 
 The periodic oscillation of the quantity $s (t)$ is said to be \redem{harmonic} if
+\zhpar{若量 $s (t)$ 的周期性振荡满足下式，则称该振荡为\redem{简谐振动}：}
 \begin{equation*}%
 s (t) = A \sin ( \omega t + \varphi_{0}) \qor s (t) = A \cos (\omega t + \varphi_{1})
 \end{equation*}
 where $\omega = 2\pi \nu = (2\pi/T) = \text{const.}$ is the \redem{angular}, or \redem{circular, frequency of harmonic vibration}, $A = s_{\textrm{max}} = \text{const.} > 0$ is the maximum value of the varying quantity $s$ and is called the \redem{amplitude of oscillation}, and $\varphi_{0}$ and $\varphi_{1} = \varphi_{0} - \pi/2$ are constant quantities. 
+\zhpar{式中 $\omega = 2\pi \nu = (2\pi/T) = \text{const.}$ 为简谐振动的\redem{角频率}（或\redem{圆频率}），$A = s_{\textrm{max}} = \text{const.} > 0$ 为变化量 $s$ 的最大值，称为\redem{振幅}，$\varphi_{0}$ 与 $\varphi_{1} = \varphi_{0} - \pi/2$ 均为常量。}
 
 The value of $s$ at some arbitrary instant of time $t$ is determined by the \redem{phase of the oscillation}  $\Phi(t) = \omega t  + \varphi_{0}$ [and, respectively, $\Phi_{1}(t) = \omega t  + \varphi_{1}$]. The quanti­ ties $\varphi_{0}$ and $\varphi_{1}$ are the \redem{initial phases of the oscillation}, i.e. the values of $\Phi(t)$ and   $\Phi_{1}(t)$ at the instant $(t = 0)$ of time reference: $\varphi_{0} =  \Phi(0)$ and $\varphi_{1} =   \Phi_{1}(0)$.
+\zhpar{振动在任一时刻 $t$ 的值由振动的\redem{相位} $\Phi(t) = \omega t  + \varphi_{0}$（相应地，$\Phi_{1}(t) = \omega t  + \varphi_{1}$）决定。量 $\varphi_{0}$ 与 $\varphi_{1}$ 称为振动的\redem{初相位}，即计时起点（$t = 0$）时 $\Phi(t)$ 与 $\Phi_{1}(t)$ 的值：$\varphi_{0} =  \Phi(0)$，$\varphi_{1} =   \Phi_{1}(0)$。}
 
 \subsection{}\label{28.1.4} The first and second time derivatives of a harmonically varying quantity $s (t)$ also vary harmonically at the same angular frequency:
+\zhpar{简谐变化的量 $s (t)$ 的一阶与二阶时间导数同样做简谐变化，且角频率相同：}
 \begin{align*}%
 \dv{s}{t} & = A \omega \cos (\omega t + \varphi_{0}) = A \omega \sin \left( \omega t + \varphi_{0} + \frac{\pi}{2} \right),\\
 \dv[2]{s}{t} & = -A \omega^{2} \sin (\omega t + \varphi_{0}) =s A \omega^{2} \sin \left( \omega t + \varphi_{0} + \pi \right),\end{align*}
 where the amplitudes of $\dv*{s}{t}$ and $\dv*[2]{s}{t}$ are equal, respectively, to $A\omega$ and $A\omega^{2}$. The initial phase of $\dv*{s}{t}$ is equal to $(\varphi_{0} + \pi/2)$, i.e. the phase difference of the variations of $\dv*{s}{t}$ and $s$ is constant and equal to $\pi/2$ (the quantity $\dv*{s}{t}$ has a phase lead of $\pi/2$ with respect to $s$). The initial phase of $\dv*[2]{s}{t}$ equal, to $(\varphi_{0} + \pi)$, i.e. the phase difference of the variations of $\dv*[2]{s}{t}$ and $s$ is constant and equal to $\pi$ (the quantity $\dv*[2]{s}{t}$ has a phase lead of $\pi$ with respect to $s$). Curves of the dependence on the time $t$ of the quantities $s$, $\dv*{s}{t}$ and $\dv*[2]{s}{t}$ for harmonic variations and with $\varphi_{0} = 0$ are shown in \figr{fig-28-01}.
+\zhpar{式中 $\dv*{s}{t}$ 与 $\dv*[2]{s}{t}$ 的振幅分别等于 $A\omega$ 与 $A\omega^{2}$。$\dv*{s}{t}$ 的初相位等于 $(\varphi_{0} + \pi/2)$，即 $\dv*{s}{t}$ 与 $s$ 的变化之间的相位差为常量 $\pi/2$（$\dv*{s}{t}$ 的相位超前 $s$ 为 $\pi/2$）。$\dv*[2]{s}{t}$ 的初相位等于 $(\varphi_{0} + \pi)$，即 $\dv*[2]{s}{t}$ 与 $s$ 的变化之间的相位差为常量 $\pi$（$\dv*[2]{s}{t}$ 的相位超前 $s$ 为 $\pi$）。取 $\varphi_{0} = 0$ 时，$s$、$\dv*{s}{t}$ 与 $\dv*[2]{s}{t}$ 随时间 $t$ 变化的曲线如\figr{fig-28-01}所示。}
 
 
 \begin{figure}[h]%[-2cm]
 \centering
 \includegraphics[width=0.9\textwidth]{figs/ch-28/fig-28-01.pdf}
-\sidecaption{Time dependence of $s$, $\dv*{s}{t}$ and $\dv*[2]{s}{t}$ for harmonic variations and with $\varphi_{0} = 0$.\label{fig-28-01}}
+\sidecaption{Time dependence of $s$, $\dv*{s}{t}$ and $\dv*[2]{s}{t}$ for harmonic variations and with $\varphi_{0} = 0$.\zhcap{简谐变化时（$\varphi_{0} = 0$），$s$、$\dv*{s}{t}$ 与 $\dv*[2]{s}{t}$ 随时间的变化。}\label{fig-28-01}}
 \end{figure}
 
 
 \subsection{}\label{28.1.5} It is evident from the second equation in \ssect{28.1.4} that a harmonically varying quantity $s$ satisfies the differential equation
+\zhpar{由\ssect{28.1.4}中的第二式可知，简谐变化的量 $s$ 满足下列微分方程：}
 \begin{equation*}%
 \dv[2]{s}{t} + \omega^{2} s= 0.
 \end{equation*}
 The general solution of this equation is of the form 
+\zhpar{该方程的通解为：}
 \begin{equation*}%
 s = A_{1} \sin \omega t + A_{2} \cos \omega t,
 \end{equation*}
 where $A_{1}$ and $A_{2}$ are arbitrary constants of integration. The values of $A_{1}$ and $A_{2}$ can be found from the initial conditions, i.e. when the values of $s$ and $\dv{s}{t}$ are known for the initial instant of time $(t = 0)$. Thus
+\zhpar{式中 $A_{1}$ 与 $A_{2}$ 为任意积分常量。$A_{1}$ 与 $A_{2}$ 的值可由初始条件求得，即已知初始时刻（$t = 0$）的 $s$ 与 $\dv{s}{t}$ 值。于是有：}
 \begin{equation*}%
 A_{1} = \frac{1}{\omega} \left( \dv{s}{t}\right)_{t=0} \qand A_{2} = s(0).
 \end{equation*}
 The general solution can be transformed to the standard form for harmonic oscillations (vibrations) given in \ssect{28.1.3}:
+\zhpar{通解可化为\ssect{28.1.3}中给出的简谐振动标准形式：}
 \begin{equation*}%
 s = A \sin  (\omega t + \varphi_{0}),
 \end{equation*}
 where $A= \sqrt{A_{1}^{2} + A_{2}^{2}}$ and $\varphi_{0} = \arctan(A_{2}/A_{1})$.
+\zhpar{式中 $A= \sqrt{A_{1}^{2} + A_{2}^{2}}$，$\varphi_{0} = \arctan(A_{2}/A_{1})$。}
 
 Thus, the quantity $s$ has harmonic variations if and only if it satisfies the differential equation given at the beginning of this subsection. This equation is called the \redem{differential equation
 of harmonic variations} (or vibrations or oscillations).
+\zhpar{因此，变化量 $s$ 做简谐变化的充分必要条件是它满足本小节开头给出的微分方程。该方程称为\redem{简谐变化（振动、振荡）的微分方程}。}
 
 
 
 \subsection{}\label{28.1.6} Harmonic oscillations (vibrations) can be represented graphically by means of a vector in a plane. For this purpose vector $A$ is drawn from the origin of coordinates $O$ in the plane $XY$ (\figr{fig-28-02}). The magnitude of vector $A$ is equal to the amplitude $A$ of the oscillation being considered and the vector makes the angle $\varphi = \omega t + \varphi_{0}$, equal to the phase of the oscillation at the given instant of time $t$, with the coordinate axis $OX$. 
+\zhpar{简谐振动（振荡）可以用平面内的矢量直观地表示。为此，从坐标原点 $O$ 在平面 $XY$ 内画出矢量 $A$（见\figr{fig-28-02}）。矢量 $A$ 的大小等于所考虑振动的振幅 $A$，矢量与坐标轴 $OX$ 的夹角为 $\varphi = \omega t + \varphi_{0}$，即给定时刻 $t$ 的振动相位。}
 
 
 \begin{marginfigure}%[-2cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-28/fig-28-02.pdf}
-\sidecaption{Representing harmonic oscillations by means of a vector in a plane: the \redem{vector diagram method}.\label{fig-28-02}}
+\sidecaption{Representing harmonic oscillations by means of a vector in a plane: the \redem{vector diagram method}.\zhcap{用平面内的旋转矢量表示简谐振动：\redem{矢量图解法}。}\label{fig-28-02}}
 \end{marginfigure}
 
 
 In the course of time angle $\varphi$ increases so that vector $A$ rotates at a constant angular velocity about point $O$ equal to the angular frequency of oscillation (vibration) $\omega$. The corresponding projection of vector $A$ on the vertical axis $OY$ varies harmonically according to the relation
+\zhpar{随着时间推移，角 $\varphi$ 增大，矢量 $A$ 绕点 $O$ 以恒定角速度旋转，该角速度等于振动的角频率 $\omega$。矢量 $A$ 在竖直轴 $OY$ 上的投影按下列关系做简谐变化：}
 \begin{equation*}%
 A_{y}= s = A \sin( \omega t + \varphi_{0}).
 \end{equation*}
 The graphical representation of harmonic vibrations (or oscillations or variations) by means of a rotating amplitude vector is called the \redem{vector diagram method}. It is extensively applied, for instance, in adding together harmonic oscillations having the same direction \ssect{28.4.2}.
+\zhpar{用旋转振幅矢量来表示简谐振动（或振荡、变化）的方法称为\redem{矢量图解法}。例如，在合成同方向的简谐振动时，该方法得到了广泛应用（见\ssect{28.4.2}）。}
 
 \subsection{}\label{28.1.7} According to the Euler formula for complex numbers,
+\zhpar{根据复数的欧拉公式，}
 \begin{equation*}%
 e^{i \varphi}= \cos \varphi + i \sin \varphi,
 \end{equation*}
 where $i = \sqrt{-1}$. Hence the harmonic oscillation (vibration) 
+\zhpar{因此，简谐振动}
 \begin{equation*}%
 s= A \sin(\omega t + \varphi_{0}) = A \cos( \omega t + \varphi_{1}),
 \end{equation*}
 where $\varphi_{1} = \varphi_{0} - \pi/2$, can be written in the exponential form
+\zhpar{式中 $\varphi_{1} = \varphi_{0} - \pi/2$，该振动可写成指数形式：}
 \begin{equation*}%
 \tilde{s} = \tilde{A}\, e^{i \omega t} = A \, e^{i (\omega t + \varphi_{1})},
 \end{equation*}
 where $\tilde{A} = A e^{i \varphi_{1}}$ is the complex amplitude. Only the real part of the complex function $\tilde{s}$, denoted by $\Re\{ \tilde{s} \}$, has a physical meaning:
+\zhpar{式中 $\tilde{A} = A e^{i \varphi_{1}}$ 为\redem{复振幅}。只有复函数 $\tilde{s}$ 的实部 $\Re\{ \tilde{s} \}$ 具有物理意义：}
 \begin{equation*}%
 \Re\{ \tilde{s} \} = s = A \cos(\omega t + \varphi) = A \sin (\omega t + \varphi_{0}),
 \end{equation*}
 where $\varphi_{0}= \varphi_{1}+ \pi/2$.
+\zhpar{式中 $\varphi_{0}= \varphi_{1}+ \pi/2$。}
 
 \section{Mechanical Harmonic Vibrations}
 \label{sec-28.2} 
+\zhtitle{机械简谐振动}
 
 \subsection{}\label{28.2.1} If a particle vibrates harmonically in a straight line along the coordinate axis $OX$ about the equilibrium position, taken as the origin of coordinates, the dependence of the coordinate $x$ of the particle on the time $t$ is of the form given in \ssect{28.1.3} (with $s = x$). Thus
+\zhpar{若质点沿坐标轴 $OX$ 在以坐标原点（即平衡位置）为中心的直线上做简谐振动，则质点坐标 $x$ 随时间 $t$ 的变化具有\ssect{28.1.3}中所述的形式（取 $s = x$）。于是有：}
 \begin{equation*}%
 x = A \sin (\omega t + \varphi_{0}).
 \end{equation*}
 The projections of the velocity $v$ and acceleration $a$ of the particle on the $OX$ axis are:
+\zhpar{质点速度 $v$ 与加速度 $a$ 在 $OX$ 轴上的投影分别为：}
 \begin{align*}%
 v_{x} & = v_{0} \cos (\omega t + \varphi_{0}), \qand \\
 a_{x} & = -a_{0} \sin (\omega t + \varphi_{0}),
 \end{align*}
 where $v_{0}= A \omega$ is the amplitude of the velocity, and $a_{0} = A \omega^{2} = v_{0}\omega$ is the amplitude of the acceleration.
+\zhpar{式中 $v_{0}= A \omega$ 为速度的振幅，$a_{0} = A \omega^{2} = v_{0}\omega$ 为加速度的振幅。}
 
 The force $\vb{F}$ acting on the particle equals
+\zhpar{作用于质点的力 $\vb{F}$ 为：}
 \begin{equation*}%
 \vb{F} = m \vb{a} \qand F_{x} = - m \omega^{2} x,
 \end{equation*}
 where $m$ is the mass of the particle. Consequently, force $\vb{F}$ is proportional to the displacement of the particle from the equilibrium position and opposite in direction:
+\zhpar{式中 $m$ 为质点的质量。因此，力 $\vb{F}$ 与质点离开平衡位置的位移成正比，且方向相反：}
 \begin{equation*}%
 \vb{F} = - m \omega^{2} x \vu{i},
 \end{equation*}
 where $\vu{i}$ is a unit vector of the $OX$ axis.
+\zhpar{式中 $\vu{i}$ 为 $OX$ 轴的单位矢量。}
 
 Such a dependence of the force on the displacement is typical for an elastic force \ssect{3.3.6}. Hence, forces of other physical origin, satisfying the same kind of relationship, are said to be \redem{quasi-elastic} forces.
+\zhpar{这种力与位移的关系是弹性力（见\ssect{3.3.6}）的典型特征。因此，其他物理起源但满足同类关系的力，称为\redem{准弹性力}。}
 
 \subsection{}\label{28.2.2} The \redem{kinetic energy} of a particle vibrating harmonically in a straight line is equal to
+\zhpar{沿直线做简谐振动的质点的\redem{动能}等于：}
 \begin{align*}%
 E_{k} & = \frac{mv^{2}}{2} = \frac{mv_{0}^{2}}{2} \cos^{2} (\omega t + \varphi_{0}),\\ 
 &= \frac{m\omega^{2} A^{2}}{2} \cos^{2} (\omega t + \varphi_{0}), \qor \\
  & = \frac{m\omega^{2} A^{2}}{4} [1 + \cos (2\omega t + 2\varphi_{0}).
 \end{align*}
 The kinetic energy of the particle varies periodically from 0 to $m\omega^{2}A^{2}/2$ as it vibrates harmonically with the angular fre­ quency $2\omega$ and the amplitude $m\omega^{2}A^{2}/4$ about its average value of $m\omega^{2}A^{2}/4$.
+\zhpar{质点做简谐振动时，其动能以角频率 $2\omega$ 周期性变化，在 $0$ 与 $m\omega^{2}A^{2}/2$ 之间变化，变化幅度为 $m\omega^{2}A^{2}/4$，围绕其平均值 $m\omega^{2}A^{2}/4$ 变化。}
 
 The \redem{potential energy} of a particle vibrating harmonically in a straight line due to the effect of a quasi-elastic force is equal to
+\zhpar{在准弹性力作用下沿直线做简谐振动的质点的\redem{势能}等于：}
 \begin{align*}%
 E_{p} & = - \int_{0}^{x} F_{x}\, \dd x = \frac{m \omega^{2}x^{2}}{2} = \frac{m \omega^{2}A^{2}}{2} \sin^{2} (\omega t + \varphi_{0})\qor \\
  & = \frac{m\omega^{2} A^{2}}{4} [1 - \cos (2\omega t + 2\varphi_{0}),\\
 & = \frac{m\omega^{2} A^{2}}{4} [1 + \cos (2\omega t + 2\varphi_{0} + \pi).
 \end{align*}
 The \redem{potential energy} of the particle varies periodically from 0 to $m\omega^{2}A^{2}/2$ as it vibrates harmonically with the angular frequency $2\omega$ and the amplitude $m\omega^{2}A^{2}/4$ about its average value of$m\omega^{2}A^{2}/2$. The variations of the potential and kinetic energies have a phase difference of $\pi$, so that the total mechanical energy of the particle remains constant in vibration:
+\zhpar{质点的势能以角频率 $2\omega$ 周期性变化，在 $0$ 与 $m\omega^{2}A^{2}/2$ 之间变化，变化幅度为 $m\omega^{2}A^{2}/4$，围绕其平均值 $m\omega^{2}A^{2}/2$ 变化。动能与势能的变化之间相位差为 $\pi$，因此质点的总机械能在振动过程中保持不变：}
 \begin{equation*}%
 E = E_{k} + E_{p} = \frac{m\omega^{2}A^{2}}{2} = \text{const.}
 \end{equation*}
 Curves of the dependence of $E_{k}$, $E_{p}$ and $E$ on the time $t$ for the case when $\varphi_{0} = 0$ are shown in \figr{fig-28-03}.
+\zhpar{当 $\varphi_{0} = 0$ 时，$E_{k}$、$E_{p}$ 与 $E$ 随时间 $t$ 变化的曲线如\figr{fig-28-03}所示。}
 
 \begin{figure}[h]%[-2cm]
 \centering
 \includegraphics[width=0.9\textwidth]{figs/ch-28/fig-28-03.pdf}
-\sidecaption{Variation of total, kinetic and potential energy over time for harmonic vibrations.\label{fig-28-03}}
+\sidecaption{Variation of total, kinetic and potential energy over time for harmonic vibrations.\zhcap{简谐振动中总能量、动能和势能随时间的变化。}\label{fig-28-03}}
 \end{figure}
 
 
 
 \subsection{}\label{28.2.3} \marginnote{\textbf{\large Example~1.}} A \redem{linear harmonic oscillator} is a particle of mass $m$ having harmonic vibration along a straight line by the action of elastic force $\vb{F}_{el} = - kx\vu{i}$ \ssect{3.3.6}. Serving as an example of such a system is the spring pendulum, where a weight of mass $m$ is suspended by an absolutely elastic spring ($k$ is a
 factor specifying the elastic properties of the spring). The motion equation is
+\zhpar{\redem{线性谐振子}是指在弹性力 $\vb{F}_{el} = - kx\vu{i}$（见\ssect{3.3.6}）作用下，质量为 $m$ 的质点沿直线做简谐振动。弹簧振子就是这种系统的一个例子：质量为 $m$ 的重物悬挂在一根绝对弹性的弹簧上（$k$ 为表征弹簧弹性性质的系数）。其运动方程为：}
 \begin{equation*}%
 m \dv[2]{x}{t} = -kx \qor \dv[2]{x}{t} + \frac{k}{m} =0.
 \end{equation*}
 It follows from \ssect{28.1.5} that an oscillator (spring pendulum) has harmonic vibration according to the equation $x = A \sin (\omega t + \varphi_{0})$ with an angular frequency $\omega$ and period $T$ equal to
+\zhpar{由\ssect{28.1.5}可知，弹簧振子做简谐振动，振动方程为 $x = A \sin (\omega t + \varphi_{0})$，其角频率 $\omega$ 与周期 $T$ 分别为：}
 \begin{equation*}%
 \omega = \sqrt{\frac{k}{m}}, \qand T = 2 \pi \sqrt{\frac{m}{k}}.
 \end{equation*}
 The potential energy of a linear harmonic oscillator is
+\zhpar{线性谐振子的势能为：}
 \begin{equation*}%
 E_{p} = \frac{kx^{2}}{2}.
 \end{equation*}
 
 \subsection{}\label{28.2.4} \marginnote{\textbf{\large Example~2.}} A \redem{compound}, or \redem{physical, pendulum} is a rigid body capable of oscillating under the action of the gravity force $mg$ about a horizontal axis $O$, which does not pass through the centre of gravity of the body, and is called the \redem{axis of oscillation}, or \redem{swing} (\figr{fig-28-04}). The centre of gravity of the pendulum coincides with its centre of mass $C$ \ssect{7.3.2}. Point $O$, the intersection of the axis of oscillation with a vertical plane passing through the centre of gravity of the pendulum and perpendicular to its \redem{axis of oscillation}, is called its \redem{point of suspension}.
+\zhpar{\redem{复摆}（或称\redem{物理摆}）是指在重力 $mg$ 作用下绕水平轴 $O$ 摆动的刚体。该水平轴不通过物体的重心，称为\redem{摆动轴}（或摆轴）（见\figr{fig-28-04}）。摆的重心与其质心 $C$ 重合（见\ssect{7.3.2}）。摆动轴与通过摆的重心并垂直于摆动轴的竖直平面的交点 $O$ 称为其\redem{悬点}。}
 
 \begin{marginfigure}%[-3cm]
 \centering
 \includegraphics[width=0.7\textwidth]{figs/ch-28/fig-28-04.pdf}
-\sidecaption{A compound pendulum and its parameters.\label{fig-28-04}}
+\sidecaption{A compound pendulum and its parameters.\zhcap{复摆及其参数。}\label{fig-28-04}}
 \end{marginfigure}
 
 In the absence of friction forces in the suspension, the motion equation of the pendulum is of the form \ssect{4.3.4}
+\zhpar{若悬挂处无摩擦力，则摆的运动方程为（见\ssect{4.3.4}）：}
 \begin{equation*}%
 I \dv[2]{\alpha}{t} = -mgd \sin \alpha,
 \end{equation*}
 where $\alpha$ is the angle of deviation of the pendulum about its axis of oscillation from the equilibrium position, $d = \bar{OC}$ is the distance from the centre of mass of the pendulum to its axis of oscillation, $I$ is the moment of inertia \ssect{4.2.1} about the same axis, $m$ is the mass of the pendulum, and $g$ is the free fall acceleration. Upon small oscillations of the pendulum $\sin \alpha \approx \alpha$ and the motion equation of the pendulum is of the form
+\zhpar{式中 $\alpha$ 为摆绕其摆动轴偏离平衡位置的角度，$d = \bar{OC}$ 为摆的质心到摆动轴的距离，$I$ 为摆绕同一轴的转动惯量（见\ssect{4.2.1}），$m$ 为摆的质量，$g$ 为自由落体加速度。当摆做微小振动时，$\sin \alpha \approx \alpha$，摆的运动方程变为：}
 \begin{equation*}%
 \dv[2]{\alpha}{t} + \frac{mgd}{I} \alpha= 0,
 \end{equation*}
 i.e. angle $\alpha$ satisfies the differential equation of harmonic vibrations \ssect{28.1.5}. Hence, in the absence of friction, small oscillations of a compound pendulum are harmonic:
+\zhpar{即角 $\alpha$ 满足简谐振动的微分方程（见\ssect{28.1.5}）。因此，在无摩擦的情况下，复摆的微小振动是简谐的：}
 \begin{equation*}%
 \alpha = \alpha_{0} \sin (\omega t + \varphi_{0}),
 \end{equation*}
 where $\alpha_{0}$ is the amplitude of variation of angle $\alpha$, and
+\zhpar{式中 $\alpha_{0}$ 为角 $\alpha$ 变化的振幅，且}
 \begin{equation*}%
 \omega = \sqrt{\frac{mgd}{I}}, \qand T = 2 \pi \sqrt{\frac{I}{mgd}}.
 \end{equation*}
 are the angular frequency and period of small oscillations of a compound pendulum.
+\zhpar{以上分别为复摆微小振动的角频率与周期。}
 
 \subsection{}\label{28.2.5} \marginnote{\textbf{\large Example~3.}} A \redem{simple pendulum} is a particle suspended by a weightless, inextensible thread and oscillating in a vertical plane by the action of the gravity force. The simple pendulum is the limiting case of the compound (physical) pendulum, whose whole mass is concentrated at the centre of mass, so that $d = I$, the length of the simple pendulum. The moment of inertia of a simple pendulum with respect to its axis of oscillation is $I = ml^{2}$. 
+\zhpar{\redem{单摆}是指悬挂在无质量、不可伸长的细线上、在重力作用下于竖直平面内振动的质点。单摆是复摆的极限情形，其全部质量集中于质心，此时 $d = I$，即单摆的长度。单摆绕其摆动轴的转动惯量为 $I = ml^{2}$。}
 
 Correspondingly, the angular frequency and period of small oscillations of this pendulum are
+\zhpar{相应地，该单摆微小振动的角频率与周期为：}
 \begin{equation*}%
 \omega = \sqrt{\frac{g}{l}} \qand T = 2 \pi \sqrt{\frac{l}{g}}.
 \end{equation*}
 Small oscillations of compound and simple pendulums are examples of \redem{isochronous vibrations}, i.e. vibrations whose frequency and period are independent of their amplitude.
+\zhpar{单摆和复摆的微小振动都是\redem{等时振动}的例子，即频率和周期与振幅无关的振动。}
 
 In the general case, the period of a compound pendulum depends upon its amplitude $\alpha_{0}$. Thus
+\zhpar{一般情况下，复摆的周期取决于其振幅 $\alpha_{0}$。即}
 \begin{equation*}%
 T = 2\pi \sqrt{\frac{I}{mgd}} \left[ 1 + \left(\frac{1}{2} \right)^{2} \sin^{2} \frac{\alpha_{0}}{2} + \left(\frac{1}{2} \cdot \frac{3}{4} \right)^{2} \sin^{4} \frac{\alpha_{0}}{2} + \ldots{} \right].
 \end{equation*}
 The variation in the value of $T$ when $\alpha_{0}$ is increased to \ang{15} does not exceed 0.5 per cent.
+\zhpar{当 $\alpha_{0}$ 增大到 \ang{15} 时，$T$ 的变化不超过 0.5\%。}
 
 \subsection{}\label{28.2.6} The \redem{equivalent length $l_{eq}$ of a compound pendulum} is the length of a simple pendulum that has the same period of oscillation. Thus 
+\zhpar{复摆的\redem{等效长度 $l_{eq}$} 是指与其周期相同的单摆的长度。于是有：}
 \begin{equation*}%
 l_{eq} = \frac{I}{md} = d + \frac{I_{C}}{md} > d,
 \end{equation*}
 where $I_{C}$ is the moment of inertia of the compound pendulum with respect to an axis passing through the centre of mass $C$ of the pendulum and parallel to its axis of oscillation. Point $O_{1}$, lying on the straight line $OC$ at the distance of $l_{eq}$ from the point of suspension $O$ (\figr{fig-28-04}), is called the \redem{centre of oscillation of the compound pendulum}. 
+\zhpar{式中 $I_{C}$ 为复摆绕过质心 $C$ 且与其摆动轴平行的轴的转动惯量。位于直线 $OC$ 上、距悬点 $O$ 为 $l_{eq}$ 处的点 $O_{1}$（见\figr{fig-28-04}），称为\redem{复摆的摆动中心}。}
 
 The centre of oscillation $O_{1}$ and the point of suspension $O$ are interchangeable: if the pendulum is suspended so that its axis of oscillation passes through point $O_{1}$, then point $O$ will coincide with the new position of the centre of oscillation, i.e. the equivalent length and period of oscillation of the pendulum remain unchanged.
+\zhpar{摆动中心 $O_{1}$ 与悬点 $O$ 可以互换：若将摆悬挂于使其摆动轴通过点 $O_{1}$ 的位置，则点 $O$ 将与新的摆动中心重合，即摆的等效长度与周期保持不变。}
 \begin{marginfigure}[-1.5cm]
 \centering
 \includegraphics[width=0.7\textwidth]{figs/ch-28/fig-28-05.pdf}
-\sidecaption{Langmuir oscillations of electrons in a plasma under action of an electric field.\label{fig-28-05}}
+\sidecaption{Langmuir oscillations of electrons in a plasma under action of an electric field.\zhcap{等离子体中电子在电场作用下的朗缪尔振荡。}\label{fig-28-05}}
 \end{marginfigure}
 
 
 \subsection{}\label{28.2.7} \marginnote{\textbf{\large Example~4.}} \redem{Small free vibrations of electrons in a plasma} \ssect{22.6.1} are called \redem{Langmuir oscillations of the plasma}. They are caused by the forces of an electric field, which is set up in an electrically neutral plasma as the result
 of some random deviation of the spatial distribution of the electrons from their equilibrium distribution.
+\zhpar{\redem{等离子体中电子的微小自由振动}（见\ssect{22.6.1}）称为\redem{等离子体的朗缪尔振荡}。它是由电场的作用力引起的：当电中性的等离子体中，电子的空间分布因某种随机原因偏离其平衡分布时，便建立起电场，从而产生这种振荡。}
 
 
 
 Assume that in a flat layer of plasma of thickness $l$ (\figr{fig-28-05}) the electrons are displaced over the small
 distance s along the positive direction of axis $OX$. This leads to the formation of a surplus positive charge at the left-hand part of the layer and a surplus negative charge at the right-hand part. 
+\zhpar{设在厚度为 $l$ 的平面等离子体层中（见\figr{fig-28-05}），电子沿坐标轴 $OX$ 正方向产生了微小位移 $s$。这导致层的左侧出现过剩正电荷，右侧出现过剩负电荷。}
 
 Consequently, an electric field is set up, whose strength $\vb{E}$ is along the $OX$ axis and its projection on this axis is $E_{x} = n_{0}es/\varepsilon_{0}$ where $n_{0}$ is the electron concentration in the plasma, $e$ is the magnitude of the charge of the electron, and $\varepsilon_{0}$ is the electric constant. According to Newton's second law, the motion equation for the electrons of the plasma in this electric field is of the form:
+\zhpar{因此，建立起电场，其强度 $\vb{E}$ 沿 $OX$ 轴方向，其投影为 $E_{x} = n_{0}es/\varepsilon_{0}$，式中 $n_{0}$ 为等离子体中电子的浓度，$e$ 为电子电荷的大小，$\varepsilon_{0}$ 为真空电容率。由牛顿第二定律，等离子体中电子在该电场中的运动方程为：}
 \begin{equation*}%
 m \dv[2]{s}{t} = - eE_{x} = - \frac{e^{2}n_{0}}{\varepsilon_{0}} \qor \dv[2]{s}{t} + \frac{e^{2}n_{0}}{m\varepsilon_{0}} \, s = 0.
 \end{equation*}
 where $m$ is the mass of the electron. Thus, the electrons of the plasma have free harmonic vibrations at the angular frequency 
+\zhpar{式中 $m$ 为电子的质量。因此，等离子体中的电子以下列角频率做自由简谐振动：}
 \begin{equation*}%
 \omega = e \sqrt{\frac{n_{0}}{m \varepsilon_{0}}}
 \end{equation*}
 which is called the \redem{Langmuir plasma frequency}, or simply, the \redem{plasma frequency}.
+\zhpar{该角频率称为\redem{朗缪尔等离子体频率}，简称\redem{等离子体频率}。}
 
 \section{Free Harmonic Oscillations in an Oscillatory Electric Circuit}
 \label{sec-28.3} 
+\zhtitle{振荡电路中的自由简谐振荡}
 
 \begin{marginfigure}[-2cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-28/fig-28-06.pdf}
-\sidecaption{An example of simple electric oscillatory circuit with a capacitor $C$ and an inductor $L$.\label{fig-28-06}}
+\sidecaption{An example of simple electric oscillatory circuit with a capacitor $C$ and an inductor $L$.\zhcap{由电容器 $C$ 与电感线圈 $L$ 组成的简单振荡电路。}\label{fig-28-06}}
 \end{marginfigure}
 
 \subsection{}\label{28.3.1} An example of an electric circuit in which free electric oscillations may occur is the simple \redem{oscillatory circuit} (\figr{fig-28-06}). It consists of a capacitor of capacitance $C$ connected in series to an induction coil with the self-inductance $L$. When the previously charged capacitor is connected to the coil, free oscillations of the capacitor charge and the current in the coil are produced. This sets up a variable electromagnetic field that propagates through space at a velocity equal to that of light. Hence, if the linear dimensions $l$ of the circuit are not too large ($l \ll c/\nu$, where $c = \SI{3d8}{\meter\per\second}$ is the velocity of light in vacuum, and $\nu$ is the frequency of oscillation in the circuit), it can be assumed that at each instant of time $t$ the current $I$ is the same at all parts of the circuit. Such a variable current is
 said to be \redem{quasi-stationary}. According to Ohm's law \ssect{21.2.3} for the portion $\mathit{1}-L-\mathit{2}$ of the circuit (\figr{fig-28-06})
+\zhpar{简单的\redem{振荡电路}（见\figr{fig-28-06}）是可以发生自由电振荡的电路的一个例子。它由电容为 $C$ 的电容器与自感为 $L$ 的感应线圈串联而成。将预先充电的电容器接到线圈上后，电容器的电荷与线圈中的电流便产生自由振荡。这将激发一个变化的电磁场，它以光速在空间中传播。因此，若电路的线度 $l$ 不太大（$l \ll c/\nu$，其中 $c = \SI{3d8}{\meter\per\second}$ 为真空中的光速，$\nu$ 为电路中振荡的频率），则可以认为在任一时刻 $t$，电路各处的电流 $I$ 都相同。这种变化的电流称为\redem{准稳恒电流}。根据欧姆定律（见\ssect{21.2.3}），对电路的 $\mathit{1}-L-\mathit{2}$ 部分（见\figr{fig-28-06}）有：}
 \begin{equation*}%
 IR = V_{1} - V_{2} + \emf_{s} \qor IR = -\frac{q}{C} - L \dv{I}{t}.
 \end{equation*}
 Here $q$ and $V_{1} - V_{2} = - q/C$ are the charge of the capacitor and the potential difference of its plates at the arbitrary instant $t$ of time being considered, $R$ is the electric resistance of the oscillatory circuit, i.e. of the part $\mathit{1}-L-\mathit{2}$ of the circuit, and
 $ \emf_{s} = -L (\dv*{I}{t})$ is emf of self-induction in the coil \ssect{25.2.4}. If follows from the law of conservation of electric charge \ssect{14.1.3} that the quasi-stationary current in the circuit is $I = \dv*{q}{t}$. Therefore, the differential equation for the variation of charge $q$ is of the form
+\zhpar{式中 $q$ 与 $V_{1} - V_{2} = - q/C$ 分别为所考虑时刻 $t$ 电容器的电荷及其极板间的电势差，$R$ 为振荡电路（即电路的 $\mathit{1}-L-\mathit{2}$ 部分）的电阻，$\emf_{s} = -L (\dv*{I}{t})$ 为线圈中的自感电动势（见\ssect{25.2.4}）。由电荷守恒定律（见\ssect{14.1.3}）可知，准稳恒电流为 $I = \dv*{q}{t}$。因此，电荷 $q$ 变化的微分方程为：}
 \begin{equation*}%
 \dv[2]{q}{t} + \frac{R}{L} \dv{q}{t} + \frac{q}{LC} = 0.
 \end{equation*}
 
 \subsection{}\label{28.3.2} Free electric oscillations in an oscillatory circuit are \redem{harmonic} if its electrical resistance $R = 0$. Thus
+\zhpar{若振荡电路的电阻 $R = 0$，则电路中的自由电振荡是\redem{简谐的}。于是有：}
 \begin{equation*}%
 \dv[2]{q}{t} + \frac{q}{LC} = 0.
 \end{equation*}
 The angular frequency $\omega$ and the period $T$ of these oscillations satisfy the \redem{Thomson formula}:
+\zhpar{该振荡的角频率 $\omega$ 与周期 $T$ 满足\redem{汤姆孙公式}：}
 \begin{equation*}%
 \omega = \frac{1}{\sqrt{LC}} \qand T = 2 \pi \sqrt{LC}.
 \end{equation*}
 The charge $q$ of the capacitor and current $I$ in the circuit vary according to the equations
+\zhpar{电容器的电荷 $q$ 与电路中的电流 $I$ 按下列方程变化：}
 \begin{align*}%
 q = q_{0} \sin ( \omega t + \varphi_{0}), \qand \\
 I = I_{0} \cos ( \omega t + \varphi_{0}) = I_{0} \sin \left( ( \omega t + \varphi_{0}) + \frac{\pi}{2} \right)
 \end{align*}
 where $q_{0}$ is the amplitude of the capacitor charge, $I_{0} =\omega q_{0} = q_{0}\sqrt{LC}$ is the amplitude of the current, and $\varphi_{0}$ is the initial phase of capacitor charge oscillation. The current in the circuit has a phase lead of $\pi/2$ over the capacitor charge.
+\zhpar{式中 $q_{0}$ 为电容器电荷的振幅，$I_{0} =\omega q_{0} = q_{0}\sqrt{LC}$ 为电流的振幅，$\varphi_{0}$ 为电容器电荷振荡的初相位。电路中的电流相位超前电容器电荷的相位 $\pi/2$。}
 
 The potential difference $u = V_{2}- V_{1}$ of the capacitor plates also varies according to a harmonic law and is in phase with charge $q$. Thus
+\zhpar{电容器极板间的电势差 $u = V_{2}- V_{1}$ 同样按简谐规律变化，且与电荷 $q$ 同相位。即}
 \begin{equation*}%
 u= \frac{q}{C} = U_{0} \sin ( \omega t + \varphi_{0}),
 \end{equation*}
 where $U_{0} = q_{0}/C$ is the amplitude of the potential difference. The amplitude of the current is
+\zhpar{式中 $U_{0} = q_{0}/C$ 为电势差的振幅。电流的振幅为：}
 \begin{equation*}%
 I_{0} = U_{0} \sqrt{\frac{C}{L}}.
 \end{equation*}
 The quantity $\sqrt{L/C}$ is called the \redem{characteristic}, or \redem{wave, impedance of the oscillatory circuit}.
+\zhpar{量 $\sqrt{L/C}$ 称为振荡电路的\redem{特征阻抗}（或\redem{波阻抗}）。}
 
 \subsection{}\label{28.3.3} With free harmonic oscillations in an oscillatory circuit, there is a periodic transfer of the energy $E_{e}$ of the electric field of the capacitor into energy $E_{m}$ of the magnetic field of the inductance coil and back again. Thus
+\zhpar{在振荡电路中的自由简谐振荡过程中，电容器电场的能量 $E_{e}$ 与线圈磁场的能量 $E_{m}$ 周期性地相互转换。即}
 \begin{align*}%
 E_{e} & = \frac{q^{2}}{2C} = \frac{q_{0}^{2}}{2C} \sin^{2} ( \omega t + \varphi_{0}),\\
 & =  \frac{q_{0}^{2}}{4C} \left[ 1 - \cos( 2\omega t + 2\varphi_{0}) \right],\\
 E_{m} & = \frac{LI^{2}}{2} = \frac{LI_{0}^{2}}{2} \cos^{2} ( \omega t + \varphi_{0}),\\
 & =  \frac{LI_{0}^{2}}{4} \left[ 1 + \cos( 2\omega t + 2\varphi_{0}) \right],\\\end{align*}
 For this reason, the oscillations in an electrical oscillatory circuit are frequently said to be \redem{electromagnetic oscillations in the circuit}.
+\zhpar{因此，振荡电路中的振荡通常称为\redem{电路中的电磁振荡}。}
 
 The values of $E_{e}$ and $E_{m}$ vary in electromagnetic oscillations within the limits from 0 to their maximum values, equal, respectively, to $q_{0}^{2}/2C$ and $LI_{0}^{2}/2$, in which $q_{0}^{2}/2C = LI_{0}^{2}/2$. The variations of $E_{e}$ and $E_{m}$ are displaced in phase. At the instants of time when $E_{e} = 0$,
+\zhpar{在电磁振荡中，$E_{e}$ 与 $E_{m}$ 的值在零与各自的最大值之间变化，最大值分别为 $q_{0}^{2}/2C$ 与 $LI_{0}^{2}/2$，且 $q_{0}^{2}/2C = LI_{0}^{2}/2$。$E_{e}$ 与 $E_{m}$ 的变化相位错开。在 $E_{e} = 0$ 的时刻，}
 \begin{equation*}% 
 E_{m} = E_{m \,\, \textrm{max}}= LI_{0}^{2}/2.
 \end{equation*}
 On the other hand, when $E_{m} = 0$, 
+\zhpar{另一方面，当 $E_{m} = 0$ 时，}
 \begin{equation*}%
 E_{e} = E_{e \,\, \textrm{max}} = \frac{q_{0}^{2}}{2C}.
 \end{equation*}
 The total energy of electromagnetic oscillations is constant with time. Thus
+\zhpar{电磁振荡的总能量不随时间变化。即}
 \begin{equation*}%
 E = E_{e} + E_{m} = \frac{q_{0}^{2}}{2C} + \frac{LI_{0}^{2}}{2} = \text{const.} 
 \end{equation*}
 
 \section{Adding Harmonic Oscillations}
 \label{sec-28.4} 
+\zhtitle{简谐振动的合成}
 \begin{marginfigure}%[-1.5cm]
 \centering
 \includegraphics[width=0.2\textwidth]{figs/ch-28/fig-28-07.pdf}
-\sidecaption{A combined oscillation of two springs with two weights.\label{fig-28-07}}
+\sidecaption{A combined oscillation of two springs with two weights.\zhcap{由两根弹簧与两个重物组成的组合振动系统。}\label{fig-28-07}}
 \end{marginfigure}
 
 \subsection{}\label{28.4.1} The \redem{addition of oscillations} (vibrations or variations) consists in finding the equation for the resulting oscillation of a system when this system simultaneously participates in several oscillatory processes. Distinction is made between two limiting cases: the combining of oscillations having the same direction and the combining of mutually perpendicular oscillations. The first case corresponds, for example, to the vibration of weight $\mathit{1}$ (\figr{fig-28-07}) which vibrates with respect to weight $\mathit{2}$ on spring $a$, and together with weight $\mathit{2}$ on spring $b$. This same situation occurs in superposing the variations of scalar physical characteristics of an oscillatory or variable system (pressure, temperature, density, electric charge, current, etc.).
+\zhpar{\redem{振动的合成}是指求某一系统同时参与几个振荡过程时，该系统合振动的方程。通常区分两种极限情形：同方向振动的合成与相互垂直振动的合成。例如，第一种情形对应于重物 $\mathit{1}$（见\figr{fig-28-07}）在弹簧 $a$ 上相对于重物 $\mathit{2}$ 振动，同时又随重物 $\mathit{2}$ 在弹簧 $b$ 上振动。在叠加标量物理量（压强、温度、密度、电荷、电流等）的振荡或变化时，也会出现同样的情形。}
 
 \subsection{}\label{28.4.2} \redem{Two harmonic oscillations having the same direction}, such  as 
+\zhpar{\redem{同方向的两个简谐振动}，例如}
 \begin{align*}%
 s_{1} = A_{1} \sin(\omega_{1} + \varphi_{1})\qand \\
 s_{2} = A_{2} \sin(\omega_{2} + \varphi_{2})
 \end{align*}
 can be added together by using the vector diagram method \ssect{28.1.6}.
+\zhpar{可以用矢量图解法（见\ssect{28.1.6}）进行合成。}
 
 \begin{marginfigure}%[-1.5cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-28/fig-28-08.pdf}
-\sidecaption{Vector addition of two oscillations.\label{fig-28-08}}
+\sidecaption{Vector addition of two oscillations.\zhcap{两个振动的矢量相加。}\label{fig-28-08}}
 \end{marginfigure}
 
 Shown in \figr{fig-28-08} are the vectors $A_{1}(t)$ and $A_{2} (t)$ of the first and second oscillations at the arbitrary instant $t$ of time when the phases of these oscillations equal: $\Phi_{1} =  \omega_{1} + \varphi_{1}$ and $\Phi_{2} =  \omega_{2} + \varphi_{2}$. The resultant oscillation $s = s_{1} + s_{2}$ corresponds to the vector $A(t)= A_{1}(t)+ A_{2}(t)$ whose projection on the vertical axis $OY$ is equal to $s$. Thus
+\zhpar{如\figr{fig-28-08}所示，图中画出了两个振动在任一时刻 $t$ 的振幅矢量 $A_{1}(t)$ 与 $A_{2} (t)$，此时两振动的相位分别为：$\Phi_{1} =  \omega_{1} + \varphi_{1}$ 与 $\Phi_{2} =  \omega_{2} + \varphi_{2}$。合振动 $s = s_{1} + s_{2}$ 对应于矢量 $A(t)= A_{1}(t)+ A_{2}(t)$，其在竖直轴 $OY$ 上的投影等于 $s$。因此有：}
 \begin{equation*}%
 s = A (t) \sin \Phi (t).
 \end{equation*}
 According to the cosine law
+\zhpar{由余弦定理可得：}
 \begin{align*}%
 [A(t)]^{2}= A_{1}^{2} + A_{2}^{2}+ 2A_{1}A_{2} \cos [\Phi_{2}(t) - \Phi_{1}(t)], \qand \\
 \tan \Phi (t) = \frac{A_{1}\sin \Phi_{1}(t) + A_{2}\sin \Phi_{2}(t)}{A_{1}\cos \Phi_{1}(t) + A_{2}\cos \Phi_{2}(t)}.
@@ -342,181 +423,224 @@ According to the cosine law
 
 
 \subsection{}\label{28.4.3} Two harmonic oscillations $s_{1}$ and $s_{2}$ are said to be \redem{coherent} if their phase difference is independent of time. Thus
+\zhpar{若两个简谐振动 $s_{1}$ 与 $s_{2}$ 的相位差不随时间变化，则称它们是\redem{相干的}。即}
 \begin{equation}%
 \dv{t}[ \Phi_{2}(t) - \Phi_{1}(t) ]= 0, \qand \Phi_{2}(t)- \Phi_{1}(t) = \text{const}.
 \end{equation}
 Since $\Phi_{2} (t) - \Phi_{1}(t) = (\omega_{2} - \omega_{1}) t + (\varphi_{2} - \varphi_{1})$, the angular frequency of coherent oscillations should be the same, i.e. $\omega_{2}= \omega_{1}= \omega$. At any instant of time the phase difference of coherent oscillations is equal to the difference of their initial phases:   $\Phi_{2}(t)=-\Phi_{1}(t)= \varphi_{2}- \varphi_{1}$. Consequently, the resultant oscillation is harmonic and has the same angular frequency $\omega$, i.e.
+\zhpar{由于 $\Phi_{2} (t) - \Phi_{1}(t) = (\omega_{2} - \omega_{1}) t + (\varphi_{2} - \varphi_{1})$，相干振动的角频率必须相同，即 $\omega_{2}= \omega_{1}= \omega$。在任一时刻，相干振动的相位差都等于它们初相位之差：$\Phi_{2}(t)=-\Phi_{1}(t)= \varphi_{2}- \varphi_{1}$。因此，合振动是简谐的，且角频率同为 $\omega$，即}
 \begin{equation*}%
 s = s_{1} + s_{2} = A \sin(\omega t + \varphi_{0}),
 \end{equation*}
 where
+\zhpar{式中：}
 \begin{align*}%
 A^{2} & = A_{1}^{2}+ A_{2}^{2} + 2A_{1}A_{2} \cos(\varphi_{2}- \varphi_{1}) \qand \\
 \tan \varphi_{0} & = \frac{A_{1}\sin \varphi_{1} + A_{2}\sin \varphi_{2}}{A_{1}\cos \varphi_{1} + A_{2}\cos \varphi_{2}}.
 \end{align*}
 In accordance with the values of the initial phase differences of the oscillations being added together, the amplitude $A$ of the resultant oscillation varies within the limits from 
+\zhpar{根据被合成振动的初相位差的取值，合振动的振幅 $A$ 在下列范围内变化：}
 \begin{align*}%
 \text{from} \,\, A & = \abs{A_{1} - A_{2}} \,\,  \text{at} \,\,   \varphi_{2} - \varphi_{1}  = \pm (2m + 1)\pi \\
 \text{to} \,\, A & = A_{1} + A_{2} \,\,  \text{at} \,\,   \varphi_{2} - \varphi_{1}  = \pm 2m \pi,
 \end{align*}
 where $m = 0,\, 1,\, 2, \,\ldots{}$ is any integral non-negative number. When $\varphi_{2} - \varphi_{1} = \pm 2m \pi$, the oscillations being added are said to be \redem{co-phased} (or simply, \redem{in phase}), whereas at $\varphi_{2} - \varphi_{1} = \pm (2m+ 1)$ they are said to be \redem{anti-phased} (or \redem{in opposition}). 
+\zhpar{式中 $m = 0,\, 1,\, 2, \,\ldots{}$ 为任意非负整数。当 $\varphi_{2} - \varphi_{1} = \pm 2m \pi$ 时，称被合成的振动为\redem{同相的}（或简称\redem{同相}），而当 $\varphi_{2} - \varphi_{1} = \pm (2m+ 1)$ 时，则称其为\redem{反相的}（或\redem{相位相反}的）。}
 
 
 \subsection{}\label{28.4.4} Harmonic oscillations of different frequency $(\omega_{2} \neq \omega_{1})$ are \redem{incoherent} because their phase difference, equal to $(\omega_{2} - \omega_{1})t + (\varphi_{2} - \varphi_{1})$, varies continuously with time. If such oscillations are superposed, an anharmonic resultant oscillation is obtained. The amplitude vectors $\vb{A}_{1}$ and $\vb{A}_{2}$ of the added oscillations (\figr{fig-28-08}) rotate at different velocities, so that the parallelogram constructed on the vectors is continuously deformed and its diagonal, vector $\vb{A}$ of the resultant oscillation, varies in length and rotates at variable angular velocity. 
+\zhpar{频率不同（$\omega_{2} \neq \omega_{1}$）的简谐振动是\redem{非相干的}，因为它们的相位差 $(\omega_{2} - \omega_{1})t + (\varphi_{2} - \varphi_{1})$ 随时间连续变化。若将这样的振动叠加，则得到非简谐的合振动。被合成振动的振幅矢量 $\vb{A}_{1}$ 与 $\vb{A}_{2}$（见\figr{fig-28-08}）以不同的速度旋转，因此由这两个矢量构成的平行四边形不断变形，其对角线（即合振动的矢量 $\vb{A}$）的长度不断变化，并以变化的角速度旋转。}
 
 Two harmonic oscillations having different angular frequencies $\omega_{1}$ and $\omega_{1}$ can be approximately considered to be coherent only during the time interval $\Delta t$ in which the phase difference of these oscillations varies only slightly: 
+\zhpar{角频率分别为 $\omega_{1}$ 与 $\omega_{1}$ 的两个简谐振动，只有在其相位差变化甚微的时间间隔 $\Delta t$ 内，才可近似地视为相干的：}
 \begin{equation*}%
 \abs{\omega_{2} - \omega_{1}} \Delta t \ll 2 \pi \qor \Delta t \ll \tau_{\textrm{coh}},
 \end{equation*}
 where $\tau_{\textrm{coh}} = 2\pi/\abs{\omega_{2} - \omega_{1}}$ is the \redem{coherence time} of the oscillations being considered.
+\zhpar{式中 $\tau_{\textrm{coh}} = 2\pi/\abs{\omega_{2} - \omega_{1}}$ 为所考虑振动的\redem{相干时间}。}
 
 \subsection{}\label{28.4.5} Anharmonic oscillation obtained as a result of superposing two harmonic oscillations having the same direction and slightly differing frequencies $(\abs{omega_{2} - \omega_{1}} \ll \omega_{1})$ produces what are called \redem{beats}. It proves convenient to take as the time reference $t$ the instant when the phases of the two oscillations being superposed, $s_{1}$ and $s_{2}$, coincide and are equal to $\varphi_{0}$. Then 
+\zhpar{两个同方向、频率略有差别（$\abs{omega_{2} - \omega_{1}} \ll \omega_{1}$）的简谐振动叠加所得的非简谐振动，称为\redem{拍}。取两个被叠加振动 $s_{1}$ 与 $s_{2}$ 的相位相等且都等于 $\varphi_{0}$ 的时刻作为计时起点 $t$，较为方便。此时}
 \begin{align*}%
 s_{1} & = A_{1} \sin(\omega_{1}t + \varphi_{0}), \qand \\ 
 s_{2} & =  A_{2}\sin (\omega_{2}t + \varphi_{0}) = A_{2} \sin [ \omega_{1}t + \varphi_{0} + \varphi(t)],
 \end{align*}
 where $\varphi(t)= (\omega_{2} - \omega_{1})t$. The resultant oscillation satisfies the relation
+\zhpar{式中 $\varphi(t)= (\omega_{2} - \omega_{1})t$。合振动满足下列关系：}
 \begin{equation*}%
 s = A (t)\, \sin [ \omega_{1}t + \varphi_{0} + \psi(t)],
 \end{equation*}
 where
+\zhpar{式中：}
 \begin{align*}%
 [A(t)]^{2} & = A_{1}^{2}+ A_{2}^{2} + 2A_{1}A_{2}\cos \varphi(t), \qand \\
 \tan \psi (t) & = \frac{A_{2} \sin \varphi(t)}{A_{1}+A_{2} \cos \varphi(t)}.
 \end{align*}
 In particular, when $A_{1} = A_{2} = A_{0}$,
+\zhpar{特别地，当 $A_{1} = A_{2} = A_{0}$ 时，}
 \begin{align*}%
 A(t) & = 2 A_{0}\cos \frac{\omega_{2} - \omega_{1}}{2}\, t, \qand \\
 \psi (t) & =\frac{\omega_{2} - \omega_{1}}{2}\, t.
 \end{align*}
 so that
+\zhpar{从而有：}
 \begin{equation*}%
 s = 2A_{0}\cos  \frac{\omega_{2} - \omega_{1}}{2}\, t \, \sin \left( \frac{\omega_{2} - \omega_{1}}{2}\, t + \varphi_{0}\right).
 \end{equation*}
 The quantity $\abs{A (t)}$, characterizing the swing of the oscillalions in beating, varies within the limits from $\abs{A_{1} - A_{2}}$ to $A_{1} + A_{2}$ with the angular frequency $\Omega = \abs{\omega_{2} - \omega_{1}}$, called the \redem{angular beat frequency}. Since the beat frequency is much lower than the frequency of oscillation $(\Omega \ll \omega_{1})$, the variable quantity $\abs{A (t)}$ is conditionally called the \redem{beat amplitude}. The beat period $T_{b}$ and the \redem{beat frequency} $\nu_{b}$ are equal to
+\zhpar{表征拍现象中振动起伏的量 $\abs{A (t)}$，在 $\abs{A_{1} - A_{2}}$ 与 $A_{1} + A_{2}$ 之间变化，变化的角频率为 $\Omega = \abs{\omega_{2} - \omega_{1}}$，称为\redem{拍的角频率}。由于拍频远小于振动频率（$\Omega \ll \omega_{1}$），变化量 $\abs{A (t)}$ 习惯上称为\redem{拍振幅}。拍周期 $T_{b}$ 与\redem{拍频} $\nu_{b}$ 分别为：}
 \begin{align*}%
 T_{b} & = \frac{2\pi}{\Omega} = \frac{2\pi}{\abs{\omega_{2} - \omega_{1}}} = \frac{1}{\abs{\frac{1}{T_{1}} - \frac{1}{T_{2}}}}, \qand \\
 \nu_{b} & = \frac{1}{T_{b}} = \abs{\nu_{2} - \nu_{1}}.
 \end{align*}
 where $T_{1}$, $\nu_{1}$, $T_{2}$ and $\nu_{2}$ are the periods and frequencies of the superposed oscillations. Curves of the dependence of $s$ on $t$ in beating are shown in \figr{fig-28-09} for the case when $A_{1} = A_{2} = A_{0}$.
+\zhpar{式中 $T_{1}$、$\nu_{1}$、$T_{2}$ 与 $\nu_{2}$ 为被叠加振动的周期与频率。当 $A_{1} = A_{2} = A_{0}$ 时，拍现象中 $s$ 随 $t$ 的变化曲线如\figr{fig-28-09}所示。}
 
 \begin{figure}[h]%[-1.5cm]
 \centering
 \includegraphics[width=\textwidth]{figs/ch-28/fig-28-09.pdf}
-\sidecaption{Dependence of $s$ on $t$ for beats.\label{fig-28-09}}
+\sidecaption{Dependence of $s$ on $t$ for beats.\zhcap{拍现象中 $s$ 随 $t$ 的变化。}\label{fig-28-09}}
 \end{figure}
 
 \subsection{}\label{28.4.6} As a result of the superposition of harmonic oscillations, coinciding in direction and having angular frequencies that are integral \redem{multiples} of their lowest frequency, i.e. $\omega$, $2\omega$, $3\omega$, etc., a \redem{periodic} non-harmonic oscillation with the period $T = 2\pi/\omega$ is obtained. On the other hand, any complex \redem{periodic oscillation} $s = f(t)$ can be represented as the sum of simple harmonic oscillations having angular frequencies, which are integral multiples of the \redem{basic angular frequency}  $\omega = 2\pi/T$, where $T$ is the period of the oscillation. Thus 
+\zhpar{沿同一方向、角频率为其最低频率 $\omega$ 的整数倍（即 $\omega$、$2\omega$、$3\omega$ 等）的简谐振动叠加后，得到周期为 $T = 2\pi/\omega$ 的\redem{周期性}非简谐振动。反之，任何复杂的\redem{周期性振荡} $s = f(t)$ 都可以表示为一系列简谐振动之和，这些简谐振动的角频率是\redem{基本角频率} $\omega = 2\pi/T$ 的整数倍，其中 $T$ 为该振荡的周期。于是有：}
 \begin{align*}%
 s & = f(t) = \frac{a_{0}}{2} + \sum_{n = 1}^{\infty} \left( a_{n} \cos n \omega t + b_{n} \sin n \omega t \right)\\
 & = \frac{a_{0}}{2} + \sum_{n = 1}^{\infty} A_{n} \sin( n \omega t + \varphi_{n}),
 \end{align*}
 where
+\zhpar{式中：}
 \begin{align*}%
 a_{n} & = \frac{2}{T} \int_{-T/2}^{T/2} f(t) \, \cos n \omega t \, \dd t \quad  (n = 0, )\\
 & = \frac{a_{0}}{2} + \sum_{n = 1}^{\infty} A_{n} \sin( n \omega t + \varphi_{n}),
 \end{align*}
 Such a representation of the periodic function $f(t)$ is called the \redem{expansion of this function into a Fourier series}, or the \redem{harmonic analysis of a complex periodic oscillation}. 
 The terms of the Fourier series corresponding to the harmonic oscillations with the angular frequencies $\omega$, $2\omega$, $3\omega$, etc. are called the \redem{first}, or \redem{fundamental}, \redem{second}, \redem{third}, etc. \redem{harmonics} of the complex periodic oscillation $s = f (t)$. The whole set of these harmonics forms the \redem{spectrum of the oscillations} $s = f (t)$. The composition of the spectrum depends on the form of the periodic function $s = f (t)$. In the simplest cases, the spectrum can consist of a small number of harmonics. 
+\zhpar{将周期函数 $f(t)$ 表示为上述形式，称为将该函数展开为\redem{傅里叶级数}，或称对该复杂周期振荡进行\redem{谐波分析}。傅里叶级数中对应于角频率 $\omega$、$2\omega$、$3\omega$ 等的各项，分别称为复杂周期振荡 $s = f (t)$ 的\redem{一次}（或\redem{基}）、\redem{二次}、\redem{三次}等\redem{谐波}。全部谐波构成振荡 $s = f (t)$ 的\redem{频谱}。频谱的组成取决于周期函数 $s = f (t)$ 的形式。在最简单的情形下，频谱可能只包含少数几个谐波。}
 
 The oscillation spectrum is often understood to be the \redem{frequency spectrum}, i.e. the set of frequencies of simple harmonic oscillations that can be superimposed to obtain the complex oscillation being considered. Periodic oscillations have discrete (line) \redem{frequency spectra}.
+\zhpar{通常所说的振荡频谱即\redem{频率谱}，即可叠加得到所考虑复杂振荡的各简谐振动的频率集合。周期性振荡具有离散（线状）的\redem{频率谱}。}
 
 \subsection{}\label{28.4.7} \redem{Non-periodic oscillations} have, as a rule, \redem{continuous frequency spectra}, i.e. they can be represented as the result of the superposition of a great many harmonic oscillations, whose frequencies have all possible values in a certain range (from 0 to $\infty$ in the general case). The harmonic analysis of such oscillations consists in presenting them in the form of a \redem{Fourier integral}:
+\zhpar{\redem{非周期性振荡}通常具有\redem{连续频谱}，即可以看作大量频率在某一范围（一般为从 0 到 $\infty$）内取一切可能值的简谐振动叠加的结果。对这类振荡进行谐波分析，就是将其表示为\redem{傅里叶积分}的形式：}
 \begin{equation*}%
 s = f(t) = \int_{0}^{\infty} [a(\omega) \cos \omega t + b(\omega) \sin \omega t] \, \dd \omega,
 \end{equation*}
 where
+\zhpar{式中：}
 \begin{align*}%
 a(\omega) & = \frac{1}{\pi} \int_{-\infty}^{\infty} f(\xi) \cos \omega \xi \, \dd \xi,\\
 b(\omega) & = \frac{1}{\pi} \int_{-\infty}^{\infty} f(\xi) \sin \omega \xi \, \dd \xi.
 \end{align*}
 Certain nonperiodic oscillations, called \redem{almost periodic} (\redem{quasi-periodic}) oscillations have a line frequency spectrum. But the included angular frequencies are incommensurable with one another, because their ratios are expressed by irrational numbers. 
+\zhpar{某些非周期性振荡称为\redem{近似周期的}（\redem{准周期的}）振荡，它们具有线状频谱，但其中所包含的各角频率彼此不可公约，因为它们的比值为无理数。}
 
 
 \subsection{}\label{28.4.8} \redem{Modulation} is the change of any parameter of a periodic oscillation (for instance, the amplitude or frequency) according to a definite law during a length of time considerably longer than the period of the oscillation.
+\zhpar{\redem{调制}是指周期性振荡的某一参量（例如振幅或频率）在远大于振荡周期的时间内按一定规律发生变化。}
 
 In \redem{amplitude modulation}, for example, \redem{of the harmonic oscillation} 
+\zhpar{例如，对下列简谐振动进行\redem{振幅调制}时：}
 \begin{equation*}%
 s = A_{0}\sin (\omega_{0}t + \varphi_{0}), 
 \end{equation*}
 the modulated oscillation is of the form
+\zhpar{调制后的振荡具有下列形式：}
 \begin{equation*}%
 s = A_{0} [1 + b(t)]\sin (\omega_{0}t + \varphi_{0}), 
 \end{equation*}
 where $\abs{b(t)}< 1$.
+\zhpar{式中 $\abs{b(t)}< 1$。}
 
 If amplitude modulation is carried out according to the harmonic
 law $b(t)= b_{0} \cos \Omega t$, where $b_{0} = \text{const.}$ and $\Omega \ll \omega_{0}$ then
+\zhpar{若振幅调制按简谐规律 $b(t)= b_{0} \cos \Omega t$ 进行，其中 $b_{0} = \text{const.}$，且 $\Omega \ll \omega_{0}$，则}
 \begin{equation*}%
 s = A_{0} [1 + b_{0}\cos \Omega t ]\sin (\omega_{0}t + \varphi_{0}).
 \end{equation*}
 This modulated oscillation has a line frequency spectrum because it can be represented as the sum of three harmonic oscillations with the angular frequencies $\omega_{0}$, $\omega_{0} - \Omega$ and $\omega_{0} + \Omega$, and amplitudes equal, respectively, to $A_{0}$, $A_{0}b_{0}/2$ and $A_{0}b_{0}/2$. Thus
+\zhpar{该调制振荡具有线状频谱，因为它可以表示为三个简谐振荡之和，其角频率分别为 $\omega_{0}$、$\omega_{0} - \Omega$ 与 $\omega_{0} + \Omega$，振幅分别为 $A_{0}$、$A_{0}b_{0}/2$ 与 $A_{0}b_{0}/2$。即}
 \begin{align*}
 A_{0} & \, (1 + b_{0} \cos \Omega t) \sin (\omega_{0} t + \varphi_{0}) \\
 & = A_{0} \sin (\omega_{0} t + \varphi_{0}) + \frac{A_{0} b_{0}}{2} \left( \sin[(\omega_{0} + \Omega) t + \varphi_{0}] \right. \\
 & \quad + \left. \sin[(\omega_{0} - \Omega) t + \varphi_{0}] \right)
 \end{align*}
 In \redem{frequency modulation of the harmonic oscillation} $s = A_{0} \sin (\omega_{0}t + \varphi_{0})$, carried out according to a harmonic law, the modulated oscillation is of the form 
+\zhpar{对简谐振动 $s = A_{0} \sin (\omega_{0}t + \varphi_{0})$ 按简谐规律进行\redem{频率调制}时，调制后的振荡具有下列形式：}
 \begin{equation*}%
 s = A_{0} \sin [\omega_{0} (1+ b_{0}\cos \Omega t) \, t+ \varphi_{0}],
 \end{equation*}
 where $b_{0} < 1$ and $\Omega \ll \omega_{0}$.
+\zhpar{式中 $b_{0} < 1$，且 $\Omega \ll \omega_{0}$。}
 
 Accordingly, in \redem{phase modulation}, the initial phase of the oscillation is changed. Thus
+\zhpar{相应地，在\redem{相位调制}中，振荡的初相位发生变化。即}
 \begin{equation*}%
 s = A_{0} \sin(\omega_{0} t + \Delta \varphi \cos \Omega t),
 \end{equation*}
 where $\Omega \ll \omega_{0}$.
+\zhpar{式中 $\Omega \ll \omega_{0}$。}
 
 In the general case oscillations can be modulated simultaneously in amplitude and in phase (or frequency). An example of such modulated oscillations is beating \ssect{28.4.4}.
+\zhpar{一般情况下，振荡可以同时在振幅与相位（或频率）上被调制。拍现象（见\ssect{28.4.4}）就是这种调制振荡的一个例子。}
 
 \subsection{}\label{28.4.9} \redem{Addition of mutually perpendicular harmonic oscillations of equal frequency}. Assume that point $M$ oscillates simultaneously along the coordinate axes $OX$ and $OY$ according to the law: 
+\zhpar{\redem{同频率相互垂直简谐振动的合成}。设质点 $M$ 同时沿坐标轴 $OX$ 与 $OY$ 按下列规律振动：}
 \begin{align*}%
 x = A_{1} \sin (\omega t + \varphi_{1}), \qand \\
 y = A_{2} \sin (\omega t + \varphi_{2}),
 \end{align*}
 where $x$ and $y$ are the Cartesian coordinates of point $M$. The path equation for the resultant motion of point $M$ in plane $XOY$ can be found by eliminating parameter $t$ from the expression for $x$ and $y$. Thus
+\zhpar{质点 $M$ 在平面 $XOY$ 内合运动的轨迹方程，可由 $x$ 与 $y$ 的表达式消去参量 $t$ 求得。于是有：}
 \begin{marginfigure}%[h]%[-1.5cm]
 \centering
 \includegraphics[width=0.9\textwidth]{figs/ch-28/fig-28-10.pdf}
-\sidecaption{The path of the resultant motion of addition of mutually perpendicular harmonic oscillations of equal frequency.\label{fig-28-10}}
+\sidecaption{The path of the resultant motion of addition of mutually perpendicular harmonic oscillations of equal frequency.\zhcap{同频率、相互垂直的两个简谐振动合成后的运动轨迹。}\label{fig-28-10}}
 \end{marginfigure}
 \begin{equation*}
 \frac{x^{2}}{A_{1}^{2}} + \frac{y^{2}}{A_{2}^{2}} - \frac{2xy}{A_{1}A_{2}} \cos (\varphi_{2} - \varphi_{1}) = \sin^{2} (\varphi_{2} - \varphi_{1}).
 \end{equation*}
 This path is an ellipse (\figr{fig-28-10}) and point $M$ describes this ellipse during a time equal to the period of the oscillations being added together $(T = 2\pi/\omega)$. Hence, the resultant motion of point $M$ is called \redem{elliptically polarized oscillation}.
+\zhpar{该轨迹为一椭圆（见\figr{fig-28-10}），质点 $M$ 在所合成振动的周期（$T = 2\pi/\omega$）内描绘出此椭圆。因此，质点的合运动称为\redem{椭圆偏振振动}。}
 
 The orientation of the axes of the ellipse in plane $XOY$, as well as its dimensions depend upon the amplitudes $A_{1}$ and $A_{2}$ of the oscillations being combined and on their initial phase difference $\varphi_{2} - \varphi_{1}$. If $\varphi_{2} - \varphi_{1} = (2m + 1) \pi/2$, where $m = 0,\,\, \pm 1,\,\, \pm 2, \ldots{}$ the axes of the ellipse coincide with the coordinate axes $OX$ and $OY$, and the lengths of the semiaxes are equal to the amplitudes $A_{1}$ and $A_{2}$. Thus
+\zhpar{椭圆在平面 $XOY$ 中的取向及大小，取决于所合成振动的振幅 $A_{1}$ 与 $A_{2}$ 以及它们的初相位差 $\varphi_{2} - \varphi_{1}$。若 $\varphi_{2} - \varphi_{1} = (2m + 1) \pi/2$，其中 $m = 0,\,\, \pm 1,\,\, \pm 2, \ldots{}$，则椭圆的轴与坐标轴 $OX$、$OY$ 重合，半轴长度分别等于振幅 $A_{1}$ 与 $A_{2}$。即}
 \begin{equation*}
 \frac{x^{2}}{A_{1}^{2}} + \frac{y^{2}}{A_{2}^{2}} = 1.
 \end{equation*}
 If, in addition, $A_{1} = A_{2}$, the path of point $M$ is a circle. Such resultant motion of point $M$ is called \redem{circularly polarized oscillation}.
+\zhpar{若另外 $A_{1} = A_{2}$，则质点 $M$ 的轨迹为圆。这种合运动称为\redem{圆偏振振动}。}
 
 When $\varphi_{2} - \varphi_{1} = m\pi$, where  $m = 0,\,\, \pm 1,\,\, \pm 2, \ldots{}$ the ellipse degenerates into a straight line. Thus 
+\zhpar{当 $\varphi_{2} - \varphi_{1} = m\pi$（其中 $m = 0,\,\, \pm 1,\,\, \pm 2, \ldots{}$）时，椭圆退化为直线。即}
 \begin{equation*}
 y = \pm \frac{A_{2}}{A_{1}} \, x.
 \end{equation*}
 \begin{marginfigure}[-2cm]
 \centering
 \includegraphics[width=0.9\textwidth]{figs/ch-28/fig-28-11.pdf}
-\sidecaption{The addition of (a) co-phased and (b) anti-phased oscillations.\label{fig-28-11}}
+\sidecaption{The addition of (a) co-phased and (b) anti-phased oscillations.\zhcap{（a）同相振动与（b）反相振动的合成。}\label{fig-28-11}}
 \end{marginfigure}
 The plus sign corresponds to even values of $m$, i.e. to the addition of co-phased oscillations (\figr{fig-28-11}~\drkgry{(a)}); the minus sign, to odd values of $m$, i.e. to the addition of oscillations that arc in opposition (anti-phased) (\figr{fig-28-11}~\drkgry{(b)}). In either case, point $M$ executes \redem{linearly polarized oscillation}. It oscillates with harmonic motion at the frequency of the oscillations being combined and with the amplitude $A = \sqrt{A_{1}^{2} + A_{2}^{2}}$ along a straight line that makes the angle $\alpha = \arctan ( A_{2} \cos m \pi/A_{1})$ with the axis $OX$. 
+\zhpar{式中正号对应于偶数 $m$，即同相振动的合成（见\figr{fig-28-11}~\drkgry{(a)}）；负号对应于奇数 $m$，即反相振动的合成（见\figr{fig-28-11}~\drkgry{(b)}）。在两种情形下，质点 $M$ 都做\redem{线偏振振动}：它以所合成振动的频率做简谐运动，振幅为 $A = \sqrt{A_{1}^{2} + A_{2}^{2}}$，沿与坐标轴 $OX$ 夹角为 $\alpha = \arctan ( A_{2} \cos m \pi/A_{1})$ 的直线振动。}
 
 \subsection{}\label{28.4.10} In the addition of mutually perpendicular oscillations having the angular frequencies $p \omega$ and $q \omega$, where $p$ and $q$ are whole numbers, we obtain
+\zhpar{当合成角频率分别为 $p \omega$ 与 $q \omega$（其中 $p$ 与 $q$ 为整数）的相互垂直振动时，可得：}
 \begin{align*}%
 x & = A_{1} \sin (p \omega t + \varphi_{1}), \qand \\
 y & = A_{2} \sin (q \omega t + \varphi_{2}).
 \end{align*}
 The values of coordinates $x$ and $y$ of the oscillating point $M$ are simultaneously repeated after equal periods $T_{0}$ of time, equal to the least common multiple of $T_{1} = 2\pi/p\omega$ and $T_{2} = 2\pi/q \omega$, which arc the periods of oscillation along the $OX$ and $OY$ axes. Hence, the path of point $M$ is a closed curve whose shape depends upon the ratios of the amplitudes, frequencies and initial phases of the oscillations being combined. Such closed paths of point $M$, which has simultaneous harmonic oscillations in two mutually perpendicular directions, are called \redem{Lissajous figures}.
+\zhpar{质点 $M$ 的坐标 $x$ 与 $y$ 将每隔时间 $T_{0}$ 同时重复一次，$T_{0}$ 等于沿 $OX$ 与 $OY$ 轴的振动周期 $T_{1} = 2\pi/p\omega$ 与 $T_{2} = 2\pi/q \omega$ 的最小公倍数。因此，质点 $M$ 的轨迹是一条闭合曲线，其形状取决于所合成振动的振幅、频率及初相位之比。这种在两个相互垂直方向上同时做简谐振动的质点所描绘的闭合轨迹，称为\redem{李萨如图形}。}
 
 \begin{figure}[h]%[-2cm]
 \centering
 \includegraphics[width=0.9\textwidth]{figs/ch-28/fig-28-12.pdf}
-\sidecaption{Lissajous figures are resultant of addition of mutually perpendicular oscillations having angular frequencies as multiples of whole numbers.\label{fig-28-12}}
+\sidecaption{Lissajous figures are resultant of addition of mutually perpendicular oscillations having angular frequencies as multiples of whole numbers.\zhcap{角频率成整数比的相互垂直振动合成所得的李萨如图形。}\label{fig-28-12}}
 \end{figure}
 
 Lissajous figures arc inscribed into rectangles whose centre coincides with the origin of coordinates and whose sides are parallel to coordinate axes $OX$ and $OY$. The distances of these sides from the axes are equal, respectively, to $A_{2}$ and $A_{1}$. The ratio of the frequencies $q\omega$ and $p\omega$ of the combined oscillations is equal to the ratio of the number of times the corresponding Lissajous figure touches a side of the rectangle parallel to the $OX$ axis to the number of times it touches a side parallel to the $OY$ axis. Shown in \figr{fig-28-12} are the Lissajous figures for three different values of the ratio $q/p$ ($2:1$, $3:2$ and $4:3$) and for initial phase differences of $\Delta \varphi = \varphi_{1} - \varphi_{2} = \pi/2$.
+\zhpar{李萨如图形内接于矩形中，矩形中心与坐标原点重合，各边平行于坐标轴 $OX$ 与 $OY$，边与坐标轴的距离分别等于 $A_{2}$ 与 $A_{1}$。所合成振动的频率 $q\omega$ 与 $p\omega$ 之比，等于李萨如图形与平行于 $OX$ 轴的矩形边相切的次数与其与平行于 $OY$ 轴的边相切的次数之比。如\figr{fig-28-12}所示，给出了 $q/p$ 分别为 $2:1$、$3:2$ 与 $4:3$，且初相位差为 $\Delta \varphi = \varphi_{1} - \varphi_{2} = \pi/2$ 时的李萨如图形。}
 
 
 
