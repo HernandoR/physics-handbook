@@ -9,240 +9,302 @@
 
 \chapter{Dielectrics In An Electric Field}
 \label{ch-18}
+\zhtitle{电场中的电介质}
 
 \section{Dipole Moments of Molecules of a Dielectric}
 \label{sec-18.1}
+\zhtitle{电介质分子的偶极矩}
 
 \subsection{}\label{18.1.1} \redem{Dielectrics} are substances that do not conduct electric current. At not especially high temperatures and under conditions when dielectrics are not subject to very strong electric fields, these substances, in contrast to conductors, have no carriers of electric current.
+\zhpar{\redem{电介质}是不导电的物质。在温度不是特别高、且电介质不处于很强电场中的条件下，与导体相反，这类物质中没有电流载流子。}
 
 \subsection{}\label{18.1.2} The molecules of a dielectric are electrically neutral and contain an equal number of positive and negative charges. Nevertheless, the molecules do have electrical properties. As a first approximation, a molecule of a dielectric can be regarded as a dipole having the electric dipole moment $\vb{p}_{e} =q \vb{l}$ \ssect{15.2.3}, where $q$ is the magnitude of the total positive (and also total negative) charges, located, respectively, at the centres of gravity of the charges, $\vb{l}$ is the distance between the centres of gravity of the positive and negative charges. As any dipole, a molecule of matter sets up an electric held in the surrounding space \ssect{15.2.3}.
+\zhpar{电介质的分子是电中性的，所含正电荷与负电荷的数目相等。然而，分子仍具有电学性质。作为第一近似，可以把电介质的分子看作一个电偶极子，其电偶极矩为 $\vb{p}_{e} =q \vb{l}$（\ssect{15.2.3}），其中 $q$ 为总正电荷（同时也是总负电荷）的大小，两者分别位于正、负电荷的重心处；$\vb{l}$ 为正、负电荷重心之间的距离。与任何偶极子一样，物质分子会在其周围空间中产生电场（\ssect{15.2.3}）。}
 
 \subsection{}\label{18.1.3} A dielectric is said to be \redem{nonpolar} (a \redem{nonpolar dielectric}) if the electrons of the atoms in its molecules are arranged symmetrically with respect to their nuclei (\ce{H2}, \ce{O2}, \ce{CCl4}, etc.). In such molecules the centres of gravity of the positive and negative charges coincide when there is no external electric held [$l = 0$ \ssect{18.1.2}] and the dipole moment $\vb{p}_{e}$ of the molecule is equal to zero. When a nonpolar dielectric is placed into an external electric held, the electron shells \ssect{39.3.6} in the atoms (or molecules) are deformed and the centres of gravity of the positive and negative charges are displaced with respect to each other ($l \neq  0$). At this an \redem{induced electric dipole moment} appears in atoms (or molecules) of the dielectric. This moment is proportional to the strength $\vb{E}$ of the external electric held:
+\zhpar{若电介质分子中原子的电子相对于其原子核呈对称排列，则该电介质称为\redem{非极性电介质}（如 \ce{H2}、\ce{O2}、\ce{CCl4} 等）。在这类分子中，无外电场时正、负电荷的重心重合（$l = 0$，\ssect{18.1.2}），分子的偶极矩 $\vb{p}_{e}$ 为零。当非极性电介质置于外电场中时，原子（或分子）的电子壳层（\ssect{39.3.6}）发生形变，正、负电荷的重心相对位移（$l \neq  0$）。于是，电介质的原子（或分子）中出现\redem{感应电偶极矩}。该矩与外电场 $\vb{E}$ 的强度成正比，如下式所示：}
 \begin{align*}
 \vb{p}_{e} & = \varepsilon_{0} \alpha \vb{E} && \text{(in SI units.)} \\
 \vb{p}_{e} & =  \alpha \vb{E}&& \text{(in cgse units.)}
 \end{align*}
 where $\alpha$ is the \redem{polarizability} of the molecule (or atom) and $\varepsilon_{0}$ is the electric constant in SI units \ssect{14.2.7}.
+\zhpar{式中 $\alpha$ 为分子（或原子）的\redem{极化率}，$\varepsilon_{0}$ 为SI单位制中的真空电容率（\ssect{14.2.7}）。}
 
 
 The polarizability of a molecule depends only on its volume. It is important that $\alpha$ does not depend upon temperature. The thermal motion of the molecules in non-polar dielectrics has no effect on the induction of dipole moments in them. Molecules with such dipole moments are like \redem{quasi-elastic (induced)} dipoles.
+\zhpar{分子的极化率仅取决于其体积。重要的是，$\alpha$ 与温度无关。非极性电介质中分子的热运动对其中偶极矩的感应没有影响。具有这种感应偶极矩的分子类似于\redem{准弹性（感应）}偶极子。}
 
 \subsection{}\label{18.1.4} A \redem{polar dielectric} is one in which the molecules (or atoms) have electrons arranged asymmetrically with respect to their nuclei (\ce{H2O}, \ce{HCl}, \ce{NH3}, \ce{CH3Cl}, etc.). In such molecules the centres of gravity of the positive and negative charges do not coincide, but are at a practically constant distance I from each other. With respect to electrical properties, molecules of polar dielectrics are like \redem{rigid dipoles} that have a \redem{permanent dipole moment} $\vb{p}_{e} = \text{const}$.
+\zhpar{在\redem{极性电介质}中，分子（或原子）的电子相对于其原子核呈非对称排列（如 \ce{H2O}、\ce{HCl}、\ce{NH3}、\ce{CH3Cl} 等）。在这类分子中，正、负电荷的重心不重合，但二者之间的距离 $l$ 实际上保持恒定。就电学性质而言，极性电介质的分子类似于具有\redem{永久偶极矩} $\vb{p}_{e} = \text{const}$ 的\redem{刚性偶极子}。}
 
 \subsection{}\label{18.1.5} A \redem{permanent dipole} placed in a homogeneous external electrostatic field is subject to the action of a force couple \ssect{4.1.6} with the moment of force (torque) $\vb{M}$ equal to $\vb{M} = \vb{p}_{e} \cross \vb{E}$.
+\zhpar{处于均匀外电场中的\redem{永久偶极子}受到一个力偶（\ssect{4.1.6}）的作用，其力矩（转矩）$\vb{M}$ 等于 $\vb{M} = \vb{p}_{e} \cross \vb{E}$。}
 
 \begin{marginfigure}
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-18/fig-18-01.pdf}
-\caption{A permanent dipole.\label{fig-18-01}}
+\caption{A permanent dipole.\zhcap{永久偶极子。}\label{fig-18-01}}
 \end{marginfigure}
 
 The moment $\vb{M}$ of the force couple is perpendicular to the plane passing through vectors $\vb{p}_{e}$ and $\vb{E}$. From the tip of vector $\vb{M}$ rotation through the smaller angle from vectors $\vb{p}_{e}$ to $\vb{E}$ is seen to he counterclockwise. In \figr{fig-18-01} the moment of force $\vb{M}$ is directed normal to the diagram into the page and tends to turn the dipole so that $\vb{p}_{e}$ and $\vb{E}$ are parallel to each other. In real molecules of polar dielectrics, the molecules are deformed in addition to the turning of the dipole axes into alignment with the field. This leads to the induction of a certain dipole moment \ssect{18.1.3}.
+\zhpar{力矩 $\vb{M}$ 垂直于包含矢量 $\vb{p}_{e}$ 与 $\vb{E}$ 的平面。从矢量 $\vb{M}$ 的末端看去，由矢量 $\vb{p}_{e}$ 转向 $\vb{E}$（取较小角度）的转动方向为逆时针方向。如\figr{fig-18-01}所示，力矩 $\vb{M}$ 垂直于图面指向纸内，它使偶极子发生转动，使 $\vb{p}_{e}$ 与 $\vb{E}$ 相互平行。在极性电介质的真实分子中，除偶极子轴转向与电场方向一致外，分子还会发生形变。这导致一定偶极矩的感应（\ssect{18.1.3}）。}
 
 
 
 \subsection{}\label{18.1.6} When a permanent dipole is placed into a non-homogeneous electric field, in which the field strength $\vb{E}$ varies along the length $l$ of the dipole, then, in addition to the torque $\vb{M}$ \ssect{18.1.5}, the dipole is subject to force $\vb{F}$, which is equal to
+\zhpar{当永久偶极子置于非均匀电场中时（即场强 $\vb{E}$ 沿偶极子长度 $l$ 方向发生变化），除力矩 $\vb{M}$（\ssect{18.1.5}）外，偶极子还受到力 $\vb{F}$ 的作用，其值等于：}
 \begin{equation*}%
 \vb{F} = p_{e} \pdv{E}{l},
 \end{equation*}
 or, in the more general form:
+\zhpar{或者，写成更一般的形式：}
 \begin{equation*}%
 \vb{F} = p_{ex} \pdv{\vb{E}}{x} + p_{ey} \pdv{\vb{E}}{y} + p_{ez} \pdv{\vb{E}}{z},
 \end{equation*}
 where $p_{ex}$, $p_{ey}$ and $p_{ez}$ are the projections of vector $\vb{p}_{e}$ on the axes of a Cartesian coordinate system. In particular, if vector $\vb{E}$ is directed along the $OX$ axis and depends only on the coordinate $x$: $[E_{x} = E (x), \,\, E_{y} = E_{z} = 0$ and $\vb{E} = E_{x}\vu{i}]$, then
 By the action of force $\vb{F}$ a free permanent dipole tends to move to a region of highest field strength.
+\zhpar{式中 $p_{ex}$、$p_{ey}$ 和 $p_{ez}$ 为矢量 $\vb{p}_{e}$ 在笛卡儿直角坐标系各坐标轴上的投影。特别地，若矢量 $\vb{E}$ 沿 $OX$ 轴方向且仅依赖于坐标 $x$，即 $[E_{x} = E (x), \,\, E_{y} = E_{z} = 0$ 且 $\vb{E} = E_{x}\vu{i}]$，则在力 $\vb{F}$ 的作用下，自由的永久偶极子趋向于移动到场强最大的区域。}
 
 \subsection{}\label{18.1.7} The potential energy $E_{p}$ of a permanent dipole in an external electric field is
+\zhpar{外电场中永久偶极子的势能 $E_{p}$ 为：}
 \begin{equation*}%
 E_{p} = -\vb{p}_{e} \, \vb{E} = - p_{e} E \cos \theta,
 \end{equation*}
 where $\vb{p}_{e}$ is the electric dipole moment, $\vb{E}$ is the field strength at the point where the dipole is located and $\theta$ is the angle be­ tween the dipole axis and vector $\vb{E}$. The minus sign indicates that the stable portion of the dipole corresponds to the angle $\theta = 0$, at which the potential energy of the dipole has its minimum value and vector $\vb{p}_{e}$ is directed along vector $\vb{E}$.
+\zhpar{式中 $\vb{p}_{e}$ 为电偶极矩，$\vb{E}$ 为偶极子所在处的场强，$\theta$ 为偶极子轴与矢量 $\vb{E}$ 之间的夹角。式中的负号表明，偶极子的稳定状态对应于 $\theta = 0$ 的情形：此时偶极子的势能取最小值，矢量 $\vb{p}_{e}$ 与 $\vb{E}$ 同向。}
 
 \section{Polarization of Dielectrics}
 \label{sec-18.2}
+\zhtitle{电介质的极化}
 
 \subsection{}\label{18.2.1} When a polar dielectric \ssect{18.1.4} is not in an external electric field, the vectors of its dipole moments are chaotically oriented as a result of the random thermal motion of the molecules. Consequently, the sum of the dipole moments of all the molecules is equal to zero in any physically infinitesimal volume $\Delta V$.\sidenote{Here $\Delta V /gg v_{0}$, where $v_{0}$ is the volume of a single molecule, and an immense number of molecules are contained in volume $\Delta V$.}
+\zhpar{当极性电介质（\ssect{18.1.4}）不处于外电场中时，由于分子的无规热运动，其偶极矩矢量的取向是杂乱无章的。因此，在任一物理上的无穷小体积 $\Delta V$ 内，所有分子偶极矩之和为零。}
+\zhpar{注：此处 $\Delta V /gg v_{0}$，其中 $v_{0}$ 为单个分子的体积，且体积 $\Delta V$ 中包含数量极大的分子。}
 
 No dipole moments of the molecules whatsoever can be induced \ssect{18.1.3} in a non-polar dielectric that is not in an external electric field.
+\zhpar{在无外电场的非极性电介质中，分子根本不可能感应出偶极矩（\ssect{18.1.3}）。}
 
 \subsection{}\label{18.2.2} When a \redem{dielectric} is placed in an external electric field, it \redem{is polarized}. This means that in any element of volume $\Delta V$, the total dipole moment of its molecules is no longer equal to zero. A dielectric in such a state is said to be polarized (\redem{polarized dielectric}). In accordance with the structure of the molecules (or atoms), distinction is made between the following three types of polarization:
+\zhpar{当\redem{电介质}置于外电场中时，它便\redem{发生极化}。这意味着，在任一体积元 $\Delta V$ 中，其分子的总偶极矩不再为零。处于这种状态的电介质称为极化的（\redem{极化电介质}）。根据分子（或原子）的结构，极化可分为以下三种类型：}
 \begin{enumerate}[label=(\alph*)]
 \item \redem{Orientation polarization} of polar dielectrics \ssect{18.1.4}. The external electric field tends to align the dipole moments of the permanent dipoles along the direction of the field \ssect{18.1.5}. This is hindered by the random thermal motion of the molecules which tends to disarrange the dipoles arbitrarily. The combined action of the field and thermal motion results in preferred orientation of the electric dipole moments along the field. This polarization increases with the strength of the electric field and with a drop in temperature.
+\zhpar{极性电介质的\redem{取向极化}（\ssect{18.1.4}）。外电场趋向于使永久偶极子的偶极矩沿场的方向排列（\ssect{18.1.5}）。这一趋势受到分子无规热运动的阻碍，热运动倾向于使偶极子任意紊乱地排列。电场与热运动的共同作用，使电偶极矩沿电场方向形成择优取向。这种极化随场强的增大和温度的降低而增强。}
 \item \redem{Electronic polarization} in non-polar dielectrics \ssect{18.1.3}. In the molecules of dielectrics of this type dipole moments directed along the field are induced \ssect{18.1.3} by the action of the external electric field. The thermal motion of the molecules has no effect on electronic polarization. In gaseous and liquid dielectrics, electronic polarization takes place practically simultaneously with orientational polarization.
+\zhpar{非极性电介质中的\redem{电子极化}（\ssect{18.1.3}）。在这类电介质的分子中，外电场的作用会感应出沿场方向的偶极矩（\ssect{18.1.3}）。分子的热运动对电子极化没有影响。在气态和液态电介质中，电子极化几乎与取向极化同时发生。}
 \item \redem{Ionic polarization} in solid dielectrics having ionic crystal lattices \ssect{40.1.3}, such as \ce{NaCl} and \ce{CsCl}. The external electric field causes displacement of all the positive ions in the direction of the field strength $\vb{E}$ and all the negative ions in the opposite direction.
+\zhpar{具有离子晶格的固体电介质中的\redem{离子极化}（\ssect{40.1.3}），如 \ce{NaCl} 和 \ce{CsCl}。外电场使所有正离子沿场强 $\vb{E}$ 的方向发生位移，使所有负离子沿相反方向发生位移。}
 \end{enumerate}
 
 \subsection{}\label{18.2.3} A quantitative measure of the polarization of a dielectric is the polarization vector $\vb{P}_{e}$. The \redem{polarization vector} (or simply the \redem{polarization}) is the ratio of the electric dipole moment of a small volume $\Delta V$ of the dielectric to this volume:
+\zhpar{极化的定量度量是极化矢量 $\vb{P}_{e}$。\redem{极化矢量}（或简称\redem{极化强度}）定义为电介质中小体积元 $\Delta V$ 内的电偶极矩与该体积之比：}
 \begin{equation*}%
 \vb{P}_{e} = \frac{1}{\Delta V} \sum_{i = 1}^{n} \vb{p}_{ei},
 \end{equation*}
 where $\vb{p}_{ei}$ is the electric dipole moment of the $i$-th molecule, and $n$ is the total number of molecules in the volume $\Delta V$. This volume should be so small that the electric field \ssect{15.1.2} within it can be assumed uniform. At the same time, the number $n$ of molecules in it should be sufficiently large to allow statistical methods of investigation \ssect{8.2.2} to be applied.
+\zhpar{式中 $\vb{p}_{ei}$ 为第 $i$ 个分子的电偶极矩，$n$ 为体积 $\Delta V$ 内的分子总数。该体积应足够小，以使其内的电场（\ssect{15.1.2}）可视为均匀的；同时，其中的分子数 $n$ 应足够大，以便应用统计方法进行研究（\ssect{8.2.2}）。}
 
 \subsection{}\label{18.2.4} For a homogeneous non-polar dielectric \ssect{18.1.3} in a uniform electric field
+\zhpar{对于均匀电场中的均匀非极性电介质（\ssect{18.1.3}），其极化强度为：}
 \begin{equation*}%
 \vb{P}_{e} = n_{0} \, \vb{p}_{e},
 \end{equation*}
 where $n_{0}$ is the number of molecules in unit volume, and $\vb{p}_{e}$ is the dipole moment of a single molecule. Making use of the
 formula for $\vb{p}_{e},$ \ssect{18.1.3} we obtain
+\zhpar{式中 $n_{0}$ 为单位体积内的分子数，$\vb{p}_{e}$ 为单个分子的偶极矩。利用 $\vb{p}_{e},$ 的表达式（\ssect{18.1.3}），可得：}
 \begin{align*}
 \vb{P}_{e} & = n_{0} \varepsilon_{0} \alpha \vb{E} =  \varepsilon_{0} \chi_{e} \vb{E} && \text{(in SI units),} \\
 \vb{P}_{e} & = n_{0} \alpha \vb{E} = \chi_{e} \vb{E} && \text{(in cgse units),}
 \end{align*}
 where $\chi_{e} = n_{0} \alpha$ is the \redem{dielectric} (or \redem{electric}) \redem{susceptibility of the substance}.
+\zhpar{其中 $\chi_{e} = n_{0} \alpha$ 称为物质的\redem{电介质极化率}（或电极化率）。}
 
 
 \begin{marginfigure}[-2cm]
 \centering
 \includegraphics[width=\textwidth]{figs/ch-18/fig-18-02.pdf}
-\caption{Dependence of $\chi_{e}$ the susceptibility of the substance on absolute temperature on (a) non-polar and (b) polar molecules.\label{fig-18-02}}
+\caption{Dependence of $\chi_{e}$ the susceptibility of the substance on absolute temperature on (a) non-polar and (b) polar molecules.\zhcap{非极性分子（a）与极性分子（b）的物质极化率 $\chi_{e}$ 随绝对温度的变化关系。}\label{fig-18-02}}
 \end{marginfigure}
 
 \subsection{}\label{18.2.5} For a homogeneous polar dielectric \ssect{18.1.4} in a uniform electric field, $\vb{P}_{e} = n_{0}\,\expval{\vb{p}_{e}}$, where $\expval{\vb{p}_{e}}$ is the average value of the component along the field of the permanent dipole moment of the molecule. When a polar dielectric is in a weak external electric field, the dielectric susceptibility is calculated by the \redem{Debye-Langevin formula}:
+\zhpar{对于均匀电场中的均匀极性电介质（\ssect{18.1.4}），$\vb{P}_{e} = n_{0}\,\expval{\vb{p}_{e}}$，式中 $\expval{\vb{p}_{e}}$ 为分子固有偶极矩沿场方向分量的平均值。当极性电介质处于弱外电场中时，其电介质极化率由\redem{德拜-朗之万公式}计算，如下式所示：}
 \begin{align*}
 \chi_{e} & = \frac{n_{0}p_{e}^{2}}{3 \varepsilon_{0} kT} && \text{(in SI units),} \\
 \chi_{e} & = \frac{n_{0}p_{e}^{2}}{3 kT} && \text{(in cgse units).}
 \end{align*}
 Here $k$ is Boltzmann's constant \ssect{8.4.5}, and $T$ is the absolute temperature. The remaining notation is given in \ssect{18.1.3}. Shown in \figr{fig-18-02} is the dependence $\chi_{e} = \chi_{e} (1/T)$ for non­ polar (a) and for polar (b) molecules. The straight line (b) does not pass through the origin of coordinates because orientational and electronic polarization \ssect{18.2.2} usually occur in polar molecules and the dielectric susceptibility consists of two parts: $\chi_{e} = \chi_{e}' + \chi_{e}''$ where $\chi_{e}'$ and $\chi_{e}''$ are expressed by the equations in Sections \ssect{18.2.4} and \ssect{18.2.5}.
+\zhpar{式中 $k$ 为玻尔兹曼常量（\ssect{8.4.5}），$T$ 为绝对温度，其余符号的说明见\ssect{18.1.3}。\figr{fig-18-02}所示为非极性分子（a）和极性分子（b）的 $\chi_{e} = \chi_{e} (1/T)$ 关系。直线（b）不通过坐标原点，这是因为极性分子中通常同时存在取向极化和电子极化（\ssect{18.2.2}），电介质极化率由两部分组成：$\chi_{e} = \chi_{e}' + \chi_{e}''$，其中 $\chi_{e}'$ 与 $\chi_{e}''$ 分别由\ssect{18.2.4}和\ssect{18.2.5}中的公式给出。}
 
 
 
 \begin{marginfigure}%[-2cm]
 \centering
 \includegraphics[width=\textwidth]{figs/ch-18/fig-18-03.pdf}
-\caption{The mutual compensation of the dipole charges of opposite sign alongside one another.\label{fig-18-03}}
+\caption{The mutual compensation of the dipole charges of opposite sign alongside one another.\zhcap{相邻的异号偶极子电荷相互抵消。}\label{fig-18-03}}
 \end{marginfigure}
 
 \subsection{}\label{18.2.6} If a dielectric is in a uniform electric field, the electrical neutrality of any volume $\Delta V$ of the dielectric, containing a sufficiently large number of molecules, is provided for by the mutual compensation of the dipole charges of opposite sign alongside one another (\figr{fig-18-03}). In the thin layers at surfaces $S_{1}$ and $S_{2}$ of the dielectric, bounding its volume, \redem{surface-bound polarization} charges appear as a result of the polarization of the dielectric. At the surface where the lines of force \ssect{15.1.6} of the external electric field enter the dielectric, negative charges of the ends of the dipole molecules appear. Positive charges appear at the opposite surface. The surface density \ssect{15.2.3} $\sigma_{p}$ of the polarization charges is calculated by the formula
+\zhpar{若电介质处于均匀电场中，则其中包含足够多分子的任一体积元 $\Delta V$ 保持电中性，这是由相邻异号偶极子电荷的相互补偿所保证的（\figr{fig-18-03}）。在界定电介质体积的表面 $S_{1}$ 和 $S_{2}$ 附近的薄层中，由于电介质的极化，出现了\redem{面束缚极化电荷}。在外电场的电力线（\ssect{15.1.6}）进入电介质的表面处，偶极分子的末端出现负电荷；在相对的表面则出现正电荷。极化电荷的面密度（\ssect{15.2.3}）$\sigma_{p}$ 由下式计算：}
 \begin{equation*}%
 \sigma_{p} = P_{en},
 \end{equation*}
 where $P_{en}$ is the projection of vector $\vb{P}_{e}$ on the outward normal to the surface of the dielectric.
+\zhpar{式中 $P_{en}$ 为矢量 $\vb{P}_{e}$ 在电介质表面外法线上的投影。}
 
 In a nonuniform electric field, the polarization of a dielectric is also nonuniform and the polarization vector $\vb{P}_{e}$ depends upon the coordinates. Hence, in addition to surface-bound charges, space polarization charges also appear. These are distributed with the volume charge density \ssect{15.2.3} $\rho_{p}$:
+\zhpar{在非均匀电场中，电介质的极化也是非均匀的，极化矢量 $\vb{P}_{e}$ 依赖于坐标。因此，除面束缚电荷外，还会出现\redem{体极化电荷}。它们以体电荷密度（\ssect{15.2.3}）$\rho_{p}$ 分布，满足下式：}
 \begin{equation*}%
 \rho_{p} = - \div{\vb{P}_{en}},
 \end{equation*}
 where $\div{\vb{P}_{en}} = \pdv*{P_{ex}}{x} + \pdv*{P_{ey}}{y}  + \pdv*{P_{ez}}{z}$ is the divergence of the polarization vector.
+\zhpar{式中 $\div{\vb{P}_{en}}$ 为极化矢量的散度。}
 
 \section{Relation Between Displacement, Field Strength and Polarization Vectors}
 \label{sec-18.3}
+\zhtitle{电位移、场强与极化矢量之间的关系}
 
 \subsection{}\label{18.3.1} Distinction is made in substances between two kinds of charges: free and bound.
+\zhpar{在物质中，电荷分为两类：自由电荷与束缚电荷。}
 
 \redem{Bound charges} are those included in the composition of atoms and molecules, as well as the charges of ions in crystalline solids with an ionic lattice \ssect{40.1.3}. Charges not bound to the aforementioned particles of matter are said to be free. \redem{Free charges} include: 
+\zhpar{\redem{束缚电荷}是包含在原子和分子组成中的电荷，以及具有离子晶格的晶体固体中离子的电荷（\ssect{40.1.3}）。不束缚于上述物质粒子的电荷称为自由电荷。\redem{自由电荷}包括：}
 \begin{enumerate}[label=(\alph*)]
 \item current-conducting charges in conducting media [conduction electrons in metals and semiconductors \ssect{16.4.1}, holes in semiconductors \ssect{41.10.3}, ions in electrolytes and gases],
+\zhpar{导电介质中的导电电荷［金属和半导体中的传导电子（\ssect{16.4.1}）、半导体中的空穴（\ssect{41.10.3}）、电解质和气体中的离子］；}
 \item surplus charges that are transmitted to a body by various means and violate its electrical neutrality. An example are charges imparted from outside onto the surface of a dielectric. 
+\zhpar{借助各种方式传递给物体、破坏其电中性的过剩电荷。例如，从外部施加到电介质表面上的电荷。}
 \end{enumerate}
 
 \subsection{}\label{18.3.2} Generally, an electric held is set up in a dielectric by both free and bound charges. The held strength vector $\vb{E}$ characterizes the resultant held in the dielectric, set up by the two kinds of charges, and depends upon its electrical properties: the relative permittivity (dielectric constant) $\varepsilon_{r}$ \ssect{14.2.4}. But the primary source of an electric held in a dielectric is the free charges. As a matter of fact, a field of bound charges is set up in a dielectric as a result of its polarization when it is placed in an external electric held set up by free electric charges. 
+\zhpar{一般而言，电介质中的电场由自由电荷和束缚电荷共同产生。场强矢量 $\vb{E}$ 表征电介质中由这两类电荷共同产生的合场，并取决于电介质的电学性质，即相对电容率（介电常量）$\varepsilon_{r}$（\ssect{14.2.4}）。但电介质中电场的主要来源是自由电荷。事实上，当电介质置于由自由电荷产生的外电场中时，由于其极化，电介质中会产生由束缚电荷形成的电场。}
 
 \subsection{}\label{18.3.3} The information contained in Sections \ssect{18.3.1} and \ssect{18.3.2} call for a certain revision of the Ostrogradsky-Gauss theorem \ssect{15.3.3}. The algebraic sum of the charges $\sum_{i=1}^{k} q_{i}$, on the right­ hand side of the theorem is to be regarded as the algebraic
 sum of the free electric charges enclosed by surface $S$, i.e. 
+\zhpar{\ssect{18.3.1}和\ssect{18.3.2}中所包含的信息要求对奥斯特罗格拉茨基-高斯定理（\ssect{15.3.3}）作某些修正。定理右边的电荷代数和 $\sum_{i=1}^{k} q_{i}$ 应理解为闭合面 $S$ 所包围的自由电荷的代数和，即}
 \begin{equation*}%
 \sum_{i=1}^{k} q_{i} = q_{\text{free}},
 \end{equation*}
 and the theorem is then of the form 
+\zhpar{于是，该定理的形式为：}
 \begin{align*}
 \oint_{S} \vb{D}\, \dd \vb{S} & = \oint_{S} D_{n}\, \dd S =  q_{\text{free}}&& \text{(in SI units),} \\
 \oint_{S} \vb{D}\, \dd \vb{S} & = \oint_{S} D_{n}\, \dd S =  4\pi q_{\text{free}}&& \text{(in cgse units).}
 \end{align*}
 
 In this form the Ostrogradsky-Gauss theorem is valid for an electric field either in homogeneous and isotropic or in non-homogeneous and anisotropic media (cf. \ssect{15.3.3}).
+\zhpar{在这一形式下，奥斯特罗格拉茨基-高斯定理对于均匀各向同性介质或非均匀各向异性介质中的电场均成立（参见\ssect{15.3.3}）。}
 
 \subsection{}\label{18.3.4} For an electric field in vacuum
+\zhpar{对于真空中的电场，有：}
 \begin{align*}%
 \vb{D} & = \varepsilon_{0} \vb{E} && \text{(in SI units),} \\
 \vb{D} & =  \vb{E}&& \text{(in cgse units).}
 \end{align*}
 The flux of the field strength vector $\vb{E}$ through an arbitrary closed surface $S$ in vacuum is
+\zhpar{真空中任一闭合面 $S$ 上场强矢量 $\vb{E}$ 的通量为：}
 \begin{align*}%
 \oint_{S} \varepsilon_{0}  E_{n}\, \dd S =  q_{\text{free}} && \text{(in SI units),} \\
 \oint_{S}  E_{n}\, \dd S =  4 \pi q_{\text{free}}&& \text{(in cgse units).}
 \end{align*}
 In accordance with Section \ssect{18.3.2}, the flux of vector $\vb{E}$ for a field in a substance is
+\zhpar{根据\ssect{18.3.2}，物质中电场的矢量 $\vb{E}$ 的通量为：}
 \begin{align*}%
 \oint_{S} \varepsilon_{0}  E_{n}\, \dd S & =  q_{\text{free}} + q_{\text{bound}} && \text{(in SI units),} \\
 \oint_{S}  E_{n}\, \dd S & =  4 \pi (q_{\text{free}} + q_{\text{bound}})&& \text{(in cgse units).}
 \end{align*}
 The sum of bound charges $q_{\text{bound}}$ within closed surface $S$ is calculated by the equation
+\zhpar{闭合面 $S$ 内束缚电荷的代数和 $q_{\text{bound}}$ 由下式计算：}
 \begin{equation*}%
 q_{\text{bound}} = - \oint_{S} P_{en} \, \dd S,
 \end{equation*}
 where $P_{en}$ is the projection of the polarization vector on the outward normal to surface $\dd S$. Hence
+\zhpar{式中 $P_{en}$ 为极化矢量在面元 $\dd S$ 外法线方向上的投影。由此可得：}
 \begin{align*}%
 \oint_{S} (\varepsilon_{0}  E_{n} + P_{en})\, \dd S & =  q_{\text{free}}  && \text{(in SI units),} \\
 \oint_{S} ( E_{n} + 4 \pi P_{en})\, \dd S & =  4 \pi q_{\text{free}} && \text{(in cgse units).}
 \end{align*}
 A correlation with the general formulation of the Ostrogradsky-Gauss theorem \ssect{18.3.3} enables a relation to be established between vectors $\vb{D}$, $\vb{E}$ and $\vb{P}_{e}$:
+\zhpar{将上述结果与奥斯特罗格拉茨基-高斯定理的一般表述（\ssect{18.3.3}）相比较，可以建立矢量 $\vb{D}$、$\vb{E}$ 与 $\vb{P}_{e}$ 之间的关系：}
 \begin{align*}%
 D_{n} & =  \varepsilon_{0}E_{n} + P_{en} && \text{(in SI units),} \\
 D_{n} & = E_{n} + 4 \pi P_{en} && \text{(in cgse units).}
 \end{align*}
 or, by virtue of the arbitrary nature of outward normal 
+\zhpar{或者，由于外法线方向的任意性，有：}
 \begin{align*}%
 \vb{D} & =  \varepsilon_{0} \vb{E} + \vb{P}_{en} && \text{(in SI units),} \\
 \vb{D} & =  \vb{E} + 4 \pi \vb{P}_{en} && \text{(in cgse units).}
 \end{align*}
 These formulas are generalizations of the formulas in Section \ssect{15.3.1}. Making use of the results obtained in Section \ssect{18.2.3}, we have for an isotropic homogeneous medium
+\zhpar{这些公式是\ssect{15.3.1}中公式的推广。利用\ssect{18.2.3}中得到的结果，对于各向同性均匀介质，有：}
 \begin{align*}%
 \vb{D} & =  \varepsilon_{0} \vb{E} + \varepsilon_{0} \chi_{e} \vb{E} = \varepsilon_{0} (1 + \chi_{e}) \vb{E} && \text{(in SI units),} \\
 \vb{D} & =  \vb{E} + 4 \pi \chi_{e} \vb{E} = (1 + 4 \pi \chi_{e}) \vb{E} && \text{(in cgse units).}
 \end{align*}
 Consequently,
+\zhpar{因此，}
 \begin{align*}%
 \vb{D} & =  \varepsilon_{0} \varepsilon_{r} \vb{E}, \,\,\text{where} \,\, \varepsilon_{r} = 1 + \chi_{e} && \text{(in SI units),} \\
 \vb{D} & =  \varepsilon_{r} \vb{E}, \,\,\text{where} \,\, \varepsilon_{r} = 1 + 4 \pi \chi_{e} && \text{(in cgse units).}
 \end{align*}
 The quantity $ \varepsilon_{r}$ is the relative permittivity (dielectric constant) (cf. \ssect{14.2.4}).
+\zhpar{量 $ \varepsilon_{r}$ 即相对电容率（介电常量，\ssect{14.2.4}）。}
 
 For vacuum $ \varepsilon_{r} = 1$ and $\chi_{e} = 0$.
+\zhpar{对于真空，$ \varepsilon_{r} = 1$ 且 $\chi_{e} = 0$。}
 
 The concept of $ \varepsilon_{r}$ introduced in Section \ssect{14.2.4} has a meaning only for isotropic homogeneous media.
+\zhpar{\ssect{14.2.4}中引入的 $ \varepsilon_{r}$ 概念仅对各向同性均匀介质才有意义。}
 
 
 
 \begin{marginfigure}%[-2cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-18/fig-18-04.pdf}
-\caption{Dependence of relative permittivity on temperature in ferroelectrics.\label{fig-18-04}}
+\caption{Dependence of relative permittivity on temperature in ferroelectrics.\zhcap{铁电体中相对电容率随温度的变化关系。}\label{fig-18-04}}
 \end{marginfigure}
 
 \section{Ferroelectric Materials}
 \label{sec-18.4}
+\zhtitle{铁电材料}
 
 
 \subsection{}\label{18.4.1} \redem{Ferroelectrics} belong to a group of crystalline dielectrics. The first substance of this type to be investigated was Seignette's salt (potassium sodium tartrate) \ce{NaKC4H4O6-4H2O} and, consequently, they are sometimes called seignette-electrics. An­ other example of a ferroelectric is barium titanate \ce{BaTiO3}. Typical of ferroelectrics is a drastic increase in the relative permittivity (dielectric constant) \ssect{14.2.4} in a definite temperature range (\figr{fig-18-04}).
+\zhpar{\redem{铁电体}属于晶体电介质的一类。最先被研究的此类物质是塞格涅特盐（酒石酸钾钠）\ce{NaKC4H4O6-4H2O}，因此这类物质有时也被称为塞格涅特电体。另一种铁电体的例子是钛酸钡 \ce{BaTiO3}。铁电体的典型特征是，在一定温度范围内相对电容率（介电常量，\ssect{14.2.4}）急剧增大（\figr{fig-18-04}）。}
 
 \subsection{}\label{18.4.2} The relative permittivity $\varepsilon_{r}$ and the dielectric susceptibility $\chi_{e}$ \ssect{18.2.4} of ferroelectrics are functions of the field strength $\vb{E}$ in the substance (\figr{fig-18-05}). As a result, no linear relation between vectors $\vb{P}_{e}$ and $\vb{E}$ is observed in those substances. The dependence of the electric displacement $\vb{D}$ on the field strength is of a complex nature and a linear relation between $\vb{D}$ and $\vb{E}$ exists only at very high $\vb{E}$ values (\figr{fig-18-06}).
+\zhpar{铁电体的相对电容率 $\varepsilon_{r}$ 与电极化率 $\chi_{e}$（\ssect{18.2.4}）是物质中场强 $\vb{E}$ 的函数（\figr{fig-18-05}）。因此，在这些物质中，矢量 $\vb{P}_{e}$ 与 $\vb{E}$ 之间不存在线性关系。电位移 $\vb{D}$ 随场强的变化关系很复杂，仅在 $\vb{E}$ 值非常高时，$\vb{D}$ 与 $\vb{E}$ 之间才呈线性关系（\figr{fig-18-06}）。}
 
 
 \begin{marginfigure}[-1cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-18/fig-18-05.pdf}
-\caption{Dependence of relative permittivity and the dielectric susceptibility on the field strength in ferroelectrics.\label{fig-18-05}}
+\caption{Dependence of relative permittivity and the dielectric susceptibility on the field strength in ferroelectrics.\zhcap{铁电体中相对电容率和电极化率随场强的变化关系。}\label{fig-18-05}}
 \end{marginfigure}
 
 
 
 
 \subsection{}\label{18.4.3} A monocrystal of a ferroelectric is divided into spontaneously polarized regions, called \redem{domains} (cf. \ssect{26.5.4}). This \redem{spontaneous polarization} of the domains is a result of the orientation of the dipole moments of the molecules in the domain in a definite direction. In the absence of an external electric field, the polarization vectors of the various domains are directed at random and for a large monocrystal or a polycrystal the total polarization is equal, on an average, to zero. When a ferroelectric is placed in an electric field, the electric moments of the domains are reoriented and the crystal acquires a total polarization not equal to zero.
+\zhpar{铁电体的单晶被分割为自发极化的区域，称为\redem{电畴}（参见\ssect{26.5.4}）。电畴的这种\redem{自发极化}是由畴内分子的偶极矩沿某一确定方向取向所致。在无外电场时，各电畴的极化矢量方向是无规的，对于大单晶或多晶，总极化平均为零。当铁电体置于电场中时，各电畴的电矩发生重新取向，晶体获得不为零的总极化。}
 
 
 
 \subsection{}\label{18.4.4} Domains are formed in ferroelectrics within a definite temperature range, between the upper and lower \redem{Curie points}
 $\theta^{\mathrm{up}}_{C}$ and $\theta^{\mathrm{low}}_{C}$ (cf. \ssect{26.5.2}). For Seignette's salt (also called Rochelle salt) (18.4.1), $\theta^{\mathrm{up}}_{C} = \SI{298}{\kelvin}$ and $\theta^{\mathrm{up}}_{C} = \SI{258}{\kelvin}$. At $T \geqslant \theta^{\mathrm{up}}_{C}$ the forces of interaction between the dipoles cannot resist the thermal motion, the spontaneous polarization of the domains is violated and the ferroelectric is converted into an ordinary polar dielectric. The drastic increase in heat capacity of the substance indicates that a second-order phase transition \ssect{12.4.2}) occurs at the Curie point. A disordered phase exists above the Curie point $\theta^{\mathrm{up}}_{C}$ and the dielectric is not polarized in the absence of an external field. At $T < \theta^{\mathrm{up}}_{C}$ there is an ordered phase indicated by the spontaneous po­larization in the domains.\sidenote{A discussion of the phenomena that occur in ferroelectrics at $T = \theta^{\mathrm{low}}_{C}$ and lead to the destruction of the domains is beyond the scope of the present handbook.}
+\zhpar{电畴只在铁电体的一定温度范围内形成，该温度范围位于上居里点与下居里点 $\theta^{\mathrm{up}}_{C}$ 和 $\theta^{\mathrm{low}}_{C}$ 之间（参见\ssect{26.5.2}）。对于塞格涅特盐（又称罗谢尔盐）（18.4.1），$\theta^{\mathrm{up}}_{C} = \SI{298}{\kelvin}$，$\theta^{\mathrm{up}}_{C} = \SI{258}{\kelvin}$。当 $T \geqslant \theta^{\mathrm{up}}_{C}$ 时，偶极子之间的相互作用力已无法抵抗热运动，电畴的自发极化遭到破坏，铁电体转变为普通的极性电介质。物质热容的急剧增大表明，在居里点处发生了二级相变（\ssect{12.4.2}）。在居里点 $\theta^{\mathrm{up}}_{C}$ 以上存在无序相，此时无外场时电介质不被极化。当 $T < \theta^{\mathrm{up}}_{C}$ 时存在有序相，其特征是电畴中的自发极化。}
+\zhpar{注：关于铁电体在 $T = \theta^{\mathrm{low}}_{C}$ 时出现的、导致电畴被破坏的现象，本手册不作讨论。}
 \begin{marginfigure}[-5cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-18/fig-18-06.pdf}
-\caption{The dependence of the electric displacement $\vb{D}$ on the field strength  in ferroelectrics.\label{fig-18-06}}
+\caption{The dependence of the electric displacement $\vb{D}$ on the field strength  in ferroelectrics.\zhcap{铁电体中电位移 $\vb{D}$ 随场强的变化关系。}\label{fig-18-06}}
 \end{marginfigure}
 
 \subsection{}\label{18.4.5} The phenomenon of \redem{dielectric}, or \redem{ferromagnetic, hysteresis} (lag) is observed in ferroelectrics. As is evident from \figr{fig-18-07}, with an increase in the strength of the external field, the magnitude of vector $\vb{P}_{e}$ increases and reaches saturation at point $a$. Then, as $E$ is reduced to zero, a ferroelectric has \redem{remanent polarization}, characterized by the value of the polarization vector $\vb{P}_{e0}$. Polarization completely disappears only after applying a depolarization electric field of the strength $-\vb{E}_{c}$ in the opposite direction. This is called the \redem{coercive force}. Periodic reversal of polarization of a ferromagnetic material is accompanied by the consumption of electric energy, spent in heating the sub­ stance. The area of the hysteresis loop is proportional to the electric energy that is converted into internal energy per unit volume of the ferroelectric per cycle.
+\zhpar{铁电体中可以观察到\redem{电滞}（滞后）现象。由\figr{fig-18-07}可见，随外场强度的增大，矢量 $\vb{P}_{e}$ 的大小增加，并在 $a$ 点达到饱和。随后，当 $E$ 减小到零时，铁电体具有\redem{剩余极化}，其大小由极化矢量 $\vb{P}_{e0}$ 的值表征。只有施加方向相反、场强为 $-\vb{E}_{c}$ 的去极化电场之后，极化才会完全消失，该场强称为\redem{矫顽力}。铁电材料极化的周期性反转伴随着电能的消耗，这部分电能用于加热物质。电滞回线的面积正比于每一周期内单位体积铁电体中转化为内能的电能。}
 
 
 \begin{marginfigure}[-4cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-18/fig-18-07.pdf}
-\caption{The phenomenon of dielectric, or ferromagnetic, hysteresis in ferroelectrics.\label{fig-18-07}}
+\caption{The phenomenon of dielectric, or ferromagnetic, hysteresis in ferroelectrics.\zhcap{铁电体中的电滞现象。}\label{fig-18-07}}
 \end{marginfigure}
