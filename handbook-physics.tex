@@ -208,6 +208,9 @@
 \renewcommand*{\marginfont}{\small}
 
 \usepackage[version=4]{mhchem}
+% fontspec (loaded by ctex) makes chemgreek emit Unicode Greek, which the T1 mlmodern
+% text fonts lack; keep the math-italic Greek of the original edition in \ce{}
+\selectchemgreekmapping{default}
 \newcommand{\cpr}[2]{[\bm{#1} \cross \bm{#2}]} % defines cross product makes the entries bold
 \usepackage{url}
 \usepackage{pdfpages}
