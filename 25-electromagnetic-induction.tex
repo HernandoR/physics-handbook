@@ -9,13 +9,18 @@
 
 \chapter{Electromagnetic Induction}
 \label{ch-25}
+\zhtitle{电磁感应}
 
 \section{Basic Law of Electromagnetic Induction}
 \label{sec-25.1}
+\zhtitle{电磁感应的基本定律}
 
 \subsection{}\label{25.1.1} The \redem{phenomenon of electromagnetic induction} is the setting up of an \redem{induced electric field} in a conducting loop, or circuit, located in a varying magnetic field. The energy measure of this induced field is the \redem{electromotive force $\emf_{i}$ of electromagnetic induction}. If the loop is closed, the induced electric field causes ordered motion of electrons in the loop, i.e. a current, called the \redem{induced current}, is produced.
+\zhpar{\redem{电磁感应现象}是指在变化的磁场中，于导体回路（或电路）内建立\redem{感生电场}的现象。该感生电场的能量量度即为\redem{电磁感应电动势$\emf_{i}$}。若回路是闭合的，感生电场将使回路中的电子作定向运动，即产生电流，称为\redem{感应电流}。}
 
 \subsection{}\label{25.1.2} \redem{Faraday's law of electromagnetic induction} states that the emf of electromagnetic induction in a loop, or circuit, is proportional to the rate of change of the magnetic flux \ssect{23.5.5} through the surface area bounded by this loop. Thus
+\zhpar{\redem{法拉第电磁感应定律}指出：回路（或电路）中的电磁感应电动势与穿过该回路所围面积的磁通量\ssect{23.5.5}的变化率成正比。由此可得下列关系式。}
+\zhpar{注：在以高斯单位制写出的所有公式中，$c$ 为电动力学常量。}
 \begin{align*}%
 \emf_{i} & = - \dv{\Phi_{m}}{t} &&  \text{(in SI units),} \\
 \emf_{i} & = - \frac{1}{c}\,\dv{\Phi_{m}}{t} &&  \text{(in Gaussian units).\sidenote{In all the formulas written in Gaussian units, $c$ is the electrodynamic constant.}}
@@ -26,71 +31,88 @@
 \ssect{23.2.2}
 
 The cause of the change in the magnetic flux is unessential. It may be due to distortion of the loop or its motion in the external magnetic field or to any other reasons for the change in the magnetic field with time. When a closed conducting circuit (or loop) moves in a magnetic field, emf's are induced in all of the parts of the loop that cut the lines of magnetic induction. The algebraic sum of these emf's \ssect{25.1.3} is equal to the total emf of the loop. The work that must be done to move a closed loop, or circuit, in a magnetic field is equal to the work of the current induced in the loop.
+\zhpar{引起磁通量变化的原因并不重要。它可能是回路发生形变或在外磁场中运动，也可能是磁场随时间变化的其他任何原因。当闭合导体回路（或线圈）在磁场中运动时，回路中所有切割磁感线的导线段都会产生电动势。这些电动势\ssect{25.1.3}的代数和等于回路的总电动势。将闭合回路（或电路）移动通过磁场时所需做的功，等于回路中感应电流所做的功。}
 
 In calculating $\Phi_{m}$ and $\emf_{i}$ the directions around the loop \ssect{21.3.2} and of the outward normal $\vu{n}$ (\ssect{23.5.5} and \ssect{23.5.8}) are to be coordinated so that from the head of vector n the direction around the circuit (or loop) is seen to be counterclockwise. If a closed circuit consists of $N$ turns connected in series (for example, the solenoid in Section \ssect{23.3.7}), then the magnetic flux $\Phi_{m}$ in Faraday's law is to be replaced by the flux, or magnetic, linkage $\Psi$ of the circuit (\ssect{23.6.5}:
+\zhpar{计算 $\Phi_{m}$ 和 $\emf_{i}$ 时，应使回路的绕行方向与外法线单位矢量 $\vu{n}$（见\ssect{23.5.5}与\ssect{23.5.8}）相互协调，即从矢量 $\vu{n}$ 的末端看去，回路的绕行方向为逆时针方向。若闭合电路由 $N$ 匝串联而成（例如\ssect{23.3.7}中所述的螺线管），则法拉第定律中的磁通量 $\Phi_{m}$ 应以电路的磁链 $\Psi$ 代替（见\ssect{23.6.5}），即}
 \begin{align*}%
 \emf_{i} & = - \dv{\Psi}{t} &&  \text{(in SI units),} \\
 \emf_{i} & = - \frac{1}{c}\,\dv{\Psi}{t} &&  \text{(in Gaussian units)}.
 \end{align*}
 
 \subsection{}\label{25.1.3} The emf of electromagnetic induction in a loop (or circuit) is said to be positive if the magnetic moment vector $\vb{p}_{m}$ of the corresponding induction current \ssect{23.3.4} makes an acute angle with the lines of magnetic induction of the field that induces this current. Otherwise, $\emf_{i}$ is said to be negative. In \figr{fig-25-01}~\drkgry{(a)}, the emf $\emf_{i} < 0$, whereas in \figr{fig-25-01}~\drkgry{(b)}, $\emf_{i} > 0$. 
+\zhpar{若回路中感应电流的磁矩矢量 $\vb{p}_{m}$（见\ssect{23.3.4}）与感生该电流的磁场的磁感应线成锐角，则称回路中的电动势为正，否则称 $\emf_{i}$ 为负。在\figr{fig-25-01}~\drkgry{(a)}中，$\emf_{i} < 0$，而在\figr{fig-25-01}~\drkgry{(b)}中，$\emf_{i} > 0$。}
 
 \begin{figure}%[-2cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-25/fig-25-01.pdf}
-\sidecaption{Determining the direction of emf generated.\label{fig-25-01}}
+\sidecaption{Determining the direction of emf generated.\zhcap{确定所产生电动势的方向。}\label{fig-25-01}}
 \end{figure}
 
 
 \subsection{}\label{25.1.4} The minus sign in the formula for  complies with the \redem{Lenz law}, which states that upon any change in the magnetic flux through a surface bounded by a closed loop, the current induced in the loop is always of a direction in which the magnetic field set up by the induced current opposes the change in the magnetic flux that induced the current.
+\zhpar{式中负号符合\redem{楞次定律}。该定律指出：当穿过闭合回路所围表面的磁通量发生任何变化时，回路中产生的感应电流总是朝着使其自身所激发的磁场阻碍引起该电流的磁通量变化的方向流动。}
 
 \subsection{}\label{25.1.5} An emf of electromagnetic induction is developed in a part of a conductor which, in its motion, cuts lines of induction of a magnetic field \ssect{23.1.3}. In the case illustrated in Fig. 25.2, the conduction electrons of the metal \ssect{20.3.1} are subject to the Lorentz force \ssect{24.1.1}. Thus $\vb{F}_{L} = - e [(\vb{v} + \vb{v}') \cross \vb{B}]$, where $\vb{v}$ is the velocity of the part $AC$ of the conductor in the magnetic field, whose induction vector $\vb{B}$ is perpendicular to the plane passing through the part of the conductor and the velocity vector of its motion. The electrons travel orderly along the conductor at the velocity $\vb{v}'$ by the action of the component of the Lorentz force tangent to the conductor in the direction from $A$ to $C$. The motion of the electrons ceases when the electrostatic field set up in the conductor and acting on the electrons with the force $e\vb{E}$ counterbalances the Lorentz force.
+\zhpar{导体的一部分在运动时切割磁场的磁感应线，则在该部分导体中产生电磁感应电动势\ssect{23.1.3}。如\figr{fig-25-02}所示，金属中的传导电子\ssect{20.3.1}受到洛伦兹力\ssect{24.1.1}的作用。于是有 $\vb{F}_{L} = - e [(\vb{v} + \vb{v}') \cross \vb{B}]$，式中 $\vb{v}$ 为磁场中导体部分 $AC$ 的运动速度，其磁感应强度矢量 $\vb{B}$ 垂直于包含该段导体及其运动速度矢量的平面。在洛伦兹力沿导体切线方向由 $A$ 指向 $C$ 的分量作用下，电子以速度 $\vb{v}'$ 沿导体有序运动。当导体中建立的静电场对电子的作用力 $e\vb{E}$ 与洛伦兹力相平衡时，电子的运动即停止。}
 \begin{figure}%[-2cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-25/fig-25-02.pdf}
-\sidecaption{An emf of electromagnetic induction is developed in a part of a conductor which, in its motion, cuts lines of induction of a magnetic field.\label{fig-25-02}}
+\sidecaption{An emf of electromagnetic induction is developed in a part of a conductor which, in its motion, cuts lines of induction of a magnetic field.\zhcap{导体的一部分在运动中切割磁场的磁感应线时，该部分导体中产生电磁感应电动势。}\label{fig-25-02}}
 \end{figure}
 
 
 According to Ohm's law for an open circuit (at $I = 0$) \ssect{21.2.5}, the equilibrium potential difference $\Delta V = V_{A} - V_{C}$ between points $A$ and $C$ that is established at $\vb{v}' = 0$ is equal to
+\zhpar{根据开路（$I = 0$）时的欧姆定律\ssect{21.2.5}，当 $\vb{v}' = 0$ 时，$A$、$C$ 两点之间建立的平衡电势差 $\Delta V = V_{A} - V_{C}$ 由下式给出。}
 \begin{equation*}%
 \Delta V = V_{A} - V_{C} = - \emf_{i},
 \end{equation*}
 where $\emf_{i}$ is the electromotive force of induction, because there are no sources of electrical energy in part $AC$ of the conductor. The emf of electromagnetic induction in a piece of conductor of length $l$, moving at the velocity $v$, is
+\zhpar{式中 $\emf_{i}$ 即为感应电动势，因为导体的 $AC$ 段中不存在电能源。长度为 $l$、以速度 $v$ 运动的一段导体中的电磁感应电动势由下列各式给出：}
 \begin{align*}%
 \emf_{i} & = - Bvl, \qor \\
 \emf_{i} & = - \dv{\Phi_{m}}{t} \,\, \text{(in SI units)}, 
 \end{align*}
 
 where $\dv*{\Phi_{m}}{t}$ is the ratio of the magnetic flux through the surface generated by the conductor in its motion during an infinitesimal length of time to the value $\dd t$ of this length of time or, in other words, the velocity at which the conductor cuts the lines of induction of the magnetic field (cf. Section \ssect{25.1.2}). 
+\zhpar{式中 $\dv*{\Phi_{m}}{t}$ 为导体在运动中于无限小时间间隔内扫过的表面所穿过的磁通量，与该时间间隔 $\dd t$ 之比；换言之，即导体切割磁场磁感应线的速度（参见\ssect{25.1.2}）。}
 
 \subsection{}\label{25.1.6} The phenomenon of electromagnetic induction in stationary closed conducting circuits, located in an external varying magnetic field, cannot be explained by means of the Lorentz force, which has no effect on fixed charges \ssect{24.1.1}.
+\zhpar{静止的闭合导体回路位于外部变化的磁场中时所发生的电磁感应现象，无法用洛伦兹力来解释，因为洛伦兹力对静止电荷不起作用\ssect{24.1.1}。}
 
 The phenomenon of electromagnetic induction in stationary conductors is due to the fact that the varying magnetic field excites a rotational electric field. The circulation of the strength vector of this field along the closed path $L$ of the conductor \ssect{16.1.4} is the emf of electromagnetic induction. Thus
+\zhpar{静止导体中电磁感应现象的产生，是由于变化的磁场激发了涡旋电场。该电场强度矢量沿导体闭合路径 $L$ 的环流\ssect{16.1.4}即为电磁感应电动势。于是有下列各式。}
 \begin{align*}%
 \emf_{i} & = \oint \vb{E}\, \dd \vb{l} = \dv{\Phi_{m}}{t} &&  \text{(in SI units),} \\
 \emf_{i} & = \oint \vb{E}\, \dd \vb{l} = \dv{\Phi_{m}}{t} \frac{1}{c}\,\dv{\Psi}{t} &&  \text{(in Gaussian units)}.
 \end{align*}
 where the partial derivative $\dv*{\Phi_{m}}{t}$ takes into account the dependence of the magnetic induction flux only on time. The choice of the direction of normal $\vu{n}$ in calculating the magnetic flux is discussed in Section \ssect{25.1.2}.
+\zhpar{式中偏导数 $\dv*{\Phi_{m}}{t}$ 仅考虑磁感应通量对时间的依赖关系。计算磁通量时法线 $\vu{n}$ 的选取参见\ssect{25.1.2}。}
 
 \subsection{}\label{25.1.7} The magnitude $q$ of the electric charge passing through the cross section of the wire of the turn in which the current is induced is
+\zhpar{在产生感应电流的那一匝导线的横截面上通过的电荷量 $q$ 的大小为}
 \begin{align*}%
 q & = \frac{\Phi_{m}' - \Phi_{m}''}{R} && \text{(in SI units),} \\
 q & = \frac{1}{c} \, \frac{\Phi_{m}' - \Phi_{m}''}{R}  &&  \text{(in Gaussian units)},
 \end{align*}
 where $\Phi_{m}'$ and $\Phi_{m}''$ are the values of the magnetic flux through the area of the turn in its initial and final positions, and $R$ is the electrical resistance of the turn.
+\zhpar{式中 $\Phi_{m}'$ 和 $\Phi_{m}''$ 分别为该匝线圈在初始位置和末位置时其面积上的磁通量，$R$ 为该匝线圈的电阻。}
 
 
 \section{Phenomenon of Self-Induction}
 \label{sec-25.2}
+\zhtitle{自感现象}
 
 \subsection{}\label{25.2.1} \redem{Self-induction} is the production of an induced electric field in a circuit as a result of the variations of current in the same circuit. The energy characteristic of the induced field is the emf of self-induction $\emf_{S}$.
+\zhpar{\redem{自感}是指电路中由于同一电路内电流的变化而在该电路中产生感生电场的现象。表征该感生电场的能量特征量为自感电动势 $\emf_{S}$。}
 
 \subsection{}\label{25.2.2} The intrinsic magnetic field of the current in the circuit produces the magnetic flux Oms through the surface $S$ bounded by the current-carrying loop. Thus
+\zhpar{电路中电流自身产生的磁场穿过以载流回路为边界的表面 $S$ 的磁通量由下式给出。}
 \begin{equation*}%
 \Phi_{ms} = \int_{S} B_{n} \, \dd S.
 \end{equation*}
 where $B_{n}$ is the projection of the induction vector $\vb{B}$ of the magnetic field \ssect{23.1.2} on the normal $\vu{n}$ to the element of surface $\dd S$. The quantity $\Phi_{ms}$ is called the \redem{magnetic flux of self-induction of the loop}. Making use of the Biot-Savart-Laplace law \ssect{23.2.2}, $\Phi_{ms}$ can be calculated for the case in which the loop is in a non-ferromagnetic medium \ssect{26.5.2}:
+\zhpar{式中 $B_{n}$ 为磁感应强度矢量 $\vb{B}$（见\ssect{23.1.2}）在面元 $\dd S$ 法线 $\vu{n}$ 上的投影。量 $\Phi_{ms}$ 称为回路的\redem{自感磁通量}。利用毕奥-萨伐尔-拉普拉斯定律（见\ssect{23.2.2}），当回路处于非铁磁介质中（见\ssect{26.5.2}）时，$\Phi_{ms}$ 可按下列各式计算：}
 \begin{align*}%
 \Phi_{ms} & = I \frac{\mu_{0}}{4 \pi} \int_{S} \dd S \, \oint_{L} \frac{\mu_{r}}{r^{3}} [\dd\vb{l} \cross 	\vb{r}]_{n}&& \text{(in SI units),} \\
 \Phi_{ms} & = \frac{1}{c}I \int_{S} \dd S \, \oint_{L} \frac{\mu_{r}}{r^{3}} [\dd\vb{l} \cross 	\vb{r}]_{n} &&  \text{(in Gaussian units)}, \qor \\
@@ -98,97 +120,117 @@ where $B_{n}$ is the projection of the induction vector $\vb{B}$ of the magnetic
 \Phi_{ms} & = \frac{1}{c}LI &&  \text{(in Gaussian units)},
 \end{align*}
 where $L$ is called the \redem{self-inductance} of the loop and is determined by the formulas
+\zhpar{式中 $L$ 称为回路的\redem{自感系数}，由下列各式确定：}
 \begin{align*}%
 L & = \frac{\mu_{0}}{4 \pi} \int_{S} \dd S \, \oint_{L} \frac{\mu_{r}}{r^{3}} [\dd\vb{l} \cross 	\vb{r}]_{n}&& \text{(in SI units),} \\
 L & = \int_{S} \dd S \, \oint_{L} \frac{\mu_{r}}{r^{3}} [\dd\vb{l} \cross 	\vb{r}]_{n} &&  \text{(in Gaussian units).}
 \end{align*}
 Here $\mu_{0}$ is the magnetic constant in SI units \ssect{23.2.2}, $\mu_{r}$ is the relative magnetic permeability of the medium, $\vb{r}$ is the radius vector from element $\dd \vb{l}$ of the loop to element $\dd S$ of surface $S$, bounded by the loop, and subscript $n$ indicates the projection on the normal to the element $\dd S$.
+\zhpar{式中 $\mu_{0}$ 为国际单位制中的真空磁导率（见\ssect{23.2.2}），$\mu_{r}$ 为介质的相对磁导率，$\vb{r}$ 为从回路元 $\dd \vb{l}$ 到以该回路为边界的表面元 $\dd S$ 的径矢，下标 $n$ 表示在面元 $\dd S$ 法线上的投影。}
 
 \subsection{}\label{25.2.3} The self-inductance $L$ of the loop is numerically equal to the self-induction flux at a current of $I = \SI{1}{\ampere}$ (in SI units) or $I = c$ (in Gaussian units). Self-inductance $L$ depends only upon the geometric shape and dimensions of the loop, as well as on the magnetic properties of the medium it is located in. The self-inductance of a sufficiently long solenoid \ssect{23.3.8} is
+\zhpar{回路的自感系数 $L$ 在数值上等于电流为 $I = \SI{1}{\ampere}$（国际单位制）或 $I = c$（高斯单位制）时的自感磁通量。自感系数 $L$ 仅取决于回路的几何形状与尺寸，以及它所处介质的磁性质。足够长的螺线管（见\ssect{23.3.8}）的自感系数为}
 \begin{align*}%
 L & = \frac{\mu_{0}\mu_{r}N^{2}S}{l}= \mu_{0}\mu_{r}n^{2}V&& \text{(in SI units),} \\
 L & = \frac{4 \pi \mu_{r}N^{2}S}{l}= 4 \pi\mu_{r}n^{2}V &&  \text{(in Gaussian units),}
 \end{align*}
 where $l$ and $S$ are the length and cross-sectional area of the solenoid, $N$ is the total number of turns, $n = N/l$ is the number of turns per unit length, and $V = Sl$ is the volume of the solenoid.
+\zhpar{式中 $l$ 和 $S$ 分别为螺线管的长度和横截面积，$N$ 为总匝数，$n = N/l$ 为单位长度上的匝数，$V = Sl$ 为螺线管的体积。}
 
 \subsection{}\label{25.2.4} The expression for the emf of self-induction follows from Faraday's law \ssect{25.1.2}:
+\zhpar{由法拉第定律（见\ssect{25.1.2}）可得自感电动势的表达式如下：}
 \begin{align*}%
 \emf_{S} & = - \dv{\Phi_{ms}}{t} = - \dv{t} (LI)&& \text{(in SI units),} \\
 \emf_{S} & = - \frac{1}{c} \,\dv{\Phi_{ms}}{t} = - \frac{1}{c^{2}}\dv{t} (LI)&&  \text{(in Gaussian units).}
 \end{align*}
 For a rigid (undeformable) loop in a non-ferromagnetic medium \ssect{26.5.2} $L = \text{const.}$ Hence
+\zhpar{对于非铁磁介质中的刚性（不可变形）回路，$L = \text{const.}$。因此有下列各式。}
 \begin{align*}%
 \emf_{S} & = - L \dv{I}{t} && \text{(in SI units),} \\
 \emf_{S} & = - \frac{L}{c^{2}} \dv{I}{t} &&  \text{(in Gaussian units).}
 \end{align*}
 
 \subsection{}\label{25.2.5} The electromotive force of self-induction causes a \redem{self-induction current} to flow in the loop. According to the Lenz law \ssect{25.1.4}, this current counteracts the change in the main current in the circuit, impeding its increase or decrease. The self-inductance of the loop \ssect{25.2.3} is a measure of its inertia to changes of the current.
+\zhpar{自感电动势在回路中产生\redem{自感电流}。根据楞次定律（见\ssect{25.1.4}），该电流阻碍电路中主电流的变化，即阻碍其增大或减小。回路的自感系数（见\ssect{25.2.3}）是其对电流变化惯性的量度。}
 
 \subsection{}\label{25.2.6} The law for the change of the current in closing and opening a circuit, i.e. with a non-steady state in the circuit, is
+\zhpar{电路接通与断开时，即电路处于非稳恒状态时，电流随时间变化的规律为}
 \begin{equation*}%
 I = I_{0} \exp \left( -\frac{Rt}{L}\right) + \frac{\emf}{R} \, \left(1 - \exp\left(-\frac{Rt}{L}  \right) \right),
 \end{equation*}
 where $I_{0}$ is the current at the initial instant of time ($t = 0$), $R$ is the electrical resistance of the circuit, $L$ is its self-inductance, and  is the algebraic sum of the emf's of the sources of electrical energy connected into the circuit \ssect{21.2.2}.
+\zhpar{式中 $I_{0}$ 为初始时刻（$t = 0$）的电流，$R$ 为电路的电阻，$L$ 为电路的自感系数，$\emf$ 为接入电路的各电能源电动势的代数和（见\ssect{21.2.2}）。}
 \begin{marginfigure}[-3cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-25/fig-25-03.pdf}
-\sidecaption{Self induced current as a function of time when it is switched on.\label{fig-25-03}}
+\sidecaption{Self induced current as a function of time when it is switched on.\zhcap{接通电路时自感电流随时间的变化。}\label{fig-25-03}}
 \end{marginfigure}
 
 
 
 When the source of emf is switched in there is no initial current in the circuit $(I_{0}= 0)$:
+\zhpar{接入电动势源时，电路中初始电流为零（$I_{0}= 0$），此时电流为}
 \begin{equation*}%
 I =  \frac{\emf}{R} \, \left(1 - \exp\left(-\frac{Rt}{L}  \right).\right)
 \end{equation*}
 The current in the circuit increases from zero to the value $\emf/R$, corresponding to that of the constant current. The higher the
 ratio $R/L$ (\figr{fig-25-03}), the more rapidly the current increases. When the source of emf is switched off, $\emf = 0$:
+\zhpar{电路中的电流从零增大到恒定电流所对应的值 $\emf/R$。比值 $R/L$ 越大（见\figr{fig-25-03}），电流增大得越快。当电动势源断开，即 $\emf = 0$ 时，}
 \begin{equation*}%
 I =  I_{0}\, \left(1 - \exp\left(-\frac{Rt}{L}  \right) \right).
 \end{equation*}
 The current decreases exponentially from the initial value $I_{0}$. The higher the ratio $R/L$, the more rapidly the current decreases (\figr{fig-25-04}).
+\zhpar{电流从初始值 $I_{0}$ 按指数规律衰减。比值 $R/L$ 越大，电流衰减得越快（见\figr{fig-25-04}）。}
 
 
 \begin{marginfigure}[-4cm]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/ch-25/fig-25-04.pdf}
-\sidecaption{Self induced current as a function of time when it is switched off.\label{fig-25-04}}
+\sidecaption{Self induced current as a function of time when it is switched off.\zhcap{断开电路时自感电流随时间的变化。}\label{fig-25-04}}
 \end{marginfigure}
 
 \section{Mutual Induction}
 \label{sec-25.3}
+\zhtitle{互感}
 
 \subsection{}\label{25.3.1} An emf is induced in all conductors in the vicinity of a circuit in which the current varies. This phenomenon is called \redem{mutual induction}. Upon a change in the current $I_{1}$ in circuit $\mathit{1}$ (\figr{fig-25-05}), for example, an emf $\emf_{21}$ mutual induction is induced in circuit $\mathit{2}$. It equals
+\zhpar{在电流变化的电路附近的所有导体中都会产生电动势，这种现象称为\redem{互感}。例如，当电路 $\mathit{1}$ 中的电流 $I_{1}$ 发生变化时（见\figr{fig-25-05}），电路 $\mathit{2}$ 中会产生互感电动势 $\emf_{21}$，其值为}
 \begin{align*}%
 \emf_{21} & = - \dv{\Phi_{m21}}{t} && \text{(in SI units),} \\
 \emf_{21} & = - \frac{1}{c} \,\dv{\Phi_{m21}}{t} &&  \text{(in Gaussian units),}
 \end{align*}
 where $\Phi_{m21}$ is the magnetic flux through the surface bounded by the second circuit. This flux is due to the magnetic field set up by the current in the first circuit (magnetic flux of mutual induction).
+\zhpar{式中 $\Phi_{m21}$ 为第二个电路所围表面的磁通量。该磁通量是由第一个电路中的电流所产生的磁场引起的（称为互感磁通量）。}
 
 
 \begin{figure}%[-4cm]
 \centering
 \includegraphics[width=\textwidth]{figs/ch-25/fig-25-05.pdf}
-\sidecaption{Mutual induction between two coils.\label{fig-25-05}}
+\sidecaption{Mutual induction between two coils.\zhcap{两线圈之间的互感。}\label{fig-25-05}}
 \end{figure}
 
 
 
 \subsection{}\label{25.3.2} By analogy with section \ssect{25.2.2}, the magnetic flux $\Phi_{m21}$ is proportional to the current $I_{1}$. Thus
+\zhpar{与\ssect{25.2.2}中的讨论类似，磁通量 $\Phi_{m21}$ 与电流 $I_{1}$ 成正比。于是有}
 \begin{align*}%
 \Phi_{m21} & = M_{21} I_{1} && \text{(in SI units),} \\
 \Phi_{m21} & = - \frac{1}{c} \,M_{21} I_{1}&&  \text{(in Gaussian units),}
 \end{align*}
 where $M_{21}$ is called the \redem{mutual inductance} of the second and first circuits. The quantity $M_{21}$ depends upon the shape, dimensions and relative arrangement of the circuits, as well as the relative magnetic permeability of the medium surrounding them. The magnetic flux $\Phi_{m12}$ through the surface bounded by the first circuit is due to the magnetic field set up by current $I_{2}$ in the second circuit. Thus
+\zhpar{式中 $M_{21}$ 称为第二个电路与第一个电路的\redem{互感系数}。量 $M_{21}$ 取决于两电路的形状、尺寸及其相对位置，还取决于周围介质的相对磁导率。第一个电路所围表面的磁通量 $\Phi_{m12}$ 是由第二个电路中的电流 $I_{2}$ 产生的磁场引起的。于是有}
 \begin{align*}%
 \Phi_{m12} & = M_{12} I_{2} && \text{(in SI units),} \\
 \Phi_{m12} & = - \frac{1}{c} \,M_{12} I_{2}&&  \text{(in Gaussian units),}
 \end{align*}
 where $M_{12}$ is the mutual inductance of the first and second circuits.
+\zhpar{式中 $M_{12}$ 为第一个电路与第二个电路的互感系数。}
 
 If the circuits are in a non-ferromagnetic medium \ssect{26.5.2}, then $M_{21}= M_{12}$. or ferromagnetic media $M_{21}$ and $M_{12}$ are not equal and depend, in addition to the above-mentioned factors, on the currents in the two circuits and the way in which they vary.
+\zhpar{若电路处于非铁磁介质中（见\ssect{26.5.2}），则 $M_{21}= M_{12}$。而对于铁磁介质，$M_{21}$ 与 $M_{12}$ 不相等，除上述因素外，它们还取决于两电路中的电流及其变化方式。}
 
 \subsection{}\label{25.3.3} The expressions for the emf of mutual induction, under the condition that $M_{21}$ and $M_{12}$ are both constant values, are
+\zhpar{当 $M_{21}$ 与 $M_{12}$ 均为常量时，互感电动势的表达式为}
 \begin{align*}%
 \emf_{21} & = - M_{21}\dv{I_{1}}{t} && \text{(in SI units),} \\
 \emf_{21} & = - \frac{1}{c^{2}} \,M_{21}\dv{I_{1}}{t} &&  \text{(in Gaussian units),}\\
@@ -196,59 +238,74 @@ If the circuits are in a non-ferromagnetic medium \ssect{26.5.2}, then $M_{21}= 
 \emf_{12} & = - \frac{1}{c^{2}} \,M_{12}\dv{I_{2}}{t} &&  \text{(in Gaussian units).}
 \end{align*}
 An example of the application of mutual induction is the principle of the transformer which serves to raise or lower the volt­ age of alternating current.
+\zhpar{互感的一个应用实例是变压器的工作原理。变压器用于升高或降低交流电的电压。}
 
 
 \section[Energy of a Magnetic Field]{Energy of a Magnetic Field Set up by an Electric Current}\sidenote{It is assumed in this section that the conductors carrying currents are in a non-ferromagnetic, homogeneous and isotropic medium.}
 \label{sec-25.4}
+\zhtitle{由电流建立的磁场的能量}
+\zhpar{注：本节假定载流导体处于非铁磁性、均匀且各向同性的介质中。}
 
 \subsection{}\label{25.4.1} To produce an electric current in a closed circuit (or loop) and to increase this current from zero to $I$ it is necessary to do work $W$ to overcome the emf of self-induction that impedes the increase in current \ssect{25.2.6}. Thus
+\zhpar{要使闭合电路（或回路）中产生电流，并使电流从零增大到 $I$，必须做功 $W$ 以克服阻碍电流增大的自感电动势（见\ssect{25.2.6}）。于是有}
 \begin{align*}%
 W & = \frac{\Phi_{ms}I}{2} = \frac{LI^{2}}{2} && \text{(in SI units),} \\
 W &  = \frac{1}{c} \frac{\Phi_{ms}I}{2} = \frac{1}{c^{2}}\frac{LI^{2}}{2} = &&  \text{(in Gaussian units),}
 \end{align*}
 where $\Phi_{ms}$ is the magnetic flux of self-induction of the loop \ssect{25.2.2} and $L$ is the self-inductance of the loop \ssect{25.2.2}. According to the energy conservation law, $W$ determines the \redem{intrinsic energy} $E_{m}$ of current $I$ in a circuit. Thus
+\zhpar{式中 $\Phi_{ms}$ 为回路的自感磁通量（见\ssect{25.2.2}），$L$ 为回路的自感系数（见\ssect{25.2.2}）。根据能量守恒定律，$W$ 确定了电路中电流 $I$ 的\redem{自能} $E_{m}$。于是有}
 \begin{align*}%
 E_{m} & =  \frac{LI^{2}}{2} && \text{(in SI units),} \\
 E_{m} &  =  \frac{1}{c^{2}}\frac{LI^{2}}{2} &&  \text{(in Gaussian units).}
 \end{align*}
 
 \subsection{}\label{25.4.2} Increasing together with the current in a circuit is the magnetic field set up by this current. Hence, the intrinsic energy of a current is dealt with as \redem{energy of} this \redem{magnetic field}. In a long solenoid \ssect{23.3.8}, for instance, having a uniform magnetic field \ssect{23.1.2},
+\zhpar{随电流一同增大的，是该电流所建立的磁场。因此，电流的自能可视为该\redem{磁场的能量}。例如，对于具有均匀磁场（见\ssect{23.1.2}）的长螺线管（见\ssect{23.3.8}），有}
 \begin{align*}%
 E_{m} & =  \frac{1}{2} \mu_{0}\mu_{r} n^{2}I^{2}V&& \text{(in SI units),} \\
 E_{m} &  =  \frac{2 \pi \mu_{r}}{c^{2}}  n^{2}I^{2}V  &&  \text{(in Gaussian units),}
 \end{align*}
 where $V$ is the volume of the solenoid, $n$ is the number of turns per unit length, $\mu_{0}$ is the magnetic constant \ssect{23.2.2}, and $\mu_{r}$ is the relative permeability of the medium.
+\zhpar{式中 $V$ 为螺线管的体积，$n$ 为单位长度上的匝数，$\mu_{0}$ 为真空磁导率（见\ssect{23.2.2}），$\mu_{r}$ 为介质的相对磁导率。}
 
 \subsection{}\label{25.4.3} The \redem{volume energy density} $E_{m}^{d}$ of a magnetic field is the energy per unit volume of the field. Thus
+\zhpar{磁场的\redem{体积能量密度} $E_{m}^{d}$ 是单位体积内磁场的能量，即}
 \begin{equation*}%
 E_{m}^{d} = \dv{E_{m}}{V}.
 \end{equation*}
 For a uniform magnetic field \ssect{23.1.3}, $E_{m}^{d} = E_{m}/V$.
 The volume energy density of any, including a nonuniform magnetic field, is expressed by the formula
+\zhpar{对于均匀磁场（见\ssect{23.1.3}），$E_{m}^{d} = E_{m}/V$。对于任意磁场，包括非均匀磁场，其体积能量密度由下式表示：}
 \begin{align*}%
 E_{m}^{d} & =  \frac{1}{2} BH = \frac{1}{2} \mu_{0}\mu_{r}  H^{2} = \frac{1}{2} \frac{B^{2}}{\mu_{0}\mu_{r} }&& \text{(in SI units),} \\
 E_{m}^{d} & =  \frac{BH}{8\pi}  = \frac{\mu_{r}  H^{2}}{8 \pi} = \frac{1}{8 \pi} \frac{B^{2}}{\mu_{r} }&&  \text{(in Gaussian units).}
 \end{align*}Here $B$ and $H$ are the magnitudes of the vectors of magnetic induction \ssect{23.1.2} and strength \ssect{23.2.3} at the point being considered in the magnetic field. The remaining notation is defined in Section \ssect{25.4.2}.
+\zhpar{式中 $B$ 和 $H$ 分别为所考察点处磁场的磁感应强度矢量（见\ssect{23.1.2}）与磁场强度矢量（见\ssect{23.2.3}）的大小。其余符号的含义见\ssect{25.4.2}。}
 
 \subsection{}\label{25.4.4} The energy $E_{m}$ of a magnetic field, localized in the volume $V$ is
+\zhpar{局限于体积 $V$ 内的磁场能量 $E_{m}$ 为}
 \begin{align*}%
 E_{m} & =  \int_{V} \frac{BH}{2}\, \dd V&& \text{(in SI units),} \\
 E_{m} &  = \int_{V} \frac{BH}{8\pi}\, \dd V &&  \text{(in Gaussian units).}
 \end{align*}
 \subsection{}\label{25.4.5} If the magnetic field is set up by an arbitrary system of n circuits, or loops, with the currents $I_{1}, \, I_{2}, \, I_{3}, \ldots{}, I_{n}$, the energy of the field can be expressed by the formula of Section \ssect{25.4.4}, in which $B$ and $H$ are understood to be the magnitudes of vectors $\vb{B}$ and $\vb{H}$ of the resultant magnetic field, in accordance with the principle of superposition of fields \ssect{15.2.2}. Moreover, the energy of the magnetic field in this case is
+\zhpar{若磁场由任意 $n$ 个电路（或回路）构成的系统产生，其中电流分别为 $I_{1}, \, I_{2}, \, I_{3}, \ldots{}, I_{n}$，则根据磁场叠加原理（见\ssect{15.2.2}），磁场能量可由\ssect{25.4.4}所给公式表示，式中 $B$ 和 $H$ 理解为合磁场矢量 $\vb{B}$ 和 $\vb{H}$ 的大小。此时，磁场能量为}
 \begin{equation*}%
 E_{m} = \sum_{k=1}^{n} \frac{\Phi_{mk}I_{k}}{2},
 \end{equation*}
 where $\Phi_{mk}$ is the total magnetic flux linked to the $k$-th loop \ssect{23.6.5}. In calculating this flux, the normal $\vu{n}_{k}$ to the surface bounded by the loop is such that from the head of vector $\vu{n}_{k}$ the current is seen to be counterclockwise. The magnetic flux $\Phi_{mk}$ equals
+\zhpar{式中 $\Phi_{mk}$ 为与第 $k$ 个回路交链的总磁通量（见\ssect{23.6.5}）。计算该磁通量时，回路所围表面的法线 $\vu{n}_{k}$ 的取向应使得从矢量 $\vu{n}_{k}$ 的末端看去，电流沿逆时针方向流动。磁通量 $\Phi_{mk}$ 等于}
 \begin{equation*}%
 \Phi_{mk} = \Phi_{msk} + \Phi_{mmk},
 \end{equation*}
 where $\Phi_{msk}$ is the magnetic flux of self-induction of the $k$-th loop \ssect{25.2.2} and $\Phi_{mmk}$ is the magnetic flux of its mutual induction, produced by all the other loops carrying current \ssect{25.3.1}. Hence the energy $E_{m}$ of the magnetic field is equal to
+\zhpar{式中 $\Phi_{msk}$ 为第 $k$ 个回路的自感磁通量（见\ssect{25.2.2}），$\Phi_{mmk}$ 为由所有其他载流回路产生的互感磁通量（见\ssect{25.3.1}）。因此，磁场能量 $E_{m}$ 等于}
 \begin{align*}%
 E_{m} & =  \sum_{k=1}^{n} \frac{L_{k}I_{k}}{2} + \frac{1}{2} \sum_{k=1}^{n}\sum_{l=1(l \neq k)}^{n} M_{kl} I_{k}I_{l}&& \text{(in SI units),} \\
 E_{m} &  =\frac{1}{c^{2}} \, \sum_{k=1}^{n} \frac{L_{k}I_{k}}{2} + \frac{1}{2c^{2}} \sum_{k=1}^{n}\sum_{l=1(l \neq k)}^{n} M_{kl} I_{k}I_{l} &&  \text{(in Gaussian units).}
 \end{align*}
 The first term is the sum of the intrinsic energies of all the cur­ rents \ssect{25.4.1}. The second term is called the \redem{mutual energy of the currents}. Here $M_{kl}$ is the mutual inductance of the $k$-th and $l$-th loops, or circuits, \ssect{25.3.2} with the currents $I_{k}$ and $I_{l}$.
+\zhpar{上式第一项为所有电流的自能之和（见\ssect{25.4.1}）。第二项称为\redem{电流的互能}。式中 $M_{kl}$ 为第 $k$ 个与第 $l$ 个回路（或电路）的互感系数（见\ssect{25.3.2}），两回路中的电流分别为 $I_{k}$ 和 $I_{l}$。}
 
 % for multiline subscript 
 % \lim_{\substack{x\rightarrow 0\\y\rightarrow 0}} f(x,y)
