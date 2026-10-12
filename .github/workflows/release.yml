@@ -1,36 +1,69 @@
 name: Release
 
 # Build the bilingual handbook and publish it as a GitHub Release.
-# Runs only for tags such as `release-v1.0`.
+# Runs for pushed tags such as `release-v1.0`, or manually from the Actions tab
+# (the manual run creates the tag if it does not exist yet).
 on:
   push:
     tags:
       - "release-v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to create or update (must start with release-v)"
+        required: true
+        default: "release-v1.0.0"
 
 permissions:
   contents: write
 
 jobs:
   build-and-release:
-    runs-on: ubuntu-latest
+    # Same toolchain as the verified local build: Ubuntu 24.04 + TeX Live 2023 from apt.
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - name: Resolve tag
+        id: tag
+        env:
+          INPUT_TAG: ${{ inputs.tag }}
+        run: |
+          TAG="${INPUT_TAG:-$GITHUB_REF_NAME}"
+          case "$TAG" in
+            release-v*) ;;
+            *) echo "::error::Tag '$TAG' must start with release-v"; exit 1 ;;
+          esac
+          echo "name=$TAG" >> "$GITHUB_OUTPUT"
+          echo "version=${TAG#release-}" >> "$GITHUB_OUTPUT"
 
-      # Full TeX Live image: includes ctex/luatexja, Fandol fonts and mlmodern.
+      - uses: actions/checkout@v5
+
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq \
+            texlive-luatex texlive-latex-extra texlive-science texlive-pictures \
+            texlive-fonts-extra texlive-lang-chinese texlive-lang-cjk
+          lualatex --version | head -1
+
       - name: Compile with LuaLaTeX
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: handbook-physics.tex
-          latexmk_use_lualatex: true
-
-      - name: Rename PDF
-        run: cp handbook-physics.pdf "handbook-physics-bilingual-${GITHUB_REF_NAME#release-}.pdf"
+        run: |
+          # Two passes resolve the table of contents and cross-references.
+          lualatex -interaction=nonstopmode handbook-physics.tex > pass1.log || true
+          lualatex -interaction=nonstopmode handbook-physics.tex > pass2.log || true
+          if grep -n '^!' handbook-physics.log; then
+            echo "::error::LaTeX reported errors (see above)"; tail -n 40 pass2.log; exit 1
+          fi
+          test -s handbook-physics.pdf
+          pdfinfo handbook-physics.pdf 2>/dev/null | grep Pages || true
+          cp handbook-physics.pdf "handbook-physics-bilingual-${{ steps.tag.outputs.version }}.pdf"
 
       - name: Publish release
         uses: softprops/action-gh-release@v2
         with:
-          name: A Modern Handbook of Physics (EN/ZH) ${{ github.ref_name }}
+          tag_name: ${{ steps.tag.outputs.name }}
+          target_commitish: ${{ github.sha }}
+          name: A Modern Handbook of Physics (EN/ZH) ${{ steps.tag.outputs.version }}
           body: |
             Bilingual English / Simplified Chinese edition of Yavorsky & Detlaf, *A Modern Handbook of Physics* (Mir, 1982),
-            built from `${{ github.sha }}`. Released under CC BY-NC 4.0 (Mir Titles project).
+            built from `${{ github.sha }}`. Released under CC BY-NC 4.0 (Mir Titles project). See the README for credits.
           files: handbook-physics-bilingual-*.pdf
